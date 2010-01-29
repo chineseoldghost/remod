@@ -1,0 +1,80 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="base" MtlFlags="128" Shader="Metal" GenMask="268447760" SurfaceType="" Diffuse="0.22352943,0.2392157,0.25882354" Specular="0.46274513,0.49019611,0.53725493" Emissive="0,0,0" Shininess="7" Opacity="1" GlowAmount="30">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/attachments/scope_sniper/textures/scope_sniper.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/attachments/scope_sniper/textures/scope_sniper_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/attachments/scope_sniper/textures/scope_sniper2_ddn.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/weapons/us/socom/socom_env4.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Decal" File="objects/weapons/attachments/scope_sniper/textures/glow.tif">
+     <TexMod TexMod_UOscillatorType="2" TexMod_VOscillatorType="2" TexMod_UOscillatorRate="1" TexMod_VOscillatorRate="1" TexMod_UOscillatorAmplitude="1" TexMod_VOscillatorAmplitude="1"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.219" AnisotropicShape="0.68300003" ReflectionAmount="0.25" FresnelBias="0.21799999" FresnelScale="1"/>
+  </Material>
+  <Material Name="google" MtlFlags="128" Shader="Specialeffects" GenMask="517" SurfaceType="" Diffuse="1,1,1" Specular="0.54901963,0.54901963,0.54901963" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/attachments/scope_sniper/textures/scope_sniper.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/attachments/scope_sniper/textures/scope_sniper2_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/weapons/us/socom/socom_env.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams FresnelBias="1" ReflectionAmount="0.81599998" RefractionAmount="1" LensColor="1,1,1" ScopeCenterX="-0.030999999" ScopeCenterY="-0.034000002" ScopeScale="2" ScopeRefrBumpScale="0.1"/>
+  </Material>
+  <Material Name="nodraw" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_thick" Diffuse="0.588,0.588,0.588" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="FP" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="" Diffuse="0.14117648,0.14117648,0.14117648" Specular="0.49803925,0.49803925,0.49803925" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/attachments/scope_sniper/textures/scope_sniper_fp.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/attachments/scope_sniper/textures/scope_sniper_fp_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/attachments/scope_sniper/textures/scope_sniper_fp_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/weapons/us/socom/socom_env4.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.47799999" AnisotropicShape="0.505" ReflectionAmount="0.73000002" FresnelBias="0.52600002" FresnelScale="1"/>
+  </Material>
+  <Material Name="refraction" MtlFlags="18560" Shader="Glass" GenMask="268436737" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Opacity="0.99000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/attachments/scope_assault/textures/google.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/attachments/scope_assault/textures/google_ddn.tif" Amount="50">
+     <TexMod />
+    </Texture>
+    <Texture Map="Opacity" File="objects/weapons/attachments/scope_assault/textures/mask.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams TintAmount="0" RefrBumpScale="0.50300002" BackLightScale="0" FilterColor="1,1,1"/>
+   <MaterialLayers>
+    <Layer />
+    <Layer />
+    <Layer Name="CloakLayer" NoDraw="1">
+     <PublicParams RefrBumpScale="1" SparksTilling="1" SparksColor="0.30000001,0.30000001,1"/>
+    </Layer>
+   </MaterialLayers>
+  </Material>
+ </SubMaterials>
+ <PublicParams />
+</Material>

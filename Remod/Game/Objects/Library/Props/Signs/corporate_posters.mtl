@@ -1,0 +1,51 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="frame" MtlFlags="128" Shader="Metal" GenMask="268435456" SurfaceType="mat_metal_smooth" Diffuse="0.50980395,0.50980395,0.50980395" Specular="1,1,1" Emissive="0,0,0" Shininess="9.999999" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/aircraftcarrier/128gray.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.229" Glossiness="0.861"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="poster1" MtlFlags="128" Shader="Illum" GenMask="268435584" SurfaceType="mat_glass_unbreakable" Diffuse="0.58823532,0.58823532,0.58823532" Specular="0.68235296,0.68235296,0.68235296" Emissive="0,0,0" Shininess="9.999999" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/poster_gauss_hurricane.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/library/architecture/aircraftcarrier/textures/reflections1.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams EnvMapAmount="1" FresnelScale="1" FresnelBias="1" AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="poster2" MtlFlags="128" Shader="Illum" GenMask="268435584" SurfaceType="mat_glass_unbreakable" Diffuse="0.58823532,0.58823532,0.58823532" Specular="0.68235296,0.68235296,0.68235296" Emissive="0,0,0" Shininess="9.999999" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/poster_tactank_gausstank.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/library/architecture/aircraftcarrier/textures/reflections1.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams EnvMapAmount="1" FresnelScale="4.8699999" FresnelBias="1" AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="poster3" MtlFlags="128" Shader="Illum" GenMask="268435584" SurfaceType="mat_glass_unbreakable" Diffuse="0.58823532,0.58823532,0.58823532" Specular="0.68235296,0.68235296,0.68235296" Emissive="0,0,0" Shininess="9.999999" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/poster_tacgun_vtol.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/library/architecture/aircraftcarrier/textures/reflections1.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams EnvMapAmount="1" FresnelScale="1" FresnelBias="1" AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

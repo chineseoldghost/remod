@@ -1,0 +1,15 @@
+Warning: ASSERT: "i <= nodes" in c:\qt\3.3.5\include\qvaluelist.h (373)
+Debug: Building project C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod\Remod.fev...
+Debug: Retrieving waveform info...
+Debug: cloak_tone_high.wav
+Debug: Retrieving reverb info...
+Debug: FEV file written ok
+Debug: Building 'Remod_bank00.fsb'
+Debug: Building C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod\Remod_bank00.fsb.  Format = IMA ADPCM (3.5:1)
+Debug: Info : Build Mode = FSBANK_BUILDMODE_SINGLE
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod\cloak_tone_high.wav  SRAM Usage 24 kb 
+Debug: Info : FSB Compilation complete
+Debug: Done.
+Warning: QObject::connect: No such slot EventEditorForm::slotStopEvent()
+Warning: QObject::connect:  (sender name:   'unnamed')
+Warning: QObject::connect:  (receiver name: 'EventEditorForm')

@@ -1,0 +1,45 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="advertising_signs" MtlFlags="128" Shader="Metal" GenMask="268480528" SurfaceType="" Diffuse="0.34117648,0.34117648,0.34117648" Specular="0.4039216,0.4039216,0.4039216" Emissive="0,0,0" Shininess="8" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/advertising_sign_b.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/reference_window_reflection.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_005_ddn.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.23800001" AnisotropicShape="0.257" ReflectionAmount="0.44999999" FresnelBias="0.461" FresnelScale="1" DetailBumpTillingU="3" DetailBumpTillingV="3" DetailBumpScale="1" DetailBlendAmount="0"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy_metal" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_rough" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+  <Material Name="metal" MtlFlags="128" Shader="Illum" GenMask="289406992" SurfaceType="" Diffuse="0.50196099,0.50196099,0.50196099" Specular="1.12157,1.12157,1.12157" Emissive="0,0,0" Shininess="8.8999996" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/nodule/buildings/barracks_rusty_bottom_metal.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/architecture/nodule/buildings/barracks_rusty_bottom_metal_spec.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+   </MaterialLayers>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

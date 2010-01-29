@@ -1,0 +1,801 @@
+
+#include "Common.cfi"
+#include "IllumValidations.cfi"
+#include "LightmapCommon.cfi"
+
+// Shader global descriptions
+float Script : STANDARDSGLOBAL
+<
+  string Script =        
+           "Public;"
+#if %DETAIL_BUMP_MAPPING
+           "DetailBumpMapping;"
+#endif
+#if %ENVLIGHTING
+           "EnvLighting;"
+#endif
+           "SupportsAttrInstancing;"
+           "ShaderDrawType = Light;"
+           "ShaderType = General;"
+>;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// Custom shading pass structure /////////////////////////////////////
+struct fragPassCustom
+{
+  // Custom per pass data     
+  half3 vTangent;        // perturbed tangent vector
+  half3 vBinormal;       // perturbed binormal vector
+
+  float3 vNoise;
+  half4 cCustomGlowMap;
+  half4 cCustomAshMap;
+
+  // half4 AnimGenParams;
+};
+
+struct fragLightPassCustom
+{
+}; 
+
+
+#include "ShadeLib.cfi"
+
+//=============================================================
+
+/// Un-Tweakables //////////////////////
+float4 DecalBinormal = { PB_FromRE[ 0 ], PB_FromRE[ 1 ], PB_FromRE[ 2 ], PB_FromRE[ 3 ] };
+float4 DecalTangent = { PB_FromRE[ 4 ], PB_FromRE[ 5 ], PB_FromRE[ 6 ], PB_FromRE[ 7 ] };
+float4 DecalAtten = { PB_FromRE[ 8 ], PB_FromRE[ 9 ], PB_FromRE[ 10 ], PB_FromRE[ 11 ] };
+float4 DecalNormal = { PB_FromRE[ 12 ], PB_FromRE[ 13 ], PB_FromRE[ 14 ], PB_FromRE[ 15 ] };
+
+// Tweakables /////////////////
+#if %ENVCMSPEC
+
+  // EnvMap amount
+  float EnvMapAmount
+  <
+    psregister = PS_REG_PM_3.x;
+    string UIWidget = "slider";
+    string UIName = "Reflect Amount";
+    float UIMin = 0.0;
+    float UIMax = 32.0;
+    float UIStep = 0.01;
+  > = 0.25;
+  
+  // Fresnel parameters
+  float FresnelScale
+  <
+    psregister = PS_REG_PM_3.y;
+    string UIWidget = "slider";
+    string UIName = "Fresnel Scale";
+    float UIMin = 0.0;
+    float UIMax = 32.0;
+    float UIStep = 0.01;
+  > = 1;
+
+  float FresnelBias
+  <
+    psregister = PS_REG_PM_3.z;
+    string UIWidget = "slider";
+    string UIHelp = "Set how much reflective material is \nMin value = 0, Max value = 1.0 \nCorrect name - FresnelBias";                     
+    string UIName = "Fresnel Bias";  
+    
+    float UIMin = 0.0;
+    float UIMax = 1.0;
+    float UIStep = 0.001;
+  > = 0;   
+  
+#endif
+
+#if %OFFSETBUMPMAPPING
+float ObmDisplacement
+<
+  psregister = PS_REG_PM_3.w;
+  string UIWidget = "slider";
+  string UIName = "OBM Displacement";
+  float UIMin = 0.0;
+  float UIMax = 1.0;
+  float UIStep = 0.001;
+> = 0.004;
+#endif
+
+#if %EXPOSE_POM_MAT_PARAMS
+float PomDisplacement
+<
+  psregister = PS_REG_PM_4.x;
+  string UIWidget = "slider";
+  string UIName = "POM Displacement";
+  float UIMin = 0.0;
+  float UIMax = 1.0;
+  float UIStep = 0.001;
+> = 0.025;
+
+float SelfShadowStrength
+<
+  psregister = PS_REG_PM_4.y;
+  string UIWidget = "slider";
+  string UIName = "Self shadow strength";
+  float UIMin = 0.0;
+  float UIMax = 5.0;
+  float UIStep = 0.1;
+> = 3.0;
+#endif
+
+float AmbientMultiplier
+<
+  psregister = PS_REG_PM_4.z;
+  string UIHelp = "Set alpha glow multiplier";                     
+  string UIName = "Alpha glow multiplier";    
+  
+  string UIWidget = "slider";
+  float UIMin = 0.0;
+  float UIMax = 100.0;
+  float UIStep = 0.1;
+> = 1.0;
+
+#if %DETAIL_BUMP_MAPPING
+	float DetailBumpTillingU
+	<
+	  psregister = PS_REG_PM_5.x;
+	  string UIHelp = "Set detail diffuse_bump tilling";                     
+	  string UIName = "Detail tilling U";
+	  string UIWidget = "slider";
+	  float UIMin = 0.0;
+	  float UIMax = 32.0;
+	  float UIStep = 0.1;
+	> = 1.0;
+	
+	float DetailBumpTillingV
+	<
+	  psregister = PS_REG_PM_5.y;
+	  string UIHelp = "Set detail diffuse_bump tilling";                     
+	  string UIName = "Detail tilling V";
+	  string UIWidget = "slider";
+	  float UIMin = 0.0;
+	  float UIMax = 32.0;
+	  float UIStep = 0.1;
+	> = 1.0;
+	
+	float DetailBumpScale
+	<
+	  psregister = PS_REG_PM_5.z;
+	  string UIHelp = "Set detail bump scale";                     
+	  string UIName = "Detail bump scale";    	  
+	  string UIWidget = "slider";
+	  float UIMin = 0.0;
+	  float UIMax = 10.0;
+	  float UIStep = 0.1;
+	> = 1.0;
+	
+	float DetailBlendAmount
+	<
+	  psregister = PS_REG_PM_5.w;
+	  string UIHelp = "Set diffuse detail blend scale";                     
+	  string UIName = "Detail blend amount";    	  
+	  string UIWidget = "slider";
+	  float UIMin = 0.0;
+	  float UIMax = 1.0;
+	  float UIStep = 0.1;
+	> = 0.0;
+#endif
+
+float BurningGlowAmount
+<
+  psregister = PS_REG_PM_6.x;
+  string UIHelp = "Set burning amount";
+  string UIName = "Burning amount";
+  string UIWidget = "slider";
+  float UIMin = 0.0;
+  float UIMax = 2.0;
+  float UIStep = 0.1;
+> = 1.0;
+
+float BurningGlowFlickering
+<
+  psregister = PS_REG_PM_6.y;
+  string UIHelp = "Set burning flickering";
+  string UIName = "Burning flickering";
+  string UIWidget = "slider";
+  float UIMin = 0.0;
+  float UIMax = 1.0;
+  float UIStep = 0.1;
+> = 1.0;
+
+float BurningWSNoiseFreq
+<
+  psregister = PS_REG_PM_6.z;
+  string UIHelp = "Set burning WS noise freq";
+  string UIName = "Burning WS noise freq";
+  string UIWidget = "slider";
+  float UIMin = 0.0;
+  float UIMax = 10.0;
+  float UIStep = 0.1;
+> = 1.0;
+
+float BurningWSNoiseScale
+<
+  psregister = PS_REG_PM_6.w;
+  string UIHelp = "Set burning WS noise scale";
+  string UIName = "Burning WS noise scale";
+  string UIWidget = "slider";
+  float UIMin = 0.0;
+  float UIMax = 10.0;
+  float UIStep = 0.1;
+> = 1.0;
+
+
+//=== Branching parameters ================================================
+
+float SPECULARPOW_GLOSSALPHA < psregister = PS_REG_PB_7.x; > = { PB_GlobalShaderFlag %SPECULARPOW_GLOSSALPHA };
+float GLOSS_DIFFUSEALPHA < psregister = PS_REG_PB_7.y; > = { PB_GlobalShaderFlag %GLOSS_DIFFUSEALPHA };
+
+//=========================================================================
+
+#include "VertexLib.cfi"
+
+///////////////////////////////
+// Samplers
+/*
+sampler2D diffuseMapSampler_Decal
+{ 
+	Texture = $Diffuse;
+	AddressU = Border;
+	AddressV = Border;
+	BorderColor = {0, 0, 0, 0};	
+};
+
+samplerCUBE diffuseMapSamplerCUBE = sampler_state
+{ Texture = $Diffuse; };
+
+samplerCUBE glossMapSamplerCUBE = sampler_state
+{ Texture = $Gloss; };
+*/
+
+sampler2D customGlowSampler
+{
+  Texture = $CustomMap;
+  MinFilter = LINEAR;
+  MagFilter = LINEAR;
+  MipFilter = LINEAR;
+  AddressU = Wrap;
+  AddressV = Wrap;
+};
+
+sampler2D customAshSampler
+{
+  Texture = $CustomSecondaryMap;
+  MinFilter = LINEAR;
+  MagFilter = LINEAR;
+  MipFilter = LINEAR;
+  AddressU = Wrap;
+  AddressV = Wrap;
+};
+
+sampler2D burningGlowSampler
+{
+  Texture = textures/burning/burning_decal_4.dds;
+  MinFilter = LINEAR;
+  MagFilter = LINEAR;
+  MipFilter = LINEAR;
+  AddressU = Wrap;
+  AddressV = Wrap;
+};
+
+sampler3D volumeNoiseSampler = sampler_state
+{
+  Texture = textures/defaults/Noise3D.dds;
+  MinFilter = LINEAR;
+  MagFilter = LINEAR;
+  MipFilter = LINEAR; 
+  AddressU = Wrap;
+  AddressV = Wrap;
+  AddressW = Wrap;
+};
+
+ENVIRONMENTMAP
+ENVIRONMENTCUBEMAP
+ENVIRONMENTLIGHTCMAP
+
+half Burning_GetNoise( half3 vPosition )
+{
+  half fNoise = tex3D( volumeNoiseSampler, vPosition.xyz * BurningWSNoiseFreq ).w;
+  fNoise = BurningWSNoiseScale * ( fNoise - 0.5 );
+  return fNoise;
+}
+
+half Burning_GetGlowNoise( half3 vPosition, half2 vTexCoords, float fTime )
+{
+  // LF 2D Noise
+  float2 burningGlowTC1 = vTexCoords.xy + 0.0127 * fTime;
+  float2 burningGlowTC2 = half2(vTexCoords.y, -vTexCoords.x) + 0.0123 * fTime;
+
+  half fGlowNoise =
+    GetTexture2D(burningGlowSampler, burningGlowTC1) *
+    GetTexture2D(burningGlowSampler, burningGlowTC2);
+
+  // Flickering
+  half fGlowFlickering = tex3D( volumeNoiseSampler, vPosition.yxz * 0.4 + fTime * 0.9 ).w;
+  fGlowFlickering *= saturate( fGlowNoise - 1.0 + BurningGlowFlickering ) / ( BurningGlowFlickering );
+  fGlowNoise *= 1.0 - fGlowFlickering;
+
+  return BurningGlowAmount * saturate( fGlowNoise );
+}
+
+//=======================================================================
+//  Lighting
+//=======================================================================
+
+///////////////// light vertex shader //////////////////
+
+vert2FragGeneral IlluminationVS(app2vertGeneral IN)
+{
+  vert2FragGeneral OUT;
+#ifndef OPENGL
+  OUT = (vert2FragGeneral)0;
+#endif
+
+  float3 vNorm = TangNormal(IN.Tangent, IN.Binormal);
+#if %_RT_DECAL_TEXGEN_2D || %_RT_DECAL_TEXGEN_3D
+  float3 vBinormalProjToSurface = DecalBinormal.xyz - dot( DecalBinormal.xyz, vNorm ) * vNorm;
+  float3 vTangentProjToSurface = DecalTangent.xyz - dot( DecalTangent.xyz, vNorm ) * vNorm;
+
+  IN.Binormal = float4( normalize( vBinormalProjToSurface ), 1 );
+  IN.Tangent = float4( normalize( vTangentProjToSurface ), -1 );
+#endif
+
+  vs_shared_output(IN, OUT, true);
+
+  return OUT;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void frag_unify_parameters( inout fragPass pPass )
+{
+  pPass.bRenormalizeNormal = true;
+  pPass.bHemisphereLighting = true;
+  pPass.bCustomComposition = true;
+
+#if %ENVCMSPEC
+  #if %_TT3_TCUBE
+    pPass.nReflectionMapping = REFLECT_CUBE;
+  #else
+    pPass.nReflectionMapping = REFLECT_SPHERE;
+  #endif
+
+  pPass.fReflection_Amount = EnvMapAmount;
+  pPass.fFresnel_Bias = FresnelBias;
+  pPass.fFresnel_Scale = FresnelScale;
+
+#endif 
+
+#if %OFFSETBUMPMAPPING || %PARALLAX_OCCLUSION_MAPPING
+  #if %PARALLAX_OCCLUSION_MAPPING
+    pPass.bParallaxOcclusionMapping = true;
+    pPass.fBumpHeightScale = PomDisplacement;
+    pPass.fSelfShadowStrength = SelfShadowStrength;
+  #elif %OFFSETBUMPMAPPING
+    pPass.bOffsetBumpMapping = true;
+    pPass.fBumpHeightScale = ObmDisplacement;
+  #endif
+#endif
+
+#if %BUMP_DIFFUSE
+  pPass.bDiffuseBump = true;
+#endif
+
+#if %VERTCOLORS
+  pPass.bVertexColors = true;
+#endif
+#if %ALPHAGLOW
+  pPass.bAlphaGlow = true;
+  pPass.fAlphaGlow_Multiplier = AmbientMultiplier;
+#endif
+
+#if %DETAIL_BUMP_MAPPING
+	pPass.bDetailBumpMapping = true;
+	pPass.vDetailBumpTilling = half2(DetailBumpTillingU, DetailBumpTillingV);
+	pPass.fDetailBumpScale = DetailBumpScale;
+	pPass.fDetailBlendAmount = DetailBlendAmount;
+#endif
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void frag_custom_begin( inout fragPass pPass )
+{
+  float4 baseTC = pPass.IN.baseTC;
+  float4 bumpTC = pPass.IN.bumpTC;
+
+  // load the diffuse texture
+#if ((%DECAL && (%_RT_DECAL_TEXGEN_2D || %_RT_DECAL_TEXGEN_3D)) || %CHARACTER_DECAL)
+  #if %_TT0_TCPROJ
+   pPass.cDiffuseMap = tex2Dproj(diffuseMapSampler_Decal, baseTC.xyzw);
+  #else
+   pPass.cDiffuseMap = GetTexture2D(diffuseMapSampler_Decal, baseTC.xy);
+  #endif 
+#endif
+
+  // Noise base coords
+  pPass.pCustom.vNoise = pPass.IN.vView + PS_WorldViewPos.xyz;
+//  pPass.pCustom.vNoise *= 0.1;
+
+  pPass.pCustom.cCustomGlowMap =
+    GetTexture2D(customGlowSampler, baseTC.xy);
+
+  pPass.pCustom.cCustomAshMap =
+    GetTexture2D(customAshSampler, baseTC.xy);
+
+  // load the gloss
+  pPass.cGlossMap = 1;
+#if %GLOSS_MAP
+  pPass.cGlossMap = GetTexture2D(glossMapSampler, baseTC.xy);
+
+  #ifndef %STAT_BRANCHING
+    #if %SPECULARPOW_GLOSSALPHA
+      pPass.fSpecPow *= pPass.cGlossMap.a;
+    #endif
+  #else
+    if (SPECULARPOW_GLOSSALPHA)
+      pPass.fSpecPow *= pPass.cGlossMap.a;
+  #endif
+
+#endif
+
+ #ifndef %STAT_BRANCHING
+  #if %GLOSS_DIFFUSEALPHA
+   pPass.cGlossMap = pPass.cDiffuseMap.a;
+  #endif
+ #else
+  if (GLOSS_DIFFUSEALPHA)
+   pPass.cGlossMap = pPass.cDiffuseMap.a;
+ #endif
+
+  // Output alpha
+  half fAlpha = pPass.cDiffuseMap.a;
+  if (pPass.bVertexColors)
+    fAlpha *= pPass.IN.Color.w;
+  else
+  if (pPass.bAlphaGlow)
+    fAlpha = pPass.IN.Color.w;
+
+#if %_RT_AMBIENT
+  fAlpha *= pPass.IN.Ambient.w;
+#endif
+
+#if %_RT_DECAL_TEXGEN_3D
+  fAlpha *= saturate(1 - pPass.IN.DistAtten.x * pPass.IN.DistAtten.x) * pPass.IN.DistAtten.y;
+#elif %_RT_DECAL_TEXGEN_2D
+  fAlpha *= saturate(1 - dot(pPass.IN.DistAtten, pPass.IN.DistAtten));
+#endif
+
+  pPass.fAlpha = fAlpha;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void frag_custom_per_light( inout fragPass pPass, inout fragLightPass pLight )
+{
+  if( pPass.bDiffuseBump )
+  {
+    pLight.fNdotL = dot(pPass.vNormal.xyz, pLight.vLight.xyz);              
+  }
+
+  pLight.fNdotL = saturate(pLight.fNdotL);
+
+  half3 cDiffuse = pLight.cDiffuse.xyz * pLight.fNdotL;                                            // 1 alu
+
+  half fSpec = Phong(pPass.vReflVec, pLight.vLight, pPass.fSpecPow); // 4 alu
+//  half fSpec = saturate(Blinn( pPass.vNormal.xyz, normalize(-pPass.IN.vView.xyz), pLight.vLight, pPass.fSpecPow));
+
+  half3 fVertexNdotL = dot(normalize(pLight.vLight.xyz), pPass.IN.vNormal.xyz); // dot(normalize(pPass.IN.vNormal.xyz), normalize(pLight.vLight.xyz));
+  fVertexNdotL = saturate(fVertexNdotL);
+  fSpec *= fVertexNdotL;
+
+  // Final specular term
+  half3 cSpecular = pLight.cSpecular.xyz * fSpec;			                                       		  // 1 alu
+
+  half3 cK = pLight.fOcclShadow * pLight.fFallOff * pLight.cFilter;                                // 2 alu 
+
+  pPass.cDiffuseAcc.xyz += cDiffuse.xyz * cK.xyz;                                                   // 1 alu
+  pPass.cSpecularAcc.xyz += cSpecular.xyz * cK.xyz;                                                 // 1 alu
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// remove cAmbient, store in cAmbientAcc
+void frag_custom_ambient( inout fragPass pPass, inout half3 cAmbient)
+{
+  if( pPass.bDiffuseBump )
+  {
+    // darken ambient if there is unoccluded area direction
+    cAmbient.xyz *= saturate( dot(pPass.vNormalDiffuse.xyz, pPass.vNormal.xyz) );
+  }
+
+  pPass.cAmbientAcc.xyz += cAmbient.xyz;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void frag_custom_end( inout fragPass pPass, inout half3 cFinal )
+{
+/*
+  half cColor = (saturate(pPass.cDiffuseMap.x-0.2)/0.8)*0.8+0.2;
+  half3 cDiffuse = ( pPass.cAmbientAcc.xyz + pPass.cDiffuseAcc.xyz ) * (cColor);
+*/
+
+  half fCustomAshAmount = Burning_GetNoise( pPass.pCustom.vNoise.xyz ) + pPass.pCustom.cCustomAshMap.w;
+  fCustomAshAmount = saturate( fCustomAshAmount );
+
+//  half fCustomAshAmount = saturate( pPass.pCustom.cCustomAshMap.w - 0.3 );
+  half3 cDiffuseMap = lerp( pPass.cDiffuseMap.xyz, pPass.pCustom.cCustomAshMap.xyz, fCustomAshAmount );
+  half3 cSpecularMap = pPass.cGlossMap.xyz * saturate( 1.0 - 4.0 * fCustomAshAmount );
+
+  half3 cDiffuse = ( pPass.cAmbientAcc.xyz + pPass.cDiffuseAcc.xyz ) * cDiffuseMap;  // 3 alu
+  if( pPass.nQuality != QUALITY_LOW )
+    cDiffuse.xyz *= MatDifColor.xyz;
+
+  if( pPass.nReflectionMapping )
+  {
+    // apply shading to environment map
+    pPass.cEnvironment.xyz *= ( pPass.cAmbientAcc.xyz + pPass.cDiffuseAcc.xyz ) ;                 // 2 alu
+    pPass.cSpecularAcc.xyz += pPass.cEnvironment.xyz;                                // 1 alu        
+  }
+
+  half3 cSpecular = pPass.cSpecularAcc.xyz * cSpecularMap;                    // 2 alu
+//  half3 cSpecular = pPass.cSpecularAcc.xyz * cColor;                    // 2 alu
+  if( pPass.nQuality != QUALITY_LOW )
+    cSpecular.xyz *= MatSpecColor.xyz;
+
+  cFinal.xyz += cDiffuse;
+  cFinal.xyz += cSpecular;
+
+  // Burning glow
+  half fGlowNoise = Burning_GetGlowNoise( pPass.pCustom.vNoise.xyz, pPass.IN.baseTC.xy, g_PS_AnimGenParams.z );
+  fGlowNoise *= 1.0 - 2.0 * saturate( abs( 0.5 - fCustomAshAmount ));
+
+  cFinal.xyz += pPass.pCustom.cCustomGlowMap * fGlowNoise * AmbientMultiplier;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include "fragLib.cfi"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+pixout IlluminationPS(vert2FragGeneral IN)
+{
+  pixout OUT = (pixout)0;
+
+  // Initialize fragPass structure
+  fragPass pPass = (fragPass) 0;
+
+  frag_unify(pPass, IN);
+
+  half4 cFinal = frag_shared_output(pPass);
+
+  HDROutput(OUT, cFinal, 1);  
+
+  OUT.Color.a = 1.0; 
+
+#if %_RT_SCATTERSHADE
+  OUT.Color.a = 0.0f; //fill alpha channel by zero for internal layer for scattering 
+#endif
+ 
+  return OUT;
+}
+
+//////////////////////////////// technique ////////////////
+
+technique General
+<
+  string Script =
+        "TechniqueZ=ZPass;"
+        "TechniqueGlow=BurningGlowPass;"
+        "TechniqueMotionBlur=MotionBlurPass;"
+        "TechniqueDetail=DetailPass;"
+        "TechniqueCaustics=CausticsPass;"
+//        "TechniqueCustomRender=CustomRenderPass;"
+        "TechniqueShadowGen=ShadowGen;"
+#ifdef D3D10
+        "TechniqueShadowGenDX10=ShadowGenGS;"
+#endif
+        "TechniqueShadowPass=ShadowPass;"
+>
+{
+  pass p0
+  {
+#if %DYN_BRANCHING || %PARALLAX_OCCLUSION_MAPPING
+    VertexShader = compile vs_3_0 IlluminationVS() GeneralVS;
+    PixelShader = compile ps_3_0 IlluminationPS() GeneralPS;
+#else
+    VertexShader = compile vs_Auto IlluminationVS() GeneralVS;
+    PixelShader = compile ps_Auto IlluminationPS() GeneralPS;
+#endif
+
+#if %CHARACTER_DECAL
+    ZEnable = true;
+    ZWriteEnable = false;
+
+    CullMode = Back;
+
+    AlphaBlendEnable = true;
+    SrcBlend = ZERO;
+    DestBlend = SRC_COLOR;
+#elif %DECAL
+    ZEnable = true;
+    ZWriteEnable = false;
+    ZFunc = LEqual;
+
+    CullMode = Back;
+#else
+    ZEnable = true;
+    ZWriteEnable = true;
+    CullMode = Back;
+#endif
+
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include "CommonZPass.cfi"
+#include "CommonGlowPass.cfi"
+
+///////////////// vertex input/output //////////////////
+struct vert2fragBurningGlow
+{
+  float4 HPosition  : POSITION;
+  float4 baseTC     : TEXCOORDN;
+  float4 vPosition  : TEXCOORDN;
+
+#if %_RT_DECAL_TEXGEN_2D || %_RT_DECAL_TEXGEN_3D
+  float3 DistAtten  : TEXCOORDN;
+#endif
+};
+
+///////////////// vertex shaders //////////////////
+vert2fragBurningGlow Burning_GlowPassVS( app2vertZGeneral IN )
+{
+  vert2fragBurningGlow OUT;
+#ifndef OPENGL
+  OUT = (vert2fragBurningGlow) 0;
+#endif
+
+  streamPos vertPassPos = (streamPos) 0;
+  streamPos_FromZ( IN, vertPassPos );
+
+#if %_RT_DECAL_TEXGEN_2D || %_RT_DECAL_TEXGEN_3D
+  float3 vBinormalProjToSurface = DecalBinormal.xyz - dot( DecalBinormal.xyz, vertPassPos.Normal ) * vertPassPos.Normal;
+  float3 vTangentProjToSurface = DecalTangent.xyz - dot( DecalTangent.xyz, vertPassPos.Normal ) * vertPassPos.Normal;
+
+  IN.Binormal = float4( normalize( vBinormalProjToSurface ), 1 );
+  IN.Tangent = float4( normalize( vTangentProjToSurface ), -1 );
+#endif
+
+  OUT.vPosition = vertPassPos.Position;
+  OUT.HPosition = Pos_VS_General( g_VS_ViewProjZeroMatr, vertPassPos );
+
+  float4 baseTC;
+#if %_RT_DECAL_TEXGEN_2D
+  // tex gen for 2d projected decals
+  baseTC.x = dot( DecalTangent, vertPassPos.Position );
+  baseTC.y = dot( DecalBinormal, vertPassPos.Position );
+  baseTC.zw = 0;
+
+  // attenuation for 2d projected decals
+  float3 DistAtten = vertPassPos.Position.xyz - DecalAtten.xyz;
+  DistAtten = mul( vertPassPos.ObjToTangentSpace, DistAtten );
+  OUT.DistAtten = DistAtten / DecalAtten.w;
+#elif %_RT_DECAL_TEXGEN_3D
+  // tex gen for 3d projected decals
+  baseTC.x = dot( DecalTangent, vertPassPos.Position );
+  baseTC.y = dot( DecalBinormal, vertPassPos.Position );
+  baseTC.zw = 0;
+
+  float3 distWS = vertPassPos.Position.xyz - DecalAtten.xyz;
+  float decalPlaneDist = dot( DecalNormal.xyz, distWS ); //float3 DecalNormal = normalize( cross( DecalBinormal.xyz, DecalTangent.xyz ) );
+
+  float invDecalSize = 1.0 / DecalAtten.w;
+
+  OUT.DistAtten.x = decalPlaneDist * invDecalSize;
+  OUT.DistAtten.y = saturate( dot( vertPassPos.Normal, DecalNormal ) * 10 );
+#else
+  baseTC = IN.baseTC;
+#endif
+
+  // reminder for Andrey, texture modifiers should work on all cases
+  _TCModify( baseTC, OUT.baseTC, vertPassPos.Position, vertPassPos.ObjToTangentSpace[2], TS_DIFFUSE );
+  //OUT.baseTC = _TCModify(baseTC, vPos, vNorm, _TCMMatrixDif, _TCGMatrixDif, true, false, 0);
+
+//  OUT.maskTC.xyzw = mul( baseTC, _TCMMatrixDecal );
+
+  float fAlphaRef = 0.01;
+#if %_RT_ALPHATEST
+  #if %_RT_INSTANCING_ATTR
+    fAlphaRef += IN.InstAlphaTest.w;
+  #else
+    fAlphaRef += AlphaTest.w;
+  #endif
+#endif
+
+  OUT.baseTC.z = saturate( fAlphaRef );
+
+  return OUT;
+}
+
+pixout Burning_GlowPassPS( vert2fragBurningGlow IN )
+{
+  pixout OUT = (pixout) 0;
+
+  half3 vNoise = IN.vPosition.xyz; // IN.vView + PS_WorldViewPos.xyz;
+  half4 cCustomGlowMap = GetTexture2D( customGlowSampler, IN.baseTC.xy );
+  half4 cCustomAshMap = GetTexture2D( customAshSampler, IN.baseTC.xy );
+
+  half fCustomAshAmount = Burning_GetNoise( vNoise.xyz ) + cCustomAshMap.w;
+  fCustomAshAmount = saturate( fCustomAshAmount );
+
+  half fGlowNoise = Burning_GetGlowNoise( vNoise.xyz, IN.baseTC.xy, g_PS_AnimGenParams.z );
+
+  fGlowNoise *= 1.0 - saturate( abs( 1.0 - fCustomAshAmount ));
+
+  OUT.Color = (half4) GlowParams;
+  OUT.Color *= BurningGlowAmount * cCustomGlowMap * fGlowNoise;
+
+#if %_RT_DECAL_TEXGEN_3D
+  OUT.Color.xyz *= saturate( 1 - IN.DistAtten.x * IN.DistAtten.x ) * IN.DistAtten.y;
+#elif %_RT_DECAL_TEXGEN_2D
+  OUT.Color.xyz *= saturate( 1 - dot(IN.DistAtten, IN.DistAtten ));
+#endif
+
+#if %_RT_ALPHATEST
+  clip( cCustomGlowMap.w - IN.baseTC.z );
+#endif
+
+  OUT.Color.w = 1.0;
+
+  return OUT;
+}
+
+technique BurningGlowPass
+{
+  pass p0
+  {
+    VertexShader = compile vs_Auto Burning_GlowPassVS() GlowVS;
+    PixelShader = compile ps_Auto Burning_GlowPassPS() GlowPS;
+
+    ZEnable = true;
+    ZWriteEnable = false;
+    ZFunc = LEqual;
+
+    CullMode = Back;
+
+    AlphaBlendEnable = true;
+    SrcBlend = ONE;
+    DestBlend = ONE;
+  }
+}
+
+//////////////////////////////// Common techniques ////////////////
+
+#include "CommonMotionBlurPass.cfi"
+#include "CommonDetailPass.cfi"
+#include "CommonCausticsPass.cfi"
+#include "CommonViewsPass.cfi"
+#include "ShadowCommon.cfi"
+#include "CommonShadowGenPass.cfi"
+#ifdef D3D10
+	#include "CommonShadowGenPassGS.cfi"
+#endif
+#include "CommonShadowPass.cfi"
+
+/////////////////////// eof ///

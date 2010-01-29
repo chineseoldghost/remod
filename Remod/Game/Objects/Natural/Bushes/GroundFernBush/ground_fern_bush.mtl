@@ -1,0 +1,35 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="Ground_Fern_Bush" MtlFlags="128" Shader="Vegetation" GenMask="268632320" SurfaceType="mat_leaves" Diffuse="0.48627454,0.48627454,0.48627454" Specular="0.50196081,0.52941179,0.59215689" Emissive="0,0,0" Shininess="10" Opacity="1" AlphaTest="0.75">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/bushes/groundfernbush/ground_fern_bush_leaf_a.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/natural/bushes/groundfernbush/ground_fern_bush_leaf_a_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/natural/bushes/groundfernbush/ground_fern_bush_leaf_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_wood_003_ddn.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams BackViewDep="0" BackDiffuse="0.71764702,0.75294101,0.44705901" BackDiffuseMultiplier="0.5" bendDetailFrequency="0.57999998" bendDetailLeafAmplitude="0.079000004" bendDetailBranchAmplitude="0.050000001" bendDetailPhase="100" BackShadowBias="0.2" DetailBumpTillingU="6" DetailBumpTillingV="6" DetailBumpScale="2" DetailBlendAmount="0"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="obstruct_bending" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_canopy" Diffuse="0.84705901,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.2">
+   <Textures />
+  </Material>
+  <Material Name="obstruct_AI" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_canopy" Diffuse="0.84705901,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.2">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

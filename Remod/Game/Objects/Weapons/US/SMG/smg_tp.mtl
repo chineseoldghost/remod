@@ -1,0 +1,22 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="smg" MtlFlags="128" Shader="Metal" GenMask="8194" SurfaceType="" Diffuse="0.494118,0.494118,0.494118" Specular="0.541176,0.541176,0.541176" Emissive="0,0,0" Shininess="1" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/us/smg/textures/smg.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/us/smg/textures/smg.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.259" AnisotropicShape="0.218"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_thick" Diffuse="1,0.588235,0.588235" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams BumpOffset="0.04" DebugUVScale="64"/>
+ <MaterialLayers />
+</Material>

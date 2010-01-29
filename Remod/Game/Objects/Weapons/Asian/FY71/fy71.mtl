@@ -1,0 +1,53 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="material_a" MtlFlags="128" Shader="Metal" GenMask="268443648" SurfaceType="mat_metal_thick_weapons" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.3921569,0.3921569,0.3921569" Emissive="0,0,0" Shininess="4" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/asian/fy71/textures/base_a.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/asian/fy71/textures/base_a_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/asian/fy71/textures/base_a_ddn.tif" Filter="7">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.30000001" AnisotropicShape="0.75"/>
+  </Material>
+  <Material Name="material_b" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="mat_metal_thick_weapons" Diffuse="0.28235295,0.28235295,0.28235295" Specular="0.47058827,0.47058827,0.47058827" Emissive="0,0,0" Shininess="4" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/asian/fy71/textures/base_b.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/asian/fy71/textures/base_b_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/asian/fy71/textures/base_b_ddn.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/weapons/us/socom/socom_env.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.2" AnisotropicShape="0.5" ReflectionAmount="0.89999998" FresnelBias="0.30000001" FresnelScale="1"/>
+  </Material>
+  <Material Name="railing" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="mat_metal_thick_weapons" Diffuse="0.28235295,0.28235295,0.28235295" Specular="0.47058827,0.47058827,0.47058827" Emissive="0,0,0" Shininess="3.5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/us/scar/textures/back_rail.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/us/scar/textures/back_rail_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/us/scar/textures/back_rail_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/weapons/us/socom/socom_env4.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.175" AnisotropicShape="0.25" ReflectionAmount="0.34999999" FresnelBias="0.18000001" FresnelScale="1.65"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

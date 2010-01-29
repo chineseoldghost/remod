@@ -1,0 +1,259 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="roof_asphalt" MtlFlags="128" Shader="Illum" GenMask="272646160" SurfaceType="mat_concrete" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.052941199,0.052941199,0.052941199" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/airfield/parking_lot/support_building_main_roof.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/architecture/airfield/parking_lot/support_building_main_roof_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_concr_007_ddn.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1" DetailBumpTillingU="1" DetailBumpTillingV="1" DetailBumpScale="2" DetailBlendAmount="0"/>
+  </Material>
+  <Material Name="concrete_a" MtlFlags="128" Shader="Illum" GenMask="272646144" SurfaceType="mat_concrete" Diffuse="0.44705886,0.44705886,0.44705886" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/harbour/control_center/control_center_concr_dirt.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_concr_002_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1" DetailBumpTillingU="3" DetailBumpTillingV="3" DetailBumpScale="1" DetailBlendAmount="0"/>
+  </Material>
+  <Material Name="metal_structure_a" MtlFlags="128" Shader="Illum" GenMask="272646144" SurfaceType="mat_metal_smooth" Diffuse="0.33725491,0.33725491,0.33725491" Specular="0.37647063,0.37647063,0.37647063" Emissive="0,0,0" Shininess="6" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/multiplayer/prototype_factory/metal_a.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/multiplayer/prototype_factory/metal_a_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_003_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1" DetailBumpTillingU="5" DetailBumpTillingV="5" DetailBumpScale="0.5" DetailBlendAmount="0"/>
+  </Material>
+  <Material Name="metal_structure_b" MtlFlags="128" Shader="Illum" GenMask="272646288" SurfaceType="mat_metal_smooth" Diffuse="0.27058825,0.27058825,0.27058825" Specular="1,1,1" Emissive="0,0,0" Shininess="6" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/multiplayer/prototype_factory/metal_a.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/architecture/multiplayer/prototype_factory/metal_a.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Bumpmap" File="objects/library/architecture/multiplayer/prototype_factory/metal_a_ddn.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/multiplayer/prototype_factory/metal_a_ddn.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/skys/incomingrain/box_12.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_001_ddn.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams EnvMapAmount="0.25" FresnelScale="2.23" FresnelBias="0" AmbientMultiplier="1" DetailBumpTillingU="5" DetailBumpTillingV="5" DetailBumpScale="0.5" DetailBlendAmount="0"/>
+  </Material>
+  <Material Name="metal_generic" MtlFlags="128" Shader="Illum" GenMask="272646160" SurfaceType="mat_metal_rough" Diffuse="0.30588236,0.29019609,0.27843139" Specular="0.54901999,0.54901999,0.54901999" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/airfield/air_control_tower/metal_gen.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/architecture/airfield/air_control_tower/metal_gen_gloss.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_005_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1" DetailBumpTillingU="4" DetailBumpTillingV="4" DetailBumpScale="1" DetailBlendAmount="0"/>
+  </Material>
+  <Material Name="window" MtlFlags="128" Shader="Illum" GenMask="272629888" SurfaceType="mat_glass_unbreakable" Diffuse="0.10980393,0.10980393,0.10980393" Specular="0.4784314,0.4784314,0.46274513" Emissive="0,0,0" Shininess="6" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/multiplayer/prototype_factory/window_black.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/skys/evening_overcast/box_5.dds" TexType="3">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams EnvMapAmount="2" FresnelScale="4.8699999" FresnelBias="0.050000001" AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="dirt_a" MtlFlags="160" Shader="Illum" GenMask="301989888" SurfaceType="mat_nodraw" Diffuse="0.50196099,0.50196099,0.50196099" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.80000001">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/decal/dirty_rust/dirt_043.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="signs" MtlFlags="160" Shader="Illum" GenMask="301989888" SurfaceType="mat_nodraw" Diffuse="0.37254903,0.37254903,0.37254903" Specular="0.25490201,0.25490201,0.25490201" Emissive="0,0,0" Shininess="10" Opacity="0.74299997">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/multiplayer/vehicle_factory/building_signs.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="concrete_ground_b" MtlFlags="128" Shader="Illum" GenMask="272646144" SurfaceType="mat_concrete" Diffuse="0.41960788,0.41568631,0.4039216" Specular="0.050980397,0.050980397,0.050980397" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/harbour/warehouse/harbour_warehouse_floor_asphalt2.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_concr_007_ddn.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1" DetailBumpTillingU="2" DetailBumpTillingV="2" DetailBumpScale="1" DetailBlendAmount="0"/>
+  </Material>
+  <Material Name="corugated_metal" MtlFlags="128" Shader="Metal" GenMask="268439552" SurfaceType="mat_metal_sheet" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.50196099,0.50196099,0.50196099" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/multiplayer/vehicle_factory/metalroof_blue.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/airfield/terminal/metalroof1_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.428" Glossiness="0.70300001"/>
+  </Material>
+  <Material Name="corugated_metal_storage" MtlFlags="128" Shader="Illum" GenMask="272646160" SurfaceType="mat_metal_sheet" Diffuse="0.2392157,0.27450982,0.29411766" Specular="0.50588238,0.50588238,0.50588238" Emissive="0,0,0" Shininess="3" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/airfield/hangar/metal_support_3.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/architecture/airfield/hangar/metal_support_3_gloss.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/airfield/hangar/metal_support_3_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_005_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1" DetailBumpTillingU="4" DetailBumpTillingV="4" DetailBumpScale="1" DetailBlendAmount="0"/>
+  </Material>
+  <Material Name="metal_generic" MtlFlags="128" Shader="Illum" GenMask="272646176" SurfaceType="mat_metal_sheet" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.56470603,0.56470603,0.56470603" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/aircraftcarrier/textures/hull/metalbase2.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_004_ddn.tif">
+     <TexMod TileU="2" TileV="3"/>
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1" DetailBumpTillingU="3" DetailBumpTillingV="4" DetailBumpScale="1" DetailBlendAmount="0"/>
+  </Material>
+  <Material Name="concrete_white" MtlFlags="128" Shader="Illum" GenMask="272629776" SurfaceType="mat_concrete" Diffuse="0.42745101,0.41960788,0.39607847" Specular="0.14901961,0.14901961,0.14901961" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/concrete structure/concrete_dirty2.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/architecture/concrete structure/concrete_dirty_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/concrete structure/concrete_dirty_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="substations" MtlFlags="128" Shader="Metal" GenMask="268439552" SurfaceType="mat_metal_smooth" Diffuse="0.43529415,0.43529415,0.43529415" Specular="0.49803925,0.49803925,0.49803925" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/multiplayer/vehicle_factory/substations.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/architecture/multiplayer/vehicle_factory/substations_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/multiplayer/vehicle_factory/substations_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.368" Glossiness="0.75"/>
+  </Material>
+  <Material Name="dirt_b" MtlFlags="160" Shader="Illum" GenMask="301989888" SurfaceType="mat_nodraw" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.80000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/village/decals_a_01.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="no_draw" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_nodraw" Diffuse="1,0,0.019607844" Specular="0.50196099,0.50196099,0.50196099" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="metal_sheet" MtlFlags="128" Shader="Metal" GenMask="268472320" SurfaceType="mat_metal_sheet" Diffuse="0.32156864,0.34901962,0.4039216" Specular="1.36471,1.36471,1.36471" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/multiplayer/vehicle_factory/metal_sheet.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/architecture/multiplayer/vehicle_factory/metal_sheet_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Bumpmap" File="objects/library/architecture/multiplayer/vehicle_factory/metal_sheet_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_004_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31400001" Glossiness="0.75" DetailBumpTillingU="4" DetailBumpTillingV="3" DetailBumpScale="0.63999999" DetailBlendAmount="0"/>
+  </Material>
+  <Material Name="metal_white" MtlFlags="128" Shader="Metal" GenMask="268476432" SurfaceType="mat_plastic" Diffuse="0.32549021,0.32549021,0.32549021" Specular="0.32549021,0.32549021,0.32549021" Emissive="0,0,0" Shininess="0.72000003" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/aircraftcarrier/textures/walls/base_x_white.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/library/architecture/aircraftcarrier/textures/reflections1.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_001_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.55699998" AnisotropicShape="0.25" ReflectionAmount="0.25" FresnelBias="0" FresnelScale="1" DetailBumpTillingU="6" DetailBumpTillingV="3" DetailBumpScale="0.47" DetailBlendAmount="0"/>
+  </Material>
+  <Material Name="hvsc" MtlFlags="128" Shader="Illum" GenMask="272629760" SurfaceType="mat_metal_sheet" Diffuse="0.69411767,0.69411767,0.69411767" Specular="0.21176501,0.21176501,0.21176501" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/multiplayer/vehicle_factory/hvsc_roof.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="stair_concrete" MtlFlags="128" Shader="Illum" GenMask="268435472" SurfaceType="mat_concrete" Diffuse="0.48627454,0.43921572,0.41960788" Specular="0.301961,0.301961,0.301961" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/sidewalk/curb.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/architecture/sidewalk/curb_spec.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="proxy_metal" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_rough" Diffuse="0.152941,0.47451001,0.79607898" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="proxy_concrete" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_concrete" Diffuse="0.14901961,0.47450984,0.7960785" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="player_collision" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_concrete" Diffuse="0.89019614,0.050980397,0.050980397" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="proxy_railing" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_thick" Diffuse="0.14901961,0.47450984,0.7960785" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

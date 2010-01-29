@@ -1,0 +1,28 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="SubMtl1" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="mat_metal_thick_weapons" Diffuse="0.227451,0.227451,0.227451" Specular="0.4784314,0.4784314,0.4784314" Emissive="0,0,0" Shininess="4" Opacity="1" GlowAmount="5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/asian/fy71/textures/fy71_inc_clip.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/asian/fy71/textures/fy71_inc_clip_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/asian/fy71/textures/fy71_inc_clip_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/weapons/us/socom/socom_env.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Decal" File="objects/weapons/asian/fy71/textures/fy71_inc_clip_decal.tif">
+     <TexMod TexMod_UOscillatorType="2" TexMod_VOscillatorType="2" TexMod_UOscillatorRate="1" TexMod_VOscillatorRate="1" TexMod_UOscillatorAmplitude="1" TexMod_VOscillatorAmplitude="1"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.229" AnisotropicShape="0.61400002" ReflectionAmount="0.25" FresnelBias="0.226" FresnelScale="1"/>
+  </Material>
+  <Material Name="SubMtl2" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_thick_weapons" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

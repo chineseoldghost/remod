@@ -1,0 +1,872 @@
+BackupNameAttachment=" Build(6729) Date(22 Jan 2010) Time(17 42 33)"  -- used by backup system
+ 
+Log Started at Friday, January 22, 2010 17:42:33
+Running 32 bit version
+Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
+FileVersion: 1.1.1.6729
+ProductVersion: 1.1.1.6729
+Using STLport C++ Standard Library implementation
+ 
+Added MOD directory <Mods\Remod\> to CryPak
+--- CPU detection ---
+Total number of logical processors: 2
+Number of available logical processors: 2
+
+Processor 0:
+CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+Family: 6, Model: 15, Stepping: 6
+FPU: On-Chip
+CPU Speed (estimated): 1997.289130 MHz
+MMX: not present
+SSE: present
+3DNow!: not present
+Serial number not present or disabled
+
+Processor 1:
+CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+Family: 6, Model: 15, Stepping: 6
+FPU: On-Chip
+CPU Speed (estimated): 1997.288205 MHz
+MMX: not present
+SSE: present
+3DNow!: not present
+Serial number not present or disabled
+
+Total number of system cores: 2
+Number of cores available to process: 2
+---------------------
+Windows 32 bit (build 6.1.7600)
+System language: Dutch
+Windows Directory: "C:\Windows"
+Prerequisites...
+* Installation of KB940105 hotfix required: no! (either not needed or already installed)
+Local time is 17:42:33 01/22/10, system running for 273 minutes
+1521MB physical memory installed, 916MB available, 2047MB virtual memory installed, 39 percent of memory in use
+PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
+Current display mode is 1440x900x32, VGA
+IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
+--------------------------------------------------------------------------------
+[Error] Error: ConsoleVariableGroup 'sys_spec_Shading' key 'r_glow' is not missing in default
+Stream Engine Initialization
+Network initialization
+[net] using iocp socket io management
+Physics initialization
+MovieSystem initialization skipped for dedicated server
+Renderer initialization
+Console initialization
+Time initialization
+Font initialization
+AI initialization
+Initializing Animation System
+Initializing 3D Engine
+Script System Initialization
+Entity system initialization
+Initializing AI System
+[PlayerProfiles] Login of user 'Charlie the Unicorn' successful.
+[PlayerProfiles] Found 2 profiles.
+   Profile 0 : 'Blablah'
+   Profile 1 : 'default'
+[GameProfiles]: Successfully activated profile 'Blablah' for user 'Charlie the Unicorn'
+    $3sv_servername = $6Blablah's Server $5[DUMPTODISK]$4
+    $3sv_password = $6 $5[DUMPTODISK]$4
+    $3sv_cheatprotection = $60 $5[]$4
+    $3sv_maxplayers = $616 $5[DUMPTODISK]$4
+    $3g_roundlimit = $63 $5[]$4
+    $3g_roundtime = $630 $5[]$4
+    $3g_tk_punish = $61 $5[]$4
+    $3g_tk_punish_limit = $65 $5[]$4
+    $3g_timelimit = $60 $5[]$4
+    $3g_MPDeathCam = $60 $5[]$4
+    $3hud_alternateCrosshairSpread = $61 $5[]$4
+    $3e_cbuffer = $61 $5[]$4
+[Warning] Unknown command: r_geomInstancing = 0
+    $3es_OnDemandPhysics = $60 $5[]$4
+    $3r_CullGeometryForLights = $61 $5[]$4
+    $3e_vegetation_static_instancing = $60 $5[]$4
+    $3r_TerrainAO_FadeDist = $61 $5[]$4
+    $3e_vegetation_static_instancing = $60 $5[]$4
+    $3e_gsm_range = $63 $5[]$4
+    $3e_gsm_cache = $60 $5[]$4
+    $3e_ram_maps = $61 $5[DUMPTODISK, REQUIRE_LEVEL_RELOAD]$4
+    $3e_dissolve = $61 $5[]$4
+    $3r_VegetationSpritesTexRes = $6128 $5[]$4
+    $3e_particles_min_draw_pixels = $61 $5[]$4
+    $3hud_mpNamesDuration = $60 $5[]$4
+    $3sv_gamerules = $6PowerStruggle $5[]$4
+[net 16:42:35.064] network hostname: iMac7
+[net 16:42:35.067]   ip:192.168.0.192
+[net 16:42:35.067]   ip:5.182.209.7
+-----------------------------------------------------
+*LOADING: Level multiplayer/ps/Mesa loading time: 12.66 seconds
+-----------------------------------------------------
+    $3sv_gamerules = $6TeamInstantAction $5[]$4
+-----------------------------------------------------
+*LOADING: Level multiplayer/ia/steelmill loading time: 2.41 seconds
+-----------------------------------------------------
+[net 16:45:05.658] Disconnect ip103.dyn1.gent2.schedom-europe.net:58860; profid=146583404; cause=0; msg='Timeout occurred; no packet for 31.5 seconds'
+CHAT ins to ALL:
+   :p
+CHAT ins to ALL:
+   more like it
+CHAT Blablah to ALL:
+   :)
+CHAT Blablah to ALL:
+   nu nog shadow naar hier krijgen
+CHAT ins to ALL:
+   lol
+CHAT Blablah to ALL:
+   ah, de AYs
+CHAT ins to ALL:
+   vergeten da er geen lean meer is
+CHAT ins to ALL:
+   :p
+CHAT Blablah to ALL:
+   ocharme, lol
+CHAT Blablah to ALL:
+   AY's werken EINDELIJK
+CHAT Blablah to ALL:
+   shadow...
+CHAT Blablah to ALL:
+   hij komt
+CHAT Blablah to ALL:
+   hoop ik
+CHAT ins to ALL:
+   geen hit indicators?
+CHAT Blablah to ALL:
+   alleen geluid
+CHAT Blablah to ALL:
+   zijn die uhm
+CHAT Blablah to ALL:
+   raak mij is
+CHAT Blablah to ALL:
+   eeeh
+CHAT Blablah to ALL:
+   die ronde rond uw crosshair zou der moete zijn
+CHAT Blablah to ALL:
+   zonder crosshair dan
+CHAT Blablah to ALL:
+   crytek is nogal onduidelijk over welke hit indicator welke is
+CHAT Blablah to ALL:
+   te verleidelijk :D
+CHAT Blablah to ALL:
+   LAW is nutteloos tegen inf
+CHAT Blablah to ALL:
+   en shadow laat natuurlijk op zich wachten...
+CHAT ins to ALL:
+   :p
+CHAT Blablah to ALL:
+   duurt altijd voordat em effectief komt lol
+CHAT Blablah to ALL:
+   ah, daar
+CHAT OMG! Shadow to ALL:
+   hai thar
+CHAT Blablah to ALL:
+   hey
+CHAT OMG! Shadow to ALL:
+   :D
+CHAT Blablah to ALL:
+   ah, wtf
+CHAT Blablah to ALL:
+   tagged you but you're gone again :<
+CHAT Blablah to ALL:
+   well, yeah
+CHAT Blablah to ALL:
+   use single shot at long range like that guys
+CHAT Blablah to ALL:
+   that hurt
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   fuck :P
+CHAT OMG! Shadow to ALL:
+   got snipe weapon :P
+CHAT Blablah to ALL:
+   eh, did anyone grab an SMG?
+CHAT ins to ALL:
+   nein
+CHAT Blablah to ALL:
+   fuck i must've fucked it up
+CHAT OMG! Shadow to ALL:
+   negative
+CHAT Blablah to ALL:
+   even though it worked in sb2
+CHAT Blablah to ALL:
+   not spawning here :<
+CHAT OMG! Shadow to ALL:
+   tagged him
+CHAT Blablah to ALL:
+   eh, smg spawned here
+CHAT Blablah to ALL:
+   noooo, LOL
+CHAT Blablah to ALL:
+   OOOOH
+CHAT Blablah to ALL:
+   4hp
+CHAT OMG! Shadow to ALL:
+   damn i saw you,even clocked but i had to change and GRRR
+CHAT OMG! Shadow to ALL:
+   D:
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   shadow, you still looking at the roof?
+CHAT OMG! Shadow to ALL:
+   maybe
+CHAT Blablah to ALL:
+   well
+CHAT Blablah to ALL:
+   don't shoot me, but tell me if my sprinting anim is different
+CHAT OMG! Shadow to ALL:
+   cant tell,looks normal though
+CHAT Blablah to ALL:
+   where are you?
+CHAT Blablah to ALL:
+   ah, at the smg?
+CHAT OMG! Shadow to ALL:
+   nah ive gauss
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT Blablah to ALL:
+   i need to check if the change works ingame
+CHAT Blablah to ALL:
+   it worked in sb2, but you never really know...
+CHAT Blablah to ALL:
+   come down
+CHAT Blablah to ALL:
+   so close :(
+CHAT Blablah to ALL:
+   grab a rifle and sprint
+CHAT Blablah to ALL:
+   oh yeah
+CHAT Blablah to ALL:
+   works fine
+CHAT OMG! Shadow to ALL:
+   gewd
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   we could do IA
+CHAT Blablah to ALL:
+   god damn, lol
+CHAT Blablah to ALL:
+   this one SMG isn't spawning
+CHAT Blablah to ALL:
+   :/
+CHAT Blablah to ALL:
+   and i didn't fuck with it
+CHAT OMG! Shadow to ALL:
+   ohshit
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   damnit, lol
+CHAT OMG! Shadow to ALL:
+   phew
+CHAT Blablah to ALL:
+   did i hit you?
+CHAT OMG! Shadow to ALL:
+   kinda,65 hp
+CHAT Blablah to ALL:
+   are audio hit indicators off? :/
+CHAT Blablah to ALL:
+   ah no
+CHAT Blablah to ALL:
+   bah, i need to give newbies a chance to not suck too
+CHAT Blablah to ALL:
+   fuck
+CHAT Blablah to ALL:
+   haha
+CHAT Blablah to ALL:
+   the nearmiss sound of the gauss is cool
+CHAT Blablah to ALL:
+   oooh 
+CHAT OMG! Shadow to ALL:
+   awesome ninja moves
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   you?
+CHAT OMG! Shadow to ALL:
+   havent seen it:P?
+CHAT Blablah to ALL:
+   no
+CHAT Blablah to ALL:
+   is ins sneaking up on me?
+CHAT OMG! Shadow to ALL:
+   nop
+CHAT OMG! Shadow to ALL:
+   or
+CHAT OMG! Shadow to ALL:
+   maybe
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   that hurts, you know
+CHAT Blablah to ALL:
+   wtf
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT Blablah to ALL:
+   lolwut
+CHAT Blablah to ALL:
+   not a gauss again
+CHAT Blablah to ALL:
+   that was nice
+CHAT OMG! Shadow to ALL:
+   fuck reload :P
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   i still wonder what this is like with more people...
+CHAT Blablah to ALL:
+   ouch
+CHAT Blablah to ALL:
+   did i just fly?
+CHAT OMG! Shadow to ALL:
+   a bit
+CHAT Blablah to ALL:
+   i went all up into the air on my screen, lol
+CHAT OMG! Shadow to ALL:
+   ye same for me when i wrote LOL earlier
+CHAT Blablah to ALL:
+   OOOOOOH
+CHAT OMG! Shadow to ALL:
+   :D
+CHAT Blablah to ALL:
+   OH SNAP
+CHAT OMG! Shadow to ALL:
+   Damn i hope sniping is good in bfbc2 ,i were a good one in bf
+CHAT OMG! Shadow to ALL:
+   2
+CHAT OMG! Shadow to ALL:
+   clanwars and such
+CHAT Blablah to ALL:
+   i was an insane sniper for a while in bf2
+CHAT Blablah to ALL:
+   wore off though
+CHAT OMG! Shadow to ALL:
+   friend of mine and i made this 3km longshots from the aircraf
+CHAT OMG! Shadow to ALL:
+   t carrier
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT Blablah to ALL:
+   :o
+CHAT OMG! Shadow to ALL:
+   it was hilarious
+CHAT ins to ALL:
+   haha
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   oh, there you are
+CHAT OMG! Shadow to ALL:
+   snap
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   :D
+CHAT Blablah to ALL:
+   shadow you whore
+CHAT OMG! Shadow to ALL:
+   :P
+    $3sv_gamerules = $6InstantAction $5[]$4
+-----------------------------------------------------
+*LOADING: Level multiplayer/ia/steelmill loading time: 0.97 seconds
+-----------------------------------------------------
+CHAT Blablah to ALL:
+   need to see the us suit :<
+CHAT OMG! Shadow to ALL:
+   smg is like uber low dmg
+CHAT Blablah to ALL:
+   is it?
+CHAT OMG! Shadow to ALL:
+   well ye
+CHAT Blablah to ALL:
+   it's supposed to be low
+CHAT Blablah to ALL:
+   the death impulses are fucked
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   owned so badly
+CHAT Blablah to ALL:
+   sorry, ins
+CHAT OMG! Shadow to ALL:
+   just standing there
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   now you know how it feels, jay :P
+CHAT OMG! Shadow to ALL:
+   GOOD
+CHAT Blablah to ALL:
+   no gauss time?
+CHAT OMG! Shadow to ALL:
+   idc,give me snipe or gauss
+CHAT OMG! Shadow to ALL:
+   Just need something snipeish
+CHAT Blablah to ALL:
+   nice suit
+CHAT Blablah to ALL:
+   :D
+CHAT OMG! Shadow to ALL:
+   oh thanks
+CHAT OMG! Shadow to ALL:
+   same
+CHAT OMG! Shadow to ALL:
+   :D
+CHAT Blablah to ALL:
+   can you switch to strength for a sec?
+CHAT OMG! Shadow to ALL:
+   but rly,the red glowing visor
+CHAT OMG! Shadow to ALL:
+   suit looks smexy
+CHAT Blablah to ALL:
+   and back
+CHAT Blablah to ALL:
+   damnit the helmet still gets a little lighter
+CHAT Blablah to ALL:
+   in smode
+CHAT OMG! Shadow to ALL:
+   show me
+CHAT Blablah to ALL:
+   only the nanosuit straps
+CHAT OMG! Shadow to ALL:
+   oh ye
+CHAT Blablah to ALL:
+   it's not in the material :/
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT OMG! Shadow to ALL:
+   lets search ins
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT Blablah to ALL:
+   :D
+CHAT Blablah to ALL:
+   STEALZ UR AMMOE
+CHAT OMG! Shadow to ALL:
+   D:
+CHAT OMG! Shadow to ALL:
+   put put put!
+CHAT OMG! Shadow to ALL:
+   remember are 522?
+CHAT Blablah to ALL:
+   yeah
+CHAT OMG! Shadow to ALL:
+   just saw it few days ago
+CHAT Blablah to ALL:
+   this teamwork reminds me :P
+CHAT OMG! Shadow to ALL:
+   damn engine limitation
+CHAT OMG! Shadow to ALL:
+   :/
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   we're uhm
+CHAT Blablah to ALL:
+   effe made this huge map
+CHAT Blablah to ALL:
+   and i told him about the problem
+CHAT Blablah to ALL:
+   he told me mwll has gigantic heightmaps
+CHAT OMG! Shadow to ALL:
+   mh
+CHAT Blablah to ALL:
+   8128x8128
+CHAT OMG! Shadow to ALL:
+   woot
+CHAT Blablah to ALL:
+   so i pm'd one of their mappers
+CHAT OMG! Shadow to ALL:
+   but ye the maps are huge
+CHAT Blablah to ALL:
+   but obviously he didn't answer
+CHAT OMG! Shadow to ALL:
+   maybe they found a trick dunno
+CHAT Blablah to ALL:
+   yeah
+CHAT OMG! Shadow to ALL:
+   and the project leader is one of crytek afaik
+CHAT Blablah to ALL:
+   that's why i pmed him
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   Cry Jey right?
+CHAT Blablah to ALL:
+   he is
+CHAT Blablah to ALL:
+   cry-criminal
+CHAT OMG! Shadow to ALL:
+   ah yeah
+CHAT Blablah to ALL:
+   i still really want to test this in PS
+CHAT OMG! Shadow to ALL:
+   thur!
+CHAT OMG! Shadow to ALL:
+   somewhere south
+CHAT OMG! Shadow to ALL:
+   there
+CHAT OMG! Shadow to ALL:
+   :D
+CHAT Blablah to ALL:
+   ah i see
+CHAT Blablah to ALL:
+   awesome, lol
+CHAT OMG! Shadow to ALL:
+   ohai
+CHAT OMG! Shadow to ALL:
+   i think hes afk
+CHAT Blablah to ALL:
+   he is
+CHAT OMG! Shadow to ALL:
+   btw why the fuck is there a team chat in ia?
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   there is?
+CHAT OMG! Shadow to ALL:
+   lol!
+CHAT Blablah to ALL:
+   there isn't
+CHAT Blablah to ALL:
+   it doesn't work
+CHAT OMG! Shadow to ALL:
+   oh i see
+CHAT OMG! Shadow to ALL:
+   ye
+CHAT OMG! Shadow to ALL:
+   lal!
+CHAT Blablah to ALL:
+   he's not afk
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   macro? probably?
+CHAT OMG! Shadow to ALL:
+   :D
+CHAT Blablah to ALL:
+   i need to reduce the chorus on the cloak sound
+CHAT Blablah to ALL:
+   i think
+CHAT Blablah to ALL:
+   lal
+CHAT OMG! Shadow to ALL:
+   lets move him
+CHAT Blablah to ALL:
+   i could switch to mesa or something
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   NOOOOOO
+CHAT OMG! Shadow to ALL:
+   i just farted
+CHAT OMG! Shadow to ALL:
+   sorry
+CHAT OMG! Shadow to ALL:
+   x
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   woops
+CHAT OMG! Shadow to ALL:
+   IN THE NUTS
+CHAT OMG! Shadow to ALL:
+   HAHA
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   remember the underwater hip thrusting?
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   no? :P
+CHAT OMG! Shadow to ALL:
+   yes i do
+CHAT Blablah to ALL:
+   ah :P
+CHAT OMG! Shadow to ALL:
+   ninja move time
+CHAT OMG! Shadow to ALL:
+   you know that one thingie on the mao with the industry thingi
+CHAT OMG! Shadow to ALL:
+   es
+CHAT OMG! Shadow to ALL:
+   the uhm " tower"
+CHAT Blablah to ALL:
+   that?
+CHAT OMG! Shadow to ALL:
+   nah its an other mao
+CHAT Blablah to ALL:
+   the smokestack?
+CHAT Blablah to ALL:
+   oh
+CHAT OMG! Shadow to ALL:
+   factory?
+CHAT Blablah to ALL:
+   uh
+CHAT OMG! Shadow to ALL:
+   i cant remember the name
+CHAT Blablah to ALL:
+   refinery?
+CHAT Blablah to ALL:
+   beach?
+CHAT OMG! Shadow to ALL:
+   oh ye could be
+CHAT OMG! Shadow to ALL:
+   refinery
+CHAT OMG! Shadow to ALL:
+   switch and ill show you
+CHAT OMG! Shadow to ALL:
+   :P
+    $3sv_gamerules = $6PowerStruggle $5[]$4
+-----------------------------------------------------
+*LOADING: Level multiplayer/ps/Refinery loading time: 8.10 seconds
+-----------------------------------------------------
+CHAT OMG! Shadow to ALL:
+   ah nope thats not the one :/ its a ia/tia map
+CHAT Blablah to ALL:
+   and what does it have?
+CHAT OMG! Shadow to ALL:
+   gimme a sec
+[net 17:38:39.634] Disconnect i577A565E.versanet.de:58249; profid=117073795; cause=19; msg='Remote disconnected: User left the game'
+[net 17:38:41.915] Disconnect ip103.dyn1.gent2.schedom-europe.net:50439; profid=146583404; cause=0; msg='Timeout occurred; no packet for 31.8 seconds'
+    $3g_pp_scale_price = $60 $5[]$4
+-----------------------------------------------------
+*LOADING: Level multiplayer/ps/Mesa loading time: 9.94 seconds
+-----------------------------------------------------
+CHAT OMG! Shadow to ALL:
+   btol nub
+CHAT OMG! Shadow to ALL:
+   vtol*
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   let's not fight? D:
+CHAT OMG! Shadow to ALL:
+   :/
+CHAT Blablah to ALL:
+   i want to test vehicles
+CHAT OMG! Shadow to ALL:
+   new animaton for mines?
+CHAT Blablah to ALL:
+   yeah
+CHAT OMG! Shadow to ALL:
+   i sped
+CHAT OMG! Shadow to ALL:
+   aswell as c4
+CHAT OMG! Shadow to ALL:
+   lol!
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   lolfail
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   SUP
+CHAT Blablah to ALL:
+   GTFO
+CHAT OMG! Shadow to ALL:
+   D:
+CHAT Blablah to ALL:
+   MY HOUSE
+CHAT Blablah to ALL:
+   see if the tank issue is still there
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   sob sob sob
+CHAT OMG! Shadow to ALL:
+   no u
+CHAT Blablah to ALL:
+   you make me so horny
+    $3g_pp_scale_price = $61 $5[]$4
+CHAT OMG! Shadow to ALL:
+    i take care of the tank dun worry :P
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   SUP
+CHAT OMG! Shadow to ALL:
+   HAI
+CHAT Blablah to ALL:
+   KABLAMO
+CHAT OMG! Shadow to ALL:
+   D:
+CHAT Blablah to ALL:
+   do you see dem?
+CHAT OMG! Shadow to ALL:
+   no
+CHAT Blablah to ALL:
+   the explosions?
+CHAT Blablah to ALL:
+   fuck
+CHAT OMG! Shadow to ALL:
+   nope
+CHAT Blablah to ALL:
+   i see
+CHAT Blablah to ALL:
+   damnit
+CHAT OMG! Shadow to ALL:
+   i saw one
+CHAT OMG! Shadow to ALL:
+   lets write yes / or no
+CHAT OMG! Shadow to ALL:
+   when we see it
+CHAT Blablah to ALL:
+   yes
+CHAT OMG! Shadow to ALL:
+   so we can compaee
+CHAT OMG! Shadow to ALL:
+   no
+CHAT OMG! Shadow to ALL:
+   no
+CHAT Blablah to ALL:
+   yes
+CHAT OMG! Shadow to ALL:
+   no
+CHAT Blablah to ALL:
+   no
+CHAT Blablah to ALL:
+   yes
+CHAT OMG! Shadow to ALL:
+   yes
+CHAT Blablah to ALL:
+   yes
+CHAT OMG! Shadow to ALL:
+   no
+CHAT Blablah to ALL:
+   yes
+CHAT OMG! Shadow to ALL:
+   no
+CHAT Blablah to ALL:
+   yes
+CHAT OMG! Shadow to ALL:
+   no
+CHAT Blablah to ALL:
+   WTF BRAH
+CHAT OMG! Shadow to ALL:
+   thats like
+CHAT OMG! Shadow to ALL:
+   uber weird
+CHAT Blablah to ALL:
+   no
+CHAT OMG! Shadow to ALL:
+   well 
+CHAT Blablah to ALL:
+   yeah
+CHAT OMG! Shadow to ALL:
+   i had this issue once
+CHAT Blablah to ALL:
+   hop on and let's go driving
+CHAT OMG! Shadow to ALL:
+   when i changes the weapon for the tankt
+CHAT Blablah to ALL:
+   oh
+CHAT OMG! Shadow to ALL:
+   one of my modifications had it
+CHAT Blablah to ALL:
+   the cannon?
+CHAT OMG! Shadow to ALL:
+   ye
+CHAT Blablah to ALL:
+   i did that
+CHAT OMG! Shadow to ALL:
+   Rysnville
+CHAT OMG! Shadow to ALL:
+   LOL!
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   Rynsville*
+CHAT OMG! Shadow to ALL:
+   =O
+CHAT OMG! Shadow to ALL:
+   prices?
+CHAT OMG! Shadow to ALL:
+   D:
+CHAT Blablah to ALL:
+   yeah :P
+CHAT Blablah to ALL:
+   wait
+CHAT Blablah to ALL:
+   let's fight
+CHAT OMG! Shadow to ALL:
+   nah
+CHAT OMG! Shadow to ALL:
+   D:
+CHAT OMG! Shadow to ALL:
+   thats uber bored
+CHAT Blablah to ALL:
+   i want to see how fast you get stuff
+CHAT OMG! Shadow to ALL:
+   we did that like 15 times
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   i know
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   get your ex friends to come play xD
+CHAT Blablah to ALL:
+   don't buy vehicles pl0x
+CHAT Blablah to ALL:
+   ffs i got lagspikes in ps
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   let's fight over this area only too
+CHAT Blablah to ALL:
+   i just want to know
+CHAT Blablah to ALL:
+   how fast the ranking is
+CHAT Blablah to ALL:
+   and how much i can buy etc
+CHAT Blablah to ALL:
+   i already have 200 spawn prestige and i'm an LT
+CHAT Blablah to ALL:
+   so that's pretty fast
+CHAT Blablah to ALL:
+   fine, we'll do this later with more people :P
+CHAT OMG! Shadow to ALL:
+   yeah but lal those douchs 
+[net 18:01:31.969] Disconnect iMac7.telenet.be:53906; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:53906'
+CHAT OMG! Shadow to ALL:
+   cba
+CHAT OMG! Shadow to ALL:
+   to come
+CHAT OMG! Shadow to ALL:
+   :S
+CHAT OMG! Shadow to ALL:
+   while playing with the door i had the glorius idead
+CHAT OMG! Shadow to ALL:
+   to find out the function for that
+CHAT OMG! Shadow to ALL:
+   how it closes and such
+CHAT OMG! Shadow to ALL:
+   like doors
+CHAT OMG! Shadow to ALL:
+   And then do other stuff with that
+CHAT OMG! Shadow to ALL:
+   probably openen the vtol door with e
+CHAT OMG! Shadow to ALL:
+   dunno
+[net 18:04:06.396] Disconnect i577A565E.versanet.de:50671; profid=117073795; cause=0; msg='Timeout occurred; no packet for 31.5 seconds'
+System:Quit

@@ -1,0 +1,886 @@
+BackupNameAttachment=" Build(6729) Date(14 Jan 2010) Time(15 49 06)"  -- used by backup system
+ 
+Log Started at Thursday, January 14, 2010 15:49:06
+Running 32 bit version
+Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
+FileVersion: 1.1.1.6729
+ProductVersion: 1.1.1.6729
+Using STLport C++ Standard Library implementation
+ 
+Added MOD directory <Mods\Remod\> to CryPak
+--- CPU detection ---
+Total number of logical processors: 2
+Number of available logical processors: 2
+
+Processor 0:
+CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+Family: 6, Model: 15, Stepping: 6
+FPU: On-Chip
+CPU Speed (estimated): 1997.265401 MHz
+MMX: not present
+SSE: present
+3DNow!: not present
+Serial number not present or disabled
+
+Processor 1:
+CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+Family: 6, Model: 15, Stepping: 6
+FPU: On-Chip
+CPU Speed (estimated): 1997.279584 MHz
+MMX: not present
+SSE: present
+3DNow!: not present
+Serial number not present or disabled
+
+Total number of system cores: 2
+Number of cores available to process: 2
+---------------------
+Windows 32 bit (build 6.1.7600)
+System language: Dutch
+Windows Directory: "C:\Windows"
+Prerequisites...
+* Installation of KB940105 hotfix required: no! (either not needed or already installed)
+Local time is 15:49:07 01/14/10, system running for 151 minutes
+1521MB physical memory installed, 1042MB available, 2047MB virtual memory installed, 31 percent of memory in use
+PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
+Current display mode is 1440x900x32, VGA
+IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
+--------------------------------------------------------------------------------
+[Error] Error: ConsoleVariableGroup 'sys_spec_Shading' key 'r_glow' is not missing in default
+Stream Engine Initialization
+Network initialization
+[net] using iocp socket io management
+Physics initialization
+MovieSystem initialization skipped for dedicated server
+Renderer initialization
+Console initialization
+Time initialization
+Font initialization
+AI initialization
+Initializing Animation System
+Initializing 3D Engine
+Script System Initialization
+Entity system initialization
+Initializing AI System
+[PlayerProfiles] Login of user 'Charlie the Unicorn' successful.
+[PlayerProfiles] Found 2 profiles.
+   Profile 0 : 'Blablah'
+   Profile 1 : 'default'
+[GameProfiles]: Successfully activated profile 'Blablah' for user 'Charlie the Unicorn'
+    $3sv_servername = $6Blablah's Server $5[DUMPTODISK]$4
+    $3sv_password = $6 $5[DUMPTODISK]$4
+    $3sv_cheatprotection = $60 $5[]$4
+    $3sv_maxplayers = $616 $5[DUMPTODISK]$4
+    $3g_roundlimit = $63 $5[]$4
+    $3g_roundtime = $630 $5[]$4
+    $3g_tk_punish = $61 $5[]$4
+    $3g_tk_punish_limit = $65 $5[]$4
+    $3g_timelimit = $60 $5[]$4
+    $3g_MPDeathCam = $60 $5[]$4
+    $3hud_alternateCrosshairSpread = $61 $5[]$4
+    $3e_cbuffer = $61 $5[]$4
+[Warning] Unknown command: r_geomInstancing = 0
+    $3es_OnDemandPhysics = $60 $5[]$4
+    $3r_CullGeometryForLights = $61 $5[]$4
+    $3e_vegetation_static_instancing = $60 $5[]$4
+    $3r_TerrainAO_FadeDist = $61 $5[]$4
+    $3e_vegetation_static_instancing = $60 $5[]$4
+    $3e_gsm_range = $63 $5[]$4
+    $3e_gsm_cache = $60 $5[]$4
+    $3e_ram_maps = $61 $5[DUMPTODISK, REQUIRE_LEVEL_RELOAD]$4
+    $3e_dissolve = $61 $5[]$4
+    $3r_VegetationSpritesTexRes = $6128 $5[]$4
+    $3e_particles_min_draw_pixels = $61 $5[]$4
+    $3hud_mpNamesDuration = $60 $5[]$4
+    $3sv_gamerules = $6PowerStruggle $5[]$4
+[net 14:49:08.045] network hostname: iMac7
+[net 14:49:08.061]   ip:192.168.0.192
+[net 14:49:08.061]   ip:5.182.209.7
+-----------------------------------------------------
+*LOADING: Level multiplayer/ps/Mesa loading time: 8.95 seconds
+-----------------------------------------------------
+    $3sv_gamerules = $6InstantAction $5[]$4
+-----------------------------------------------------
+*LOADING: Level multiplayer/ia/steelmill loading time: 1.76 seconds
+-----------------------------------------------------
+[net 14:53:55.087] Disconnect i577A53D9.versanet.de:55079; profid=117073795; cause=7; msg='Remote disconnected: Failed ReconfigureObject 1'
+CHAT Shinanigans to ALL:
+   CHECK OUT MY PING YEAH!
+CHAT Blablah to ALL:
+   Look at that big ping o' yours
+CHAT Blablah to ALL:
+   You're a big boy aren't you?
+CHAT Shinanigans to ALL:
+   btw, love the first select anim on SMG
+CHAT Blablah to ALL:
+   yeah same here
+CHAT Blablah to ALL:
+   it's crytek's
+CHAT Blablah to ALL:
+   so i can say that :P
+CHAT Blablah to ALL:
+   well shall i just guide you through it a little?
+CHAT Blablah to ALL:
+   considering your ping
+CHAT Shinanigans to ALL:
+   so no bullet tracers?
+CHAT Blablah to ALL:
+   no, but i might put them back in
+CHAT Shinanigans to ALL:
+   nanosuit looks good
+CHAT Blablah to ALL:
+   c'mere
+CHAT Blablah to ALL:
+   'sup sexy
+CHAT Shinanigans to ALL:
+   yeah looks really good
+CHAT Blablah to ALL:
+   :D
+CHAT Blablah to ALL:
+   the cloak's still...
+CHAT Blablah to ALL:
+   i don't yet know what exactly its purpose will be
+CHAT Shinanigans to ALL:
+   movement is much better
+CHAT Blablah to ALL:
+   ^^
+CHAT Blablah to ALL:
+   yeah the AY changes don't apply for some reason
+CHAT Blablah to ALL:
+   some do, some don't :S
+CHAT Blablah to ALL:
+   so they're mostly default
+CHAT Blablah to ALL:
+   oh, shoot me with the gauss
+CHAT Shinanigans to ALL:
+   so what else?
+CHAT Blablah to ALL:
+   i have to  show that to everyone to hype them
+CHAT Blablah to ALL:
+   shoots me twice
+CHAT Blablah to ALL:
+   or once in the head
+CHAT Shinanigans to ALL:
+   hahaha :D
+CHAT Blablah to ALL:
+   I BELIEVE I CAN FLY
+CHAT Blablah to ALL:
+   I CAN BELIEVE I CAN TOUCH THE SKY
+CHAT Shinanigans to ALL:
+   yeah i miss that from crysis
+CHAT Blablah to ALL:
+   NANANANANA NIGHT AND DAY
+CHAT Blablah to ALL:
+   what?
+CHAT Blablah to ALL:
+   didn't change the EMPs yet
+CHAT Blablah to ALL:
+   not much anyway
+CHAT Shinanigans to ALL:
+   go again
+CHAT Shinanigans to ALL:
+   fire
+CHAT Blablah to ALL:
+   fire?
+CHAT Blablah to ALL:
+   lol
+CHAT Shinanigans to ALL:
+   shoot
+CHAT Shinanigans to ALL:
+   might be my lag but the anim is rooted lol
+CHAT Blablah to ALL:
+   something wrong mister?
+CHAT Blablah to ALL:
+   show meh
+CHAT Blablah to ALL:
+   like it has shitloads of recoil?
+CHAT Shinanigans to ALL:
+   was going half time for me
+CHAT Blablah to ALL:
+   in 3rd person
+CHAT Blablah to ALL:
+   oh, strange
+CHAT Shinanigans to ALL:
+   for every 5 bullets you shot, the gun recoiled once
+CHAT OMG! Shadow to ALL:
+   OM NOM NOM
+CHAT Blablah to ALL:
+   oh :S
+CHAT Blablah to ALL:
+   hey ye
+CHAT Shinanigans to ALL:
+   nomnomnom
+CHAT Shinanigans to ALL:
+   hey shadow, check out my lag
+CHAT Shinanigans to ALL:
+   how cool is it
+CHAT Blablah to ALL:
+   look at his gigantic lag
+CHAT Blablah to ALL:
+   you actually do lag when you do that, lol
+CHAT Shinanigans to ALL:
+   cant hit me im the laggybread man
+CHAT Shinanigans to ALL:
+   lol
+CHAT Shinanigans to ALL:
+   :D
+CHAT Blablah to ALL:
+   SWOOSH SWOOSH SWOOSH
+CHAT Blablah to ALL:
+   wait, i'ma switch to TIA
+CHAT Shinanigans to ALL:
+   why D:
+CHAT Blablah to ALL:
+   i need to see the nk suit in here
+CHAT Shinanigans to ALL:
+   orite
+    $3sv_gamerules = $6TeamInstantAction $5[]$4
+-----------------------------------------------------
+*LOADING: Level multiplayer/ia/steelmill loading time: 1.05 seconds
+-----------------------------------------------------
+** Server: Join NK  **
+[net 15:03:25.324] Disconnect i577A53D9.versanet.de:64628; profid=117073795; cause=0; msg='Timeout occurred; no packet for 31.8 seconds'
+** Server: Join NK, bitches  **
+CHAT Shinanigans to ALL:
+   sup with the nade indicator?
+CHAT Blablah to ALL:
+   sup with it?
+CHAT Shinanigans to ALL:
+   it shows up then disappears
+CHAT Blablah to ALL:
+   :/
+CHAT Blablah to ALL:
+   fine for me, lol
+CHAT Shinanigans to ALL:
+   does it show up?
+CHAT Blablah to ALL:
+   yeah, and smoothly too
+CHAT Shinanigans to ALL:
+   mine disappears lol
+CHAT Blablah to ALL:
+   let me spy you
+CHAT Shinanigans to ALL:
+   man the FY has the WORST loop sound
+CHAT Blablah to ALL:
+   it does
+CHAT Blablah to ALL:
+   sexy single shot sound though
+CHAT Shinanigans to ALL:
+   but the best single sound
+CHAT Blablah to ALL:
+   yarr
+CHAT Blablah to ALL:
+   i want a new scar sound :/
+CHAT Shinanigans to ALL:
+   old scar sound
+CHAT Shinanigans to ALL:
+   new one sounds like a potato gun
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   old one was too daft though
+CHAT Blablah to ALL:
+   i require satisfaction
+CHAT Shinanigans to ALL:
+   LOL
+CHAT Blablah to ALL:
+   oh man, haha
+CHAT Shinanigans to ALL:
+   :D
+CHAT Blablah to ALL:
+   rr where the hell is shadow?
+CHAT Blablah to ALL:
+   i'd like to test if ragdolls are synced
+CHAT Shinanigans to ALL:
+   so you're making this kinda like crysis alpha vids showed?
+CHAT Blablah to ALL:
+   i physicalized deadbodies so...
+CHAT Blablah to ALL:
+   for now, yeah
+CHAT Blablah to ALL:
+   and as i fix issues see where it goes, you know
+CHAT OMG! Shadow to ALL:
+   nom
+CHAT Blablah to ALL:
+   i'd like it to feel a bit more... modern or something than it
+CHAT Blablah to ALL:
+    does now
+CHAT Shinanigans to ALL:
+   whoa, what happened there
+CHAT Shinanigans to ALL:
+   gah, hate not being able to read the chat
+CHAT Blablah to ALL:
+   yeah :/
+CHAT Blablah to ALL:
+   oh you missed my message?
+CHAT Shinanigans to ALL:
+   ya
+CHAT Shinanigans to ALL:
+   too busy punching ur dead body which disappeard :(
+CHAT Blablah to ALL:
+   that for now it's like the alpha vid
+CHAT Blablah to ALL:
+   well kind of
+CHAT Blablah to ALL:
+   but as i fix issues i'll see what it turns out as?
+CHAT Blablah to ALL:
+   don't respawn :O
+CHAT Shinanigans to ALL:
+   D:
+CHAT Blablah to ALL:
+   grrr
+CHAT Blablah to ALL:
+   shall i switch to PS?
+CHAT Shinanigans to ALL:
+   lol @ NK nanosuit
+CHAT Shinanigans to ALL:
+   whyts it all green :F
+CHAT Blablah to ALL:
+   yeah i'm still working on it
+CHAT Shinanigans to ALL:
+   ah ok
+CHAT OMG! Shadow to ALL:
+   let pwn him :O
+CHAT Blablah to ALL:
+   because it makes sense for it to be green lol :|
+CHAT Shinanigans to ALL:
+   lol
+CHAT Blablah to ALL:
+   lol
+CHAT Shinanigans to ALL:
+   zomg admin banz0r!
+CHAT Blablah to ALL:
+   YEEAAAAAH
+CHAT Blablah to ALL:
+   sob!
+CHAT Blablah to ALL:
+   you don't lag that bad btw, shin
+CHAT Shinanigans to ALL:
+   sifnt drop ur gauss
+CHAT Blablah to ALL:
+   you two vs me, nao :P
+CHAT OMG! Shadow to ALL:
+   who killed me lol?`
+CHAT Blablah to ALL:
+   shin, lol
+CHAT Shinanigans to ALL:
+   blah
+CHAT Blablah to ALL:
+   oh
+CHAT OMG! Shadow to ALL:
+   lol dude 
+CHAT OMG! Shadow to ALL:
+   fuck u
+CHAT Blablah to ALL:
+   that was you?
+CHAT Shinanigans to ALL:
+   :D
+CHAT Blablah to ALL:
+   you have binocs btw
+CHAT OMG! Shadow to ALL:
+   i heard u up there
+CHAT OMG! Shadow to ALL:
+   damn
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   i had luck
+CHAT OMG! Shadow to ALL:
+   i heard u wanted to write and then
+CHAT OMG! Shadow to ALL:
+   pew!
+CHAT Blablah to ALL:
+   you heard i wanted to write?
+CHAT OMG! Shadow to ALL:
+   no cloaked
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   oalala
+CHAT Blablah to ALL:
+   why don't i do something when i see that stuff coming lol?
+CHAT OMG! Shadow to ALL:
+   yeah i know what you mean
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT OMG! Shadow to ALL:
+   i know whats gonna happen but i cba todo anything
+CHAT Blablah to ALL:
+   yeah lol
+CHAT Blablah to ALL:
+   ah yes
+CHAT Shinanigans to ALL:
+   :F
+CHAT Blablah to ALL:
+   i have that assassin feeling :P
+CHAT Shinanigans to ALL:
+   i like how my nade launcher refilled itself lol
+CHAT Blablah to ALL:
+   it did?
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   hmm
+CHAT Blablah to ALL:
+   i like how your scar looks
+CHAT Blablah to ALL:
+   that hurt
+CHAT Shinanigans to ALL:
+   i couldnt tell i was being hit at first
+CHAT Blablah to ALL:
+   ah, are hit sounds off?
+CHAT Blablah to ALL:
+   i had you tagged btw
+CHAT Shinanigans to ALL:
+   nah visual indicator
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT Blablah to ALL:
+   oh, is that off?
+CHAT Shinanigans to ALL:
+   seemed diff
+CHAT Blablah to ALL:
+   hmm
+CHAT Blablah to ALL:
+   i'll look out for it
+CHAT Blablah to ALL:
+   sob
+CHAT Shinanigans to ALL:
+   yeah only dirt shows up
+CHAT Blablah to ALL:
+   oh
+CHAT OMG! Shadow to ALL:
+   :D
+CHAT Blablah to ALL:
+   noooo, had him in the fucking back
+CHAT Blablah to ALL:
+   :D
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT OMG! Shadow to ALL:
+   he has gauss
+CHAT OMG! Shadow to ALL:
+   D:
+CHAT Blablah to ALL:
+   :D
+CHAT Shinanigans to ALL:
+   so any other changes? ^_^
+CHAT Blablah to ALL:
+   good eye
+CHAT Blablah to ALL:
+   stuff in PS, yeah
+CHAT Shinanigans to ALL:
+   like whut
+CHAT Blablah to ALL:
+   boost is gone
+CHAT Blablah to ALL:
+   the vtol is a transport vtol
+CHAT Shinanigans to ALL:
+   cars?
+CHAT Blablah to ALL:
+   handling is changed
+CHAT Blablah to ALL:
+   massboxes are all set realistically
+CHAT Blablah to ALL:
+   so car physics are nice
+CHAT Shinanigans to ALL:
+   i like the part where the civ ute is 2.5t while the LTV is 1.
+CHAT Shinanigans to ALL:
+   5t
+CHAT Blablah to ALL:
+   in remod?
+CHAT Shinanigans to ALL:
+   wars
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   that's realistic though
+CHAT Blablah to ALL:
+   you sure it is? :/
+CHAT Shinanigans to ALL:
+   a civillian car weighing more than a humvee?
+CHAT Shinanigans to ALL:
+   :P
+CHAT Blablah to ALL:
+   i thought they were about the same
+CHAT Blablah to ALL:
+   ooh wait the civcar weighs 5t?
+CHAT Shinanigans to ALL:
+   nah civ ute is 2.5, ltv is 1.5t
+CHAT Blablah to ALL:
+   ooh 1.5
+CHAT Blablah to ALL:
+   wrote 5t earlier i think
+CHAT Shinanigans to ALL:
+   line got cut
+CHAT Blablah to ALL:
+   the ltvs are about 5t in remod i think
+CHAT Blablah to ALL:
+   as with the car they're based on
+CHAT Blablah to ALL:
+   RRRAAAAPE
+CHAT Blablah to ALL:
+   oh you bitch, proning in cqb
+CHAT Blablah to ALL:
+   i need to fix that :P
+CHAT Shinanigans to ALL:
+   i was crouching :F
+CHAT Blablah to ALL:
+   proning for me :<
+CHAT Shinanigans to ALL:
+   lulz
+CHAT Shinanigans to ALL:
+   get ya lag on
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   ah shit, nice one
+CHAT OMG! Shadow to ALL:
+   he has gauss
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   are you sure?
+CHAT OMG! Shadow to ALL:
+   no
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   hes marked
+CHAT OMG! Shadow to ALL:
+   either wa
+CHAT Shinanigans to ALL:
+   lol ffs
+CHAT Blablah to ALL:
+   grr got sprintfire bug
+CHAT Shinanigans to ALL:
+   takes like 5 million bullets to killpeople
+CHAT Blablah to ALL:
+   LOL fuck, owned
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT OMG! Shadow to ALL:
+   he has gauss and now im sure
+CHAT Blablah to ALL:
+   LOL wtf, fail reload?
+CHAT Shinanigans to ALL:
+   gun jammed 3 times
+CHAT Blablah to ALL:
+   oh 
+CHAT Blablah to ALL:
+   how so?
+CHAT OMG! Shadow to ALL:
+   north east
+CHAT Shinanigans to ALL:
+   just wouldnt fire
+CHAT OMG! Shadow to ALL:
+   north
+CHAT Blablah to ALL:
+   shadow, use team chat foo :P
+CHAT Blablah to ALL:
+   yeah heard you coming
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   yeah the FGL is a power weapon
+CHAT Blablah to ALL:
+   sec lemme turn deathcam on
+CHAT Shinanigans to ALL:
+   its a pos lol
+    $3g_MPDeathCam = $61 $5[]$4
+CHAT Blablah to ALL:
+   it kinda is yeah
+CHAT Blablah to ALL:
+   so much for it being a pos lol
+CHAT OMG! Shadow to ALL:
+   is OVERPOWERED
+CHAT OMG! Shadow to ALL:
+   for sure
+CHAT Blablah to ALL:
+   you were in speed :P
+CHAT Blablah to ALL:
+   or low on en
+CHAT Shinanigans to ALL:
+   yeah its a POS in regards to balance
+CHAT OMG! Shadow to ALL:
+   im bugged
+CHAT Blablah to ALL:
+   mhm
+CHAT Blablah to Team black:
+   how so?
+CHAT OMG! Shadow to ALL:
+   ill sprwy him u kill him
+CHAT OMG! Shadow to ALL:
+   oh
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   you do that
+CHAT Shinanigans to ALL:
+   lol
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   ah there you are
+CHAT OMG! Shadow to ALL:
+   dude
+CHAT OMG! Shadow to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   unrealistic"!
+CHAT OMG! Shadow to ALL:
+   ;d
+CHAT Blablah to ALL:
+   strength mode
+CHAT Blablah to ALL:
+   what's unrealistic?
+CHAT Blablah to ALL:
+   law is useless against inf
+CHAT Shinanigans to ALL:
+   bugger off lol
+CHAT Blablah to ALL:
+   don't use it, lol
+CHAT OMG! Shadow to ALL:
+   marked him
+CHAT Shinanigans to ALL:
+   well thats not very crysis'y of you :P
+CHAT Shinanigans to ALL:
+   lol
+CHAT Blablah to ALL:
+   oooooh man
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT Shinanigans to ALL:
+   gah so annoying
+CHAT Blablah to ALL:
+   what is?
+CHAT Shinanigans to ALL:
+   youre in armour mode but it takes your health not your armour
+CHAT Blablah to ALL:
+   nice one shadow
+CHAT Blablah to ALL:
+   yeah speed and strength are obviously more for mobility
+CHAT Blablah to ALL:
+   oh, btw
+CHAT Shinanigans to ALL:
+   nah, i was in armour mode
+CHAT Shinanigans to ALL:
+   and it took my health, not my armour
+CHAT Blablah to ALL:
+   crouching = - 50% recoil, prone -75% and in strength another 
+CHAT Blablah to ALL:
+   -50%
+CHAT OMG! Shadow to ALL:
+   so crouching + strenght = 0 recoil?
+CHAT Blablah to ALL:
+   should be
+CHAT Blablah to ALL:
+   yep
+CHAT Blablah to ALL:
+   quite fair i think
+CHAT Blablah to ALL:
+   you're really vulnerable in strength
+CHAT Blablah to ALL:
+   it'll probably be more useful in PS
+CHAT Blablah to ALL:
+   because in IA you're never safe
+CHAT Shinanigans to ALL:
+   more fully automatic snipers ;P
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT Blablah to ALL:
+   nom nom
+CHAT OMG! Shadow to ALL:
+   just because i went cloak in just that moment
+CHAT Blablah to ALL:
+   :D
+CHAT OMG! Shadow to ALL:
+   marked him
+CHAT Blablah to ALL:
+   fguck
+CHAT Blablah to ALL:
+   OOOOOOH NICE
+CHAT Shinanigans to ALL:
+   LMFAO
+CHAT Shinanigans to ALL:
+   hes outta the ballpark
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT OMG! Shadow to ALL:
+   XCD
+CHAT OMG! Shadow to ALL:
+   Astronomically Own
+CHAT Shinanigans to ALL:
+   :D
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   i love the gauss physics
+CHAT Blablah to ALL:
+   fail
+CHAT Blablah to ALL:
+   switch to armor first shin :P
+CHAT Shinanigans to ALL:
+   half a second ping doesnt help
+CHAT Blablah to ALL:
+   true
+CHAT Blablah to ALL:
+   do i lag for you?
+CHAT Shinanigans to ALL:
+   model doesnt, but none of my bullets hit
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   ooooooooooooh
+CHAT Blablah to ALL:
+   that hurt
+CHAT Shinanigans to ALL:
+   wewt
+CHAT OMG! Shadow to ALL:
+   hiding in trashbin! Yay
+CHAT OMG! Shadow to ALL:
+   XD
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   miss!
+CHAT Blablah to ALL:
+   don't underestimate my snipah skillz i sya
+CHAT OMG! Shadow to ALL:
+   same for me
+CHAT OMG! Shadow to ALL:
+   lol
+CHAT Blablah to ALL:
+   told you lol
+CHAT Shinanigans to ALL:
+   :3
+CHAT Shinanigans to ALL:
+   well ima go rape some forums a bit before sleep
+CHAT Blablah to ALL:
+   oh ok
+CHAT Shinanigans to ALL:
+   thx 4 playtest ^_^
+CHAT OMG! Shadow to ALL:
+   sleep?
+CHAT OMG! Shadow to ALL:
+   Lol
+CHAT Blablah to ALL:
+   thanks a lot :)
+CHAT OMG! Shadow to ALL:
+   :D
+CHAT Shinanigans to ALL:
+   2:41am here :D
+CHAT Blablah to ALL:
+   DAAAMN
+CHAT Blablah to ALL:
+   actually got hit too
+CHAT Blablah to ALL:
+   and nice
+CHAT Shinanigans to ALL:
+   mwuahaha
+CHAT Blablah to ALL:
+   omg
+CHAT Blablah to ALL:
+   LOL
+CHAT Shinanigans to ALL:
+   :D
+CHAT Blablah to ALL:
+   i'll have sex with you for playtesting tomorrow
+CHAT Shinanigans to ALL:
+   haha catchyas online ^_^
+CHAT OMG! Shadow to ALL:
+   bye mate :D
+CHAT Blablah to ALL:
+   cathyas?
+CHAT Blablah to ALL:
+   oh right
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   bye
+[net 15:43:01.449] Disconnect ppp121-44-79-110.lns20.syd6.internode.on.net:65248; profid=44270898; cause=0; msg='Timeout occurred; no packet for 31.6 seconds'
+CHAT Blablah to ALL:
+   nice smoke nade
+CHAT Blablah to ALL:
+   I RAPE U.
+CHAT Blablah to ALL:
+   LMAO
+CHAT OMG! Shadow to ALL:
+   lol due lockschm0r
+CHAT Blablah to ALL:
+   mmmm
+CHAT OMG! Shadow to ALL:
+   well dude
+CHAT OMG! Shadow to ALL:
+   gotta go too
+CHAT OMG! Shadow to ALL:
+   gym
+CHAT Blablah to ALL:
+   yeah good
+CHAT Blablah to ALL:
+   eww
+CHAT Blablah to ALL:
+   i know you do it to look at half naked men
+CHAT OMG! Shadow to ALL:
+   touche
+CHAT Blablah to ALL:
+   :D
+CHAT OMG! Shadow to ALL:
+   LOL direct gauss hit?
+CHAT OMG! Shadow to ALL:
+   WTF
+CHAT OMG! Shadow to ALL:
+   uhaxc
+CHAT OMG! Shadow to ALL:
+   uhax
+CHAT Blablah to ALL:
+   i switch between modes real fast ol
+CHAT Blablah to ALL:
+   wait, wanna see the nk suit before you go?
+CHAT OMG! Shadow to ALL:
+   ze lalz
+CHAT Blablah to ALL:
+   not exactly finished but you know
+CHAT Blablah to ALL:
+   the visor is ugly atm
+CHAT OMG! Shadow to ALL:
+   mhm
+CHAT OMG! Shadow to ALL:
+   looks nice though,but as you said visor should be diff
+CHAT Blablah to ALL:
+   i might give it a tad more contrast
+CHAT Blablah to ALL:
+   maybe some yellow accents
+CHAT Blablah to ALL:
+   i made some parts grey
+CHAT Blablah to ALL:
+   like the kneecaps
+CHAT Blablah to ALL:
+   and parts of the shoulders
+CHAT Blablah to ALL:
+   and the elbows
+CHAT Blablah to ALL:
+   MAXIMUM MALFUNCTION
+CHAT Blablah to ALL:
+   LAFF
+CHAT OMG! Shadow to ALL:
+   MAXIMUM MAXIMUM
+CHAT Blablah to ALL:
+   i wanna grab you
+CHAT Blablah to ALL:
+   and punch you xD
+CHAT OMG! Shadow to ALL:
+   Should be every mode at once
+CHAT OMG! Shadow to ALL:
+   lol!
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   well
+CHAT Blablah to ALL:
+   yeah
+[net 15:49:43.766] Disconnect i577A53D9.versanet.de:51886; profid=117073795; cause=5; msg='You were banned for exceeding team kill limit!'
+[net 15:49:49.784] Disconnect iMac7.telenet.be:57811; profid=113168429; cause=19; msg='Remote disconnected: User left the game'
+System:Quit

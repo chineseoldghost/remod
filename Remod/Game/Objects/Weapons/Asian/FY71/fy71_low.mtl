@@ -1,0 +1,50 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="material_a" MtlFlags="128" Shader="Metal" GenMask="268443648" SurfaceType="mat_metal_thick_weapons" Diffuse="0.41568601,0.41568601,0.41568601" Specular="0.47451001,0.47451001,0.47451001" Emissive="0,0,0" Shininess="1" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/asian/fy71/textures/base_a_low.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/asian/fy71/textures/base_a_low_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/asian/fy71/textures/base_a_low_ddn.tif" Filter="7">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.109" AnisotropicShape="0.80199999"/>
+  </Material>
+  <Material Name="material_b" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="mat_metal_thick_weapons" Diffuse="0.41568601,0.41568601,0.41568601" Specular="0.568627,0.615686,0.66666698" Emissive="0,0,0" Shininess="1.79" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/asian/fy71/textures/base_b_low.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/asian/fy71/textures/base_b_low_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/asian/fy71/textures/base_b_low_ddn.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/weapons/us/socom/socom_env.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.20900001" AnisotropicShape="0.80199999" ReflectionAmount="0.41999999" FresnelBias="0.18799999" FresnelScale="1.67"/>
+  </Material>
+  <Material Name="railing" MtlFlags="128" Shader="Metal" GenMask="268443648" SurfaceType="mat_metal_thick_weapons" Diffuse="0.24705884,0.24705884,0.24705884" Specular="0.4039216,0.41176474,0.45882356" Emissive="0,0,0" Shininess="2" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/us/scar/textures/back_rail.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/us/scar/textures/back_rail_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/us/scar/textures/back_rail_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.289" AnisotropicShape="0.77200001"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

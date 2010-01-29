@@ -1,0 +1,23 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="grass" MtlFlags="128" Shader="Vegetation" GenMask="268525568" SurfaceType="mat_grass" Diffuse="0.60000002,0.60000002,0.60000002" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" AlphaTest="0.34999999">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/ground_plants/grass/grass_mix.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams BackViewDep="0.5" BackDiffuse="0.66666669,0.71372551,0.60000002" BackDiffuseMultiplier="3" blendWithTerrainAmount="0.68599999" bendDetailFrequency="0.28999999" bendDetailLeafAmplitude="0.1" bendDetailBranchAmplitude="0.02" bendDetailPhase="100" BackShadowBias="0"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_grass" Diffuse="0.588,0.588,0.588" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

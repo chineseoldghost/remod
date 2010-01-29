@@ -1,0 +1,28 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="socom_silencer" MtlFlags="128" Shader="Metal" GenMask="268439568" SurfaceType="" Diffuse="0.49803901,0.49803901,0.49803901" Specular="0.50196099,0.50196099,0.50196099" Emissive="0,0,0" Shininess="6" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/attachments/silencer_rifle/textures/scar_silencer.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/attachments/silencer_rifle/textures/scar_silencer_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/attachments/silencer_rifle/textures/scar_silencer_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/weapons/us/socom/socom_env.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.14" Glossiness="0.82200003" ReflectionAmount="0.40000001" FresnelBias="0.089000002" FresnelScale="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_thick_weapons" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

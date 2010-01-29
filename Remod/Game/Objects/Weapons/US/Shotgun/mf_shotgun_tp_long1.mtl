@@ -1,0 +1,24 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="muzzleflash_side" MtlFlags="166" Shader="Illum" GenMask="272629760" SurfaceType="" Diffuse="1,0.917647,0.65882403" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.99000001" GlowAmount="0.30000001">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/sprites/muzzleflash/muzzle_shotgun_side1.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="muzzleflash_front" MtlFlags="166" Shader="Illum" GenMask="268435456" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Opacity="0.99000001" GlowAmount="0.1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/sprites/muzzleflash/aa_flameside_03.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

@@ -1,0 +1,9 @@
+<Material Diffuse="0.560784,0.560784,0.560784" Emissive="0,0,0" GenMask="3" MtlFlags="0" Opacity="1" Shader="Illum" Shininess="10" Specular="0.333333,0.333333,0.333333" SurfaceType="mat_wood_breakable_thin" >
+ <Textures>
+  <Texture File="objects/library/props/signs/mine_map.tif" Map="Diffuse" >
+   <TexMod />
+  </Texture>
+ </Textures>
+ <PublicParams BumpOffset="0.04" DebugUVScale="64" />
+ <MaterialLayers />
+</Material>

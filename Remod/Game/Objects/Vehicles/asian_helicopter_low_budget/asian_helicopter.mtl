@@ -1,0 +1,94 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="main" MtlFlags="128" Shader="Illum" GenMask="285212688" SurfaceType="mat_metal" Diffuse="0.49411801,0.49411801,0.49411801" Specular="0.25097999,0.25097999,0.301961" Emissive="0,0,0" Shininess="3" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/asian_helicopter/asian_helicopter_main.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/asian_helicopter/asian_helicopter_main_spec.tif" Filter="7">
+     <TexMod TileU="3" TileV="3"/>
+    </Texture>
+    <Texture Map="Normalmap" File="objects/vehicles/asian_helicopter/asian_helicopter_main_ddn.tif" Filter="7" IsTileU="0" IsTileV="0">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/beach_blur.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/vehicles/ltv/detailmap.tif">
+     <TexMod TileU="20" TileV="20"/>
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <MaterialRef />
+  <Material Name="rotorblades" MtlFlags="128" Shader="Metal" GenMask="268435456" SurfaceType="mat_metal" Diffuse="0.419608,0.419608,0.419608" Specular="0.17647099,0.203922,0.34902" Emissive="0,0,0" Shininess="10">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/asian_helicopter_low_budget/asian_helicopter_main.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/asian_helicopter_low_budget/asian_helicopter_main_spec.tif">
+     <TexMod TileU="3" TileV="3"/>
+    </Texture>
+    <Texture Map="Normalmap" File="objects/vehicles/asian_helicopter_low_budget/asian_helicopter_main_ddn.tif" IsTileU="0" IsTileV="0">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.219" Glossiness="0.94999999"/>
+  </Material>
+  <Material Name="motion_blur" MtlFlags="162" Shader="Illum" GenMask="285212672" SurfaceType="mat_metal" Diffuse="0,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.99000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/asian_helicopter_low_budget/rotor_main_blending.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="glass" MtlFlags="160" Shader="Metal" GenMask="268439568" SurfaceType="mat_glass_unbreakable" Diffuse="0.12941177,0.11764707,0.1137255" Specular="1,1,1" Emissive="0,0,0" Shininess="50" Opacity="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/defaults/grey.dds">
+     <TexMod TileU="30" TileV="30"/>
+    </Texture>
+    <Texture Map="Specular" File="textures/terrain/detail/ice_flat_gloss.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/vehicles/us_cargoplane/duck_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/fleet_test_refl3.dds" TexType="3">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.1" Glossiness="0.99000001" ReflectionAmount="1" FresnelBias="0.5" FresnelScale="2"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal" Diffuse="0.99215698,0.44313699,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="detail_proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_nodraw" Diffuse="0,0.235294,0.71764702" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.41">
+   <Textures />
+  </Material>
+  <Material Name="SubMtl8" MtlFlags="128" Shader="Illum" GenMask="285212672" SurfaceType="mat_metal" Diffuse="0.49411768,0.49411768,0.49411768" Specular="0.24705884,0.24705884,0.3019608" Emissive="0,0,0" Shininess="3" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/asian_helicopter_low_budget/asian_helicopter_main.tif" Filter="7">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="destroyed" MtlFlags="130" Shader="Metal" GenMask="268439552" SurfaceType="mat_metal_rough" Diffuse="0.60000002,0.60000002,0.60000002" Specular="1,1,1" Emissive="0,0,0" Shininess="3" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/us_vtol/vtol_blowup.tif">
+     <TexMod OffsetU="1"/>
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/us_vtol/vtol_blowup_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/vehicles/us_vtol/vtol_blowup_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31400001" Glossiness="0.75"/>
+  </Material>
+  <MaterialRef />
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

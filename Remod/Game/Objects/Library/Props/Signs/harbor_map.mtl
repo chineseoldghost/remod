@@ -1,0 +1,9 @@
+<Material MtlFlags="0" Shader="Illum" GenMask="268435456" SurfaceType="mat_wood_breakable_thin" Diffuse="0.56078398,0.56078398,0.56078398" Specular="0.33333299,0.33333299,0.33333299" Emissive="0,0,0" Shininess="10" Opacity="1">
+ <Textures>
+  <Texture Map="Diffuse" File="objects/library/props/signs/map_canalisation_harbor.tif">
+   <TexMod TileV="0.93000001" OffsetV="-0.25999999"/>
+  </Texture>
+ </Textures>
+ <PublicParams ObmDisplacement="0.0040000002" PomDisplacement="0.025" AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

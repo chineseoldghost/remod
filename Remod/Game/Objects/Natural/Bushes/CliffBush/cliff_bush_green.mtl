@@ -1,0 +1,38 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="proxy_bending" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_canopy" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+  </Material>
+  <Material Name="leaf" MtlFlags="128" Shader="Vegetation" GenMask="268632320" SurfaceType="mat_leaves" Diffuse="0.49019611,0.49019611,0.49019611" Specular="0.26666668,0.26666668,0.26666668" Emissive="0,0,0" Shininess="20" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/thin_leave_tree/leaves_branches_new.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/natural/trees/thin_leave_tree/leaves_branches_new_opac.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/natural/trees/thin_leave_tree/leaves_branches_new_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_005_ddn.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Opacity" File="objects/natural/trees/thin_leave_tree/leaves_branches_new_opac.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams BackViewDep="0.30000001" BackDiffuse="0.71372598,0.81176502,0.36862701" BackDiffuseMultiplier="1.5" bendDetailFrequency="0.5" bendDetailLeafAmplitude="0.30000001" bendDetailBranchAmplitude="0" bendDetailPhase="100" BackShadowBias="0.1" DetailBumpTillingU="5" DetailBumpTillingV="5" DetailBumpScale="5" DetailBlendAmount="0"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy_AI" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_canopy" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

@@ -1,0 +1,248 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="glass" MtlFlags="2208" Shader="Glass" GenMask="268436496" SurfaceType="mat_glass_vehicle" Diffuse="0.15686275,0.15686275,0.15686275" Specular="1,1,1" Emissive="0,0,0" Shininess="3" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/ltv/glass.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/beach_blur.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams TintAmount="0.5" RefrBumpScale="0" ReflectionAmount="1" FresnelBias="0" FresnelScale="2.4300001" BackLightScale="1" FilterColor="0.48627454,0.48627454,0.48627454"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="1">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="us_ltv_main" MtlFlags="128" Shader="Metal" GenMask="268476416" SurfaceType="mat_metal_smooth" Diffuse="0.51764709,0.52549022,0.49019611" Specular="0.78823537,0.83529419,0.86274517" Emissive="0,0,0" Shininess="3" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/ltv/us_ltv_main.tif" Filter="4">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/ltv/asian_ltv_main_specular.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/vehicles/ltv/asian_ltv_main_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/detail/cliff_blocky_ddn.dds">
+     <TexMod TileU="10" TileV="10"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.139" AnisotropicShape="0.53500003" DetailBumpTillingU="3" DetailBumpTillingV="3" DetailBumpScale="0.56" DetailBlendAmount="0"/>
+  </Material>
+  <Material Name="us_ltv_wheels" MtlFlags="128" Shader="Illum" GenMask="285212688" SurfaceType="mat_metal_pipe" Diffuse="0.341176,0.341176,0.341176" Specular="0.30588201,0.30588201,0.30588201" Emissive="0,0,0" Shininess="2" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/ltv/us_ltv_wheel_dirt.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/ltv/us_ltv_wheel_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/vehicles/ltv/us_ltv_wheel_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="us_ltv_details" MtlFlags="128" Shader="Metal" GenMask="268435472" SurfaceType="mat_metal_smooth" Diffuse="0.34117648,0.34117648,0.34117648" Specular="0.37647063,0.37647063,0.37647063" Emissive="0,0,0" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/ltv/us_ltv_details.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/ltv/us_ltv_details_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/beach_blur.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/vehicles/ltv/detailmap.tif">
+     <TexMod TileU="15" TileV="15"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="1" Glossiness="0.75" ReflectionAmount="3" FresnelBias="0.40000001" FresnelScale="1"/>
+  </Material>
+  <Material Name="nodraw" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_smooth" Diffuse="0.96862799,0.45882401,0.0509804" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="detail_proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_thick" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="broken_windowpanes" MtlFlags="2208" Shader="Glass" GenMask="268436480" SurfaceType="mat_glass_vehicle" Diffuse="0.4666667,0.4666667,0.4666667" Specular="0.086274512,0.12156864,0.12156864" Emissive="0,0,0" Shininess="3" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/ltv/broken_windowpanes.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/eye_reflect.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams TintAmount="1" RefrBumpScale="0" ReflectionAmount="1.8099999" FresnelBias="0" FresnelScale="5.2399998" BackLightScale="3.5699999" FilterColor="0.48627454,0.48627454,0.48627454"/>
+  </Material>
+  <Material Name="roof" MtlFlags="128" Shader="Cloth" GenMask="268435456" SurfaceType="mat_canvas" Diffuse="0.43529415,0.40784317,0.40784317" Specular="1,1,1" Emissive="0,0,0" Shininess="4.5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/ltv/us_ltv_roofs2.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AnimFrequency="0" AnimAmplitudeWav0="0" AnimAmplitudeWav2="0" AnimPhase="1" DiffuseExponent="1" FuzzynessSmoothness="2" FuzzynessStrength="1.3" FuzzynessSpread="1" FuzzynessSaturation="1"/>
+  </Material>
+  <Material Name="shiten" MtlFlags="128" Shader="Metal" GenMask="268443648" SurfaceType="mat_metal_smooth" Diffuse="0.49411768,0.49411768,0.49411768" Specular="0.61960799,0.66666698,0.65490198" Emissive="0,0,0" Shininess="1" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/asian/shi_ten/texture/shi_ten.tif" Filter="0">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/asian/shi_ten/texture/shi_ten_spec.tif" Filter="0">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/asian/shi_ten/texture/shi_ten_ddn.tif" Filter="0">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.25600001" AnisotropicShape="0.25"/>
+  </Material>
+  <Material Name="burned_out" MtlFlags="130" Shader="Metal" GenMask="268439552" SurfaceType="mat_metal_thick" Diffuse="0.50196099,0.50196099,0.50196099" Specular="1,1,1" Emissive="0,0,0" Shininess="3" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/us_vtol/vtol_blowup.tif">
+     <TexMod TileU="5" TileV="4.0999999" OffsetU="3.0999999"/>
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/us_vtol/vtol_blowup_spec.tif">
+     <TexMod TileU="4" TileV="4"/>
+    </Texture>
+    <Texture Map="Normalmap" File="objects/vehicles/us_vtol/vtol_blowup_ddn.tif">
+     <TexMod TileU="4" TileV="4"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31400001" Glossiness="0.75"/>
+  </Material>
+  <Material Name="Proxy canvas" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_pierceable" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="handles" MtlFlags="128" Shader="Metal" GenMask="268443648" SurfaceType="mat_metal_smooth" Diffuse="0.49411801,0.49411801,0.49411801" Specular="0.384314,0.384314,0.384314" Emissive="0,0,0" Shininess="1" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/asian/shi_ten/texture/shiten_handles.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/asian/shi_ten/texture/shiten_handles_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/asian/shi_ten/texture/shiten_handles_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.17" AnisotropicShape="0.25"/>
+  </Material>
+  <Material Name="tripod" MtlFlags="128" Shader="Metal" GenMask="268439552" SurfaceType="mat_metal_smooth" Diffuse="0.533333,0.533333,0.533333" Specular="1,1,1" Emissive="0,0,0" Shininess="5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/asian/shi_ten/texture/tripod.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/asian/shi_ten/texture/tripod_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/asian/shi_ten/texture/tripod_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31400001" Glossiness="0.75"/>
+  </Material>
+  <Material Name="headlight" MtlFlags="128" Shader="Illum" GenMask="285212688" SurfaceType="mat_glass_unbreakable" Diffuse="0.17254899,0.17254899,0.17254899" Specular="0.37647101,0.37647101,0.37647101" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/ltv/us_ltv_details.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/ltv/us_ltv_details_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/vehicles/ltv/detailmap.tif">
+     <TexMod TileU="15" TileV="15"/>
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="breaklight" MtlFlags="128" Shader="Illum" GenMask="285212688" SurfaceType="mat_glass_unbreakable" Diffuse="0.431373,0.431373,0.431373" Specular="0.37647101,0.37647101,0.37647101" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/ltv/us_ltv_details.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/ltv/us_ltv_details_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/vehicles/ltv/detailmap.tif">
+     <TexMod TileU="15" TileV="15"/>
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="damagelight_engine" MtlFlags="128" Shader="Metal" GenMask="268435456" SurfaceType="mat_metal_thick" Diffuse="0.48627499,0.48627499,0.50196099" Specular="0.184314,0.184314,0.184314" Emissive="0,0,0" Shininess="3" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/ltv/us_ltv_main.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/ltv/us_ltv_main_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/vehicles/ltv/detailmap.tif">
+     <TexMod TileU="60" TileV="30"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="1.383" Glossiness="0.426"/>
+  </Material>
+  <Material Name="damagelight_wheels" MtlFlags="128" Shader="Metal" GenMask="268435456" SurfaceType="mat_metal_thick" Diffuse="0.48627499,0.48627499,0.50196099" Specular="0.184314,0.184314,0.184314" Emissive="0,0,0" Shininess="3" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/ltv/us_ltv_main.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/ltv/us_ltv_main_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/vehicles/ltv/detailmap.tif">
+     <TexMod TileU="60" TileV="30"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="1.383" Glossiness="0.426"/>
+  </Material>
+  <Material Name="damagelight_chassis" MtlFlags="128" Shader="Metal" GenMask="268435456" SurfaceType="mat_metal_thick" Diffuse="0.48627454,0.48627454,0.50196081" Specular="0.184314,0.184314,0.184314" Emissive="0,0,0" Shininess="3" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/ltv/us_ltv_main.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/ltv/us_ltv_main_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/vehicles/ltv/detailmap.tif">
+     <TexMod TileU="60" TileV="30"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="1.383" Glossiness="0.426"/>
+  </Material>
+  <Material Name="rubber_proxy" MtlFlags="128" Shader="Illum" GenMask="285212672" SurfaceType="mat_rubber" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="searchlight" MtlFlags="128" Shader="Illum" GenMask="285212688" SurfaceType="mat_glass_unbreakable" Diffuse="1,1,1" Specular="1.88,1.88,1.88" Emissive="0,0,0" Shininess="10.4" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/asian/shi_ten/texture/searchlight.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/asian/shi_ten/texture/searchlight.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="dashboard" MtlFlags="128" Shader="Illum" GenMask="285212672" SurfaceType="mat_nodraw" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/ltv/ltv_dashboard.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

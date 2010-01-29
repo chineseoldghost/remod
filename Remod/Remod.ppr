@@ -1,0 +1,278 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+DefaultDir=C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Mods\Remod\Game
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+DocumentRoot=\Remod\
+HTServer=blablahs.uuuq.com
+[Project tree]
+Remod
+	+Remod
+		+Languages
+			Game\Languages\game_text_messages.xml
+		-Libs
+			+ Config
+				Game\Libs\Config\defaultProfile.xml
+		+GameRules
+			Game\Scripts\GameRules\BattleDust.xml
+			Game\Scripts\GameRules\InstantAction.lua
+			Game\Scripts\GameRules\PowerStruggle.lua
+			Game\Scripts\GameRules\PowerStruggleAlert.lua
+			Game\Scripts\GameRules\PowerStruggleBuying.lua
+			Game\Scripts\GameRules\PowerStruggleRank.lua
+			Game\Scripts\GameRules\PowerStruggleUtils.lua
+			Game\Scripts\GameRules\SinglePlayer.lua
+			Game\Scripts\GameRules\TeamInstantAction.lua
+			Game\Scripts\GameRules\PowerStruggleAlert_NeedsFix.lua
+		+Entities
+			-Multiplayer
+				Game\Scripts\Entities\Multiplayer\HQ.lua
+				Game\Scripts\Entities\Multiplayer\TeamSoundSpot.lua
+				Game\Scripts\Entities\Multiplayer\TeamRandomSoundVolume.lua
+				Game\Scripts\Entities\Multiplayer\SpectatorPoint.lua
+				Game\Scripts\Entities\Multiplayer\SpawnGroup.lua
+				Game\Scripts\Entities\Multiplayer\Perimeter.lua
+				Game\Scripts\Entities\Multiplayer\Objective.lua
+				Game\Scripts\Entities\Multiplayer\ForbiddenArea.lua
+				Game\Scripts\Entities\Multiplayer\Flag.lua
+				Game\Scripts\Entities\Multiplayer\Factory.lua
+				Game\Scripts\Entities\Multiplayer\BuyZone.lua
+				Game\Scripts\Entities\Multiplayer\AlienEnergyPoint.lua
+			+Vehicles
+				+Implementations
+					+XML
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_aaa.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_tank.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\US_tank.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\US_tank_re.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\US_vtol.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\US_trolley.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\US_transportVTOL.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\US_tank_3man.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\US_smallboat.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv_re.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\US_hovercraft.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\US_asv.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\US_apc.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\DefaultVehicle.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\Civ_speedboat.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\Civ_car1.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_truck.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_patrolboat.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_ltv_re.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_ltv.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_helicopter.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_apc.xml
+						Game\Scripts\Entities\Vehicles\Implementations\Xml\Alien_warrior.xml
+				Game\Scripts\Entities\Vehicles\VehicleSystem.lua
+				Game\Scripts\Entities\Vehicles\VehicleSeat.lua
+				Game\Scripts\Entities\Vehicles\VehicleBase.lua
+				Game\Scripts\Entities\Vehicles\VehiclePool.lua
+			+actor
+				Game\Scripts\Entities\actor\BasicActor.lua
+				Game\Scripts\Entities\actor\player.lua
+			+Items
+				+XML
+					+Accessories
+						Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml
+						Game\Scripts\Entities\Items\XML\Accessories\LAWScope.xml
+						Game\Scripts\Entities\Items\XML\Accessories\Silencer.xml
+						Game\Scripts\Entities\Items\XML\Accessories\SOCOMSilencer.xml
+						Game\Scripts\Entities\Items\XML\Accessories\VehicleMOARAttach.xml
+						Game\Scripts\Entities\Items\XML\Accessories\VehicleMOACAttach.xml
+						Game\Scripts\Entities\Items\XML\Accessories\TacticalAttachment.xml
+						Game\Scripts\Entities\Items\XML\Accessories\SniperScope.xml
+						Game\Scripts\Entities\Items\XML\Accessories\ScoutSearchBeam.xml
+						Game\Scripts\Entities\Items\XML\Accessories\SCARTagAmmo.xml
+						Game\Scripts\Entities\Items\XML\Accessories\SCARNormalAmmo.xml
+						Game\Scripts\Entities\Items\XML\Accessories\SCARIncendiaryAmmo.xml
+						Game\Scripts\Entities\Items\XML\Accessories\Reflex.xml
+						Game\Scripts\Entities\Items\XML\Accessories\OffhandSmoke.xml
+						Game\Scripts\Entities\Items\XML\Accessories\OffhandNanoDisruptor.xml
+						Game\Scripts\Entities\Items\XML\Accessories\OffhandGrenade.xml
+						Game\Scripts\Entities\Items\XML\Accessories\OffhandFlashbang.xml
+						Game\Scripts\Entities\Items\XML\Accessories\MOARAttach.xml
+						Game\Scripts\Entities\Items\XML\Accessories\MOACAttach.xml
+						Game\Scripts\Entities\Items\XML\Accessories\LAMRifleFlashLight.xml
+						Game\Scripts\Entities\Items\XML\Accessories\LAMRifle.xml
+						Game\Scripts\Entities\Items\XML\Accessories\LAMFlashLight.xml
+						Game\Scripts\Entities\Items\XML\Accessories\LAM.xml
+						Game\Scripts\Entities\Items\XML\Accessories\GrenadeShell.xml
+						Game\Scripts\Entities\Items\XML\Accessories\FY71NormalAmmo.xml
+						Game\Scripts\Entities\Items\XML\Accessories\FY71IncendiaryAmmo.xml
+						Game\Scripts\Entities\Items\XML\Accessories\FGL40Frag.xml
+						Game\Scripts\Entities\Items\XML\Accessories\FGL40EMP.xml
+						Game\Scripts\Entities\Items\XML\Accessories\FGL40Detonator.xml
+						Game\Scripts\Entities\Items\XML\Accessories\AssaultScope.xml
+						Game\Scripts\Entities\Items\XML\Accessories\AlienCore.xml
+					+Ammo
+						+Vehicles
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\ASV20.xml
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\GaussTankBullet.xml
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\Tank125.xml
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\Tank30.xml
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\CoaxialBullet.xml
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\VTOLBullet.xml
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\VTOL20.xml
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\TOWMissile.xml
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\TankAA.xml
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\Tank_SingularityProjectile.xml
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\TACProjectile.xml
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\HelicopterMissile.xml
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\ExocetMissile.xml
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\DumbAAMissile.xml
+						Game\Scripts\Entities\Items\XML\Ammo\50bullet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\ACMO.xml
+						Game\Scripts\Entities\Items\XML\Ammo\AVExplosive.xml
+						Game\Scripts\Entities\Items\XML\Ammo\Bullet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\C4Explosive.xml
+						Game\Scripts\Entities\Items\XML\Ammo\ClaymoreExplosive.xml
+						Game\Scripts\Entities\Items\XML\Ammo\ExplosiveGrenade.xml
+						Game\Scripts\Entities\Items\XML\Ammo\FGL40FragGrenade.xml
+						Game\Scripts\Entities\Items\XML\Ammo\FGL40RemoteGrenade.xml
+						Game\Scripts\Entities\Items\XML\Ammo\Flashbang.xml
+						Game\Scripts\Entities\Items\XML\Ammo\GaussBullet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\IncendiaryBullet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\MGbullet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\NanoDisruptor.xml
+						Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
+						Game\Scripts\Entities\Items\XML\Ammo\SCARGrenade.xml
+						Game\Scripts\Entities\Items\XML\Ammo\SmokeGrenade.xml
+						Game\Scripts\Entities\Items\XML\Ammo\SniperBullet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\WarriorSingularityProjectile.xml
+						Game\Scripts\Entities\Items\XML\Ammo\TurretACMO.xml
+						Game\Scripts\Entities\Items\XML\Ammo\Turret_Rocket.xml
+						Game\Scripts\Entities\Items\XML\Ammo\TagBullet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\TACGunProjectileFleet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\TACGunProjectile.xml
+						Game\Scripts\Entities\Items\XML\Ammo\TacBullet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\SMGBullet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\SingularityProjectile.xml
+						Game\Scripts\Entities\Items\XML\Ammo\ShotgunShell.xml
+						Game\Scripts\Entities\Items\XML\Ammo\ScoutSingularityProjectile.xml
+						Game\Scripts\Entities\Items\XML\Ammo\RubberBullet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\Rock.xml
+						Game\Scripts\Entities\Items\XML\Ammo\LightBullet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\LightACMO.xml
+						Game\Scripts\Entities\Items\XML\Ammo\HurricaneBullet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\HomingMOAC.xml
+						Game\Scripts\Entities\Items\XML\Ammo\HomingMissile.xml
+						Game\Scripts\Entities\Items\XML\Ammo\HeavyACMO.xml
+						Game\Scripts\Entities\Items\XML\Ammo\FYBullet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\FlashbangAI.xml
+						Game\Scripts\Entities\Items\XML\Ammo\FGL40RemoteEMP.xml
+						Game\Scripts\Entities\Items\XML\Ammo\FGL40EMPGrenade.xml
+						Game\Scripts\Entities\Items\XML\Ammo\FGL40BounceGrenade.xml
+						Game\Scripts\Entities\Items\XML\Ammo\FGL40BounceEMP.xml
+						Game\Scripts\Entities\Items\XML\Ammo\ExplosiveGrenadeAI.xml
+						Game\Scripts\Entities\Items\XML\Ammo\BunkerBuster.xml
+						Game\Scripts\Entities\Items\XML\Ammo\AYBullet.xml
+						Game\Scripts\Entities\Items\XML\Ammo\alienmount_ACMO.xml
+						Game\Scripts\Entities\Items\XML\Ammo\A2GHomingMissile.xml
+						Game\Scripts\Entities\Items\XML\Ammo\A2AHomingMissile_AscMod.xml
+						Game\Scripts\Entities\Items\XML\Ammo\A2AHomingMissile.xml
+					+Weapons
+						-AmmoPickups
+							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\EMPGrenade.xml
+							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\SmokeGrenade.xml
+							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\FragGrenade.xml
+							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\FlashbangGrenade.xml
+							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\CustomAmmoPickupSmall.xml
+							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\CustomAmmoPickupMedium.xml
+							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\CustomAmmoPickupLarge.xml
+							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\CustomAmmoPickup.xml
+							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\AlienPowerCore.xml
+						+Vehicles
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AACannon.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AsianCoaxialGun.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AvengerCannon.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\GaussAAA.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\GaussCannon.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\USCoaxialGun.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VehicleMOAC.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VehicleUSMachinegun.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VehicleSingularity.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VehicleShiTenV2.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VehicleRocketLauncher.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VehicleMOARMounted.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VehicleMOAR.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VehicleMOACMounted.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VehicleGaussMounted.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\USTankCannon.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\USCoaxialGun_VTOL.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\TankCannon.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\TACCannon.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\SideWinder_AscMod.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\SideWinder.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\HovercraftGun.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\Hellfire.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\Exocet.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\BunkerBuster.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AVMachinegun.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AutoAA.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\Asian50Cal.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCRocketLauncher.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon_AscMod.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AHMachinegun.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AARocketLauncher.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VehicleRadar.xml
+						Game\Scripts\Entities\Items\XML\Weapons\AlienMount.xml
+						Game\Scripts\Entities\Items\XML\Weapons\AVMine.xml
+						Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
+						Game\Scripts\Entities\Items\XML\Weapons\Binoculars.xml
+						Game\Scripts\Entities\Items\XML\Weapons\C4.xml
+						Game\Scripts\Entities\Items\XML\Weapons\Claymore.xml
+						Game\Scripts\Entities\Items\XML\Weapons\Detonator.xml
+						Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml
+						Game\Scripts\Entities\Items\XML\Weapons\FGL40.xml
+						Game\Scripts\Entities\Items\XML\Weapons\Fists.xml
+						Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
+						Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
+						Game\Scripts\Entities\Items\XML\Weapons\Hurricane.xml
+						Game\Scripts\Entities\Items\XML\Weapons\LAW.xml
+						Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
+						Game\Scripts\Entities\Items\XML\Weapons\ShiTen.xml
+						Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
+						Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
+						Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml
+						Game\Scripts\Entities\Items\XML\Weapons\TACGun_Fleet.xml
+						Game\Scripts\Entities\Items\XML\Weapons\SCARTutorial.xml
+						Game\Scripts\Entities\Items\XML\Weapons\RefWeapon.xml
+						Game\Scripts\Entities\Items\XML\Weapons\MissilePlatform.xml
+						Game\Scripts\Entities\Items\XML\Weapons\Golfclub.xml
+						Game\Scripts\Entities\Items\XML\Weapons\DebugGun.xml
+						Game\Scripts\Entities\Items\XML\Weapons\AY69_old.xml
+						Game\Scripts\Entities\Items\XML\Weapons\AutoTurretAA.xml
+						Game\Scripts\Entities\Items\XML\Weapons\AutoTurret.xml
+						Game\Scripts\Entities\Items\XML\Weapons\AISmokeGrenades.xml
+						Game\Scripts\Entities\Items\XML\Weapons\AIGrenades.xml
+						Game\Scripts\Entities\Items\XML\Weapons\AIFlashbangs.xml
+						Game\Scripts\Entities\Items\XML\Weapons\TACLauncher.xml
+						Game\Scripts\Entities\Items\XML\Weapons\TACGun.xml
+					Game\Scripts\Entities\Items\XML\RadarKit.xml
+					Game\Scripts\Entities\Items\XML\RepairKit.xml
+					Game\Scripts\Entities\Items\XML\OffHand.xml
+					Game\Scripts\Entities\Items\XML\Parachute.xml
+		Game\Scripts\main.lua
+		Game\Scripts\Remod.lua
+[Open project files]
+0=Game\Scripts\Entities\Items\XML\Ammo\TACGunProjectile.xml
+1=Game\Scripts\Entities\Items\XML\Ammo\Vehicles\Tank125.xml
+[Selected Project Files]
+Main=
+Selected=Game\Scripts\Entities\Items\XML\Ammo\TACGunProjectile.xml
+[Game\Scripts\Entities\Items\XML\Ammo\TACGunProjectile.xml]
+TopLine=1
+Caret=42,37
+[Game\Scripts\Entities\Items\XML\Ammo\Vehicles\Tank125.xml]
+TopLine=1
+Caret=30,36

@@ -1,0 +1,49 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="base" MtlFlags="128" Shader="Metal" GenMask="268447760" SurfaceType="" Diffuse="0.22352943,0.2392157,0.25882354" Specular="0.46274513,0.49019611,0.53725493" Emissive="0,0,0" Shininess="7" Opacity="1" GlowAmount="30">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/attachments/scope_sniper/textures/scope_sniper.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/attachments/scope_sniper/textures/scope_sniper_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/attachments/scope_sniper/textures/scope_sniper2_ddn.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/weapons/us/socom/socom_env4.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Decal" File="objects/weapons/attachments/scope_sniper/textures/glow.tif">
+     <TexMod TexMod_UOscillatorType="2" TexMod_VOscillatorType="2" TexMod_UOscillatorRate="1" TexMod_VOscillatorRate="1" TexMod_UOscillatorAmplitude="1" TexMod_VOscillatorAmplitude="1"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.219" AnisotropicShape="0.68300003" ReflectionAmount="0.25" FresnelBias="0" FresnelScale="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_thick_weapons" Diffuse="0.768628,0.41568601,0.156863" Specular="0.50588202,0.50588202,0.50588202" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+  <Material Name="fp" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="" Diffuse="0.14117648,0.14117648,0.14117648" Specular="0.49803925,0.49803925,0.49803925" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/attachments/scope_sniper/textures/scope_sniper_fp.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/attachments/scope_sniper/textures/scope_sniper_fp_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/attachments/scope_sniper/textures/scope_sniper_fp_ddn.tif" Amount="50">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/weapons/us/socom/socom_env4.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.47799999" AnisotropicShape="0.25" ReflectionAmount="0.25" FresnelBias="0" FresnelScale="1"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

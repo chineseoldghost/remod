@@ -1,0 +1,43 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="Metal" MtlFlags="130" Shader="Metal" GenMask="268443667" SurfaceType="" Diffuse="0.68627453,0.71372551,0.71372551" Specular="0.51764703,0.533333,0.59215701" Emissive="0.0666667,0.0666667,0.0666667" Shininess="2" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/us/smg/textures/smg_low.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/us/smg/textures/smg_low_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/us/smg/textures/smg_low_ddn.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/weapons/us/socom/socom_env.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.149" AnisotropicShape="0.82200003" DebugUVScale="64" ReflectionAmount="0.63999999" FresnelBias="0.15800001" FresnelScale="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="Plastic" MtlFlags="130" Shader="Illum" GenMask="268435474" SurfaceType="" Diffuse="0.35294101,0.38039199,0.40392199" Specular="0.435294,0.50588202,0.568627" Emissive="0,0,0" Shininess="3" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/us/smg/textures/smg_low.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/us/smg/textures/smg_low_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/us/smg/textures/smg_low_ddn.tif" Filter="7">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams DebugUVScale="64"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="Nodraw" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_thick" Diffuse="0.203922,0.247059,0.26666701" Specular="0.917647,0.917647,0.92549002" Emissive="0,0,0" Shininess="1" Opacity="1">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams DebugUVScale="64"/>
+ <MaterialLayers />
+</Material>

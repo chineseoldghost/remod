@@ -1,0 +1,662 @@
+<SoundMoods>
+ <Mood Name="menu" Priority="100" MusicVolume="0.5">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien"/>
+  <Category Name="amb"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+ <Mood Name="underwater" Priority="80" MusicVolume="0.60000002">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon" Lowpass="600"/>
+  <Category Name="3rd_weapon_explos" Lowpass="600"/>
+  <Category Name="alien"/>
+  <Category Name="amb" Lowpass="600"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai" Lowpass="600"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots" Lowpass="600"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special" Lowpass="600"/>
+  <Category Name="vehicle_sounds" Lowpass="600"/>
+ </Mood>
+ <Mood Name="low_health" Priority="60" MusicVolume="0.80000001">
+  <Category Name="1st_fire" Pitch="-0.05"/>
+  <Category Name="1st_pers" Pitch="-0.05"/>
+  <Category Name="1st_weapon_foley" Pitch="-0.05"/>
+  <Category Name="3rd_pers" Pitch="-0.05"/>
+  <Category Name="3rd_weapon" Pitch="-0.05"/>
+  <Category Name="3rd_weapon_explos" Pitch="-0.05"/>
+  <Category Name="alien" Pitch="-0.05"/>
+  <Category Name="amb" Pitch="-0.05"/>
+  <Category Name="coll_foot_phy_ai" Pitch="-0.05"/>
+  <Category Name="collision" Pitch="-0.05"/>
+  <Category Name="dialog_ai" Pitch="-0.05"/>
+  <Category Name="explos" Pitch="-0.05"/>
+  <Category Name="hud_suit" Pitch="-0.05"/>
+  <Category Name="key_events" Pitch="-0.05"/>
+  <Category Name="master" Pitch="-0.05"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog" Pitch="-0.05"/>
+  <Category Name="music"/>
+  <Category Name="other" Pitch="-0.05"/>
+  <Category Name="phy_alien_veh" Pitch="-0.05"/>
+  <Category Name="phys_lots" Pitch="-0.05"/>
+  <Category Name="player_foley" Pitch="-0.05"/>
+  <Category Name="ricco" Pitch="-0.05"/>
+  <Category Name="ricco_alien" Pitch="-0.05"/>
+  <Category Name="veh_ext" Pitch="-0.05"/>
+  <Category Name="veh_run" Pitch="-0.05"/>
+  <Category Name="veh_special" Pitch="-0.05"/>
+  <Category Name="vehicle_sounds" Pitch="-0.05"/>
+ </Mood>
+ <Mood Name="concentration" Priority="20" MusicVolume="0.80000001">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley" Volume="0.60000002"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien"/>
+  <Category Name="amb"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit" Volume="0.60000002"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music" Volume="0.69999999"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley" Volume="0.60000002"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+ <Mood Name="vehicle" Priority="40" MusicVolume="1">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon" LowPass="6000"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien"/>
+  <Category Name="amb" LowPass="4000"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision" Pitch="-0.029999999"/>
+  <Category Name="dialog_ai" LowPass="2000"/>
+  <Category Name="explos" Pitch="-0.1"/>
+  <Category Name="hud_suit"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+ <Mood Name="mission_hint" Priority="90" MusicVolume="0.60000002">
+  <Category Name="1st_fire" Volume="0.5"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley" Volume="0.69999999"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos" Volume="0.40000001"/>
+  <Category Name="alien"/>
+  <Category Name="amb" Volume="0.75"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision" Volume="0.5"/>
+  <Category Name="dialog_ai" Volume="0.40000001"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit" Volume="0.60000002"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music" Volume="0.69999999"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots" Volume="0.5"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco" Volume="0.60000002"/>
+  <Category Name="ricco_alien" Volume="0.5"/>
+  <Category Name="veh_ext" Volume="0.69999999"/>
+  <Category Name="veh_run" Volume="0.60000002"/>
+  <Category Name="veh_special" Volume="0.80000001"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+ <Mood Name="just_dialog" Priority="100" MusicVolume="0.30000001">
+  <Category Name="1st_fire" Volume="0.30000001"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley" Volume="0.30000001"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos" Volume="0.30000001"/>
+  <Category Name="alien"/>
+  <Category Name="amb" Volume="0.30000001"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision" Volume="0.30000001"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit" Volume="0.30000001"/>
+  <Category Name="key_events" Volume="0.30000001"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds" Volume="0.30000001"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots" Volume="0.30000001"/>
+  <Category Name="player_foley" Volume="0.30000001"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien" Volume="0.30000001"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special" Volume="0.30000001"/>
+  <Category Name="vehicle_sounds" Volume="0.30000001"/>
+ </Mood>
+ <Mood Name="just_physics" Priority="100" MusicVolume="0">
+  <Category Name="1st_fire" Volume="0"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley" Volume="0"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos" Volume="0"/>
+  <Category Name="alien"/>
+  <Category Name="amb" Volume="0"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai" Volume="0"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit" Volume="0"/>
+  <Category Name="key_events" Volume="0"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog" Volume="0"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien" Volume="0"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special" Volume="0"/>
+  <Category Name="vehicle_sounds" Volume="0"/>
+ </Mood>
+ <Mood Name="just_vehicles" Priority="100" MusicVolume="0.80000001">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien"/>
+  <Category Name="amb"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+ <Mood Name="alien_machine" Priority="20" MusicVolume="0.80000001">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien"/>
+  <Category Name="amb"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+ <Mood Name="frozen" Priority="70" MusicVolume="0.80000001">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers" HighPass="1500"/>
+  <Category Name="1st_weapon_foley"/>
+  <Category Name="3rd_pers" HighPass="1500"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien"/>
+  <Category Name="amb"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+ <Mood Name="default" Priority="1" MusicVolume="0.80000001">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien"/>
+  <Category Name="amb"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+ <Mood Name="cloak" Priority="30" MusicVolume="0.5">
+  <Category Name="1st_fire" HighPass="500" />
+  <Category Name="1st_pers" HighPass="500"/>
+  <Category Name="1st_weapon_foley" HighPass="500"/>
+  <Category Name="3rd_pers" HighPass="500"/>
+  <Category Name="3rd_weapon" HighPass="500"/>
+  <Category Name="3rd_weapon_explos" HighPass="500"/>
+  <Category Name="alien" HighPass="500"/>
+  <Category Name="amb" HighPass="500"/>
+  <Category Name="coll_foot_phy_ai" HighPass="500"/>
+  <Category Name="collision" HighPass="500"/>
+  <Category Name="dialog_ai" HighPass="500"/>
+  <Category Name="explos" HighPass="500"/>
+  <Category Name="hud_suit" HighPass="500"/>
+  <Category Name="key_events" HighPass="500"/>
+  <Category Name="master" HighPass="500"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog" HighPass="500"/>
+  <Category Name="music"/>
+  <Category Name="other" HighPass="500"/>
+  <Category Name="phy_alien_veh" HighPass="500"/>
+  <Category Name="phys_lots" HighPass="500"/>
+  <Category Name="player_foley" HighPass="500"/>
+  <Category Name="ricco" HighPass="500"/>
+  <Category Name="ricco_alien" />
+  <Category Name="veh_ext" HighPass="500"/>
+  <Category Name="veh_run" HighPass="500"/>
+  <Category Name="veh_special" HighPass="500"/>
+  <Category Name="vehicle_sounds" HighPass="500"/>
+ </Mood>
+ <Mood Name="explosion" Priority="50" MusicVolume="0.80000001">
+  <Category Name="1st_fire" LowPass="2500"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley" LowPass="2500"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon" LowPass="4000"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien"/>
+  <Category Name="amb"/>
+  <Category Name="coll_foot_phy_ai" LowPass="2500"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit" LowPass="2500"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley" LowPass="2500"/>
+  <Category Name="ricco" LowPass="4000"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special" LowPass="4000"/>
+  <Category Name="vehicle_sounds" LowPass="2500"/>
+ </Mood>
+ <Mood Name="alien" Priority="20" MusicVolume="0.80000001">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley" HighPass="7000"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien"/>
+  <Category Name="amb"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit" HighPass="7000"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley" HighPass="7000"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+ <Mood Name="warrior" Priority="20" MusicVolume="0.80000001">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley" Volume="0.5"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien"/>
+  <Category Name="amb" Volume="0.338"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit" Volume="0.5"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley" Volume="0.5"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+ <Mood Name="mask_on" Priority="20" MusicVolume="0.80000001">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley"/>
+  <Category Name="3rd_pers" LowPass="600"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien"/>
+  <Category Name="amb"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+ <Mood Name="no_aliens" Priority="20" MusicVolume="0.80000001">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien" Volume="0"/>
+  <Category Name="amb"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+ <Mood Name="cutscene" Priority="90" MusicVolume="1">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien"/>
+  <Category Name="amb"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision" Volume="0.5"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+ <Mood Name="cryvision" Priority="70" MusicVolume="1">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos" Volume="0.69999999"/>
+  <Category Name="alien"/>
+  <Category Name="amb"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision" Volume="0.5"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots" Volume="0.5"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special" Volume="0.60000002"/>
+  <Category Name="vehicle_sounds" Volume="0.5"/>
+ </Mood>
+ <Mood Name="knock_out" Priority="60" MusicVolume="1">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien"/>
+  <Category Name="amb"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+ <Mood Name="singularity" Priority="60" MusicVolume="1">
+  <Category Name="1st_fire"/>
+  <Category Name="1st_pers"/>
+  <Category Name="1st_weapon_foley"/>
+  <Category Name="3rd_pers"/>
+  <Category Name="3rd_weapon"/>
+  <Category Name="3rd_weapon_explos"/>
+  <Category Name="alien"/>
+  <Category Name="amb"/>
+  <Category Name="coll_foot_phy_ai"/>
+  <Category Name="collision"/>
+  <Category Name="dialog_ai"/>
+  <Category Name="explos"/>
+  <Category Name="hud_suit"/>
+  <Category Name="key_events"/>
+  <Category Name="master"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog"/>
+  <Category Name="music"/>
+  <Category Name="other"/>
+  <Category Name="phy_alien_veh"/>
+  <Category Name="phys_lots"/>
+  <Category Name="player_foley"/>
+  <Category Name="ricco"/>
+  <Category Name="ricco_alien"/>
+  <Category Name="veh_ext"/>
+  <Category Name="veh_run"/>
+  <Category Name="veh_special"/>
+  <Category Name="vehicle_sounds"/>
+ </Mood>
+</SoundMoods>

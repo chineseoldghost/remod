@@ -1,0 +1,30 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="right" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="mat_metal_smooth" Diffuse="0.58823532,0.58823532,0.58823532" Specular="0.29411766,0.29411766,0.29411766" Emissive="0,0,0" Shininess="9.999999" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Languages/Textures/helipad_right.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="Languages/Textures/helipad_right_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams Displacement="0.025" AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="left" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="mat_metal_smooth" Diffuse="0.58823532,0.58823532,0.58823532" Specular="0.30980393,0.30980393,0.30980393" Emissive="0,0,0" Shininess="9.999999" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Languages/Textures/helipad_left.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="Languages/Textures/helipad_left_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams Displacement="0.025" AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams Displacement="0.025" AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

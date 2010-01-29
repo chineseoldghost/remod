@@ -1,0 +1,46 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="diffuse" MtlFlags="128" Shader="Illum" GenMask="268435459" SurfaceType="" Diffuse="0.501961,0.501961,0.501961" Specular="0.784627,0.784627,0.784627" Emissive="0,0,0" Shininess="4.98" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/housenumber.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams DebugUVScale="64"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="Number1" MtlFlags="128" Shader="Illum" GenMask="268435459" SurfaceType="" Diffuse="0.501961,0.501961,0.501961" Specular="0.784314,0.784314,0.784314" Emissive="0,0,0" Shininess="4.98" Opacity="0.99">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/housenumber.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams DebugUVScale="64"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="Number2" MtlFlags="128" Shader="Illum" GenMask="268435459" SurfaceType="" Diffuse="0.501961,0.501961,0.501961" Specular="0.784314,0.784314,0.784314" Emissive="0,0,0" Shininess="4.98" Opacity="0.99">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/housenumber.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams DebugUVScale="64"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="Number3" MtlFlags="128" Shader="Illum" GenMask="268435459" SurfaceType="" Diffuse="0.501961,0.501961,0.501961" Specular="0.784314,0.784314,0.784314" Emissive="0,0,0" Shininess="4.98" Opacity="0.99">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/housenumber.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams DebugUVScale="64"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_smooth" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams DebugUVScale="64"/>
+ <MaterialLayers />
+</Material>

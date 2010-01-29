@@ -1,0 +1,22 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="clock" MtlFlags="128" Shader="Metal" GenMask="268435472" SurfaceType="mat_metal_smooth" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.50196081,0.50196081,0.50196081" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/clock.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="materials/presets/materialtypes/textures/env_maps/probe_env00.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.15000001" Glossiness="0.94999999" ReflectionAmount="0.75" FresnelBias="0.40000001" FresnelScale="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="proxy_metal" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_smooth" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

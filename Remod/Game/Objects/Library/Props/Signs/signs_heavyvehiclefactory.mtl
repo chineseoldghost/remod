@@ -1,0 +1,61 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="forward" MtlFlags="128" Shader="Illum" GenMask="272646144" SurfaceType="mat_metal_smooth" Diffuse="0.65098,0.65098,0.65098" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/sign_heavyvehiclefactory_forward.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_005_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1" DetailBumpTillingU="3" DetailBumpTillingV="2" DetailBumpScale="1.5" DetailBlendAmount="0"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_smooth" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+  <Material Name="SubMtl3" MtlFlags="128" Shader="Metal" GenMask="268472320" SurfaceType="mat_metal_smooth" Diffuse="0.513726,0.513726,0.513726" Specular="0.615686,0.615686,0.615686" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/signback.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/props/signs/signback_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_005_ddn.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.41800001" Glossiness="0.81199998" DetailBumpTillingU="2" DetailBumpTillingV="3" DetailBumpScale="1.5" DetailBlendAmount="0"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="right" MtlFlags="128" Shader="Illum" GenMask="272646144" SurfaceType="mat_metal_smooth" Diffuse="0.65098,0.65098,0.65098" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/sign_heavyvehiclefactory_right.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_005_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1" DetailBumpTillingU="3" DetailBumpTillingV="2" DetailBumpScale="1.5" DetailBlendAmount="0"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="left" MtlFlags="128" Shader="Illum" GenMask="272646144" SurfaceType="mat_metal_smooth" Diffuse="0.65098,0.65098,0.65098" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/sign_heavyvehiclefactory_left.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_005_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1" DetailBumpTillingU="3" DetailBumpTillingV="2" DetailBumpScale="1.5" DetailBlendAmount="0"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

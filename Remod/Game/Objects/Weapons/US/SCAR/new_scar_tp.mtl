@@ -1,0 +1,42 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="scar_base" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="mat_metal_thick_weapons" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.70588237,0.70588237,0.70588237" Emissive="0,0,0" Shininess="5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/us/scar/textures/scar.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/us/scar/textures/scar_specular.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/us/scar/textures/scar_ddn.tif" Filter="0">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/sphere_hull3_desaturate.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.38699999" AnisotropicShape="0.52499998" ReflectionAmount="1.52" FresnelBias="0.119" FresnelScale="0.37"/>
+  </Material>
+  <Material Name="back_rail" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="mat_metal_thick_weapons" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.70588237,0.70588237,0.70588237" Emissive="0,0,0" Shininess="5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/us/scar/textures/back_rail.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/us/scar/textures/back_rail_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/us/scar/textures/back_rail_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/sphere_hull3_desaturate.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31400001" AnisotropicShape="0.574" ReflectionAmount="0.25" FresnelBias="0.122" FresnelScale="1"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_thick_weapons" Diffuse="0.301961,0.301961,0.301961" Specular="0.40392199,0.41176501,0.45882401" Emissive="0,0,0" Shininess="8" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

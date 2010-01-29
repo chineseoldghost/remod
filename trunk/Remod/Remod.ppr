@@ -266,13 +266,13 @@ Remod
 		Game\Scripts\Remod.lua
 [Open project files]
 0=Game\Scripts\Entities\Items\XML\Ammo\TACGunProjectile.xml
-1=Game\Scripts\Entities\Items\XML\Ammo\Vehicles\Tank125.xml
+1=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Ammo\TACGunProjectile.xml
+Selected=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
 [Game\Scripts\Entities\Items\XML\Ammo\TACGunProjectile.xml]
 TopLine=1
-Caret=42,37
-[Game\Scripts\Entities\Items\XML\Ammo\Vehicles\Tank125.xml]
-TopLine=1
-Caret=30,36
+Caret=38,31
+[Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml]
+TopLine=233
+Caret=49,265

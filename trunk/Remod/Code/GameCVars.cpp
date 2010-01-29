@@ -104,7 +104,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("cl_fov", &cl_fov, 60.0f, 0, "field of view.");
 	pConsole->Register("cl_bob", &cl_bob, 1.0f, VF_CHEAT, "view/weapon bobbing multiplier");
 	pConsole->Register("cl_headBob", &cl_headBob, 1.0f, VF_CHEAT, "head bobbing multiplier");
-	pConsole->Register("cl_headBobLimit", &cl_headBobLimit, 0.2f, VF_CHEAT, "head bobbing distance limit");
+	pConsole->Register("cl_headBobLimit", &cl_headBobLimit, 0.15f, VF_CHEAT, "head bobbing distance limit");
 	pConsole->Register("cl_tpvDist", &cl_tpvDist, 3.5f, 0, "camera distance in 3rd person view");
 	pConsole->Register("cl_tpvYaw", &cl_tpvYaw, 0, 0, "camera angle offset in 3rd person view");
 	pConsole->Register("cl_nearPlane", &cl_nearPlane, 0, 0, "overrides the near clipping plane if != 0, just for testing.");
@@ -222,7 +222,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 
 	pConsole->Register("g_playerHealthValue", &g_playerHealthValue, 100, VF_CHEAT, "Maximum player health.");
 	pConsole->Register("g_walkMultiplier", &g_walkMultiplier, 1, VF_SAVEGAME, "Modify movement speed");
-	pConsole->Register("g_suitRecoilEnergyCost", &g_suitRecoilEnergyCost, 3.0f, VF_CHEAT, "Subtracted energy when weapon is fired in strength mode.");
+	pConsole->Register("g_suitRecoilEnergyCost", &g_suitRecoilEnergyCost, 1.0f, VF_CHEAT, "Subtracted energy when weapon is fired in strength mode.");
 	pConsole->Register("g_suitSpeedMult", &g_suitSpeedMult, 1.85f, 0, "Modify speed mode effect.");
 	pConsole->Register("g_suitSpeedMultMultiplayer", &g_suitSpeedMultMultiplayer, 0.35f, 0, "Modify speed mode effect for Multiplayer.");
 	pConsole->Register("g_suitArmorHealthValue", &g_suitArmorHealthValue, 200.0f, 0, "This defines how much damage is reduced by 100% energy, not considering recharge. The value should be between 1 and <SuitMaxEnergy>.");

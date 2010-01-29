@@ -73,7 +73,7 @@
 			</fire>
 			<tracer>
 				<param name="geometry" 	value="objects/effects/tracer_standard_new.cgf" />
-				<paran name="speed" 		value="445" />
+				<paran name="speed" 		value="840" />
 				<param name="frequency" value="3" />
 				<param name="helper_tp" value="gun" />
 			</tracer>				

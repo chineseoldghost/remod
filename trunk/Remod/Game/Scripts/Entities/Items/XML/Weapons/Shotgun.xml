@@ -256,8 +256,8 @@
 		</firemode>
 		<firemode name="Shotgun" type="Shotgun">
 			<shotgun>
-				<param name="pellets" value="16" />
-				<param name="pelletdamage" value="11" />
+				<param name="pellets" value="12" />
+				<param name="pelletdamage" value="14.5" />
 				<!--<param name="damage_drop_per_meter" value="0.25" />-->
 				<param name="spread" value="6" />
 			</shotgun>

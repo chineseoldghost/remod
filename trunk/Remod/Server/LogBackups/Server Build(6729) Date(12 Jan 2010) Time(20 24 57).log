@@ -1,0 +1,1519 @@
+BackupNameAttachment=" Build(6729) Date(12 Jan 2010) Time(20 24 57)"  -- used by backup system
+ 
+Log Started at Tuesday, January 12, 2010 20:24:57
+Running 32 bit version
+Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
+FileVersion: 1.1.1.6729
+ProductVersion: 1.1.1.6729
+Using STLport C++ Standard Library implementation
+ 
+Added MOD directory <Mods\Remod\> to CryPak
+--- CPU detection ---
+Total number of logical processors: 2
+Number of available logical processors: 2
+
+Processor 0:
+CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+Family: 6, Model: 15, Stepping: 6
+FPU: On-Chip
+CPU Speed (estimated): 1997.289206 MHz
+MMX: not present
+SSE: present
+3DNow!: not present
+Serial number not present or disabled
+
+Processor 1:
+CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+Family: 6, Model: 15, Stepping: 6
+FPU: On-Chip
+CPU Speed (estimated): 1997.271815 MHz
+MMX: not present
+SSE: present
+3DNow!: not present
+Serial number not present or disabled
+
+Total number of system cores: 2
+Number of cores available to process: 2
+---------------------
+Windows 32 bit (build 6.1.7600)
+System language: Dutch
+Windows Directory: "C:\Windows"
+Prerequisites...
+* Installation of KB940105 hotfix required: no! (either not needed or already installed)
+Local time is 20:24:57 01/12/10, system running for 435 minutes
+1521MB physical memory installed, 825MB available, 2047MB virtual memory installed, 45 percent of memory in use
+PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
+Current display mode is 1440x900x32, VGA
+IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
+--------------------------------------------------------------------------------
+[Error] Error: ConsoleVariableGroup 'sys_spec_Shading' key 'r_glow' is not missing in default
+Stream Engine Initialization
+Network initialization
+[net] using iocp socket io management
+Physics initialization
+MovieSystem initialization skipped for dedicated server
+Renderer initialization
+Console initialization
+Time initialization
+Font initialization
+AI initialization
+Initializing Animation System
+Initializing 3D Engine
+Script System Initialization
+Entity system initialization
+Initializing AI System
+[PlayerProfiles] Login of user 'Charlie the Unicorn' successful.
+[PlayerProfiles] Found 2 profiles.
+   Profile 0 : 'Blablah'
+   Profile 1 : 'default'
+[GameProfiles]: Successfully activated profile 'Blablah' for user 'Charlie the Unicorn'
+    $3sv_servername = $6Blablah's Server $5[DUMPTODISK]$4
+    $3sv_password = $6 $5[DUMPTODISK]$4
+    $3sv_cheatprotection = $60 $5[]$4
+    $3sv_maxplayers = $616 $5[DUMPTODISK]$4
+    $3g_tk_punish = $61 $5[]$4
+    $3g_tk_punish_limit = $65 $5[]$4
+    $3g_timelimit = $60 $5[]$4
+    $3g_MPDeathCam = $60 $5[]$4
+    $3g_MPDeathEffects = $61 $5[]$4
+    $3hud_alternateCrosshairSpread = $61 $5[]$4
+    $3e_cbuffer = $61 $5[]$4
+[Warning] Unknown command: r_geomInstancing = 0
+    $3es_OnDemandPhysics = $60 $5[]$4
+    $3r_CullGeometryForLights = $61 $5[]$4
+    $3e_vegetation_static_instancing = $60 $5[]$4
+    $3r_TerrainAO_FadeDist = $61 $5[]$4
+    $3e_vegetation_static_instancing = $60 $5[]$4
+    $3e_gsm_range = $63 $5[]$4
+    $3e_gsm_cache = $60 $5[]$4
+    $3e_ram_maps = $61 $5[DUMPTODISK, REQUIRE_LEVEL_RELOAD]$4
+    $3e_dissolve = $61 $5[]$4
+    $3r_VegetationSpritesTexRes = $6128 $5[]$4
+    $3e_particles_min_draw_pixels = $61 $5[]$4
+    $3hud_mpNamesDuration = $60 $5[]$4
+    $3sv_gamerules = $6PowerStruggle $5[]$4
+[net 19:24:58.337] network hostname: iMac7
+[net 19:24:58.341]   ip:192.168.0.192
+[net 19:24:58.341]   ip:5.182.209.7
+-----------------------------------------------------
+*LOADING: Level multiplayer/ps/Mesa loading time: 10.50 seconds
+-----------------------------------------------------
+    $3g_pp_scale_price = $60 $5[]$4
+CHAT Blablah to ALL:
+   HELLO MY LOVE.
+CHAT OMG! Shadow to ALL:
+   awsum pistol sound
+CHAT Blablah to ALL:
+   silenced one?
+CHAT OMG! Shadow to ALL:
+   silenced
+CHAT OMG! Shadow to ALL:
+   mhm
+CHAT Blablah to ALL:
+   it's the AY one :D
+CHAT OMG! Shadow to ALL:
+   stop shooting with it
+CHAT OMG! Shadow to ALL:
+   :d
+CHAT OMG! Shadow to ALL:
+   :D
+CHAT Blablah to ALL:
+   You hear it? :|
+CHAT OMG! Shadow to ALL:
+   ye
+CHAT Blablah to ALL:
+   Oh fuck
+CHAT OMG! Shadow to ALL:
+   binocs
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT Blablah to ALL:
+   Ooooh ok lo
+CHAT Blablah to ALL:
+   where are you? i'd like to see the nk suit
+CHAT OMG! Shadow to ALL:
+   find me
+CHAT Blablah to ALL:
+   good idea :P
+CHAT Blablah to ALL:
+   can i use a vtol?
+CHAT OMG! Shadow to ALL:
+   no
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT OMG! Shadow to ALL:
+   im not in the mountains or such
+CHAT Blablah to ALL:
+   k
+CHAT OMG! Shadow to ALL:
+   on
+CHAT Blablah to ALL:
+   hai
+CHAT Blablah to ALL:
+   dun shoot :P
+CHAT Blablah to ALL:
+   nice
+CHAT OMG! Shadow to ALL:
+   damn i love tat sound on pistol
+CHAT Blablah to ALL:
+   i'll switch to NK
+[net 19:46:27.082] Disconnect i577A4278.versanet.de:63020; profid=117073795; cause=0; msg='Timeout occurred; no packet for 31.7 seconds'
+    $3cl_fov = $665 $5[]$4
+CHAT OMG! Shadow to ALL:
+   where iz u
+CHAT OMG! Shadow to ALL:
+   sum fighting
+CHAT Blablah to ALL:
+   here, but come look at my suit :D
+CHAT OMG! Shadow to ALL:
+   ive seen it
+CHAT Blablah to ALL:
+   how? O_o
+CHAT OMG! Shadow to ALL:
+   dying/sitting in car pressing f1
+CHAT Blablah to ALL:
+   oh right
+CHAT Blablah to ALL:
+   dude is your water fucked up?
+CHAT OMG! Shadow to ALL:
+   sec
+CHAT OMG! Shadow to ALL:
+   few textures look like snow
+CHAT OMG! Shadow to ALL:
+   btw
+CHAT Blablah to ALL:
+   O_o
+CHAT Blablah to ALL:
+   which?
+CHAT OMG! Shadow to ALL:
+   ill upload screen
+CHAT OMG! Shadow to ALL:
+   sec
+CHAT OMG! Shadow to ALL:
+   screens up
+CHAT Blablah to ALL:
+   where?
+CHAT OMG! Shadow to ALL:
+   irc?
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   brb
+CHAT Blablah to ALL:
+   hmm
+CHAT Blablah to ALL:
+   is it only at a distance?
+CHAT OMG! Shadow to ALL:
+   mhm more or less
+CHAT OMG! Shadow to ALL:
+   ye it is
+CHAT Blablah to ALL:
+   must be the warhead shaders or a setting
+CHAT Blablah to ALL:
+   did you have it last time we tested?
+CHAT OMG! Shadow to ALL:
+   nope
+CHAT Blablah to Team tan:
+   oh ok it's not the shaders then
+    $3r_UseZPass = $61 $5[]$4
+CHAT Blablah to ALL:
+   fixed now?
+CHAT OMG! Shadow to ALL:
+   better nao
+CHAT Blablah to ALL:
+   nice
+CHAT OMG! Shadow to ALL:
+   zbut im lagging
+    $3r_UseZPass = $60 $5[]$4
+CHAT Blablah to ALL:
+   swoosh bad again?
+CHAT OMG! Shadow to ALL:
+   Like fuck
+CHAT OMG! Shadow to ALL:
+   ye
+CHAT Blablah to ALL:
+   lol
+    $3r_UseZPass = $61 $5[]$4
+CHAT OMG! Shadow to ALL:
+   what the fuck r u doing
+CHAT Blablah to ALL:
+   and fixed again
+CHAT OMG! Shadow to ALL:
+   im lagging
+    $3r_UseZPass = $60 $5[]$4
+CHAT Blablah to ALL:
+   and bad again
+    $3r_UseZPass = $61 $5[]$4
+CHAT OMG! Shadow to ALL:
+   like fck
+CHAT Blablah to ALL:
+   and fixed again
+CHAT OMG! Shadow to ALL:
+   ILL LEAVE
+CHAT OMG! Shadow to ALL:
+   DUDE
+CHAT Blablah to ALL:
+   i stopped lol
+CHAT Blablah to ALL:
+   still lagging?
+CHAT OMG! Shadow to ALL:
+   nope
+CHAT Blablah to ALL:
+   good
+CHAT Blablah to ALL:
+   so, are we killing? :P
+CHAT OMG! Shadow to ALL:
+   ye why not
+CHAT Blablah to ALL:
+   cool
+CHAT Blablah to ALL:
+   sniper?
+CHAT OMG! Shadow to ALL:
+   idc
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   i cunt find u
+CHAT Blablah to ALL:
+   infantry only mesa'd be so cool
+CHAT OMG! Shadow to ALL:
+   mh battlefield-ish
+CHAT Blablah to ALL:
+   sort of
+CHAT Blablah to ALL:
+   fuck, pc fail again?
+CHAT OMG! Shadow to ALL:
+   no
+CHAT Blablah to ALL:
+   just xfire?
+CHAT OMG! Shadow to ALL:
+   probably ,forgot to stop torrent client
+CHAT Blablah to ALL:
+   k
+CHAT OMG! Shadow to ALL:
+   i doesnt like my router
+CHAT Blablah to ALL:
+   think you can do an inf only cvar option through lua?
+CHAT Blablah to ALL:
+   and i mean ENTIRELY inf only
+CHAT Blablah to ALL:
+   no vehicles at all
+CHAT OMG! Shadow to ALL:
+   mh maybe
+CHAT Blablah to ALL:
+   remove all vehicle entities, disable buying of vehicles...
+CHAT Blablah to ALL:
+   now where the fuck are you :P
+CHAT Blablah to Team tan:
+   :O
+CHAT Blablah to ALL:
+   btw
+CHAT Blablah to ALL:
+   from that distance there's plenty of bullet drop
+CHAT Blablah to ALL:
+   you might've noticed
+CHAT OMG! Shadow to ALL:
+   lemme test
+CHAT Blablah to ALL:
+   that should've killed me though
+CHAT OMG! Shadow to ALL:
+   sec
+CHAT OMG! Shadow to ALL:
+   oh yeah,pretty battlefield-ish
+CHAT Blablah to ALL:
+   see?
+CHAT Blablah to ALL:
+   BF2 has bullet drop?
+CHAT OMG! Shadow to ALL:
+   ye
+CHAT Blablah to ALL:
+   it's realistic here :D
+CHAT Blablah to ALL:
+   took the weight and speed of a modern sniper rifle/bullet
+CHAT OMG! Shadow to ALL:
+   oh yea,i see it in the far distance
+CHAT Blablah to ALL:
+   look at me
+CHAT OMG! Shadow to ALL:
+   though now we need a new scopehud
+CHAT Blablah to ALL:
+   we do
+CHAT Blablah to ALL:
+   evan has flash now i think
+CHAT Blablah to ALL:
+   so i'm going to force him to make one
+CHAT OMG! Shadow to ALL:
+   im having all that flash stuff to,but never got used to it
+CHAT Blablah to ALL:
+   same here
+CHAT Blablah to ALL:
+   i hear you too
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   Maximum maximum!
+CHAT Blablah to ALL:
+   damnit i can't pinpoint your pos though
+CHAT OMG! Shadow to ALL:
+   phew
+CHAT Blablah to ALL:
+   damn
+CHAT Blablah to ALL:
+   not enough damage
+    $3g_walkMultiplier = $60 $5[SAVEGAME]$4
+    $3g_walkMultiplier = $61 $5[SAVEGAME]$4
+    $3g_walkMultiplier = $65 $5[SAVEGAME]$4
+    $3g_walkMultiplier = $61 $5[SAVEGAME]$4
+CHAT Blablah to ALL:
+   are you shooting me with your pistol? :P
+CHAT OMG! Shadow to ALL:
+   lol no
+CHAT Blablah to ALL:
+   i heard two hits near me
+CHAT OMG! Shadow to ALL:
+   marked
+CHAT Blablah to ALL:
+   ay ay ay
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT Blablah to ALL:
+   nice
+CHAT Blablah to ALL:
+   Fine shot lad
+CHAT OMG! Shadow to ALL:
+   first one was head :/ dunno how much you had left
+CHAT Blablah to ALL:
+   Yeha, let's test
+CHAT Blablah to ALL:
+   Stay where youare
+CHAT OMG! Shadow to ALL:
+   kk
+CHAT OMG! Shadow to ALL:
+   iirc
+CHAT OMG! Shadow to ALL:
+   banana made an pretty epic sniper map
+CHAT Blablah to ALL:
+   where art thou?
+CHAT OMG! Shadow to ALL:
+   mh
+CHAT Blablah to ALL:
+   yeah but it was just a heightmap
+CHAT Blablah to ALL:
+   k just
+CHAT Blablah to ALL:
+   shoot me in the head up close
+CHAT Blablah to ALL:
+   OMFG
+CHAT Blablah to ALL:
+   37 hp left
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   same
+CHAT Blablah to ALL:
+   urgh
+CHAT Blablah to ALL:
+   guess i'll have to crank it up loads more
+CHAT OMG! Shadow to ALL:
+   lets try without armor
+CHAT OMG! Shadow to ALL:
+   aight :P
+CHAT Blablah to ALL:
+   well that works
+CHAT Blablah to ALL:
+   but that should kill with a body shot
+CHAT Blablah to ALL:
+   shoot me in the body
+CHAT Blablah to ALL:
+   ah excellent
+CHAT OMG! Shadow to ALL:
+   nice backview with vtol
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   idk if i'll keep it
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   LOLLOLOLOLOLOLOLOLOLOL
+CHAT Blablah to ALL:
+   LMAO
+CHAT OMG! Shadow to ALL:
+   The car LOL
+CHAT Blablah to ALL:
+   haha
+CHAT Blablah to ALL:
+   get a vtol again so i can blow you out of the sky! :P
+CHAT Blablah to ALL:
+   with my law
+CHAT OMG! Shadow to ALL:
+   aight u ugly sob
+CHAT Blablah to ALL:
+   fuck
+CHAT Blablah to ALL:
+   fly around for a sec
+CHAT Blablah to ALL:
+   hit?
+CHAT OMG! Shadow to ALL:
+   mhm
+CHAT Blablah to ALL:
+   shit it's hard to lock eon
+CHAT Blablah to ALL:
+   nice
+CHAT Blablah to ALL:
+   i'ma bomb you now :P
+CHAT Blablah to ALL:
+   aw fuck
+CHAT Blablah to ALL:
+   where are you?
+CHAT OMG! Shadow to ALL:
+   WTF
+    $3g_suitCloakEnergyDrainAdjuster = $62 $5[]$4
+CHAT Blablah to ALL:
+   ?
+CHAT OMG! Shadow to ALL:
+   Whats that music?
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT Blablah to ALL:
+   quentin tarantino?
+CHAT OMG! Shadow to ALL:
+   Wait lol weird music is playing on my pc
+CHAT OMG! Shadow to ALL:
+   WTF
+CHAT Blablah to ALL:
+   oh
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   ok
+CHAT Blablah to ALL:
+   lo
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   LMAO
+CHAT OMG! Shadow to ALL:
+   I WANT MA HOUZ BACK
+CHAT OMG! Shadow to ALL:
+   IM CAMMINK
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   :(
+CHAT Blablah to ALL:
+   dude buy a mine and plant it, and buy some C4
+CHAT Blablah to ALL:
+   witness the awesomeness of the animations
+CHAT Blablah to ALL:
+   teabagged :D
+CHAT Blablah to ALL:
+   were you in strength?
+CHAT Blablah to ALL:
+   haha
+CHAT Blablah to ALL:
+   epic
+CHAT Blablah to ALL:
+   sorry :P
+CHAT Blablah to ALL:
+   i'm used to playing with evan
+CHAT Blablah to ALL:
+    and you can't make any compromises with him
+CHAT OMG! Shadow to ALL:
+   lol
+CHAT Blablah to ALL:
+   blidned myself
+CHAT OMG! Shadow to ALL:
+   i cant shoot
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   after loading
+CHAT Blablah to ALL:
+   O_o
+CHAT Blablah to ALL:
+   i can
+CHAT Blablah to ALL:
+   owned, sorry :P
+CHAT Blablah to ALL:
+   omg lol
+CHAT Blablah to ALL:
+   i had a lockon :D
+CHAT Blablah to ALL:
+   *a lock
+CHAT OMG! Shadow to ALL:
+   i had a croom
+CHAT OMG! Shadow to ALL:
+   vroom
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   got a lock again
+CHAT Blablah to ALL:
+   get a rifle?
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   sorry dude, i'm not nice today
+CHAT Blablah to ALL:
+   not that kinda rifle xD
+CHAT Blablah to ALL:
+   but okay
+CHAT OMG! Shadow to ALL:
+   no cloak
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   i turned up the drain for that tho
+    $3g_suitCloakEnergyDrainAdjuster = $63 $5[]$4
+    $3g_suitCloakEnergyDrainAdjuster = $62 $5[]$4
+CHAT Blablah to ALL:
+   nice
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT Blablah to ALL:
+   lagspike O_o
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   did i blind you too?
+CHAT OMG! Shadow to ALL:
+   nope
+CHAT Blablah to ALL:
+   why didn't you get me?
+CHAT Blablah to ALL:
+   you flew like an angel
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   2 hits :/
+CHAT Blablah to ALL:
+   naah that was more
+CHAT OMG! Shadow to ALL:
+   i mean my hits
+CHAT Blablah to ALL:
+   it does lots of damage tho
+CHAT Blablah to ALL:
+   oh
+CHAT Blablah to ALL:
+   i only got hit once i think?
+CHAT Blablah to ALL:
+   just speed out of there :P
+CHAT Blablah to ALL:
+   i'm not getting hit
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   weird
+CHAT Blablah to ALL:
+   are you shooting my shitten or something?
+CHAT OMG! Shadow to ALL:
+   not really but im directly shooting at you
+CHAT OMG! Shadow to ALL:
+   lets swap
+CHAT Blablah to ALL:
+   oh i see
+CHAT OMG! Shadow to ALL:
+   lol im getting hit
+CHAT OMG! Shadow to ALL:
+   but no dmg
+CHAT Blablah to ALL:
+   are you?
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   gay
+CHAT Blablah to ALL:
+   ah
+CHAT OMG! Shadow to ALL:
+   godmode turret is godmode
+CHAT OMG! Shadow to ALL:
+   oh
+CHAT OMG! Shadow to ALL:
+   now i got
+CHAT OMG! Shadow to ALL:
+   dmg
+CHAT Blablah to ALL:
+   nice suit
+CHAT Blablah to ALL:
+   xD
+CHAT OMG! Shadow to ALL:
+   oh ye
+CHAT OMG! Shadow to ALL:
+   same
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   thanks
+CHAT Blablah to ALL:
+   suck on it
+CHAT OMG! Shadow to ALL:
+   i would like
+CHAT OMG! Shadow to ALL:
+   class based gamemode
+CHAT OMG! Shadow to ALL:
+   :/
+CHAT OMG! Shadow to ALL:
+   Like Sniper,anti tank
+CHAT OMG! Shadow to ALL:
+   bf stuff
+CHAT Blablah to ALL:
+   eh, wouldn't fit in
+CHAT Blablah to ALL:
+   i mean
+CHAT OMG! Shadow to ALL:
+   different costumes n stuff
+CHAT Blablah to ALL:
+   it wouldn't work as a gamemode
+CHAT OMG! Shadow to ALL:
+   mh
+CHAT OMG! Shadow to ALL:
+   y
+CHAT Blablah to ALL:
+   the rest isn't
+CHAT OMG! Shadow to ALL:
+   but why shouldnt it work?
+CHAT Blablah to ALL:
+   technically it would
+CHAT Blablah to ALL:
+   dude go speed for a sec
+CHAT OMG! Shadow to ALL:
+   well wait whats the problem,you should be able to make tables
+CHAT OMG! Shadow to ALL:
+   for every class
+CHAT OMG! Shadow to ALL:
+   and do equip in them
+CHAT Blablah to ALL:
+   yeah technically it works
+CHAT Blablah to ALL:
+   but design-wise it's not a very good idea
+CHAT Blablah to ALL:
+   and switch to speed for a sec please
+CHAT OMG! Shadow to ALL:
+   mhm,maybe im gonna do it sometime in the vast nothingness of 
+CHAT OMG! Shadow to ALL:
+   future
+CHAT Blablah to ALL:
+   turn your back to m
+CHAT Blablah to ALL:
+   ah ok
+CHAT OMG! Shadow to ALL:
+   i wont bow now
+CHAT Blablah to ALL:
+   all good
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   that was a nice surprise 
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT OMG! Shadow to ALL:
+   SURPRICE
+CHAT OMG! Shadow to ALL:
+   BUTTSECKS
+CHAT OMG! Shadow to ALL:
+   Surp Rice
+CHAT OMG! Shadow to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   chinese
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   nice cup of surp rice
+CHAT OMG! Shadow to ALL:
+   there should be a pistol ingame
+CHAT OMG! Shadow to ALL:
+   counting as a good weapon
+CHAT OMG! Shadow to ALL:
+   :/
+CHAT OMG! Shadow to ALL:
+   imo
+CHAT Blablah to ALL:
+   dual wield the socom and shazam
+CHAT OMG! Shadow to ALL:
+   like a deagle or i dont know
+CHAT OMG! Shadow to ALL:
+   btw  its possible to double wield everything eh?
+CHAT OMG! Shadow to ALL:
+   with the socom params?
+CHAT Blablah to ALL:
+   technically
+CHAT Blablah to ALL:
+   but
+CHAT Blablah to ALL:
+   i'm not doing it
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   messed around with it some time ago
+CHAT Blablah to ALL:
+   how much did that hurt?
+CHAT OMG! Shadow to ALL:
+   100
+CHAT OMG! Shadow to ALL:
+   armor
+CHAT Blablah to ALL:
+   wait let's test
+CHAT Blablah to ALL:
+   that
+CHAT OMG! Shadow to ALL:
+   28 armor
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   hmm
+CHAT OMG! Shadow to ALL:
+   24!
+CHAT Blablah to ALL:
+   that?
+CHAT OMG! Shadow to ALL:
+   53
+CHAT Blablah to ALL:
+   armor?
+CHAT OMG! Shadow to ALL:
+   mhm
+CHAT Blablah to ALL:
+   wtf
+CHAT Blablah to ALL:
+   and that?
+CHAT OMG! Shadow to ALL:
+   28
+CHAT Blablah to ALL:
+   WTF
+CHAT Blablah to ALL:
+   headshot does less than body shot?! LOL
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT Blablah to ALL:
+   sorry lol
+    $3g_MPDeathEffects = $60 $5[]$4
+CHAT Blablah to ALL:
+   I'ma kill you again and again and again
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   lagspike
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   LMAO
+CHAT Blablah to ALL:
+   nice, can i test the tank on you now?
+CHAT Blablah to ALL:
+   i changed the cannon
+CHAT OMG! Shadow to ALL:
+   mhm
+CHAT Blablah to ALL:
+   don't kill me
+CHAT Blablah to ALL:
+   get out lol
+CHAT Blablah to ALL:
+   thanks
+CHAT Blablah to ALL:
+   noooo
+CHAT Blablah to ALL:
+   thanks
+CHAT Blablah to ALL:
+   k just stand outside
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   BZZZZZ
+CHAT OMG! Shadow to ALL:
+   D:
+CHAT Blablah to ALL:
+   like in BF2:MC on PS2 xD
+CHAT Blablah to ALL:
+   the torch could kill
+CHAT Blablah to ALL:
+   okay now, i need to test damage spread
+CHAT OMG! Shadow to ALL:
+   GIVE IT TO ME
+CHAT Blablah to ALL:
+   little farther
+CHAT Blablah to ALL:
+   farther
+CHAT Blablah to ALL:
+   k
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT Blablah to ALL:
+   what did that do?
+CHAT OMG! Shadow to ALL:
+   uhm nothing happened
+CHAT Blablah to ALL:
+   no damage at all?
+CHAT OMG! Shadow to ALL:
+   no explosion or such
+CHAT Blablah to ALL:
+   oh lol
+CHAT OMG! Shadow to ALL:
+   no asplosion
+CHAT Blablah to ALL:
+   O-o
+CHAT Blablah to ALL:
+   works for me
+CHAT Blablah to ALL:
+   can you get a tank?
+CHAT Blablah to ALL:
+   and show me
+CHAT Blablah to ALL:
+   WERRY NICEH
+CHAT OMG! Shadow to ALL:
+   fack
+CHAT Blablah to ALL:
+   ?
+CHAT Blablah to ALL:
+   tank?
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   don't shoot
+CHAT Blablah to ALL:
+   at me
+CHAT OMG! Shadow to ALL:
+   lol im seeing asplosion
+CHAT Blablah to ALL:
+   i'm not O_o
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT Blablah to ALL:
+   wtf
+CHAT OMG! Shadow to ALL:
+   LOL NO i didnt too
+CHAT OMG! Shadow to ALL:
+   and again
+CHAT Blablah to ALL:
+   oh now i don't either
+CHAT OMG! Shadow to ALL:
+   now again
+CHAT OMG! Shadow to ALL:
+   now not
+CHAT OMG! Shadow to ALL:
+   what the fuck
+CHAT Blablah to ALL:
+   wtf
+CHAT OMG! Shadow to ALL:
+   seems to be the projectile dosnt hit some surfaces
+CHAT OMG! Shadow to ALL:
+   and its going through
+CHAT Blablah to ALL:
+   something like that
+CHAT Blablah to ALL:
+   if you'd hover now
+CHAT Blablah to ALL:
+   you'd have a nice hovertank :P
+CHAT OMG! Shadow to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   lol wtf?
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   lol wtf?
+CHAT Blablah to ALL:
+   i got crushed
+CHAT OMG! Shadow to ALL:
+   Btw
+CHAT OMG! Shadow to ALL:
+   i implemented you and me in the machinma as characters
+CHAT Blablah to ALL:
+   lol!
+CHAT OMG! Shadow to ALL:
+   whats your full name?
+CHAT Blablah to ALL:
+   Johnny Fox
+CHAT Blablah to ALL:
+   ;P
+CHAT OMG! Shadow to ALL:
+   :d
+CHAT OMG! Shadow to ALL:
+   aight
+CHAT OMG! Shadow to ALL:
+   im taking jay too
+CHAT OMG! Shadow to ALL:
+   so its fine
+CHAT Blablah to ALL:
+   nobody can pronounce my real one
+CHAT Blablah to ALL:
+   wait jay isn't your REAL name?
+CHAT OMG! Shadow to ALL:
+   no
+CHAT Blablah to ALL:
+   my real one's joannes vos
+CHAT OMG! Shadow to ALL:
+   Yeray Andres
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT Blablah to ALL:
+   oh right
+CHAT Blablah to ALL:
+   nice name
+CHAT OMG! Shadow to ALL:
+   :D
+CHAT OMG! Shadow to ALL:
+   oh jesus
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   just wanted to strenght jump
+CHAT OMG! Shadow to ALL:
+   open da back door!
+CHAT Blablah to ALL:
+   get in xD
+CHAT OMG! Shadow to ALL:
+   im in
+CHAT OMG! Shadow to ALL:
+    oh noes
+CHAT OMG! Shadow to ALL:
+   ah ok
+CHAT Blablah to ALL:
+   ready?
+CHAT OMG! Shadow to ALL:
+   more or less
+CHAT OMG! Shadow to ALL:
+   can i have peanuts
+CHAT Blablah to ALL:
+   sure
+CHAT OMG! Shadow to ALL:
+   <3
+CHAT Blablah to ALL:
+   /me hands over peanuts
+CHAT Blablah to ALL:
+   are you still in?
+CHAT OMG! Shadow to ALL:
+   mhm 
+CHAT Blablah to ALL:
+   oh isee xD
+CHAT OMG! Shadow to ALL:
+   oh energy crit
+CHAT OMG! Shadow to ALL:
+   lol wait
+CHAT OMG! Shadow to ALL:
+   i got the message ...."spawn cycle"  but im not dead?
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   O_o
+CHAT OMG! Shadow to ALL:
+   Sadly there isnt a way to make it rly smooth back there
+CHAT Blablah to ALL:
+   aw, shucks
+CHAT OMG! Shadow to ALL:
+   engine gail
+CHAT OMG! Shadow to ALL:
+   would be awesome though,
+CHAT OMG! Shadow to ALL:
+   wait
+CHAT OMG! Shadow to ALL:
+   when you exit a vehicle
+CHAT Blablah to ALL:
+   engine gail?
+CHAT OMG! Shadow to ALL:
+   are there some kinds of exit points?
+CHAT Blablah to ALL:
+   yes
+CHAT Blablah to ALL:
+   there are entrance points too but
+CHAT OMG! Shadow to ALL:
+   how about placing the vtol ones inside?
+CHAT Blablah to ALL:
+   like in crysis
+CHAT Blablah to ALL:
+   oh that's a great idea :O
+CHAT OMG! Shadow to ALL:
+   so its more realistic to deploy troop
+CHAT Blablah to ALL:
+   but then you wouldn't be able to parachute out
+CHAT OMG! Shadow to ALL:
+   and they can sit
+CHAT Blablah to ALL:
+   which might be good a
+CHAT OMG! Shadow to ALL:
+   a way to open the door via mouseclick?
+CHAT OMG! Shadow to ALL:
+   :/(
+CHAT OMG! Shadow to ALL:
+   :/
+CHAT Blablah to ALL:
+   yeah but not if you don't know c++ :/
+CHAT OMG! Shadow to ALL:
+   D:
+CHAT Blablah to ALL:
+   there are entry points too btw
+CHAT Blablah to ALL:
+   but they're disabled in wars
+CHAT OMG! Shadow to ALL:
+   ah k
+CHAT Blablah to ALL:
+   i want to reenable them
+CHAT Blablah to ALL:
+   so you have to go into the back
+CHAT Blablah to ALL:
+   and to the door
+CHAT Blablah to ALL:
+   to enter the vtol driver seat
+CHAT OMG! Shadow to ALL:
+   ye thats what i ment with placing them inside
+CHAT Blablah to ALL:
+   yeah, but i'm talking about entry points now
+CHAT Blablah to ALL:
+   for exit points it's easy
+CHAT OMG! Shadow to ALL:
+   door fucking crashed me
+CHAT Blablah to ALL:
+   lolwut
+CHAT OMG! Shadow to ALL:
+   door killed me
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   oh lol
+CHAT Blablah to ALL:
+   i'ma fly through the tunnel
+CHAT OMG! Shadow to ALL:
+   wait!
+CHAT Blablah to ALL:
+   hop on xD
+CHAT Blablah to ALL:
+   and i'm doing this in 1st person too
+CHAT Blablah to ALL:
+   fail xD
+CHAT OMG! Shadow to ALL:
+   this is weird mythbusters hsit
+CHAT OMG! Shadow to ALL:
+   shit
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   next tunnel
+CHAT Blablah to ALL:
+   it is
+CHAT Blablah to ALL:
+   omg it has a turn D:
+CHAT Blablah to ALL:
+   a bend
+CHAT OMG! Shadow to ALL:
+   can we fix it?
+CHAT OMG! Shadow to ALL:
+   yes we can!
+CHAT OMG! Shadow to ALL:
+   :D
+CHAT Blablah to ALL:
+   not as easy as in wars xD
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   ouch
+CHAT Blablah to ALL:
+   fuck
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT OMG! Shadow to ALL:
+   BZZZ
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   i love that sound
+CHAT Blablah to ALL:
+   samesies
+CHAT Blablah to ALL:
+   lol!
+CHAT Blablah to ALL:
+   hai
+CHAT OMG! Shadow to ALL:
+   sup
+CHAT Blablah to ALL:
+   U WILL PAY FOR DIS AMERIKAN!
+CHAT Blablah to ALL:
+   U WILL PAY FOR DIS
+CHAT OMG! Shadow to ALL:
+   D:
+CHAT Blablah to ALL:
+   sorry :(
+CHAT OMG! Shadow to ALL:
+   nvm :D
+CHAT Blablah to ALL:
+   get a vtol and let's crash into each other :D
+CHAT OMG! Shadow to ALL:
+   then kill me first INFIDEL
+CHAT OMG! Shadow to ALL:
+   with vtol i mean
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   lies
+CHAT Blablah to ALL:
+   oh you bunnyjumping bitch lol
+CHAT Blablah to ALL:
+   FUCKING SLALOMING LOL
+CHAT Blablah to ALL:
+   tiny bit of bullet drop
+CHAT Blablah to ALL:
+   aiming at your head is a high neck shot from here
+CHAT OMG! Shadow to ALL:
+   Alright,Tush!
+CHAT OMG! Shadow to ALL:
+   Rush!
+CHAT Blablah to ALL:
+   prawnage
+CHAT OMG! Shadow to ALL:
+   District 9
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   xD
+CHAT OMG! Shadow to ALL:
+   awesome movie
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   it is
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT Blablah to ALL:
+   epic lag spike
+CHAT OMG! Shadow to ALL:
+   D:
+CHAT Blablah to ALL:
+   get a vtol biatch :P
+CHAT OMG! Shadow to ALL:
+   ohai! ima blind passenger
+CHAT Blablah to ALL:
+   come get me :P
+CHAT OMG! Shadow to ALL:
+   Ill ram my penile area into your butt!
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   oll
+CHAT Blablah to ALL:
+   OOOOOOOH
+CHAT OMG! Shadow to ALL:
+   XD
+CHAT Blablah to ALL:
+   EPIC FUCKING WIN
+CHAT OMG! Shadow to ALL:
+   OHYEAH
+CHAT OMG! Shadow to ALL:
+   THAT WAS
+CHAT Blablah to ALL:
+   wOOOOOO
+CHAT OMG! Shadow to ALL:
+   !
+CHAT Blablah to ALL:
+   again :P
+CHAT OMG! Shadow to ALL:
+   Dodgin my c4`d vtol and then ramming yours into my ass
+CHAT Blablah to ALL:
+   nice you had C4 on it? :P
+CHAT Blablah to ALL:
+   LOL DUDE
+CHAT OMG! Shadow to ALL:
+   guess why it asploded
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT Blablah to ALL:
+   when i buy C4 inside my vtol
+CHAT Blablah to ALL:
+   i grab it
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   i mean
+CHAT Blablah to ALL:
+   no
+CHAT Blablah to ALL:
+   i see it
+CHAT Blablah to ALL:
+   can't plant it though
+CHAT Blablah to ALL:
+   OOOOOH
+CHAT Blablah to ALL:
+   NICE
+CHAT Blablah to ALL:
+   i wanna adjust parachute handling
+CHAT OMG! Shadow to ALL:
+   not yet
+CHAT Blablah to ALL:
+   but i can't find where
+CHAT OMG! Shadow to ALL:
+   not yet
+CHAT OMG! Shadow to ALL:
+   now!
+CHAT Blablah to ALL:
+   LOL nice chute
+CHAT OMG! Shadow to ALL:
+   am i the only one with chute bugs btw?
+CHAT Blablah to ALL:
+   like?
+CHAT OMG! Shadow to ALL:
+   zbrown boxes and such
+CHAT Blablah to ALL:
+   yeah
+CHAT OMG! Shadow to ALL:
+   pretty weird
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   Deployed on battlefield!
+CHAT Blablah to ALL:
+   suck on me
+CHAT Blablah to ALL:
+   jump on me
+CHAT Blablah to ALL:
+   but
+CHAT Blablah to ALL:
+   jump again when you hit me
+CHAT OMG! Shadow to ALL:
+   i know that trick,i explored it with a friend actually
+CHAT Blablah to ALL:
+   yeah
+CHAT OMG! Shadow to ALL:
+   i showed it to u
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   wait go strength
+CHAT Blablah to ALL:
+   well, let me see ofr  asec
+CHAT Blablah to ALL:
+   armor?
+CHAT Blablah to ALL:
+   strength again
+CHAT Blablah to ALL:
+   and speed?
+CHAT Blablah to ALL:
+   ah i see
+CHAT Blablah to ALL:
+   bit of a setting issue in strength
+CHAT Blablah to ALL:
+   well no not a setting issue
+CHAT Blablah to ALL:
+   mtl issue
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   hahaha
+CHAT OMG! Shadow to ALL:
+   fucking Crysoft,malfunctions
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   Customur support
+CHAT OMG! Shadow to ALL:
+   Yeah hello,my nanosuit has malfunctions
+CHAT OMG! Shadow to ALL:
+   we cant help you and...BING!
+CHAT Blablah to ALL:
+   BING!
+CHAT OMG! Shadow to ALL:
+   *background+ CHARLIE SAY IT
+CHAT Blablah to ALL:
+   CHARLIE SAY IT
+CHAT Blablah to ALL:
+   BING
+CHAT OMG! Shadow to ALL:
+   BING
+CHAT Blablah to ALL:
+   BINGG
+CHAT OMG! Shadow to ALL:
+   I laughed my ass of when i saw it
+CHAT Blablah to ALL:
+   haha, same here
+CHAT OMG! Shadow to ALL:
+   iam so up for the machinma
+CHAT OMG! Shadow to ALL:
+   just imagine
+CHAT OMG! Shadow to ALL:
+   we both as directors of an epic machinma
+CHAT Blablah to ALL:
+   it's hard
+CHAT OMG! Shadow to ALL:
+   im thinkint about an 90 minute one
+CHAT OMG! Shadow to ALL:
+   yeah i know
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   shit
+CHAT OMG! Shadow to ALL:
+   and im writing for round about 90minutes
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   but dude
+CHAT OMG! Shadow to ALL:
+   for the movie
+CHAT OMG! Shadow to ALL:
+   lets get swadla as voice actor
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   czech nanoteam member
+CHAT OMG! Shadow to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   nobody understand a fuck
+CHAT OMG! Shadow to ALL:
+   "Have a nice day second"
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   i want epic team fights
+CHAT Blablah to ALL:
+   i should o like
+CHAT Blablah to ALL:
+   a rear view mirror
+CHAT Blablah to ALL:
+   view
+CHAT Blablah to ALL:
+   for the jeeps xD
+    $3time_scale = $60.1 $5[]$4
+    $3time_scale = $61 $5[]$4
+CHAT Blablah to ALL:
+   i like titties
+    $3time_scale = $60.1 $5[]$4
+    $3time_scale = $61 $5[]$4
+CHAT Blablah to ALL:
+   where you at brah
+CHAT Blablah to ALL:
+   where are you? :(
+CHAT Blablah to ALL:
+   ah come out come out whereever you are :(
+CHAT OMG! Shadow to ALL:
+   just saw the empty projectiles are reacting with the water
+CHAT Blablah to ALL:
+   you have a tank? O_o
+CHAT Blablah to ALL:
+   damnit where D:
+CHAT Blablah to ALL:
+   i have cool planss
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   NICE
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT OMG! Shadow to ALL:
+   close
+    $3time_scale = $60.1 $5[]$4
+CHAT Blablah to ALL:
+   boom
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT Blablah to ALL:
+   shit chute not opening
+CHAT Blablah to ALL:
+   oh yes it is
+    $3time_scale = $61 $5[]$4
+CHAT OMG! Shadow to ALL:
+   awsum
+CHAT Blablah to ALL:
+   i want wrecks to stay longer
+CHAT OMG! Shadow to ALL:
+   isnt there something inside a lua file
+CHAT Blablah to ALL:
+   yep
+CHAT OMG! Shadow to ALL:
+   or wait,ssm had it as feature
+CHAT Blablah to ALL:
+   can't remember where tho
+CHAT OMG! Shadow to ALL:
+   aswell
+CHAT Blablah to ALL:
+   it did?
+CHAT OMG! Shadow to ALL:
+   mhm
+CHAT OMG! Shadow to ALL:
+   Dying on water? from distance? thats new huh`?
+CHAT Blablah to ALL:
+   O-o
+CHAT Blablah to ALL:
+   no
+CHAT Blablah to ALL:
+   did you fall?
+CHAT OMG! Shadow to ALL:
+   yeah just jumped down the mesa and
+CHAT OMG! Shadow to ALL:
+   yeah
+CHAT Blablah to ALL:
+   into water?
+CHAT OMG! Shadow to ALL:
+   mhm
+CHAT Blablah to ALL:
+   it happens in wars too
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   well
+CHAT Blablah to ALL:
+   time to go?
+CHAT OMG! Shadow to ALL:
+   i spies sow
+CHAT Blablah to ALL:
+   ?
+CHAT OMG! Shadow to ALL:
+   Yeas
+CHAT Blablah to ALL:
+   sow?
+CHAT OMG! Shadow to ALL:
+   soww
+CHAT Blablah to ALL:
+   soww?
+CHAT Blablah to ALL:
+   :(
+CHAT Blablah to ALL:
+   you destroyed my claymore
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   well well
+CHAT Blablah to ALL:
+   shall we go?
+CHAT OMG! Shadow to ALL:
+   bla?
+CHAT Blablah to ALL:
+   yeh
+CHAT OMG! Shadow to ALL:
+   since when are you able to keep pressing shift
+CHAT Blablah to ALL:
+   ?
+CHAT OMG! Shadow to ALL:
+   to bunnyhop? instead of repeat hitting it
+CHAT Blablah to ALL:
+   no idea
+CHAT Blablah to ALL:
+   i didn't do it :D
+CHAT OMG! Shadow to ALL:
+   yeah i mean i just can keep pressing space and im jumping all
+CHAT OMG! Shadow to ALL:
+    the time
+CHAT Blablah to ALL:
+   yeah
+CHAT OMG! Shadow to ALL:
+   might be different to wars
+CHAT Blablah to ALL:
+   i should fix it
+CHAT OMG! Shadow to ALL:
+   dunno
+CHAT Blablah to ALL:
+   you sneaky fucker
+[net 21:44:17.401] Disconnect i577A4278.versanet.de:57397; profid=117073795; cause=0; msg='Timeout occurred; no packet for 31.7 seconds'
+[net 21:44:26.790] Disconnect iMac7.telenet.be:57933; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:57933'
+System:Quit

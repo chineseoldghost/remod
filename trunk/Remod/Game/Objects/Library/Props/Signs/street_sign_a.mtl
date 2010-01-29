@@ -1,0 +1,22 @@
+<Material MtlFlags="256" >
+ <SubMaterials>
+  <Material Diffuse="0.65098041,0.65098041,0.65098041" Emissive="0,0,0" GenMask="4194323" MtlFlags="128" Name="sign" Opacity="1" Shader="Illum" Shininess="9.999999" Specular="0.50196081,0.50196081,0.50196081" SurfaceType="" >
+   <Textures>
+    <Texture File="objects/library/props/signs/street_sign_a.tif" Map="Diffuse" >
+     <TexMod />
+    </Texture>
+    <Texture File="objects/library/props/signs/street_sign_a_spec.tif" Map="Specular" >
+     <TexMod />
+    </Texture>
+    <Texture File="objects/library/props/signs/street_sign_d.tif" Map="Detail" >
+     <TexMod TileU="5" TileV="5" />
+    </Texture>
+   </Textures>
+   <PublicParams BumpOffset="0.039999999" DebugUVScale="64" EnvMapAmount="0.25" FresnelBias="0" FresnelPow="5" FresnelScale="1" Reflect="0.5" />
+  </Material>
+  <Material Diffuse="1,0,0" Emissive="0,0,0" GenMask="0" MtlFlags="1152" Name="proxy" Opacity="0.5" Shader="Nodraw" Shininess="10" Specular="0,0,0" SurfaceType="mat_metal" >
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams BumpOffset="0.039999999" DebugUVScale="64" EnvMapAmount="0.25" FresnelBias="0" FresnelPow="5" FresnelScale="1" Reflect="0.5" />
+</Material>

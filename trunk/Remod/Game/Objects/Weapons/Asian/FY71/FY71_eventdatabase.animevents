@@ -1,0 +1,99 @@
+<anim_event_list>
+ <animation name="">
+  <event name="" time="9.931713e-038" parameter="" bone="" offset="9.931713e-038,1.4321506e-038,1.43215e-038" dir="9.931713e-038,1.4321506e-038,1.43215e-038"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/deselect_01.caf">
+  <event name="sound" time="0.0099999998" parameter="Sounds/weapons:fy71:fy71_reload_06_wpndn" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/enter_modify_right_01.caf">
+  <event name="sound" time="0.0070000002" parameter="Sounds/physics:player_foley:suit_movement" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.354" parameter="Sounds/weapons:scar:scar_reload_01_wpnup" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/grab_weapon_left_01.caf">
+  <event name="sound" time="0.014" parameter="Sounds/physics:player_foley:suit_movement" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.52666003" parameter="Sounds/weapons:fy71:fy71_reload_01_wpnup" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/leave_modify_right_01.caf">
+  <event name="sound" time="0.003" parameter="Sounds/physics:player_foley:suit_movement" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.30200002" parameter="Sounds/weapons:fy71:fy71_reload_01_wpnup" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.53311998" parameter="Sounds/weapons:fy71:fy71_reload_06_wpndn" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/lower_right_01.caf">
+  <event name="sound" time="0.011000001" parameter="Sounds/physics:player_foley:suit_movement" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.014" parameter="Sounds/weapons:fy71:fy71_reload_01_wpnup" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/melee_01.caf">
+  <event name="sound" time="0.0099999998" parameter="Sounds/weapons:melee:fire_fp_mw" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/melee_02.caf">
+  <event name="sound" time="0" parameter="Sounds/weapons:melee:fire_fp_mw" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/raise_right_01.caf">
+  <event name="sound" time="0.014" parameter="Sounds/physics:player_foley:suit_movement" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.022000002" parameter="Sounds/weapons:fy71:fy71_reload_01_wpnup" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/reload_chamberempty_01.caf">
+  <event name="sound" time="0" parameter="Sounds/weapons:fy71:fy71_reload_01_wpnup" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.19092999" parameter="Sounds/weapons:fy71:fy71_reload_02_clipout" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.36899999" parameter="Sounds/weapons:fy71:fy71_reload_03_clipin" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.77208" parameter="Sounds/weapons:fy71:fy71_reload_04_chockback" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.83493" parameter="Sounds/weapons:fy71:fy71_reload_05_cockfwd" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.68199998" parameter="Sounds/weapons:fy71:fy71_reload_01_wpnup" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.52048999" parameter="Sounds/weapons:fy71:fy71_reload_06_wpndn" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/reload_chamberfull_01.caf">
+  <event name="sound" time="0" parameter="Sounds/weapons:fy71:fy71_reload_01_wpnup" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.27465999" parameter="Sounds/weapons:fy71:fy71_reload_02_clipout" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.65600002" parameter="Sounds/weapons:fy71:fy71_reload_03_clipin" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.75060999" parameter="Sounds/weapons:fy71:fy71_reload_06_wpndn" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/reload_grenade_right_01.caf">
+  <event name="sound" time="0.014" parameter="Sounds/weapons:fy71:fy71_reload_01_wpnup" bone="weapon" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.125" parameter="Sounds/weapons:fy71:fy71_reload_12_grenopen" bone="weapon" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.35563001" parameter="Sounds/weapons:fy71:fy71_reload_10_grenadein" bone="weapon" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.523" parameter="Sounds/weapons:fy71:fy71_reload_11_grenclose" bone="weapon" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.68600005" parameter="Sounds/weapons:fy71:fy71_reload_06_wpndn" bone="weapon" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/remove_arm_left_01.caf">
+  <event name="sound" time="0.011000001" parameter="Sounds/physics:player_foley:suit_movement" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/select_01.caf">
+  <event name="sound" time="0.0099999998" parameter="Sounds/weapons:fy71:fy71_reload_01_wpnup" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/zerog_to_idle_right_01.caf">
+  <event name="sound" time="0.014" parameter="Sounds/physics:player_foley:suit_movement" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.43900001" parameter="Sounds/weapons:fy71:fy71_reload_06_wpndn" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/zoom_in_fc_01.caf">
+  <event name="sound" time="0.0099999998" parameter="Sounds/physics:player_foley:zoom" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.018000001" parameter="Sounds/weapons:fy71:fy71_reload_01_wpnup" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/zoom_in_ironsight_01.caf">
+  <event name="sound" time="0.0099999998" parameter="Sounds/physics:player_foley:zoom" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.014" parameter="Sounds/weapons:fy71:fy71_reload_01_wpnup" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/zoom_in_reflex_01.caf">
+  <event name="sound" time="0.0099999998" parameter="Sounds/physics:player_foley:zoom" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.0070000002" parameter="Sounds/weapons:fy71:fy71_reload_01_wpnup" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/zoom_in_scope_01.caf">
+  <event name="sound" time="0.0099999998" parameter="Sounds/physics:player_foley:zoom" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.018000001" parameter="Sounds/weapons:fy71:fy71_reload_01_wpnup" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/zoom_out_fc_01.caf">
+  <event name="sound" time="0.0099999998" parameter="Sounds/physics:player_foley:zoom" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.011000001" parameter="Sounds/weapons:fy71:fy71_reload_06_wpndn" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/zoom_out_ironsight_01.caf">
+  <event name="sound" time="0.0099999998" parameter="Sounds/physics:player_foley:zoom" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.0070000002" parameter="Sounds/weapons:fy71:fy71_reload_06_wpndn" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/zoom_out_reflex_01.caf">
+  <event name="sound" time="0.0099999998" parameter="Sounds/physics:player_foley:zoom" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.018000001" parameter="Sounds/weapons:fy71:fy71_reload_06_wpndn" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+ <animation name="animations/1st_person/weapons/asian/fy71/zoom_out_scope_01.caf">
+  <event name="sound" time="0.0099999998" parameter="Sounds/physics:player_foley:zoom" bone="" offset="0,0,0" dir="0,0,0"/>
+  <event name="sound" time="0.011000001" parameter="Sounds/weapons:fy71:fy71_reload_06_wpndn" bone="" offset="0,0,0" dir="0,0,0"/>
+ </animation>
+</anim_event_list>

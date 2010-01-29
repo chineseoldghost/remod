@@ -1,0 +1,165 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="hull" MtlFlags="128" Shader="Metal" GenMask="268476928" SurfaceType="mat_metal_thick" Diffuse="0.45882356,0.45882356,0.45882356" Specular="0.54901963,0.54901963,0.54901963" Emissive="0,0,0" Shininess="3" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/asv/asv_nk_hull.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/asv/asv_hull_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/vehicles/asv/asv_hull_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/detail/cliff_blocky_ddn.dds">
+     <TexMod TileU="20" TileV="20"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.199" AnisotropicShape="0.72299999" DetailBumpTillingU="3" DetailBumpTillingV="3" DetailBumpScale="0.41" DetailBlendAmount="0"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="4" TillingV="2" ReflectionAmount="0" TopSnowAmount="0.60399997" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="interior" MtlFlags="128" Shader="Illum" GenMask="285220880" SurfaceType="mat_metal_thick" Diffuse="0.17254902,0.17254902,0.17254902" Specular="0.3137255,0.3137255,0.3137255" Emissive="0,0,0" Shininess="17.9" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/asv/asv_interior.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/asv/asv_interior_spec.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="0.479" TillingU="4" TillingV="4" ReflectionAmount="0.12899999" TopSnowAmount="0.15800001" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="wheel" MtlFlags="128" Shader="Metal" GenMask="268444160" SurfaceType="mat_metal_thick" Diffuse="0.40000004,0.40000004,0.40000004" Specular="0.34509805,0.34509805,0.34509805" Emissive="0,0,0" Shininess="0.5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/asv/asv_wheel.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/asv/asv_wheel_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/vehicles/asv/asv_wheel_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.229" AnisotropicShape="0.25"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1.6059999" TillingU="2" TillingV="2" ReflectionAmount="0" TopSnowAmount="0.60399997" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="NoDraw" GenMask="0" SurfaceType="mat_metal_rough" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="glass" MtlFlags="2208" Shader="Glass" GenMask="268436498" SurfaceType="mat_glass_unbreakable" Diffuse="0.53725493,0.53725493,0.53725493" Specular="1,1,1" Emissive="0,0,0" Shininess="1.5" Opacity="0.396">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/asv/asv_window.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/asv/asv_window_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/beach_blur.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams TintAmount="1" RefrBumpScale="0" ReflectionAmount="0.07" FresnelBias="0.026000001" FresnelScale="32" BackLightScale="10" FilterColor="0,0,0"/>
+   <MaterialLayers>
+    <Layer Name="FrozenLayerWip" NoDraw="1">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="scope" MtlFlags="128" Shader="Metal" GenMask="268444176" SurfaceType="mat_glass_unbreakable" Diffuse="0.20784315,0.20784315,0.20784315" Specular="0.67058825,0.67058825,0.67058825" Emissive="0,0,0" Shininess="6" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/asv/asv_glass_env.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/asv/asv_glass_env.tif">
+     <TexMod TexMod_TexGenType="6"/>
+    </Texture>
+    <Texture Map="Environment" File="objects/vehicles/asv/asv_glass.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.289" AnisotropicShape="0.25" ReflectionAmount="0.25" FresnelBias="0" FresnelScale="1"/>
+  </Material>
+  <Material Name="headlight" MtlFlags="128" Shader="Illum" GenMask="285212688" SurfaceType="mat_glass_unbreakable" Diffuse="0.31764707,0.31764707,0.31764707" Specular="0.76078439,0.76078439,0.76078439" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/asv/asv_nk_hull.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/asv/asv_hull_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/vehicles/ltv/detailmap.tif">
+     <TexMod TileU="15" TileV="15"/>
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="backlight" MtlFlags="128" Shader="Illum" GenMask="285212688" SurfaceType="mat_glass_unbreakable" Diffuse="0.31764707,0.31764707,0.31764707" Specular="0.76078439,0.76078439,0.76078439" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/asv/asv_nk_hull.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/asv/asv_hull_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/vehicles/ltv/detailmap.tif">
+     <TexMod TileU="15" TileV="15"/>
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="damaged" MtlFlags="128" Shader="Metal" GenMask="268439552" SurfaceType="mat_metal_thick" Diffuse="0.50196081,0.50196081,0.50196081" Specular="1,1,1" Emissive="0,0,0" Shininess="3" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/us_vtol/vtol_damage.dds">
+     <TexMod TileU="5" TileV="4.0999999" OffsetU="3.0999999"/>
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/us_vtol/vtol_damage_spec.dds">
+     <TexMod TileU="4" TileV="4"/>
+    </Texture>
+    <Texture Map="Normalmap" File="objects/vehicles/us_vtol/vtol_damage_ddn.dds">
+     <TexMod TileU="4" TileV="4"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31400001" Glossiness="0.75"/>
+  </Material>
+  <Material Name="Shiten" MtlFlags="128" Shader="Metal" GenMask="268476928" SurfaceType="mat_metal_thick" Diffuse="0.47058827,0.47058827,0.47058827" Specular="0.76862752,0.76862752,0.76862752" Emissive="1,1,1" Shininess="1.7" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/asv/asv_shitten.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/asv/asv_shitten_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/vehicles/asv/asv_shitten_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_001_ddn.tif">
+     <TexMod TileU="20" TileV="20"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.139" AnisotropicShape="0.25" DetailBumpTillingU="16" DetailBumpTillingV="16" DetailBumpScale="2" DetailBlendAmount="0"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

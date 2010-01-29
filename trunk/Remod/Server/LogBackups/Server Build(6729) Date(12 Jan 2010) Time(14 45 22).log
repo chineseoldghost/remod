@@ -1,0 +1,69 @@
+BackupNameAttachment=" Build(6729) Date(12 Jan 2010) Time(14 45 22)"  -- used by backup system
+ 
+Log Started at Tuesday, January 12, 2010 14:45:22
+Running 32 bit version
+Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
+FileVersion: 1.1.1.6729
+ProductVersion: 1.1.1.6729
+Using STLport C++ Standard Library implementation
+ 
+Added MOD directory <Mods\Remod\> to CryPak
+--- CPU detection ---
+Total number of logical processors: 2
+Number of available logical processors: 2
+
+Processor 0:
+CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+Family: 6, Model: 15, Stepping: 6
+FPU: On-Chip
+CPU Speed (estimated): 1997.286571 MHz
+MMX: not present
+SSE: present
+3DNow!: not present
+Serial number not present or disabled
+
+Processor 1:
+CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+Family: 6, Model: 15, Stepping: 6
+FPU: On-Chip
+CPU Speed (estimated): 1997.299289 MHz
+MMX: not present
+SSE: present
+3DNow!: not present
+Serial number not present or disabled
+
+Total number of system cores: 2
+Number of cores available to process: 2
+---------------------
+Windows 32 bit (build 6.1.7600)
+System language: Dutch
+Windows Directory: "C:\Windows"
+Prerequisites...
+* Installation of KB940105 hotfix required: no! (either not needed or already installed)
+Local time is 14:45:23 01/12/10, system running for 156 minutes
+1521MB physical memory installed, 1018MB available, 2047MB virtual memory installed, 32 percent of memory in use
+PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
+Current display mode is 1440x900x32, VGA
+IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
+--------------------------------------------------------------------------------
+[Error] Error: ConsoleVariableGroup 'sys_spec_Shading' key 'r_glow' is not missing in default
+Stream Engine Initialization
+Network initialization
+[net] using iocp socket io management
+Physics initialization
+MovieSystem initialization skipped for dedicated server
+Renderer initialization
+Console initialization
+Time initialization
+Font initialization
+AI initialization
+Initializing Animation System
+Initializing 3D Engine
+Script System Initialization
+Entity system initialization
+Initializing AI System
+[PlayerProfiles] Login of user 'Charlie the Unicorn' successful.
+[PlayerProfiles] Found 2 profiles.
+   Profile 0 : 'Blablah'
+   Profile 1 : 'default'
+[GameProfiles]: Successfully activated profile 'Blablah' for user 'Charlie the Unicorn'

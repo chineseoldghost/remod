@@ -1,0 +1,20 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="muzzleflash_side" MtlFlags="162" Shader="Illum" GenMask="268435456" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.99000001" GlowAmount="12.3">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/sprites/muzzleflash/new ones/circle4.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams Displacement="0.025"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="muzzleflash_front" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0">
+   <Textures />
+   <PublicParams Displacement="0.025"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams Displacement="0.025"/>
+ <MaterialLayers />
+</Material>

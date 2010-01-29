@@ -1,0 +1,54 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="arms" MtlFlags="128" Shader="Cloth" GenMask="268501248" SurfaceType="mat_kevlar" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.39607847,0.39607847,0.39607847" Emissive="0,0,0" Shininess="31.299999" Opacity="1" PostEffectType="4">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/arms_global/arms_nanosuit_asian.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/arms_global/arms_nanosuit_asian_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/arms_global/arms_nanosuit_asian_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/camera_river_cubemap_bright.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AnimFrequency="3" AnimAmplitudeWav0="0" AnimAmplitudeWav1="0" AnimAmplitudeWav2="0" AnimPhase="2" AnisotropicShape="0.60000002" DiffuseExponent="0.5" FuzzynessSmoothness="1" FuzzynessStrength="2" FuzzynessSpread="2.9200001" FuzzynessSaturation="1" SpecularMultiplier="0.40000001" CloakShadowBias="0.25"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="uniform" MtlFlags="128" Shader="Cloth" GenMask="268501264" SurfaceType="mat_flesh" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.74117649,0.74117649,0.74117649" Emissive="0,0,0" Shininess="15" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/asian/nanosuit/nanosuit_asian_lower.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/characters/human/asian/nanosuit/nanosuit_asian_lower_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/characters/human/asian/nanosuit/nanosuit_asian_lower_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AnimFrequency="0" AnimAmplitudeWav0="0" AnimAmplitudeWav1="0" AnimAmplitudeWav2="0" AnimPhase="1" AnisotropicShape="0.60000002" DiffuseExponent="0.5" FuzzynessSmoothness="1" FuzzynessStrength="2" FuzzynessSpread="2.9200001" FuzzynessSaturation="1" SpecularMultiplier="0.30000001" CloakShadowBias="0.25"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="vest" MtlFlags="128" Shader="Cloth" GenMask="268501264" SurfaceType="mat_flesh" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.74117649,0.74117649,0.74117649" Emissive="0,0,0" Shininess="15" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/asian/nanosuit/nanosuit_asian_upper.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/characters/human/asian/nanosuit/nanosuit_asian_upper_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/characters/human/asian/nanosuit/nanosuit_asian_upper_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AnimFrequency="0" AnimAmplitudeWav0="0" AnimAmplitudeWav1="0" AnimAmplitudeWav2="0" AnimPhase="1" AnisotropicShape="0.60000002" DiffuseExponent="0.5" FuzzynessSmoothness="1" FuzzynessStrength="2" FuzzynessSpread="2.9200001" FuzzynessSaturation="1" SpecularMultiplier="0.30000001" CloakShadowBias="0.25"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

@@ -1,0 +1,95 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="trunk" MtlFlags="128" Shader="Vegetation" GenMask="268435456" SurfaceType="mat_wood" Diffuse="0.50588238,0.50588238,0.50588238" Specular="0.19215688,0.19215688,0.19215688" Emissive="0,0,0" Shininess="20" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/thin_leave_tree/trunk_pino.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/natural/trees/thin_leave_tree/trunk_pino.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/natural/trees/thin_leave_tree/trunk_pino_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/natural/trees/thin_leave_tree/detail.tif">
+     <TexMod TileU="5" TileV="5"/>
+    </Texture>
+   </Textures>
+   <PublicParams bendDetailFrequency="5" bendDetailLeafAmplitude="0.079999998" bendDetailBranchAmplitude="0.2" bendDetailPhase="100"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="leaves" MtlFlags="128" Shader="Vegetation" GenMask="268501248" SurfaceType="mat_leaves" Diffuse="0.6901961,0.45882356,0.45882356" Specular="0.25882399,0.286275,0.31764701" Emissive="0,0,0" Shininess="20" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/bushes/roundleafbush/leaves_a.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/natural/bushes/roundleafbush/leaves_a_opac.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/natural/bushes/roundleafbush/leaves_a_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Opacity" File="objects/natural/bushes/roundleafbush/leaves_a_opac.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams BackViewDep="1" BackDiffuse="0.81568635,0.82352948,0.43529415" BackDiffuseMultiplier="1" bendDetailFrequency="0.30000001" bendDetailLeafAmplitude="0.69999999" bendDetailBranchAmplitude="0" bendDetailPhase="100" BackShadowBias="0.1"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="branches" MtlFlags="131200" Shader="Vegetation" GenMask="268501248" SurfaceType="mat_nodraw" Diffuse="0.435294,0.435294,0.435294" Specular="0.094117656,0.094117656,0.094117656" Emissive="0,0,0" Shininess="40" Opacity="1" AlphaTest="0.49505001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/jungle_tree_large/branch_a.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams BackViewDep="0.5" BackDiffuse="0.56078398,0.56078398,0.56078398" BackDiffuseMultiplier="0" bendDetailFrequency="1" bendDetailLeafAmplitude="0.1" bendDetailBranchAmplitude="0" bendDetailPhase="100" BackShadowBias="0.89999998"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy_bending" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_canopy" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+  </Material>
+  <Material Name="proxy_AI" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_canopy" Diffuse="0.50980401,0.47843099,0.466667" Specular="0.203922,0.227451,0.25490201" Emissive="0,0,0" Shininess="30" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Custom" File="objects/natural/bushes/roundleafbush/leaves_a_frozen.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy_trunk" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_wood" Diffuse="0.43921599,0.45098001,0.41568601" Specular="0.243137,0.27058801,0.301961" Emissive="0,0,0" Shininess="30" Opacity="1" AlphaTest="0.5">
+   <Textures />
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

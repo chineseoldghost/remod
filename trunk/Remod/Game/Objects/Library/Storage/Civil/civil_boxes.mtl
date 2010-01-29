@@ -1,0 +1,40 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="civil_box_a" MtlFlags="128" Shader="Illum" GenMask="289423376" SurfaceType="mat_wood_hollow" Diffuse="0.43529415,0.43529415,0.43529415" Emissive="0,0,0" Shininess="3" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/village/planks_a.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/architecture/village/planks_a_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/village/planks_a_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_wood_004_ddn.dds">
+     <TexMod TileU="3" TileV="3"/>
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="0" DetailBumpTillingU="2" DetailBumpTillingV="2" DetailBumpScale="0.41" DetailBlendAmount="0"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_wood_hollow" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+  </Material>
+  <Material Name="wool" MtlFlags="130" Shader="Illum" GenMask="268435456" SurfaceType="mat_grass" Diffuse="0.38431376,0.38431376,0.38431376" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/storage/civil/wood_wool.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

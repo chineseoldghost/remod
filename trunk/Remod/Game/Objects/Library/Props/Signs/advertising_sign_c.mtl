@@ -1,0 +1,37 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="advertising_signs" MtlFlags="128" Shader="Metal" GenMask="268480528" SurfaceType="mat_metal_smooth" Diffuse="0.33725491,0.33725491,0.33725491" Specular="0.53835297,0.53835297,0.53835297" Emissive="0,0,0" Shininess="6" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/advertising_sign_c.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/beach_blur.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_005_ddn.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.13500001" AnisotropicShape="0.178" ReflectionAmount="0.57999998" FresnelBias="0.33700001" FresnelScale="1" DetailBumpTillingU="2" DetailBumpTillingV="2" DetailBumpScale="0.69999999" DetailBlendAmount="0"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="proxy_metal" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_rough" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+  <Material Name="metal" MtlFlags="128" Shader="Illum" GenMask="289406992" SurfaceType="" Diffuse="0.50196081,0.50196081,0.50196081" Specular="1.12157,1.12157,1.12157" Emissive="0,0,0" Shininess="8.8999996" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/nodule/buildings/barracks_rusty_bottom_metal.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/architecture/nodule/buildings/barracks_rusty_bottom_metal_spec.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

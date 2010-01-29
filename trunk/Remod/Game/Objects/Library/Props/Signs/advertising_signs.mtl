@@ -1,0 +1,26 @@
+<Material MtlFlags="256" >
+ <SubMaterials>
+  <Material Diffuse="0.501961,0.501961,0.501961" Emissive="0,0,0" GenMask="4194323" MtlFlags="128" Name="signs" Opacity="1" Shader="Illum" Shininess="10" Specular="0.694118,0.694118,0.694118" SurfaceType="" >
+   <Textures>
+    <Texture File="objects/library/props/signs/advertising_signs.tif" Map="Diffuse" >
+     <TexMod />
+    </Texture>
+    <Texture File="objects/library/props/signs/advertising_signs_spec.tif" Map="Specular" >
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams BumpOffset="0.04" DebugUVScale="64" />
+   <MaterialLayers>
+    <Layer Active="0" Name="Frozenlayer" >
+     <PublicParams EndFrostColor="0.741176,0.807843,0.882353" FrostAmount="0.455" FrostDetailTileU="4" FrostDetailTileV="1" FrostMultiplier="2" GroundColor="0.4,0.41,0.419" ReflBumpAmount="1" ReflContrast="1" SpecColor="1,1,1" SpecGlossiness="4" SpecLevel="1" StartFrostColor="0.0784314,0.12549,0.227451" VariationAmount="0.9" VariationTileU="0.3" VariationTileV="0.3" VariationTileW="0.3" />
+    </Layer>
+   </MaterialLayers>
+  </Material>
+  <Material Diffuse="1,0,0" Emissive="0,0,0" GenMask="0" MtlFlags="1152" Name="proxy" Opacity="0.5" Shader="Nodraw" Shininess="10" Specular="0,0,0" SurfaceType="mat_metal" >
+   <Textures />
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams BumpOffset="0.04" DebugUVScale="64" />
+ <MaterialLayers />
+</Material>

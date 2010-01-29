@@ -1,0 +1,536 @@
+BackupNameAttachment=" Build(6729) Date(29 Dec 2009) Time(13 43 04)"  -- used by backup system
+ 
+Log Started at Tuesday, December 29, 2009 13:43:04
+Running 32 bit version
+Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
+FileVersion: 1.1.1.6729
+ProductVersion: 1.1.1.6729
+Using STLport C++ Standard Library implementation
+ 
+Added MOD directory <Mods\Remod\> to CryPak
+--- CPU detection ---
+Total number of logical processors: 2
+Number of available logical processors: 2
+
+Processor 0:
+CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+Family: 6, Model: 15, Stepping: 6
+FPU: On-Chip
+CPU Speed (estimated): 1997.282630 MHz
+MMX: not present
+SSE: present
+3DNow!: not present
+Serial number not present or disabled
+
+Processor 1:
+CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+Family: 6, Model: 15, Stepping: 6
+FPU: On-Chip
+CPU Speed (estimated): 1997.279127 MHz
+MMX: not present
+SSE: present
+3DNow!: not present
+Serial number not present or disabled
+
+Total number of system cores: 2
+Number of cores available to process: 2
+---------------------
+Windows 32 bit (build 6.1.7600)
+System language: Dutch
+Windows Directory: "C:\Windows"
+Prerequisites...
+* Installation of KB940105 hotfix required: no! (either not needed or already installed)
+Local time is 13:43:04 12/29/09, system running for 63 minutes
+1521MB physical memory installed, 1020MB available, 2047MB virtual memory installed, 32 percent of memory in use
+PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
+Current display mode is 1440x900x32, VGA
+IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
+--------------------------------------------------------------------------------
+Stream Engine Initialization
+Network initialization
+[net] using iocp socket io management
+Physics initialization
+MovieSystem initialization skipped for dedicated server
+Renderer initialization
+Console initialization
+Time initialization
+Font initialization
+AI initialization
+Initializing Animation System
+Initializing 3D Engine
+Script System Initialization
+Entity system initialization
+Initializing AI System
+[PlayerProfiles] Login of user 'Charlie the Unicorn' successful.
+[PlayerProfiles] Found 2 profiles.
+   Profile 0 : 'Blablah'
+   Profile 1 : 'default'
+[GameProfiles]: Successfully activated profile 'Blablah' for user 'Charlie the Unicorn'
+    $3sv_servername = $6Blablah's Server $5[DUMPTODISK]$4
+    $3sv_password = $6 $5[DUMPTODISK]$4
+    $3sv_cheatprotection = $60 $5[]$4
+    $3sv_maxplayers = $616 $5[DUMPTODISK]$4
+    $3g_tk_punish = $61 $5[]$4
+    $3g_tk_punish_limit = $65 $5[]$4
+    $3hud_alternateCrosshairSpread = $61 $5[]$4
+    $3e_cbuffer = $61 $5[]$4
+[Warning] Unknown command: r_geomInstancing = 0
+    $3es_OnDemandPhysics = $60 $5[]$4
+    $3r_CullGeometryForLights = $61 $5[]$4
+    $3e_vegetation_static_instancing = $60 $5[]$4
+    $3r_TerrainAO_FadeDist = $61 $5[]$4
+    $3e_vegetation_static_instancing = $60 $5[]$4
+    $3e_gsm_range = $63 $5[]$4
+    $3e_gsm_cache = $60 $5[]$4
+    $3e_ram_maps = $61 $5[DUMPTODISK, REQUIRE_LEVEL_RELOAD]$4
+    $3e_dissolve = $61 $5[]$4
+    $3r_VegetationSpritesTexRes = $6128 $5[]$4
+    $3e_particles_min_draw_pixels = $61 $5[]$4
+    $3hud_mpNamesDuration = $60 $5[]$4
+    $3sv_gamerules = $6PowerStruggle $5[]$4
+[net 12:43:05.462] network hostname: iMac7
+[net 12:43:05.477]   ip:192.168.0.192
+[net 12:43:05.477]   ip:5.182.209.7
+-----------------------------------------------------
+*LOADING: Level multiplayer/ps/Mesa loading time: 5.09 seconds
+-----------------------------------------------------
+    $3g_pp_scale_price = $60 $5[]$4
+    $3g_teamlock = $60 $5[]$4
+    $3g_autoteambalance = $60 $5[]$4
+    $3g_minteamlimit = $60 $5[]$4
+CHAT OMG! Shadow to ALL:
+   pewp
+CHAT Blablah to ALL:
+   doesn't your xfire work with wars?
+CHAT OMG! Shadow to ALL:
+   dunno,not at the moment.usually it does
+CHAT Blablah to ALL:
+   oh
+CHAT Blablah to ALL:
+   can you try joining us?
+CHAT OMG! Shadow to ALL:
+   20secs
+CHAT Blablah to ALL:
+   k
+CHAT OMG! Shadow to ALL:
+   7
+CHAT Blablah to ALL:
+   ah
+CHAT OMG! Shadow to ALL:
+   I had to click team change twice
+    $3g_revivetime = $60 $5[]$4
+CHAT OMG! Shadow to ALL:
+   first one killed me second one changed me
+CHAT Blablah to ALL:
+   makes no sense D:
+CHAT Blablah to ALL:
+   can you go speed for a sec?
+CHAT OMG! Shadow to ALL:
+   oh nice u fixed the glowing
+CHAT Blablah to ALL:
+   ^^
+CHAT Blablah to ALL:
+   go speed?
+CHAT Blablah to ALL:
+   thanks
+CHAT Blablah to ALL:
+   alright
+CHAT Blablah to ALL:
+   they still drive like shit
+CHAT Blablah to ALL:
+   oh dude, cloak for me
+CHAT Blablah to ALL:
+   cloak! :D
+CHAT Blablah to ALL:
+   yep
+CHAT Blablah to ALL:
+   it's not loud enough though
+CHAT Blablah to ALL:
+   hear it?
+CHAT Blablah to ALL:
+   out of game it's loud enough
+CHAT OMG! Shadow to ALL:
+   uhm
+CHAT OMG! Shadow to ALL:
+   nope
+CHAT Blablah to ALL:
+   but ingame it's not due to other sounds
+CHAT Blablah to ALL:
+   listen
+CHAT OMG! Shadow to ALL:
+   Im not hearing anything
+CHAT Blablah to ALL:
+   a high tone
+CHAT Blablah to ALL:
+   really high
+CHAT OMG! Shadow to ALL:
+   sec
+CHAT Blablah to ALL:
+   wait let's get away from the turrets
+CHAT OMG! Shadow to ALL:
+   oh youre right,but nearly not noticable
+CHAT Blablah to ALL:
+   ^^
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   i'll make it louder
+CHAT Blablah to ALL:
+   let me write that down
+CHAT Blablah to ALL:
+   drive to the cliffs
+CHAT Blablah to ALL:
+   YES C4 ON CARRRR
+CHAT OMG! Shadow to ALL:
+   shat
+CHAT Blablah to ALL:
+   K.OK
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   sweet how you can see the head turn eh
+CHAT OMG! Shadow to ALL:
+   What location sir?
+CHAT Blablah to ALL:
+   the sniper cliff
+CHAT Blablah to ALL:
+   you look awesome
+CHAT OMG! Shadow to ALL:
+   i know thanks
+CHAT OMG! Shadow to ALL:
+   :d
+CHAT Blablah to ALL:
+   xD
+CHAT OMG! Shadow to ALL:
+   COME ON
+CHAT Blablah to ALL:
+   i think i'll get rid of the glowing red things in armor
+CHAT OMG! Shadow to ALL:
+   gr
+CHAT Blablah to ALL:
+   they stick out too much
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   k it's quiet here
+CHAT Blablah to ALL:
+   do you have music off?
+CHAT OMG! Shadow to ALL:
+   yeah i just turned everything max except music
+CHAT OMG! Shadow to ALL:
+   im playing without it anyway
+CHAT Blablah to ALL:
+   good
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   mh really hard to say,but i think im hearing nothing
+CHAT Blablah to ALL:
+   now?
+CHAT OMG! Shadow to ALL:
+   nah
+CHAT Blablah to ALL:
+   cloak for a sec
+CHAT OMG! Shadow to ALL:
+   not even through binocs
+CHAT Blablah to ALL:
+   come closer
+CHAT Blablah to ALL:
+   ydecloak?
+CHAT Blablah to ALL:
+   it's a bad spot
+CHAT Blablah to ALL:
+   because
+CHAT Blablah to ALL:
+   there's already the sound of the crickets
+CHAT Blablah to ALL:
+   and other high pitch sounds
+CHAT OMG! Shadow to ALL:
+   dude,cloak should be noticable everywhere
+CHAT Blablah to ALL:
+   i know
+CHAT OMG! Shadow to ALL:
+   dont make it too powerfull
+CHAT Blablah to ALL:
+   i'll increase the volume
+CHAT OMG! Shadow to ALL:
+   k
+CHAT OMG! Shadow to ALL:
+   Oh whats that suspicious C4 box on top!
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   fuck xd
+CHAT Blablah to ALL:
+   think C4 should be matte black?
+CHAT OMG! Shadow to ALL:
+   mh,would be nice i think
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   oh btw, i finally found out what decay is
+CHAT Blablah to ALL:
+   it's how fast your gun returns to its normal pos
+CHAT Blablah to ALL:
+   after firing
+CHAT OMG! Shadow to ALL:
+   uhm wtf
+CHAT OMG! Shadow to ALL:
+   sec
+CHAT Blablah to ALL:
+   ?
+CHAT OMG! Shadow to ALL:
+   can u see my attachment?
+CHAT Blablah to ALL:
+   the scope?
+CHAT OMG! Shadow to ALL:
+   ye
+CHAT Blablah to ALL:
+   yeah
+CHAT OMG! Shadow to ALL:
+   why isnt my shadow showing it?
+CHAT Blablah to ALL:
+   i don't have shadows :P
+CHAT OMG! Shadow to ALL:
+   oh
+CHAT OMG! Shadow to ALL:
+   :P
+CHAT Blablah to ALL:
+   i didn't fuck wiht that so
+CHAT Blablah to ALL:
+   you can buy stuff from the vtol
+CHAT Blablah to ALL:
+   shoots it at ze cars
+CHAT Blablah to ALL:
+   it's not balanced yet
+CHAT Blablah to ALL:
+   it's gonna be anti-tank as well
+CHAT OMG! Shadow to ALL:
+   its showing up as explosion everytime
+CHAT OMG! Shadow to ALL:
+   on the radar
+CHAT Blablah to ALL:
+   oh you're right
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   that's ok
+CHAT Blablah to ALL:
+   no?
+CHAT Blablah to ALL:
+   it shows you where the vtol's hiting
+CHAT OMG! Shadow to ALL:
+   idc
+CHAT Blablah to ALL:
+   hitting
+CHAT Blablah to ALL:
+   ah the buyzone radius is a bit too large
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   nice chute
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   nice
+CHAT Blablah to ALL:
+   we lost the vtol though
+CHAT OMG! Shadow to ALL:
+   :/
+CHAT Blablah to ALL:
+   D:
+CHAT Blablah to ALL:
+   the bullet speeds and drop
+CHAT Blablah to ALL:
+   are nice
+CHAT OMG! Shadow to ALL:
+   sniper doesnt,rly
+CHAT OMG! Shadow to ALL:
+   oh i see
+CHAT Blablah to ALL:
+   it's realistic so
+CHAT OMG! Shadow to ALL:
+   but only a bit
+CHAT OMG! Shadow to ALL:
+   nice
+CHAT Blablah to ALL:
+   i mean i looked at the guns the wars guns are base don
+CHAT Blablah to ALL:
+   and looked at what bullet they use
+CHAT Blablah to ALL:
+   and just set the weight and speeds
+CHAT OMG! Shadow to ALL:
+   mhm
+CHAT OMG! Shadow to ALL:
+   I want a 50cal sniper
+CHAT OMG! Shadow to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   or .408 cheytac
+CHAT Blablah to ALL:
+   that's not the modern one is it?
+CHAT OMG! Shadow to ALL:
+   your legs are inside the ground
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   thank crytek for that
+CHAT OMG! Shadow to ALL:
+   im missing that little shockwave
+CHAT Blablah to ALL:
+   there's a chance i have uhm
+CHAT OMG! Shadow to ALL:
+   xD
+CHAT Blablah to ALL:
+   the bullet weight wrong
+CHAT Blablah to ALL:
+   as in, that it's all divided by 10 lol
+CHAT Blablah to ALL:
+   because i'm not entirely sure
+CHAT Blablah to ALL:
+   gay how your legs clip
+    $3g_friendlyfireratio = $60 $5[]$4
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   strengthscale up
+CHAT OMG! Shadow to ALL:
+   :D
+    $3cl_strengthscale = $610 $5[]$4
+CHAT OMG! Shadow to ALL:
+   lemme fly =_=
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   hooray
+CHAT Blablah to ALL:
+   whoreay!
+CHAT Blablah to ALL:
+   what else has to be tested...
+CHAT Blablah to ALL:
+   no lag issues so far btw
+CHAT Blablah to ALL:
+   LOL failure
+CHAT OMG! Shadow to ALL:
+   LOL!
+CHAT Blablah to ALL:
+   the narrow shot works now
+CHAT Blablah to ALL:
+   lol
+CHAT OMG! Shadow to ALL:
+   We need
+CHAT OMG! Shadow to ALL:
+   bullet penetration
+CHAT Blablah to ALL:
+   eh idk if it'd be nice
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   LOL!
+CHAT Blablah to ALL:
+   smexy
+CHAT OMG! Shadow to ALL:
+   changed the sound
+CHAT OMG! Shadow to ALL:
+   its so
+CHAT Blablah to ALL:
+   yeah, fire again
+CHAT OMG! Shadow to ALL:
+   boom ish
+CHAT Blablah to ALL:
+   it's the 3rd person sound
+CHAT Blablah to ALL:
+   it sounds different when you're inside the tank :P
+CHAT OMG! Shadow to ALL:
+   ye
+CHAT Blablah to ALL:
+   which is good
+CHAT Blablah to ALL:
+   SWORDFIIIIIIIGHT
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   IWANTEDTOSAYTHESAME!
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   KABLOOEY
+CHAT OMG! Shadow to ALL:
+   WHAHAHAHAHA
+CHAT OMG! Shadow to ALL:
+   BOOM
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   HAHAHAHA
+CHAT Blablah to ALL:
+   KAAABOOOOOM
+CHAT Blablah to ALL:
+   KAAABOOOOM
+CHAT OMG! Shadow to ALL:
+   WHO TOUCHED SASHA!
+CHAT Blablah to ALL:
+   this is badass
+CHAT Blablah to ALL:
+   stand on my cannon babvy :P
+CHAT Blablah to ALL:
+   baby
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   that's the power of 60 ton tanks
+CHAT OMG! Shadow to ALL:
+   LOL!
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   I LIKE
+CHAT OMG! Shadow to ALL:
+   SWAURE BUTTS AND I CANNOT LIE
+CHAT Blablah to ALL:
+   SWUARE BUTTS?
+CHAT OMG! Shadow to ALL:
+   SQAURE*
+CHAT OMG! Shadow to ALL:
+   WAIT
+CHAT Blablah to ALL:
+   oh lol
+CHAT OMG! Shadow to ALL:
+   dunno
+CHAT Blablah to ALL:
+   lagspike
+CHAT Blablah to ALL:
+   wanna get vtols and smash into each other?
+    $3cl_strengthscale = $650 $5[]$4
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   heavy tank is heavy
+CHAT Blablah to ALL:
+   NICE
+CHAT OMG! Shadow to ALL:
+   LOL
+CHAT Blablah to Team black:
+   rgh lagspikes
+CHAT Blablah to ALL:
+   i think it might be the suit sparks
+CHAT Blablah to ALL:
+   LOL
+    $3cl_strengthscale = $675 $5[]$4
+CHAT Blablah to ALL:
+   LOL
+CHAT OMG! Shadow to ALL:
+   YWES!
+    $3cl_strengthscale = $6200 $5[]$4
+CHAT Blablah to ALL:
+   that's 200 strengthscale xD
+    $3cl_strengthscale = $6500 $5[]$4
+    $3cl_strengthscale = $650 $5[]$4
+CHAT Blablah to ALL:
+   OL
+    $3cl_strengthscale = $6100 $5[]$4
+[net 13:34:13.421] Disconnect pD9E2BC0C.dip.t-dialin.net:64230; profid=117073795; cause=0; msg='Timeout occurred; no packet for 31.7 seconds'
+    $3g_useHitSoundFeedback = $60 $5[]$4
+    $3cl_strengthscale = $6200 $5[]$4
+[net 13:43:06.801] Disconnect iMac7.telenet.be:57578; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:57578'
+System:Quit

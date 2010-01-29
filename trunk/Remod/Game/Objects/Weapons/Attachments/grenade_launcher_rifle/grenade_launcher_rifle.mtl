@@ -1,0 +1,37 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="scar_gl" MtlFlags="128" Shader="Metal" GenMask="268443648" SurfaceType="" Diffuse="0.27058825,0.27450982,0.30588236" Specular="0.55294102,0.55294102,0.55294102" Emissive="0,0,0" Shininess="4" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/attachments/grenade_launcher_rifle/textures/scar_gl.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/attachments/grenade_launcher_rifle/textures/scar_gl_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/attachments/grenade_launcher_rifle/textures/scar_gl_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.189" AnisotropicShape="0.67299998"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="collision" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_thick_weapons" Diffuse="0.039215699,0.31764701,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+  <Material Name="grenade" MtlFlags="128" Shader="Illum" GenMask="268435488" SurfaceType="" Diffuse="1,1,1" Specular="0.56470603,0.56470603,0.56470603" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/shells/scarglgrenade.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/shells/scarglgrenade_ddn.tif" Amount="50">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

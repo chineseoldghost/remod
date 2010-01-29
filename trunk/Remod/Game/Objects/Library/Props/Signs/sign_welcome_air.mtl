@@ -1,0 +1,40 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="sign" MtlFlags="128" Shader="Illum" GenMask="272629760" SurfaceType="mat_metal_smooth" Diffuse="0.65098,0.65098,0.65098" Specular="0.27450982,0.27450982,0.27450982" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Languages/Textures/sign_welcome_air.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_smooth" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+  <Material Name="SubMtl3" MtlFlags="128" Shader="Metal" GenMask="268439552" SurfaceType="mat_metal_smooth" Diffuse="0.513726,0.513726,0.513726" Specular="0.615686,0.615686,0.615686" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/signback.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/props/signs/signback_spec.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.41800001" Glossiness="0.81199998"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="SubMtl4" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="mat_metal_smooth" Diffuse="0.58431375,0.58431375,0.58431375" Specular="0.3019608,0.3019608,0.3019608" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Languages/Textures/sign_welcome_entrance.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

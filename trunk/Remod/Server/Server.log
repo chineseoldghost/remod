@@ -1,0 +1,937 @@
+BackupNameAttachment=" Build(6729) Date(26 Jan 2010) Time(18 08 03)"  -- used by backup system
+ 
+Log Started at Tuesday, January 26, 2010 18:08:03
+Running 32 bit version
+Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
+FileVersion: 1.1.1.6729
+ProductVersion: 1.1.1.6729
+Using STLport C++ Standard Library implementation
+ 
+Added MOD directory <Mods\Remod\> to CryPak
+--- CPU detection ---
+Total number of logical processors: 2
+Number of available logical processors: 2
+
+Processor 0:
+CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+Family: 6, Model: 15, Stepping: 6
+FPU: On-Chip
+CPU Speed (estimated): 1997.273537 MHz
+MMX: not present
+SSE: present
+3DNow!: not present
+Serial number not present or disabled
+
+Processor 1:
+CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+Family: 6, Model: 15, Stepping: 6
+FPU: On-Chip
+CPU Speed (estimated): 1997.289210 MHz
+MMX: not present
+SSE: present
+3DNow!: not present
+Serial number not present or disabled
+
+Total number of system cores: 2
+Number of cores available to process: 2
+---------------------
+Windows 32 bit (build 6.1.7600)
+System language: Dutch
+Windows Directory: "C:\Windows"
+Prerequisites...
+* Installation of KB940105 hotfix required: no! (either not needed or already installed)
+Local time is 18:08:03 01/26/10, system running for 64 minutes
+1521MB physical memory installed, 720MB available, 2047MB virtual memory installed, 52 percent of memory in use
+PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
+Current display mode is 1440x900x32, VGA
+IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
+--------------------------------------------------------------------------------
+[Error] Error: ConsoleVariableGroup 'sys_spec_Shading' key 'r_glow' is not missing in default
+Stream Engine Initialization
+Network initialization
+[net] using iocp socket io management
+Physics initialization
+MovieSystem initialization skipped for dedicated server
+Renderer initialization
+Console initialization
+Time initialization
+Font initialization
+AI initialization
+Initializing Animation System
+Initializing 3D Engine
+Script System Initialization
+Entity system initialization
+Initializing AI System
+[PlayerProfiles] Login of user 'Charlie the Unicorn' successful.
+[PlayerProfiles] Found 2 profiles.
+   Profile 0 : 'Blablah'
+   Profile 1 : 'default'
+[GameProfiles]: Successfully activated profile 'Blablah' for user 'Charlie the Unicorn'
+    $3sv_servername = $6Blablah's Server $5[DUMPTODISK]$4
+    $3sv_password = $6 $5[DUMPTODISK]$4
+    $3sv_cheatprotection = $60 $5[]$4
+    $3sv_maxplayers = $616 $5[DUMPTODISK]$4
+    $3g_roundlimit = $63 $5[]$4
+    $3g_roundtime = $630 $5[]$4
+    $3g_tk_punish = $61 $5[]$4
+    $3g_tk_punish_limit = $65 $5[]$4
+    $3g_timelimit = $60 $5[]$4
+    $3g_MPDeathCam = $60 $5[]$4
+    $3hud_alternateCrosshairSpread = $61 $5[]$4
+    $3e_cbuffer = $61 $5[]$4
+[Warning] Unknown command: r_geomInstancing = 0
+    $3es_OnDemandPhysics = $60 $5[]$4
+    $3r_CullGeometryForLights = $61 $5[]$4
+    $3e_vegetation_static_instancing = $60 $5[]$4
+    $3r_TerrainAO_FadeDist = $61 $5[]$4
+    $3e_vegetation_static_instancing = $60 $5[]$4
+    $3e_gsm_range = $63 $5[]$4
+    $3e_gsm_cache = $60 $5[]$4
+    $3e_ram_maps = $61 $5[DUMPTODISK, REQUIRE_LEVEL_RELOAD]$4
+    $3e_dissolve = $61 $5[]$4
+    $3r_VegetationSpritesTexRes = $6128 $5[]$4
+    $3e_particles_min_draw_pixels = $61 $5[]$4
+    $3hud_mpNamesDuration = $60 $5[]$4
+    $3sv_gamerules = $6PowerStruggle $5[]$4
+[net 17:08:04.258] network hostname: iMac7
+[net 17:08:04.261]   ip:192.168.0.192
+[net 17:08:04.261]   ip:5.182.209.7
+-----------------------------------------------------
+*LOADING: Level multiplayer/ps/Mesa loading time: 12.11 seconds
+-----------------------------------------------------
+    $3sv_gamerules = $6InstantAction $5[]$4
+-----------------------------------------------------
+*LOADING: Level multiplayer/ia/Ruins loading time: 2.88 seconds
+-----------------------------------------------------
+CHAT Blablah to ALL:
+   you guys are fast
+CHAT ins to ALL:
+   ah shii, i hate assault scopes
+CHAT ins to ALL:
+   :p
+CHAT Blablah to ALL:
+   do you wanna have a look around first or not?
+CHAT Blablah to ALL:
+   urgh, i should fix the music
+CHAT Blablah to ALL:
+   Oooooh yeeeaaaaah
+CHAT Blablah to ALL:
+   can you do this in wars?
+CHAT ins to ALL:
+   what
+CHAT Blablah to ALL:
+   get all the way up there
+CHAT ins to ALL:
+   don't see why not
+CHAT ins to ALL:
+   :p
+CHAT Blablah to ALL:
+   because strength jump is lower in wars
+CHAT ins to ALL:
+   ah
+CHAT Blablah to ALL:
+   ah, proxies make you slide
+CHAT Blablah to ALL:
+   pity this isn't an actual vehicle
+CHAT ins to ALL:
+   1 vehicle in a map
+CHAT ins to ALL:
+   would be funny
+CHAT ins to ALL:
+   :p
+CHAT ins to ALL:
+   :p
+CHAT Blablah to ALL:
+   yeah, BFBC2 did that
+CHAT Blablah to ALL:
+   the squad dm thing has 1 vehicle in the map
+CHAT Blablah to ALL:
+   like a tank
+CHAT ins to ALL:
+   physics enabled?!
+CHAT ins to ALL:
+   :p
+CHAT Blablah to ALL:
+   nope
+CHAT Blablah to ALL:
+   i'm still contemplating it
+CHAT Blablah to ALL:
+   idk if it's worth it
+CHAT Blablah to ALL:
+   still not sure what i'll do with the cloak either
+CHAT Blablah to ALL:
+   lol at the pose
+CHAT Blablah to ALL:
+   haven't changed those yet
+CHAT Blablah to ALL:
+   the hurricane
+CHAT Blablah to ALL:
+   points to a bad spot :/
+CHAT Blablah to ALL:
+   too much to the left
+CHAT Blablah to ALL:
+   in first person
+CHAT Blablah to ALL:
+   wtf
+CHAT Blablah to ALL:
+   woooo
+CHAT Blablah to ALL:
+   it's on!
+CHAT Blablah to ALL:
+   10hp :<
+CHAT Blablah to ALL:
+   don't zoom with that :P
+CHAT Blablah to ALL:
+   LMAO
+CHAT Blablah to ALL:
+   the silencer needs a disadvantage :/
+CHAT Blablah to ALL:
+   i want deadbodies synced :<
+CHAT ins to ALL:
+   what for;p
+CHAT Blablah to ALL:
+   so everyone sees them the same lol?
+CHAT Blablah to ALL:
+   they often fall funny, etc
+CHAT Blablah to ALL:
+   ACK
+CHAT Blablah to ALL:
+   can't teabag people if they're not synced either
+    $3g_MPDeathCam = $61 $5[]$4
+CHAT Blablah to ALL:
+   ouch
+CHAT ins to ALL:
+   lol
+CHAT Blablah to ALL:
+   hmmm
+CHAT Blablah to ALL:
+   maybe i should get rid of players appearing on the radar when
+CHAT Blablah to ALL:
+    they shoot a non-silenced gun
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   lolwut
+CHAT Blablah to ALL:
+   i can't hit you
+CHAT ins to ALL:
+   hah
+CHAT ins to ALL:
+   suckah
+CHAT Blablah to ALL:
+   looks nice though
+CHAT Blablah to ALL:
+   what happened there ins?
+CHAT Blablah to ALL:
+   and yeah i need to fix the hit indicator :/
+CHAT ins to ALL:
+   only took a bit of damage each time
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   i didn't get the hit sound
+CHAT Blablah to ALL:
+   that wasn't nice of me, sorry :P
+CHAT Blablah to ALL:
+   ooooooh snap!
+CHAT Blablah to ALL:
+   the dsg is too good in the hands of someone with aim :D
+CHAT Blablah to ALL:
+   ooooh, nice one, nice one
+CHAT Blablah to ALL:
+   shoudl strength punch me stronger?
+CHAT Blablah to ALL:
+   SUP!
+CHAT Blablah to ALL:
+   i think i might increase recoil a bit again
+CHAT Blablah to ALL:
+   gives incentive to crouch
+CHAT Blablah to ALL:
+   how much damage did that do?
+CHAT Blablah to ALL:
+   that
+CHAT TheBusDriver to ALL:
+   -10
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   oh yeah
+CHAT Blablah to ALL:
+   haha
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   the sound when you die
+CHAT Blablah to ALL:
+   always makes me smile
+CHAT ins to ALL:
+   can't you stand on people?
+CHAT Blablah to ALL:
+   what was that?
+CHAT Blablah to ALL:
+   jump again on top of me
+CHAT ins to ALL:
+   thought you could stand on peoples head easily
+CHAT Blablah to ALL:
+   you can't
+CHAT Blablah to ALL:
+   the proxy makes you slide
+CHAT ins to ALL:
+   strange
+CHAT ins to ALL:
+   works fine on our mod by default:X
+CHAT TheBusDriver to ALL:
+   head needs to be square :D
+CHAT Blablah to ALL:
+   yeah it's the proxy
+CHAT Blablah to ALL:
+   jump when you're on me in the air foos :D
+CHAT ins to ALL:
+   pretty handy
+CHAT ins to ALL:
+   :p
+CHAT ins to ALL:
+   i'm out, cya LAYZERZEEEEEEE
+CHAT Blablah to ALL:
+   bye
+CHAT TheBusDriver to ALL:
+   bai
+CHAT Blablah to ALL:
+   thanks for coming
+[net 17:49:30.620] Disconnect ip124.dyn2.gent3.schedom-europe.net:62863; profid=146583404; cause=0; msg='Timeout occurred; no packet for 31.6 seconds'
+CHAT Blablah to ALL:
+   jump when i'm above you
+CHAT Blablah to ALL:
+   damn
+CHAT Blablah to ALL:
+   ah not enough energy
+CHAT Blablah to ALL:
+   this looks nice with hdr on
+CHAT TheBusDriver to ALL:
+   never played it b4
+CHAT Blablah to ALL:
+   wars?
+CHAT TheBusDriver to ALL:
+   no this map
+CHAT Blablah to ALL:
+   oh
+CHAT Blablah to ALL:
+   head => ass
+CHAT TheBusDriver to ALL:
+   :o
+CHAT Blablah to ALL:
+   'sup
+CHAT TheBusDriver to ALL:
+   3rd person doesnt rotate :(
+CHAT Blablah to ALL:
+   yeah i know
+CHAT Blablah to ALL:
+   it sucks
+CHAT Blablah to ALL:
+   the fy looks nice in 3rd
+CHAT Blablah to ALL:
+   all the weapons look really badass in 3rd
+CHAT Blablah to ALL:
+   especially with sights
+CHAT TheBusDriver to ALL:
+   fp is kinda meh
+CHAT Blablah to ALL:
+   they just look spot on awesome
+CHAT Blablah to ALL:
+   eah
+CHAT Blablah to ALL:
+   how do you like my gun?
+CHAT Blablah to ALL:
+   it's quite big, isn't it?
+CHAT TheBusDriver to ALL:
+   yep :P
+CHAT Blablah to ALL:
+   suck on it 
+CHAT Blablah to ALL:
+   :P
+CHAT Blablah to ALL:
+   do it
+CHAT Blablah to ALL:
+   like this
+CHAT Blablah to ALL:
+   say it's sexy
+CHAT TheBusDriver to ALL:
+   it is ^^
+CHAT Blablah to ALL:
+   rawr
+CHAT Blablah to ALL:
+   are you looking at my pistol right now?
+CHAT Blablah to ALL:
+   because i'm standing in front of yours
+CHAT TheBusDriver to ALL:
+   yeah
+CHAT Blablah to ALL:
+   gay
+CHAT TheBusDriver to ALL:
+   now it's clipping :D
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   i see
+CHAT Blablah to ALL:
+   nice, through my hand
+CHAT Blablah to ALL:
+   that's funny
+CHAT Blablah to ALL:
+   something's wrong with the sound in this game
+CHAT TheBusDriver to ALL:
+   i still think they should have made more weapons
+CHAT TheBusDriver to ALL:
+   why?
+CHAT Blablah to ALL:
+   it's too...
+CHAT Blablah to ALL:
+   i'm not sure
+CHAT Blablah to ALL:
+   i suppose it kinda sounds like you're in a helmet
+CHAT TheBusDriver to ALL:
+   yeah i noticed, thought it's supposed to be like that
+CHAT Blablah to ALL:
+   the balance between player sounds and ambient ones is kinda o
+CHAT Blablah to ALL:
+   ff
+CHAT Blablah to ALL:
+   player sounds are generally much louder
+CHAT Blablah to ALL:
+   or sound different anyway
+CHAT Blablah to ALL:
+   i wanna fix that :<
+CHAT Blablah to ALL:
+   sound's a big factor in the feeling of a game
+CHAT Blablah to ALL:
+   oh lol
+CHAT Blablah to ALL:
+   haha :D
+CHAT Blablah to ALL:
+   your waist and feet are clipped through
+CHAT Blablah to ALL:
+   let's have sex
+CHAT Blablah to ALL:
+   your girlfriend will never know
+CHAT Blablah to ALL:
+   LOL
+CHAT TheBusDriver to ALL:
+   this looks really gay from behind xD
+CHAT Blablah to ALL:
+   what does?
+CHAT TheBusDriver to ALL:
+   the nod thing
+CHAT Blablah to ALL:
+   show me
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   your scope is closed
+CHAT TheBusDriver to ALL:
+   lol
+CHAT Blablah to ALL:
+   hadn't noticed that until today, actually
+CHAT TheBusDriver to ALL:
+   wouldn't have hurt to extrude that in a bit
+CHAT Blablah to ALL:
+   well, it's a waste of polies eh
+CHAT Blablah to ALL:
+   polys
+CHAT Blablah to ALL:
+   i need to fix the visor
+CHAT Blablah to ALL:
+   it has an ugly cubemap
+CHAT Blablah to ALL:
+   oh noes
+CHAT Blablah to ALL:
+   that's evil
+CHAT Blablah to ALL:
+   they tell you you can't be there, but you can't get out, lol
+CHAT Blablah to ALL:
+   pretty flowers
+CHAT TheBusDriver to ALL:
+   does it do any damage when it hits you?
+CHAT Blablah to ALL:
+   it does
+CHAT Blablah to ALL:
+   but not as much as rifle or fgl grenades
+CHAT Blablah to ALL:
+   they kill
+CHAT Blablah to ALL:
+   these have a larger radius but less admage
+CHAT TheBusDriver to ALL:
+   no i meant direct impact
+CHAT Blablah to ALL:
+   oooh
+CHAT Blablah to ALL:
+   don't think so
+CHAT Blablah to ALL:
+   the gun sounds are crap
+CHAT Blablah to ALL:
+   the sounds overall aren't immersive enough :(
+CHAT Blablah to ALL:
+   maybe it's in the soundmoods
+CHAT TheBusDriver to ALL:
+   ping
+CHAT Blablah to ALL:
+   lol O_o
+CHAT Blablah to ALL:
+   is that you or me?
+CHAT Blablah to ALL:
+   i mean, are you having issues or is it me?
+CHAT TheBusDriver to ALL:
+   dunno
+CHAT TheBusDriver to ALL:
+   werid
+CHAT Blablah to ALL:
+   fall damage is too low :/
+CHAT Blablah to ALL:
+   hah
+CHAT Blablah to ALL:
+   want me to switch maps or shall we  quit?
+CHAT Blablah to ALL:
+   oh hey
+CHAT Blablah to ALL:
+   there's a gauss on here
+CHAT Blablah to ALL:
+   shoot me with it
+CHAT Blablah to ALL:
+   is it gone?
+CHAT Blablah to ALL:
+   LOL
+CHAT TheBusDriver to ALL:
+   positive xD
+CHAT Blablah to ALL:
+   here
+CHAT Blablah to ALL:
+   kill me
+CHAT Blablah to ALL:
+   did i fly like a bird?
+CHAT TheBusDriver to ALL:
+   lets see it again :D
+CHAT Blablah to ALL:
+   lol
+CHAT TheBusDriver to ALL:
+   yeah pretty much
+CHAT Blablah to ALL:
+   i laugh everytime
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   it's the fountain scaled down
+CHAT Blablah to ALL:
+   cute
+CHAT TheBusDriver to ALL:
+   i hope they fixed teh shadow bug
+CHAT Blablah to ALL:
+   what shadow bug?
+CHAT TheBusDriver to ALL:
+   there's light where it shouldn't be
+CHAT Blablah to ALL:
+   o
+CHAT Blablah to ALL:
+   brb for a second
+CHAT Blablah to ALL:
+   back
+CHAT Blablah to ALL:
+   it's a nice map thoughs
+CHAT TheBusDriver to ALL:
+   too many bushes :P
+CHAT Blablah to ALL:
+   i want exploding stuff :(
+    $3cl_fov = $640 $5[]$4
+    $3cl_fov = $690 $5[]$4
+    $3r_DrawNearFoV = $690 $5[]$4
+CHAT Blablah to ALL:
+   YEEEAAAAAH
+    $3r_DrawNearFoV = $670 $5[]$4
+    $3cl_fov = $670 $5[]$4
+    $3cl_fov = $650 $5[]$4
+    $3r_DrawNearFoV = $650 $5[]$4
+CHAT Blablah to ALL:
+   this is all OFPDRlike
+    $3r_DrawNearFoV = $610 $5[]$4
+    $3r_DrawNearFoV = $630 $5[]$4
+CHAT TheBusDriver to ALL:
+   hmm
+    $3r_DrawNearFoV = $680 $5[]$4
+CHAT TheBusDriver to ALL:
+   somethings messed up
+    $3cl_fov = $680 $5[]$4
+CHAT Blablah to ALL:
+   it's me
+    $3cl_fov = $670 $5[]$4
+    $3r_DrawNearFoV = $670 $5[]$4
+CHAT Blablah to ALL:
+   70 fov looks much more 3D
+CHAT Blablah to ALL:
+   but it has issues :(
+CHAT Blablah to ALL:
+   the game's not made for it
+    $3r_DrawNearFoV = $670 $5[]$4
+CHAT TheBusDriver to ALL:
+   can you make it 360?
+    $3r_DrawNearFoV = $670 $5[]$4
+    $3cl_fov = $670 $5[]$4
+    $3cl_fov = $660 $5[]$4
+    $3r_DrawNearFoV = $660 $5[]$4
+    $3r_DrawNearFoV = $6360 $5[]$4
+    $3r_DrawNearFoV = $6360 $5[]$4
+CHAT Blablah to ALL:
+   does nothing
+CHAT Blablah to ALL:
+   180 is max
+    $3r_DrawNearFoV = $6180 $5[]$4
+CHAT TheBusDriver to ALL:
+   179?
+    $3cl_fov = $6180 $5[]$4
+CHAT TheBusDriver to ALL:
+   ah
+    $3cl_fov = $6170 $5[]$4
+CHAT Blablah to ALL:
+   this is 170
+    $3cl_fov = $6179 $5[]$4
+CHAT Blablah to ALL:
+   179
+    $3r_DrawNearFoV = $6179 $5[]$4
+CHAT TheBusDriver to ALL:
+   totally fubar :P
+CHAT Blablah to ALL:
+   trippy
+    $3cl_fov = $6140 $5[]$4
+    $3r_DrawNearFoV = $6140 $5[]$4
+CHAT Blablah to ALL:
+   140
+CHAT Blablah to ALL:
+   but r_drawnearfov got stuck
+CHAT TheBusDriver to ALL:
+   this is MENTAL
+    $3r_DrawNearFoV = $660 $5[]$4
+    $3r_DrawNearFoV = $6140 $5[]$4
+CHAT Blablah to ALL:
+   there we go
+CHAT Blablah to ALL:
+   pretty insane yeah
+    $3r_DrawNearFoV = $6120 $5[]$4
+    $3r_DrawNearFoV = $6120 $5[]$4
+    $3cl_fov = $6120 $5[]$4
+CHAT Blablah to ALL:
+   120
+CHAT Blablah to ALL:
+   what quake is often played at i think?
+    $3cl_fov = $660 $5[]$4
+    $3r_DrawNearFoV = $6120 $5[]$4
+    $3cl_fov = $6120 $5[]$4
+    $3cl_fov = $690 $5[]$4
+    $3r_DrawNearFoV = $690 $5[]$4
+CHAT Blablah to ALL:
+   90 is quake fov :D
+    $3r_DrawNearFoV = $690 $5[]$4
+    $3cl_fov = $690 $5[]$4
+    $3r_DrawNearFoV = $690 $5[]$4
+    $3cl_fov = $690 $5[]$4
+    $3r_DrawNearFoV = $690 $5[]$4
+    $3cl_fov = $660 $5[]$4
+    $3r_DrawNearFoV = $660 $5[]$4
+CHAT Blablah to ALL:
+   fail :D
+CHAT Blablah to ALL:
+   lal
+CHAT Blablah to ALL:
+   wasn't watching
+CHAT Blablah to ALL:
+   lol :D
+CHAT Blablah to ALL:
+   8hp, wooo
+CHAT Blablah to ALL:
+   jump on me
+CHAT Blablah to ALL:
+   not in front of meh :D
+CHAT Blablah to ALL:
+   wewt
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   ohai
+CHAT Blablah to ALL:
+   aw
+CHAT Blablah to ALL:
+   yeaaaah
+CHAT Blablah to ALL:
+   haha
+CHAT Blablah to ALL:
+   idk what i'll do with the cloak
+CHAT Blablah to ALL:
+   i want it to be used
+CHAT Blablah to ALL:
+   but at the same time it can't be overpowered
+CHAT TheBusDriver to ALL:
+   the whole nanosuit thing is really difficult to balance imo
+CHAT Blablah to ALL:
+   it is
+CHAT Blablah to ALL:
+   it's why wars sucks
+CHAT Blablah to ALL:
+   ironically
+CHAT Blablah to ALL:
+   jump
+CHAT Blablah to ALL:
+   you can stand on people when they rotate
+CHAT Blablah to ALL:
+   i've done twice with someone once :D
+CHAT Blablah to ALL:
+   *two
+CHAT Blablah to ALL:
+   aw so close
+CHAT Blablah to ALL:
+   funny running anim
+CHAT TheBusDriver to ALL:
+   crysis anims are .... :(
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   well
+CHAT Blablah to ALL:
+   they don't fit in
+CHAT Blablah to ALL:
+   they're good but don't fit in :/
+    $3g_walkMultiplier = $60.8 $5[SAVEGAME]$4
+    $3g_walkMultiplier = $60.3 $5[SAVEGAME]$4
+CHAT TheBusDriver to ALL:
+   mw and mw2 has awesome anims
+    $3g_walkMultiplier = $60.1 $5[SAVEGAME]$4
+    $3g_walkMultiplier = $61 $5[SAVEGAME]$4
+CHAT Blablah to ALL:
+   shit
+CHAT Blablah to ALL:
+   shall we change maps?
+CHAT TheBusDriver to ALL:
+   yer
+CHAT Blablah to ALL:
+   to?
+CHAT TheBusDriver to ALL:
+   something icy :P
+CHAT Blablah to ALL:
+   there's only Frost i think
+CHAT Blablah to ALL:
+   and frost is ugly as fuck
+CHAT Blablah to ALL:
+   sorry, my love
+CHAT Blablah to ALL:
+   can i load savanna?
+CHAT Blablah to ALL:
+   i haven't seen that map in ages
+CHAT TheBusDriver to ALL:
+   yeah
+[Error] CryAnimation:: Trying to load animation with alias "select_vehicle_01" from file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/select_vehicle_01.caf" into the animation container. Such animation alias already exists and uses file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/select_vehicle_01.caf". Please use another animation alias.
+[Error] CryAnimation:: Trying to load animation with alias "deselect_vehicle_01" from file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/deselect_vehicle_01.caf" into the animation container. Such animation alias already exists and uses file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/deselect_vehicle_01.caf". Please use another animation alias.
+[Error] CryAnimation:: Trying to load animation with alias "idle_vehicle_01" from file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/idle_vehicle_01.caf" into the animation container. Such animation alias already exists and uses file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/idle_vehicle_01.caf". Please use another animation alias.
+[Error] CryAnimation:: Trying to load animation with alias "fire_vehicle_01" from file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/fire_vehicle_01.caf" into the animation container. Such animation alias already exists and uses file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/fire_vehicle_01.caf". Please use another animation alias.
+[Error] CryAnimation:: Trying to load animation with alias "prefire_vehicle_01" from file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/prefire_vehicle_01.caf" into the animation container. Such animation alias already exists and uses file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/prefire_vehicle_01.caf". Please use another animation alias.
+[Error] CryAnimation:: Trying to load animation with alias "postfire_vehicle_01" from file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/postfire_vehicle_01.caf" into the animation container. Such animation alias already exists and uses file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/postfire_vehicle_01.caf". Please use another animation alias.
+-----------------------------------------------------
+*LOADING: Level multiplayer/ia/Savanna loading time: 5.99 seconds
+-----------------------------------------------------
+CHAT Blablah to ALL:
+   KENYAAA
+CHAT Blablah to ALL:
+   LIONS TIGERS KENYAAAAA
+CHAT Blablah to ALL:
+   bit of a laggy map :<
+CHAT Blablah to ALL:
+   i'm not done with vehicles yet fyi
+CHAT TheBusDriver to ALL:
+   omfg
+CHAT Blablah to ALL:
+   but lol
+CHAT Blablah to ALL:
+   did you just flip?
+CHAT TheBusDriver to ALL:
+   yes!!!
+CHAT Blablah to ALL:
+   because you turned?
+CHAT TheBusDriver to ALL:
+   yeah
+CHAT Blablah to ALL:
+   yes, behold ce2's shit vehicle physics i talked about yesterd
+CHAT Blablah to ALL:
+   ay
+CHAT Blablah to ALL:
+   the massbox is where it should be
+CHAT Blablah to ALL:
+   the weight is realistic
+CHAT Blablah to ALL:
+   the suspension is fine
+CHAT Blablah to ALL:
+   yet it still fucking flips
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   the only solution is to lower the massbox
+CHAT Blablah to ALL:
+   but then you get unrealistic physics
+CHAT Blablah to ALL:
+   PILLS HERE
+CHAT Blablah to ALL:
+   damn, that IS badass
+CHAT Blablah to ALL:
+   didn't know i could repair enemy vehicles in ia
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   can you switch seats for a sec and tell me if i'm sitting in 
+CHAT Blablah to ALL:
+   the other seat?
+CHAT TheBusDriver to ALL:
+   wut?
+CHAT TheBusDriver to ALL:
+   oh yes you're there
+CHAT Blablah to ALL:
+   am i sitting in the right seat?
+CHAT Blablah to ALL:
+   awesome
+CHAT Blablah to ALL:
+   can i see?
+CHAT Blablah to ALL:
+   awesome
+CHAT Blablah to ALL:
+   you even have the recoil, LOL
+CHAT Blablah to ALL:
+   press those buttons HARDER
+CHAT Blablah to ALL:
+   the ASV has nice sounds
+CHAT TheBusDriver to ALL:
+   where's the vtol?
+CHAT Blablah to ALL:
+   follow meh
+CHAT Blablah to ALL:
+   ah shit
+CHAT Blablah to ALL:
+   stay out of those please :<
+CHAT Blablah to ALL:
+   the hovercrafts
+CHAT Blablah to ALL:
+   i have a bug
+CHAT Blablah to ALL:
+   that causes shitloads of lag
+CHAT Blablah to ALL:
+   i love the braking sounds
+CHAT Blablah to ALL:
+   check this out
+CHAT Blablah to ALL:
+   that's a nice easter egg by the designer lol
+CHAT Blablah to ALL:
+   idk if i'll keep the MOAR/MOAC
+CHAT Blablah to ALL:
+   eh, why isn't it locking on D/
+CHAT TheBusDriver to ALL:
+   theres something wrong w/ ur nanosuit texture
+CHAT Blablah to ALL:
+   there is?
+CHAT TheBusDriver to ALL:
+   yes it's kinda grey
+CHAT Blablah to ALL:
+   take a screenie?
+CHAT TheBusDriver to ALL:
+   k
+CHAT Blablah to ALL:
+   oh and you're holding a pistol in nw pose lol
+CHAT TheBusDriver to ALL:
+   ?
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   screenshot taken?
+CHAT TheBusDriver to ALL:
+   yeah now it's normal again wtf
+CHAT Blablah to ALL:
+   oh was it entirely, plain grey?
+CHAT TheBusDriver to ALL:
+   i have the screenshot though
+CHAT TheBusDriver to ALL:
+   no not entirely more like rly rly dusty
+CHAT Blablah to ALL:
+   hmm
+CHAT Blablah to ALL:
+   i'll look at the screenie later
+CHAT Blablah to ALL:
+   it's supposed to lock on :/
+CHAT Blablah to ALL:
+   it does in PS and all
+CHAT Blablah to ALL:
+   lol, your gun actually affects my vtol physics
+CHAT TheBusDriver to ALL:
+   firing rate doesnt really match a gatling :P
+CHAT Blablah to ALL:
+   if i just hvoer and you keep shooting it starts going up
+CHAT Blablah to ALL:
+   yeah i know :P
+CHAT Blablah to ALL:
+   it's not done yet
+CHAT Blablah to ALL:
+   how'd you like my chute? lol
+CHAT Blablah to ALL:
+   aww fuck
+CHAT Blablah to ALL:
+   WHOA
+CHAT Blablah to ALL:
+   jesus, lol
+CHAT Blablah to ALL:
+   hmm
+CHAT Blablah to ALL:
+   oh, you were shooting my tyres
+CHAT Blablah to ALL:
+   that's awesome
+CHAT Blablah to ALL:
+   and a good idea
+CHAT Blablah to ALL:
+   to repair as a team
+CHAT TheBusDriver to ALL:
+   min 2 ppl to repair?
+CHAT Blablah to ALL:
+   nah it's just slow on your own
+CHAT Blablah to ALL:
+   can't really force that kind of teamwork on people in crysis
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   oh jesus that's bright
+CHAT TheBusDriver to ALL:
+   WHOA
+CHAT Blablah to ALL:
+   yeah :|
+CHAT TheBusDriver to ALL:
+   what the hell did you shoot at?
+CHAT Blablah to ALL:
+   i haven't done damaged for these vehicles yet
+CHAT Blablah to ALL:
+   the back
+CHAT Blablah to ALL:
+   the hull
+CHAT Blablah to ALL:
+   oh
+CHAT Blablah to ALL:
+   i have to go for dinner
+CHAT Blablah to ALL:
+   like now
+CHAT TheBusDriver to ALL:
+   kk
+CHAT Blablah to ALL:
+   delicious fucking dinner
+CHAT Blablah to ALL:
+   thanks very much for playing dude :D
+CHAT TheBusDriver to ALL:
+   np :D
+CHAT Blablah to ALL:
+   yeah i'll be on irc
+CHAT Blablah to ALL:
+   after dinner
+CHAT Blablah to ALL:
+   /q
+CHAT Blablah to ALL:
+   woops
+[net 19:11:36.491] Disconnect iMac7.telenet.be:60940; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:60940'
+[net 19:12:49.120] Disconnect 188-23-166-149.adsl.highway.telekom.at:51262; profid=116638254; cause=0; msg='Timeout occurred; no packet for 30.0 seconds'
+[Warning] Unknown command: q
+[Warning] Unknown command: /q
+System:Quit

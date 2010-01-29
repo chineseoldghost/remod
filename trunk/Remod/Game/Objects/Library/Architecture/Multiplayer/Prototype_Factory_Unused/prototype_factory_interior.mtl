@@ -1,0 +1,202 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="concrete_wall" MtlFlags="128" Shader="Illum" GenMask="268435584" SurfaceType="mat_wood_solid" Diffuse="0.81568635,0.81568635,0.81568635" Specular="0.65882355,0.65882355,0.65882355" Emissive="0,0,0" Shininess="4.4000001" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/aircraftcarrier/textures/walls/woodwall.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/aircraftcarrier/textures/walls/base_003ab_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/test_inside.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/detail/detail_wood.dds">
+     <TexMod TileU="2" TileV="2"/>
+    </Texture>
+   </Textures>
+   <PublicParams EnvMapAmount="0.25" FresnelScale="1" FresnelBias="0" AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="carpet" MtlFlags="128" Shader="Illum" GenMask="268435616" SurfaceType="mat_concrete" Diffuse="0.29019609,0.29019609,0.29019609" Specular="1,1,1" Emissive="0,0,0" Shininess="25" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/multiplayer/prototype_factory/interior/floor_plastic_white.dds">
+     <TexMod TileU="2" TileV="2"/>
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/aircraftcarrier/textures/walls/base_003ab_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/alientestcentral.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/library/architecture/aircraftcarrier/textures/walls/paintmetaldetail.tif">
+     <TexMod TileU="2" TileV="2"/>
+    </Texture>
+    <Texture Map="[1] Custom" File="textures/cubemaps/camera_river_cubemap_bright.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams EnvMapAmount="0.1" FresnelScale="1" FresnelBias="1" AmbientMultiplier="1"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="metalbase" MtlFlags="128" Shader="Illum" GenMask="268435488" SurfaceType="mat_metal_sheet" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.56470591,0.56470591,0.56470591" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/aircraftcarrier/textures/hull/metalbase2.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/detail/detail_metal.tif">
+     <TexMod TileU="2" TileV="3"/>
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="metal_shiny" MtlFlags="128" Shader="Metal" GenMask="268435472" SurfaceType="mat_metal_sheet" Diffuse="0.14117648,0.14117648,0.14117648" Specular="1,1,1" Emissive="0,0,0" Shininess="44" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/scientific/labfridgemetal.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/props/scientific/labfridgemetal.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/library/architecture/aircraftcarrier/textures/reflections1.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.64700001" Glossiness="0.72299999" ReflectionAmount="0.25" FresnelBias="0" FresnelScale="1"/>
+  </Material>
+  <Material Name="no_draw" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_concrete" Diffuse="0.71764708,0,0.4039216" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+  </Material>
+  <Material Name="metal_white" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="mat_concrete" Diffuse="0.62352943,0.62352943,0.62352943" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/airfield/terminal/concrete2.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/airfield/terminal/concrete2_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/detail/detail_concrete.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="wall_blueline" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="mat_concrete" Diffuse="0.69411767,0.69411767,0.69411767" Specular="0.43921572,0.43921572,0.43921572" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/aircraftcarrier/textures/walls/wall_han_2.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Bumpmap" File="objects/library/architecture/aircraftcarrier/textures/walls/base_003a_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/detail/detail_concrete.tif">
+     <TexMod TileU="2" TileV="2"/>
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="floor_plastic" MtlFlags="128" Shader="Illum" GenMask="268435616" SurfaceType="mat_concrete" Diffuse="0.27450982,0.36078432,0.36862746" Specular="1,1,1" Emissive="0,0,0" Shininess="25" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/multiplayer/prototype_factory/interior/floor_plastic_white.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/aircraftcarrier/textures/walls/base_003ab_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/alientestcentral.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/library/architecture/aircraftcarrier/textures/walls/paintmetaldetail.tif">
+     <TexMod TileU="2" TileV="2"/>
+    </Texture>
+    <Texture Map="[1] Custom" File="textures/cubemaps/camera_river_cubemap_bright.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams EnvMapAmount="0.25" FresnelScale="1" FresnelBias="1" AmbientMultiplier="1"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="ceiling_checker" MtlFlags="128" Shader="Illum" GenMask="268443648" SurfaceType="mat_metal_smooth" Diffuse="0.81176478,0.81176478,0.81176478" Specular="0.98823535,0.98823535,0.98823535" Emissive="0,0,0" Shininess="20" Opacity="1" GlowAmount="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/multiplayer/prototype_factory/interior/ceiling_checker.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/multiplayer/prototype_factory/interior/ceiling_checker_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="gate" MtlFlags="128" Shader="Illum" GenMask="268435472" SurfaceType="mat_metal_rough" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.50196081,0.50196081,0.50196081" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/harbour/control_center/control_center_storage_part.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/architecture/harbour/control_center/control_center_storage_part_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/harbour/control_center/control_center_storage_part_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/detail/detail_metal.tif">
+     <TexMod TileU="2" TileV="2"/>
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="concrete_floor" MtlFlags="128" Shader="Illum" GenMask="272629760" SurfaceType="mat_concrete" Diffuse="0.54901963,0.54509807,0.53333336" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/harbour/warehouse/harbour_warehouse_floor_asphalt2.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/harbour/warehouse/harbour_warehouse_floor_asphalt_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="concrete_blocks" MtlFlags="128" Shader="Illum" GenMask="268451840" SurfaceType="mat_concrete" Diffuse="0.58431375,0.58431375,0.58431375" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/airfield/terminal/concrete2.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/airfield/terminal/concrete2_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_concr_001_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1" DetailBumpTillingU="3" DetailBumpTillingV="3" DetailBumpScale="1" DetailBlendAmount="0"/>
+  </Material>
+  <Material Name="metalsheet" MtlFlags="128" Shader="Metal" GenMask="268439552" SurfaceType="mat_metal_rough" Diffuse="0.25490198,0.25490198,0.25490198" Specular="1,1,1" Emissive="0,0,0" Shininess="5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/multiplayer/reactor/toppanel1.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/architecture/multiplayer/reactor/toppanel1.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/multiplayer/reactor/toppanel1_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.17900001" Glossiness="0.75"/>
+  </Material>
+  <Material Name="concrete_proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_concrete" Diffuse="0.13333334,0.15686275,0.45882356" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

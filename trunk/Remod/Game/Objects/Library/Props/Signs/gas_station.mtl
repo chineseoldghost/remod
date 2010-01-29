@@ -1,0 +1,8 @@
+<Material AlphaTest="0.31999999" Diffuse="1,1,1" Emissive="0,0,0" GenMask="1" MtlFlags="0" Opacity="1" Shader="Illum" Shininess="10" Specular="0,0,0" SurfaceType="" >
+ <Textures>
+  <Texture File="objects/library/props/signs/gas_station.tif" Map="Diffuse" >
+   <TexMod OffsetU="0.15000001" OffsetV="0.23" TileU="0.69999999" TileV="0.52999997" />
+  </Texture>
+ </Textures>
+ <PublicParams BumpOffset="0.039999999" EnvMapAmount="0.25" FresnelBias="0" FresnelPow="5" FresnelScale="1" Reflect="0.5" />
+</Material>

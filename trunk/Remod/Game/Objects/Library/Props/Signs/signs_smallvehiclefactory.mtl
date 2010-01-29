@@ -1,0 +1,49 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="forward" MtlFlags="128" Shader="Illum" GenMask="272629760" SurfaceType="" Diffuse="0.65098,0.65098,0.65098" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/sign_smallvehiclefactory_forward.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams DebugUVScale="64"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_smooth" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+  <Material Name="SubMtl3" MtlFlags="128" Shader="Metal" GenMask="268439554" SurfaceType="" Diffuse="0.513726,0.513726,0.513726" Specular="0.615686,0.615686,0.615686" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/signback.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/props/signs/signback_spec.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.418" DebugUVScale="64" Glossiness="0.812"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="right" MtlFlags="128" Shader="Illum" GenMask="272629760" SurfaceType="" Diffuse="0.65098,0.65098,0.65098" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/sign_smallvehiclefactory_right.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams DebugUVScale="64"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="left" MtlFlags="128" Shader="Illum" GenMask="272629760" SurfaceType="" Diffuse="0.65098,0.65098,0.65098" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/sign_smallvehiclefactory_left.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams DebugUVScale="64"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams DebugUVScale="64"/>
+ <MaterialLayers />
+</Material>

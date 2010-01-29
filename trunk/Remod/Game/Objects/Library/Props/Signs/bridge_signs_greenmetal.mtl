@@ -1,0 +1,97 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="greenmetal" MtlFlags="128" Shader="Illum" GenMask="268451856" SurfaceType="mat_metal" Diffuse="0.58823502,0.58823502,0.58823502" Specular="0.36078399,0.36078399,0.36078399" Emissive="0,0,0" Shininess="5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/architecture/airfield/terminal_building/support2.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/props/signs/dullmetal.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_005_ddn.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1" DetailBumpTillingU="3" DetailBumpTillingV="3" DetailBumpScale="1" DetailBlendAmount="0"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="collision" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_smooth" Diffuse="0.588,0.588,0.588" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+  <Material Name="edgemarker" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="mat_metal_smooth" Diffuse="0.58823502,0.58823502,0.58823502" Specular="0.45098001,0.45098001,0.45098001" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/edgemarker.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="usmilbase" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="mat_metal_pipe" Diffuse="0.58823502,0.58823502,0.58823502" Specular="0.35686299,0.35686299,0.35686299" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/sign_freeway_usmilbase.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="rynsville" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="mat_metal_pipe" Diffuse="0.58823502,0.58823502,0.58823502" Specular="0.40392199,0.40392199,0.40392199" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/sign_freeway_rynsville.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="bordercontrol" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="mat_metal_pipe" Diffuse="0.58823502,0.58823502,0.58823502" Specular="0.40392199,0.40392199,0.40392199" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/sign_freeway_bordercontrol.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="bordercheck" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="mat_metal_pipe" Diffuse="0.58823502,0.58823502,0.58823502" Specular="0.40392199,0.40392199,0.40392199" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/sign_freeway_bordercheck.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="newfield" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="mat_metal_pipe" Diffuse="0.58823502,0.58823502,0.58823502" Specular="0.40392199,0.40392199,0.40392199" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/sign_freeway_newfield.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="research" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="mat_metal_pipe" Diffuse="0.58823502,0.58823502,0.58823502" Specular="0.40392199,0.40392199,0.40392199" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/sign_freeway_research.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="usmilbaseB" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="mat_metal_pipe" Diffuse="0.58823502,0.58823502,0.58823502" Specular="0.40392199,0.40392199,0.40392199" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/props/signs/sign_freeway_usmilbaseb.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

@@ -1,0 +1,142 @@
+////////////////////////////////////////////////////////////////////////////
+//
+//  Crytek Engine Source File.
+//  Shader extension
+//  Copyright (C), Crytek Studios, 2001-2004.
+// -------------------------------------------------------------------------
+//  File name:   Skin.ext
+//  Version:     v1.00
+//  Created:     19/11/2004 by Tiago Sousa
+//  Compilers:   
+//  Description: Skin shader extension used by the editor
+//               for automatic shader generation (based on "Skin" shader template)
+// -------------------------------------------------------------------------
+//  History:
+//
+////////////////////////////////////////////////////////////////////////////
+
+
+
+Version (1.00)
+
+/* - not used anymore
+
+Property
+{
+  Name = %BUMP_MAP
+  Mask = 0x1
+  Property    (Bump map)
+  Description (Use bump-map texture)
+  DependencySet = $TEX_Bump
+  DependencyReset = $TEX_Bump
+  Hidden
+}
+
+*/
+
+Property
+{
+    Name = %GLOSS_MAP
+    Mask = 0x2
+    Property    (Gloss map)
+    Description (Use gloss map as separate texture)
+    DependencySet = $TEX_Gloss
+    DependencyReset = $TEX_Gloss
+    Hidden  
+}
+
+Property
+{
+  Name = %BUMP_DIFFUSE
+  Mask = 0x4
+  Property    (BumpDiffuse)
+  Description (Use separate bump map for diffuse lighting)
+  DependencySet = $TEX_BumpDiffuse
+  DependencyReset = $TEX_BumpDiffuse
+  Hidden
+}
+
+/* - not used anymore
+
+Property
+{
+  Name = %SUBSURFACE_MAP
+  Mask = 0x10
+  Property    (SubSurface)
+  Description (Use subsurface texture)
+  DependencySet = $TEX_Subsurface
+  DependencyReset = $TEX_Subsurface
+  Hidden
+}
+
+*/
+
+/* - not used anymore
+
+Property
+{
+  Name = %COLOR_SYNTESIS
+  Mask = 0x20
+  Property    (Syntesize skin color)
+  Description (Syntesize skin color)
+  Hidden  // not used anymore
+}
+
+*/
+
+/* - not used anymore
+
+Property
+{
+  Name = %SPECULARPOW_GLOSSALPHA
+  Mask = 0x40
+  Property    (PerPixel Spec. Shinines)
+  Description (Use specular shininess coef. as alpha channel from gloss texture, if gloss not present, alpha from bump will be used)  
+  Hidden  // not used anymore
+}
+
+*/
+
+Property
+{
+  Name = %ENVIRONMENT_MAP
+  Mask = 0x100
+  Property    (Environment map)
+  Description (Use environment map as separate texture)
+  DependencyReset = $TEX_EnvCM   
+}
+
+Property
+{
+  Name = %WRINKLE_BLENDING
+  Mask = 0x200
+  Property    (Wrinkle blending)
+  Description (Use subsurface map alpha for wrinkle blending)
+  DependencyReset = $TEX_Subsurface
+}
+
+Property
+{
+  Name = %DISABLE_RAIN_PASS
+  Mask = 0x400
+  Property    (Disable rain layer)
+  Description (Disables rain layer)
+}
+
+Property
+{
+  Name = %STAT_BRANCHING
+  Mask = 0x10000000
+  DependencySet = $HW_StaticBranching
+  DependencyReset = $HW_StaticBranching
+  Hidden
+}
+Property
+{
+  Name = %DYN_BRANCHING
+  Mask = 0x20000000
+  DependencySet = $HW_DynamicBranching
+  DependencyReset = $HW_DynamicBranching
+  Hidden
+}
+

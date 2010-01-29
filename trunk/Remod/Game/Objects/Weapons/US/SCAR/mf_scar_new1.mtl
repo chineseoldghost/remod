@@ -1,0 +1,24 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="muzzleflash_side" MtlFlags="162" Shader="Illum" GenMask="1" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.99" GlowAmount="22.8">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/muzzle_flash/new_version1.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams BumpOffset="0.792" DebugUVScale="64"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="muzzleflash_front" MtlFlags="166" Shader="Illum" GenMask="33554433" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Opacity="0.99" GlowAmount="0.39">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/muzzle_flash/muzzle_7ways1.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams BumpOffset="0.04" DebugUVScale="64"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams BumpOffset="0.04" DebugUVScale="64"/>
+ <MaterialLayers />
+</Material>

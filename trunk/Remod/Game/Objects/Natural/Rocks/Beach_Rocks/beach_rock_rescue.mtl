@@ -1,0 +1,44 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="rock" MtlFlags="128" Shader="Illum" GenMask="285229072" SurfaceType="mat_rock" Diffuse="0.36078432,0.36078432,0.36078432" Specular="0.3019608,0.3019608,0.3019608" Emissive="0,0,0" Shininess="5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/terrain/detail/cliff_grey_blue_with_dry_bushes_color.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="textures/terrain/detail/cliff_grey_blue_with_dry_bushes_color_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="textures/terrain/detail/cliff_is7_ddn.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_concr_005_ddn.dds">
+     <TexMod TileU="5" TileV="5"/>
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1" DetailBumpTillingU="2" DetailBumpTillingV="2" DetailBumpScale="5" DetailBlendAmount="0"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_rock" Diffuse="0.58431375,0.58431375,0.58431375" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/terrain/bump_detail/palmtrunk_ddn.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+  </Material>
+  <Material Name="border" MtlFlags="160" Shader="Illum" GenMask="322961408" SurfaceType="mat_rock" Diffuse="0.59215689,0.59215689,0.59215689" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.80000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/beach_rocks/beach_rock_border.tif">
+     <TexMod TileU="0.60000002"/>
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

@@ -329,7 +329,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("g_debugNetPlayerInput", &g_debugNetPlayerInput, 0, VF_CHEAT, "Show some debug for player input");
 	pConsole->Register("g_debug_fscommand", &g_debug_fscommand, 0, 0, "Print incoming fscommands to console");
 	pConsole->Register("g_debugDirectMPMenu", &g_debugDirectMPMenu, 0, 0, "Jump directly to MP menu on application start.");
-	pConsole->Register("g_skipIntro", &g_skipIntro, 0, VF_CHEAT, "Skip all the intro videos.");
+	pConsole->Register("g_skipIntro", &g_skipIntro, 0, 0, "Skip all the intro videos.");
 	pConsole->Register("g_resetActionmapOnStart", &g_resetActionmapOnStart, 0, 0, "Resets Keyboard mapping on application start.");
 	pConsole->Register("g_useProfile", &g_useProfile, 1, 0, "Don't save anything to or load anything from profile.");
 	pConsole->Register("g_startFirstTime", &g_startFirstTime, 1, VF_DUMPTODISK, "1 before the game was started first time ever.");

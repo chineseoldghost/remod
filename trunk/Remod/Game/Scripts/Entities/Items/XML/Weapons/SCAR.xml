@@ -232,12 +232,12 @@
 				<param name="nearmiss_signal" value="OnNearMiss" />
 			</fire>
 			<recoil>
-				<param name="max_recoil"	value="0.75" />
-				<param name="attack" 			value="0.75" />
+				<param name="max_recoil"	value="0.7" />
+				<param name="attack" 			value="0.7" />
 				<param name="decay" 			value="0.175" />
-				<param name="maxx" 				value="0.75" />
-				<param name="maxy" 				value="0.75" />
-				<param name="randomness" 	value="0.75" />
+				<param name="maxx" 				value="0.7" />
+				<param name="maxy" 				value="0.7" />
+				<param name="randomness" 	value="0.25" />
 				<param name="recoil_prone_m" value="0.25" />
 				<param name="recoil_crouch_m" value="0.5" />
 				<param name="recoil_jump_m"		value="2" />

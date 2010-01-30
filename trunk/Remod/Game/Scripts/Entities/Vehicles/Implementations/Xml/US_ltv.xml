@@ -767,7 +767,7 @@
   </Modification>
   <Modification name="MOAC" parent="MP">
    <Elems>
-    <Elem idRef="idGun" name="class" value="VehicleMOACMounted"/>
+    <Elem idRef="idGun" name="class" value="VehicleMOARMounted"/>
    </Elems>
   </Modification>
   <Modification name="MOAR" parent="MP">

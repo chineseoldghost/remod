@@ -218,11 +218,11 @@
 				<param name="nearmiss_signal" value="OnNearMiss" />
 			</fire>
    			<recoil>
-	   		<param name="max_recoil"	value="1.08" />
-				<param name="attack" 			value="1.08" />
+	   		<param name="max_recoil"	value="1.05" />
+				<param name="attack" 			value="1.05" />
 				<param name="decay" 			value="0.175" />
-				<param name="maxx" 				value="1.08" />
-				<param name="maxy" 				value="1.08" />
+				<param name="maxx" 				value="1.05" />
+				<param name="maxy" 				value="1.05" />
 				<param name="randomness" 	value="0.25" />
 				<param name="recoil_prone_m" value="0.25" />
 				<param name="recoil_crouch_m" value="0.5" />

@@ -50,8 +50,8 @@ PowerStruggle.weaponList=
 
 PowerStruggle.equipList=
 {
-	-- { id="binocs",			name="@mp_eBinoculars",			price=50,			class="Binoculars", 			uniqueId=101,		category="@mp_catEquipment", loadout=1 },
-	-- { id="nsivion",			name="@mp_eNightvision",		price=10, 			class="NightVision", 			uniqueId=102,		category="@mp_catEquipment", loadout=1 },
+-- { id="binocs",			name="@mp_eBinoculars",			price=50,			class="Binoculars", 			uniqueId=101,		category="@mp_catEquipment", loadout=1 },
+-- { id="nsivion",			name="@mp_eNightvision",		price=10, 			class="NightVision", 			uniqueId=102,		category="@mp_catEquipment", loadout=1 },
 	{ id="radarkit",		name="@mp_eRadar",				price=100, 			class="RadarKit", 				uniqueId=110,		category="@mp_catEquipment", loadout=1, 	uniqueloadoutgroup=2, uniqueloadoutcount=1},
 	{ id="repairkit",		name="@mp_eRepair",				price=100, 			class="RepairKit", 				uniqueId=110,		category="@mp_catEquipment", loadout=1, 	uniqueloadoutgroup=2, uniqueloadoutcount=1},
 	{ id="lockkit",			name="@mp_eLockpick",			price=50, 			class="LockpickKit",			uniqueId=110,		category="@mp_catEquipment", loadout=1, 	uniqueloadoutgroup=2, uniqueloadoutcount=1},
@@ -205,8 +205,8 @@ PowerStruggle.ppList=
 	VEHICLE_KILL_MULT				= 0,
 	
 	--ATTACKING_FACILITY        = 50,
-	DEFENDING_FACILITY        = 25,
-	KILLING_TAC_WEAPON_BEARER = 200,
+	--DEFENDING_FACILITY        = 25,
+	--KILLING_TAC_WEAPON_BEARER = 200,
 };
 
 

@@ -420,7 +420,7 @@
         </Part>
        </Parts>
        <AnimatedJoint>
-        <Rotation pitchSpeed="5" pitchAccel="0">
+        <Rotation pitchSpeed="15" pitchAccel="0">
          <pitchLimits>
           <pitchLimit value="-5"/>
           <pitchLimit value="25"/>

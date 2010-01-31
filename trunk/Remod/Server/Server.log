@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(29 Jan 2010) Time(18 52 18)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(30 Jan 2010) Time(17 36 13)"  -- used by backup system
  
-Log Started at Friday, January 29, 2010 18:52:18
+Log Started at Saturday, January 30, 2010 17:36:13
 Running 32 bit version
 Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.278129 MHz
+CPU Speed (estimated): 1997.274364 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.279483 MHz
+CPU Speed (estimated): 1997.280785 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -40,8 +40,8 @@ System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 18:52:18 01/29/10, system running for 285 minutes
-1521MB physical memory installed, 960MB available, 2047MB virtual memory installed, 36 percent of memory in use
+Local time is 17:36:13 01/30/10, system running for 261 minutes
+1521MB physical memory installed, 713MB available, 2047MB virtual memory installed, 53 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
@@ -93,1353 +93,903 @@ Initializing AI System
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
     $3sv_gamerules = $6PowerStruggle $5[]$4
-[net 17:52:20.042] network hostname: iMac7
-[net 17:52:20.058]   ip:192.168.0.192
-[net 17:52:20.058]   ip:5.182.209.7
+[net 16:36:14.657] network hostname: iMac7
+[net 16:36:14.660]   ip:192.168.0.192
+[net 16:36:14.660]   ip:5.182.209.7
 -----------------------------------------------------
-*LOADING: Level multiplayer/ps/Mesa loading time: 14.34 seconds
+*LOADING: Level multiplayer/ps/Mesa loading time: 12.83 seconds
 -----------------------------------------------------
     $3sv_gamerules = $6InstantAction $5[]$4
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/Ruins loading time: 3.14 seconds
+*LOADING: Level multiplayer/ia/Ruins loading time: 3.10 seconds
 -----------------------------------------------------
-    $3g_MPDeathCam = $61 $5[]$4
+[net 16:40:04.763] Disconnect 85-220-10-138.dsl.dynamic.simnet.is:57354; profid=161429488; cause=19; msg='Remote disconnected: User left the game'
 CHAT Blablah to ALL:
-   kewl
+   i have dinner in like 30 mins
+CHAT Shadez to ALL:
+   k
 CHAT Blablah to ALL:
-   gonna check IRC real quick
+   damn, FY recoil's a bit high
 CHAT Blablah to ALL:
-   sunnlok's remod won't start
-CHAT TheBusDriver to ALL:
-   :o
+   i probably forgot to change it back from what iset it to, lol
 CHAT Blablah to ALL:
-   it seems to do that the first time you launch it
-CHAT Blablah to ALL:
-   also quick test on the max length of chat messages here, is it like 10 
-CHAT Blablah to ALL:
-   characters
-CHAT Blablah to ALL:
-   damn
-CHAT Blablah to ALL:
+   aww no fair, you bitches
+CHAT Shadez to ALL:
    lol
-[net 18:00:54.045] Disconnect 85-220-12-105.dsl.dynamic.simnet.is:52874; profid=161429488; cause=10; msg='Invalid CD Key'
-[Warning] Unknown command: s_soundinfo 1 
 CHAT Blablah to ALL:
-   i'll switch to savanna or something soon
+   i'm gonna start aiming for your heads now :P
+CHAT Blablah to ALL:
+   lagspike
+CHAT Blablah to ALL:
+   lal
 CHAT TheBusDriver to ALL:
+   the weird sound only happens in cloak mode
+CHAT Blablah to ALL:
+   guys
+CHAT Blablah to ALL:
+   i should go change the fy recoil
+CHAT Blablah to ALL:
+   commit, restart the server
+CHAT Blablah to ALL:
+   do you mind?
+CHAT Shadez to ALL:
+   ugh
+CHAT Blablah to ALL:
+   it's what we use svn for after all
+CHAT Shadez to ALL:
    kk
-CHAT Blablah to ALL:
-   and uhm
-CHAT Blablah to ALL:
-   i have dinner in 5, but i only take like 5 minutes
-CHAT Blablah to ALL:
-   so does he
-[net 18:01:49.925] Disconnect 85-220-12-105.dsl.dynamic.simnet.is:53294; profid=161429488; cause=10; msg='Invalid CD Key'
-CHAT Blablah to ALL:
-   hahaa
-CHAT Blablah to ALL:
-   i guess it crashed the first time you launched it?
-CHAT sunnlok to ALL:
-   emo
-[net 18:02:49.180] Disconnect 85-220-12-105.dsl.dynamic.simnet.is:53573; profid=161429488; cause=10; msg='Invalid CD Key'
-CHAT Blablah to ALL:
-   omgz noes
-CHAT Blablah to ALL:
-   laff
-CHAT Blablah to ALL:
+CHAT TheBusDriver to ALL:
    k
-CHAT Blablah to ALL:
-   let's fight
-CHAT Blablah to ALL:
-   i do like that camera shake :O
-CHAT Blablah to ALL:
-   first time i have it ingame
-CHAT Blablah to ALL:
-   also, sunnlok, the game is not yet noob friendly :P
-CHAT sunnlok to ALL:
-   yeah im stupid @ crysis
-CHAT Blablah to ALL:
-   it should be fun nevertheless
-CHAT Blablah to ALL:
-   and i mean it SHOULD
-[net 18:05:21.135] Disconnect iMac7.telenet.be:50872; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:50872'
-[net 18:05:21.186] Disconnect 188-23-168-194.adsl.highway.telekom.at:53440; profid=116638254; cause=14; msg='Unreachable address 188-23-168-194.adsl.highway.telekom.at:53440'
-[net 18:05:21.191] Disconnect 85-220-12-105.dsl.dynamic.simnet.is:53788; profid=161429488; cause=14; msg='Unreachable address 85-220-12-105.dsl.dynamic.simnet.is:53788'
-CHAT Blablah to ALL:
-   k, sorry, that was windows
-CHAT Blablah to ALL:
-   it does that twice a day
-CHAT TheBusDriver to ALL:
-   wtf i just got disconnected
-CHAT Blablah to ALL:
-   yeah
-CHAT Blablah to ALL:
-   it's windows fucking over my internet, does it twice a day
-CHAT Nomad to ALL:
-   uhh
-CHAT Nomad to ALL:
-   name where
-CHAT Blablah to ALL:
-   daaayum
-CHAT TheBusDriver to ALL:
-   wasted a whole clip xD
-CHAT Blablah to ALL:
-   if Nomad joins i'll switch to TIA...
-CHAT Nomad to ALL:
-   where do i change name?
-CHAT Blablah to ALL:
-   except dinner is ready here
-CHAT sunnlok to ALL:
-   fu
-CHAT Blablah to ALL:
-   shadez is that you?
-CHAT Nomad to ALL:
-   YES
-CHAT Nomad to ALL:
-   name
-CHAT Blablah to ALL:
-   no dinner?
-CHAT Nomad to ALL:
-   arrrggh
-CHAT Nomad to ALL:
-   yes.. just not yet
-CHAT Blablah to ALL:
-   nades sound SO FUCKING AWESOME when you're dead
-CHAT sunnlok to ALL:
-   what exactly did yuhng?
-CHAT Blablah to ALL:
-   change?
-CHAT sunnlok to ALL:
-   in t mod?
-CHAT Blablah to ALL:
-   too much for me to list
-CHAT Blablah to ALL:
-   it's generally balance changes
-CHAT Blablah to ALL:
-   and some aesthetic things
-CHAT Nomad to ALL:
-   ugh
-CHAT TheBusDriver to ALL:
-   damn it's e now :@
-CHAT Blablah to ALL:
-   yeah i have dinner
-CHAT Blablah to ALL:
-   want me to switch to savanna?
-CHAT Blablah to ALL:
-   yes? no?
-CHAT sunnlok to ALL:
-   sit
-CHAT Blablah to ALL:
-   vote nextmap Savanna
-CHAT Blablah to ALL:
-   !vote nextmap Savanna
-CHAT Blablah to ALL:
-   that actually works, just doesn't output messages, lol
-CHAT Nomad to ALL:
-   dinner
-CHAT Nomad to ALL:
-   brb
-CHAT Blablah to ALL:
-   same here
-CHAT Blablah to ALL:
-   i'll switch to savanna, there' smore to check out with 2 there
-CHAT TheBusDriver to ALL:
-   !yes
-CHAT sunnlok to ALL:
-   !ys
-CHAT Blablah to ALL:
-   oh wait
-CHAT sunnlok to ALL:
-   !yes
-CHAT Blablah to ALL:
-   now try /yes
-CHAT Blablah to ALL:
-   there won't be a nextmap because there's no timelimit, though
-CHAT Blablah to ALL:
-   i'll just switch
-[net 18:12:21.760] Disconnect iMac7.telenet.be:64281; profid=113168429; cause=13; msg='Remote disconnected: Nub destroyed'
-[Error] CryAnimation:: Trying to load animation with alias "select_vehicle_01" from file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/select_vehicle_01.caf" into the animation container. Such animation alias already exists and uses file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/select_vehicle_01.caf". Please use another animation alias.
-[Error] CryAnimation:: Trying to load animation with alias "deselect_vehicle_01" from file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/deselect_vehicle_01.caf" into the animation container. Such animation alias already exists and uses file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/deselect_vehicle_01.caf". Please use another animation alias.
-[Error] CryAnimation:: Trying to load animation with alias "idle_vehicle_01" from file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/idle_vehicle_01.caf" into the animation container. Such animation alias already exists and uses file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/idle_vehicle_01.caf". Please use another animation alias.
-[Error] CryAnimation:: Trying to load animation with alias "fire_vehicle_01" from file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/fire_vehicle_01.caf" into the animation container. Such animation alias already exists and uses file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/fire_vehicle_01.caf". Please use another animation alias.
-[Error] CryAnimation:: Trying to load animation with alias "prefire_vehicle_01" from file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/prefire_vehicle_01.caf" into the animation container. Such animation alias already exists and uses file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/prefire_vehicle_01.caf". Please use another animation alias.
-[Error] CryAnimation:: Trying to load animation with alias "postfire_vehicle_01" from file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/postfire_vehicle_01.caf" into the animation container. Such animation alias already exists and uses file "animations/1st_person/weapons/us/alien_weapon_mount_vehicle/mount/postfire_vehicle_01.caf". Please use another animation alias.
------------------------------------------------------
-*LOADING: Level multiplayer/ia/Savanna loading time: 5.54 seconds
------------------------------------------------------
-CHAT TheBusDriver to ALL:
-   damn no 3rd person view :(
-CHAT TheBusDriver to ALL:
-   i c what u did thar :D
-CHAT sunnlok to ALL:
-   2 metes
-CHAT sunnlok to ALL:
-   mah iwant to hel you!!!
-CHAT Nomad to ALL:
-   back
-CHAT Nomad to ALL:
-   LOL
-CHAT Nomad to ALL:
-   WTF
-CHAT Nomad to ALL:
-   how do i change name again
-CHAT sunnlok to ALL:
-   where did you get that hing??
-CHAT TheBusDriver to ALL:
-   ^^
-CHAT TheBusDriver to ALL:
-   it's behind a bush i can show ya
-CHAT Blablah to ALL:
-   Speedy Blablah is speedy!
-CHAT Blablah to ALL:
-   are you guys fighting?
-CHAT Nomad to ALL:
-   duno
-CHAT TheBusDriver to ALL:
-   did u disable 3rd person in tanks?
-CHAT Blablah to ALL:
-   i did
-CHAT Blablah to ALL:
-   it's experimental
-CHAT TheBusDriver to ALL:
-   :(
-CHAT Blablah to ALL:
-   until a coder fixes 3rd person in tanks for me :P
-CHAT Blablah to ALL:
-   right now it's like
-CHAT TheBusDriver to ALL:
-   what's to fix?
-CHAT Blablah to ALL:
-   cannon points one way, projectile goes other
-CHAT Blablah to ALL:
-   ack, hovercraft
-CHAT Blablah to ALL:
-   can i shoot your tyres to test damages?
-CHAT Blablah to ALL:
-   yeah direct hits from this are powerful
-CHAT Blablah to ALL:
-   on tyres that is
-CHAT Blablah to ALL:
-   oh snayup
-CHAT Blablah to ALL:
-   i haven't done helicopter and light/atlas tank damages yet :D
-CHAT Nomad to ALL:
-   damn
-CHAT Blablah to ALL:
-   oh snap
-CHAT Blablah to ALL:
-   but yeah, keep in mind vehicles = unfinished
-CHAT Nomad to ALL:
-   crap
-CHAT Blablah to ALL:
-   could you guys not use hovercrafts for now?
-CHAT sunnlok to ALL:
-   xd
-CHAT Blablah to ALL:
-   they cause terrible stuttering for me sometimes
-CHAT Nomad to ALL:
-   someone tell how to change name GODDAMNIT
-CHAT Blablah to ALL:
-   you can't
-CHAT Blablah to ALL:
-   i need to unlock the name command
-CHAT sunnlok to ALL:
-   i vtoled you
-CHAT Blablah to ALL:
-   damnit lockon doesn't work here
-CHAT Blablah to ALL:
-   wait
-CHAT Blablah to ALL:
-   :D
-CHAT Nomad to ALL:
-   LOL
-CHAT TheBusDriver to ALL:
-   oh right you wanted it to be bf2 like?
-CHAT Blablah to ALL:
-   yeah, probably
-CHAT Nomad to ALL:
-   LOL
-CHAT Blablah to ALL:
-   epic lag
-CHAT Nomad to ALL:
-   naw
-CHAT Blablah to ALL:
-   yeah i do, it freezes for a moment sometimes
-CHAT Blablah to ALL:
-   i need to test the vtol gun :D
-CHAT Blablah to ALL:
-   pick me up!
-CHAT TheBusDriver to ALL:
-   where?
-CHAT Blablah to ALL:
-   here
-CHAT Nomad to ALL:
-   takes ages to rotate that gun
-CHAT Blablah to ALL:
-   VTOL moves awesomely
-CHAT Blablah to ALL:
-   i added cockpit view for the vtol gunner, btw
-CHAT sunnlok to ALL:
-   why ca you shoot with it?
-CHAT Blablah to ALL:
-   TOW missiles are totally OP lol
-CHAT TheBusDriver to ALL:
-   hmm my binoc overlay just disappeared
-CHAT Blablah to ALL:
-   that's an age old bug from wars
-CHAT Nomad to ALL:
-   wtf
-CHAT Blablah to ALL:
-   crytek never bothered to fix it
-CHAT Blablah to ALL:
-   ah, too powerful against infantry
-CHAT Blablah to ALL:
-   LOLWUT
-CHAT Nomad to ALL:
-   LOL
-CHAT Nomad to ALL:
-   ROFL
-CHAT sunnlok to ALL:
-   lol
-CHAT Nomad to ALL:
-   overpowered
-CHAT TheBusDriver to ALL:
-   food :D
-CHAT TheBusDriver to ALL:
-   brb
-CHAT Blablah to ALL:
-   took me long enough, damnit
-CHAT sunnlok to ALL:
-   xd
-CHAT Blablah to ALL:
-   is this at all fun for you guys?
-CHAT Nomad to ALL:
-   well
-CHAT sunnlok to ALL:
-   yeh
-CHAT Blablah to ALL:
-   keeping in mind the map's made for lots of people
-CHAT Nomad to ALL:
-   except for the fact i suck
-CHAT Blablah to ALL:
-   and it's a bit more designed for PS
-CHAT Blablah to ALL:
-   OH SNAP
-CHAT Blablah to ALL:
-   there's something
-CHAT Blablah to ALL:
-   on this map
-CHAT Blablah to ALL:
-   that means gigantic lag for me
-CHAT sunnlok to ALL:
-   not for me
-CHAT Blablah to ALL:
-   i think it's the particle in the middle
-CHAT Blablah to ALL:
-   the huge smoke pluime
-CHAT Blablah to ALL:
-   it's not showing
-CHAT Nomad to ALL:
-   i suck too much
-CHAT Blablah to ALL:
-   yeah, it's hard to make a game newb friendly
-CHAT Blablah to ALL:
-   LOL
-CHAT Nomad to ALL:
-   stfu
-CHAT Blablah to ALL:
-   well it should be...
-CHAT Blablah to ALL:
-   needs to be fun for everyone
-CHAT Blablah to ALL:
-   can i switch to battlegrounds or something? :|
-CHAT Blablah to ALL:
-   forgot to get rid of the MOAR :<
-CHAT Nomad to ALL:
-   LOL
-CHAT Blablah to ALL:
-   5 FPS for a few seconds everytime i look at that spot...
-CHAT Nomad to ALL:
-   LOL
-CHAT Blablah to ALL:
-   OOOOH SNAP
-CHAT Blablah to ALL:
-   did not expect that, haha
-CHAT Nomad to ALL:
-   ow
-CHAT TheBusDriver to ALL:
-   slow tbd is slow :D
-CHAT Blablah to ALL:
-   fuck
-CHAT Blablah to ALL:
-   OH JESUS
-CHAT Blablah to ALL:
-   you just missed me by a hair
-CHAT Blablah to ALL:
-   you in the APC
-CHAT Nomad to ALL:
-   argh
-CHAT Nomad to ALL:
-   you were below my shooting range
-CHAT Blablah to ALL:
-   yeah i haven't done the damages for light tanks yet
-CHAT Blablah to ALL:
-   lol, it's hard when you drop to 5 fps everytime you turn around :(
-CHAT Nomad to ALL:
-   lagging alo
-CHAT Nomad to ALL:
-   alot
-CHAT Blablah to ALL:
-   you too?
-CHAT Nomad to ALL:
-   well it isnt exactly lagging its more like...
-CHAT TheBusDriver to ALL:
-   doesnt do any damage
-CHAT Blablah to ALL:
-   repeated freezing?
-CHAT Nomad to ALL:
-   something like that
-CHAT Blablah to ALL:
-   when someone is in a hovercraft by any chance?
-CHAT Blablah to ALL:
-   damn
-CHAT Blablah to ALL:
-   nice one 
-CHAT Blablah to ALL:
-   okay, it's not the fire
-CHAT Blablah to ALL:
-   i'ts something in the wagon
-CHAT Nomad to ALL:
-   laggg
-CHAT Blablah to ALL:
-   DUDE
-CHAT Blablah to ALL:
-   holy shit that was awesome
-CHAT Nomad to ALL:
-   WTF?
-CHAT Blablah to ALL:
-   the ASV flew at me
-CHAT Blablah to ALL:
-   fucking epic
-CHAT Blablah to ALL:
-   haha
-CHAT Nomad to ALL:
-   I FUKEN FLEEW
-CHAT Blablah to ALL:
-   LOL
-CHAT Nomad to ALL:
-   LOL
-CHAT Nomad to ALL:
-   idiot
-CHAT Nomad to ALL:
-   xD
-CHAT Blablah to ALL:
-   you're vulnerable in speed eh
-CHAT Nomad to ALL:
-   blow up the veh and run
-CHAT Nomad to ALL:
-   woop
-CHAT Nomad to ALL:
-   vtol doesjnt have primary fire?
-CHAT Blablah to ALL:
-   it's unarmed apart from the gunner cannon
-CHAT Blablah to ALL:
-   it's a lot more useful in PS
-CHAT Blablah to ALL:
-   as transport
-CHAT Nomad to ALL:
-   i dont have any guns lol
-CHAT Blablah to ALL:
-   spawned without a pistol?
-CHAT Nomad to ALL:
-   nvm
-CHAT Nomad to ALL:
-   OWNED
-CHAT Blablah to ALL:
-   nice slip there when i shot you, lol
-CHAT Blablah to ALL:
-   it looked awesome :P
-CHAT Blablah to ALL:
-   do you guys think tanks should be able to zoom?
-CHAT sunnlok to ALL:
-   i ha te cloak
-CHAT Blablah to ALL:
-   why?
-CHAT sunnlok to ALL:
-   cause i hate the wole suit
-CHAT Blablah to ALL:
-   lmao
-CHAT Blablah to ALL:
-   guess i should do something about that
-CHAT Blablah to ALL:
-   the vtol crashing i mean
-CHAT Blablah to ALL:
-   i feel the ASV is obsolete
-CHAT Blablah to ALL:
-   don't you agree, tbd? :P
-CHAT TheBusDriver to ALL:
-   well it has a gatling
-CHAT Blablah to ALL:
-   nice
-CHAT TheBusDriver to ALL:
-   vehicles are kinda slow
-CHAT Blablah to ALL:
-   i love mutual kills :P
-CHAT Nomad to ALL:
-   LOL
-CHAT Blablah to ALL:
-   i wonder if i can make the VTOL spin heavily if an engine cuts out
-CHAT Nomad to ALL:
-   how am i supposed to shoot from vtol if i cant control it while i do so
-CHAT Blablah to ALL:
-   same with the heli
-CHAT Blablah to ALL:
-   i think i can
-CHAT TheBusDriver to ALL:
-   holy crap w/e it was it does too much damage :P
-CHAT Blablah to ALL:
-   lol
-CHAT Nomad to ALL:
-   vtol
-CHAT Blablah to ALL:
-   the vtol gun?
-CHAT Blablah to ALL:
-   yeah
-CHAT Nomad to ALL:
-   its fair though
-CHAT Blablah to ALL:
-   come get me :P
-CHAT Nomad to ALL:
-   i cant control the vtol while i shoot
-CHAT Blablah to ALL:
-   you're upposed to use it with a teammate
-CHAT Nomad to ALL:
-   :P
-CHAT Blablah to ALL:
-   lol
-CHAT TheBusDriver to ALL:
-   still i went from 31 to 68 in like 3 seconds
-CHAT Blablah to ALL:
-   lol
-CHAT Blablah to ALL:
-   yeah i'll lower it
-CHAT TheBusDriver to ALL:
-   it's a heavy tank after all :P
-CHAT Blablah to ALL:
-   CONSPIRACY
-CHAT Blablah to ALL:
-   Nooo conspiracy!
-CHAT Blablah to ALL:
-   D:
-CHAT Blablah to ALL:
-   LOL
-CHAT Blablah to ALL:
-   damn
-CHAT Blablah to ALL:
-   fail
-CHAT TheBusDriver to ALL:
-   ^^
-CHAT Nomad to ALL:
-   wtf?
-CHAT Nomad to ALL:
-   i cant kill you?!
-CHAT Blablah to ALL:
-   guys, crouching = -50% recoil, prone = -75%
-CHAT Nomad to ALL:
-   i shot you with 20 round or something
-CHAT Blablah to ALL:
-   in strength mode = - another 50%
-CHAT Nomad to ALL:
-   am not good with suit i suppose
-CHAT Blablah to ALL:
-   it has a really steep learning curve
-CHAT Nomad to ALL:
-   huwa f
-CHAT Nomad to ALL:
-   err
-CHAT Blablah to ALL:
-   oh snap
-CHAT TheBusDriver to ALL:
-   fuck outta ammo :D
-CHAT Blablah to ALL:
-   epic lag
-CHAT Nomad to ALL:
-   arrgh
-CHAT Nomad to ALL:
-   LOL parachute bug
-CHAT Blablah to ALL:
-   ?
-CHAT sunnlok to ALL:
-   ima campingon my tower
-CHAT Nomad to ALL:
-   parachute bughed
-CHAT Nomad to ALL:
-   bugged*
-CHAT Blablah to ALL:
-   i'ma campin ma house
-CHAT Blablah to ALL:
-   lol
-CHAT sunnlok to ALL:
-   shit
-CHAT Blablah to ALL:
-   that looked painful
-CHAT Blablah to ALL:
-   IT'S A TRAP!
-CHAT Blablah to ALL:
-   KABLAMO
-CHAT Nomad to ALL:
-   LOLLOLOL
-CHAT Nomad to ALL:
-   meele doesnt work with guns?!
-CHAT Blablah to ALL:
-   it does
-CHAT Nomad to ALL:
-   :S
-CHAT Blablah to ALL:
-   check your keys?
-CHAT Blablah to ALL:
-   good eye there tbd
-CHAT TheBusDriver to ALL:
-   ^^
-CHAT Blablah to ALL:
-   my shadow? :(
-CHAT TheBusDriver to ALL:
-   just a random shot
-CHAT Blablah to ALL:
-   oh, lol
-CHAT Blablah to ALL:
-   haha xD
-CHAT Nomad to ALL:
-   ugh
-CHAT Blablah to ALL:
-   look out for mines, lol
-CHAT Blablah to ALL:
-   nooo, it means i want to ride witchu :(
-CHAT Nomad to ALL:
-   what does
-CHAT Blablah to ALL:
-   win
-CHAT Blablah to ALL:
-   haha
-CHAT Blablah to ALL:
-   aww :D
-CHAT Blablah to ALL:
-   nice
-CHAT Blablah to ALL:
-   i forgot to change the turret rot speeds :<
-CHAT Blablah to ALL:
-   for some vehicles
-CHAT Blablah to ALL:
-   tbd, why do we always spawn so close to each other? :|
-CHAT Nomad to ALL:
-   argh
-CHAT Nomad to ALL:
-   wanted to be gunner
-CHAT TheBusDriver to ALL:
-   because we're awesome :D
-CHAT Blablah to ALL:
-   omg
-CHAT Blablah to ALL:
-   loltow!
-CHAT sunnlok to ALL:
-   ok im out
-CHAT Blablah to ALL:
-   aw
-CHAT Blablah to ALL:
-   don't go, sunnlok, don't go :P
-CHAT Blablah to ALL:
-   O_O
-CHAT Blablah to ALL:
-   the heli controls are still epicly screwy
-CHAT Nomad to ALL:
-   wtf
-CHAT Nomad to ALL:
-   damned
-CHAT Blablah to ALL:
-   lulz?!
-CHAT sunnlok to ALL:
-   wtf?
-CHAT Blablah to ALL:
-   fuck yeah
-CHAT Blablah to ALL:
-   FIGHT FOR ME HORSE
-CHAT Blablah to ALL:
-   FIGHT FOR ME
-CHAT Blablah to ALL:
-   YOU CANNOT ESCAPE MY POWAAAH
-CHAT Blablah to ALL:
-   YOU ARE UNDER MY CONTROLL-LULULUL
-CHAT Blablah to ALL:
-   damn :P
-CHAT Blablah to ALL:
-   wait
-CHAT Blablah to ALL:
-   noo, team up against the vtol :P
-CHAT Blablah to ALL:
-   woooo
-CHAT Nomad to ALL:
-   WIN
-CHAT Blablah to ALL:
-   damn xD
-CHAT sunnlok to ALL:
-   i hae tis gun
-CHAT Blablah to ALL:
-   the gauss?
-CHAT sunnlok to ALL:
-   yeah
-CHAT Blablah to ALL:
-   why?
-CHAT sunnlok to ALL:
-   op
-CHAT Blablah to ALL:
-   well it's a power weapon
-CHAT Blablah to ALL:
-   it's supposed to have a bigger advantage than disadvantage
-CHAT Blablah to ALL:
-   idk how you're one-shotting me with it in the body though
-CHAT Blablah to ALL:
-   it's supposed to be 2 shots
-CHAT Blablah to ALL:
-   unless i changed that
-CHAT Nomad to ALL:
-   WTF
-CHAT Blablah to ALL:
-   epic fucking lagspike
-CHAT Nomad to ALL:
-   LAAAAAAAAAAAAAAAAAAG
-CHAT TheBusDriver to ALL:
-   drive over the mines already -.-
-CHAT Blablah to ALL:
-   lol
-CHAT Blablah to ALL:
-   get the gauss guy guys...
-CHAT Blablah to ALL:
-   not me fool
-CHAT TheBusDriver to ALL:
-   i'm cloaked doesn't bother me :D
-CHAT Blablah to ALL:
-   k he's dead
-CHAT sunnlok to ALL:
-   got me
-CHAT Blablah to ALL:
-   and with my balls in his mouth :D
-CHAT Blablah to ALL:
-   mmm, maybe the vtol should have like
-CHAT TheBusDriver to ALL:
-   bombs, it could have bombs
-CHAT Blablah to ALL:
-   an anti-tank guided missile thing like in BF2
-CHAT Blablah to ALL:
-   but i mean the gunner
-CHAT Blablah to ALL:
-   so the gunner can guide the missle
-CHAT Blablah to ALL:
-   missile
-CHAT Blablah to ALL:
-   guys, get the more powerful enemy first please :P
-CHAT Nomad to ALL:
-   why
-CHAT TheBusDriver to ALL:
-   my mines :(
-CHAT Blablah to ALL:
-   because it's fun to team up
-CHAT Blablah to ALL:
-   get in my ASV if i don't shoot you
-CHAT Nomad to ALL:
-   go team death
-CHAT Blablah to ALL:
-   if you want, but if someone leaves TDM is useless
-CHAT TheBusDriver to ALL:
-   yeah
-CHAT TheBusDriver to ALL:
-   damn
-CHAT Blablah to ALL:
-   LOL
-CHAT TheBusDriver to ALL:
-   bastard
-CHAT TheBusDriver to ALL:
-   is it that obvious?
-CHAT Blablah to ALL:
-   did you like the mine animation, tbd? :P
-CHAT TheBusDriver to ALL:
-   it's weird
-CHAT Blablah to ALL:
-   i have an eye for mines, lol
-CHAT Nomad to ALL:
-   i want to team with vtol
-CHAT Blablah to ALL:
-   dude
-CHAT Blablah to ALL:
-   lol
-CHAT Blablah to ALL:
-   land slowly
-CHAT Blablah to ALL:
-   ohai
-CHAT Nomad to ALL:
-   LOLL
-CHAT Blablah to ALL:
-   lmao
-CHAT Blablah to ALL:
-   sorry for that
-CHAT Blablah to ALL:
-   is the vtol hard to fly, sunnlok?
-CHAT Nomad to ALL:
-   its easy
-CHAT sunnlok to ALL:
-   no
-CHAT Blablah to ALL:
-   you seemed to be struggling, lol
-CHAT Nomad to ALL:
-   i landed easily b4
-CHAT sunnlok to ALL:
-   had 90% dmg
-CHAT sunnlok to ALL:
-   the landing was planned that way
-CHAT Blablah to ALL:
-   wewt
-CHAT Blablah to ALL:
-   lol
-CHAT Blablah to ALL:
-   shit
-CHAT Blablah to ALL:
-   LOL
-CHAT TheBusDriver to ALL:
-   you soloing/
-CHAT TheBusDriver to ALL:
-   ?
-CHAT Blablah to ALL:
-   no
-CHAT Blablah to ALL:
-   yeah uhm
-CHAT Blablah to ALL:
-   the reason the gatling is so OP against some vehicles
-CHAT Blablah to ALL:
-   is because the vehicles still have old damage
-CHAT Blablah to ALL:
-   multipliers
-CHAT Blablah to ALL:
-   aww come on tbd, i gave you time :P
-CHAT TheBusDriver to ALL:
-   it always hits the fuel tank
-CHAT Blablah to ALL:
-   could've gotten out
-CHAT Blablah to ALL:
-   yeah the fuel tank is sensitive
-CHAT Blablah to ALL:
-   it's too good vs infantry
-CHAT Blablah to ALL:
-   land so we can repair
-CHAT Blablah to ALL:
-   yeah i like the idea of TV missiles
-CHAT Blablah to ALL:
-   do you wanna gun?
-CHAT Nomad to ALL:
-   i win as vtol
-CHAT sunnlok to ALL:
-   stop it
-CHAT Blablah to ALL:
-   lmao
-CHAT Blablah to ALL:
-   are you two in a vtol as well?
-CHAT Nomad to ALL:
-   AWW
-CHAT Blablah to ALL:
-   wooh
-CHAT Blablah to ALL:
-   OOOOH
-CHAT Blablah to ALL:
-   yeah
-CHAT Blablah to ALL:
-   tell me how awesome i am
-CHAT Nomad to ALL:
-   wtf
-CHAT Nomad to ALL:
-   who shot me
-CHAT TheBusDriver to ALL:
-   that would be me
-CHAT Nomad to ALL:
-   jerk
-CHAT Blablah to ALL:
-   lol
-CHAT Blablah to ALL:
-   can i switch to an infantry map?
-CHAT Blablah to ALL:
-   and TIA
-CHAT Blablah to ALL:
-   lagspike again
-CHAT Nomad to ALL:
-   lagg
-CHAT Blablah to ALL:
-   damn!
-CHAT Blablah to ALL:
-   what TIA maps do you guys like?
-CHAT Blablah to ALL:
-   hm?
-CHAT Nomad to ALL:
-   LOL
-CHAT Nomad to ALL:
-   ahhh
-CHAT Nomad to ALL:
-   ahh
-CHAT Nomad to ALL:
-   toilet brb
-CHAT Blablah to ALL:
-   HUMP MEH
-CHAT Blablah to ALL:
-   get in
-CHAT Blablah to ALL:
-   shoot ze vtol
-CHAT Blablah to ALL:
-   KABLAMO
-CHAT Blablah to ALL:
-   look at it fly
-CHAT sunnlok to ALL:
-   afk
-CHAT Blablah to ALL:
-   k
-CHAT Blablah to ALL:
-   the vgauss is so OP lol
-CHAT TheBusDriver to ALL:
-   :o
-CHAT Blablah to ALL:
-   lol, i love the flying
-CHAT Nomad to ALL:
-   me 2
-CHAT Blablah to ALL:
-   ragdoll flying i mean
-CHAT Nomad to ALL:
-   lag
-CHAT Blablah to ALL:
-   it's me
-CHAT Nomad to ALL:
-   LOL
-CHAT Blablah to ALL:
-   i've asked what maps you guys like so we can switch...+
-CHAT Nomad to ALL:
-   VTOL was intact
-CHAT Blablah to ALL:
-   ignore the +
-CHAT Nomad to ALL:
-   i duno
-CHAT Nomad to ALL:
-   i havent played this game for ages
-CHAT TheBusDriver to ALL:
-   i like tarmac and mesa :P
-CHAT Blablah to ALL:
-   it's some vehicle sounds or something that cause the lag
-CHAT Blablah to ALL:
-   yeah but they're PS maps
-CHAT Blablah to ALL:
-   and we're only with 3/4
-CHAT Blablah to ALL:
-   i like ruins
-CHAT Blablah to ALL:
-   uhm
-CHAT Blablah to ALL:
-   outpost, steel mill
-CHAT TheBusDriver to ALL:
-   imo mp needs objectives
-CHAT Blablah to ALL:
-   it does
-CHAT TheBusDriver to ALL:
-   yeah tdm sucks
-CHAT Blablah to ALL:
-   they normally do
-CHAT Blablah to ALL:
-   kill enemies
-CHAT Blablah to ALL:
-   lol
-CHAT TheBusDriver to ALL:
-   yeah but that's not a real objective, i mean things like cap the flag, 
-CHAT Blablah to ALL:
-   can i switch to a PS map for a sec to test something?
-CHAT TheBusDriver to ALL:
-   plant the bomb, ...
-CHAT TheBusDriver to ALL:
-   MESA!!!!!!!!!!!!11111111
-CHAT Blablah to ALL:
-   k
-    $3sv_gamerules = $6PowerStruggle $5[]$4
------------------------------------------------------
-*LOADING: Level multiplayer/ps/Mesa loading time: 19.91 seconds
------------------------------------------------------
-CHAT TheBusDriver to ALL:
-   mhmmm
-CHAT Nomad to ALL:
-   huh
-CHAT Nomad to ALL:
-   you expect me to go korean
-CHAT Nomad to ALL:
-   crazy jerks
-CHAT Nomad to ALL:
-   gr
-CHAT Blablah to ALL:
-   would you guys fancy really, really long PS matches?
-CHAT TheBusDriver to ALL:
-   not more than 2:30
-CHAT TheBusDriver to ALL:
-   HH:MM
-CHAT Blablah to ALL:
-   before crysis' release crytek said PS matches could take 24 hours
-CHAT Nomad to ALL:
-   i do not fancy being a one man team
-CHAT Blablah to ALL:
-   lol
-CHAT Blablah to ALL:
-   let's not fight
-CHAT TheBusDriver to ALL:
-   did you tweak ltv handling?
-    $3g_pp_scale_price = $60 $5[]$4
-CHAT Blablah to ALL:
-   yes
-CHAT TheBusDriver to ALL:
-   it almost doesnt react at all at full speed
-CHAT Blablah to ALL:
-   i need to test bunker cap times
-CHAT Blablah to ALL:
-   i know
-CHAT sunnlok to ALL:
-   do ya guys have skype or sth
-CHAT Blablah to ALL:
-   i don't use it
-CHAT Blablah to ALL:
-   ah ma god i can't rotate
-CHAT Blablah to ALL:
-   i know why though
-CHAT Blablah to ALL:
-   forgot to revert a change, lol
-CHAT Blablah to ALL:
-   wait don't capit
-CHAT Nomad to ALL:
-   LOL
-CHAT sunnlok to ALL:
-   xfire?
-CHAT Blablah to ALL:
-   i need to time this
-CHAT Blablah to ALL:
-   yeah
-CHAT Blablah to ALL:
-   i'm blablah23 on xfire
-CHAT TheBusDriver to ALL:
-   don't use any of it
-CHAT sunnlok to ALL:
-   cause my cha is kinda bugged
-CHAT Blablah to ALL:
-   damn, changing the time didn't work
-CHAT Blablah to ALL:
-   and if you guys wanna have a PS amtch
-CHAT Blablah to ALL:
-   i'd rather switch to a smaller map
-    $3g_pp_scale_price = $61 $5[]$4
-CHAT TheBusDriver to ALL:
-   omg i know what this rly needs
-CHAT TheBusDriver to ALL:
-   a different horn sound effect :D
-CHAT Blablah to ALL:
-   lol
-CHAT Blablah to ALL:
-   i can do that
-CHAT Nomad to ALL:
-   sounds very weird
-CHAT Blablah to ALL:
-   but i can't make one
-CHAT Nomad to ALL:
-   horn is like a laser
-CHAT Blablah to ALL:
-   O_o
-CHAT Blablah to ALL:
-   Hurricane = rape vs civ cars
-CHAT Blablah to ALL:
-   well, do we fight or not?
-CHAT Blablah to ALL:
-   ja? nein?
-CHAT Blablah to ALL:
-   yay? nay?
-CHAT TheBusDriver to ALL:
-   i say go for it
-CHAT TheBusDriver to ALL:
-   you removed boost too?
-CHAT Blablah to ALL:
-   on mesa?
-CHAT Blablah to ALL:
-   yep
-CHAT Blablah to ALL:
-   mesa is too big for 2v2 :<
-CHAT Blablah to ALL:
-   can i switch to desolation?
-CHAT Nomad to ALL:
-   what is sunnlok doin
-CHAT Blablah to ALL:
-   adding me on xfire
-CHAT TheBusDriver to ALL:
-   tarmac too big?
-CHAT Blablah to ALL:
-   yes
-CHAT Blablah to ALL:
-   lol
-CHAT Blablah to ALL:
-   uhm
-CHAT Blablah to ALL:
-   frost?
-CHAT TheBusDriver to ALL:
-   what's w/ the small map?
-CHAT TheBusDriver to ALL:
-   w/ the hill in the middle?
-CHAT Blablah to ALL:
-   uhh
-CHAT Blablah to ALL:
-   i don't know O_o
-CHAT Nomad to ALL:
-   wheres the bridge
-CHAT Blablah to ALL:
-   can i just switch to desolation?
-CHAT Blablah to ALL:
-   it's a good map
-CHAT Blablah to ALL:
-   ha this has an OP gun :D
-CHAT Blablah to ALL:
-   k i'm just going to switch
------------------------------------------------------
-*LOADING: Level multiplayer/ps/Desolation loading time: 4.65 seconds
------------------------------------------------------
-CHAT TheBusDriver to ALL:
-   it doesn't have trucks :'(
-CHAT Nomad to ALL:
-   eh
-CHAT Blablah to ALL:
-   this is gonna be hard for the nk team, lol
-CHAT Blablah to Team black:
-   get an armed ltv
-CHAT Blablah to Team black:
-   shhh
-CHAT Blablah to Team black:
-   :D
-CHAT TheBusDriver to ALL:
-   no muzzle effect -.-
-CHAT Blablah to Team black:
-   nope
-CHAT Blablah to ALL:
-   you guys don't have crosshairs, right?
-CHAT sunnlok to ALL:
-   right
-CHAT Blablah to ALL:
-   k
-CHAT Blablah to ALL:
-   do you find it hard without?
-CHAT Nomad to ALL:
-   meh
-CHAT sunnlok to ALL:
-   ps sucks with 4
-CHAT Nomad to ALL:
-   agree
-CHAT Blablah to ALL:
-   it does
-CHAT Blablah to ALL:
-   but it'll be a useful test for prices etc anyway
-CHAT Blablah to ALL:
-   damnit lol :D
-CHAT Blablah to ALL:
-   eh, i didn't spawn with all my PP
-CHAT Blablah to Team black:
-   am i that sexy?
-CHAT Blablah to Team black:
-   lol
-CHAT Blablah to Team black:
-   let's go
-CHAT TheBusDriver to ALL:
-   the car is lopsided
-CHAT Blablah to ALL:
-   lopsided?
-CHAT Blablah to Team black:
-   you need 50en to jump
-CHAT Nomad to ALL:
-   agh
-CHAT Blablah to Team black:
-   proto is clear
-CHAT sunnlok to ALL:
-   mah lame
-CHAT Blablah to ALL:
-   yeh, i need to fix some things
-CHAT Blablah to ALL:
-   can't exactly pinpoint what, though...
-CHAT Blablah to ALL:
-   perhaps i can motivate you by telling you i changed the nuke particle :
-CHAT Blablah to ALL:
-   P
-CHAT sunnlok to ALL:
-   nah
-CHAT Nomad to ALL:
-   LP
-CHAT Blablah to Team black:
-   LOL
-CHAT Blablah to ALL:
-   epic killsteal
-CHAT Nomad to ALL:
-   lag
-CHAT Blablah to ALL:
-   you can buy a LAM here to have a crosshair, btw
-CHAT Blablah to ALL:
-   well, a place to aim
-CHAT sunnlok to ALL:
-   crysis needs better driving physics
-CHAT Blablah to ALL:
-   i had them
-CHAT Nomad to ALL:
-   ima go for now
-CHAT Blablah to ALL:
-   but ce2 failed :D
-CHAT Blablah to ALL:
-   ah, noes
-CHAT Nomad to ALL:
-   sry
-CHAT Blablah to ALL:
-   bummer
-CHAT Nomad to ALL:
-   maybe ill be back later
-CHAT Blablah to ALL:
-   thanks for coming though
-CHAT Blablah to ALL:
-   oh k
-CHAT Nomad to ALL:
-   np
-[net 20:10:50.054] Disconnect 85-220-12-105.dsl.dynamic.simnet.is:54511; profid=161429488; cause=0; msg='Timeout occurred; no packet for 31.6 seconds'
-CHAT Blablah to ALL:
-   get a nuke plese
-CHAT Blablah to ALL:
-   please
-CHAT Blablah to ALL:
-   as soon as you can
-CHAT Blablah to ALL:
-   i want to see the nuke ingame
-CHAT Blablah to ALL:
-   it's actually a singularity now but meh
-CHAT Blablah to ALL:
-   you may suck on it
-CHAT TheBusDriver to ALL:
-   :D
-CHAT Blablah to ALL:
-   nice
-CHAT Blablah to ALL:
-   sunnlok
-    $3g_autoteambalance = $60 $5[]$4
-    $3g_teamlock = $60 $5[]$4
-    $3g_teamlock = $60 $5[]$4
-    $3g_teamlock = $60 $5[]$4
-    $3g_minteamlimit = $60 $5[]$4
-CHAT Blablah to ALL:
-   join us?
-CHAT Blablah to ALL:
-   nooo don't cap it
-CHAT Blablah to ALL:
-   we need energy
-    $3g_energy_scale_income = $6100 $5[]$4
-CHAT Blablah to Team black:
-   do you have 500PP?
-CHAT TheBusDriver to Team black:
-   uhmm
-CHAT TheBusDriver to Team black:
-   yeah i do but it won let me buy it
-CHAT Blablah to ALL:
-   it won't?
-CHAT Blablah to ALL:
-   that's weird
-CHAT Blablah to ALL:
-   i need a bit more
-CHAT TheBusDriver to ALL:
-   ah
-CHAT Blablah to ALL:
-   aha
-CHAT Blablah to ALL:
-   can you switch weapons real quick?
-CHAT Blablah to ALL:
-   thanks
-CHAT Blablah to ALL:
-   and back
-CHAT Blablah to ALL:
-   nice
-CHAT Blablah to ALL:
-   oh ok
-CHAT Blablah to ALL:
-   nuke far away lol
-CHAT Blablah to ALL:
-   it has a small arc
-CHAT Blablah to ALL:
-   it's prettier at night
-CHAT Blablah to Team black:
-   laff
-CHAT sunnlok to ALL:
-   er
-    $3g_revivetime = $60 $5[]$4
-CHAT Blablah to ALL:
-   join us, sunnlok :P
-CHAT sunnlok to ALL:
-   mah tats stupid
-CHAT Blablah to ALL:
-   fighting is futile
-CHAT Blablah to ALL:
-   click it twice
-CHAT Blablah to ALL:
-   the switch team button
-CHAT Blablah to ALL:
-   is not a good map to watch nukes though
-CHAT Blablah to ALL:
-   it's also not that pretty during the day
-CHAT Blablah to ALL:
-   oh yeah bab
-CHAT Blablah to ALL:
-   y
-CHAT Blablah to ALL:
-   YEAH BABY
-CHAT Blablah to ALL:
-   YEAH
-    $3g_friendlyfireratio = $60 $5[]$4
-CHAT Blablah to ALL:
-   shitfuck
-CHAT Blablah to ALL:
-   spawn prestige isn't working properly
-CHAT Blablah to ALL:
-   like not at all actually
-CHAT TheBusDriver to ALL:
-   that's a well built radar dome there :D
-CHAT Blablah to ALL:
-   lol
-CHAT Blablah to ALL:
-   okay
 CHAT Blablah to ALL:
    hmm
 CHAT Blablah to ALL:
-   lmao
+   wait, i wanna make sure
+CHAT Blablah to ALL:
+   nooo
+CHAT Blablah to ALL:
+   hmm idk
+CHAT Blablah to ALL:
+   i'm gonna go cehck real quick
+CHAT Blablah to ALL:
+   don't quit
+CHAT Blablah to ALL:
+   eh it's ok
+CHAT Blablah to ALL:
+   xD
+CHAT Blablah to ALL:
+   ouch
+CHAT Blablah to ALL:
+   almost dead
+CHAT Shadez to ALL:
+   was reloading :(
+CHAT Blablah to ALL:
+   do you guys think the scar should burst?
+CHAT Blablah to ALL:
+   instead of fire auto
+CHAT TheBusDriver to ALL:
+   nah
+CHAT Blablah to ALL:
+   well it makes sense from a balance pov
+CHAT TheBusDriver to ALL:
+   dunno burst doesnt fit into crysis
+CHAT Blablah to ALL:
+   nice
+CHAT Shadez to ALL:
+   agh
+CHAT Blablah to ALL:
+   nice, snaeking up on me are ya
+CHAT TheBusDriver to ALL:
+   it wakes way too long to kill someone
+CHAT Shadez to ALL:
+   arghhh
+CHAT Blablah to ALL:
+   not if you
+CHAT Blablah to ALL:
+   do things like crouch
+CHAT Blablah to ALL:
+   or aim for the head
+CHAT Blablah to ALL:
+   aiming for the head does A LOT
+CHAT Blablah to ALL:
+   look
+CHAT Blablah to ALL:
+   see? :D
+CHAT TheBusDriver to ALL:
+   i see, but can't reproduce D:
+CHAT Shadez to ALL:
+   ugh
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   :D
+CHAT Blablah to ALL:
+   the scar's
+CHAT Blablah to ALL:
+   eh
+CHAT Blablah to ALL:
+   a bit op
+CHAT Blablah to ALL:
+   he planted C4!
+CHAT Blablah to ALL:
+   lol
+CHAT Shadez to ALL:
+   WTF?
+CHAT Blablah to ALL:
+   sorry
+CHAT Shadez to ALL:
+   sniper at cqc
+CHAT TheBusDriver to ALL:
+   somebody walk over it -.-
+CHAT Blablah to ALL:
+   sorry...
+CHAT Blablah to ALL:
+   WHAT'S THAT I SEE THERE?
+CHAT Blablah to ALL:
+   MY MY
+CHAT Blablah to ALL:
+   IT APPEARS TO BE A LUNCHBOX
+CHAT Blablah to ALL:
+   LMAO
+CHAT TheBusDriver to ALL:
+   you evil ... :@
+CHAT Blablah to ALL:
+   headshots make too much of a difference imo :P
+CHAT Shadez to ALL:
+   lag
+CHAT Blablah to ALL:
+   oh
+CHAT Blablah to ALL:
+   not me this time
+CHAT Blablah to ALL:
+   ^^
+CHAT Shadez to ALL:
+   LOL
+CHAT TheBusDriver to ALL:
+   =)
+CHAT Blablah to ALL:
+   tbd
+CHAT Blablah to ALL:
+   i need to find a way to fix uhm
+CHAT Blablah to ALL:
+   explosion impulses
+CHAT Blablah to ALL:
+   not being applied in mp
+CHAT Shadez to ALL:
+   die bishh
+CHAT Blablah to ALL:
+   yeah, die bishh
+CHAT Blablah to ALL:
+   DERP DERP
+CHAT TheBusDriver to ALL:
+   dunno
+CHAT TheBusDriver to ALL:
+   it's somewhere in the code i guess xD
+CHAT Blablah to ALL:
+   yeh :P
+CHAT Blablah to ALL:
+   LOL
+CHAT TheBusDriver to ALL:
+   hai thar
+CHAT Shadez to ALL:
+   i cant shoot it..
+CHAT Shadez to ALL:
+   faaaaiiiill
 CHAT Blablah to ALL:
    LMAO
 CHAT Blablah to ALL:
-   LMFAO
+   LOL
 CHAT Blablah to ALL:
-   hahaha
-CHAT Blablah to ALL:
-   ah man
-CHAT sunnlok to ALL:
-   k thats retarded
-CHAT Blablah to ALL:
-   but hilarious
-CHAT Blablah to ALL:
-   let's run into the enemy base, i say!
-CHAT Blablah to ALL:
-   FOR THE KING
+   damn
 CHAT TheBusDriver to ALL:
-   it's not a very good automated defense
+   i can c u :D
 CHAT Blablah to ALL:
-   unlucky blablah is unlucky
+   shit
+CHAT Shadez to ALL:
+   LOL
+CHAT Shadez to ALL:
+   o.o
 CHAT Blablah to ALL:
-   DERP DERP
+   lol
+CHAT Shadez to ALL:
+   XD
+CHAT Shadez to ALL:
+   stop raping c4
+CHAT TheBusDriver to ALL:
+   explosion radius is kinda huge
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   oh shit
+CHAT Shadez to ALL:
+   ....
+CHAT Shadez to ALL:
+   reload crap
+CHAT Blablah to ALL:
+   that was rather badass
+CHAT Shadez to ALL:
+   no ... laggy
+CHAT Blablah to ALL:
+   graphics lag?
+CHAT Shadez to ALL:
+   wtf?!
+CHAT Shadez to ALL:
+   lag spike of death
+CHAT Blablah to ALL:
+   RAAAAAPE
+CHAT Blablah to ALL:
+   slightly OP
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   damn
+[Warning] Unknown command: g_mpdeathdcam 1 
+    $3g_MPDeathCam = $61 $5[]$4
+CHAT Blablah to ALL:
+   lag
+CHAT Blablah to ALL:
+   derp
+CHAT Blablah to ALL:
+   nice!
+CHAT Shadez to ALL:
+   :D
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   LMAO
+CHAT Blablah to ALL:
+   evil
+CHAT Blablah to ALL:
+   dinner's ready here
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   yeah, do you guys want a different map?
+CHAT Shadez to ALL:
+   crap
+CHAT Blablah to ALL:
+   yay? nay?
+CHAT Blablah to ALL:
+   8 hp
+CHAT Blablah to ALL:
+   damn
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   no different map then
+CHAT Blablah to ALL:
+   i'll be back in about 10-15 minutes
+CHAT Shadez to ALL:
+   no ammo
+CHAT Shadez to ALL:
+   LOL
+CHAT Shadez to ALL:
+   EPIC
+CHAT Shadez to ALL:
+   sunnlok
+CHAT Shadez to ALL:
+   hi
+CHAT sunnlok to ALL:
+   hy
+CHAT Shadez to ALL:
+   lol you didnt see me tbd?
+CHAT Shadez to ALL:
+   LAG
+CHAT Shadez to ALL:
+   lol
+CHAT Shadez to ALL:
+   no ammo :D
+CHAT sunnlok to ALL:
+   mah stupid ramp
+CHAT Shadez to ALL:
+   shit , i saw your shadow , and was like
+CHAT Shadez to ALL:
+   agh
+CHAT Shadez to ALL:
+   LOL
+CHAT Shadez to ALL:
+   lag
+CHAT Blablah to ALL:
+   hai sunnlok!
+CHAT Blablah to ALL:
+   shall i switch to tia?
+CHAT Shadez to ALL:
+   :
+CHAT Shadez to ALL:
+   yay my kills
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   got bugged, lol
+CHAT Blablah to ALL:
+   i'ma switch to tia
+CHAT sunnlok to ALL:
+   wtf is this
+    $3sv_gamerules = $6TeamInstantAction $5[]$4
+-----------------------------------------------------
+*LOADING: Level multiplayer/ia/Ruins loading time: 0.92 seconds
+-----------------------------------------------------
+CHAT Blablah to Team tan:
+   k
+CHAT Shadez to ALL:
+   ehhh
+CHAT Blablah to ALL:
+   nubs :P
+CHAT Blablah to Team tan:
+   nice
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   kewl
+CHAT Shadez to ALL:
+   lol
+CHAT Blablah to ALL:
+   kewl!
+CHAT Shadez to ALL:
+   aarrgh
+CHAT Blablah to ALL:
+   i feel raped
+CHAT sunnlok to ALL:
+   wtf is wit this stupidometry
+CHAT Blablah to ALL:
+   ?
+CHAT Blablah to ALL:
+   this what?
+CHAT sunnlok to ALL:
+   and the chat !!!!!
+CHAT Blablah to ALL:
+   ?
+CHAT sunnlok to ALL:
+   i have to push a key for 2secs or longer
+CHAT Blablah to ALL:
+   :/
+CHAT Blablah to ALL:
+   aw damn, nice, flanking
+CHAT Blablah to ALL:
+   lol at the ragdolls
+CHAT Blablah to ALL:
+   just a bit too late
+CHAT Blablah to Team tan:
+   gauss
+CHAT Blablah to ALL:
+   dude!
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   YOU KILLED MY FRIEND YOU ASSHOLES
+CHAT Shadez to ALL:
+   lagg
+CHAT Blablah to ALL:
+   GRRRR
+CHAT sunnlok to ALL:
+   lawl
+CHAT Shadez to ALL:
+   gosh this fuckin lags
+CHAT Blablah to ALL:
+   heh
+CHAT Shadez to ALL:
+   i have loop shoot sound
+CHAT Blablah to ALL:
+   s_soundenable 0 and then 1
+CHAT Shadez to ALL:
+   wtf
+CHAT Shadez to ALL:
+   connection error sign
+CHAT Blablah to ALL:
+   :/
+CHAT Blablah to ALL:
+   oh snap
+CHAT Shadez to ALL:
+   o.o
+CHAT Blablah to ALL:
+   DAMN
+CHAT Blablah to ALL:
+   owned
+CHAT Shadez to ALL:
+   OMG
+CHAT Shadez to ALL:
+   nice shot
+CHAT Blablah to ALL:
+   :D
+CHAT Blablah to Team tan:
+   let's cover the gauss
+CHAT Blablah to ALL:
+   shotty doesn't do enough damage
+CHAT Shadez to ALL:
+   ugh
+CHAT Blablah to ALL:
+   lol?!
+CHAT Blablah to ALL:
+   badass
+CHAT Blablah to ALL:
+   damn
+CHAT Blablah to Team tan:
+   ty
+CHAT Blablah to Team tan:
+   nice
+CHAT Blablah to Team tan:
+   nice
+CHAT Blablah to ALL:
+   i lol'd
+CHAT Shadez to ALL:
+   LOL
+CHAT sunnlok to ALL:
+   wtfd?sa
+CHAT Blablah to ALL:
+   that was nice, tbd
+CHAT Blablah to Team tan:
+   ty
+CHAT Blablah to ALL:
+   damn!
+CHAT Blablah to Team tan:
+   nice
+CHAT Blablah to Team tan:
+   awesome
+CHAT Blablah to ALL:
+   NICE
+CHAT Blablah to ALL:
+   LOL
+CHAT Shadez to ALL:
+   lol
+CHAT Shadez to ALL:
+   guess we are even tbd
+CHAT TheBusDriver to ALL:
+   first time i've killed someone w/ the shotgun :P
+CHAT Blablah to ALL:
+   ah :P
+CHAT Blablah to ALL:
+   i lowered the pellet count and increased the damage
+CHAT Shadez to ALL:
+   lol
+CHAT Blablah to ALL:
+   yesterday
+CHAT Blablah to ALL:
+   so i guess i turned the dmg too low
+CHAT Blablah to ALL:
+   nice
+CHAT Shadez to ALL:
+   wtf
 CHAT Blablah to ALL:
    lmao
-CHAT sunnlok to ALL:
-   ok let quit fornow
+CHAT Shadez to ALL:
+   sniper whore
+CHAT Blablah to ALL:
+   wooh, that was me
+CHAT Blablah to ALL:
+   nice one
+CHAT TheBusDriver to ALL:
+   for mp modes shouldn't affect armor/damage at all and weapon damage sho
+CHAT TheBusDriver to ALL:
+   uld be multiplied by 3 for every gun
+CHAT Blablah to ALL:
+   nice
+CHAT Shadez to ALL:
+   lol
+CHAT Shadez to ALL:
+   xD
+-----------------------------------------------------
+*LOADING: Level multiplayer/ia/Battleground loading time: 4.83 seconds
+-----------------------------------------------------
+CHAT Shadez to ALL:
+   yay
 CHAT Blablah to ALL:
    yeah
 CHAT Blablah to ALL:
-   gotta fix stuff
-[net 20:25:42.336] Disconnect 188-23-168-194.adsl.highway.telekom.at:60843; profid=116638254; cause=19; msg='Remote disconnected: User left the game'
-[net 20:25:49.801] Disconnect iMac7.telenet.be:60456; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:60456'
-[net 20:26:26.644] Disconnect blfd-5d8215db.pool.mediaWays.net:62116; profid=98074264; cause=0; msg='Timeout occurred; no packet for 30.0 seconds'
+   had an infantry match
+CHAT Blablah to ALL:
+   guys
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   the teamsyl
+CHAT Shadez to ALL:
+   ill go
+CHAT Blablah to ALL:
+   yes, come 
+CHAT Blablah to ALL:
+   nice
+CHAT Blablah to Team tan:
+   grab an APC
+CHAT Blablah to ALL:
+   vehicle damages didn't change much though
+CHAT Blablah to Team tan:
+   vtol
+CHAT Blablah to Team tan:
+   they're getting a gauss
+CHAT Blablah to ALL:
+   oh man
+CHAT Blablah to ALL:
+   surprised me
+CHAT Shadez to ALL:
+   slow rotate
+CHAT Blablah to ALL:
+   yeah i see :|
+CHAT TheBusDriver to ALL:
+   wow
+CHAT TheBusDriver to ALL:
+   does it autolock now?
+CHAT Blablah to ALL:
+   i thought it was the pitch i had to change lol
+CHAT Blablah to ALL:
+   yes
+CHAT Blablah to ALL:
+   in teambased modes it does
+CHAT Shadez to ALL:
+   w
+CHAT Blablah to ALL:
+   those TOW missiles are insane, lol
+CHAT Blablah to ALL:
+   they're actually supposed to do the exact same damage as rockets
+CHAT Shadez to ALL:
+   HELP
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   but the vehicle damage system is fucked
+CHAT Shadez to Team tan:
+   vtol where
+CHAT Blablah to Team tan:
+   north
+CHAT TheBusDriver to ALL:
+   what's the deal w/ vehicle 3rd person though?
+CHAT Blablah to ALL:
+   being locked?
+CHAT TheBusDriver to ALL:
+   yes
+CHAT Blablah to ALL:
+   i did it because there's no incentive to not use it otherwise
+CHAT Blablah to ALL:
+   it didn't have any disadvantages
+CHAT Blablah to ALL:
+   so i'm trying out with it being locked
+CHAT Blablah to Team tan:
+   shit
+CHAT Blablah to Team tan:
+   LOL
+CHAT Blablah to Team tan:
+   okay, i guess it's south
+CHAT Shadez to Team tan:
+   fuck
+CHAT Blablah to Team tan:
+   let's rush there with an APC
+CHAT Blablah to Team tan:
+   i'll go left
+CHAT Blablah to Team tan:
+   LOL
+CHAT Blablah to Team tan:
+   i'll pick you up
+CHAT Shadez to Team tan:
+   LOL
+CHAT Shadez to Team tan:
+   TANK
+CHAT Blablah to Team tan:
+   but hide
+CHAT sunnlok to ALL:
+   afk atm
+CHAT Blablah to ALL:
+   oh
+CHAT TheBusDriver to ALL:
+   i noticed
+CHAT Blablah to Team tan:
+   shit
+CHAT Blablah to Team tan:
+   bazil
+CHAT Blablah to Team tan:
+   bail
+CHAT Shadez to ALL:
+   LOL
+CHAT Shadez to ALL:
+   forgot parachute
+CHAT Blablah to Team tan:
+   xD
+CHAT Blablah to ALL:
+   lol
+CHAT Shadez to Team tan:
+   what button is parachute
+CHAT Blablah to Team tan:
+   space
+CHAT Shadez to Team tan:
+   ohh
+CHAT sunnlok to ALL:
+   ts?
+CHAT Blablah to ALL:
+   ts?
+CHAT sunnlok to ALL:
+   teamspeak?
+CHAT Blablah to ALL:
+   not me
+CHAT Blablah to ALL:
+   i'm on xfire tho
+CHAT Blablah to ALL:
+   hey
+CHAT Blablah to ALL:
+   sup
+CHAT Blablah to ALL:
+   LOL
+CHAT Shadez to ALL:
+   fuck
+CHAT Shadez to ALL:
+   dinner
+CHAT Blablah to ALL:
+   oh
+CHAT Blablah to ALL:
+   k
+CHAT Shadez to ALL:
+   brb
+CHAT Blablah to ALL:
+   lal
+CHAT TheBusDriver to ALL:
+   i can fly :D
+CHAT Blablah to ALL:
+   lol
+CHAT sunnlok to ALL:
+   why dont you dy when you get a rocket in yar 
+CHAT sunnlok to ALL:
+   face
+CHAT Blablah to ALL:
+   because then rockets would be used as snipers
+CHAT Blablah to ALL:
+   they're anti vehicle weapons
+CHAT Blablah to ALL:
+   or the LAW is an anti vehicle weapon
+CHAT sunnlok to ALL:
+   why is dis no dx10 server?
+CHAT Blablah to ALL:
+   i have no dx10 system
+CHAT Blablah to ALL:
+   and dx10 servers are gay as fuck
+CHAT Shadez to ALL:
+   back
+CHAT Blablah to ALL:
+   nice
+CHAT Blablah to ALL:
+   tbd
+CHAT Blablah to ALL:
+   i agree this needs an objective
+CHAT Blablah to ALL:
+   i'd like a dynamic koth :(
+CHAT Blablah to ALL:
+   or like oddball
+CHAT TheBusDriver to ALL:
+   yeah it needs something
+CHAT Blablah to ALL:
+   there needs to be a good balance between offense and defense
+CHAT Blablah to ALL:
+   that 30mm thing is anti inf fyi
+CHAT Blablah to ALL:
+   the splash'll hurt me
+CHAT Shadez to Team tan:
+   i have vtol
+CHAT Blablah to ALL:
+   that shouldn't be anti inf lol D:
+CHAT Blablah to Team tan:
+   pick meh up
+CHAT Blablah to ALL:
+   lmao
+CHAT Blablah to ALL:
+   sorry for the lagspike
+CHAT Blablah to ALL:
+   s
+CHAT Blablah to Team tan:
+   nice
+CHAT Shadez to Team tan:
+   win
+CHAT Blablah to Team tan:
+   awesomez
+CHAT Blablah to Team tan:
+   minus the z
+CHAT Blablah to Team tan:
+   haha
+CHAT Shadez to ALL:
+   lol
+CHAT Blablah to ALL:
+   i have NEVER encountered anyone in these bushes before
+CHAT Shadez to Team tan:
+   OWNED
+CHAT Blablah to Team tan:
+   nice
+CHAT Blablah to Team tan:
+   that was fucking pro ;P
+CHAT Shadez to Team tan:
+   OWN
+CHAT Blablah to Team tan:
+   ICV
+CHAT Shadez to Team tan:
+   out of rockets
+CHAT Blablah to ALL:
+   hmmm
+CHAT Blablah to ALL:
+   i'm confused about how i can balance the LAW
+CHAT Blablah to ALL:
+   maybe slow down the rockets again to what they used to be
+CHAT Blablah to ALL:
+   because i sped them up to a more realistic speed :P
+CHAT TheBusDriver to ALL:
+   realism and crysis don't mix :D
+CHAT Shadez to ALL:
+   atleast you cant control them.
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   LOL it circles
+CHAT Blablah to ALL:
+   damn
+CHAT Blablah to ALL:
+   i feel really raped
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   i could do a normal rocket launcher
+CHAT Blablah to ALL:
+   without lockon
+CHAT TheBusDriver to ALL:
+   i think my inet is going to die 
+CHAT Blablah to ALL:
+   or guiding
+CHAT Blablah to ALL:
+   and an anti-air one
+CHAT Blablah to ALL:
+   but that wouldn't work on original maps :<
+CHAT Blablah to ALL:
+   and no it's probably because i'm having lagspikes
+CHAT Blablah to ALL:
+   so you get connection problems
+CHAT Blablah to ALL:
+   tehe
+CHAT Blablah to ALL:
+   it's when my game loads stuff
+CHAT Blablah to ALL:
+   unpacks it
+CHAT Blablah to Team tan:
+   lol @ them shooting at the wrong spot
+CHAT Shadez to Team tan:
+   i shot him while he was repairing
+CHAT Shadez to Team tan:
+   zomg i love bushes
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to Team tan:
+   why?
+CHAT sunnlok to ALL:
+   the driving physics of ce2 are horrible
+CHAT Shadez to Team tan:
+   epic hiding
+CHAT Blablah to Team tan:
+   right
+CHAT Blablah to Team tan:
+   fuck i'm stuck
+CHAT Shadez to Team tan:
+   lol
+CHAT Blablah to Team tan:
+   jumped off on the wrong pillar
+CHAT Shadez to Team tan:
+   i can try get vtol
+CHAT Blablah to Team tan:
+   that'd be nice
+CHAT Blablah to Team tan:
+   and epic
+CHAT Blablah to Team tan:
+   haha
+CHAT Blablah to Team tan:
+   epic distraction
+CHAT Blablah to Team tan:
+   LOL
+CHAT Shadez to Team tan:
+   hang on
+CHAT Blablah to Team tan:
+   APC is still alive
+CHAT Blablah to Team tan:
+   and coming your way
+CHAT Blablah to Team tan:
+   heavy tank now too
+CHAT Blablah to Team tan:
+   but it's coming my way
+CHAT Blablah to ALL:
+   nooo
+CHAT Blablah to ALL:
+   xD
+CHAT Blablah to ALL:
+   damn my fall damage fails
+CHAT Shadez to ALL:
+   LOL
+CHAT Shadez to Team tan:
+   would have been epic
+CHAT Blablah to Team tan:
+   yeah
+CHAT Blablah to Team tan:
+   seriously, seriously epic
+CHAT Blablah to Team tan:
+   ui hace c4
+CHAT Blablah to ALL:
+   OOOH
+CHAT Shadez to Team tan:
+   vtol again
+CHAT Shadez to Team tan:
+   ill go get it
+CHAT Blablah to Team tan:
+   oh
+CHAT Blablah to Team tan:
+   lol
+CHAT Shadez to Team tan:
+   errrr
+CHAT Shadez to Team tan:
+   stuck much
+CHAT TheBusDriver to ALL:
+   make the asv faster
+CHAT Shadez to ALL:
+   lag much
+CHAT Blablah to Team tan:
+   tanks in forests = win
+CHAT Shadez to Team tan:
+   hurry
+CHAT Shadez to Team tan:
+   HERE
+CHAT Shadez to Team tan:
+   GET HERE
+CHAT Shadez to Team tan:
+   NOW
+CHAT Blablah to Team tan:
+   awesome
+CHAT Blablah to ALL:
+   haha
+CHAT Shadez to Team tan:
+   win
+CHAT Blablah to ALL:
+   i'm gonna add a sound to those explosions
+CHAT Blablah to ALL:
+   oh fuck
+[net 18:45:20.867] Disconnect 85-220-10-138.dsl.dynamic.simnet.is:58319; profid=161429488; cause=0; msg='Timeout occurred; no packet for 30.1 seconds'
+CHAT Blablah to ALL:
+   hmm
+CHAT Blablah to ALL:
+   where'd shadez go?
+CHAT TheBusDriver to ALL:
+   after my inet dies i'll have dinner so ... don't worry when i suddenly 
+CHAT TheBusDriver to ALL:
+   disconnect
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   fail
+CHAT Blablah to ALL:
+   yLOL
+CHAT Blablah to ALL:
+   *LOL
+[net 18:46:49.892] Disconnect 188-23-167-10.adsl.highway.telekom.at:53458; profid=116638254; cause=0; msg='Timeout occurred; no packet for 31.7 seconds'
+CHAT Blablah to ALL:
+   oh, lol
+CHAT Blablah to ALL:
+   shall we go as well then?
+CHAT Blablah to ALL:
+   :D
+CHAT Shadez to ALL:
+   sorry
+CHAT Shadez to ALL:
+   i crashed
+CHAT Blablah to ALL:
+   oh
+CHAT Blablah to ALL:
+   haha
+CHAT Shadez to ALL:
+   wheres tbd
+CHAT Blablah to ALL:
+   dinner
+CHAT Blablah to ALL:
+   i'm gonna go as well
+CHAT Blablah to ALL:
+   i'm eager to fix stuff
+CHAT Shadez to ALL:
+   ugh..
+CHAT Blablah to ALL:
+   i'll leave the server running though
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   talk to you on IRC
+CHAT Shadez to ALL:
+   lol
+[net 18:48:46.009] Disconnect iMac7.telenet.be:51579; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:51579'
+CHAT Shadez to ALL:
+   LOL
+[net 18:49:59.808] Disconnect blfd-4db1be35.pool.mediaWays.net:51847; profid=98074264; cause=0; msg='Timeout occurred; no packet for 31.8 seconds'
+** Server: Anyone still on here? **
 System:Quit

@@ -576,7 +576,7 @@
   </Seat>
   <Seat name="passenger" part="" enterHelper="passenger02Enter_pos" sitHelper="passenger02Sit_pos" isDriver="0" AimPart="" seatGroupIndex="3" agVehicleName="US_ltv" transitionAnim="1">
    <Views>
-    <View class="FirstPerson" canRotate="0" rotationMin="-12,0,-100" rotationMax="5,0,100">
+    <View class="FirstPerson" canRotate="1" rotationMin="-12,0,-100" rotationMax="5,0,100">
      <FirstPerson helper="passenger_eye_pos" relativeToHorizon="0.5"/>
     </View>
     <View class="ActionThirdPerson" canRotate="0">
@@ -588,7 +588,7 @@
   </Seat>
   <Seat name="passenger_left_rear" part="" enterHelper="passenger03Enter_pos" sitHelper="passenger03Sit_pos" isDriver="0" AimPart="" seatGroupIndex="4" agVehicleName="US_ltv" transitionAnim="1">
    <Views>
-    <View class="FirstPerson" canRotate="0" rotationMin="-12,0,-90" rotationMax="5,0,90">
+    <View class="FirstPerson" canRotate="1" rotationMin="-12,0,-90" rotationMax="5,0,90">
      <FirstPerson helper="left_rear_eye_pos" relativeToHorizon="0.5"/>
     </View>
     <View class="ActionThirdPerson" canRotate="0">
@@ -600,7 +600,7 @@
   </Seat>
   <Seat name="passenger_right_rear" part="" enterHelper="passenger04Enter_pos" sitHelper="passenger04Sit_pos" isDriver="0" AimPart="" seatGroupIndex="5" agVehicleName="US_ltv" transitionAnim="1">
    <Views>
-    <View class="FirstPerson" canRotate="0" rotationMin="-12,0,-90" rotationMax="5,0,90">
+    <View class="FirstPerson" canRotate="1" rotationMin="-12,0,-90" rotationMax="5,0,90">
      <FirstPerson helper="right_rear_eye_pos" relativeToHorizon="0.5"/>
     </View>
     <View class="ActionThirdPerson" canRotate="0">

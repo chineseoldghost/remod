@@ -275,7 +275,7 @@
   <Seat name="gunner" part="" enterHelper="gunner_enter_pos" exitHelper="passenger_enter_pos" exitOffsetPlayer="3.5,12,0" sitHelper="passenger02_pos" isDriver="0" isPassengerShielded="1" AimPart="" seatGroupIndex="2" id="idSeatGunner">
    <Views>
     <View class="FirstPerson" canRotate="0">
-     <FirstPerson helper="gunCamera" hideVehicle="0"/>
+     <FirstPerson helper="gunCamera" hideVehicle="1"/>
     </View>
     <View class="FirstPerson" canRotate="1" rotationMin="-20,0,-80" rotationMax="45,0,80">
      <FirstPerson helper="gunner_eye_pos" hideVehicle="0"/>
@@ -285,7 +285,7 @@
     <SeatAction class="RotateTurret" isAvailableRemotely="1">
      <RotateTurret pitchPart="vtol_gun_pitch" yawPart="turret"/>
     </SeatAction>
-    <SeatAction class="Weapons" isAvailableRemotely="1">
+    <!--<SeatAction class="Weapons" isAvailableRemotely="1">
      <Weapons>
       <Weapons>
        <Weapon class="AvengerCannon" part="vtol_gun_pitch" id="idWeaponGunner">
@@ -299,6 +299,18 @@
           </Animations>
          </Action>
         </Actions>
+       </Weapon>
+      </Weapons>
+     </Weapons>
+    </SeatAction>-->
+    <SeatAction class="Weapons">
+     <Weapons disablesShootToCrosshair="1" isAvailableRemotely="1">
+      <Weapons>
+       <Weapon class="SideWinder" part="hull" id="idWeaponGunner">
+        <Helpers>
+         <Helper value="leftRocketOut"/>
+         <Helper value="rightRocketOut"/>
+        </Helpers>
        </Weapon>
       </Weapons>
      </Weapons>

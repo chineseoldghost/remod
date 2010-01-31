@@ -9,7 +9,7 @@
 	</flags>
 	<physics type="particle">
 		<param name="mass" value="11" />
-		<param name="speed" value="100" />
+		<param name="speed" value="70" />
 		<param name="radius" value="0.25" />
 		<param name="air_resistance" value="0" />
 		<param name="water_resistance" value="0.5" />
@@ -37,7 +37,7 @@
 	</explosion>
 	<params>
 		<param name="lifetime" value="25" />
-		<param name="showtime" value="1" />
+		<param name="showtime" value="0.5" />
 		<param name="turn_speed" value="400" />
 		<param name="max_target_distance" value="1000" />
 		<param name="aitype"	value="rpg" />
@@ -46,7 +46,7 @@
 		<!--<param name="align_altitude" value="450">-->
 		<!--<param name="descend_distance" value="50">-->
 		<param name="controlled" value="0" />
-		<param name="lazyness" value="0.75" />
+		<param name="lazyness" value="0.25" />
 	</params>
 	<trail>
 		<param name="effect" value="smoke_and_fire.weapon_Rocket.Trail" />

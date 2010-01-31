@@ -81,7 +81,7 @@ Remod
 				Game\Scripts\Entities\actor\player.lua
 			+Items
 				+XML
-					+Accessories
+					-Accessories
 						Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml
 						Game\Scripts\Entities\Items\XML\Accessories\LAWScope.xml
 						Game\Scripts\Entities\Items\XML\Accessories\Silencer.xml
@@ -129,6 +129,7 @@ Remod
 							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\HelicopterMissile.xml
 							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\ExocetMissile.xml
 							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\DumbAAMissile.xml
+							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\VTOLGuidedMissile.xml
 						Game\Scripts\Entities\Items\XML\Ammo\50bullet.xml
 						Game\Scripts\Entities\Items\XML\Ammo\ACMO.xml
 						Game\Scripts\Entities\Items\XML\Ammo\AVExplosive.xml
@@ -179,7 +180,7 @@ Remod
 						Game\Scripts\Entities\Items\XML\Ammo\A2GHomingMissile.xml
 						Game\Scripts\Entities\Items\XML\Ammo\A2AHomingMissile_AscMod.xml
 						Game\Scripts\Entities\Items\XML\Ammo\A2AHomingMissile.xml
-					+Weapons
+					-Weapons
 						-AmmoPickups
 							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\EMPGrenade.xml
 							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\SmokeGrenade.xml
@@ -210,12 +211,12 @@ Remod
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\USTankCannon.xml
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\USCoaxialGun_VTOL.xml
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\TankCannon.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\Exocet.xml
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\TACCannon.xml
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\SideWinder_AscMod.xml
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\SideWinder.xml
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\HovercraftGun.xml
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\Hellfire.xml
-							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\Exocet.xml
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\BunkerBuster.xml
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AVMachinegun.xml
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AutoAA.xml
@@ -225,6 +226,7 @@ Remod
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AHMachinegun.xml
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AARocketLauncher.xml
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VehicleRadar.xml
+							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VTOLRocketLauncher.xml
 						Game\Scripts\Entities\Items\XML\Weapons\AlienMount.xml
 						Game\Scripts\Entities\Items\XML\Weapons\AVMine.xml
 						Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
@@ -272,9 +274,19 @@ Remod
 4=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_apc.xml
 5=Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
 6=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
+7=Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
+8=Game\Scripts\Entities\Vehicles\Implementations\Xml\Civ_car1.xml
+9=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AvengerCannon.xml
+10=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\BunkerBuster.xml
+11=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VTOLRocketLauncher.xml
+12=Game\Scripts\Entities\Items\XML\Ammo\Vehicles\DumbAAMissile.xml
+13=Game\Scripts\Entities\Items\XML\Ammo\Vehicles\VTOLGuidedMissile.xml
+14=Game\Scripts\Entities\Items\XML\Ammo\BunkerBuster.xml
+15=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_vtol.xml
+16=..\..\..\..\..\..\Users\CHARLI~1\AppData\Local\Temp\Rar$DI06.234\US_vtol.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
+Selected=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_vtol.xml
 [Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_ltv.xml]
 TopLine=601
 Caret=43,603
@@ -283,16 +295,46 @@ TopLine=201
 Caret=31,206
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
 TopLine=211
-Caret=39,239
+Caret=40,235
 [Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_apc.xml]
-TopLine=399
+TopLine=409
 Caret=25,438
 [Game\Scripts\Entities\Vehicles\Implementations\Xml\US_apc.xml]
-TopLine=148
+TopLine=294
 Caret=25,187
 [Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml]
 TopLine=1
-Caret=30,12
+Caret=32,12
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
 TopLine=205
 Caret=39,221
+[Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml]
+TopLine=148
+Caret=33,170
+[Game\Scripts\Entities\Vehicles\Implementations\Xml\Civ_car1.xml]
+TopLine=1
+Caret=88,6
+[Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AvengerCannon.xml]
+TopLine=1
+Caret=1,1
+[Game\Scripts\Entities\Items\XML\Weapons\Vehicles\BunkerBuster.xml]
+TopLine=1
+Caret=8,40
+[Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VTOLRocketLauncher.xml]
+TopLine=1
+Caret=46,22
+[Game\Scripts\Entities\Items\XML\Ammo\Vehicles\DumbAAMissile.xml]
+TopLine=13
+Caret=8,55
+[Game\Scripts\Entities\Items\XML\Ammo\Vehicles\VTOLGuidedMissile.xml]
+TopLine=1
+Caret=43,39
+[Game\Scripts\Entities\Items\XML\Ammo\BunkerBuster.xml]
+TopLine=1
+Caret=1,1
+[Game\Scripts\Entities\Vehicles\Implementations\Xml\US_vtol.xml]
+TopLine=284
+Caret=67,309
+[..\..\..\..\..\..\Users\CHARLI~1\AppData\Local\Temp\Rar$DI06.234\US_vtol.xml]
+TopLine=253
+Caret=18,285

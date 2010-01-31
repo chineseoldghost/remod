@@ -228,7 +228,7 @@
         </Part>
        </Parts>
        <AnimatedJoint>
-        <Rotation pitchSpeed="37" pitchAccel="85">
+        <Rotation pitchSpeed="15" pitchAccel="0">
          <pitchLimits>
           <pitchLimit value="-5"/>
           <pitchLimit value="35"/>
@@ -246,7 +246,7 @@
           <Helper name="searchLightPos" position="0.93000001,-0.47,3.0799999" direction="0,1,0"/>
          </Helpers>
          <AnimatedJoint>
-          <Rotation pitchSpeed="70" worldSpace="1">
+          <Rotation pitchSpeed="75" worldSpace="1">
            <pitchLimits>
                         <pitchLimit value="-17"/>
                         <pitchLimit value="60"/>
@@ -279,7 +279,7 @@
       <Helper name="turretPos" position="-0.001,0.1201,1.584" direction="0,1,0"/>
      </Helpers>
      <AnimatedJoint>
-      <Rotation yawSpeed="37" yawAccel="115">
+      <Rotation yawSpeed="15" yawAccel="0">
        <Sound event="turret" eventDamage="sounds/vehicles:vehicle_accessories:turret_turn_damaged" helper="turretPos"/>
        <RotationTest helper1="cannonBase" helper2="cannonOut" radius="0.25"/>
       </Rotation>
@@ -481,7 +481,7 @@
     <SeatAction class="Weapons">
      <Weapons>
       <Weapons>
-       <Weapon class="VehicleGaussMounted" part="shiten">
+       <Weapon class="VehicleUSMachinegun" part="shiten">
         <Helpers />
        </Weapon>
       </Weapons>

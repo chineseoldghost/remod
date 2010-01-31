@@ -3,7 +3,7 @@
   <Buoyancy waterDensity="50" waterResistance="0"/>
   <Simulation maxTimeStep="0.02" minEnergy="0.002" maxLoggedCollisions="2"/>
  </Physics>
- <Damages submergedRatioMax="0.64999998" submergedDamageMult="1" collDamageThreshold="10" groundCollisionMinMult="1.3" groundCollisionMaxMult="1.4" groundCollisionMinSpeed="8" groundCollisionMaxSpeed="22" vehicleCollisionDestructionSpeed="18" playerCollisionMult="1.1">
+ <Damages submergedRatioMax="0.64999998" submergedDamageMult="1" collDamageThreshold="0" groundCollisionMinMult="1.3" groundCollisionMaxMult="1.4" groundCollisionMinSpeed="8" groundCollisionMaxSpeed="22" vehicleCollisionDestructionSpeed="18" playerCollisionMult="1.1">
   <DamageMultipliers>
    <DamageMultiplier damageType="ht_Bullet" multiplier="0.05"/>
    <DamageMultiplier damageType="ht_alienmount_ACMO" multiplier="0.114" splash="0.1"/>

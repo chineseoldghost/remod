@@ -167,7 +167,7 @@
 			<fire>
 				<param name="ammo_type" value="gaussbullet" />
 				<param name="hit_type" value="ht_GaussBullet" />
-				<param name="rate" value="40" />
+				<param name="rate" value="15" />
 				<param name="clip_size" value="5" />
 				<param name="bullet_chamber" value="1" />
 				<param name="slider_layer" value="dampers" />

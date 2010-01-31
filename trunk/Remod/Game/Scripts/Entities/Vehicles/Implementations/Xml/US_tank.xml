@@ -417,7 +417,7 @@
     <SeatAction class="Weapons">
      <Weapons>
       <Weapons>
-       <Weapon class="VehicleGaussMounted" part="shiten" id="idWeaponGunner">
+       <Weapon class="VehicleUSMachinegun" part="shiten" id="idWeaponGunner">
         <Helpers />
        </Weapon>
       </Weapons>

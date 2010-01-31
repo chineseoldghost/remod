@@ -261,7 +261,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("g_playerLowHealthThresholdMultiplayer", &g_playerLowHealthThresholdMultiplayer, 20.0f, VF_CHEAT, "The player health threshold when the low health effect kicks in.");
 	pConsole->Register("g_playerLowHealthThreshold2Multiplayer", &g_playerLowHealthThreshold2Multiplayer, 30.0f, VF_CHEAT, "The player health threshold when the low health effect reaches maximum.");
 	pConsole->Register("g_punishFriendlyDeaths", &g_punishFriendlyDeaths, 1, VF_CHEAT, "The player gets punished by death when killing a friendly unit.");
-	pConsole->Register("g_enableMPStealthOMeter", &g_enableMPStealthOMeter, 0, VF_CHEAT, "Enables the stealth-o-meter to detect enemies in MP matches.");
+	pConsole->Register("g_enableMPStealthOMeter", &g_enableMPStealthOMeter, 1, VF_CHEAT, "Enables the stealth-o-meter to detect enemies in MP matches.");
 	pConsole->Register("g_meleeWhileSprinting", &g_meleeWhileSprinting, 0, 0, "Enables option to melee while sprinting, using left mouse button.");
 	pConsole->Register("g_fallAndPlayThreshold", &g_fallAndPlayThreshold, 50, VF_CHEAT, "Minimum damage for fall and play.");
 

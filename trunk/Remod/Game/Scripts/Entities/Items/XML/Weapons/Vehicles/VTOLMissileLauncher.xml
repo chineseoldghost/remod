@@ -1,4 +1,4 @@
-<item name="SideWinder" class="VehicleWeapon" invisible="1"  >
+<item name="VTOLMissileLauncher" class="VehicleWeapon" invisible="1"  >
 	<params>
 		<param name="giveable" 		value="0" />
 		<param name="selectable" 	value="0" />
@@ -8,7 +8,7 @@
 		<param name="arms"			 	value="0" />
 	</params>
 	<ammos>
-		<ammo name="a2ahomingmissile" extra="10" amount="0" />
+		<ammo name="vtolguided" extra="10" amount="10" />
 	</ammos>
 	<actions>
   	<action name="fire">
@@ -19,19 +19,17 @@
 	<firemodes>
 		<firemode name="Single" type="Single">
 			<fire>
-				<param name="ammo_type" value="a2ahomingmissile" />
+				<param name="ammo_type" value="bunkerbuster" />
 				<param name="clip_size" value="10" />				
-				<param name="damage" value="500" />
-				<param name="rate" value="15" />
+				<param name="damage" value="200" />
+				<param name="rate" value="45" />
 				<param name="offset" value="5" />
 				<param name="autoaim" value="true" />
-				<param name="autoaim_distance" value="350" />
-				<param name="autoaim_tolerance" value="30" />				
+				<param name="autoaim_distance" value="200" />
+				<param name="autoaim_tolerance" value="6" />				
 				<param name="autoaim_minvolume" value="16" />
-			  <param name="autoaim_maxvolume" value="2048" />		
-			  <param name="autoaim_locktime" value="0.5" />		
-			  <param name="autoaim_autofiringdir" value="true" />
-        <param name="barrel_count" value="2"/>
+			  <param name="autoaim_maxvolume" value="2048" />				
+			  <param name="autoaim_autofiringdir" value="false" />
 			</fire>
 			<muzzleflash>
 				<firstperson effect="muzzleflash.Rocketlauncher.Sidewinder" helper="" light_helper="" light_radius="10" time="0.100" />

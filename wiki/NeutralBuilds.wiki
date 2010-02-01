@@ -1,4 +1,4 @@
-#summary Instructions on how to get neutral (test) Remod builds with SVN.
+#summary Instructions on how to get neutral (test) builds of Remod with SVN.
 
 _"In software development, a neutral build is a build that reflects the current state of the source code checked into the source code version control system by the developers, but without any developer-specific changes."_
 

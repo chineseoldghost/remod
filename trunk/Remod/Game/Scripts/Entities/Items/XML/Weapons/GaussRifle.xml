@@ -263,7 +263,7 @@
 					<stage value="1.4" />
 				</stages>
 			</zoom>
-			<zoomSway>
+			<!--<zoomSway>
 				<param name="maxX" value="0.012" />
 				<param name="maxY" value="0.015" />
 				<param name="stabilizeTime" value="1.5"/>
@@ -272,7 +272,7 @@
 				<param name="strengthScaleTime" value="0.1"/>
 				<param name="crouchScale" value="0.75"/>
 				<param name="proneScale" value="0.5"/>
-			</zoomSway>
+			</zoomSway>-->
 			<!--<spreadMod>
 		        <param name="max_mod" value="0.75"/>
 		        <param name="attack_mod" value="1.0"/>
@@ -315,7 +315,7 @@
 					<stage value="1.4" />
 				</stages>
 			</zoom>
-			<zoomSway>
+			<!--<zoomSway>
 				<param name="maxX" value="0.012" />
 				<param name="maxY" value="0.015" />
 				<param name="stabilizeTime" value="1.5"/>
@@ -324,7 +324,7 @@
 				<param name="strengthScaleTime" value="0.1"/>
 				<param name="crouchScale" value="0.75"/>
 				<param name="proneScale" value="0.5"/>
-			</zoomSway>
+			</zoomSway>-->
 			<!--<spreadMod>
 		        <param name="max_mod" value="0.75"/>
 		        <param name="attack_mod" value="1.0"/>
@@ -367,11 +367,11 @@
 				</stages>
 			</zoom>
 			<zoomSway>
-				<param name="maxX" value="0.012" />
-				<param name="maxY" value="0.015" />
-				<param name="stabilizeTime" value="1.5"/>
+				<param name="maxX" value="0.005" />
+				<param name="maxY" value="0.005" />
+				<param name="stabilizeTime" value="1"/>
 				<param name="minScale" value="0.25"/>
-				<param name="strengthScale" value="0.1"/>
+				<param name="strengthScale" value="0"/>
 				<param name="strengthScaleTime" value="0.1"/>
 				<param name="crouchScale" value="0.75"/>
 				<param name="proneScale" value="0.5"/>

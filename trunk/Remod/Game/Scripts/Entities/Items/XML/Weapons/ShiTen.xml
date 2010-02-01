@@ -101,7 +101,7 @@
 				<param name="ammo_type" value="MGbullet" />
 				<param name="hit_type" value="ht_AHMachinegun" />
 				<param name="rate" value="450" />
-				<param name="damage" value="40" />
+				<param name="damage" value="30" />
 				<param name="clip_size" value="-1" />
 				<param name="helper_tp" value="weapon_term" />
 				<param name="nearmiss_signal" value="OnNearMiss" />

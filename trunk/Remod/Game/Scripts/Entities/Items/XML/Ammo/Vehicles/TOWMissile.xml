@@ -28,10 +28,10 @@
 	<explosion>
 		<param name="pressure" value="1800" />
 		<param name="type" value="ht_Rocket" />
-		<param name="min_radius" value="5" />
-		<param name="max_radius" value="10" />
-		<param name="min_phys_radius" value="1.5" />
-		<param name="max_phys_radius" value="2.3" />
+		<param name="min_radius" value="0.5" />
+		<param name="max_radius" value="2" />
+		<param name="min_phys_radius" value="2" />
+		<param name="max_phys_radius" value="5" />
 		<param name="hole_size" value="0" />
 		<param name="terrain_hole_size" value="0" />
 		<param name="decal" value="" />

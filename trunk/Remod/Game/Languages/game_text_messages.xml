@@ -8093,7 +8093,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_radio_03HEADBTN02</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">INTEL</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">REPORT</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">UI</Data><NamedCell
@@ -8102,7 +8102,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_radio_BTN11</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">1 - ARMOR SPOTTED</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">1 - ARMOR</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">UI</Data><NamedCell
@@ -8111,7 +8111,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_radio_BTN12</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">2 - AIRCRAFT SPOTTED</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">2 - AIRCRAFT</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">UI</Data><NamedCell
@@ -8120,7 +8120,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_radio_BTN13</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">3 - SNIPER SPOTTED</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">3 - SNIPER</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">UI</Data><NamedCell
@@ -8129,7 +8129,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_radio_BTN14</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">4 - VEHICLE SPOTTED</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">4 - VEHICLE</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">UI</Data><NamedCell
@@ -8138,7 +8138,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_radio_BTN15</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">5 - INFANTRY SPOTTED</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">5 - INFANTRY</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">UI</Data><NamedCell
@@ -8183,7 +8183,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_radio_BTN18</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">3 - NEED PICKUP</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">3 - TRANSPORT</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">UI</Data><NamedCell
@@ -8192,7 +8192,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_radio_BTN19</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">4 - NEED MECHANIC</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">4 - MECHANIC</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">UI</Data><NamedCell
@@ -8201,7 +8201,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_radio_BTN20</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">5 - NEED RADAR SCAN</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">5 - SCAN</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">UI</Data><NamedCell

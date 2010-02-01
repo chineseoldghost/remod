@@ -2941,7 +2941,7 @@ void CPlayer::UpdateStats(float frameTime)
 
 			CNanoSuit* pSuit = GetNanoSuit();
 			float maxEnergy = (pSuit != NULL) ? NANOSUIT_ENERGY : 0.0f;
-			float damagePerEnergy = 0.95f; // Remod, default 1.0f
+			float damagePerEnergy = 1.0f; // Remod, default 1.0f
 
 			if (IGameRules *pGameRules=g_pGame->GetGameRules())
 			{

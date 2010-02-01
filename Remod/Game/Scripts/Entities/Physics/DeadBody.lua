@@ -2,7 +2,7 @@
 
 DeadBody = {
  	type = "DeadBody",
-	isPhysicalized = 1,
+	isPhysicalized = 0,
 	temp_ModelName = "",
 	
 	DeadBodyParams = {

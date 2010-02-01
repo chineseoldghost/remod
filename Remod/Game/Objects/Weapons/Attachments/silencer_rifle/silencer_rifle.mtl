@@ -1,6 +1,6 @@
 <Material MtlFlags="256">
  <SubMaterials>
-  <Material Name="base" MtlFlags="128" Shader="Metal" GenMask="268447760" SurfaceType="" Diffuse="0.16862746,0.17647059,0.19215688" Specular="0.50196099,0.50196099,0.50196099" Emissive="0,0,0" Shininess="4" Opacity="1">
+  <Material Name="base" MtlFlags="128" Shader="Metal" GenMask="268447760" SurfaceType="" Diffuse="0.16862746,0.17647059,0.19215688" Specular="0.5,0.5,0.5" Emissive="0,0,0" Shininess="4" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="objects/weapons/attachments/silencer_rifle/textures/scar_silencer.tif">
      <TexMod />

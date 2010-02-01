@@ -1,6 +1,6 @@
 <Material MtlFlags="256">
  <SubMaterials>
-  <Material Name="reflex" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="mat_metal_thick" Diffuse="0.30980399,0.30980399,0.30980399" Specular="0.43921599,0.43921599,0.43921599" Emissive="0,0,0" Shininess="6" Opacity="1">
+  <Material Name="reflex" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="mat_metal_thick" Diffuse="0.30980399,0.30980399,0.30980399" Specular="0.5,0.5,0.5" Emissive="0,0,0" Shininess="6" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="objects/weapons/attachments/reflex_rifle/textures/reflex.tif" Filter="7">
      <TexMod />

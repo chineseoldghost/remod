@@ -1,6 +1,6 @@
 <Material MtlFlags="256">
  <SubMaterials>
-  <Material Name="scar_gl" MtlFlags="128" Shader="Metal" GenMask="268443648" SurfaceType="" Diffuse="0.27058825,0.27450982,0.30588236" Specular="0.55294102,0.55294102,0.55294102" Emissive="0,0,0" Shininess="4" Opacity="1">
+  <Material Name="scar_gl" MtlFlags="128" Shader="Metal" GenMask="268443648" SurfaceType="" Diffuse="0.27058825,0.27450982,0.30588236" Specular="0.55,0.55,0.55" Emissive="0,0,0" Shininess="4" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="objects/weapons/attachments/grenade_launcher_rifle/textures/scar_gl.tif">
      <TexMod />

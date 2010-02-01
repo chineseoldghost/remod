@@ -1,6 +1,6 @@
 <Material MtlFlags="256">
  <SubMaterials>
-  <Material Name="scope_assault" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="" Diffuse="0.2392157,0.24313727,0.26274511" Specular="0.49019599,0.513726,0.568627" Emissive="0,0,0" Shininess="3" Opacity="1">
+  <Material Name="scope_assault" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="" Diffuse="0.2392157,0.24313727,0.26274511" Specular="0.5,0.5,0.5" Emissive="0,0,0" Shininess="3" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="objects/weapons/attachments/scope_assault/textures/assault_scope.tif" Filter="7">
      <TexMod />

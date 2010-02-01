@@ -1,6 +1,6 @@
 <Material MtlFlags="256">
  <SubMaterials>
-  <Material Name="socom_silencer" MtlFlags="128" Shader="Metal" GenMask="268439568" SurfaceType="" Diffuse="0.49803901,0.49803901,0.49803901" Specular="0.50196099,0.50196099,0.50196099" Emissive="0,0,0" Shininess="6" Opacity="1">
+  <Material Name="socom_silencer" MtlFlags="128" Shader="Metal" GenMask="268439568" SurfaceType="" Diffuse="0.49803901,0.49803901,0.49803901" Specular="0.5,0.5,0.5" Emissive="0,0,0" Shininess="6" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="objects/weapons/attachments/silencer_rifle/textures/scar_silencer.tif">
      <TexMod />

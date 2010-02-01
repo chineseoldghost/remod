@@ -349,7 +349,7 @@
 				<param name="scope_offset" value="0,0.003,0" />
 				<param name="hbob_ratio" value="5" />
 				<stages>
-					<stage value="1.4" />
+					<stage value="1.25" />
 				</stages>
 			</zoom>
 			<!--<zoomSway>
@@ -401,7 +401,7 @@
 				<param name="scope_nearFov" value="24" />
 				<param name="scope_offset" value="0,0.025,0.002" />
 				<stages>
-					<stage value="1.4" />
+					<stage value="1.3" />
 				</stages>
 			</zoom>
 			<!--<zoomSway>

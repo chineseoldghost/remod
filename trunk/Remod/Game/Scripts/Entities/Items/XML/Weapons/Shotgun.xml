@@ -213,7 +213,7 @@
 			</fire>
 			<recoil>
 				<param name="max_recoil"	value="10" />
-				<param name="attack" 			value="10" />
+				<param name="attack" 			value="5" />
 				<param name="decay" 			value="0.33" />
 				<param name="maxx" 				value="10" />
 				<param name="maxy" 				value="10" />

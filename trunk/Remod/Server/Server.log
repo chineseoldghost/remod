@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(31 Jan 2010) Time(18 06 35)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(01 Feb 2010) Time(21 14 55)"  -- used by backup system
  
-Log Started at Sunday, January 31, 2010 18:06:35
+Log Started at Monday, February 01, 2010 21:14:55
 Running 32 bit version
 Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.268212 MHz
+CPU Speed (estimated): 1997.259862 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.275842 MHz
+CPU Speed (estimated): 1997.271616 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -40,8 +40,8 @@ System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 18:06:36 01/31/10, system running for 243 minutes
-1521MB physical memory installed, 253MB available, 2047MB virtual memory installed, 83 percent of memory in use
+Local time is 21:14:55 02/01/10, system running for 378 minutes
+1521MB physical memory installed, 207MB available, 2047MB virtual memory installed, 86 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
@@ -93,17 +93,806 @@ Initializing AI System
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
     $3sv_gamerules = $6PowerStruggle $5[]$4
-[net 17:06:38.107] network hostname: iMac7
-[net 17:06:38.113]   ip:192.168.0.192
-[net 17:06:38.113]   ip:5.182.209.7
+[net 20:14:57.118] network hostname: iMac7
+[net 20:14:57.130]   ip:192.168.0.192
+[net 20:14:57.130]   ip:5.182.209.7
 -----------------------------------------------------
-*LOADING: Level multiplayer/ps/Mesa loading time: 17.89 seconds
+*LOADING: Level multiplayer/ps/Mesa loading time: 27.51 seconds
 -----------------------------------------------------
-[Warning] Unknown command:  sv_gamerules TeamInstantAction
     $3sv_gamerules = $6TeamInstantAction $5[]$4
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/Battleground loading time: 4.62 seconds
+*LOADING: Level multiplayer/ia/Battleground loading time: 4.73 seconds
 -----------------------------------------------------
-[net 17:14:37.937] Disconnect 85-220-4-43.dsl.dynamic.simnet.is:54320; profid=161429488; cause=0; msg='Remote disconnected: Timeout occurred; no packet for 31.6 seconds'
-[net 17:16:03.528] Disconnect 85-220-4-43.dsl.dynamic.simnet.is:54441; profid=161429488; cause=0; msg='Remote disconnected: Timeout occurred; no packet for 31.5 seconds'
+CHAT Shadez to ALL:
+   LOL
+CHAT sunnlok to ALL:
+   lawl
+** Server: PENIS PENIS PENIS!!!! **
+CHAT Shadez to ALL:
+   lol
+** Server: EEENCOMEEEENG! **
+** Server: WHAT A' YOU LAFFIN AT?! **
+** Server: 11122!11 **
+CHAT Shadez to ALL:
+   chute ftw
+** Server: K, coming now **
+CHAT Shadez to ALL:
+   lol
+CHAT Shadez to ALL:
+   gs
+CHAT Blablah to ALL:
+   G'day, derp!
+CHAT Shadez to ALL:
+   ugh
+CHAT Shadez to ALL:
+   need one more :(
+CHAT Blablah to ALL:
+   yeah
+CHAT Shadez to ALL:
+   nice missile btw
+CHAT Blablah to ALL:
+   ty
+CHAT Shadez to ALL:
+   vtol
+CHAT Blablah to ALL:
+   ideally i would like a camera on the missile
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   sorry for the weird chopper controls btw
+CHAT Blablah to ALL:
+   i started working on it and then quit :D
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   btw, is there anything you guys think could be aesthetically improved?
+CHAT Shadez to ALL:
+   missile vtol kinda
+CHAT Blablah to ALL:
+   is it ugly?
+CHAT Blablah to ALL:
+   silent choppah :<
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   i'm gonna make wrecks stay longer :<
+CHAT Blablah to ALL:
+   oh btw
+CHAT Shadez to ALL:
+   lol
+CHAT Blablah to ALL:
+   guys
+CHAT Shadez to ALL:
+   melee headshot
+CHAT Blablah to ALL:
+   the stealthometer is enabled :P
+CHAT Shadez to ALL:
+   ?
+CHAT Blablah to ALL:
+   left side of the minimap
+CHAT Shadez to ALL:
+   o.O
+CHAT Shadez to ALL:
+   whoa
+CHAT Blablah to ALL:
+   idk how it works
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   but there's a command to enable it
+CHAT Blablah to ALL:
+   and i did
+CHAT Shadez to ALL:
+   well
+CHAT Shadez to ALL:
+   uh
+CHAT Shadez to ALL:
+   theres no sound in wars for me anymore
+CHAT Shadez to ALL:
+   lol
+CHAT Blablah to ALL:
+   O_o
+CHAT Shadez to ALL:
+   maybe its disabled in options
+CHAT Blablah to ALL:
+   something's bugged about APC turret rot speeds
+CHAT Blablah to ALL:
+   try s_soundenable 0 and then 1
+CHAT Shadez to ALL:
+   apparently not
+CHAT Shadez to ALL:
+   hmmm
+CHAT Blablah to ALL:
+   it was disabled?
+CHAT Shadez to ALL:
+   apparently not..
+CHAT Shadez to ALL:
+   sound doesnt work
+CHAT Blablah to ALL:
+   restart?
+CHAT Shadez to ALL:
+   sound works in everything else
+CHAT Shadez to ALL:
+   just not wars
+CHAT Blablah to ALL:
+   well restart wars
+CHAT Shadez to ALL:
+   kk
+[net 20:42:12.764] Disconnect 85-220-14-165.dsl.dynamic.simnet.is:52732; profid=161429488; cause=0; msg='Timeout occurred; no packet for 31.7 seconds'
+CHAT Blablah to Team tan:
+   let's try out the vtol
+CHAT Blablah to ALL:
+   there's no hud for the gunner yet
+CHAT Blablah to ALL:
+   float high and still :D
+CHAT Shadez to ALL:
+   blablah.. revange wants to come i think
+CHAT Shadez to ALL:
+   you need to tell em how to get on
+CHAT Blablah to ALL:
+   guh i'm stuttering
+CHAT Blablah to ALL:
+   gay engine
+CHAT Shadez to ALL:
+   works perfectly for me
+CHAT sunnlok to ALL:
+   lawl
+CHAT Blablah to ALL:
+   ah, good to see fall damage  seems to be increased a bit :P
+CHAT Blablah to ALL:
+   we need a 4th person
+CHAT Blablah to ALL:
+   why isn't tbd here?
+CHAT Shadez to ALL:
+   hes mw2
+CHAT Blablah to ALL:
+   GAY
+CHAT Shadez to ALL:
+   revange wants to come
+CHAT Blablah to ALL:
+   GAY GAY GAY
+CHAT Shadez to ALL:
+   he doesnt know how to
+CHAT Blablah to ALL:
+   cool, tell him to look at the topic in the channel
+CHAT Blablah to ALL:
+   wait i'm watching the grass wiggle xD
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   it's out of ammo
+CHAT Shadez to ALL:
+   fucking bs
+CHAT Blablah to ALL:
+   man, something feels really different about this game today
+CHAT Blablah to ALL:
+   to me
+CHAT Blablah to ALL:
+   maybe because i've been doing other stuff all day
+CHAT Shadez to ALL:
+   hm
+CHAT Blablah to ALL:
+   maybe because i got rid of ironsight zoomsway
+CHAT Blablah to ALL:
+   but that's small
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   hey shadez
+CHAT Blablah to ALL:
+   let's see how that stealthometer works
+CHAT sunnlok to ALL:
+   blablah could you add a vtol which can carry vehicles?
+CHAT Blablah to ALL:
+   no :(
+CHAT Blablah to ALL:
+   well, it's technically possible
+CHAT Blablah to ALL:
+   but i can't really do it properly
+CHAT Blablah to ALL:
+   and i'd need a coder
+CHAT Blablah to ALL:
+   the straps on the nk suit need to be darker D:
+CHAT Blablah to ALL:
+   needs to look a bit more hightech
+CHAT Blablah to ALL:
+   /quarantines
+CHAT Blablah to ALL:
+   woops
+CHAT Blablah to ALL:
+   do /quarantine
+CHAT Blablah to ALL:
+   LOL
+CHAT Shadez to ALL:
+   o.o
+CHAT Blablah to ALL:
+   i think i'll make cloak last long?
+CHAT Blablah to ALL:
+   aha
+CHAT Blablah to ALL:
+   my meter just went up to yellow
+CHAT Shadez to ALL:
+   ?
+CHAT Blablah to ALL:
+   wait i gotta note some things down
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   don't kill us please
+CHAT Blablah to ALL:
+   come closer
+CHAT Blablah to ALL:
+   ah yes it goes up
+CHAT Blablah to ALL:
+   as you come closer
+CHAT Shadez to ALL:
+   yep
+CHAT Blablah to ALL:
+   that's interesting
+CHAT Blablah to ALL:
+   i think
+CHAT Shadez to ALL:
+   AI
+CHAT Shadez to ALL:
+   lol
+CHAT Blablah to ALL:
+   in PS, i'll replace the red flag at the bottom left with this
+CHAT Blablah to ALL:
+   if you know what i mean
+CHAT Blablah to ALL:
+   maybe the SOM should be something you need to buy :P
+CHAT Shadez to ALL:
+   LOL
+CHAT Shadez to ALL:
+   WTF
+CHAT sunnlok to ALL:
+   i hate that
+CHAT Shadez to ALL:
+   i didnt even see you
+CHAT Blablah to ALL:
+   :P
+CHAT Blablah to ALL:
+   we've been on top of you for a while
+CHAT Blablah to ALL:
+   oh this locks on?
+CHAT Shadez to ALL:
+   OWN
+CHAT Blablah to ALL:
+   oh snap
+CHAT Shadez to ALL:
+   gauss
+CHAT Blablah to ALL:
+   it's hard aiming without a crosshair in a moving vtol, lol
+CHAT Shadez to ALL:
+   idd
+CHAT Blablah to ALL:
+   i still don't know what to do with the ASV :<
+CHAT Shadez to ALL:
+   i want more peepz on here
+CHAT Shadez to ALL:
+   :P
+CHAT Blablah to ALL:
+   yeah, me too
+CHAT Blablah to ALL:
+   i'm going to start "official" public playtests soon
+CHAT Blablah to ALL:
+   with organized events
+CHAT Blablah to ALL:
+   but it'll be hard...
+CHAT Blablah to ALL:
+   k fall damage is still too low :<
+CHAT Blablah to ALL:
+   explosion sound :D
+CHAT Blablah to ALL:
+   hmmm
+CHAT Blablah to ALL:
+   i'll reduce the firerate of these
+CHAT Shadez to ALL:
+   you stole my gauss :/
+CHAT Blablah to ALL:
+   lol
+CHAT Shadez to ALL:
+   bish
+CHAT Blablah to ALL:
+   derp
+CHAT sunnlok to ALL:
+   has this game voice chat?
+CHAT Blablah to ALL:
+   yes it does
+CHAT Blablah to ALL:
+   but it sucks so bad
+CHAT Blablah to ALL:
+   i don't think my server has it enabled
+CHAT sunnlok to ALL:
+   where can i activate it
+CHAT sunnlok to ALL:
+   can hardly wrte anything
+CHAT Blablah to ALL:
+   good question
+CHAT Blablah to ALL:
+   i gotta go take a dump
+CHAT Blablah to ALL:
+   brb :<
+CHAT Blablah to ALL:
+   back
+CHAT Blablah to ALL:
+   right when my energy reaches 1 :D
+CHAT Shadez to ALL:
+   i need teammate
+CHAT Blablah to ALL:
+   you do
+CHAT Blablah to ALL:
+   let's go fetch someone on IRC?
+CHAT Blablah to ALL:
+   ya, brb
+CHAT Shadez to ALL:
+   totally headshotted you with a gauss
+CHAT Shadez to ALL:
+   LOL
+CHAT Shadez to ALL:
+   i ran into you
+CHAT Shadez to ALL:
+   EPIC
+CHAT sunnlok to ALL:
+   fuck xD
+CHAT Shadez to ALL:
+   what is the chance of that
+CHAT sunnlok to ALL:
+   pwnd
+CHAT Shadez to ALL:
+   i shot exactly when i died
+CHAT Shadez to ALL:
+   :/
+CHAT Blablah to ALL:
+   k i'm back
+CHAT Blablah to ALL:
+   someone changed the topic -_-
+CHAT Shadez to ALL:
+   LOL
+CHAT Shadez to ALL:
+   rofl
+CHAT Shadez to ALL:
+   i smashed a vtol into a bridge
+CHAT Blablah to ALL:
+   shall i switch to IA?
+CHAT Shadez to ALL:
+   ugh
+CHAT Shadez to ALL:
+   na
+CHAT Blablah to ALL:
+   until more join
+CHAT Shadez to ALL:
+   untill??
+CHAT Blablah to ALL:
+   if more join
+CHAT Shadez to ALL:
+   more like this untill more join
+CHAT Blablah to ALL:
+   but i set the topic back to show a link to instructions
+CHAT Blablah to ALL:
+   so someone might come
+CHAT Blablah to ALL:
+   well if you insist
+CHAT Shadez to ALL:
+   they dont read it
+CHAT Blablah to ALL:
+   they might see it
+CHAT Shadez to ALL:
+   i doubt
+CHAT Blablah to ALL:
+   TBD might come back and see it
+CHAT Blablah to ALL:
+   oh snap
+CHAT Blablah to ALL:
+   was that a hit?
+CHAT Shadez to ALL:
+   tbd is on irc
+CHAT Blablah to ALL:
+   but playing MW2?
+CHAT Shadez to ALL:
+   no
+CHAT Shadez to ALL:
+   i dont think
+CHAT Blablah to ALL:
+   oh
+CHAT Shadez to ALL:
+   he was talking
+CHAT Blablah to ALL:
+   does anyone want to go fetch him?
+CHAT Shadez to ALL:
+   i can
+CHAT Blablah to ALL:
+   superduper
+CHAT Shadez to ALL:
+   ugh
+CHAT Blablah to ALL:
+   hm?
+CHAT Shadez to ALL:
+   why doesn noone come
+CHAT Shadez to ALL:
+   tbd doesnt answer
+CHAT Blablah to ALL:
+   not in the mood, usually
+CHAT Blablah to ALL:
+   hmm
+CHAT Blablah to ALL:
+   maybe he just alttabbed from MW2 and said something
+CHAT Blablah to ALL:
+   you look like such a sniper :P
+CHAT Shadez to ALL:
+   -.-
+CHAT Shadez to ALL:
+   sigh
+CHAT Shadez to ALL:
+   lol
+CHAT Shadez to ALL:
+   just go on and kill me
+CHAT Blablah to ALL:
+   I FEEL THREATENED, AAAH
+CHAT Shadez to ALL:
+   hm
+CHAT Shadez to ALL:
+   ?!
+CHAT Blablah to ALL:
+   ?
+CHAT Shadez to ALL:
+   ugh
+CHAT Blablah to ALL:
+   why isn't revange coming? :|
+CHAT Blablah to ALL:
+   he's really bad at the game though
+CHAT Shadez to ALL:
+   he was restarting
+CHAT Blablah to ALL:
+   oh
+CHAT Shadez to ALL:
+   lol
+CHAT Shadez to ALL:
+   how do you know
+CHAT Blablah to ALL:
+   he often came to test maps
+CHAT Shadez to ALL:
+   lol
+CHAT Blablah to ALL:
+   did i just make you fall off, sunnlok?
+CHAT sunnlok to ALL:
+   yea you did
+CHAT Blablah to ALL:
+   sorry, lol
+CHAT Blablah to Team tan:
+   ZOINK
+CHAT Blablah to ALL:
+   Well played.
+CHAT Blablah to ALL:
+   i need to add a recharge sound to the gauss :D
+CHAT Blablah to ALL:
+   well, it depends
+CHAT Shadez to ALL:
+   he is downloading remod
+CHAT Blablah to ALL:
+   urgh, wrecks really ened to stay longer
+CHAT Blablah to ALL:
+   ah, cool
+CHAT Shadez to ALL:
+   lol d_wolf is asking if remod is finished
+CHAT Shadez to ALL:
+   xD
+CHAT Blablah to ALL:
+   tell him it's never and always finished? :P
+CHAT Blablah to ALL:
+   i like this spot
+CHAT Shadez to ALL:
+   NO
+CHAT Shadez to ALL:
+   just NO
+CHAT Blablah to ALL:
+   i also want assists :<
+CHAT Shadez to ALL:
+   kinda bored of this map
+CHAT Blablah to ALL:
+   i'll switch to PS, need to test something there anyway
+CHAT Shadez to ALL:
+   and seriously needs a bit more players
+CHAT sunnlok to ALL:
+   sory
+CHAT Shadez to ALL:
+   brb toiler
+    $3sv_gamerules = $6PowerStruggle $5[]$4
+CHAT Shadez to ALL:
+   toilet*
+CHAT Shadez to ALL:
+   lol
+[Error] CTerrain::LoadSurfaceTypesFromXML: Error loading material: 
+-----------------------------------------------------
+*LOADING: Level multiplayer/ps/Frost loading time: 14.42 seconds
+-----------------------------------------------------
+CHAT Blablah to ALL:
+   kill me, sunnlok :D
+CHAT Blablah to ALL:
+   and oh dear i see purple bushes
+CHAT Blablah to ALL:
+   DO ME
+CHAT Blablah to ALL:
+   *has a violent orgasm*
+CHAT sunnlok to ALL:
+   tactics ftw
+CHAT Blablah to ALL:
+   damnit
+CHAT Blablah to ALL:
+   spawn prestige is still not working
+CHAT Blablah to ALL:
+   for some weird
+CHAT Blablah to ALL:
+   wtf reason
+CHAT sunnlok to ALL:
+   lawl
+CHAT Blablah to ALL:
+   shit
+CHAT Blablah to ALL:
+   it really isn't
+CHAT Shadez to ALL:
+   huh
+CHAT Blablah to ALL:
+   back to TIA
+    $3sv_gamerules = $6TeamInstantAction $5[]$4
+CHAT Blablah to ALL:
+   what map do you want?
+CHAT Blablah to ALL:
+   shit i can't think of any map
+CHAT Shadez to ALL:
+   :/
+CHAT Blablah to ALL:
+   a fun one
+CHAT Blablah to ALL:
+   shadez
+CHAT Blablah to ALL:
+   die
+CHAT Blablah to ALL:
+   and see if you spawn with prestige
+CHAT Blablah to ALL:
+   i mean
+CHAT Shadez to ALL:
+   lol
+CHAT Blablah to ALL:
+   with the minimum
+CHAT Blablah to ALL:
+   peak?
+CHAT Shadez to ALL:
+   ?
+CHAT Blablah to ALL:
+   a map
+CHAT Shadez to ALL:
+   i dont really know many crysis maps lol
+CHAT Blablah to ALL:
+   well you have too much PP to tell i see now :<
+CHAT Blablah to ALL:
+   buy stuff please
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   k
+CHAT Shadez to ALL:
+   300 to 77
+CHAT Shadez to ALL:
+   or something
+CHAT Blablah to ALL:
+   see :
+CHAT Blablah to Team black:
+   still 77 pp :<
+[net 21:36:21.205] Disconnect iMac7.telenet.be:55644; profid=113168429; cause=13; msg='Remote disconnected: Nub destroyed'
+CHAT Shadez to ALL:
+   needs some more players
+CHAT Blablah to ALL:
+   accidentally loaded a map clientside
+CHAT Blablah to ALL:
+   lol
+CHAT Shadez to ALL:
+   lol
+CHAT Blablah to ALL:
+   i have a blackout on maps
+CHAT Blablah to ALL:
+   aha!
+CHAT Blablah to ALL:
+   A CHALLENGER APPEARS!
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   revange
+CHAT Blablah to ALL:
+   name a TIA map
+CHAT revange to ALL:
+   yeaj
+CHAT revange to ALL:
+   beware of da nub :p
+CHAT Blablah to ALL:
+   jesus i'll just switch to peak, lol
+-----------------------------------------------------
+*LOADING: Level multiplayer/ia/peak loading time: 3.49 seconds
+-----------------------------------------------------
+CHAT Blablah to ALL:
+   got shitty performance on this map tho
+CHAT sunnlok to ALL:
+   hey
+CHAT sunnlok to ALL:
+   i wasabout to ill some 1
+CHAT Blablah to ALL:
+   i forgot to test the SMG :D
+CHAT Blablah to ALL:
+   i lowered the recoil
+CHAT Blablah to ALL:
+   but didn't reduce the damage yet
+CHAT Blablah to ALL:
+   so it's going to be OP now
+CHAT Blablah to Team tan:
+   nice
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   shit
+CHAT Blablah to ALL:
+   epic range
+CHAT Blablah to ALL:
+   xD
+CHAT Shadez to ALL:
+   wtf
+CHAT Shadez to ALL:
+   flash
+CHAT Blablah to ALL:
+   see, too much dmg :P
+CHAT Blablah to ALL:
+   FGL's too good :<
+CHAT Shadez to ALL:
+   urgh
+CHAT Blablah to Team tan:
+   O_O
+CHAT Blablah to Team tan:
+   he's here
+CHAT Shadez to ALL:
+   wtf?
+CHAT Shadez to ALL:
+   i hit you 2 times
+CHAT Shadez to ALL:
+   lol
+CHAT Blablah to ALL:
+   :P
+CHAT Blablah to ALL:
+   do you guys like the quick deaths with the SMG?
+CHAT Blablah to ALL:
+   i mean, should i just
+CHAT revange to ALL:
+   what de
+CHAT Blablah to ALL:
+   lower the armor damage absorbtion
+CHAT Blablah to ALL:
+   should i lower the damage absorbtion in armor overall?
+CHAT Blablah to ALL:
+   O_O NICE
+CHAT Shadez to ALL:
+   :D
+CHAT Blablah to Team tan:
+   thanks
+CHAT Blablah to Team tan:
+   nice teamwork
+CHAT revange to ALL:
+   long time i played wars
+CHAT Blablah to ALL:
+   ^^
+CHAT Blablah to ALL:
+   very nice
+CHAT sunnlok to ALL:
+   woot?
+CHAT Blablah to ALL:
+   oh snap
+CHAT Blablah to ALL:
+   damn you!
+CHAT Shadez to ALL:
+   lol
+CHAT Shadez to ALL:
+   nice
+CHAT Shadez to ALL:
+   lol
+CHAT Blablah to ALL:
+   tell me how fucking leet i am
+CHAT revange to ALL:
+   in numbers?
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   yes please
+CHAT Blablah to ALL:
+   damn, so close
+CHAT Blablah to ALL:
+   excellent shot
+CHAT Blablah to ALL:
+   damn xD
+CHAT revange to ALL:
+   dam
+CHAT Blablah to ALL:
+   A CHALLENGER APPEARS
+CHAT Shadez to ALL:
+   awww
+CHAT Blablah to ALL:
+   MELONS
+CHAT Blablah to ALL:
+   MELONS MELONS MELONS
+CHAT Blablah to Team tan:
+   jhalp
+CHAT Blablah to ALL:
+   damn, you're good at that
+CHAT Shadez to ALL:
+   o.o
+CHAT Blablah to ALL:
+   i think i'll reduce the armor dmg absorbtion
+CHAT Shadez to ALL:
+   hm
+CHAT Blablah to ALL:
+   this also needs objectives
+CHAT Shadez to ALL:
+   yes
+CHAT Shadez to ALL:
+   if you get that in this
+CHAT Shadez to ALL:
+   epic
+CHAT Blablah to ALL:
+   your wood is in the way xD
+CHAT Blablah to Team tan:
+   nice
+CHAT Shadez to ALL:
+   omg
+CHAT Shadez to ALL:
+   lol
+CHAT sunnlok to ALL:
+   gatta go
+CHAT Shadez to ALL:
+   cya
+CHAT Blablah to ALL:
+   aww
+CHAT Blablah to ALL:
+   noo
+CHAT Blablah to ALL:
+   but okay
+CHAT Blablah to ALL:
+   enjoy jerking off
+CHAT Shadez to ALL:
+   needs more ppl
+CHAT Blablah to ALL:
+   aye
+[net 21:59:38.824] Disconnect blfd-4db1a359.pool.mediaWays.net:55681; profid=98074264; cause=0; msg='Timeout occurred; no packet for 31.6 seconds'
+CHAT Blablah to ALL:
+   i think i'll go fix things
+CHAT Shadez to ALL:
+   :S
+CHAT Shadez to ALL:
+   why
+CHAT Shadez to ALL:
+   :(
+CHAT Shadez to ALL:
+   tbd is on
+CHAT Blablah to ALL:
+   1v2 is a bit hard
+CHAT Shadez to ALL:
+   you can get him in
+CHAT Blablah to ALL:
+   well i can fix things
+CHAT Blablah to ALL:
+   i can commit
+CHAT Blablah to ALL:
+   and we can test more, lol
+CHAT Shadez to ALL:
+   ok
+CHAT Shadez to ALL:
+   ima get food
+CHAT Blablah to ALL:
+   taht's why we use svn
+CHAT Blablah to ALL:
+   k
+CHAT revange to ALL:
+   k
+[net 22:00:41.015] Disconnect iMac7.telenet.be:56301; profid=113168429; cause=19; msg='Remote disconnected: User left the game'
+CHAT revange to ALL:
+   we still gonna play, right?
+CHAT revange to ALL:
+   later
+[net 22:04:20.401] Disconnect d51A561C8.access.telenet.be:64253; profid=186555686; cause=0; msg='Timeout occurred; no packet for 31.7 seconds'
+[net 21:28:30.409] Disconnect 85-220-14-165.dsl.dynamic.simnet.is:54096; profid=161429488; cause=19; msg='Remote disconnected: User left the game'
 System:Quit

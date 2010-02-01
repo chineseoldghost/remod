@@ -348,7 +348,7 @@
 				<param name="scope_offset" value="0,0.003,0" />
 				<param name="hbob_ratio" value="5" />
 				<stages>
-					<stage value="1.4" />
+					<stage value="1.25" />
 				</stages>
 			</zoom>
 			<!--<zoomSway>

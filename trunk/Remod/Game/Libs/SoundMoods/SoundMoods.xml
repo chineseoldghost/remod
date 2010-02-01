@@ -360,34 +360,34 @@
   <Category Name="vehicle_sounds"/>
  </Mood>
  <Mood Name="cloak" Priority="30" MusicVolume="0.5">
-  <Category Name="1st_fire" HighPass="500" />
-  <Category Name="1st_pers" HighPass="500"/>
-  <Category Name="1st_weapon_foley" HighPass="500"/>
-  <Category Name="3rd_pers" HighPass="500"/>
-  <Category Name="3rd_weapon" HighPass="500"/>
-  <Category Name="3rd_weapon_explos" HighPass="500"/>
-  <Category Name="alien" HighPass="500"/>
-  <Category Name="amb" HighPass="500"/>
-  <Category Name="coll_foot_phy_ai" HighPass="500"/>
-  <Category Name="collision" HighPass="500"/>
-  <Category Name="dialog_ai" HighPass="500"/>
-  <Category Name="explos" HighPass="500"/>
-  <Category Name="hud_suit" HighPass="500"/>
-  <Category Name="key_events" HighPass="500"/>
-  <Category Name="master" HighPass="500"/>
+  <Category Name="1st_fire" HighPass="350" Volume="0.5"/>
+  <Category Name="1st_pers" HighPass="350" Volume="0.5"/>
+  <Category Name="1st_weapon_foley" HighPass="350" Volume="0.5"/>
+  <Category Name="3rd_pers" HighPass="350"/>
+  <Category Name="3rd_weapon" HighPass="350"/>
+  <Category Name="3rd_weapon_explos" HighPass="350"/>
+  <Category Name="alien" HighPass="350" Volume="0.5"/>
+  <Category Name="amb" HighPass="350" Volume="0.5"/>
+  <Category Name="coll_foot_phy_ai" HighPass="350"/>
+  <Category Name="collision" HighPass="350" Volume="0.5"/>
+  <Category Name="dialog_ai" HighPass="350"/>
+  <Category Name="explos" HighPass="350"/>
+  <Category Name="hud_suit" HighPass="350"/>
+  <Category Name="key_events" HighPass="350"/>
+  <Category Name="master" HighPass="350"/>
   <Category Name="menu_sounds"/>
-  <Category Name="mission_dialog" HighPass="500"/>
+  <Category Name="mission_dialog" HighPass="350"/>
   <Category Name="music"/>
-  <Category Name="other" HighPass="500"/>
-  <Category Name="phy_alien_veh" HighPass="500"/>
-  <Category Name="phys_lots" HighPass="500"/>
-  <Category Name="player_foley" HighPass="500"/>
-  <Category Name="ricco" HighPass="500"/>
+  <Category Name="other" HighPass="350"/>
+  <Category Name="phy_alien_veh" HighPass="350"/>
+  <Category Name="phys_lots" HighPass="350"/>
+  <Category Name="player_foley" HighPass="350"/>
+  <Category Name="ricco" HighPass="350"/>
   <Category Name="ricco_alien" />
-  <Category Name="veh_ext" HighPass="500"/>
-  <Category Name="veh_run" HighPass="500"/>
-  <Category Name="veh_special" HighPass="500"/>
-  <Category Name="vehicle_sounds" HighPass="500"/>
+  <Category Name="veh_ext" HighPass="350"/>
+  <Category Name="veh_run" HighPass="350"/>
+  <Category Name="veh_special" HighPass="350"/>
+  <Category Name="vehicle_sounds" HighPass="350"/>
  </Mood>
  <Mood Name="explosion" Priority="50" MusicVolume="0.80000001">
   <Category Name="1st_fire" LowPass="2500"/>
@@ -483,7 +483,7 @@
   <Category Name="1st_fire"/>
   <Category Name="1st_pers"/>
   <Category Name="1st_weapon_foley"/>
-  <Category Name="3rd_pers" LowPass="600"/>
+  <Category Name="3rd_pers"/>
   <Category Name="3rd_weapon"/>
   <Category Name="3rd_weapon_explos"/>
   <Category Name="alien"/>

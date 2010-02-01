@@ -307,7 +307,7 @@
 				<param name="zoom_in_time" value="0.115" />
 				<param name="zoom_out_time" value="0.115" />
 				<stages>
-					<stage value="1.4" />
+					<stage value="1.25" />
 				</stages>
 			</zoom>
 			<!--<zoomSway>

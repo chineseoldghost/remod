@@ -16,5 +16,5 @@ These are instructions on how to get neutral builds of Remod. *Consider this unp
 
 ===Requirements for Remod===
 
- # Crysis Wars with patch 1.5 installed
- # Visual C++ 2008 Redistributable. This is included in the Remod\Bin32\ folder.
+ * Crysis Wars with patch 1.5 installed
+ * Visual C++ 2008 Redistributable. This is included in the Remod\Bin32\ folder.

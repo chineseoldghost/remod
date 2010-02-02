@@ -293,10 +293,9 @@ Remod
 23=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_asv.xml
 24=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AVMachinegun.xml
 25=Game\Languages\game_text_messages.xml
-26=..\..\..\..\..\..\Users\CHARLI~1\AppData\Local\Temp\Rar$DI02.439\InstantAction.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
+Selected=Game\Scripts\GameRules\InstantAction.lua
 [Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml]
 TopLine=310
 Caret=24,310
@@ -364,8 +363,8 @@ Caret=43,375
 TopLine=1
 Caret=33,23
 [Game\Scripts\GameRules\InstantAction.lua]
-TopLine=727
-Caret=17,745
+TopLine=967
+Caret=51,991
 [Game\Scripts\Entities\Vehicles\Implementations\Xml\US_asv.xml]
 TopLine=483
 Caret=25,483
@@ -375,6 +374,3 @@ Caret=1,1
 [Game\Languages\game_text_messages.xml]
 TopLine=5756
 Caret=57,5774
-[..\..\..\..\..\..\Users\CHARLI~1\AppData\Local\Temp\Rar$DI02.439\InstantAction.lua]
-TopLine=958
-Caret=35,999

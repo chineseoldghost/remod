@@ -734,7 +734,7 @@ BasicActorParams =
 			
 			k_air_control = 0.35,
 			
-			max_vel_ground = 32,
+			max_vel_ground = 200,
 			
 			min_slide_angle = 35.0,
 			max_climb_angle = 45.0,

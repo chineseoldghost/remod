@@ -2736,7 +2736,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">mp_Tutgl</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">A grenade launcher that attaches to the SCAR-L and the FY71.  </Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">A grenade launcher that attaches to the SCAR and the FY71.  </Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="7" ss:StyleID="s21"><Data ss:Type="String">HUD</Data><NamedCell
@@ -3208,7 +3208,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">mp_Tutbullet</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">A rifle cartridge designed for the SCAR-L containing 40 bullets.</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">A rifle cartridge designed for the SCAR containing 40 bullets.</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="7" ss:StyleID="s21"><Data ss:Type="String">HUD</Data><NamedCell
@@ -3450,7 +3450,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">mp_eSCAR</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">SCAR-L</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">SCAR</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="7" ss:StyleID="s21"><Data ss:Type="String">HUD</Data><NamedCell
@@ -3483,7 +3483,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">mp_eGauss</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">GK8 Gauss</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">Gauss</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="7" ss:StyleID="s21"><Data ss:Type="String">HUD</Data><NamedCell
@@ -4001,7 +4001,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">mp_eBullet</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">40x SCAR-L Bullet</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">40x SCAR Bullet</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="7" ss:StyleID="s21"><Data ss:Type="String">HUD</Data><NamedCell
@@ -5744,7 +5744,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">LAM</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">LASER POINTER (PISTOL)</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">LASER POINTER</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell
@@ -5753,7 +5753,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">LAMFlashlight</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">FLASHLIGHT (PISTOL)</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">FLASHLIGHT</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell
@@ -5762,7 +5762,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">LAMRifle</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">LASER POINTER (RIFLE)</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">LASER POINTER</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell
@@ -5771,7 +5771,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">LAMRifleFlashlight</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">FLASHLIGHT (RIFLE)</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">FLASHLIGHT</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell
@@ -5816,7 +5816,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">SCARNormalAmmo</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">SCAR-L NORMAL AMMO</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">SCAR NORMAL AMMO</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell
@@ -5825,7 +5825,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">SCARIncendiaryAmmo</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">SCAR-L INCENDIARY AMMO</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">SCAR INCENDIARY AMMO</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell
@@ -5942,7 +5942,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">bullet</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">SCAR-L AMMO</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">SCAR AMMO</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell
@@ -6158,7 +6158,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">GaussRifle</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">GK8 GAUSS</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">GAUSS RIFLE</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell
@@ -6185,7 +6185,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">SCAR</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">SCAR-L</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">SCAR</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell
@@ -6194,7 +6194,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">SCARTutorial</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">SCAR-L</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">SCAR</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell
@@ -6203,7 +6203,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">Shotgun</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">TACTICAL SHOTGUN</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">SHOTGUN</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell
@@ -6212,7 +6212,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">SMG</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">MPX8 SUBMACHINE GUN</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">SMG</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell

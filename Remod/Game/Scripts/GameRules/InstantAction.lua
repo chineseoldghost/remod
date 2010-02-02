@@ -969,7 +969,7 @@ end
 ----------------------------------------------------------------------------------------------------
 -- how much damage does 1 point of energy absorbs?
 function InstantAction:GetEnergyAbsorptionValue(player)
-	return 1/4.5; -- Remod, default is 1/1.5
+	return 1/4.8; -- Remod, default is 1/1.5
 end
 
 

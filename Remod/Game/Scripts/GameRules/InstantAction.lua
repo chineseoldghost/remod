@@ -742,7 +742,7 @@ function InstantAction:SetupPlayer(player)
 		empgrenade=1,
 		scargrenade=5,
 		rocket=3,
-		sniperbullet=10*4,
+		sniperbullet=5*4,
 		tacbullet=5*4,
 		tagbullet=10,
 		gaussbullet=5*4,
@@ -969,7 +969,7 @@ end
 ----------------------------------------------------------------------------------------------------
 -- how much damage does 1 point of energy absorbs?
 function InstantAction:GetEnergyAbsorptionValue(player)
-	return 1/4.8; -- Remod, default is 1/1.5
+	return 1/1; -- Remod, default is 1/1.5
 end
 
 

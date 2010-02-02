@@ -216,7 +216,7 @@
 				<param name="attack" 			value="5" />
 				<param name="decay" 			value="0.33" />
 				<param name="maxx" 				value="10" />
-				<param name="maxy" 				value="10" />
+				<param name="maxy" 				value="5" />
 				<param name="randomness" 	value="4.0" />
 				<param name="recoil_prone_m" value="0.25" />
 				<param name="recoil_crouch_m" value="0.5" />

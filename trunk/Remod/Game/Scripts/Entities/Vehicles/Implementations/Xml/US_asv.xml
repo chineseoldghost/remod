@@ -480,7 +480,7 @@
     <SeatAction class="Weapons">
      <Weapons>
       <Weapons>
-       <Weapon class="AHMachinegun" part="cannon" id="idWeapon">
+       <Weapon class="AVMachinegun" part="cannon" id="idWeapon">
         <Helpers>
          <Helper value="TurretPos"/>
         </Helpers>

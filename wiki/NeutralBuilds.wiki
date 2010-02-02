@@ -9,7 +9,7 @@ These are instructions on how to get neutral builds of Remod. *Consider this unp
  # Follow the installation process. Don't be put off by the required system restart; it's required.
  # Create a Remod folder in your Crysis Wars\Mods folder. If you have no Mods folder, create it.
  # Right-click the Remod folder you made and choose SVN Checkout.
- # You'll be greeted with a dialog. In the top input box, enter/paste http://remod.googlecode.com/svn/trunk/Remod and click OK. Make sure Fully Recursive is selected in the dropdown menu and HEAD Revision is ticked. Hit OK and let it download.
+ # You'll be greeted with a dialog. In the top input box, enter/paste http://remod.googlecode.com/svn/trunk/Remod and click OK. Make sure Fully Recursive is selected in the dropdown menu and HEAD Revision is ticked. Hit OK and let it download; the initial download will be 100+ MB.
  # Update your working copy by right-clicking your Remod folder and choosing SVN Update. Do this before launching Remod, always.
  # Aside from the usual ways, you can launch Remod through the Play Remod shortcut in the Remod folder.
 

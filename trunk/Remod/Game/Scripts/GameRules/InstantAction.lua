@@ -984,7 +984,7 @@ function InstantAction:GetDamageAbsorption(player, hit)
 	if(nanoSuitMode == 3) then -- armor mode
 		local currentSuitEnergy = player.actor:GetNanoSuitEnergy();
 		-- Reduce energy based on damage. The left over will be reduced from the health.
-		local suitEnergyLeft = currentSuitEnergy - (hit.damage*2.5); -- armor energy is 25% weaker than health
+		local suitEnergyLeft = currentSuitEnergy - (hit.damage*4.2); -- armor energy is 25% weaker than health
 		local absorption = 0.0;
 		if (suitEnergyLeft < 0.0) then
 			player.actor:SetNanoSuitEnergy(0);

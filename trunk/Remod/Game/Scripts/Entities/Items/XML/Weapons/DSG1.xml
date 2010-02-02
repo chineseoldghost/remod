@@ -17,7 +17,7 @@
 	</params>
 	<ai_descriptor handler="instant_single" signal_on_shoot="1"/>
 	<ammos>
-		<ammo name="sniperbullet" extra="20" amount="10" />
+		<ammo name="sniperbullet" extra="20" amount="5" />
 	</ammos>
 	<geometry>
 		<firstperson name="objects/weapons/us/sniper_dsg1/sniper_dsg1_fp.chr" angles="0,0,0"/>
@@ -164,7 +164,7 @@
 				<param name="ammo_type" value="sniperbullet" />
 				<param name="hit_type" value="ht_SniperBullet" />
 				<param name="rate" value="20" />
-				<param name="clip_size" value="10" />
+				<param name="clip_size" value="5" />
 				<param name="bullet_chamber" value="1" />
 				<param name="damage" value="150" />
 				<param name="reload_time" value="1.8" />

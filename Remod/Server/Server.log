@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(02 Feb 2010) Time(18 13 00)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(02 Feb 2010) Time(18 27 02)"  -- used by backup system
  
-Log Started at Tuesday, February 02, 2010 18:13:00
+Log Started at Tuesday, February 02, 2010 18:27:02
 Running 32 bit version
 Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.289603 MHz
+CPU Speed (estimated): 1997.279987 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.277967 MHz
+CPU Speed (estimated): 1997.270316 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -40,8 +40,8 @@ System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 18:13:00 02/02/10, system running for 253 minutes
-1521MB physical memory installed, 917MB available, 2047MB virtual memory installed, 39 percent of memory in use
+Local time is 18:27:03 02/02/10, system running for 267 minutes
+1521MB physical memory installed, 1012MB available, 2047MB virtual memory installed, 33 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
@@ -92,62 +92,64 @@ Initializing AI System
     $3r_VegetationSpritesTexRes = $6128 $5[]$4
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
-    $3sv_gamerules = $6PowerStruggle $5[]$4
-[net 17:13:01.297] network hostname: iMac7
-[net 17:13:01.339]   ip:192.168.0.192
-[net 17:13:01.339]   ip:5.182.209.7
------------------------------------------------------
-*LOADING: Level multiplayer/ps/Mesa loading time: 9.76 seconds
------------------------------------------------------
     $3sv_gamerules = $6InstantAction $5[]$4
+[net 17:27:04.201] network hostname: iMac7
+[net 17:27:04.204]   ip:192.168.0.192
+[net 17:27:04.204]   ip:5.182.209.7
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/Terminal loading time: 2.05 seconds
+*LOADING: Level multiplayer/ia/terminal loading time: 4.10 seconds
 -----------------------------------------------------
 CHAT Blablah to ALL:
-   k, c'mere
+   arm shots :<
+CHAT TheBusDriver to ALL:
+   wow
+CHAT Blablah to ALL:
+   say when
+CHAT TheBusDriver to ALL:
+   definitely faster :P
+CHAT Blablah to ALL:
+   not much of a difference is it?
+CHAT TheBusDriver to ALL:
+   shoot me once
+CHAT TheBusDriver to ALL:
+   well yeh it subtracts 18 now
+CHAT Blablah to ALL:
+   and in smode?
+CHAT TheBusDriver to ALL:
+   it was 10 before
+CHAT TheBusDriver to ALL:
+   -14 health
+CHAT Blablah to ALL:
+   let's see how fast you die in smod
+CHAT Blablah to ALL:
+   e
 CHAT Blablah to ALL:
    hmm
-[net 17:15:30.195] Disconnect 85-220-11-153.dsl.dynamic.simnet.is:63439; profid=161429488; cause=19; msg='Remote disconnected: User left the game'
 CHAT Blablah to ALL:
-   c'mere again, lol
-CHAT Blablah to ALL:
-   i won't shoot you like that now
-CHAT Blablah to ALL:
-   take your fists
+   i still think it's really weird
 CHAT TheBusDriver to ALL:
-   10 per shot
+   why?
 CHAT Blablah to ALL:
-   urgh, fuck
+   well, go armor again, lol
 CHAT Blablah to ALL:
-   it's confusing
+   i'm gonna kill you again
 CHAT Blablah to ALL:
-   i don't think it changed
+   why can't there just be a variable
 CHAT Blablah to ALL:
-   i turned it all the way from 4.8 to 1
+   like the fall damage one
 CHAT Blablah to ALL:
-   let's see if it affected fall damage
-CHAT Shadez to ALL:
-   hm
-CHAT Blablah to ALL:
-   okay
-CHAT Blablah to ALL:
-   that definitely changed
-CHAT TheBusDriver to ALL:
-   hm
-CHAT Blablah to ALL:
-   right
+   :|
 CHAT Blablah to ALL:
    well
 CHAT Blablah to ALL:
-   time to try the next function i suppose
-[net 17:17:34.307] Disconnect iMac7.telenet.be:59978; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:59978'
+   dinner is ready here
+CHAT Blablah to ALL:
+   i'll crank that up some more
 CHAT TheBusDriver to ALL:
-   which one did you change?
-CHAT Shadez to ALL:
-   lol wtf
-CHAT Shadez to ALL:
-   he left
-CHAT TheBusDriver to ALL:
-   yeh i know
-[net 17:18:05.044] Disconnect 188-23-166-28.adsl.highway.telekom.at:51849; profid=116638254; cause=19; msg='Remote disconnected: User left the game'
-[net 17:19:57.646] Disconnect 85-220-11-153.dsl.dynamic.simnet.is:63695; profid=161429488; cause=0; msg='Timeout occurred; no packet for 31.7 seconds'
+   kk
+CHAT Blablah to ALL:
+   to like 5 or 6
+CHAT Blablah to ALL:
+   and we can see what happens
+[net 17:32:27.103] Disconnect iMac7.telenet.be:62976; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:62976'
+System:Quit

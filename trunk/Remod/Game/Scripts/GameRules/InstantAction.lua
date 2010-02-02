@@ -967,9 +967,10 @@ function InstantAction:OnLeaveVehicleSeat(vehicle, seat, passengerId, exiting)
 end
 
 ----------------------------------------------------------------------------------------------------
--- how much damage does 1 point of energy absorbs?
+-- This is not for PVP damage, but for fall damage!
+-- How much damage does 1 point of energy absorbs?
 function InstantAction:GetEnergyAbsorptionValue(player)
-	return 1/1; -- Remod, default is 1/1.5
+	return 1/2; -- Remod, default is 1/1.5
 end
 
 
@@ -983,11 +984,11 @@ function InstantAction:GetDamageAbsorption(player, hit)
 	if(nanoSuitMode == 3) then -- armor mode
 		local currentSuitEnergy = player.actor:GetNanoSuitEnergy();
 		-- Reduce energy based on damage. The left over will be reduced from the health.
-		local suitEnergyLeft = currentSuitEnergy - (hit.damage*1.4); -- armor energy is 25% weaker than health
+		local suitEnergyLeft = currentSuitEnergy - (hit.damage*2.5); -- armor energy is 25% weaker than health
 		local absorption = 0.0;
 		if (suitEnergyLeft < 0.0) then
 			player.actor:SetNanoSuitEnergy(0);
-			absorption = 1 + suitEnergyLeft/(hit.damage*1.4);
+			absorption = 1 + suitEnergyLeft/(hit.damage*4.2);
 		else
 			player.actor:SetNanoSuitEnergy(suitEnergyLeft);
 			absorption = 1;

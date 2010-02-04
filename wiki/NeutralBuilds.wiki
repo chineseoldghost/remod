@@ -2,6 +2,10 @@
 
 _"In software development, a neutral build is a build that reflects the current state of the source code checked into the source code version control system by the developers, but without any developer-specific changes."_
 
+===Requirements for Remod===
+ * Crysis Wars with patch 1.5 installed
+ * Visual C++ 2008 Redistributable. This is included in the Remod\Bin32\ folder.
+
 ===Instructions===
 These are instructions on how to get neutral builds of Remod. Tests are planned on the Crymod IRC until I start organizing "official" tests.
 
@@ -12,7 +16,3 @@ These are instructions on how to get neutral builds of Remod. Tests are planned 
  # You'll be greeted with a dialog. In the top input box, enter/paste http://remod.googlecode.com/svn/trunk/Remod and click OK. Make sure Fully Recursive is selected in the dropdown menu and HEAD Revision is ticked. Hit OK and let it download; the initial download will be 100+ MB.
  # Update your working copy by right-clicking your Remod folder and choosing SVN Update. Do this before launching Remod, always.
  # Aside from the usual ways, you can launch Remod through the Play Remod shortcut in the Remod folder.
-
-===Requirements for Remod===
- * Crysis Wars with patch 1.5 installed
- * Visual C++ 2008 Redistributable. This is included in the Remod\Bin32\ folder.

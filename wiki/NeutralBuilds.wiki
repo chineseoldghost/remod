@@ -3,7 +3,7 @@
 _"In software development, a neutral build is a build that reflects the current state of the source code checked into the source code version control system by the developers, but without any developer-specific changes."_
 
 ===Instructions===
-These are instructions on how to get neutral builds of Remod. *Consider this unprepared and unplanned, thus no support for issues is provided.* Tests are planned on the Crymod IRC until I start organizing "official" tests.
+These are instructions on how to get neutral builds of Remod. Tests are planned on the Crymod IRC until I start organizing "official" tests.
 
  # Download TortoiseSVN for your system at http://tortoisesvn.net/downloads.
  # Follow the installation process. Don't be put off by the required system restart; it's required.

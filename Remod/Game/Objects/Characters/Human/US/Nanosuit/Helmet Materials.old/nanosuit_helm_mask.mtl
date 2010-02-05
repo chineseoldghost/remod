@@ -1,6 +1,6 @@
 <Material MtlFlags="256">
  <SubMaterials>
-  <Material Name="Helmet" MtlFlags="128" Shader="Cloth" GenMask="268435712" SurfaceType="mat_kevlar" Diffuse="0.30000001,0.30000001,0.30000001" Specular="6.5,6.5,6.5" Emissive="0,0,0" Shininess="1" Opacity="1">
+  <Material Name="Helmet" MtlFlags="128" Shader="Cloth" GenMask="268435712" SurfaceType="mat_kevlar" Diffuse="0.29803923,0.29803923,0.29803923" Specular="6.5,6.5,6.5" Emissive="0,0,0" Shininess="1" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="objects/characters/human/us/nanosuit/nanosuit_helm _mask_strength.dds" Filter="7">
      <TexMod />
@@ -8,16 +8,20 @@
     <Texture Map="Specular" File="objects/characters/human/us/nanosuit/nanosuit_helm _mask_spec.tif" Filter="7">
      <TexMod />
     </Texture>
-    <Texture Map="Normalmap" File="objects/characters/human/us/nanosuit/nanosuit_helm _mask_ddn.tif" Filter="7" Amount="50">
-     <TexMod />
-    </Texture>
-    <Texture Map="Environment" File="textures/cubemaps/camera_river_cubemap.dds" TexType="3">
+    <Texture Map="Normalmap" File="objects/characters/human/us/nanosuit/nanosuit_helm _mask_ddn.dds">
      <TexMod />
     </Texture>
    </Textures>
    <PublicParams AnimFrequency="0" AnimAmplitudeWav0="0" AnimAmplitudeWav2="0" AnimPhase="1" AnisotropicShape="0.25" DiffuseExponent="0.30000001" FuzzynessSmoothness="1.1" FuzzynessStrength="1.75" FuzzynessSpread="1.65" FuzzynessSaturation="1" SpecularMultiplier="0.029999999"/>
+   <MaterialLayers>
+    <Layer Name="FrozenLayerWip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="0.5" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
   </Material>
-  <Material Name="Glasses" MtlFlags="128" Shader="Metal" GenMask="268435472" SurfaceType="" Diffuse="0.17647059,0,0.019607844" Specular="0.050980397,0.050980397,0.050980397" Emissive="0,0,0" Shininess="20" Opacity="1" GlowAmount="10">
+  <Material Name="Glasses" MtlFlags="128" Shader="Metal" GenMask="268435472" SurfaceType="" Diffuse="0.17647059,0,0.019607844" Specular="0.17647059,0.17647059,0.15686275" Emissive="0,0,0" Shininess="20" Opacity="1" GlowAmount="15">
    <Textures>
     <Texture Map="Diffuse" File="objects/characters/human/us/nanosuit/nanosuit_helm _glasses_mask.tif">
      <TexMod />
@@ -29,7 +33,14 @@
      <TexMod />
     </Texture>
    </Textures>
-   <PublicParams SpecularMultiplier="0.1" Glossiness="0.94999999" ReflectionAmount="10" FresnelBias="0.1" FresnelScale="3"/>
+   <PublicParams SpecularMultiplier="0" Glossiness="0.94999999" ReflectionAmount="4" FresnelBias="0.07" FresnelScale="2.5"/>
+   <MaterialLayers>
+    <Layer Name="FrozenLayerWip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="0.5" TintColor="1,1,1"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
   </Material>
  </SubMaterials>
  <PublicParams AmbientMultiplier="1"/>

@@ -7,6 +7,8 @@ Subversion, or SVN, allows developers to keep a copy of their project on a serve
 
 This is ideal for testing a mod like Remod as I don't need to upload a whole install for every test and you don't need to download it every time.
 
+When I feel the time is ripe, an installer will be available.
+
 ===Requirements for Remod===
  * Crysis Wars with patch 1.5 installed
  * Visual C++ 2008 Redistributable. This is included in the Remod\Bin32\ folder.

@@ -194,8 +194,7 @@ PowerStruggle.ppList=
 	SUICIDE							= 0,
 	TEAMKILL						= -50,
 	
-	REPAIR							= 1/5, -- points/per damage repaired
-
+	--REPAIR							= 1/5, -- Points/damage repaired.
 	LOCKPICK						= 75,
 	DISARM							= 50,
 	TAG_ENEMY						= 5,

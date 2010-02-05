@@ -294,9 +294,14 @@ Remod
 24=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_asv.xml
 25=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AVMachinegun.xml
 26=Game\Languages\game_text_messages.xml
+27=Game\Scripts\GameRules\PowerStruggleBuying.lua
+28=Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_aaa.xml
+29=Game\Scripts\GameRules\PowerStruggleRank.lua
+30=Game\Scripts\GameRules\PowerStruggle.lua
+31=Game\Scripts\Entities\actor\BasicActor.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\GameRules\InstantAction.lua
+Selected=Game\Scripts\Entities\actor\BasicActor.lua
 [New1.txt]
 TopLine=1
 Caret=1,1
@@ -368,7 +373,7 @@ TopLine=1
 Caret=33,23
 [Game\Scripts\GameRules\InstantAction.lua]
 TopLine=967
-Caret=51,991
+Caret=4,983
 [Game\Scripts\Entities\Vehicles\Implementations\Xml\US_asv.xml]
 TopLine=483
 Caret=25,483
@@ -378,3 +383,18 @@ Caret=1,1
 [Game\Languages\game_text_messages.xml]
 TopLine=5756
 Caret=57,5774
+[Game\Scripts\GameRules\PowerStruggleBuying.lua]
+TopLine=175
+Caret=4,197
+[Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_aaa.xml]
+TopLine=305
+Caret=1,1
+[Game\Scripts\GameRules\PowerStruggleRank.lua]
+TopLine=11
+Caret=2,16
+[Game\Scripts\GameRules\PowerStruggle.lua]
+TopLine=11
+Caret=38,39
+[Game\Scripts\Entities\actor\BasicActor.lua]
+TopLine=2764
+Caret=5,2784

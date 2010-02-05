@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(02 Feb 2010) Time(18 27 02)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(02 Feb 2010) Time(19 03 42)"  -- used by backup system
  
-Log Started at Tuesday, February 02, 2010 18:27:02
+Log Started at Tuesday, February 02, 2010 19:03:42
 Running 32 bit version
 Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.279987 MHz
+CPU Speed (estimated): 1997.275250 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.270316 MHz
+CPU Speed (estimated): 1997.281419 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -40,8 +40,8 @@ System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 18:27:03 02/02/10, system running for 267 minutes
-1521MB physical memory installed, 1012MB available, 2047MB virtual memory installed, 33 percent of memory in use
+Local time is 19:03:42 02/02/10, system running for 303 minutes
+1521MB physical memory installed, 905MB available, 2047MB virtual memory installed, 40 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
@@ -93,63 +93,299 @@ Initializing AI System
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
     $3sv_gamerules = $6InstantAction $5[]$4
-[net 17:27:04.201] network hostname: iMac7
-[net 17:27:04.204]   ip:192.168.0.192
-[net 17:27:04.204]   ip:5.182.209.7
+[net 18:03:43.735] network hostname: iMac7
+[net 18:03:43.739]   ip:192.168.0.192
+[net 18:03:43.739]   ip:5.182.209.7
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/terminal loading time: 4.10 seconds
+*LOADING: Level multiplayer/ia/terminal loading time: 4.35 seconds
 -----------------------------------------------------
 CHAT Blablah to ALL:
-   arm shots :<
+   come to me
+CHAT Blablah to ALL:
+   but don't kill please
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   i'm gonna kill you now :D
+CHAT Shadez to ALL:
+   uhh
+CHAT Blablah to ALL:
+   ah, that was fast
+CHAT Blablah to ALL:
+   k, come back?
+CHAT Blablah to ALL:
+   gotta test how much damage en and hp take now
+CHAT Shadez to ALL:
+   wait
+CHAT Blablah to ALL:
+   i won't kill you now
+CHAT Shadez to ALL:
+   k now
+CHAT Blablah to ALL:
+   switch to your fists
+CHAT Blablah to ALL:
+   k, just tell me how much you lose
+CHAT Shadez to ALL:
+   ?
+CHAT Shadez to ALL:
+   70
+CHAT Blablah to ALL:
+   70en left?
+CHAT Shadez to ALL:
+   well shield went to 70
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   now switch to smode
+CHAT Blablah to ALL:
+   how much hp?
+CHAT Shadez to ALL:
+   shoot again
+CHAT Shadez to ALL:
+   86
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   evan's gonna hate me for this
+CHAT Blablah to ALL:
+   :D
+CHAT Blablah to ALL:
+   we can playtest this if you want
+CHAT Shadez to ALL:
+   lol lag of death
+CHAT Blablah to ALL:
+   i'll just rape your guys twice as fast though :P
+CHAT Blablah to ALL:
+   gonna turn off other apps
 CHAT TheBusDriver to ALL:
-   wow
-CHAT Blablah to ALL:
-   say when
+   blah you should restore vanilla crysis vehicle handling cuz i cant seem
 CHAT TheBusDriver to ALL:
-   definitely faster :P
+    to drift anymore
 CHAT Blablah to ALL:
-   not much of a difference is it?
+   k
+CHAT Shadez to ALL:
+   wtf?
+CHAT Shadez to ALL:
+   its like you have amp demage
+CHAT Blablah to ALL:
+   nice
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   LOL
+CHAT Shadez to ALL:
+   ni9ce
+CHAT Shadez to ALL:
+   is it just me or is smg melee damage uber fail
+CHAT Shadez to ALL:
+   ?!
+CHAT Shadez to ALL:
+   didne even see you shoot
+CHAT Blablah to ALL:
+   that's possible
+CHAT Blablah to ALL:
+   that hurts, haha
+CHAT Shadez to ALL:
+   LOL
+CHAT Shadez to ALL:
+   i hate how customize weap is in the ring stuff
 CHAT TheBusDriver to ALL:
-   shoot me once
+   press c?
+CHAT Blablah to ALL:
+   you get used to it
+CHAT Shadez to ALL:
+   no
+    $3g_suitCloakEnergyDrainAdjuster = $62 $5[]$4
+CHAT Blablah to ALL:
+   oooh damn
+CHAT Blablah to ALL:
+   right in my head
+CHAT sunnlok to ALL:
+   yeah 700 gigs of lolcats fnished!!!!oneelevn
+CHAT Blablah to ALL:
+   *face
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   win
+CHAT Shadez to ALL:
+   OMG
+CHAT Blablah to ALL:
+   LOL
+CHAT Shadez to ALL:
+   AWESOME
+CHAT Blablah to ALL:
+   ?
+CHAT Shadez to ALL:
+   i sniped you with ironsights
+CHAT Blablah to ALL:
+   i remember in the beta i raped that way
+CHAT Blablah to ALL:
+   the skill faded though :(
+CHAT sunnlok to ALL:
+   yeah of course
+CHAT Blablah to ALL:
+   nice
+CHAT Blablah to ALL:
+   lolwut
+CHAT Blablah to ALL:
+   rad
+CHAT Shadez to ALL:
+   fuuuuuu
+CHAT Blablah to ALL:
+   LMAO
+CHAT revange to ALL:
+   lol
+CHAT sunnlok to ALL:
+   lawl
+CHAT revange to ALL:
+   g2g dinner awaits
+CHAT Blablah to ALL:
+   k
+CHAT Shadez to ALL:
+   k
+CHAT Shadez to ALL:
+   ughh
+CHAT Blablah to ALL:
+   ah, memories
+CHAT Shadez to ALL:
+   tbd stop raping cars
+[net 18:36:04.673] Disconnect d51A561C8.access.telenet.be:63920; profid=186555686; cause=0; msg='Timeout occurred; no packet for 31.6 seconds'
+CHAT Blablah to ALL:
+   well, he is a busdriver
 CHAT TheBusDriver to ALL:
-   well yeh it subtracts 18 now
-CHAT Blablah to ALL:
-   and in smode?
+   i'm too stupid for this game :P
+CHAT Shadez to ALL:
+   me 2
 CHAT TheBusDriver to ALL:
-   it was 10 before
+   71% damage regardless of where you hit the car is a bit much
+CHAT Blablah to ALL:
+   :S
+CHAT Blablah to ALL:
+   oh, from the gauss?
+CHAT Blablah to ALL:
+   I was like "OH SHIT", LOL
+CHAT Shadez to ALL:
+   lol
+CHAT Shadez to ALL:
+   fuuuccccckkk
+CHAT Blablah to ALL:
+   urgh, silent car
+CHAT Blablah to ALL:
+   ouch
+CHAT Blablah to ALL:
+   so do you guys like this?
+CHAT Shadez to ALL:
+   i guess
+CHAT Blablah to ALL:
+   can say no
 CHAT TheBusDriver to ALL:
-   -14 health
-CHAT Blablah to ALL:
-   let's see how fast you die in smod
-CHAT Blablah to ALL:
-   e
-CHAT Blablah to ALL:
-   hmm
-CHAT Blablah to ALL:
-   i still think it's really weird
+   i never liked crysis mp in the first place (powerstruggle was acceptabl
 CHAT TheBusDriver to ALL:
-   why?
-CHAT Blablah to ALL:
-   well, go armor again, lol
-CHAT Blablah to ALL:
-   i'm gonna kill you again
-CHAT Blablah to ALL:
-   why can't there just be a variable
-CHAT Blablah to ALL:
-   like the fall damage one
-CHAT Blablah to ALL:
-   :|
-CHAT Blablah to ALL:
-   well
-CHAT Blablah to ALL:
-   dinner is ready here
-CHAT Blablah to ALL:
-   i'll crank that up some more
+   e)
+CHAT Shadez to ALL:
+   i kindof agree tbd
+CHAT Shadez to ALL:
+   suit doesnt really.. uh work too well for mp
+CHAT Shadez to ALL:
+   crysis is fun for killing stupid koreans
 CHAT TheBusDriver to ALL:
-   kk
+   there seems to be a trick to killing people i don't know
 CHAT Blablah to ALL:
-   to like 5 or 6
+   it's only when you get forced to take an effort that it becomes sucky
 CHAT Blablah to ALL:
-   and we can see what happens
-[net 17:32:27.103] Disconnect iMac7.telenet.be:62976; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:62976'
+   aim
+CHAT Blablah to ALL:
+   use a gauss
+CHAT Shadez to ALL:
+   >.>
+CHAT TheBusDriver to ALL:
+   k you can't have a gun that is able to oneshot vehicles it doesn't work
+CHAT Shadez to ALL:
+   getting kinda boring
+CHAT Blablah to ALL:
+   it only one-shots silly vehicles
+CHAT Blablah to ALL:
+   and only in the engine
+CHAT TheBusDriver to ALL:
+   it's still unacceptable
+CHAT sunnlok to ALL:
+   nah it was his face
+CHAT Blablah to ALL:
+   just don't take a car when you KNOW there's a gauss out there
+CHAT Blablah to ALL:
+   watching you
+CHAT sunnlok to ALL:
+   se
+CHAT Blablah to ALL:
+   ready to pop you in the engine
+CHAT TheBusDriver to ALL:
+   there's a gauss on every map -.-
+CHAT Blablah to ALL:
+   so stop the enemy from getting it
+CHAT TheBusDriver to ALL:
+   teh enemy already has it ;)
+CHAT Blablah to ALL:
+   so kill him
+CHAT TheBusDriver to ALL:
+   can't
+CHAT Blablah to ALL:
+   try harder
+CHAT Blablah to ALL:
+   lulz glass makes the cloak visible
+CHAT Blablah to ALL:
+   voila
+CHAT Shadez to ALL:
+   ugh
+CHAT Shadez to ALL:
+   dinner kinda
+CHAT Shadez to ALL:
+   might came back
+CHAT Shadez to ALL:
+   come*
+CHAT Shadez to ALL:
+   cya for now
+CHAT Blablah to ALL:
+   ?
+CHAT Blablah to ALL:
+   oh, bye
+[net 18:48:59.070] Disconnect 85-220-11-153.dsl.dynamic.simnet.is:62160; profid=161429488; cause=0; msg='Timeout occurred; no packet for 31.3 seconds'
+CHAT Blablah to ALL:
+   what did he say?
+CHAT Blablah to ALL:
+   wtf
+CHAT sunnlok to ALL:
+   i was like afk
+CHAT Blablah to ALL:
+   really?
+CHAT sunnlok to ALL:
+   was like afk gain
+CHAT Blablah to ALL:
+   really?
+CHAT sunnlok to ALL:
+   yeah but i cant write it fast
+CHAT Blablah to ALL:
+   thanks
+CHAT Blablah to ALL:
+   Admirable shot.
+CHAT Blablah to ALL:
+   nasty lagspike
+CHAT sunnlok to ALL:
+   lawl connection interupted
+CHAT Blablah to ALL:
+   lulz
+CHAT Blablah to ALL:
+   that's how you kill people
+CHAT TheBusDriver to ALL:
+   meh gtg dinner 
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   enjoy
+[net 19:02:59.039] Disconnect 188-23-166-28.adsl.highway.telekom.at:51331; profid=116638254; cause=19; msg='Remote disconnected: User left the game'
+CHAT Blablah to ALL:
+   i'm gonna go too then
+[net 19:03:06.129] Disconnect iMac7.telenet.be:57570; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:57570'
+[net 19:03:55.145] Disconnect blfd-5d82275e.pool.mediaWays.net:63698; profid=98074264; cause=0; msg='Timeout occurred; no packet for 31.5 seconds'
+** Server: Derp. **
 System:Quit

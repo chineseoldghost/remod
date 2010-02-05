@@ -26,14 +26,16 @@ PowerStruggle.rankList=
 
 PowerStruggle.cpList=
 {
-	KILL									= 2,
-	KILL_RANKDIFF_MULT		= 1,
-	TURRETKILL						= 0,
-	REPAIR								= 0,
-	LOCKPICK							= 1,
-	CAPTURE								= 3,
-	BUYVEHICLE						= 0,
-	TAG_ENEMY							= 0,	--TODO once design is confirmed
+	KILL                        = 2,
+	KILL_RANKDIFF_MULT          = 1,
+	TURRETKILL                  = 0,
+	REPAIR                      = 0,
+	LOCKPICK                    = 1,
+	CAPTURE                     = 3,
+	BUYVEHICLE						 = 0,
+	TAG_ENEMY						 = 0,	--TODO once design is confirmed
+   TEAMKILL                    = -2
+   MELEE                       = 5
 
 	VEHICLE_KILL_MIN			= 0,
 	VEHICLE_KILL_MULT			= 0,
@@ -41,7 +43,7 @@ PowerStruggle.cpList=
 	--DISARM                = 5,
 	--ATTACKING_FACILITY        = 5,
 	--DEFENDING_FACILITY        = 5,
-	--KILLING_TAC_WEAPON_BEARER = 3,
+	KILLING_TAC_WEAPON_BEARER = 30,
 };
 
 

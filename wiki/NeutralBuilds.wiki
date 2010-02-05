@@ -2,6 +2,11 @@
 
 _"In software development, a neutral build is a build that reflects the current state of the source code checked into the source code version control system by the developers, but without any developer-specific changes."_
 
+==What Is/Why SVN?==
+Subversion, or SVN, allows developers to keep a copy of their project on a server (an SVN Repository), from which others can download it, without having to re-upload the entire project every time changes are made. SVN tracks what files are changed and uploads/downloads only those files, as well as offer the ability to compare files from your local (working) copy with those on the server, and various other features for developers.
+
+This is ideal for testing a mod like Remod as I don't need to upload a whole install for every test and you don't need to download it every time.
+
 ===Requirements for Remod===
  * Crysis Wars with patch 1.5 installed
  * Visual C++ 2008 Redistributable. This is included in the Remod\Bin32\ folder.

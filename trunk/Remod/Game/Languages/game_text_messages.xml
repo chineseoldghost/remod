@@ -987,7 +987,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_TeamInstantAction</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">TEAM INSTANT ACTION</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">TEAM DEATHMATCH</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="DateTime">2008-04-23T16:35:51.000</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -8833,7 +8833,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_menu_MAPDETAILS_IA</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">MAP SETTINGS (INSTANT ACTION)</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">MAP SETTINGS (DEATHMATCH)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">UI</Data><NamedCell
@@ -15327,7 +15327,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_DEATHMATCH</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">INSTANT ACTION</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">DEATHMATCH</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">UI</Data><NamedCell
@@ -15732,7 +15732,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_rules_InstantAction</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">Instant Action</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">Deathmatch</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">UI</Data><NamedCell
@@ -18614,7 +18614,7 @@
    <Row>
     <Cell ss:Index="2" ss:StyleID="s36"><Data ss:Type="String">ui_menu_MAPDETAILS_TIA</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">MAP SETTINGS (TEAM INSTANT ACTION)</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">MAP SETTINGS (TEAMDM)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="DateTime">2008-06-25T12:15:54.000</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -18634,7 +18634,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_TeamDeathMatch</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">TEAMIA</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">TEAMDM</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="DateTime">2008-07-15T15:21:06.000</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -18644,7 +18644,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_rules_TeamInstantAction</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">TeamIA</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">TEAMDM</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="DateTime">2008-07-15T15:21:34.000</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -18654,7 +18654,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_menu_MAPDETAILS_TA</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">MAP SETTINGS (TIACTION)</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">MAP SETTINGS (TEAMDM)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="DateTime">2008-07-15T15:21:43.000</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>

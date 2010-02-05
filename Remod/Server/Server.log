@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(05 Feb 2010) Time(14 26 02)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(05 Feb 2010) Time(16 48 23)"  -- used by backup system
  
-Log Started at Friday, February 05, 2010 14:26:02
+Log Started at Friday, February 05, 2010 16:48:23
 Running 32 bit version
 Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.271035 MHz
+CPU Speed (estimated): 1997.285849 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.280080 MHz
+CPU Speed (estimated): 1997.280099 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -40,8 +40,8 @@ System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 14:26:02 02/05/10, system running for 65 minutes
-1521MB physical memory installed, 881MB available, 2047MB virtual memory installed, 42 percent of memory in use
+Local time is 16:48:23 02/05/10, system running for 207 minutes
+1521MB physical memory installed, 703MB available, 2047MB virtual memory installed, 53 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
@@ -69,6 +69,7 @@ Initializing AI System
 [GameProfiles]: Successfully activated profile 'Blablah' for user 'Charlie the Unicorn'
     $3sv_servername = $6Blablah's Server $5[DUMPTODISK]$4
     $3sv_password = $6 $5[DUMPTODISK]$4
+    $3net_enable_voice_chat = $61 $5[]$4
     $3sv_cheatprotection = $60 $5[]$4
     $3sv_maxplayers = $616 $5[DUMPTODISK]$4
     $3g_roundlimit = $63 $5[]$4
@@ -93,17 +94,944 @@ Initializing AI System
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
     $3sv_gamerules = $6InstantAction $5[]$4
-[net 13:26:03.415] network hostname: iMac7
-[net 13:26:03.418]   ip:192.168.0.192
-[net 13:26:03.418]   ip:5.182.209.7
+[net 15:48:24.337] network hostname: iMac7
+[net 15:48:24.340]   ip:192.168.0.192
+[net 15:48:24.340]   ip:5.182.209.7
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/terminal loading time: 6.71 seconds
------------------------------------------------------
------------------------------------------------------
-*LOADING: Level multiplayer/ia/Quarry loading time: 1.62 seconds
+*LOADING: Level multiplayer/ia/terminal loading time: 7.02 seconds
 -----------------------------------------------------
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/Stranded loading time: 1.30 seconds
+*LOADING: Level multiplayer/ia/Stranded loading time: 1.40 seconds
 -----------------------------------------------------
-[net 13:33:54.590] Disconnect iMac7.telenet.be:53170; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:53170'
+CHAT Diogo+{B.O.S}+ to ALL:
+   wtf
+** Server: Penis **
+CHAT Diogo+{B.O.S}+ to ALL:
+   wait
+** Server: PENIS PENIS PENIS **
+CHAT revange to ALL:
+   d_wolf?
+CHAT Diogo+{B.O.S}+ to ALL:
+   yeah
+** Server: Yeah it's D_wolf **
+** Server: I AM GOOOOOOD **
+CHAT Diogo+{B.O.S}+ to ALL:
+   ok lest see whats this all about... no kill
+** Server: I'll be there in a minute myself **
+CHAT revange to ALL:
+   for some reason stranded's shader are fucked up on my pc
+** Server: Might be because you played Wars and it has to recompile the Remod shaders **
+CHAT revange to ALL:
+   the bg trees
+** Server: Are you guys reading this? **
+CHAT Diogo+{B.O.S}+ to ALL:
+   yeah
+** Server: Sweet **
+CHAT Diogo+{B.O.S}+ to ALL:
+   lol no damage from gauss
+CHAT Diogo+{B.O.S}+ to ALL:
+   hey wtf this mod has got textures problems
+CHAT revange to ALL:
+   did i hit you?
+CHAT Diogo+{B.O.S}+ to ALL:
+   eyah
+** Server: I'm on my way now. **
+CHAT Diogo+{B.O.S}+ to ALL:
+   can only carry 1 wep?
+CHAT revange to ALL:
+   eah
+CHAT Diogo+{B.O.S}+ to ALL:
+   that sucks
+CHAT revange to ALL:
+   more tactical
+CHAT Diogo+{B.O.S}+ to ALL:
+   nah
+CHAT revange to ALL:
+   but stil 2 weps would be cool
+CHAT Diogo+{B.O.S}+ to ALL:
+   And graphics have been reduced!
+** Server: That's just my server settings, probably **
+CHAT revange to ALL:
+   yeah no gauss dam
+** Server: The graphics should actually be a tiny bit better because of the Warhead shaders. **
+CHAT Diogo+{B.O.S}+ to ALL:
+   no crosshair
+CHAT revange to ALL:
+   i always played without crosshair
+CHAT Diogo+{B.O.S}+ to ALL:
+   slower underwater
+CHAT Blablah to ALL:
+   Hai
+CHAT Diogo+{B.O.S}+ to ALL:
+   hi
+CHAT revange to ALL:
+   yo
+CHAT revange to ALL:
+   one bug
+CHAT Blablah to ALL:
+   hm?
+CHAT Diogo+{B.O.S}+ to ALL:
+   ALOT OF BUGS!
+CHAT revange to ALL:
+   no gauss damage
+CHAT Blablah to ALL:
+   no gauss damage?
+CHAT Diogo+{B.O.S}+ to ALL:
+   yeah
+CHAT Blablah to ALL:
+   brb, gonna check
+CHAT Blablah to ALL:
+   It should do damage
+CHAT Diogo+{B.O.S}+ to ALL:
+   why reduced graphics quality?!!!!
+CHAT Blablah to ALL:
+   I told you it's my server settings
+CHAT Diogo+{B.O.S}+ to ALL:
+   ooh ok
+CHAT Blablah to ALL:
+   I host it myself
+CHAT Diogo+{B.O.S}+ to ALL:
+   it does now
+CHAT Blablah to ALL:
+   no gauss damage, you say
+CHAT Blablah to ALL:
+   :P
+CHAT Diogo+{B.O.S}+ to ALL:
+   WHY ONLY CARRY 1 WEP?!"""""
+CHAT Blablah to ALL:
+   because it makes you choose what you're gonna use
+CHAT Diogo+{B.O.S}+ to ALL:
+   sucks
+CHAT Blablah to ALL:
+   and it prevents lame switching in the middle of a fight
+CHAT Diogo+{B.O.S}+ to ALL:
+   why no crosshair?!
+CHAT Blablah to ALL:
+   various reasons
+CHAT Blablah to ALL:
+   partially because of the LAM
+CHAT Diogo+{B.O.S}+ to ALL:
+   sucks
+CHAT Blablah to ALL:
+   and partially because crosshairs are lame
+CHAT Diogo+{B.O.S}+ to ALL:
+   FGL dmage and all explosive weapoins need to have higher damage!
+CHAT Blablah to ALL:
+   no they don't
+CHAT Blablah to ALL:
+   FGL does lots of damage
+CHAT Diogo+{B.O.S}+ to ALL:
+   looks unreal
+CHAT Blablah to ALL:
+   what looks unreal?
+CHAT Diogo+{B.O.S}+ to ALL:
+   explosive weapons damage
+CHAT Blablah to ALL:
+   crysis != realism
+CHAT Diogo+{B.O.S}+ to ALL:
+   omg this mod needs some modding :P
+CHAT Blablah to ALL:
+   you've been playing for a max of 10 minutes
+CHAT Diogo+{B.O.S}+ to ALL:
+   and I have seen about 100 problems
+CHAT Blablah to ALL:
+   not really, you're just a little shaken up by the change
+CHAT Diogo+{B.O.S}+ to ALL:
+   :( this sucks
+CHAT Blablah to ALL:
+   dude, look at yourself
+CHAT Blablah to ALL:
+   you've been playing for less than 10 minutes and you've already got a d
+CHAT Blablah to ALL:
+   rastic verdict
+CHAT Blablah to ALL:
+   thanks
+CHAT Blablah to ALL:
+   lol
+CHAT Diogo+{B.O.S}+ to ALL:
+   1 shot kill?
+CHAT Blablah to ALL:
+   you're blaming yourself for it ;)
+CHAT Diogo+{B.O.S}+ to ALL:
+   SEE!
+CHAT Blablah to ALL:
+   when you speed at me, you lose energy
+CHAT Blablah to ALL:
+   consider your energy
+CHAT Diogo+{B.O.S}+ to ALL:
+   explosives aren't modded! mod them to high dmage!
+CHAT Blablah to ALL:
+   this isn't wars where you just run at someone like a headless chicken
+CHAT Blablah to ALL:
+   they are
+CHAT Diogo+{B.O.S}+ to ALL:
+   they aren't enought
+CHAT Blablah to ALL:
+   just aim
+CHAT Diogo+{B.O.S}+ to ALL:
+   omg
+CHAT Diogo+{B.O.S}+ to ALL:
+   damn palms
+CHAT Blablah to ALL:
+   headshots :P
+CHAT Diogo+{B.O.S}+ to ALL:
+   nah...
+CHAT Blablah to ALL:
+   nah?
+CHAT Diogo+{B.O.S}+ to ALL:
+   hehe
+CHAT Diogo+{B.O.S}+ to ALL:
+   I prefer Crysis Wars
+CHAT Blablah to ALL:
+   please, play some more before you start judging it so dramatically
+CHAT Diogo+{B.O.S}+ to ALL:
+   eating :)
+CHAT Blablah to ALL:
+   you're walking into a shop and immediately deeming every product in it 
+CHAT Blablah to ALL:
+   shit
+CHAT Diogo+{B.O.S}+ to ALL:
+   lest make tests
+CHAT Blablah to ALL:
+   k
+CHAT Diogo+{B.O.S}+ to ALL:
+   what damage did it made?
+CHAT Blablah to ALL:
+   i didn't really look at the number
+CHAT Blablah to ALL:
+   i thought you were just gonna watch me fly
+CHAT Diogo+{B.O.S}+ to ALL:
+   Put gauss damage 1 shot kill everypart of the body like in Crysis 1
+CHAT Blablah to ALL:
+   i had it like that
+CHAT Blablah to ALL:
+   it was lame
+CHAT Diogo+{B.O.S}+ to ALL:
+   then 1 shot kill head and torso
+CHAT Blablah to ALL:
+   it is to the head
+CHAT Blablah to ALL:
+   it's just a much more powerful sniper
+CHAT Diogo+{B.O.S}+ to ALL:
+   had torso to
+CHAT Blablah to ALL:
+   that's also good at short range
+CHAT Blablah to ALL:
+   and medium range for that matter
+CHAT Diogo+{B.O.S}+ to ALL:
+   and didyou mod vehicles damage?
+CHAT revange to ALL:
+   brb dinner
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   some
+CHAT Blablah to ALL:
+   not done with those yet
+CHAT Diogo+{B.O.S}+ to ALL:
+   change map?
+CHAT Blablah to ALL:
+   if you want
+CHAT Diogo+{B.O.S}+ to ALL:
+   ps
+CHAT Blablah to ALL:
+   PS is a little bugged atm
+CHAT Blablah to ALL:
+   well
+[net 16:18:58.416] Disconnect d51A561C8.access.telenet.be:51296; profid=186555686; cause=0; msg='Timeout occurred; no packet for 31.7 seconds'
+CHAT Blablah to ALL:
+   you won't get spawn prestige when you rank up
+CHAT Diogo+{B.O.S}+ to ALL:
+   oooh  a TIA with vhicles then
+-----------------------------------------------------
+*LOADING: Level multiplayer/ia/Battleground loading time: 6.21 seconds
+-----------------------------------------------------
+CHAT Blablah to ALL:
+   the vehicles that have damage changed are the suv, ltvs, icv and apc
+CHAT Blablah to ALL:
+   IIRC
+CHAT Diogo+{B.O.S}+ to ALL:
+   ok
+CHAT Blablah to ALL:
+   the asv as well
+CHAT Diogo+{B.O.S}+ to ALL:
+   vtol?
+CHAT Blablah to ALL:
+   yeah it's modded but the damages aren't changed yet
+CHAT Blablah to ALL:
+   get in my vtol
+CHAT Diogo+{B.O.S}+ to ALL:
+   lol vehicle doesn't shot
+CHAT Diogo+{B.O.S}+ to ALL:
+   look at ths
+CHAT Diogo+{B.O.S}+ to ALL:
+   get in it... doesn't shot
+CHAT Diogo+{B.O.S}+ to ALL:
+   OOOH!
+CHAT Blablah to ALL:
+   ;)
+CHAT Diogo+{B.O.S}+ to ALL:
+   2nd seat
+CHAT Diogo+{B.O.S}+ to ALL:
+   COOL
+CHAT Blablah to ALL:
+   this has guided rockets now :P
+CHAT Blablah to ALL:
+   but only for the gunner
+CHAT Diogo+{B.O.S}+ to ALL:
+   cool
+CHAT Blablah to ALL:
+   ydamn
+CHAT Diogo+{B.O.S}+ to ALL:
+   LAW withhomming missils?
+CHAT Blablah to ALL:
+   yeah, but only in team-based modes for now
+CHAT Blablah to ALL:
+   i need to fix it so it works in IA too
+CHAT Diogo+{B.O.S}+ to ALL:
+   lol I can enter your vtol?
+CHAT Blablah to ALL:
+   yeh?
+CHAT Diogo+{B.O.S}+ to ALL:
+   lol
+CHAT Blablah to ALL:
+   you can change your view as a gunner too, btw :)
+CHAT Diogo+{B.O.S}+ to ALL:
+   COOL gunner
+CHAT Blablah to ALL:
+   just to have a proper look around
+CHAT Diogo+{B.O.S}+ to ALL:
+   ... put crosshair...
+CHAT Blablah to ALL:
+   yeah, i will
+CHAT Blablah to ALL:
+   when i figure out vehicle HUDs
+CHAT Diogo+{B.O.S}+ to ALL:
+   no amo
+CHAT Blablah to ALL:
+   let it explode
+CHAT Blablah to ALL:
+   oh
+CHAT Blablah to ALL:
+   lol
+CHAT Diogo+{B.O.S}+ to ALL:
+   vtol gunner with missils isn't a good idea...
+CHAT Blablah to ALL:
+   why not?
+CHAT Diogo+{B.O.S}+ to ALL:
+   because out side it shows a minigun
+CHAT Blablah to ALL:
+   i know
+CHAT Blablah to ALL:
+   i know i can get rid of it somehow, i just haven't figured out how to y
+CHAT Diogo+{B.O.S}+ to ALL:
+   and planes usually have that type of weapon then missils
+CHAT Blablah to ALL:
+   et :/
+CHAT Blablah to ALL:
+   it fits gameplay-wise though
+CHAT Blablah to ALL:
+   it had a gattling gun first
+CHAT Blablah to ALL:
+   but that was lame and overpowered
+CHAT Diogo+{B.O.S}+ to ALL:
+   OOOH NO YOU CHANGED VTOL CONTROLS?
+CHAT Blablah to ALL:
+   it just doesn't strafe much anymore
+CHAT Diogo+{B.O.S}+ to ALL:
+   this sucks
+CHAT Blablah to ALL:
+   you know what that says about you when you say that
+CHAT Diogo+{B.O.S}+ to ALL:
+   see I crash
+CHAT Blablah to ALL:
+   that's because you can't fly :P
+CHAT Diogo+{B.O.S}+ to ALL:
+   OMG
+CHAT Diogo+{B.O.S}+ to ALL:
+   PUT CONTROLS BACK TO NORMAL
+CHAT Blablah to ALL:
+   no
+CHAT Diogo+{B.O.S}+ to ALL:
+   its harder then battlefield
+CHAT Blablah to ALL:
+   oh, yeah, the heli controls are fucked up atm
+CHAT Diogo+{B.O.S}+ to ALL:
+   omg
+CHAT Blablah to ALL:
+   it's hardly touched
+CHAT Blablah to ALL:
+   just don't use the heli for now because it's hard as fuck to aim
+CHAT Diogo+{B.O.S}+ to ALL:
+   no third person view on apc
+CHAT Blablah to ALL:
+   probably only temporary
+CHAT Blablah to ALL:
+   it's because third person on tanks poses a lot of issues
+CHAT Diogo+{B.O.S}+ to ALL:
+   omg the speed sucks
+CHAT Blablah to ALL:
+   drive, horsey, drive
+CHAT Diogo+{B.O.S}+ to ALL:
+   don't change controls and that shit only damage
+CHAT Blablah to ALL:
+   nope
+CHAT Blablah to ALL:
+   i'm changing controls alll the way
+CHAT Diogo+{B.O.S}+ to ALL:
+   this mod needs MUCH MORE WORK
+CHAT Blablah to ALL:
+   it's actually called handling, too
+CHAT Blablah to ALL:
+   how old are you?
+CHAT Diogo+{B.O.S}+ to ALL:
+   THANKS ARE SO SLOW = UNREALISTIC
+CHAT Diogo+{B.O.S}+ to ALL:
+   15
+CHAT Blablah to ALL:
+   crysis and realism don't go well
+CHAT Diogo+{B.O.S}+ to ALL:
+   WTF VTOLS DON'T BLOW UP WITH 1 GAUSS SHOT?
+CHAT Blablah to ALL:
+   i had em realistic at one point, but it sucked
+CHAT Blablah to ALL:
+   OMGWTF111!!12121oneoneeleven
+CHAT Diogo+{B.O.S}+ to ALL:
+   mmmmmmmmh
+CHAT Diogo+{B.O.S}+ to ALL:
+   this fails
+CHAT Blablah to ALL:
+   are you absolutely positive it's not just you?
+CHAT Diogo+{B.O.S}+ to ALL:
+   huh?
+CHAT Blablah to ALL:
+   are you sure it's not just you?
+CHAT Diogo+{B.O.S}+ to ALL:
+   no
+CHAT Blablah to ALL:
+   what's your reasoning then?
+CHAT Diogo+{B.O.S}+ to ALL:
+   alot of them
+CHAT Blablah to ALL:
+   tell me
+CHAT Blablah to ALL:
+   why this fails
+CHAT Diogo+{B.O.S}+ to ALL:
+   I did
+CHAT Blablah to ALL:
+   and why it's a logical reason and not just yours
+CHAT Blablah to ALL:
+   i missed it then, so please, do explain again
+CHAT Diogo+{B.O.S}+ to ALL:
+   ??
+CHAT Diogo+{B.O.S}+ to ALL:
+   I will when we get back to IRC
+CHAT Blablah to ALL:
+   alright
+CHAT Diogo+{B.O.S}+ to ALL:
+   I like this vtol door :)
+CHAT Blablah to ALL:
+   hmhmm
+CHAT Diogo+{B.O.S}+ to ALL:
+   I don't like handeling... put it back to normal?
+CHAT Blablah to ALL:
+   i won't
+CHAT Blablah to ALL:
+   for balance reasons
+CHAT Diogo+{B.O.S}+ to ALL:
+   then forget this mod :)
+CHAT Blablah to ALL:
+   i won't do that either
+CHAT Blablah to ALL:
+   sorry but you're making such a fool of yourself it's kinda funny
+CHAT Blablah to ALL:
+   unless you can tell me why it's bad, it's entirely you who doesn't like
+CHAT Blablah to ALL:
+    it
+CHAT Diogo+{B.O.S}+ to ALL:
+   I just don't like how things are in this mod... its my opinnion now go 
+CHAT Diogo+{B.O.S}+ to ALL:
+   ask others
+CHAT Blablah to ALL:
+   i know
+CHAT Blablah to ALL:
+   that's fine
+CHAT Blablah to ALL:
+   but you don't say "i don't like this because..."
+CHAT Diogo+{B.O.S}+ to ALL:
+   some are cool but some really suck in my opinnion
+CHAT Blablah to ALL:
+   all that's coming out is "THIS SUCKS11!&&11oneeleven" etc etc
+CHAT Diogo+{B.O.S}+ to ALL:
+   then I will give you reasons...
+CHAT Blablah to ALL:
+   great
+CHAT Diogo+{B.O.S}+ to ALL:
+   now I gotta remember what
+CHAT Diogo+{B.O.S}+ to ALL:
+   vehicle's handeling sucks because its harder to drive and speed is unre
+CHAT Diogo+{B.O.S}+ to ALL:
+   alistic
+CHAT Blablah to ALL:
+   okay, but that's still entirely your own opinion of it
+CHAT Blablah to ALL:
+   why do you think i made it harder?
+CHAT Diogo+{B.O.S}+ to ALL:
+   I don't know
+CHAT Blablah to ALL:
+   okay, so you just don't like it
+CHAT Blablah to ALL:
+   probably because you're not used to it
+CHAT Diogo+{B.O.S}+ to ALL:
+   no And I gave you a reaso
+CHAT Blablah to ALL:
+   no you did not
+CHAT Blablah to ALL:
+   a reason would be likes
+CHAT Diogo+{B.O.S}+ to ALL:
+   I did ... wtf
+CHAT Blablah to ALL:
+   "the vehicles are too slow, it will tip the balance towards infantry"
+CHAT Blablah to ALL:
+   which isn't the case here, but it's an example
+CHAT Diogo+{B.O.S}+ to ALL:
+   nvm...
+CHAT Blablah to ALL:
+   okay
+CHAT Diogo+{B.O.S}+ to ALL:
+   sucks...
+CHAT Blablah to ALL:
+   still without reason
+CHAT Diogo+{B.O.S}+ to ALL:
+   :)
+CHAT Diogo+{B.O.S}+ to ALL:
+   no
+CHAT Blablah to ALL:
+   so tell me your reasoning
+CHAT Diogo+{B.O.S}+ to ALL:
+   I did -.-
+CHAT Blablah to ALL:
+   no you didn't
+CHAT Blablah to ALL:
+   you said why YOU dont like it
+CHAT Blablah to ALL:
+   you didn't say why IT sucks
+CHAT Diogo+{B.O.S}+ to ALL:
+   Exlposions should take more damage and the radius should be bigger beca
+CHAT Blablah to ALL:
+   phone
+CHAT Diogo+{B.O.S}+ to ALL:
+   use its more realistic
+CHAT Blablah to ALL:
+   okay
+CHAT Blablah to ALL:
+   back
+CHAT Diogo+{B.O.S}+ to ALL:
+   now I gotta write again -.-
+CHAT Blablah to ALL:
+   wait, no
+CHAT Diogo+{B.O.S}+ to ALL:
+   ok
+CHAT Blablah to ALL:
+   i'll alt-tab to check it on my dedicated server
+CHAT Diogo+{B.O.S}+ to ALL:
+   ok good
+CHAT Blablah to ALL:
+   okay, i already read that before anyway
+CHAT Blablah to ALL:
+   but
+CHAT Blablah to ALL:
+   ask yourself "why?" before you make a statement about something being o
+CHAT Blablah to ALL:
+   ff
+CHAT Diogo+{B.O.S}+ to ALL:
+   sniper animation should be removed because... it makes harder to aim ne
+CHAT Blablah to ALL:
+   there's an actual reason for the explosions being the way they are
+CHAT Diogo+{B.O.S}+ to ALL:
+   xt target and sometimes to unzoom and runwaya
+CHAT Blablah to ALL:
+   you mean the zoomsway?
+CHAT Blablah to ALL:
+   oh you mean the zooming in animation?
+CHAT Diogo+{B.O.S}+ to ALL:
+   the realoding anim
+CHAT Blablah to ALL:
+   oh the cocking anim
+CHAT Blablah to ALL:
+   okay, but i don't think you asked yourself why again
+CHAT Diogo+{B.O.S}+ to ALL:
+   I DID OMG
+CHAT Diogo+{B.O.S}+ to ALL:
+   Can't you read?
+CHAT Blablah to ALL:
+   but why do you think i did it?
+CHAT Diogo+{B.O.S}+ to ALL:
+   you tell me
+CHAT Blablah to ALL:
+   balance reasons, makes it a tiny bit more difficult
+CHAT Diogo+{B.O.S}+ to ALL:
+   -.-
+CHAT Blablah to ALL:
+   you probably think from the mentality that everything has to be the bes
+CHAT Blablah to ALL:
+   t
+CHAT Diogo+{B.O.S}+ to ALL:
+   weapons should be more stable! WE ARE IN 2022 FFS even today's weapons 
+CHAT Diogo+{B.O.S}+ to ALL:
+   are more acurate
+CHAT Blablah to ALL:
+   i had them realistic at one point
+CHAT Blablah to ALL:
+   it didn't work well
+CHAT Blablah to ALL:
+   it's not a realistic game
+CHAT Diogo+{B.O.S}+ to ALL:
+   -.-
+CHAT Blablah to ALL:
+   FYI, bullet speeds are realistic
+CHAT Diogo+{B.O.S}+ to ALL:
+   Crysis 1 was
+CHAT Blablah to ALL:
+   no it wasn't
+CHAT Diogo+{B.O.S}+ to ALL:
+   it was
+CHAT Blablah to ALL:
+   not really
+CHAT Diogo+{B.O.S}+ to ALL:
+   omg
+CHAT Blablah to ALL:
+   ?
+CHAT Diogo+{B.O.S}+ to ALL:
+   just get this fixed
+CHAT Blablah to ALL:
+   no
+CHAT Blablah to ALL:
+   you're only bitching because YOU dont like it
+CHAT Diogo+{B.O.S}+ to ALL:
+   tthe mod = fixed
+CHAT Blablah to ALL:
+   not why IT effectively sucks
+CHAT Diogo+{B.O.S}+ to ALL:
+   then ok
+CHAT Blablah to ALL:
+   now if you'd say "this is good, but i don't like it" the "i don't like 
+CHAT Blablah to ALL:
+   it part" is actually mature and credible
+CHAT Diogo+{B.O.S}+ to ALL:
+   Vtol back door is good.... ICV gun is good
+CHAT Blablah to ALL:
+   when you say "this sucks BECAUSE i don't like it"... not so much
+CHAT Diogo+{B.O.S}+ to ALL:
+   sniper damage is good
+CHAT Diogo+{B.O.S}+ to ALL:
+   gauss damage 100% damage in torso and head
+CHAT Blablah to ALL:
+   you're still only speaking from what YOU want
+CHAT Diogo+{B.O.S}+ to ALL:
+   exactly
+CHAT Blablah to ALL:
+   would making the gauss an insta-kill everywhere make the game better?
+CHAT Diogo+{B.O.S}+ to ALL:
+   OMG TANKS SPEED LOOKS LIKE A JOKE HAHAHAHAHA
+CHAT Blablah to ALL:
+   no. it would cause it to be overpowered
+CHAT Diogo+{B.O.S}+ to ALL:
+   ahhaha
+CHAT Diogo+{B.O.S}+ to ALL:
+   joke speed
+CHAT Blablah to ALL:
+   i think you're forgetting the ones and elevens
+CHAT Blablah to ALL:
+   i haven't touched tank handling yet
+CHAT Blablah to ALL:
+   it's just got a different massbox from the default
+CHAT Blablah to ALL:
+   and no boost, obviously
+CHAT Diogo+{B.O.S}+ to ALL:
+   that sucks
+CHAT Blablah to ALL:
+   i'll have to make em faster eventually to compensate for the loss of bo
+CHAT Blablah to ALL:
+   ost
+CHAT Diogo+{B.O.S}+ to ALL:
+   why no boost?
+CHAT Blablah to ALL:
+   because it had no disadvantages
+CHAT Blablah to ALL:
+   there's no reason not to boost
+CHAT Diogo+{B.O.S}+ to ALL:
+   omg
+CHAT Blablah to ALL:
+   + it completely voided any vehicle disadvantages
+CHAT Diogo+{B.O.S}+ to ALL:
+   This game looks like... idk somethigng never seen before
+CHAT Blablah to ALL:
+   eeh phone
+CHAT Blablah to ALL:
+   it's my birthday so lots of calls :P
+CHAT Diogo+{B.O.S}+ to ALL:
+   eheh
+CHAT Blablah to ALL:
+   did you hear that by any chance?
+CHAT Diogo+{B.O.S}+ to ALL:
+   I did but didn't understand
+CHAT Blablah to ALL:
+   i just said dun dun dun, but i suppose the quality was too shitty?
+CHAT Diogo+{B.O.S}+ to ALL:
+   It was better a little   say it again
+CHAT Diogo+{B.O.S}+ to ALL:
+   yeah good
+CHAT Blablah to ALL:
+   random dunns
+CHAT Blablah to ALL:
+   lmao
+CHAT Blablah to ALL:
+   cool
+CHAT Diogo+{B.O.S}+ to ALL:
+   Say "I am going to make this mod cooler"
+CHAT Diogo+{B.O.S}+ to ALL:
+   wtf why?
+CHAT Diogo+{B.O.S}+ to ALL:
+   YAAAAY
+CHAT Diogo+{B.O.S}+ to ALL:
+   If you get all of this working 100% will you had some new models?
+CHAT Diogo+{B.O.S}+ to ALL:
+   what~?
+CHAT Blablah to ALL:
+   why should i add new models?
+CHAT Diogo+{B.O.S}+ to ALL:
+   attracts more people
+CHAT Blablah to ALL:
+   yeah but it won't make the game better
+CHAT Blablah to ALL:
+   boost started working for some reason :<
+CHAT Diogo+{B.O.S}+ to ALL:
+   you never know
+CHAT Diogo+{B.O.S}+ to ALL:
+   LOL CHUTE
+CHAT Blablah to ALL:
+   sexy eh?
+CHAT Diogo+{B.O.S}+ to ALL:
+   yeah lol
+CHAT Diogo+{B.O.S}+ to ALL:
+   do you know Aegis?
+CHAT Blablah to ALL:
+   yeah
+CHAT Diogo+{B.O.S}+ to ALL:
+   Why don't you guys work together to make a nice mod?
+CHAT Blablah to ALL:
+   because he doesn't make nice mods, really
+CHAT Diogo+{B.O.S}+ to ALL:
+   I know :P True
+CHAT Blablah to ALL:
+   he nicely illustrated that with the community patch
+CHAT Diogo+{B.O.S}+ to ALL:
+   yeah I really don't like it
+CHAT Blablah to ALL:
+   by turning it into... something...
+CHAT Blablah to ALL:
+   lmao
+CHAT Diogo+{B.O.S}+ to ALL:
+   ok if you say yes :D
+CHAT Blablah to ALL:
+   :P
+CHAT Diogo+{B.O.S}+ to ALL:
+   This mod is cool but needs fixing :)
+CHAT Blablah to ALL:
+   you just want me to throw sprinkles on it
+CHAT Diogo+{B.O.S}+ to ALL:
+   can you increase explosions radius?
+CHAT Blablah to ALL:
+   if just i knew flash, i would revamp the HUD
+CHAT Blablah to ALL:
+   yeah
+CHAT Diogo+{B.O.S}+ to ALL:
+   awiy
+CHAT Diogo+{B.O.S}+ to ALL:
+   wait
+CHAT Diogo+{B.O.S}+ to ALL:
+   look
+CHAT Diogo+{B.O.S}+ to ALL:
+   you hitted me but no damage
+CHAT Blablah to ALL:
+   i missed you
+CHAT Blablah to ALL:
+   that hurt
+CHAT Blablah to ALL:
+   69hp left
+CHAT Diogo+{B.O.S}+ to ALL:
+   oooh ok
+CHAT Blablah to ALL:
+   21hp :<
+CHAT Blablah to ALL:
+   the gauss is ridiculously powerful in combination with other things
+CHAT Diogo+{B.O.S}+ to ALL:
+   let me see what happens if I hit balls
+CHAT Blablah to ALL:
+   see?
+CHAT Blablah to ALL:
+   just hitting the chest and then meleeing in armor works, even
+CHAT Blablah to ALL:
+   and it's pretty team-work oriented, you know
+CHAT Blablah to ALL:
+   oh and the AAs are totally not done
+CHAT Diogo+{B.O.S}+ to ALL:
+   I know... but who cares  about team work in Crysis Wars? this game its 
+CHAT Diogo+{B.O.S}+ to ALL:
+   not battlefield bad company 2
+CHAT Blablah to ALL:
+   it's not Crysis Wars, lol
+CHAT Diogo+{B.O.S}+ to ALL:
+   LAW 1 shot kill infartary?
+CHAT Blablah to ALL:
+   nope
+CHAT Diogo+{B.O.S}+ to ALL:
+   then its lame
+CHAT Blablah to ALL:
+   fly like a bird baby
+CHAT Diogo+{B.O.S}+ to ALL:
+   lame!!!
+CHAT Blablah to ALL:
+   of course it's not
+CHAT Blablah to ALL:
+   it's an anti-vehicle weapon
+CHAT Diogo+{B.O.S}+ to ALL:
+   That means I can shot you a rocket in real life? you don't care
+CHAT Blablah to ALL:
+   indeed
+CHAT Diogo+{B.O.S}+ to ALL:
+   damn unreal!
+CHAT Blablah to ALL:
+   of course it's unrealisti
+CHAT Blablah to ALL:
+   c
+CHAT Blablah to ALL:
+   it absolutely doesn't go well together with realism
+CHAT Diogo+{B.O.S}+ to ALL:
+   MAKE IT REALISTIC
+CHAT Blablah to ALL:
+   i won't
+CHAT Diogo+{B.O.S}+ to ALL:
+   THEN! :(
+CHAT Blablah to ALL:
+   for that you'd need a realism mod
+CHAT Blablah to ALL:
+   because it would require such extensive changes
+CHAT Diogo+{B.O.S}+ to ALL:
+   no?
+CHAT Blablah to ALL:
+   bye bye super-futuristic nanosuit, you know?
+CHAT Diogo+{B.O.S}+ to ALL:
+   no
+CHAT Blablah to ALL:
+   mostly goodbye strength jumping and sprinting faster in speed
+CHAT Diogo+{B.O.S}+ to ALL:
+   I mean We are in 2010 our weapons today make more damage then Crysis we
+CHAT Diogo+{B.O.S}+ to ALL:
+   apons in 2022
+CHAT Blablah to ALL:
+   that doesn't matter
+CHAT Diogo+{B.O.S}+ to ALL:
+   IT DOES!
+CHAT Blablah to ALL:
+   it's about making it a good game, not a realistic one
+CHAT Diogo+{B.O.S}+ to ALL:
+   ...
+CHAT Blablah to ALL:
+   if i'd want to make a realistic game, i'd make a realism mod
+CHAT Diogo+{B.O.S}+ to ALL:
+   Crysis = realistic graphics and gameplay :)
+CHAT Diogo+{B.O.S}+ to ALL:
+   make it that way
+CHAT Blablah to ALL:
+   i guess you just lost your sense of reality quite badly...
+CHAT Diogo+{B.O.S}+ to ALL:
+   no
+CHAT Blablah to ALL:
+   then why do you think crysis is realistic? lol
+CHAT Diogo+{B.O.S}+ to ALL:
+   do LAWs have homing missils? no
+CHAT Blablah to ALL:
+   it's about as far from realism as a cat is from a turtle
+CHAT Blablah to ALL:
+   SOME thing are realistic
+CHAT Diogo+{B.O.S}+ to ALL:
+   forget it... If I ell you why     its a long history
+CHAT Blablah to ALL:
+   but the entire design philosophy behind it is NOT realistic
+CHAT Blablah to ALL:
+   i'd love to have a realistic crysis mod though
+CHAT Blablah to ALL:
+   but it's a lot of work
+CHAT Diogo+{B.O.S}+ to ALL:
+   nanosuit = 75% unreal weapons = 90% real
+CHAT Blablah to ALL:
+   cry-recon was well on the way, even though it wasn't entirely realistic
+CHAT Blablah to ALL:
+   what? :/
+CHAT Diogo+{B.O.S}+ to ALL:
+   Cryrecon is my favourite mod
+CHAT Blablah to ALL:
+   pity it's dead
+CHAT Diogo+{B.O.S}+ to ALL:
+   I know
+CHAT Diogo+{B.O.S}+ to ALL:
+   Crysis mods never sucsseded
+CHAT Blablah to ALL:
+   because there's no playerbase and the mod support sucks...
+CHAT Diogo+{B.O.S}+ to ALL:
+   I tought cry-recon was going to... but its dead
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   i was really looking forward to it
+CHAT Diogo+{B.O.S}+ to ALL:
+   how nice... good things allways end
+CHAT Diogo+{B.O.S}+ to ALL:
+   btw...
+CHAT Diogo+{B.O.S}+ to ALL:
+   this metter sucks   you can't play tactical with this
+CHAT Blablah to ALL:
+   metter?
+CHAT Blablah to ALL:
+   at the left?
+CHAT Blablah to ALL:
+   minimap?
+CHAT Diogo+{B.O.S}+ to ALL:
+   yeah this bar on minimpa like sp
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   it's experimental
+CHAT Diogo+{B.O.S}+ to ALL:
+   ok
+CHAT Blablah to ALL:
+   it fits in well though, just not at this very moment
+CHAT Blablah to ALL:
+   but when you're actually playing
+CHAT Blablah to ALL:
+   it's ok
+CHAT Diogo+{B.O.S}+ to ALL:
+   Whjen you are running from a player... ooh -.- 
+CHAT Diogo+{B.O.S}+ to ALL:
+   that bar helps
+CHAT Blablah to ALL:
+   i'll probably get rid of it anyway though
+CHAT Diogo+{B.O.S}+ to ALL:
+   good
+CHAT Blablah to ALL:
+   lol @ the flying
+CHAT Diogo+{B.O.S}+ to ALL:
+   I am going back to IRC
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   i was about to say the same
+CHAT Diogo+{B.O.S}+ to ALL:
+   we deiscuss there
+CHAT Diogo+{B.O.S}+ to ALL:
+   discuss*
+[net 17:09:05.204] Disconnect a81-84-122-125.cpe.netcabo.pt:62975; profid=128163756; cause=19; msg='Remote disconnected: User left the game'
+[net 18:07:57.905] Disconnect iMac7.telenet.be:56999; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:56999'
 System:Quit

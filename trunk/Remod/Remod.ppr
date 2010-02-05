@@ -268,9 +268,17 @@ Remod
 		Game\Scripts\Remod.lua
 [Open project files]
 0=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\GaussAAA.xml
+1=Game\Scripts\Entities\actor\player.lua
+2=Game\Scripts\Entities\actor\BasicActor.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\GaussAAA.xml
+Selected=Game\Scripts\Entities\actor\BasicActor.lua
 [Game\Scripts\Entities\Items\XML\Weapons\Vehicles\GaussAAA.xml]
 TopLine=1
 Caret=1,1
+[Game\Scripts\Entities\actor\player.lua]
+TopLine=73
+Caret=19,85
+[Game\Scripts\Entities\actor\BasicActor.lua]
+TopLine=728
+Caret=23,735

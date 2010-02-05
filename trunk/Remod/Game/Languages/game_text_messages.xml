@@ -1236,7 +1236,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_msg_kill_0</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4" ss:StyleID="s29"><Data ss:Type="String">You killed yourself!</Data><NamedCell
+    <Cell ss:Index="4" ss:StyleID="s29"><Data ss:Type="String">You killed yourself.</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="DateTime">2008-04-24T11:21:18.000</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1248,7 +1248,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_msg_kill_1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">You killed yourself! Again!</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">You killed yourself again.</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="DateTime">2008-04-24T11:21:22.000</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1284,7 +1284,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">ui_msg_kill_4</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">%A% team killed you! Again!</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">%A% teamkilled you! Again!</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><Data ss:Type="DateTime">2008-04-24T16:18:42.000</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -5364,7 +5364,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">mp_eSMGBullet</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">50x SMG Bullet</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">50x MPX8 Bullet</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="7" ss:StyleID="s21"><Data ss:Type="String">HUD</Data><NamedCell
@@ -6023,7 +6023,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">smgbullet</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">SMG AMMO</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">MPX8 AMMO</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell
@@ -6212,7 +6212,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">SMG</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">SMG</Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">MPX8</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell
@@ -6311,7 +6311,7 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">game_take_ammo_from</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">TAKE %1 AMMO </Data><NamedCell
+    <Cell ss:Index="4"><Data ss:Type="String">TAKE %1 AMMO</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s24"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="21" ss:StyleID="s26"><Data ss:Type="String">Valid - do not touch</Data><NamedCell

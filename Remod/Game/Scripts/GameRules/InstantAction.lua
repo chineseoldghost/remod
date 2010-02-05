@@ -967,28 +967,27 @@ function InstantAction:OnLeaveVehicleSeat(vehicle, seat, passengerId, exiting)
 end
 
 ----------------------------------------------------------------------------------------------------
--- This is not for PVP damage, but for fall damage!
+-- This is for fall, not PVP, damage.
 -- How much damage does 1 point of energy absorbs?
 function InstantAction:GetEnergyAbsorptionValue(player)
-	return 1/2; -- Remod, default is 1/1.5
+	return 1/2.5; -- Remod, default is 1/1.5
 end
 
 
 ----------------------------------------------------------------------------------------------------
 function InstantAction:GetDamageAbsorption(player, hit)
-	if (hit.damage == 0.0 or hit.type=="punish") then
-		return 0;
+	if (hit.damage == 0.0 or hit.type=="punish") then -- If the damage is 0 or the hit type is of a punishing kind (suicide, kill on TK)...
+		return 0; -- Don't apply damage to target.
 	end;
 
-	local nanoSuitMode = player.actor:GetNanoSuitMode();
-	if(nanoSuitMode == 3) then -- armor mode
-		local currentSuitEnergy = player.actor:GetNanoSuitEnergy();
-		-- Reduce energy based on damage. The left over will be reduced from the health.
-		local suitEnergyLeft = currentSuitEnergy - (hit.damage*4.2); -- armor energy is 25% weaker than health
-		local absorption = 0.0;
+	local nanoSuitMode = player.actor:GetNanoSuitMode(); -- Get the nanosuit mode.
+	if(nanoSuitMode == 3) then -- If the suit mode is Armor mode...
+		local currentSuitEnergy = player.actor:GetNanoSuitEnergy(); -- Get nanosuit energy.
+		local suitEnergyLeft = currentSuitEnergy - (hit.damage*2); -- Reduce energy based on damage; the left over will be reduced from the health.
+		local absorption = 0.0; -- ?
 		if (suitEnergyLeft < 0.0) then
 			player.actor:SetNanoSuitEnergy(0);
-			absorption = 1 + suitEnergyLeft/(hit.damage*4.2);
+			absorption = 1 + suitEnergyLeft/(hit.damage*2);
 		else
 			player.actor:SetNanoSuitEnergy(suitEnergyLeft);
 			absorption = 1;

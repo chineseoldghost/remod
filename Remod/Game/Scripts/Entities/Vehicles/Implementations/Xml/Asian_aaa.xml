@@ -1,4 +1,3 @@
-This line breaks this vehicle.
 <Vehicle name="Asian_aaa" actionMap="landvehicle">
  <Physics pushable="0">
   <Buoyancy waterDensity="150" waterResistance="2500"/>

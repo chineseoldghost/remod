@@ -2780,6 +2780,12 @@ function BasicActor:OnCloaking(state)
 	
 	local stats = self.actorStats;
 	
+   if(state==0)then
+    self:SetFlags(ENTITY_FLAG_CASTSHADOW, 0);
+   else
+    self:SetFlags(ENTITY_FLAG_CASTSHADOW, 2);
+   end
+	
 	if (state~=0) then
 		if (state == 3) then
 			self.camoStartTime = _time;

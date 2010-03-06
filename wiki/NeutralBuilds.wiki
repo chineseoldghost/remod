@@ -18,7 +18,7 @@ These are instructions on how to get neutral builds of Remod. Tests are planned 
 
  # Download TortoiseSVN for your system at http://tortoisesvn.net/downloads.
  # Follow the installation process. Don't be put off by the required system restart; it's required.
- # Create a Remod folder in your Crysis Wars\Mods folder. If you have no Mods folder, create it.
+ # Create a Remod folder in your Crysis Wars\Mods (or C:\Program Files\Steam Powered\steamapps\common\crysis\mods if you have the Steam version) folder. If you have no Mods folder, create it.
  # Right-click the Remod folder you made and choose SVN Checkout.
  # You'll be greeted with a dialog. In the top input box, enter/paste http://remod.googlecode.com/svn/trunk/Remod and click OK. Make sure Fully Recursive is selected in the dropdown menu and HEAD Revision is ticked. Hit OK and let it download; the initial download will be 100+ MB.
  # Update your working copy by right-clicking your Remod folder and choosing SVN Update. Do this before launching Remod, always.

@@ -1,3 +1,5 @@
+Script.ReloadScript( "Scripts/Default/Entities/Others/BasicEntity.lua" );
+
 BreakableObject={
 	Properties = {
 		soclasses_SmartObjectClass = "",
@@ -12,7 +14,7 @@ BreakableObject={
 		rmin = 2.0, -- physics params
 		rmax = 20.5, -- physics params
 		Parts = {
-			bRigidBody = 0,
+			bRigidBody = 1,
 			LifeTime = 20,
 			Density = 100,
 		},
@@ -23,32 +25,32 @@ BreakableObject={
 			nVolume=255,
 		},
 		Physics = {
-			bRigidBody=0, -- True if rigid body.
+			bRigidBody=1, -- True if rigid body.
 			bRigidBodyActive = 1, -- If rigid body is originally created (1) OR will be created only on OnActivate (0).
 			bActivateOnDamage = 0, -- Activate when a rocket hit the entity.
 			bResting = 0, -- If rigid body is originally in resting state.
-			Density = -1,
-			Mass = 700,
+			Density = 5000,
+			Mass = 10,
 			vector_Impulse = {x=0,y=0,z=0}, -- Impulse to apply at event.
 			max_time_step = 0.01,
 			sleep_speed = 0.04,
 			damping = 0,
 			water_damping = 0,
-			water_resistance = 1000,	
+			water_resistance = 1000,
 			water_density = 1000,
 			Type="Unknown",
 			bFixedDamping = 0,
 			HitDamageScale = 0,
 		},
 	},
-	
+
 	bBreakByCar=1,
-	
+
 	dead = 0,
 	deathVector = {x=0,y=0,z=1 },
-	
+
 	isLoading = nil,
-	
+
 	--PHYSICS PARAMS
 --	explosion_params = {
 --		pos = nil,
@@ -96,11 +98,11 @@ function BreakableObject:SetPhysicsProperties()
 	end
 
   local Mass,Density,qual;
-  
- 	Mass    = self.Properties.Physics.Mass; 
+
+ 	Mass    = self.Properties.Physics.Mass;
  	Density = self.Properties.Physics.Density;
- 	
-  
+
+
 		-- Make Rigid body.
 	self:CreateRigidBody( Density,Mass,-1 );
 	if (self.bCharacter == 1) then
@@ -117,8 +119,8 @@ function BreakableObject:SetPhysicsProperties()
 			mass = Mass,
 			density = Density
 		};
-	
-	
+
+
 		self.bRigidBodyActive = self.Properties.Physics.bRigidBodyActive;
 		if (self.bRigidBodyActive ~= 1) then
 			-- If rigid body should not be activated, it must have 0 mass.
@@ -130,11 +132,11 @@ function BreakableObject:SetPhysicsProperties()
 		if (self.Properties.Physics.bFixedDamping~=0) then
 			Flags.flags = pef_fixed_damping;
 		end
-		
+
 		self:SetPhysicParams(PHYSICPARAM_SIMULATION, SimParams );
 		self:SetPhysicParams(PHYSICPARAM_BUOYANCY, self.Properties.Physics );
 		self:SetPhysicParams(PHYSICPARAM_FLAGS, Flags );
-		
+
 		if (self.Properties.Physics.bResting == 0) then
 			self:Activate(1);
 			self:AwakePhysics(1);
@@ -142,8 +144,8 @@ function BreakableObject:SetPhysicsProperties()
 			self:Activate(0);
 			self:AwakePhysics(0);
 		end
-		
-	
+
+
 	-- physics-sounds
 	if (PhysicsSoundsTable) then
 		local SoundDesc;
@@ -213,15 +215,15 @@ function BreakableObject:OnReset()
 	self:Activate(0);
 	self:TrackColliders(1);
 	self.dead = 0;
-	
+
 	if (self.Properties.object_Model == "") then return end;
-	
+
 	if (self.Properties.object_Model ~= self.CurrModel) then
 		self.CurrModel = self.Properties.object_Model;
 		self:LoadBreakable(self.Properties.object_Model);
 		self:CreateStaticEntity( 10,-2 );
 	end
-	
+
 	-- stop old sounds
 	if (self.DyingSound and Sound.IsPlaying(self.DyingSound)) then
 		Sound.StopSound(self.DyingSound);
@@ -242,7 +244,7 @@ function BreakableObject:OnReset()
 
 	self.curr_damage=self.Properties.nDamage;
 
---	self.explosion_params.impulsive_pressure=self.Properties.impulsivePressure;	
+--	self.explosion_params.impulsive_pressure=self.Properties.impulsivePressure;
 --	self.curr_damage=self.Properties.nDamage;
 --	self.explosion_params.radius=self.Properties.nExplosionRadius;
 --	self.explosion_params.rmin=self.Properties.rmin;
@@ -260,7 +262,7 @@ function BreakableObject:OnReset()
 
 	if(self.dead == 0) then
 		self:GoAlive();
-		
+
 		-- Set physics.
 		--DestroyableObject:SetPhysicsProperties( self );
 		self:SetPhysicsProperties();
@@ -299,33 +301,33 @@ function BreakableObject:GoDead( deathVector )
 	self:GotoState( "Dead" );
 --	if(deathVector) then
 --		self:BreakEntity(deathVector, self.Properties.fBreakImpuls,self.Properties.Parts.bRigidBody );
---	else	
+--	else
 --		self:BreakEntity({x=0,y=0,z=1}, self.Properties.fBreakImpuls,self.Properties.Parts.bRigidBody );
---	end	
+--	end
 --
 --	self:DrawObject(0,0);
 --	self:DrawObject(1,1);
---	self:EnablePhysics(0);	
+--	self:EnablePhysics(0);
 --	self:RemoveDecals();
-	
+
 	self:SetTimer(30);
-	
+
 end
 
 function BreakableObject:OnDamage(hit)
 	if (self.dead == 1) then return end;
-	
+
 	if (self.Properties.Physics.bRigidBody) then
 		self:AwakePhysics(1);
 		if( hit.ipart and hit.ipart>=0 ) then
 			self:AddImpulse( hit.ipart, hit.pos, hit.dir, hit.impact_force_mul );
 		end
 	end
-		
+
 	--System.Log("\001 active OnDamage "..self.curr_damage);
 	if( hit )then
 		self.curr_damage=self.curr_damage-hit.damage;
-	end	
+	end
 	if(self.curr_damage<=0)then
 		self:GoDead(hit.dir);
 		self.NoDecals = 1;
@@ -337,19 +339,19 @@ BreakableObject.Active={
 	OnBeginState=function(self)
 		--System.Log("enter alive");
 	end,
-	
+
 
 	OnContact = function(self,collider)
 
-		
---System.Log("\001ON contact ");				
+
+--System.Log("\001ON contact ");
 		-- it it's vehicle
 		if( collider.driverT and self.bBreakByCar==1 ) then
 			self:GoDead();
 		end
 	end,
 	OnDamage = BreakableObject.OnDamage,
-	
+
 	------------------------------------------------------------------------------------------------------
 	-- Use Basic Entity function for this.
 	------------------------------------------------------------------------------------------------------
@@ -361,15 +363,15 @@ BreakableObject.Dead={
 		--System.Log("enter dead");
 --		self:SetTimer(1);
 		self.dead = 1;
-		
+
 		if(self.isLoading == nil) then
 			self:Event_IsDead();
 			self:BreakEntity(self.deathVector, self.Properties.fBreakImpuls,self.Properties.Parts.bRigidBody,self.Properties.Parts.LifeTime,self.Properties.Parts.Density );
-		end	
-		
+		end
+
 		self:DrawObject(0,0);
 		self:DrawObject(1,1);
-		self:EnablePhysics(0);	
+		self:EnablePhysics(0);
 	end,
 
 	OnTimer=function(self)
@@ -387,7 +389,7 @@ end
 
 function BreakableObject:OnLoad(props)
 	self.dead = props.dead;
-	
+
 	if(self.dead == 0) then
 		self:GoAlive();
 	else

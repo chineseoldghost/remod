@@ -1,8 +1,0 @@
-<Material MtlFlags="34" Shader="Illum" GenMask="268435456" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.99000001" GlowAmount="100">
- <Textures>
-  <Texture Map="Diffuse" File="objects/weapons/attachments/lam_rifle/textures/laser_beam_##00_03(0.05).tif" Filter="7">
-   <TexMod />
-  </Texture>
- </Textures>
- <PublicParams AmbientMultiplier="1"/>
-</Material>

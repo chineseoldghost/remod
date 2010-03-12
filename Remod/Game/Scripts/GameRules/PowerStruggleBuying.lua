@@ -148,9 +148,9 @@ PowerStruggle.ammoList=
 
 	{ id="iamag",							name="@mp_eIncendiaryBullet",	   price=50, 			class="FY71IncendiaryAmmo",			ammo=false, equip=true, 	buyammo="incendiarybullet", category="@mp_catAddons", loadout=1 },
    { id="psilent",						name="@mp_ePSilencer",				price=25, 			class="SOCOMSilencer",			uniqueId=121, ammo=false, equip=true,		category="@mp_catAddons", loadout=1 },
-	{ id="plam",							name="@mp_ePLAM",						price=50, 			class="LAM",				uniqueId=122, ammo=false, equip=true,		category="@mp_catAddons", loadout=1 },
+--	{ id="plam",							name="@mp_ePLAM",						price=50, 			class="LAM",				uniqueId=122, ammo=false, equip=true,		category="@mp_catAddons", loadout=1 },
 	{ id="silent",							name="@mp_eRSilencer",				price=50, 			class="Silencer", 				uniqueId=123, ammo=false, equip=true,		category="@mp_catAddons", loadout=1 },
-	{ id="lam",								name="@mp_eRLAM",						price=75, 			class="LAMRifle",						uniqueId=124, ammo=false, equip=true,		category="@mp_catAddons", loadout=1 },
+--	{ id="lam",								name="@mp_eRLAM",						price=75, 			class="LAMRifle",						uniqueId=124, ammo=false, equip=true,		category="@mp_catAddons", loadout=1 },
 	{ id="reflex",							name="@mp_eReflex",					price=25,				class="Reflex", 					uniqueId=125, ammo=false, equip=true,		category="@mp_catAddons", loadout=1 },
 	{ id="ascope",							name="@mp_eAScope",					price=50, 			class="AssaultScope", 			uniqueId=126, ammo=false, equip=true,		category="@mp_catAddons", loadout=1 },
 	{ id="scope",							name="@mp_eSScope",					price=100, 			class="SniperScope", 			uniqueId=127, ammo=false, equip=true,		category="@mp_catAddons", loadout=1 },

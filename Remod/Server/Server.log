@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(06 Feb 2010) Time(13 25 39)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(12 Mar 2010) Time(19 19 06)"  -- used by backup system
  
-Log Started at Saturday, February 06, 2010 13:25:39
+Log Started at Friday, March 12, 2010 19:19:06
 Running 32 bit version
 Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.275675 MHz
+CPU Speed (estimated): 1997.278699 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.271216 MHz
+CPU Speed (estimated): 1997.284594 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -40,8 +40,8 @@ System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 13:25:39 02/06/10, system running for 6 minutes
-1521MB physical memory installed, 1036MB available, 2047MB virtual memory installed, 31 percent of memory in use
+Local time is 19:19:06 03/12/10, system running for 401 minutes
+1521MB physical memory installed, 715MB available, 2047MB virtual memory installed, 52 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
@@ -94,361 +94,10 @@ Initializing AI System
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
     $3sv_gamerules = $6InstantAction $5[]$4
-[net 12:25:41.687] network hostname: iMac7
-[net 12:25:41.703]   ip:192.168.0.192
-[net 12:25:41.703]   ip:5.182.209.7
+[net 18:19:08.607] network hostname: iMac7
+[net 18:19:08.611]   ip:192.168.0.192
+[net 18:19:08.611]   ip:5.182.209.7
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/terminal loading time: 8.29 seconds
+*LOADING: Level multiplayer/ia/terminal loading time: 7.86 seconds
 -----------------------------------------------------
------------------------------------------------------
-*LOADING: Level multiplayer/ia/Graveyard loading time: 1.90 seconds
------------------------------------------------------
-CHAT sunnlok to ALL:
-   hy
-CHAT Blablah to ALL:
-   hey
-CHAT sunnlok to ALL:
-   hey i can type fast now
-CHAT Blablah to ALL:
-   voice is also enabled
-CHAT Blablah to ALL:
-   i'm gonna go fetch TBD or someone
-CHAT Blablah to ALL:
-   Rrrr TBD and his damn sudoku thing
-CHAT Blablah to ALL:
-   also, this is a laggy map :<
-CHAT sunnlok to ALL:
-   how do i use voice
-CHAT Blablah to ALL:
-   press your voice key, lol
-CHAT sunnlok to ALL:
-   and that is which one?
-CHAT Blablah to ALL:
-   alt by default, i think
-CHAT sunnlok to ALL:
-   can you hear me?
-CHAT Blablah to ALL:
-   s_sfxvolume
-CHAT Blablah to ALL:
-   or s_musicenable 0
-    $3net_voice_proximity = $61 $5[]$4
-    $3net_voice_averagebitrate = $630000 $5[]$4
-    $3net_voice_averagebitrate = $660000 $5[]$4
-    $3net_voice_averagebitrate = $6120000 $5[]$4
-[Warning] Unknown command: net_lead_packets 10 
-[Warning] Unknown command: net_trail_packets 10 
-CHAT revange to ALL:
-   yo
-CHAT revange to ALL:
-   don't ahev a mic, broke
-CHAT revange to ALL:
-   meh, i'm used to getting owned :p
------------------------------------------------------
-*LOADING: Level multiplayer/ia/Quarry loading time: 2.53 seconds
------------------------------------------------------
-CHAT revange to ALL:
-   darnit
-CHAT revange to ALL:
-   i c yur lam
-CHAT revange to ALL:
-   no
-CHAT revange to ALL:
-   damn
-CHAT revange to ALL:
-   i can't even aim on someone with speed
-CHAT revange to ALL:
-   i think you should re-add the lam beam
-CHAT Blablah to ALL:
-   Yeah?
-CHAT revange to ALL:
-   well reght now you can se the dot
-CHAT revange to ALL:
-   always sucks
-CHAT revange to ALL:
-   who
-CHAT revange to ALL:
-   element of surprise :p
-CHAT revange to ALL:
-   well i find it more fun then wars
-CHAT revange to ALL:
-   ouch
-CHAT revange to ALL:
-   jumped to far :p
-CHAT revange to ALL:
-   i like the cloak
-CHAT revange to ALL:
-   lol
-CHAT revange to ALL:
-   i knew it when you said "take the gun now"
-CHAT revange to ALL:
-   i mostly forget cloak casts shadow
-[net 13:19:07.618] Disconnect iMac7.telenet.be:59654; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:59654'
-[net 13:19:07.658] Disconnect d51A561C8.access.telenet.be:62747; profid=186555686; cause=14; msg='Unreachable address d51A561C8.access.telenet.be:62747'
-[net 13:19:07.660] Disconnect blfd-5d823d7c.pool.mediaWays.net:63556; profid=98074264; cause=14; msg='Unreachable address blfd-5d823d7c.pool.mediaWays.net:63556'
-CHAT revange to ALL:
-   how the heck
-CHAT revange to ALL:
-   lol
-CHAT revange to ALL:
-   lol
-CHAT revange to ALL:
-   make it tripled
-CHAT revange to ALL:
-   oooh 25 health
-CHAT revange to ALL:
-   had no more ammo for scar
-CHAT revange to ALL:
-   fuck
-CHAT revange to ALL:
-   yeah
-CHAT revange to ALL:
-   great idea
-CHAT revange to ALL:
-   teamwork yeah:p
-CHAT revange to ALL:
-   how did you know?
-CHAT revange to ALL:
-   saw yor feet
-CHAT revange to ALL:
-   i always hated pistols in mp
-CHAT revange to ALL:
-   bit useless when the rest haves automatic guns
-CHAT revange to ALL:
-   i know but when you spawn
-CHAT Blablah to ALL:
-   typing ftl D:
-CHAT revange to ALL:
-   my mic is broke
-CHAT Blablah to ALL:
-   maybe the gauss should only have 2 bullets/clip :D
-CHAT Blablah to ALL:
-   nice!
-CHAT Blablah to ALL:
-   that's the way ye do it
-CHAT Blablah to ALL:
-   not hearing you sunnlok
-CHAT Blablah to ALL:
-   it's just silent for me :/
-CHAT Blablah to ALL:
-   can i switch to a smaller map?
-CHAT revange to ALL:
-   ya
------------------------------------------------------
-*LOADING: Level multiplayer/ia/Coast loading time: 1.52 seconds
------------------------------------------------------
-CHAT Blablah to ALL:
-   oh snap!
-CHAT Blablah to ALL:
-   :O
-CHAT Blablah to ALL:
-   wtf
-CHAT Blablah to ALL:
-   wait
-CHAT Blablah to ALL:
-   some pieces of rubble fell here
-    $3g_MPDeathCam = $61 $5[]$4
-    $3g_MPDeathEffects = $61 $5[]$4
-    $3g_MPDeathCamMaxZoomFOV = $6120 $5[]$4
-    $3g_MPDeathCamMinZoom = $6120 $5[]$4
-CHAT sunnlok to ALL:
-   ok im out
-CHAT Blablah to ALL:
-   D:
-CHAT Blablah to ALL:
-   noes
-CHAT sunnlok to ALL:
-   gets boring
-CHAT Blablah to ALL:
-   lie
-CHAT Blablah to ALL:
-   s
-CHAT Blablah to ALL:
-   we need more people
-CHAT revange to ALL:
-   otherwise switch with a map with vechiles
-CHAT Blablah to ALL:
-   if you want
-CHAT Blablah to ALL:
-   sunnlok?
-CHAT Blablah to ALL:
-   LOL
-CHAT Blablah to ALL:
-   nice one
-CHAT sunnlok to ALL:
-   youll nevar find meh
-CHAT Blablah to ALL:
-   i'm hidden as well >:)
-CHAT Blablah to ALL:
-   want me to switch to battleground?
-CHAT revange to ALL:
-   or savana
-CHAT Blablah to ALL:
-   yeah but i have lag issues on savnana
-CHAT revange to ALL:
-   battleground then
-CHAT Blablah to ALL:
-   and if i have lag 
-CHAT Blablah to ALL:
-   you have lag
-CHAT Blablah to ALL:
-   well
-CHAT Blablah to ALL:
-   it depends
-CHAT Blablah to ALL:
-   aren't there any other vehicle maps?
-CHAT revange to ALL:
-   i don't think so
-CHAT Blablah to ALL:
-   hmm
-CHAT Blablah to ALL:
-   weird, actually
-CHAT Blablah to ALL:
-   i could go fix stuff
-CHAT Blablah to ALL:
-   well, do we quit or switch to savanna?
-CHAT Blablah to ALL:
-   we don't really have enough players
-CHAT Blablah to ALL:
-   to have proper fun on any map
-CHAT revange to ALL:
-   lol
-CHAT Blablah to ALL:
-   i like this spot
-CHAT revange to ALL:
-   lol
-    $3g_MPDeathCam = $60 $5[]$4
-CHAT Blablah to ALL:
-   o
-CHAT revange to ALL:
-   lol
-CHAT Blablah to ALL:
-   LOL
-CHAT revange to ALL:
-   you where trying to t-bag invisible people?
-CHAT revange to ALL:
-   shit i'm stuck
-CHAT Blablah to ALL:
-   lol!
-CHAT Blablah to ALL:
-   ooops, zat vas nat medicine
-CHAT Blablah to ALL:
-   i'll switch to battleground
------------------------------------------------------
-*LOADING: Level multiplayer/ia/Battleground loading time: 6.08 seconds
------------------------------------------------------
-CHAT Blablah to ALL:
-   vehicles are such a pest though :<
-CHAT revange to ALL:
-   vtol has no bullets
-CHAT Blablah to ALL:
-   i know
-CHAT Blablah to ALL:
-   gunner does
-CHAT Blablah to ALL:
-   Ah D:
-CHAT revange to ALL:
-   the turrets are slower
-CHAT Blablah to ALL:
-   yep
-CHAT Blablah to ALL:
-   that's the disadvantage of vehicles
-CHAT Blablah to ALL:
-   ze zijn een beetje loemp :P
-CHAT revange to ALL:
-   zeg da wel
-CHAT Blablah to ALL:
-   een tank mag ni plots kunne omdraaien of wegrijden enzo
-CHAT Blablah to ALL:
-   euuh lag
-CHAT revange to ALL:
-   kan nimeer weg
-CHAT Blablah to ALL:
-   :D
-CHAT Blablah to ALL:
-   in 't water?
-CHAT revange to ALL:
-   huh?
-CHAT Blablah to ALL:
-   springen in 't water?
-CHAT revange to ALL:
-   der is geen
-CHAT Blablah to ALL:
-   oh
-CHAT Blablah to ALL:
-   damn :P
-CHAT Blablah to ALL:
-   jesus, lag :|
-CHAT Blablah to ALL:
-   ik denk da 'k physics nogis ga enablen
-CHAT revange to ALL:
-   warrom
-CHAT Blablah to ALL:
-   omda ze plezant zijn :P
-CHAT revange to ALL:
-   doe dan maar
-CHAT Blablah to ALL:
-   oh snap!
-CHAT revange to ALL:
-   hehe
-CHAT revange to ALL:
-   physics enabled?
-CHAT Blablah to ALL:
-   nee
-CHAT Blablah to ALL:
-   gaat ni ingame
-CHAT revange to ALL:
-   spijtig
-CHAT Blablah to ALL:
-   mhm
-CHAT Blablah to ALL:
-   mis xD
-CHAT Blablah to ALL:
-   recht op mijn piemel!
-CHAT revange to ALL:
-   lol
-CHAT revange to ALL:
-   oeveel schade kan da ding aan
-CHAT Blablah to ALL:
-   zoveel als ge wilt als ik het aan 't repareren ben xD
-CHAT Blablah to ALL:
-   nee ni eeuwig veel
-CHAT revange to ALL:
-   het explodeert!
-CHAT Blablah to ALL:
-   ^^
-CHAT Blablah to ALL:
-   OH SNAP
-CHAT revange to ALL:
-   die brug is altijd een camp positie
-CHAT Blablah to ALL:
-   super eh =P
-CHAT Blablah to ALL:
-   alleen tegen vehicles
-CHAT Blablah to ALL:
-   en de map is natuurlijk gemaakt voor veel mense
-CHAT revange to ALL:
-   spijtig genoeg kunde eir geen ai ebben
-CHAT Blablah to ALL:
-   ja :(
-CHAT revange to ALL:
-   lol
-CHAT Blablah to ALL:
-   damn :(
-CHAT Blablah to ALL:
-   :D
-CHAT Blablah to ALL:
-   ouch
-CHAT Blablah to ALL:
-   23hp
-CHAT Blablah to ALL:
-   ah, had ge nu in de boskes gaan zitten :P
-CHAT Blablah to ALL:
-   zal ik is wa gaan rondkloten?
-CHAT revange to ALL:
-   doe ma
-CHAT Blablah to ALL:
-   k
-[net 14:36:42.019] Disconnect iMac7.telenet.be:61420; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:61420'
-[net 14:37:35.533] Disconnect d51A561C8.access.telenet.be:56480; profid=186555686; cause=0; msg='Timeout occurred; no packet for 31.8 seconds'
-[net 14:46:45.238] Disconnect blfd-5d823d7c.pool.mediaWays.net:54753; profid=98074264; cause=0; msg='Timeout occurred; no packet for 31.4 seconds'
-System:Quit
+[net 18:29:41.066] Disconnect iMac7.telenet.be:62133; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:62133'

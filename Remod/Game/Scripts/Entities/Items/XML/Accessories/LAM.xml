@@ -1,3 +1,4 @@
+This breaks the pistol LAM.
 <item name="LAM" class="LAM" priority="111" >
 	<params>
 		<param name="giveable" value="1" />

@@ -1,3 +1,4 @@
+This breaks the pistol flashlight.
 <item name="LAMFlashLight" class="LAM" priority="112">
 	<params>
 		<param name="giveable" value="1" />

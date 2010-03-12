@@ -267,9 +267,13 @@
 				<param name="speed_m" value="1.25" />
 				<param name="rotation_m" value="0" />
 			</spread>-->
-			<muzzleflash>
+			<!--<muzzleflash>
 				<firstperson effect="muzzleflash.AssaultRifle.silenced_smoke" helper="muzzle_flash_effect"/>
 				<thirdperson effect="muzzleflash.AssaultRifle.silenced_smoke_tp" helper="weapon_term"/>
+			</muzzleflash>-->
+			<muzzleflash>
+				<firstperson effect="muzzleflash.AssaultRifle.SCAR" helper="muzzle_flash_effect" light_helper="muzzle_flash_light" light_radius="2" light_time="0.010" light_color="1,1,0.8" light_diffuse_mult="8" />
+				<thirdperson effect="muzzleflash.AssaultRifle.SCAR_tp" helper="weapon_term" light_helper="weapon_term" light_radius="2.5" light_time="0.01" light_color="1,1,0.8" light_diffuse_mult="8" />
 			</muzzleflash>
 			<muzzlesmoke>
 				<firstperson effect="muzzleflash.AssaultRifle.shiten_smoke" helper="muzzle_flash_effect" />

@@ -977,17 +977,17 @@ end
 ----------------------------------------------------------------------------------------------------
 function InstantAction:GetDamageAbsorption(player, hit)
 	if (hit.damage == 0.0 or hit.type=="punish") then -- If the damage is 0 or the hit type is of a punishing kind (suicide, kill on TK)...
-		return 0; -- Don't apply damage to target.
+		return 0; -- ...don't apply damage to target.
 	end;
 
 	local nanoSuitMode = player.actor:GetNanoSuitMode(); -- Get the nanosuit mode.
 	if(nanoSuitMode == 3) then -- If the suit mode is Armor mode...
-		local currentSuitEnergy = player.actor:GetNanoSuitEnergy(); -- Get nanosuit energy.
-		local suitEnergyLeft = currentSuitEnergy - (hit.damage*2); -- Reduce energy based on damage; the left over will be reduced from the health.
+		local currentSuitEnergy = player.actor:GetNanoSuitEnergy(); -- ...get the current nanosuit energy.
+		local suitEnergyLeft = currentSuitEnergy - (hit.damage*3); -- Reduce energy based on damage; the left over will be reduced from the health.
 		local absorption = 0.0; -- ?
-		if (suitEnergyLeft < 0.0) then
-			player.actor:SetNanoSuitEnergy(0);
-			absorption = 1 + suitEnergyLeft/(hit.damage*2);
+		if (suitEnergyLeft < 0.0) then -- If the suit energy left is less than 0...
+			player.actor:SetNanoSuitEnergy(0); -- ...set nanosuit energy to 0.
+			absorption = 1 + suitEnergyLeft/(hit.damage*3);
 		else
 			player.actor:SetNanoSuitEnergy(suitEnergyLeft);
 			absorption = 1;

@@ -82,13 +82,13 @@ Player = {
 			{
 				stanceId = STANCE_STAND,
 				normalSpeed = 1.75,
-				maxSpeed = 4.05,
+				maxSpeed = 4,
 				heightCollider = 1.2,
 				heightPivot = 0.0,
 				size = {x=0.4,y=0.4,z=0.3},
 				viewOffset = {x=0,y=0.15,z=1.625},
 				modelOffset = {x=0,y=0,z=0.0},
-				name = "relaxed",
+				name = "combat",
 				useCapsule = 1,
 			},
 			-- -2 is a magic number that gets ignored by CActor::SetupStance

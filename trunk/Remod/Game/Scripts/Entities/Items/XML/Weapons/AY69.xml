@@ -265,10 +265,14 @@
 				<param name="spread_stand_to_crouch_m" value="2" />
 				<param name="spread_to_prone_m" value="8" />
 			</spread>-->
-      <muzzleflash>
+      <!--<muzzleflash>
 				<firstperson effect="muzzleflash.AssaultRifle.silenced_smoke" helper="muzzle_flash_effect"/>
 				<thirdperson effect="muzzleflash.AssaultRifle.silenced_smoke_tp" helper="weapon_term"/>
-			</muzzleflash>
+			</muzzleflash>-->
+			<muzzleflash>
+        <firstperson effect="muzzleflash.AssaultRifle.SMG" helper="muzzle_flash_effect" light_helper="muzzle_flash_light" light_radius="2" light_time="0.010" light_color="1,1,0.8" light_diffuse_mult="8" />
+        <thirdperson effect="muzzleflash.AssaultRifle.SMG_tp" helper="weapon_therm" light_helper="weapon_therm" light_radius="2.3" light_time="0.010" light_color="1,1,0.8" light_diffuse_mult="8" />
+      </muzzleflash>
       <reject>
         <firstperson effect="weapon_fx.shells.SMG" helper="shells" />
         <thirdperson effect="weapon_fx.shells.SMG" helper="shells" />

@@ -616,7 +616,7 @@ void CPlayerView::ViewFirstPerson(SViewParams &viewParams)
 			// To tweak the scale of strafing lag: (may need to manually adjust the strafing angle offsets as well.)
 			const float kStrafeHorzScale=0.05f;
 
-			kBobWidth = 0.15f; // Remod, default 0.15f
+			kBobWidth = 0.1f; // Remod, default 0.15f
 			kBobHeight = 0.15f; // Remod, default 0.06f
 
 			m_io.stats_bobCycle += m_in.frameTime * kSpeedToBobFactor * speedMul;// * (m_in.bSprinting?1.25f:1.0f);

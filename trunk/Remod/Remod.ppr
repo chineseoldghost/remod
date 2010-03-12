@@ -81,7 +81,7 @@ Remod
 				Game\Scripts\Entities\actor\player.lua
 			+Items
 				+XML
-					-Accessories
+					+Accessories
 						Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml
 						Game\Scripts\Entities\Items\XML\Accessories\LAWScope.xml
 						Game\Scripts\Entities\Items\XML\Accessories\Silencer.xml
@@ -113,7 +113,7 @@ Remod
 						Game\Scripts\Entities\Items\XML\Accessories\FGL40Detonator.xml
 						Game\Scripts\Entities\Items\XML\Accessories\AssaultScope.xml
 						Game\Scripts\Entities\Items\XML\Accessories\AlienCore.xml
-					-Ammo
+					+Ammo
 						+Vehicles
 							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\ASV20.xml
 							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\GaussTankBullet.xml
@@ -267,18 +267,50 @@ Remod
 		Game\Scripts\main.lua
 		Game\Scripts\Remod.lua
 [Open project files]
-0=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\GaussAAA.xml
-1=Game\Scripts\Entities\actor\player.lua
-2=Game\Scripts\Entities\actor\BasicActor.lua
+0=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
+1=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
+2=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
+3=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
+4=Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml
+5=Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml
+6=Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
+7=Game\Scripts\Entities\Items\XML\Weapons\Hurricane.xml
+8=Game\Scripts\GameRules\PowerStruggleBuying.lua
+9=Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
+10=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\actor\player.lua
-[Game\Scripts\Entities\Items\XML\Weapons\Vehicles\GaussAAA.xml]
+Selected=Game\Scripts\GameRules\PowerStruggleBuying.lua
+[Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
+TopLine=249
+Caret=18,277
+[Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
+TopLine=238
+Caret=4,263
+[Game\Scripts\Entities\Items\XML\Weapons\SMG.xml]
+TopLine=230
+Caret=4,255
+[Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml]
+TopLine=219
+Caret=4,244
+[Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml]
+TopLine=240
+Caret=4,265
+[Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml]
+TopLine=171
+Caret=4,196
+[Game\Scripts\Entities\Items\XML\Weapons\AY69.xml]
+TopLine=271
+Caret=21,271
+[Game\Scripts\Entities\Items\XML\Weapons\Hurricane.xml]
+TopLine=200
+Caret=4,225
+[Game\Scripts\GameRules\PowerStruggleBuying.lua]
+TopLine=23
+Caret=3,153
+[Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml]
+TopLine=41
+Caret=33,170
+[Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon.xml]
 TopLine=1
-Caret=1,1
-[Game\Scripts\Entities\actor\player.lua]
-TopLine=69
-Caret=20,91
-[Game\Scripts\Entities\actor\BasicActor.lua]
-TopLine=848
-Caret=27,857
+Caret=4,30

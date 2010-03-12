@@ -278,9 +278,10 @@ Remod
 8=Game\Scripts\GameRules\PowerStruggleBuying.lua
 9=Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
 10=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon.xml
+11=Game\Scripts\GameRules\InstantAction.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\GameRules\PowerStruggleBuying.lua
+Selected=Game\Scripts\GameRules\InstantAction.lua
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
 TopLine=249
 Caret=18,277
@@ -294,8 +295,8 @@ Caret=4,255
 TopLine=219
 Caret=4,244
 [Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml]
-TopLine=240
-Caret=4,265
+TopLine=80
+Caret=70,100
 [Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml]
 TopLine=171
 Caret=4,196
@@ -306,11 +307,14 @@ Caret=21,271
 TopLine=200
 Caret=4,225
 [Game\Scripts\GameRules\PowerStruggleBuying.lua]
-TopLine=23
+TopLine=111
 Caret=3,153
 [Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml]
-TopLine=41
+TopLine=128
 Caret=33,170
 [Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon.xml]
 TopLine=1
 Caret=4,30
+[Game\Scripts\GameRules\InstantAction.lua]
+TopLine=961
+Caret=49,990

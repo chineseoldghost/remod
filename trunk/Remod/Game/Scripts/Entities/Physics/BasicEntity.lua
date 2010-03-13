@@ -13,8 +13,8 @@ BasicEntity = {
 			bRigidBody = 1, -- True if rigid body, False if static.
 			bPushableByPlayers = 1,
 		
-			Density = 5000,
-			Mass = 10,
+			Density = -1,
+			Mass = -1,
 		},
 		
 		bFreezable=1,
@@ -28,13 +28,13 @@ BasicEntity = {
 	_Flags = {},
 }
 
---local Physics_DX9MP_Simple = {
---	bPhysicalize = 1, -- True if object should be physicalized at all.
---	bPushableByPlayers = 0,
---		
---	Density = 0,
---	Mass = 0,
---}
+local Physics_DX9MP_Simple = {
+	bPhysicalize = 1, -- True if object should be physicalized at all.
+	bPushableByPlayers = 0,
+		
+	Density = 0,
+	Mass = 0,
+}
 
 MakeUsable(BasicEntity);
 MakePickable(BasicEntity);
@@ -108,9 +108,9 @@ end
 function BasicEntity:PhysicalizeThis()
 	-- Init physics.
 	local Physics = self.Properties.Physics;
---	if (CryAction.IsImmersivenessEnabled() == 0) then
---		Physics = Physics_DX9MP_Simple;
---	end
+	if (CryAction.IsImmersivenessEnabled() == 0) then
+		Physics = Physics_DX9MP_Simple;
+	end
 	EntityCommon.PhysicalizeRigid( self,0,Physics,self.bRigidBodyActive );
 end
 
@@ -192,7 +192,7 @@ function BasicEntity:IsUsable(user)
 	
 	local mp = System.IsMultiplayer();
 	if(mp and mp~=0) then
-		return 1;
+		return 0;
 	end
 
 	if (self.__usable == 1) then

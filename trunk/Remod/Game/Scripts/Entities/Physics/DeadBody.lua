@@ -4,7 +4,7 @@ DeadBody = {
  	type = "DeadBody",
 	isPhysicalized = 1,
 	temp_ModelName = "",
-
+	
 	DeadBodyParams = {
 		max_time_step = 0.025,
 		gravityz = -7.5,
@@ -37,15 +37,15 @@ DeadBody = {
 	Properties = {
 		soclasses_SmartObjectClass = "",
 		bResting = 1,
-		object_Model = "objects/characters/human/us/grunt/us_grunt_a.cdf",
+		object_Model = "objects/characters/human/us/grunt/us_grunt_a.cdf",	
 		lying_gravityz = -5.0,
 		lying_damping = 1.5,
-		bCollidesWithPlayers = 1,
-		bPushableByPlayers = 1,
+		bCollidesWithPlayers = 0,
+		bPushableByPlayers = 0,
 		Mass = 80,
 		bNoFriendlyFire = 0,
 	},
-
+	
 	Editor = {
 		Icon = "DeadBody.bmp",
 		IconOnTop=1,
@@ -54,7 +54,7 @@ DeadBody = {
 
 -------------------------------------------------------
 function DeadBody:OnLoad(table)
-	self.isPhysicalized = table.isPhysicalized
+	self.isPhysicalized = table.isPhysicalized 
 	self.temp_ModelName = table.temp_ModelName
 	self.PhysParams = table.PhysParams
 	self.DeadBodyParams = table.DeadBodyParams
@@ -62,7 +62,7 @@ end
 
 -------------------------------------------------------
 function DeadBody:OnSave(table)
-	table.isPhysicalized = self.isPhysicalized
+	table.isPhysicalized = self.isPhysicalized 
 	table.temp_ModelName = self.temp_ModelName
 	table.PhysParams = self.PhysParams
 	table.DeadBodyParams = self.DeadBodyParams
@@ -73,7 +73,7 @@ end
 function DeadBody:OnReset()
 	--self.temp_ModelName ="";
 	--self:OnPropertyChange();
-
+	
 	self:LoadCharacter(0,self.Properties.object_Model);
 	--self:StartAnimation( 0,"cidle" );
 	self:PhysicalizeThis();
@@ -82,18 +82,18 @@ end
 
 -----------------------------------------------------------------------------------------------------------
 function DeadBody:Server_OnInit()
-	if(self.isPhysicalized == 0) then
+	if(self.isPhysicalized == 0) then	
 		DeadBody.OnPropertyChange( self );
-		self.isPhysicalized = 1;
+		self.isPhysicalized = 1;	
 	end
 end
 
 
 -----------------------------------------------------------------------------------------------------------
 function DeadBody:Client_OnInit()
-	if(self.isPhysicalized == 0) then
+	if(self.isPhysicalized == 0) then	
 		DeadBody.OnPropertyChange( self );
-		self.isPhysicalized = 1;
+		self.isPhysicalized = 1;	
 	end
 	self:SetUpdatePolicy( ENTITY_UPDATE_PHYSICS_VISIBLE );
 	--self:Activate(1);
@@ -113,9 +113,9 @@ function DeadBody:Server_OnDamageDead( hit )
   --System.Log("DeadBody hit part "..hit.ipart);
 	if( hit.ipart ) then
 		self:AddImpulse( hit.ipart, hit.pos, hit.dir, hit.impact_force_mul );
-	else
+	else	
 		self:AddImpulse( -1, hit.pos, hit.dir, hit.impact_force_mul );
-	end
+	end	
 end
 
 -----------------------------------------------------------------------------------------------------------
@@ -128,7 +128,7 @@ end
 
 function DeadBody:OnPropertyChange()
 	--System.LogToConsole("prev:"..self.temp_ModelName.." new:"..self.Properties.object_Model);
-
+	
 	self.PhysParams.mass = self.Properties.Mass;
 
 	if (self.Properties.object_Model ~= self.temp_ModelName) then
@@ -149,24 +149,24 @@ function DeadBody:PhysicalizeThis()
 		bPushableByPlayers = 0;
 		bCollidesWithPlayers = 0;
 	end
-
+	
 	self.PhysParams.mass = Properties.Mass;
 	self.PhysParams.Living = self.DeadBodyParams;
-
+	
 	self:Physicalize( 0,PE_LIVING,self.PhysParams );
 	self:Physicalize( 0,PE_ARTICULATED,self.PhysParams );
-
+	
 	self:SetPhysicParams(PHYSICPARAM_SIMULATION, self.Properties );
-
+	
 	if (Properties.lying_damping) then
 		self.DeadBodyParams.lying_damping = Properties.lying_damping;
-	end
+	end	
 	if (Properties.lying_gravityz) then
 		self.DeadBodyParams.lying_gravityz = Properties.lying_gravityz;
-	end
+	end	
 	self:SetPhysicParams(PHYSICPARAM_SIMULATION, self.DeadBodyParams);
 	self:SetPhysicParams(PHYSICPARAM_ARTICULATED, self.DeadBodyParams);
-
+	
 	local flagstab = { flags_mask=geom_colltype_player, flags=geom_colltype_player*bCollidesWithPlayers };
 	if (status == 1) then
 		flagstab.flags_mask = geom_colltype_explosion + geom_colltype_ray + geom_colltype_foliage_proxy + geom_colltype_player;

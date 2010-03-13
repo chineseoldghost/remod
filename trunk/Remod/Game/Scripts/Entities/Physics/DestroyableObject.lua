@@ -27,7 +27,7 @@ DestroyableObject =
 		object_ModelDestroyed	= "",															-- Post-destroyed model/submodel (same as Model if blank).
 		DestroyedSubObject		= "Remain",
 
-		bPlayerOnly 			= 0,																	-- Damaged only by player.
+		bPlayerOnly 			= 1,																	-- Damaged only by player.
 		fHealth						= 100,
 		fDamageTreshold		= 0,																	-- Only accept damage higher than this value.
 		bExplode					= 0,																	-- Create explosion, using Explosion props
@@ -102,9 +102,9 @@ DestroyableObject =
 			bRigidBodyActive = 1,																		-- If rigid body is originally created (1) OR will be created only on OnActivate (0).
 			bRigidBodyAfterDeath = 1,																-- True if rigid body after death too.
 			bActivateOnDamage = 0,																	-- Activate when a rocket hit the entity.
-			Density = 5000,
-			Mass = 10,
-			bPushableByPlayers = 1,
+			Density = -1,
+			Mass = -1,
+			bPushableByPlayers = 0,
 			bCanBreakOthers = 0,
 			Simulation =
 			{
@@ -116,14 +116,14 @@ DestroyableObject =
 	},
 }
 
---local Physics_DX9MP_Simple = {																							-- Particle pieces always physicalised as rigid bodies
---	bRigidBody=0,																						-- True if rigid body.
---	bRigidBodyActive = 1,																		-- If rigid body is originally created (1) OR will be created only on OnActivate (0).
---	bRigidBodyAfterDeath = 0,																-- True if rigid body after death too.
---	bActivateOnDamage = 0,																	-- Activate when a rocket hit the entity.
---	Density = -1,
---	Mass = -1,
---}
+local Physics_DX9MP_Simple = {																							-- Particle pieces always physicalised as rigid bodies
+	bRigidBody=0,																						-- True if rigid body.
+	bRigidBodyActive = 1,																		-- If rigid body is originally created (1) OR will be created only on OnActivate (0).
+	bRigidBodyAfterDeath = 0,																-- True if rigid body after death too.
+	bActivateOnDamage = 0,																	-- Activate when a rocket hit the entity.
+	Density = -1,
+	Mass = -1,
+}
 
 MakeUsable(DestroyableObject);
 MakePickable(DestroyableObject);
@@ -289,9 +289,9 @@ end
 ------------------------------------------------------------------------------------------------------
 function DestroyableObject:PhysicalizeThis( nSlot )
 	local Physics = self.Properties.Physics;
---	if (CryAction.IsImmersivenessEnabled() == 0) then
---		Physics = Physics_DX9MP_Simple;
---	end
+	if (CryAction.IsImmersivenessEnabled() == 0) then
+		Physics = Physics_DX9MP_Simple;
+	end
 	-- Init physics.
 	EntityCommon.PhysicalizeRigid( self,nSlot,Physics,self.bRigidBodyActive );
 end
@@ -310,9 +310,9 @@ end
 
 ----------------------------------------------------------------------------------------------------
 function DestroyableObject:Explode()
---	if (CryAction.IsImmersivenessEnabled() == 0) then
---		return;
---	end
+	if (CryAction.IsImmersivenessEnabled() == 0) then
+		return;
+	end
 
 	local Properties = self.Properties;
 	self.bTemporaryUsable=0;
@@ -479,8 +479,10 @@ function DestroyableObject.Server:OnHit(hit)
 				self:SetTimer(0,(explosion.Delay+rnd)*1000);
 				if(not EmptyString(explosion.DelayEffect.Effect))then
 					self.FXSlot=self:LoadParticleEffect( -1,explosion.DelayEffect.Effect,explosion.DelayEffect.Params);
-					self:SetSlotPos(self.FXSlot,explosion.DelayEffect.vOffset);
-					self:SetSlotAngles(self.FXSlot,explosion.DelayEffect.vRotation);
+					if (self.FXSlot) then
+						self:SetSlotPos(self.FXSlot,explosion.DelayEffect.vOffset);
+						self:SetSlotAngles(self.FXSlot,explosion.DelayEffect.vRotation);
+					end
 				end;
 			end;
 		end;

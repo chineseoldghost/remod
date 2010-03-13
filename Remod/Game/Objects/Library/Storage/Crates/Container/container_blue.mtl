@@ -1,0 +1,33 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="container" MtlFlags="128" Shader="Illum" GenMask="272646160" SurfaceType="mat_metal_sheet" Diffuse="0.4039216,0.4039216,0.4039216" Specular="1.309804,1.309804,1.309804" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/storage/crates/container/container_blue.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/storage/crates/container/container_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/storage/crates/container/container_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_001_ddn.tif">
+     <TexMod TileU="3" TileV="3"/>
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1" DetailBumpTillingU="4" DetailBumpTillingV="4" DetailBumpScale="1" DetailBlendAmount="0"/>
+  </Material>
+  <Material Name="proxy_metal" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_sheet" Diffuse="0,1,0.117647" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+  </Material>
+  <Material Name="container_logos" MtlFlags="160" Shader="Illum" GenMask="301989888" SurfaceType="mat_metal_sheet" Diffuse="0.28235295,0.28235295,0.28235295" Specular="0.49411768,0.49411768,0.49411768" Emissive="0,0,0" Shininess="10" Opacity="0.70300001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/storage/crates/container/container_andersen.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

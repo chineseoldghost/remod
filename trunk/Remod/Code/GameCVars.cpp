@@ -238,7 +238,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("g_playerSuitEnergyRechargeTimeArmor", &g_playerSuitEnergyRechargeTimeArmor, 4.0f, VF_CHEAT, "Modify suit energy recharge for Player in singleplayer in armor mode.");
 	pConsole->Register("g_playerSuitEnergyRechargeTimeArmorMoving", &g_playerSuitEnergyRechargeTimeArmorMoving, 4.0f, VF_CHEAT, "Modify suit energy recharge for Player in singleplayer in armor mode while moving.");
 	pConsole->Register("g_playerSuitEnergyRechargeTimeMultiplayer", &g_playerSuitEnergyRechargeTimeMultiplayer, 4.0f, VF_CHEAT, "Modify suit energy recharge for Player in multiplayer.");
-	pConsole->Register("g_playerSuitEnergyRechargeDelay", &g_playerSuitEnergyRechargeDelay, 3.0f, VF_CHEAT, "Delay of energy recharge after the player has been hit.");
+	pConsole->Register("g_playerSuitEnergyRechargeDelay", &g_playerSuitEnergyRechargeDelay, 4.0f, VF_CHEAT, "Delay of energy recharge after the player has been hit.");
 	pConsole->Register("g_playerSuitHealthRegenTime", &g_playerSuitHealthRegenTime, 25.0f, VF_CHEAT, "Modify suit health recharge for Player.");
 	pConsole->Register("g_playerSuitHealthRegenTimeMoving", &g_playerSuitHealthRegenTimeMoving, 25.0f, VF_CHEAT, "Modify suit health recharge for moving Player.");
 	pConsole->Register("g_playerSuitArmorModeHealthRegenTime", &g_playerSuitArmorModeHealthRegenTime, 25.0f, VF_CHEAT, "Modify suit health recharge for Player in armor mode.");

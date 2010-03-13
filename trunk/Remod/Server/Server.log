@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(12 Mar 2010) Time(19 19 06)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(13 Mar 2010) Time(12 51 38)"  -- used by backup system
  
-Log Started at Friday, March 12, 2010 19:19:06
+Log Started at Saturday, March 13, 2010 12:51:38
 Running 32 bit version
 Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.278699 MHz
+CPU Speed (estimated): 1997.285297 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.284594 MHz
+CPU Speed (estimated): 1997.290836 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -40,8 +40,8 @@ System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 19:19:06 03/12/10, system running for 401 minutes
-1521MB physical memory installed, 715MB available, 2047MB virtual memory installed, 52 percent of memory in use
+Local time is 12:51:38 03/13/10, system running for 27 minutes
+1521MB physical memory installed, 872MB available, 2047MB virtual memory installed, 42 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
@@ -94,10 +94,10 @@ Initializing AI System
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
     $3sv_gamerules = $6InstantAction $5[]$4
-[net 18:19:08.607] network hostname: iMac7
-[net 18:19:08.611]   ip:192.168.0.192
-[net 18:19:08.611]   ip:5.182.209.7
+[net 11:51:39.776] network hostname: iMac7
+[net 11:51:39.776]   ip:192.168.0.192
+[net 11:51:39.776]   ip:5.182.209.7
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/terminal loading time: 7.86 seconds
+*LOADING: Level multiplayer/ia/terminal loading time: 7.63 seconds
 -----------------------------------------------------
-[net 18:29:41.066] Disconnect iMac7.telenet.be:62133; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:62133'
+[net 11:58:19.001] Disconnect iMac7.telenet.be:58951; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:58951'

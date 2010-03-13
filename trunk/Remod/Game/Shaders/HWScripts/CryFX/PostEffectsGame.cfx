@@ -998,7 +998,7 @@ pixout NightVisionPS(vtxOutNightVision IN)
   half4 cScreenBlurred = tex2D(_tex1, IN.baseTC.xy);
   
   // sharpen screen
-  cScreen =  saturate(lerp(cScreenBlurred,cScreen,  2));
+  cScreen =  saturate(lerp(cScreenBlurred,cScreen,  1.5));
   half fLum = dot(cScreen.xyz, 0.33);
 
   float fSceneLum = 0.5;
@@ -1016,7 +1016,7 @@ pixout NightVisionPS(vtxOutNightVision IN)
 
   // Darken edges (and lerp between 1.0 and darken term). Overbright white areas also
   half fDistToCenter = length(IN.baseTC.xy * 2 - 1);
-  half fDarken = saturate( 1 - fDistToCenter*0.2); // Darkened edges, default is 0.7
+  half fDarken = saturate( 1 - fDistToCenter*0.6); // Darkened edges, default is 0.7
 
   half4 cScreenEdges = 0;
   if( flareCount )
@@ -1055,8 +1055,8 @@ pixout NightVisionPS(vtxOutNightVision IN)
   OUT.Color.xyz = tex2D(_tex3, fLum.xx);
 
   //OUT.Color.xyz =   (1 - exp( -( *OUT.Color.xyz) ) );
-  OUT.Color.xyz= max( lerp(0.5, OUT.Color.xyz, 2), 0); // Contrast & Brightness
-  OUT.Color.xyz = lerp(fLum, OUT.Color.xyz,0.33); // Saturation
+  OUT.Color.xyz= max( lerp(0.75, OUT.Color.xyz, 2), 0); // Contrast & Brightness
+  OUT.Color.xyz = lerp(fLum, OUT.Color.xyz,0.4); // Saturation
 
   OUT.Color.xyz = lerp(cScreenOrig.xyz, OUT.Color.xyz, nightVisionParamsPS.w*nightVisionParamsPS.w);
 

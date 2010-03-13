@@ -32,7 +32,7 @@
 		<param name="aitype"	value="grenade" />
 	</params>
 	<trail>
-		<param name="effect" value="explosions.Smoke_grenade.smoke" />
+		<param name="effect" value="Remod.explosions.smokegrenade" />
 		<param name="prime" value="false" />
 	</trail>
 	<scaledeffect>

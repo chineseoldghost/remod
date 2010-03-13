@@ -283,10 +283,10 @@ Remod
 13=Game\Scripts\Entities\Items\XML\Ammo\SmokeGrenade.xml
 14=Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_aaa.xml
 15=Game\Scripts\GameRules\PowerStruggle.lua
-16=Game\Scripts\Remod.lua
+16=..\..\..\..\..\..\Users\CHARLI~1\AppData\Local\Temp\Rar$DI08.469\FGL40FragGrenade.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\GameRules\PowerStruggle.lua
+Selected=..\..\..\..\..\..\Users\CHARLI~1\AppData\Local\Temp\Rar$DI08.469\FGL40FragGrenade.xml
 [Game\Scripts\Entities\Default\GeomEntity.orig]
 TopLine=1
 Caret=1,1
@@ -333,8 +333,8 @@ Caret=60,35
 TopLine=320
 Caret=15,322
 [Game\Scripts\GameRules\PowerStruggle.lua]
-TopLine=667
+TopLine=665
 Caret=4,681
-[Game\Scripts\Remod.lua]
+[..\..\..\..\..\..\Users\CHARLI~1\AppData\Local\Temp\Rar$DI08.469\FGL40FragGrenade.xml]
 TopLine=1
-Caret=1,13
+Caret=1,1

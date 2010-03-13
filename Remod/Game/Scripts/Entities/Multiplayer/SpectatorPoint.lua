@@ -29,7 +29,7 @@ SpectatorPoint =
 --------------------------------------------------------------------------
 function SpectatorPoint.Server:OnInit()
 	self:Enable(tonumber(self.Properties.bEnabled)~=0);
-	SetupTacGarbage(); -- Remod
+--	SetupTacGarbage(); -- Remod
 end
 
 ----------------------------------------------------------------------------------------------------

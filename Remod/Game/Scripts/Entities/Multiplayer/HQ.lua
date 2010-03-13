@@ -118,6 +118,26 @@ end
 
 
 ----------------------------------------------------------------------------------------------------
+ function HQ:OnReset()
+	self:EnableSlot(1, false);
+	self:EnableSlot(0, true);
+
+	self.isServer = CryAction.IsServer();
+	self.isClient = CryAction.IsClient();
+	
+	if (self.isServer) then
+		if (self.Properties.teamName ~= "") then
+			self:SetTeamId(g_gameRules.game:GetTeamId(self.Properties.teamName) or 0);
+		else
+			self:SetTeamId(0);
+		end
+	end
+	
+	self.destroyed=false;
+	self:SetHealth(self.Properties.nHitPoints);
+end
+ 
+ --[[
  function HQ:OnReset() -- Remod HQ HP 1
         self:EnableSlot(1, false);
         self:EnableSlot(0, true);
@@ -141,7 +161,7 @@ end
 	self:SetHealth(health * 5999);  
 	self.Properties.nHitPoints = health * 5999;
 end
-
+--]]
 
 ----------------------------------------------------------------------------------------------------
 function HQ:OnPropertyChange()
@@ -223,6 +243,51 @@ end
 
 
 ----------------------------------------------------------------------------------------------------
+function HQ.Server:OnHit(hit)
+
+	if (self.destroyed) then
+		return;
+	end
+-- don't take partial damage (eg from splash since explosion radius is 100m)
+	if(hit.damage < self:GetHealth()) then
+		return;
+	end
+
+	local destroyed=false;
+	-- check if destroyed, decrease health if needed
+	local teamId=g_gameRules.game:GetTeam(hit.shooterId);
+	if (teamId==0 or teamId~=self:GetTeamId()) then
+		if (hit.explosion and hit.type=="tac") then
+			self:SetHealth(self:GetHealth()-hit.damage);
+
+			if (self:GetHealth()<=0) then
+				destroyed=true;
+			end
+         if (hit.damage>0 and hit.type~="repair") then
+				if (g_gameRules.Server.OnHQHit) then
+					g_gameRules.Server.OnHQHit(g_gameRules, self, hit);
+
+				end
+			end
+		end
+	end
+
+	if (destroyed) then
+		if (not self.isClient) then
+			self:Destroy();
+		end
+
+		self.allClients:ClDestroy();
+
+		if (g_gameRules and g_gameRules.OnHQDestroyed) then
+			g_gameRules:OnHQDestroyed(self, hit.shooterId, teamId);
+		end
+	end
+
+	return destroyed;
+end
+
+--[[
 function HQ.Server:OnHit(hit) -- Remod HQHP 2
         if (self.destroyed) then
                 return;
@@ -277,6 +342,7 @@ function HQ.Server:OnHit(hit) -- Remod HQHP 2
 
         return destroyed;
 end
+--]]
 
 
 

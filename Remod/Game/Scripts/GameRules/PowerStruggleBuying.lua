@@ -196,7 +196,7 @@ PowerStruggle.ppList=
 	
 	--REPAIR							= 1/5, -- Points/damage repaired.
 	LOCKPICK						= 75,
-	DISARM							= 50,
+--	DISARM							= 50,
 	TAG_ENEMY						= 5,
 		
 	VEHICLE_REFUND_MULT		  		= 1,

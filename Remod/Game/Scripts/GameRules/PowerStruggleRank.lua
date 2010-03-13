@@ -34,8 +34,8 @@ PowerStruggle.cpList=
 	CAPTURE                     = 3,
 	BUYVEHICLE						 = 0,
 	TAG_ENEMY						 = 0,	--TODO once design is confirmed
-   TEAMKILL                    = -2
-   MELEE                       = 5
+   TEAMKILL                    = -2,
+ --  MELEE                       = 5,
 
 	VEHICLE_KILL_MIN			= 0,
 	VEHICLE_KILL_MULT			= 0,
@@ -43,7 +43,7 @@ PowerStruggle.cpList=
 	--DISARM                = 5,
 	--ATTACKING_FACILITY        = 5,
 	--DEFENDING_FACILITY        = 5,
-	KILLING_TAC_WEAPON_BEARER = 30,
+	KILLING_TAC_WEAPON_BEARER = 4,
 };
 
 

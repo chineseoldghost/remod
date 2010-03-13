@@ -32,7 +32,7 @@ Remod
 			Game\Scripts\GameRules\TeamInstantAction.lua
 			Game\Scripts\GameRules\PowerStruggleAlert_NeedsFix.lua
 		+Entities
-			-Multiplayer
+			+Multiplayer
 				Game\Scripts\Entities\Multiplayer\HQ.lua
 				Game\Scripts\Entities\Multiplayer\TeamSoundSpot.lua
 				Game\Scripts\Entities\Multiplayer\TeamRandomSoundVolume.lua
@@ -276,15 +276,17 @@ Remod
 6=Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml
 7=Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
 8=Game\Scripts\Entities\Items\XML\Weapons\Hurricane.xml
-9=Game\Scripts\GameRules\PowerStruggleBuying.lua
-10=Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
-11=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon.xml
-12=Game\Scripts\GameRules\InstantAction.lua
-13=Game\Scripts\Entities\Items\XML\Ammo\GaussBullet.xml
-14=Game\Scripts\Entities\Items\XML\Ammo\SmokeGrenade.xml
+9=Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
+10=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon.xml
+11=Game\Scripts\GameRules\InstantAction.lua
+12=Game\Scripts\Entities\Items\XML\Ammo\GaussBullet.xml
+13=Game\Scripts\Entities\Items\XML\Ammo\SmokeGrenade.xml
+14=Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_aaa.xml
+15=Game\Scripts\GameRules\PowerStruggle.lua
+16=Game\Scripts\Remod.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Ammo\SmokeGrenade.xml
+Selected=Game\Scripts\GameRules\PowerStruggle.lua
 [Game\Scripts\Entities\Default\GeomEntity.orig]
 TopLine=1
 Caret=1,1
@@ -312,11 +314,8 @@ Caret=21,271
 [Game\Scripts\Entities\Items\XML\Weapons\Hurricane.xml]
 TopLine=200
 Caret=4,225
-[Game\Scripts\GameRules\PowerStruggleBuying.lua]
-TopLine=111
-Caret=3,153
 [Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml]
-TopLine=128
+TopLine=141
 Caret=33,170
 [Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon.xml]
 TopLine=1
@@ -328,5 +327,14 @@ Caret=49,990
 TopLine=1
 Caret=1,1
 [Game\Scripts\Entities\Items\XML\Ammo\SmokeGrenade.xml]
-TopLine=5
+TopLine=6
 Caret=60,35
+[Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_aaa.xml]
+TopLine=320
+Caret=15,322
+[Game\Scripts\GameRules\PowerStruggle.lua]
+TopLine=667
+Caret=4,681
+[Game\Scripts\Remod.lua]
+TopLine=1
+Caret=1,13

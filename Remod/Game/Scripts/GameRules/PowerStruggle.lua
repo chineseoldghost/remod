@@ -23,7 +23,7 @@ PowerStruggle.NEXTLEVEL_TIME						= 22000;
 PowerStruggle.ENDGAME_TIME							= 8000;
 PowerStruggle.VEHICLE_CLAIM_TIME				= 90; -- seconds to claim a bought vehicle
 PowerStruggle.NUKE_SPECTATE_TIMERID			= 1080;
-PowerStruggle.NUKE_SPECTATE_TIME				= 10000; -- Remod, default is 2000
+PowerStruggle.NUKE_SPECTATE_TIME				= 2000; -- Remod, default is 2000
 
 -- player/team settings
 --PowerStruggle.REVIVE_TIME								= 20;	OBSOLETE: Use g_revivetime instead
@@ -652,9 +652,9 @@ end
 
 
 ----------------------------------------------------------------------------------------------------
--- function PowerStruggle:VehicleOwnerDeath(player)
---	 self:AbandonPlayerVehicle(player.id);
--- end
+function PowerStruggle:VehicleOwnerDeath(player)
+ self:AbandonPlayerVehicle(player.id);
+end
 
 
 ----------------------------------------------------------------------------------------------------
@@ -678,10 +678,12 @@ function PowerStruggle.Server:OnPlayerKilled(hit)
 			end
 		end
 	end
+end
 	
 -- Remod, start killstreak function
 -- And yes bla i'm gonna comment everything for you lalz
 
+--[[
 function killstreak (shooter,target)
  if (shooter==target) then -- Make sure that its not triggered by suicide
 	 target.killstreak = 0;
@@ -722,6 +724,7 @@ end
 
 
 end
+--]]
 
 
 

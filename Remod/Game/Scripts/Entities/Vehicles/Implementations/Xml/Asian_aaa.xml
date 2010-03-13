@@ -1,4 +1,3 @@
-This breaks the gay AA.
 <Vehicle name="Asian_aaa" actionMap="landvehicle">
  <Physics pushable="0">
   <Buoyancy waterDensity="150" waterResistance="2500"/>
@@ -318,9 +317,9 @@ This breaks the gay AA.
     <View class="FirstPerson" canRotate="0">
      <FirstPerson helper="cameraPos" frameObject=""/>
     </View>
-    <View class="ActionThirdPerson" canRotate="0">
+    <!--<View class="ActionThirdPerson" canRotate="0">
      <ActionThirdPerson cameraPosOffset="0,-1.5,0" cameraAimOffset="0,3,0" lagSpeed="5" velocityMult="0,0,-0.5"/>
-    </View>
+    </View>-->
    </Views>
    <SeatActions>
     <SeatAction class="RotateTurret">

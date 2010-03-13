@@ -5,9 +5,6 @@
 	Name="HWScripts"
 	ProjectGUID="{8C9AE270-05BB-4F1B-BFE1-69347BF913A3}"
 	RootNamespace="HWScripts"
-	SccProjectName="Perforce Project"
-	SccLocalPath="."
-	SccProvider="MSSCCI:Perforce SCM"
 	TargetFrameworkVersion="131072"
 	>
 	<Platforms>

@@ -267,21 +267,26 @@ Remod
 		Game\Scripts\main.lua
 		Game\Scripts\Remod.lua
 [Open project files]
-0=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
-1=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
-2=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
-3=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
-4=Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml
-5=Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml
-6=Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
-7=Game\Scripts\Entities\Items\XML\Weapons\Hurricane.xml
-8=Game\Scripts\GameRules\PowerStruggleBuying.lua
-9=Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
-10=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon.xml
-11=Game\Scripts\GameRules\InstantAction.lua
+0=Game\Scripts\Entities\Default\GeomEntity.orig
+1=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
+2=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
+3=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
+4=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
+5=Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml
+6=Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml
+7=Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
+8=Game\Scripts\Entities\Items\XML\Weapons\Hurricane.xml
+9=Game\Scripts\GameRules\PowerStruggleBuying.lua
+10=Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
+11=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon.xml
+12=Game\Scripts\GameRules\InstantAction.lua
+13=Game\Scripts\Entities\Items\XML\Ammo\GaussBullet.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\GameRules\InstantAction.lua
+Selected=Game\Scripts\Entities\Items\XML\Ammo\GaussBullet.xml
+[Game\Scripts\Entities\Default\GeomEntity.orig]
+TopLine=1
+Caret=1,1
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
 TopLine=249
 Caret=18,277
@@ -318,3 +323,6 @@ Caret=4,30
 [Game\Scripts\GameRules\InstantAction.lua]
 TopLine=961
 Caret=49,990
+[Game\Scripts\Entities\Items\XML\Ammo\GaussBullet.xml]
+TopLine=1
+Caret=1,1

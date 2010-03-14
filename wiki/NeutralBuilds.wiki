@@ -13,7 +13,7 @@ When I feel the time is ripe, an installer will be available.
  * Crysis Wars with patch 1.5 installed
  * Visual C++ 2008 Redistributable. This is included in the Remod\Bin32\ folder.
 
-===Instructions===
+====Instructions====
 These are instructions on how to get neutral builds of Remod. Tests are planned on the Crymod IRC until I start organizing "official" tests.
 
  # Download TortoiseSVN for your system at http://tortoisesvn.net/downloads.

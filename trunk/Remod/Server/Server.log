@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(13 Mar 2010) Time(19 59 44)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(13 Mar 2010) Time(20 05 56)"  -- used by backup system
  
-Log Started at Saturday, March 13, 2010 19:59:44
+Log Started at Saturday, March 13, 2010 20:05:56
 Running 32 bit version
 Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.269905 MHz
+CPU Speed (estimated): 1997.284334 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.276327 MHz
+CPU Speed (estimated): 1997.287014 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -40,8 +40,8 @@ System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 19:59:45 03/13/10, system running for 455 minutes
-1521MB physical memory installed, 1028MB available, 2047MB virtual memory installed, 32 percent of memory in use
+Local time is 20:05:57 03/13/10, system running for 461 minutes
+1521MB physical memory installed, 316MB available, 2047MB virtual memory installed, 79 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
@@ -93,10 +93,709 @@ Initializing AI System
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
     $3sv_gamerules = $6InstantAction $5[]$4
-[net 18:59:45.952] network hostname: iMac7
-[net 18:59:45.952]   ip:192.168.0.192
-[net 18:59:45.952]   ip:5.182.209.7
+[net 19:05:58.347] network hostname: iMac7
+[net 19:05:58.350]   ip:192.168.0.192
+[net 19:05:58.350]   ip:5.182.209.7
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/terminal loading time: 2.07 seconds
+*LOADING: Level multiplayer/ia/terminal loading time: 3.02 seconds
 -----------------------------------------------------
+CHAT Blablah to ALL:
+   sunnlok and gomgom better join
+CHAT Blablah to ALL:
+   those bitches
+CHAT Blablah to ALL:
+   gomgom's coming
+CHAT Shadez to ALL:
+   k
+CHAT Blablah to ALL:
+   OOOH SNAP
+CHAT Blablah to ALL:
+   that was an awesome shot from my perspective xD
+CHAT Shadez to ALL:
+   i kinda flipped
+CHAT Blablah to ALL:
+   totally guessing shot lol
+CHAT Blablah to ALL:
+   i hit your tyre
+CHAT Shadez to ALL:
+   i want more open map , wish there was a desert with cars
+CHAT Shadez to ALL:
+   :D
+CHAT Shadez to ALL:
+   might actually make that
+[net 19:11:05.610] Disconnect blfd-5d822fdb.pool.mediaWays.net:61851; profid=98074264; cause=10; msg='Invalid CD Key'
+CHAT Blablah to ALL:
+   been there, done that, lol
+CHAT Shadez to ALL:
+   ?
+CHAT Blablah to ALL:
+   what you said
+CHAT Shadez to ALL:
+   you made desert?
+CHAT Shadez to ALL:
+   and released?
+CHAT Blablah to ALL:
+   several
+CHAT Blablah to ALL:
+   eeh i never really properly finished one
+CHAT Blablah to ALL:
+   but played em quite a bit nevertheless
+CHAT Blablah to ALL:
+   i just generated heightmaps with GC2
+CHAT Shadez to ALL:
+   this map is so small and closed
+CHAT Shadez to ALL:
+   yeah i love gc2
+CHAT Blablah to ALL:
+   then "procedurally" textured and populated them
+CHAT Blablah to ALL:
+   love the sparks
+CHAT Blablah to ALL:
+   hey nomads
+CHAT Blablah to ALL:
+   nice timing on joining :P
+CHAT Nomad(1) to ALL:
+   hate it
+CHAT Shadez to ALL:
+   bastard
+CHAT Blablah to ALL:
+   i'll see if i can reenable the name command
+CHAT Blablah to ALL:
+   ow i was adjusting my nuts
+CHAT Shadez to ALL:
+   stop with the announcements
+CHAT Blablah to ALL:
+   lol
+CHAT Nomad(1) to ALL:
+   wtf?
+CHAT Nomad to ALL:
+   hax
+CHAT Blablah to ALL:
+   zomg
+CHAT Shadez to ALL:
+   not at all
+CHAT Shadez to ALL:
+   called aiming
+CHAT Nomad(1) to ALL:
+   laaaaaaaaaaag
+CHAT Blablah to ALL:
+   so
+CHAT Blablah to ALL:
+   i'll explain a little bit
+CHAT Nomad to ALL:
+   its hard to watch a movie while playing D:
+CHAT Shadez to ALL:
+   doesnt lag at all for me
+CHAT Blablah to ALL:
+   i made the armor absorbtion a little less
+CHAT Shadez to ALL:
+   and i have more ping than you guys
+CHAT Shadez to ALL:
+   stop whining
+CHAT Blablah to ALL:
+   increased the delay on energy regen but made it regen quickly
+CHAT Blablah to ALL:
+   and made health regen slower
+CHAT Blablah to ALL:
+   this being a bit of a substitute for just generally high p2p damage
+CHAT Nomad to ALL:
+   where the fuck are you black niggarz?
+CHAT Shadez to ALL:
+   yes
+CHAT Shadez to ALL:
+   ^^
+CHAT Shadez to ALL:
+   i hit you?
+CHAT Nomad to ALL:
+   im watching a movie and my cat is walking on my desk
+CHAT Shadez to ALL:
+   announcements much
+CHAT Blablah to ALL:
+   ?
+CHAT Blablah to ALL:
+   i can not aim at the head if you guys want :P
+CHAT Nomad to ALL:
+   have to go afk for a bit
+CHAT Nomad to ALL:
+   sorry
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   that's ok
+CHAT Nomad(1) to ALL:
+   ...
+CHAT Shadez to ALL:
+   didnt expect that did you
+CHAT Nomad(1) to ALL:
+   ive to change something
+CHAT Nomad(1) to ALL:
+   i hate lagsokes
+CHAT Nomad(1) to ALL:
+   lagspikes
+CHAT Shadez to ALL:
+   wtf? gun took lik 1 sec to start shooting
+CHAT Blablah to ALL:
+   not me this time
+CHAT Shadez to ALL:
+   fuuuuu
+CHAT Shadez to ALL:
+   i was aiming at your head and you shot mine
+    $3g_MPDeathCam = $61 $5[]$4
+CHAT Blablah to ALL:
+   turned deathcam on
+CHAT Shadez to ALL:
+   ?
+CHAT Shadez to ALL:
+   really?
+CHAT Shadez to ALL:
+   i cant see any deathcam
+CHAT Blablah to ALL:
+   god i hate the FGL
+CHAT Blablah to ALL:
+   i think i'll turn it into a support weapon
+CHAT Blablah to ALL:
+   haha xD
+CHAT Nomad(1) to ALL:
+   is it only this dark for me?
+CHAT Blablah to ALL:
+   yep
+CHAT Nomad(1) to ALL:
+   or did you change the tod?
+CHAT Blablah to ALL:
+   nope
+CHAT Blablah to ALL:
+   in what sense is it dark?
+CHAT Blablah to ALL:
+   LOL
+CHAT Shadez to ALL:
+   overpowered
+CHAT Shadez to ALL:
+   i had full hp
+CHAT Shadez to ALL:
+   >.<
+CHAT Blablah to ALL:
+   lol shadez :D
+CHAT Nomad(1) to ALL:
+   nos scope :D
+CHAT Blablah to ALL:
+   i still want the gauss to zero-g people :>
+CHAT Blablah to ALL:
+   use cloak foo
+CHAT Blablah to ALL:
+   good
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   gauss only has 2 bullets/clip now
+CHAT Shadez to ALL:
+   wtf
+CHAT Blablah to ALL:
+   i like this wood here
+CHAT Nomad(1) to ALL:
+   -.-
+CHAT Blablah to ALL:
+   ouch
+CHAT Blablah to ALL:
+   nice.
+CHAT Shadez to ALL:
+   bish
+CHAT Shadez to ALL:
+   :P
+CHAT Nomad(1) to ALL:
+   and thats why i hate crysis
+CHAT Blablah to ALL:
+   dying a little fast here
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   ^^
+CHAT Blablah to ALL:
+   i let you have that one, haha
+CHAT Blablah to ALL:
+   nice!
+CHAT Shadez to ALL:
+   sooo close
+CHAT Nomad(1) to ALL:
+   luckshot
+CHAT Shadez to ALL:
+   LOOOOOOOOOOOOOOOOOOOOOL
+CHAT Shadez to ALL:
+   i flashed myself
+CHAT Blablah to ALL:
+   i wish i could do something about the crappy sound :|
+CHAT Shadez to ALL:
+   get bc2 weapons sounds
+CHAT Blablah to ALL:
+   lol
+CHAT Shadez to ALL:
+   now that would be EPIC
+CHAT Blablah to ALL:
+   well
+CHAT Blablah to ALL:
+   the problem aren't really the sounds themselves
+CHAT Blablah to ALL:
+   it's the way crytek setup distance volume fading etc
+CHAT Blablah to ALL:
+   it makes no sense
+CHAT Blablah to ALL:
+   if i could edit the original fmod stuff
+CHAT Blablah to ALL:
+   i could make this sound somewhat like BC2
+CHAT Blablah to ALL:
+   or at least better
+CHAT Shadez to ALL:
+   i hate how they made alot of stuff difficult
+CHAT Blablah to ALL:
+   right now it's rubbish
+CHAT Shadez to ALL:
+   ah
+CHAT Blablah to ALL:
+   protip: aim for the head
+CHAT Blablah to ALL:
+   shadez, aim for my head :(
+CHAT Shadez to ALL:
+   i was tryin
+CHAT Shadez to ALL:
+   well
+CHAT Shadez to ALL:
+   not very hard
+CHAT Blablah to ALL:
+   ooooloooohoohoal guass
+CHAT Blablah to ALL:
+   i saw you cloak :P
+CHAT Shadez to ALL:
+   ah
+CHAT Shadez to ALL:
+   i used speed mode , ran of a cliff and fell
+CHAT Shadez to ALL:
+   xD
+CHAT Nomad(1) to ALL:
+   ??
+CHAT Shadez to ALL:
+   oh wow
+CHAT Shadez to ALL:
+   you can use speed longer now?
+CHAT Blablah to ALL:
+   you can now
+CHAT Blablah to ALL:
+   but in a few seconds? no :P
+CHAT Shadez to ALL:
+   ..
+CHAT Shadez to ALL:
+   :/
+CHAT Blablah to ALL:
+   LMAO shit, i was in speed instead of strength
+CHAT Shadez to ALL:
+   fauk
+CHAT Shadez to ALL:
+   fail*
+CHAT Blablah to ALL:
+   well you're lucky, for some reason the energy consumption for speed is 
+CHAT Blablah to ALL:
+   not changing when i want it to, lol
+CHAT Blablah to ALL:
+   oh i see
+CHAT Shadez to ALL:
+   lag
+    $3g_suitSpeedEnergyConsumptionMultiplayer = $6100 $5[]$4
+CHAT Nomad(1) to ALL:
+   didnt see you
+CHAT Shadez to ALL:
+   so uh
+CHAT Blablah to ALL:
+   eah
+CHAT Shadez to ALL:
+   nomads..
+CHAT Shadez to ALL:
+   name
+CHAT Shadez to ALL:
+   >.<
+CHAT Blablah to ALL:
+   gomgom?
+CHAT Blablah to ALL:
+   gomgom?
+CHAT Nomad(1) to ALL:
+   it lags like shit for me-.-
+CHAT Blablah to ALL:
+   <3 ragdolls
+CHAT Shadez to ALL:
+   LOL
+CHAT Shadez to ALL:
+   i slided of roof
+CHAT Blablah to ALL:
+   it's really smooth for me so it's probably not me... :/
+CHAT Shadez to ALL:
+   fine now
+CHAT Blablah to ALL:
+   sometimes i lag really hard and it causes the server to lag thus everyo
+CHAT Blablah to ALL:
+   ne
+CHAT Blablah to ALL:
+   but not now
+CHAT Shadez to ALL:
+   but nomads..
+CHAT Blablah to ALL:
+   what about nomads?$
+CHAT Shadez to ALL:
+   who are they
+CHAT Blablah to ALL:
+   sunnlok and gomgom
+CHAT Shadez to ALL:
+   how do you know
+CHAT Blablah to ALL:
+   i invited them
+CHAT Shadez to ALL:
+   still
+CHAT Blablah to ALL:
+   right
+CHAT Blablah to ALL:
+   idk then :P
+CHAT Shadez to ALL:
+   LOL?!
+CHAT Shadez to ALL:
+   uh
+CHAT Blablah to ALL:
+   headsharwts
+CHAT Shadez to ALL:
+   you kinda... stuck the rifle sound
+CHAT Shadez to ALL:
+   oh
+CHAT Shadez to ALL:
+   or not
+CHAT Blablah to ALL:
+   oh damn, how'd you know?
+CHAT Nomad(1) to ALL:
+   heard you cloak
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   nice
+CHAT Blablah to ALL:
+   sob!
+CHAT Blablah to ALL:
+   do you guys like the weapon bob? :/
+CHAT Blablah to ALL:
+   i mean
+CHAT Blablah to ALL:
+   well
+CHAT Blablah to ALL:
+   eah
+CHAT Blablah to ALL:
+   nevermind
+CHAT Nomad(1) to ALL:
+   -.- reload
+CHAT Blablah to ALL:
+   mmm
+CHAT Blablah to ALL:
+   shotty should only have 6 rounds
+CHAT Shadez to ALL:
+   was about to melee
+CHAT Shadez to ALL:
+   :/
+CHAT Blablah to ALL:
+   i found gomgom >:D
+CHAT Shadez to ALL:
+   LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOL
+CHAT Blablah to ALL:
+   sob!
+CHAT Blablah to ALL:
+   LOL, i flew :D
+CHAT Shadez to ALL:
+   i flew too
+CHAT Shadez to ALL:
+   VERY long distance
+CHAT Blablah to ALL:
+   :D
+CHAT Shadez to ALL:
+   -.-
+CHAT Blablah to ALL:
+   noise :P
+CHAT Blablah to ALL:
+   oooooh fuck yeeeeaaaaaah :D
+CHAT Blablah to ALL:
+   D:
+CHAT Blablah to ALL:
+   LOL, fuck
+CHAT Nomad(1) to ALL:
+   cloak last waaaaaaaaaay to long
+CHAT Blablah to ALL:
+   when you're still
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   ooooooh
+CHAT Shadez to ALL:
+   you were looking for me?
+CHAT Blablah to ALL:
+   lol
+CHAT Shadez to ALL:
+   fucken nomad with his gauss
+CHAT Shadez to ALL:
+   campin
+CHAT Blablah to ALL:
+   :P
+CHAT Blablah to ALL:
+   let's get him then
+CHAT Shadez to ALL:
+   agree
+CHAT Nomad(1) to ALL:
+   hmmmmm
+CHAT Shadez to ALL:
+   ????????????????????????????????
+CHAT Nomad(1) to ALL:
+   empty
+CHAT Blablah to ALL:
+   loljesuspose
+CHAT Shadez to ALL:
+   i punched you in the head and you punch me while reloading
+CHAT Shadez to ALL:
+   WTF?
+CHAT Blablah to ALL:
+   oh, nice
+CHAT Blablah to ALL:
+   shadez
+CHAT Blablah to ALL:
+   your net is acting up
+CHAT Nomad(1) to ALL:
+   we should ad a nail gun
+CHAT Shadez to ALL:
+   ?!
+CHAT Blablah to ALL:
+   your ping normally isn't this high D:
+CHAT Blablah to ALL:
+   and it just went to +200
+CHAT Shadez to ALL:
+   orly
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   a nailgun
+CHAT Blablah to ALL:
+   mm
+CHAT Blablah to ALL:
+   doesn't really fit ni though
+CHAT Shadez to ALL:
+   this is just fucked
+CHAT Nomad(1) to ALL:
+   but its funs
+CHAT Shadez to ALL:
+   my ping is probably why i keep dying without knowing what happens
+CHAT Shadez to ALL:
+   in alot of games
+CHAT Blablah to ALL:
+   lol
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   LMAO
+CHAT Blablah to ALL:
+   yfuck
+CHAT Shadez to ALL:
+   lllaggg
+CHAT Blablah to ALL:
+   hmm
+CHAT Blablah to ALL:
+   look at your ping
+CHAT Blablah to ALL:
+   so fucking close xD
+CHAT Shadez to ALL:
+   OMG
+CHAT Blablah to ALL:
+   haha, yes! xD
+CHAT Blablah to ALL:
+   guys
+CHAT Blablah to ALL:
+   will you give me feedback afterwards?
+CHAT Blablah to ALL:
+   i'd like that :P
+CHAT Shadez to ALL:
+   foodback
+CHAT Blablah to ALL:
+   no ammo xD
+CHAT Shadez to ALL:
+   ?!
+CHAT Blablah to ALL:
+   shooting speeding people is great
+CHAT Nomad to ALL:
+   back for a new mi ns
+CHAT Blablah to ALL:
+   yay!
+CHAT Shadez to ALL:
+   .
+CHAT Nomad to ALL:
+   yay i like me too
+CHAT Blablah to ALL:
+   guys
+CHAT Blablah to ALL:
+   would you prefer a lighter suit?
+CHAT Shadez to ALL:
+   i r no good
+CHAT Blablah to ALL:
+   the non-metal parts anyway
+CHAT Nomad to ALL:
+   what do  you mean?
+CHAT Blablah to ALL:
+   lighter in color
+CHAT Blablah to ALL:
+   well, brighter ;)
+CHAT Shadez to ALL:
+   OMG
+CHAT Nomad to ALL:
+   rofl xD
+CHAT Nomad to ALL:
+   i like the shields how they are more hali stileish
+CHAT Nomad to ALL:
+   *halo
+CHAT Blablah to ALL:
+   the shields?
+CHAT Nomad to ALL:
+   *style
+CHAT Nomad to ALL:
+   yea like the energy
+CHAT Nomad to ALL:
+   is more like the halo shields
+CHAT Blablah to ALL:
+   what shields?
+CHAT Nomad to ALL:
+   when you use armor mode
+CHAT Nomad to ALL:
+   with the energy
+CHAT Nomad to ALL:
+   like the rechrache
+CHAT Nomad to ALL:
+   of energy
+CHAT Blablah to ALL:
+   oh right
+CHAT Nomad to ALL:
+   take some time for it to start charging
+CHAT Blablah to ALL:
+   the recharge behaviour of the suit?
+CHAT Blablah to ALL:
+   yeah
+CHAT Nomad to ALL:
+   but it does it fast
+CHAT Blablah to ALL:
+   it's at 4 seconds now, and i'm going to set it to 5 i think :<
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   it's still too much about who aims best i think...
+CHAT Blablah to ALL:
+   and lol
+CHAT Blablah to ALL:
+   uh
+CHAT Blablah to ALL:
+   like i was saying
+CHAT Blablah to ALL:
+   no
+CHAT Blablah to ALL:
+   i already said it
+CHAT Blablah to ALL:
+   :D
+CHAT Blablah to ALL:
+   when i don't fire back it means i'm with you! :P
+CHAT Blablah to ALL:
+   to get the gauss guy, ex
+CHAT Blablah to ALL:
+   to get the gauss guy for example
+CHAT Shadez to ALL:
+   oki
+CHAT Shadez to ALL:
+   gona go try out this half life 2 mod
+CHAT Shadez to ALL:
+   later
+CHAT Blablah to ALL:
+   now?
+CHAT Blablah to ALL:
+   lies
+CHAT Nomad to ALL:
+   lies
+CHAT Blablah to ALL:
+   stick around a bit more foo D:
+CHAT Shadez to ALL:
+   hm
+CHAT Shadez to ALL:
+   kk
+CHAT Blablah to ALL:
+   high five
+CHAT Nomad to ALL:
+   low five
+CHAT Blablah to ALL:
+   i can switch to TIA if you'd like
+CHAT Blablah to ALL:
+   mid five
+CHAT Nomad to ALL:
+   naa
+CHAT Nomad to ALL:
+   keep it at this
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   Actually
+CHAT Blablah to ALL:
+   i renamed tia and ia to tdm and dm
+CHAT Nomad to ALL:
+   bleh movie again
+CHAT Blablah to ALL:
+   lol
+CHAT Shadez to ALL:
+   LOL
+CHAT Blablah to ALL:
+   noooo, lol
+CHAT Shadez to ALL:
+   killed you all 3
+CHAT Shadez to ALL:
+   in a row
+CHAT Shadez to ALL:
+   fuuu
+CHAT Blablah to ALL:
+   win xD
+CHAT Blablah to ALL:
+   is anyone missing the LAM?
+CHAT Shadez to ALL:
+   lamb what?
+CHAT Blablah to ALL:
+   laser
+CHAT Blablah to ALL:
+   i got rid of it
+CHAT Blablah to ALL:
+   because it's useless
+CHAT Nomad(1) to ALL:
+   i hate crysis mp
+CHAT Shadez to ALL:
+   mhm
+CHAT Shadez to ALL:
+   .
+CHAT Shadez to ALL:
+   hmm
+CHAT Blablah to ALL:
+   pure skill brah, pure skill :P
+CHAT Blablah to ALL:
+   sob
+CHAT Shadez to ALL:
+   kk
+CHAT Shadez to ALL:
+   im off now
+CHAT Shadez to ALL:
+   l8r
+CHAT Blablah to ALL:
+   that was ridiculous wasn't it?
+CHAT Blablah to ALL:
+   i didn't even zoom
+CHAT Blablah to ALL:
+   pure guess work lol
+[net 20:00:17.555] Disconnect 212-30-198-226.dsl.dynamic.simnet.is:61529; profid=161429488; cause=0; msg='Timeout occurred; no packet for 31.5 seconds'
+CHAT Nomad(1) to ALL:
+   toilet
+CHAT Blablah to ALL:
+   shall we go as well then?
+CHAT Nomad(1) to ALL:
+   and bath...
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   i'll go too then
+[net 20:01:06.355] Disconnect iMac7.telenet.be:58256; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:58256'
+[net 20:01:10.926] Disconnect blfd-5d822fdb.pool.mediaWays.net:64527; profid=98074264; cause=0; msg='Timeout occurred; no packet for 31.6 seconds'
+[net 20:09:14.284] Disconnect x1-6-00-1e-2a-86-ff-ba.k622.webspeed.dk:49159; profid=102228471; cause=19; msg='Remote disconnected: User left the game'
 System:Quit

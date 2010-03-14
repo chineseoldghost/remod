@@ -19,7 +19,7 @@
 	<ai_descriptor handler="instant" burstBulletCountMin="1" burstBulletCountMax="10"
 		burstPauseTimeMin="0.8" burstPauseTimeMax="3.5" singleFireTriggerTime="0.4" />	
 	<ammos>
-		<ammo name="shotgunshell" extra="32" amount="8" />
+		<ammo name="shotgunshell" extra="16" amount="6" />
 	</ammos>
 	<geometry>
 		<firstperson name="objects/weapons/us/shotgun/shotgun_fp.chr" angles="0,0,0"/>
@@ -202,7 +202,7 @@
 			<fire>
 				<param name="ammo_type" value="shotgunshell" />
 				<param name="hit_type" value="ht_ShotgunShell" />
-				<param name="clip_size" value="8" />
+				<param name="clip_size" value="6" />
 				<param name="rate" value="70" />
 				<param name="damage" value="11.5" />
 				<param name="reload_time" value="4.0" />

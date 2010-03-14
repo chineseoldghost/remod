@@ -308,7 +308,7 @@
 				<param name="back_impulse" value="1" />
 			</recoil>
 		</firemode>
-		<firemode name="Single" type="Single">
+		<!--<firemode name="Single" type="Single">
 			<tracer>
 			  <param name="geometryFP" 	value="objects/effects/tracer_standard_new.cgf" />
 				<param name="geometry" 	value="objects/effects/tracer_standard_new.cgf" />
@@ -335,7 +335,7 @@
 				<param name="ooatracer_treshold" value="5" />
 				<param name="auto_fire" value="true" />
 			</fire>		
-		</firemode>
+		</firemode>-->
 		<firemode name="melee" type="Melee">
 			<melee>
 				<param name="helper" value="Collision" />

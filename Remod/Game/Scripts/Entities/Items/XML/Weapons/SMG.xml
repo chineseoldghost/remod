@@ -212,7 +212,7 @@
 			<recoil>
 				<param name="max_recoil"	value="1.5" />
 				<param name="attack" 			value="1.5" />
-				<param name="decay" 			value="0.1" />
+				<param name="decay" 			value="0.2" />
 				<param name="maxx" 				value="1.5" />
 				<param name="maxy" 				value="1.5" />
 				<param name="randomness" 	value="0.85" />

@@ -283,7 +283,7 @@ Remod
 13=Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_aaa.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Ammo\SmokeGrenade.xml
+Selected=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
 [Game\Scripts\Entities\Default\GeomEntity.orig]
 TopLine=1
 Caret=1,1
@@ -294,8 +294,8 @@ Caret=17,379
 TopLine=304
 Caret=17,338
 [Game\Scripts\Entities\Items\XML\Weapons\SMG.xml]
-TopLine=298
-Caret=17,329
+TopLine=190
+Caret=38,215
 [Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml]
 TopLine=195
 Caret=37,205

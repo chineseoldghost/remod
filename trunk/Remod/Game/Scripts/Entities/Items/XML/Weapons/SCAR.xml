@@ -232,11 +232,11 @@
 				<param name="nearmiss_signal" value="OnNearMiss" />
 			</fire>
 			<recoil>
-				<param name="max_recoil"	value="0.7" />
-				<param name="attack" 			value="0.7" />
+				<param name="max_recoil"	value="1" />
+				<param name="attack" 			value="1" />
 				<param name="decay" 			value="0.175" />
-				<param name="maxx" 				value="0.7" />
-				<param name="maxy" 				value="0.7" />
+				<param name="maxx" 				value="1" />
+				<param name="maxy" 				value="1" />
 				<param name="randomness" 	value="0.25" />
 				<param name="recoil_prone_m" value="0.25" />
 				<param name="recoil_crouch_m" value="0.5" />
@@ -345,7 +345,7 @@
 			</tactical>
 		</firemode>-->
 
-		<!--<firemode name="Single" type="Single">
+		<firemode name="Single" type="Single">
 			<tracer>
 				<param name="geometryFP" 	value="objects/effects/tracer_standard_new.cgf" />
 				<param name="geometry" 	value="objects/effects/tracer_standard_new.cgf" />
@@ -376,7 +376,7 @@
 				<param name="angular_impulse" value="0.2" />
 				<param name="back_impulse" value="0.2" />
 			</recoil>
-		</firemode>-->
+		</firemode>
 		<firemode name="Tac Sleep" type="Single" enabled="0" >
 			<fire>
 				<param name="ammo_type" value="tacbullet" />

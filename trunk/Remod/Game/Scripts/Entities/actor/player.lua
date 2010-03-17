@@ -7,11 +7,13 @@ Player = {
 
 	type = "Player",
 
-	foreignCollisionDamageMult = 0.1,	
+   -- Damage multipliers for physics, vehicle and MP vehicle collisions with the player. Not sure what value it multiplies.
+	foreignCollisionDamageMult = 0.1,
 	vehicleCollisionDamageMult = 7.5,
 	vehicleCollisionDamageMultMP = 0.4,
 	
-	Properties = 
+	-- Some properties. Same as for Grunts in SB2, but for the player.
+	Properties =
 	{	
 		-- AI-related properties
 		soclasses_SmartObjectClass = "Player",
@@ -34,10 +36,10 @@ Player = {
 			sightrange = 50,
 		}	,
 		--
-		fileModel = "objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf",
-		clientFileModel = "objects/characters/human/us/nanosuit/nanosuit_us_fp3p.cdf",
+		fileModel = "objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf", -- Third person player model.
+		clientFileModel = "objects/characters/human/us/nanosuit/nanosuit_us_fp3p.cdf", -- First person legs?
 		--fileModel = "objects/characters/human/asian/nanosuit/nanosuit_asian_fp3p.cdf",
-		fpItemHandsModel = "objects/weapons/arms_global/arms_nanosuit_us.chr",	
+		fpItemHandsModel = "objects/weapons/arms_global/arms_nanosuit_us.chr", -- First person viewmodel (arms).
 		--fpItemHandsModel = "objects/weapons/arms_global/arms_nanosuit_asian.chr",	
 		objFrozenModel= "objects/characters/human/asian/nk_soldier/nk_soldier_frozen_scatter.cgf",
 	},
@@ -46,6 +48,7 @@ Player = {
 		aibehavior_behaviour = "PlayerIdle",
 	},
 	
+	-- Ammo capacities for the player in SP. Bullets x magazines.
 	ammoCapacity =
 	{
 		bullet=40*7,

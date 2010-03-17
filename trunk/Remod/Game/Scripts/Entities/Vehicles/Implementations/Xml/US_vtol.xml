@@ -303,7 +303,7 @@
       </Weapons>
      </Weapons>
     </SeatAction>-->
-    <SeatAction class="Weapons">
+    <!--<SeatAction class="Weapons">
      <Weapons disablesShootToCrosshair="1" isAvailableRemotely="1">
       <Weapons>
        <Weapon class="SideWinder" part="hull" id="idWeaponGunner">
@@ -314,7 +314,7 @@
        </Weapon>
       </Weapons>
      </Weapons>
-    </SeatAction>
+    </SeatAction>-->
     <SeatAction class="Lights" isAvailableRemotely="1">
      <Lights activation="toggle" sound="2">
       <LightParts>

@@ -136,13 +136,13 @@
 				<param name="ammo_type" value="explosivegrenade" />
 				<param name="clip_size" value="0" />
 				<param name="rate" value="50" />
-				<param name="damage" value="150" />
+				<param name="damage" value="200" />
 				<param name="helper_tp" value="dummy" />
 				<param name="helper_fp" value="grenade" />
-				<param name="track_projectiles" value="1" />
+				<param name="track_projectiles" value="0" />
 			</fire>
 			<throw>
-				<param name="delay" 		value="0.15" />
+				<param name="delay" 		value="0.25" />
 				<param name="auto_select_last" value="0" />
 				<param name="hold_duration" 	 value="2.0" />
 				<param name="hold_min_scale" 	 value="0.15" />
@@ -167,10 +167,10 @@
 				<param name="damage" value="0" />
 				<param name="helper_tp" value="dummy" />
 				<param name="helper_fp" value="grenade" />
-				<param name="track_projectiles" value="1" />
+				<param name="track_projectiles" value="0" />
 			</fire>
 			<throw>
-				<param name="delay" 		value="0.15" />
+				<param name="delay" 		value="0.25" />
 				<param name="auto_select_last" value="0" />
 				<param name="hold_duration" 	 value="1.0" />
 				<param name="hold_min_scale" 	 value="0.75" />
@@ -195,10 +195,10 @@
 				<param name="damage" value="0" />
 				<param name="helper_tp" value="dummy" />
 				<param name="helper_fp" value="grenade" />
-				<param name="track_projectiles" value="1" />
+				<param name="track_projectiles" value="0" />
 			</fire>
 			<throw>
-				<param name="delay" 		value="0.15" />
+				<param name="delay" 		value="0.25" />
 				<param name="auto_select_last" value="0" />
 				<param name="hold_duration" 	 value="1.0" />
 				<param name="hold_min_scale" 	 value="0.75" />
@@ -223,10 +223,10 @@
 				<param name="damage" value="0" />
 				<param name="helper_tp" value="dummy" />
 				<param name="helper_fp" value="grenade" />
-				<param name="track_projectiles" value="1" />
+				<param name="track_projectiles" value="0" />
 			</fire>
 			<throw>
-				<param name="delay" 		value="0.15" />
+				<param name="delay" 		value="0.25" />
 				<param name="auto_select_last" value="0" />
 				<param name="hold_duration" 	 value="1.0" />
 				<param name="hold_min_scale" 	 value="0.75" />

@@ -33,7 +33,6 @@
 	</params>
 	<trail>
 		<param name="effect" value="Remod.explosions.smokegrenade" />
-		<param name="prime" value="false" />
 	</trail>
 	<scaledeffect>
 		<!--<param name="postEffect" value="FilterBlurring_Amount" />-->

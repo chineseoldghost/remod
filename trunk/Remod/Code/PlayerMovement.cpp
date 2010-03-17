@@ -1185,7 +1185,7 @@ void CPlayerMovement::ProcessOnGroundOrJumping(CPlayer& player)
 			CNanoSuit *pSuit = m_player.GetNanoSuit();
 			if(pSuit && pSuit->GetMode() == NANOMODE_STRENGTH)
 			{
-				if (pSuit->GetSuitEnergy() >= 90.0f) // Remod, minimum energy required to strength jump, default is 70.0f
+				if (pSuit->GetSuitEnergy() >= 100.0f) // Remod, minimum energy required to strength jump, default is 70.0f
 				{
 					if(m_stats.inZeroG)
 						pSuit->SetSuitEnergy(pSuit->GetSuitEnergy()-10.0f);
@@ -1197,7 +1197,7 @@ void CPlayerMovement::ProcessOnGroundOrJumping(CPlayer& player)
 							pSuit->Tap(eNA_None);
 						}
 
-						pSuit->SetSuitEnergy(pSuit->GetSuitEnergy()-90.0f); // Remod, strength jump energy consumption, default is -70.0f
+						pSuit->SetSuitEnergy(pSuit->GetSuitEnergy()-100.0f); // Remod, strength jump energy consumption, default is -70.0f
 						pSuit->PlaySound(STRENGTH_JUMP_SOUND, (pSuit->GetSlotValue(NANOSLOT_STRENGTH))*0.01f);
 
 						// Report super jump to AI system.

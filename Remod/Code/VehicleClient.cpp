@@ -72,8 +72,8 @@ bool CVehicleClient::Init()
   m_actionNameIds.insert(TActionNameIdMap::value_type("v_pitchdown", eVAI_PitchDown));
 
   m_actionNameIds.insert(TActionNameIdMap::value_type("v_brake", eVAI_Brake));
-  m_actionNameIds.insert(TActionNameIdMap::value_type("v_afterburner", eVAI_AfterBurner));
-  m_actionNameIds.insert(TActionNameIdMap::value_type("v_boost", eVAI_Boost));
+// m_actionNameIds.insert(TActionNameIdMap::value_type("v_afterburner", eVAI_AfterBurner));
+// m_actionNameIds.insert(TActionNameIdMap::value_type("v_boost", eVAI_Boost));
 
   m_actionNameIds.insert(TActionNameIdMap::value_type("v_debug_1", eVAI_Debug_1));
   m_actionNameIds.insert(TActionNameIdMap::value_type("v_debug_2", eVAI_Debug_2));

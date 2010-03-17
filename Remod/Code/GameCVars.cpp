@@ -239,11 +239,11 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("g_playerSuitEnergyRechargeTimeArmorMoving", &g_playerSuitEnergyRechargeTimeArmorMoving, 4.0f, VF_CHEAT, "Modify suit energy recharge for Player in singleplayer in armor mode while moving.");
 	pConsole->Register("g_playerSuitEnergyRechargeTimeMultiplayer", &g_playerSuitEnergyRechargeTimeMultiplayer, 4.0f, VF_CHEAT, "Modify suit energy recharge for Player in multiplayer.");
 	pConsole->Register("g_playerSuitEnergyRechargeDelay", &g_playerSuitEnergyRechargeDelay, 5.0f, VF_CHEAT, "Delay of energy recharge after the player has been hit.");
-	pConsole->Register("g_playerSuitHealthRegenTime", &g_playerSuitHealthRegenTime, 35.0f, VF_CHEAT, "Modify suit health recharge for Player.");
-	pConsole->Register("g_playerSuitHealthRegenTimeMoving", &g_playerSuitHealthRegenTimeMoving, 35.0f, VF_CHEAT, "Modify suit health recharge for moving Player.");
-	pConsole->Register("g_playerSuitArmorModeHealthRegenTime", &g_playerSuitArmorModeHealthRegenTime, 35.0f, VF_CHEAT, "Modify suit health recharge for Player in armor mode.");
-	pConsole->Register("g_playerSuitArmorModeHealthRegenTimeMoving", &g_playerSuitArmorModeHealthRegenTimeMoving, 35.0f, VF_CHEAT, "Modify suit health recharge for Player moving in armor mode.");
-	pConsole->Register("g_playerSuitHealthRegenDelay", &g_playerSuitHealthRegenDelay, 0.0f, VF_CHEAT, "Delay of health regeneration after the player has been hit.");
+	pConsole->Register("g_playerSuitHealthRegenTime", &g_playerSuitHealthRegenTime, 40.0f, VF_CHEAT, "Modify suit health recharge for Player.");
+	pConsole->Register("g_playerSuitHealthRegenTimeMoving", &g_playerSuitHealthRegenTimeMoving, 40.0f, VF_CHEAT, "Modify suit health recharge for moving Player.");
+	pConsole->Register("g_playerSuitArmorModeHealthRegenTime", &g_playerSuitArmorModeHealthRegenTime, 40.0f, VF_CHEAT, "Modify suit health recharge for Player in armor mode.");
+	pConsole->Register("g_playerSuitArmorModeHealthRegenTimeMoving", &g_playerSuitArmorModeHealthRegenTimeMoving, 40.0f, VF_CHEAT, "Modify suit health recharge for Player moving in armor mode.");
+	pConsole->Register("g_playerSuitHealthRegenDelay", &g_playerSuitHealthRegenDelay, 1.0f, VF_CHEAT, "Delay of health regeneration after the player has been hit.");
 	pConsole->Register("g_difficultyLevel", &g_difficultyLevel, 2, VF_CHEAT|VF_READONLY, "Difficulty level");
 	pConsole->Register("g_difficultyHintSystem", &g_difficultyHintSystem, 2, VF_CHEAT|VF_READONLY, "Lower difficulty hint system (0 is off, 1 is radius based, 2 is save-game based)");
 	pConsole->Register("g_difficultyRadius", &g_difficultyRadius, 300, VF_CHEAT|VF_READONLY, "Radius in which player needs to die to display lower difficulty level hint.");
@@ -258,7 +258,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("g_playerRespawns", &g_playerRespawns, 0, VF_SAVEGAME, "Sets the player lives.");
 	pConsole->Register("g_playerLowHealthThreshold", &g_playerLowHealthThreshold, 40.0f, VF_CHEAT, "The player health threshold when the low health effect kicks in.");
 	pConsole->Register("g_playerLowHealthThreshold2", &g_playerLowHealthThreshold2, 60.0f, VF_CHEAT, "The player health threshold when the low health effect reaches maximum.");
-	pConsole->Register("g_playerLowHealthThresholdMultiplayer", &g_playerLowHealthThresholdMultiplayer, 20.0f, VF_CHEAT, "The player health threshold when the low health effect kicks in.");
+	pConsole->Register("g_playerLowHealthThresholdMultiplayer", &g_playerLowHealthThresholdMultiplayer, 30.0f, VF_CHEAT, "The player health threshold when the low health effect kicks in.");
 	pConsole->Register("g_playerLowHealthThreshold2Multiplayer", &g_playerLowHealthThreshold2Multiplayer, 60.0f, VF_CHEAT, "The player health threshold when the low health effect reaches maximum.");
 	pConsole->Register("g_punishFriendlyDeaths", &g_punishFriendlyDeaths, 1, VF_CHEAT, "The player gets punished by death when killing a friendly unit.");
 	pConsole->Register("g_enableMPStealthOMeter", &g_enableMPStealthOMeter, 0, VF_CHEAT, "Enables the stealth-o-meter to detect enemies in MP matches.");

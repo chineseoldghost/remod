@@ -639,7 +639,7 @@ void CPlayerView::ViewFirstPerson(SViewParams &viewParams)
 			Vec3 bobDir(cry_sinf(m_io.stats_bobCycle*gf_PI*2.0f)*kBobWidth*speedMul,0,cry_sinf(m_io.stats_bobCycle*gf_PI*4.0f)*kBobHeight*speedMul);
 						
 			// Vertical weapon bob direction.
-			bobDir *= -0.25f; // Remod, default 0.25f
+			bobDir *= 0.25f; // Remod, default 0.25f
 			//if player is strafing shift a bit the weapon on left/right
 			if (speedMul > 0.005f)
 			{

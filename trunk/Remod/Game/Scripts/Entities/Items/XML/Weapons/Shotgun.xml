@@ -204,7 +204,7 @@
 				<param name="hit_type" value="ht_ShotgunShell" />
 				<param name="clip_size" value="6" />
 				<param name="rate" value="70" />
-				<param name="damage" value="11.5" />
+				<param name="damage" value="12.5" />
 				<param name="reload_time" value="4.0" />
 				<param name="bullet_chamber" value="1" />
 				<param name="helper_tp" value="weapon_term" />

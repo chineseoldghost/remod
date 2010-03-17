@@ -356,7 +356,7 @@
      </SteeringWheel>
     </SeatAction>
     <SeatAction class="Sound">
-     <Sound sound="sounds/vehicles:civ_car1:horn" helper="engineSmokeOut" id="idHorn"/>
+     <Sound sound="sounds/vehicles:us_ltv:horn" helper="engineSmokeOut" id="idHorn"/>
     </SeatAction>
     <SeatAction class="Lights">
      <Lights activation="toggle">

@@ -648,7 +648,7 @@
 			<attach helper="attachment_bottom" layer="gl" />
 			<detach />
 		</accessory>
-		<!--<accessory name="Silencer">
+		<accessory name="Silencer">
 			<attach helper="silencer_attach" layer="silencer" />
 			<detach />
 			<params>
@@ -670,6 +670,6 @@
 					</firemode>
 				</firemodes>
 			</params>
-		</accessory>-->
+		</accessory>
 	</accessories>
 </item>

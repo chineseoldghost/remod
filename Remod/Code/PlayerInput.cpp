@@ -67,8 +67,8 @@ CPlayerInput::CPlayerInput( CPlayer * pPlayer ) :
 		//ADD_HANDLER(zerogbrake, OnActionZeroGBrake);
 		ADD_HANDLER(gyroscope, OnActionGyroscope);
 		ADD_HANDLER(gboots, OnActionGBoots);
-		//ADD_HANDLER(leanleft, OnActionLeanLeft);
-		//ADD_HANDLER(leanright, OnActionLeanRight);
+		ADD_HANDLER(leanleft, OnActionLeanLeft);
+		ADD_HANDLER(leanright, OnActionLeanRight);
 		//ADD_HANDLER(holsteritem, OnActionHolsterItem);
 		ADD_HANDLER(use, OnActionUse);
 

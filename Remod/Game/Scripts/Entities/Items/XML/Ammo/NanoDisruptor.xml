@@ -27,7 +27,7 @@
 		<param name="traceable" value="1" />
 	</physics>
 	<params>
-		<param name="lifetime" value="1.5" />
+		<param name="lifetime" value="2" />
 		<param name="showtime" value="0.05" />
 		<param name="aitype"	value="grenade" />
 	</params>

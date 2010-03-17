@@ -605,8 +605,8 @@ void CPlayerRotation::ProcessNormal()
 
 void CPlayerRotation::ProcessLean()
 {
-	if(gEnv->bMultiplayer)
-		return;
+//	if(gEnv->bMultiplayer)
+//		return;
 
 	float leanAmt(0.0f);
 

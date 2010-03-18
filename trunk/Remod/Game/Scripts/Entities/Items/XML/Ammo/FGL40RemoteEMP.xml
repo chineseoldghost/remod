@@ -1,7 +1,7 @@
 <ammo name="fgl40remoteemp" class="RemoteGrenade">
   <geometry>
-    <firstperson name="objects/weapons/us/Transceiver/Transceiver_tp.cgf" scale="1"/>
-    <thirdperson name="objects/weapons/us/Transceiver/Transceiver_tp.cgf" scale="1"/>
+    <firstperson name="objects/weapons/shells/grenade_launcher_bullet_emp.cgf" scale="1"/>
+    <thirdperson name="objects/weapons/shells/grenade_launcher_bullet_emp.cgf" scale="1"/>
   </geometry>
 	<flags>
 		<param name="serverspawn" value="1" />
@@ -23,7 +23,7 @@
 		<param name="material" value="mat_bounce_grenade" />
 		<param name="spin_random" value="720, 720, 720" />
 
-		<param name="single_contact" value="1" />
+		<param name="single_contact" value="0" />
     <param name="traceable" value="1" />
   </physics>
   <explosion>
@@ -41,12 +41,11 @@
   <params>
     <param name="lifetime" value="30" />
     <param name="showtime" value="0.15" />
-    <param name="hitPoints" value="1" />
     <param name="aitype"	value="grenade" />
   </params>
   <trail>
     <param name="effect" value="expansion_fx.weapons.gl_trail" />
-    <param name="scale" value="0.05" />
+    <param name="scale" value="0.1" />
     <!--<param name="sound" value="sounds/physics:bullet_whiz:missile_whiz_loop" />-->
   </trail>
 </ammo>

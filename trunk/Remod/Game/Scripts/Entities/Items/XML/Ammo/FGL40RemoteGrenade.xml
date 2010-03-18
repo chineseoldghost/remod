@@ -1,7 +1,7 @@
 <ammo name="fgl40remotegrenade" class="RemoteGrenade">
   <geometry>
-    <firstperson name="objects/weapons/us/Transceiver/Transceiver_tp.cgf" scale="1"/>
-    <thirdperson name="objects/weapons/us/Transceiver/Transceiver_tp.cgf" scale="1"/>
+    <firstperson name="objects/weapons/shells/grenade_launcher_bullet_frag.cgf" scale="1"/>
+    <thirdperson name="objects/weapons/shells/grenade_launcher_bullet_frag.cgf" scale="1"/>
   </geometry>
 	<flags>
 		<param name="serverspawn" value="1" />
@@ -24,12 +24,13 @@
 		<param name="spin_random" value="720, 720, 720" />
 		
 		<param name="single_contact" value="0" />
-    	<param name="pierceability" value="8" />
+    <param name="pierceability" value="8" />
+    <param name="traceable" value="1" />
   </physics>
 	<explosion>
 		<param name="pressure" value="1700" />
 		<param name="min_radius" value="2" />
-		<param name="max_radius" value="7" />
+		<param name="max_radius" value="5" />
 		<param name="min_phys_radius" value="2.80" />
 		<param name="max_phys_radius" value="3.80" />
 		<param name="hole_size" value="2" />
@@ -40,14 +41,13 @@
 		<param name="type" value="ht_FGL40FragGrenade" />
 	</explosion>
   <params>
-    <param name="lifetime" value="0" />
+    <param name="lifetime" value="30" />
     <param name="showtime" value="0.15" />
-    <param name="hitPoints" value="1" />
     <param name="aitype"	value="grenade" />
   </params>
   <trail>
     <param name="effect" value="expansion_fx.weapons.gl_trail" />
-    <param name="scale" value="0.05" />
-    <!--<param name="sound" value="sounds/weapons:weapon_accessories:tac_noise_maker" />-->
+    <param name="scale" value="0.1" />
+    <!--<param name="sound" value="sounds/physics:bullet_whiz:missile_whiz_loop" />-->
   </trail>
 </ammo>

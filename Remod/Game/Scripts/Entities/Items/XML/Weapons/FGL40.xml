@@ -209,7 +209,7 @@
 	<firemodes>
 		<firemode type="default">
       <fire>
-        <param name="ammo_type" value="fgl40fraggrenade" />
+        <param name="ammo_type" value="fgl40empgrenade" />
         <param name="clip_size" value="6" />
         <param name="rate" value="60" />
         <param name="damage" value="150" />
@@ -236,7 +236,7 @@
 				<thirdperson effect="muzzleflash.AssaultRifle.silenced_smoke_tp" helper="weapon_term"/>
       </muzzleflash>
     </firemode>
-    <firemode name="Launch" type="GrenadeLaunch">
+    <!--<firemode name="Launch" type="GrenadeLaunch">
       <shotgun>
         <param name="pellets" value="1" />
         <param name="pelletdamage" value="250" />
@@ -245,7 +245,7 @@
       <grenade_launch>
         <param name="ammo_type" value="fgl40fraggrenade" />
       </grenade_launch>
-    </firemode>
+    </firemode>-->
     <!--<firemode name="LaunchBounce" type="GrenadeLaunch">
       <shotgun>
         <param name="pellets" value="1" />
@@ -256,17 +256,17 @@
         <param name="ammo_type" value="fgl40bouncegrenade" />
       </grenade_launch>
     </firemode>-->
-    <!--<firemode name="LaunchRemote" type="GrenadeLaunch" enabled="0">
+    <firemode name="LaunchRemote" type="GrenadeLaunch" enabled="1">
       <shotgun>
         <param name="pellets" value="1" />
-        <param name="pelletdamage" value="250" />
+        <param name="pelletdamage" value="150" />
         <param name="spread" value="0" />
       </shotgun>
       <grenade_launch>
         <param name="ammo_type" value="fgl40remotegrenade" />
         <param name="remote_detonated" value="true" />
       </grenade_launch>
-    </firemode>-->
+    </firemode>
     <firemode name="melee" type="Melee">
       <melee>
         <param name="helper" value="collision" />
@@ -304,14 +304,14 @@
               <param name="damage" value="0" />
             </fire>
           </firemode>
-          <firemode name="Launch" type="GrenadeLaunch">
+          <!--<firemode name="Launch" type="GrenadeLaunch">
             <shotgun>
               <param name="pelletdamage" value="0" />
             </shotgun>
             <grenade_launch>
               <param name="ammo_type" value="fgl40empgrenade" />
             </grenade_launch>
-          </firemode>
+          </firemode>-->
           <!--<firemode name="LaunchBounce" type="GrenadeLaunch">
             <shotgun>
               <param name="pelletdamage" value="0" />
@@ -320,7 +320,7 @@
               <param name="ammo_type" value="fgl40bounceemp" />
             </grenade_launch>
           </firemode>-->
-          <!--<firemode name="LaunchRemote" type="GrenadeLaunch" enabled="0">
+          <firemode name="LaunchRemote" type="GrenadeLaunch" enabled="1">
             <shotgun>
               <param name="pelletdamage" value="0" />
             </shotgun>
@@ -328,7 +328,7 @@
               <param name="ammo_type" value="fgl40remoteemp" />
               <param name="remote_detonated" value="true" />
             </grenade_launch>
-          </firemode>-->
+          </firemode>
         </firemodes>
       </params>
     </accessory>

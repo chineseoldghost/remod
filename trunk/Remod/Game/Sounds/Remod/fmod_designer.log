@@ -1,5 +1,3 @@
 Warning: Object::connect: No such slot EventEditorForm::slotStopEvent()
 Warning: Object::connect:  (receiver name: 'EventEditorForm')
-Warning: Object::connect: No such slot EventEditorForm::slotStopEvent()
-Warning: Object::connect:  (receiver name: 'EventEditorForm')
 Warning: QPaintDevice: Cannot destroy paint device that is being painted.  Be sure to QPainter::end() painters!

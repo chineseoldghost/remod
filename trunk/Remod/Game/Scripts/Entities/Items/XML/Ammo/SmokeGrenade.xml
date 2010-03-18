@@ -32,7 +32,7 @@
 		<param name="aitype"	value="grenade" />
 	</params>
 	<trail>
-		<param name="effect" value="Remod.explosions.smokegrenade" />
+		<param name="effect" value="Remod.explosions.smoke_grenade" />
 	</trail>
 	<scaledeffect>
 		<!--<param name="postEffect" value="FilterBlurring_Amount" />-->

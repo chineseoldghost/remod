@@ -167,7 +167,7 @@
 			<fire>
 				<param name="ammo_type" value="gaussbullet" />
 				<param name="hit_type" value="ht_GaussBullet" />
-				<param name="rate" value="25" />
+				<param name="rate" value="20" />
 				<param name="clip_size" value="2" />
 				<param name="bullet_chamber" value="1" />
 				<param name="slider_layer" value="dampers" />
@@ -192,7 +192,7 @@
 			<recoil>
 				<param name="max_recoil"	value="12" />
 				<param name="attack" 			value="10" />
-				<param name="decay" 			value="0.5" />
+				<param name="decay" 			value="1" />
 				<param name="maxx" 				value="16" />
 				<param name="maxy" 				value="10" />
 				<param name="randomness" 	value="2" />

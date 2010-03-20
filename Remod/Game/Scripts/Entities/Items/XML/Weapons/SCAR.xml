@@ -679,9 +679,9 @@
 			<params>
 				<firemodes>
 					<firemode type="default">
-						<!--<fire>
-				                <param name="damage" value="20" />
-						</fire>-->
+						<fire>
+                  <param name="damage" value="14.5" />
+						</fire>
 						<muzzleflash>
 							<firstperson effect="muzzleflash.AssaultRifle.silenced_smoke" helper="muzzle_flash_effect" time="0.1" light_radius="0" />
 							<thirdperson effect="muzzleflash.AssaultRifle.silenced_smoke_tp" helper="weapon_term" time="0.1"  light_radius="0" />

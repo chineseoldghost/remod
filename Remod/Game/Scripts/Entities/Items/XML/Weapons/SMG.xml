@@ -572,7 +572,7 @@
 				<firemodes>
 					<firemode type="default">
 						<fire>
-				                <!--<param name="damage" value="13" />-->
+				                <param name="damage" value="12.5" />
 						</fire>
 						<muzzleflash>
 							<firstperson effect="muzzleflash.AssaultRifle.silenced_smoke" helper="muzzle_flash_effect" time="0.1" light_radius="0" />

@@ -618,7 +618,7 @@
 					<firemode type="default">
 						<fire>
 							<param name="ammo_type" value="incendiarybullet" />
-							<param name="damage" value="32" />
+							<param name="damage" value="24" />
 						</fire>
 					</firemode>
 				</firemodes>
@@ -655,7 +655,7 @@
 				<firemodes>
 					<firemode type="default">
 						<fire>
-				                <param name="damage" value="21" />
+                  <param name="damage" value="20" />
 						</fire>
 						<muzzleflash>
 							<firstperson effect="muzzleflash.AssaultRifle.silenced_smoke" helper="muzzle_flash_effect" time="0.1" />

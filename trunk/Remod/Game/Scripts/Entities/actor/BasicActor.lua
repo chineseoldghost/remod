@@ -732,7 +732,7 @@ BasicActorParams =
 			mass = 80,
 			air_resistance = 0.5, --used in zeroG
 			
-			k_air_control = 0.4,
+			k_air_control = 0.3,
 			
 			max_vel_ground = 200,
 			
@@ -852,7 +852,7 @@ BasicActorParams =
 			},
 		},
 					
-		sprintMultiplier = 1.85, -- Speed is multiplied by this amount if sprint key is pressed -- 1.2 for a more counter-striky feel
+		sprintMultiplier = 1.8, -- Speed is multiplied by this amount if sprint key is pressed -- 1.2 for a more counter-striky feel
 		strafeMultiplier = 1.0, -- Speed is multiplied by this amount when strafing in SP
 		strafeMultiplierMP = 0.6, -- Speed is multiplied by this amount when strafing in MP
 		backwardMultiplier = 0.7, -- Speed is multiplied by this amount when going backward

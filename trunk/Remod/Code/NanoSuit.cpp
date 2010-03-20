@@ -1164,7 +1164,8 @@ void CNanoSuit::PlaySound(ENanoSound sound, float param, bool stopSound)
 		eSemantic = eSoundSemantic_NanoSuit;
 		break;
 	case ESound_SuitCloakFeedback:
-		soundName = "Sounds/Remod:suit:cloak_tone_high"; // Remod cloak sound
+//		soundName = "Sounds/Remod:suit:cloak_tone_high"; // Remod cloak sound
+		soundName = "";
 		eSemantic = eSoundSemantic_NanoSuit;
 		force3DSound = true;
 		break;
@@ -1187,7 +1188,8 @@ void CNanoSuit::PlaySound(ENanoSound sound, float param, bool stopSound)
 		eSemantic = eSoundSemantic_NanoSuit;
 		break;
 	case ESound_AISuitCloakFeedback:
-		soundName = "Sounds/Remod:suit:cloak_tone_high"; // Remod cloak sound for AI
+//		soundName = "Sounds/Remod:suit:cloak_tone_high"; // Remod cloak sound for AI
+		soundName = "";
 		eSemantic = eSoundSemantic_NanoSuit;
 		break;
 	case ESound_GBootsLanded:

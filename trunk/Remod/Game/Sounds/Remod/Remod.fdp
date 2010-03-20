@@ -10,9 +10,6 @@
 <build_banklists>0</build_banklists>
 <build_programmerreport>0</build_programmerreport>
 <currentbank>Remod_bank00</currentbank>
-<currentlanguage>default</currentlanguage>
-<primarylanguage>default</primarylanguage>
-<language>default</language>
 <eventcategory>
 <name>music</name>
 <guid>{be52f90d-3ac5-4236-885a-8036f1927694}</guid>
@@ -94,7 +91,6 @@
 <loopmode>0</loopmode>
 <loopcount2>-1</loopcount2>
 <autopitchenabled>0</autopitchenabled>
-<autopitchparameter>0</autopitchparameter>
 <autopitchreference>0</autopitchreference>
 <autopitchatzero>0</autopitchatzero>
 <finetune>0</finetune>
@@ -108,9 +104,8 @@
 <name>env005</name>
 <dsp_name>Volume</dsp_name>
 <dsp_paramindex>0</dsp_paramindex>
-<colour>#ff0000</colour>
-<point>0,0.0316228,1,1</point>
-<point>0.996507,0,0,1</point>
+<point>0,0.01,1,1</point>
+<point>0.996507,2.6077e-08,0,1</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -120,181 +115,6 @@
 <_PSP_enable>1</_PSP_enable>
 <_PS3_enable>1</_PS3_enable>
 <_WII_enable>1</_WII_enable>
-<mute>0</mute>
-<visible>1</visible>
-<hidden>0</hidden>
-<mappingmethod>0</mappingmethod>
-<flags>0</flags>
-</envelope>
-<envelope>
-<name>env030</name>
-<dsp_name>FMOD Chorus</dsp_name>
-<dsp_paramindex>0</dsp_paramindex>
-<colour>#c0ff20</colour>
-<point>0,0.5,1,1</point>
-<parametername>distance</parametername>
-<_PC_enable>1</_PC_enable>
-<_XBOX_enable>1</_XBOX_enable>
-<_XBOX360_enable>1</_XBOX360_enable>
-<_GC_enable>0</_GC_enable>
-<_PS2_enable>0</_PS2_enable>
-<_PSP_enable>0</_PSP_enable>
-<_PS3_enable>1</_PS3_enable>
-<_WII_enable>0</_WII_enable>
-<mute>0</mute>
-<visible>1</visible>
-<hidden>0</hidden>
-<mappingmethod>0</mappingmethod>
-<flags>0</flags>
-</envelope>
-<envelope>
-<name>env031</name>
-<dsp_name>FMOD Chorus</dsp_name>
-<dsp_paramindex>1</dsp_paramindex>
-<colour>#c0ff40</colour>
-<parentname>env030</parentname>
-<point>0,0.5,1,1</point>
-<parametername>distance</parametername>
-<_PC_enable>1</_PC_enable>
-<_XBOX_enable>1</_XBOX_enable>
-<_XBOX360_enable>1</_XBOX360_enable>
-<_GC_enable>0</_GC_enable>
-<_PS2_enable>0</_PS2_enable>
-<_PSP_enable>0</_PSP_enable>
-<_PS3_enable>1</_PS3_enable>
-<_WII_enable>0</_WII_enable>
-<mute>0</mute>
-<visible>1</visible>
-<hidden>0</hidden>
-<mappingmethod>0</mappingmethod>
-<flags>0</flags>
-</envelope>
-<envelope>
-<name>env032</name>
-<dsp_name>FMOD Chorus</dsp_name>
-<dsp_paramindex>2</dsp_paramindex>
-<colour>#c0ff60</colour>
-<parentname>env030</parentname>
-<point>0,0.5,1,1</point>
-<parametername>distance</parametername>
-<_PC_enable>1</_PC_enable>
-<_XBOX_enable>1</_XBOX_enable>
-<_XBOX360_enable>1</_XBOX360_enable>
-<_GC_enable>0</_GC_enable>
-<_PS2_enable>0</_PS2_enable>
-<_PSP_enable>0</_PSP_enable>
-<_PS3_enable>1</_PS3_enable>
-<_WII_enable>0</_WII_enable>
-<mute>0</mute>
-<visible>1</visible>
-<hidden>0</hidden>
-<mappingmethod>0</mappingmethod>
-<flags>0</flags>
-</envelope>
-<envelope>
-<name>env033</name>
-<dsp_name>FMOD Chorus</dsp_name>
-<dsp_paramindex>3</dsp_paramindex>
-<colour>#c0ff80</colour>
-<parentname>env030</parentname>
-<point>0,0.5,1,1</point>
-<parametername>distance</parametername>
-<_PC_enable>1</_PC_enable>
-<_XBOX_enable>1</_XBOX_enable>
-<_XBOX360_enable>1</_XBOX360_enable>
-<_GC_enable>0</_GC_enable>
-<_PS2_enable>0</_PS2_enable>
-<_PSP_enable>0</_PSP_enable>
-<_PS3_enable>1</_PS3_enable>
-<_WII_enable>0</_WII_enable>
-<mute>0</mute>
-<visible>1</visible>
-<hidden>0</hidden>
-<mappingmethod>0</mappingmethod>
-<flags>0</flags>
-</envelope>
-<envelope>
-<name>env034</name>
-<dsp_name>FMOD Chorus</dsp_name>
-<dsp_paramindex>4</dsp_paramindex>
-<colour>#c0ffa0</colour>
-<parentname>env030</parentname>
-<point>0,0.0115,1,1</point>
-<parametername>distance</parametername>
-<_PC_enable>1</_PC_enable>
-<_XBOX_enable>1</_XBOX_enable>
-<_XBOX360_enable>1</_XBOX360_enable>
-<_GC_enable>0</_GC_enable>
-<_PS2_enable>0</_PS2_enable>
-<_PSP_enable>0</_PSP_enable>
-<_PS3_enable>1</_PS3_enable>
-<_WII_enable>0</_WII_enable>
-<mute>0</mute>
-<visible>1</visible>
-<hidden>0</hidden>
-<mappingmethod>0</mappingmethod>
-<flags>0</flags>
-</envelope>
-<envelope>
-<name>env035</name>
-<dsp_name>FMOD Chorus</dsp_name>
-<dsp_paramindex>5</dsp_paramindex>
-<colour>#c0ffc0</colour>
-<parentname>env030</parentname>
-<point>0,0.0345,1,1</point>
-<parametername>distance</parametername>
-<_PC_enable>1</_PC_enable>
-<_XBOX_enable>1</_XBOX_enable>
-<_XBOX360_enable>1</_XBOX360_enable>
-<_GC_enable>0</_GC_enable>
-<_PS2_enable>0</_PS2_enable>
-<_PSP_enable>0</_PSP_enable>
-<_PS3_enable>1</_PS3_enable>
-<_WII_enable>0</_WII_enable>
-<mute>0</mute>
-<visible>1</visible>
-<hidden>0</hidden>
-<mappingmethod>0</mappingmethod>
-<flags>0</flags>
-</envelope>
-<envelope>
-<name>env036</name>
-<dsp_name>FMOD Chorus</dsp_name>
-<dsp_paramindex>6</dsp_paramindex>
-<colour>#c0ffe0</colour>
-<parentname>env030</parentname>
-<point>0,0.0115,1,1</point>
-<parametername>distance</parametername>
-<_PC_enable>1</_PC_enable>
-<_XBOX_enable>1</_XBOX_enable>
-<_XBOX360_enable>1</_XBOX360_enable>
-<_GC_enable>0</_GC_enable>
-<_PS2_enable>0</_PS2_enable>
-<_PSP_enable>0</_PSP_enable>
-<_PS3_enable>1</_PS3_enable>
-<_WII_enable>0</_WII_enable>
-<mute>0</mute>
-<visible>1</visible>
-<hidden>0</hidden>
-<mappingmethod>0</mappingmethod>
-<flags>0</flags>
-</envelope>
-<envelope>
-<name>env037</name>
-<dsp_name>FMOD Chorus</dsp_name>
-<dsp_paramindex>7</dsp_paramindex>
-<colour>#c0ffff</colour>
-<parentname>env030</parentname>
-<point>0,0,1,1</point>
-<parametername>distance</parametername>
-<_PC_enable>1</_PC_enable>
-<_XBOX_enable>1</_XBOX_enable>
-<_XBOX360_enable>1</_XBOX360_enable>
-<_GC_enable>0</_GC_enable>
-<_PS2_enable>0</_PS2_enable>
-<_PSP_enable>0</_PSP_enable>
-<_PS3_enable>1</_PS3_enable>
-<_WII_enable>0</_WII_enable>
 <mute>0</mute>
 <visible>1</visible>
 <hidden>0</hidden>
@@ -319,7 +139,6 @@
 <rangemin>0</rangemin>
 <rangemax>20</rangemax>
 <rangespacing>2.5</rangespacing>
-<keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
 <seekspeed>0</seekspeed>
 </parameter>
@@ -330,9 +149,7 @@
 <car_dialog>0</car_dialog>
 <volume_db>0</volume_db>
 <pitch>0</pitch>
-<pitch_units>Octaves</pitch_units>
 <pitch_randomization>0</pitch_randomization>
-<pitch_randomization_units>Octaves</pitch_randomization_units>
 <volume_randomization>0</volume_randomization>
 <priority>60</priority>
 <maxplaybacks>5</maxplaybacks>
@@ -369,8 +186,6 @@
 <panlevel3d>1</panlevel3d>
 <fadein_time>0</fadein_time>
 <fadeout_time>150</fadeout_time>
-<spawn_intensity>1</spawn_intensity>
-<spawn_intensity_randomization>0</spawn_intensity_randomization>
 <TEMPLATE_PROP_LAYERS>1</TEMPLATE_PROP_LAYERS>
 <TEMPLATE_PROP_VOLUME>0</TEMPLATE_PROP_VOLUME>
 <TEMPLATE_PROP_PITCH>1</TEMPLATE_PROP_PITCH>
@@ -505,7 +320,6 @@
 <varpan>0</varpan>
 <xmafiltering>0</xmafiltering>
 <channelmode>0</channelmode>
-<quality_crossplatform>0</quality_crossplatform>
 <quality>-1</quality>
 <optimisedratereduction>100</optimisedratereduction>
 <enableratereduction>1</enableratereduction>
@@ -564,90 +378,44 @@
 <currentplatform>PC</currentplatform>
 <_PC_encryptionkey></_PC_encryptionkey>
 <_PC_builddirectory></_PC_builddirectory>
-<_PC_audiosourcedirectory></_PC_audiosourcedirectory>
+<_PC_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_PC_audiosourcedirectory>
 <_PC_prebuildcommands></_PC_prebuildcommands>
 <_PC_postbuildcommands></_PC_postbuildcommands>
 <_XBOX_encryptionkey></_XBOX_encryptionkey>
 <_XBOX_builddirectory></_XBOX_builddirectory>
-<_XBOX_audiosourcedirectory></_XBOX_audiosourcedirectory>
+<_XBOX_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_XBOX_audiosourcedirectory>
 <_XBOX_prebuildcommands></_XBOX_prebuildcommands>
 <_XBOX_postbuildcommands></_XBOX_postbuildcommands>
 <_XBOX360_encryptionkey></_XBOX360_encryptionkey>
 <_XBOX360_builddirectory></_XBOX360_builddirectory>
-<_XBOX360_audiosourcedirectory></_XBOX360_audiosourcedirectory>
+<_XBOX360_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_XBOX360_audiosourcedirectory>
 <_XBOX360_prebuildcommands></_XBOX360_prebuildcommands>
 <_XBOX360_postbuildcommands></_XBOX360_postbuildcommands>
 <_GC_encryptionkey></_GC_encryptionkey>
 <_GC_builddirectory></_GC_builddirectory>
-<_GC_audiosourcedirectory></_GC_audiosourcedirectory>
+<_GC_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_GC_audiosourcedirectory>
 <_GC_prebuildcommands></_GC_prebuildcommands>
 <_GC_postbuildcommands></_GC_postbuildcommands>
 <_PS2_encryptionkey></_PS2_encryptionkey>
 <_PS2_builddirectory></_PS2_builddirectory>
-<_PS2_audiosourcedirectory></_PS2_audiosourcedirectory>
+<_PS2_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_PS2_audiosourcedirectory>
 <_PS2_prebuildcommands></_PS2_prebuildcommands>
 <_PS2_postbuildcommands></_PS2_postbuildcommands>
 <_PSP_encryptionkey></_PSP_encryptionkey>
 <_PSP_builddirectory></_PSP_builddirectory>
-<_PSP_audiosourcedirectory></_PSP_audiosourcedirectory>
+<_PSP_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_PSP_audiosourcedirectory>
 <_PSP_prebuildcommands></_PSP_prebuildcommands>
 <_PSP_postbuildcommands></_PSP_postbuildcommands>
 <_PS3_encryptionkey></_PS3_encryptionkey>
 <_PS3_builddirectory></_PS3_builddirectory>
-<_PS3_audiosourcedirectory></_PS3_audiosourcedirectory>
+<_PS3_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_PS3_audiosourcedirectory>
 <_PS3_prebuildcommands></_PS3_prebuildcommands>
 <_PS3_postbuildcommands></_PS3_postbuildcommands>
 <_WII_encryptionkey></_WII_encryptionkey>
 <_WII_builddirectory></_WII_builddirectory>
-<_WII_audiosourcedirectory></_WII_audiosourcedirectory>
+<_WII_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_WII_audiosourcedirectory>
 <_WII_prebuildcommands></_WII_prebuildcommands>
 <_WII_postbuildcommands></_WII_postbuildcommands>
-<presavecommands></presavecommands>
-<postsavecommands></postsavecommands>
 <neweventusetemplate>0</neweventusetemplate>
 <neweventlasttemplatename></neweventlasttemplatename>
-
-<Composition>
-    <CompositionUI>
-        <SceneEditor>
-            <NavigableGraphicsView>
-                <ViewRect>-318, -238, 621, 461</ViewRect>
-                <ZoomLevel>0</ZoomLevel>
-            </NavigableGraphicsView>
-            <SceneEditorItemRepository></SceneEditorItemRepository>
-        </SceneEditor>
-        <ThemeEditor>
-            <NavigableGraphicsView>
-                <ViewRect>-318, -238, 639, 479</ViewRect>
-                <ZoomLevel>0</ZoomLevel>
-            </NavigableGraphicsView>
-            <ThemeEditorItemRepository></ThemeEditorItemRepository>
-        </ThemeEditor>
-    </CompositionUI>
-    <CueFactory>
-        <UID>1</UID>
-    </CueFactory>
-    <CueRepository></CueRepository>
-    <ExtLinkFactory>
-        <UID>1</UID>
-    </ExtLinkFactory>
-    <ExtLinkRepository></ExtLinkRepository>
-    <ExtSegmentFactory>
-        <UID>1</UID>
-    </ExtSegmentFactory>
-    <ParameterFactory>
-        <UID>1</UID>
-    </ParameterFactory>
-    <ParameterRepository></ParameterRepository>
-    <SceneRepository>
-        <Scene ID="1">
-            <CueSheet></CueSheet>
-        </Scene>
-    </SceneRepository>
-    <SegmentRepository></SegmentRepository>
-    <SharedFile></SharedFile>
-    <ThemeFactory>
-        <UID>1</UID>
-    </ThemeFactory>
-    <ThemeRepository></ThemeRepository>
-</Composition></project>
+</project>

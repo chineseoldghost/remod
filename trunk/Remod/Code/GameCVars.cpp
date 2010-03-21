@@ -324,7 +324,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("g_tk_punish", &g_tk_punish, 1, 0, "Turns on punishment for team kills");
 	pConsole->Register("g_tk_punish_limit", &g_tk_punish_limit, 5, 0, "Number of team kills user will be banned for");
 	pConsole->Register("g_teamlock", &g_teamlock, 2, 0, "Number of players one team needs to have over the other, for the game to deny joining it. 0 disables.");
-	pConsole->Register("g_useHitSoundFeedback", &g_useHitSoundFeedback, 1, 0, "Switches hit readability feedback sounds on/off.");
+	pConsole->Register("g_useHitSoundFeedback", &g_useHitSoundFeedback, 0, 0, "Switches hit readability feedback sounds on/off.");
 
 	pConsole->Register("g_debugNetPlayerInput", &g_debugNetPlayerInput, 0, VF_CHEAT, "Show some debug for player input");
 	pConsole->Register("g_debug_fscommand", &g_debug_fscommand, 0, 0, "Print incoming fscommands to console");

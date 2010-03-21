@@ -250,7 +250,7 @@ vtxOUT CloakVS(app2vertGeneral IN)
   OUT.vPosWS.w = length(  OUT.vPosWS.xyz   );
 
   // Output some constants
-  OUT.baseTC.w = (0.85 + 0.25 * (1-OUT.baseTC.z)*10 ) * RefrBumpScale; // Remod, default is w = (0.25 + 0.25)
+  OUT.baseTC.w = (0.75 + 0.25 * (1-OUT.baseTC.z)*10 ) * RefrBumpScale; // Remod, default is w = (0.25 + 0.25)
   OUT.baseTC.z = saturate( OUT.baseTC.z ) * 1; // Remod, default is 0.8
 
   /////////////////////////////////////////////////////////////////////

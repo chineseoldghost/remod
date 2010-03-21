@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(20 Mar 2010) Time(22 22 49)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(20 Mar 2010) Time(22 43 18)"  -- used by backup system
  
-Log Started at Saturday, March 20, 2010 22:22:49
+Log Started at Saturday, March 20, 2010 22:43:18
 Running 32 bit version
 Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.295085 MHz
+CPU Speed (estimated): 1997.280055 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.276272 MHz
+CPU Speed (estimated): 1997.288929 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -40,8 +40,8 @@ System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 22:22:49 03/20/10, system running for 657 minutes
-1521MB physical memory installed, 885MB available, 2047MB virtual memory installed, 41 percent of memory in use
+Local time is 22:43:18 03/20/10, system running for 677 minutes
+1521MB physical memory installed, 884MB available, 2047MB virtual memory installed, 41 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
@@ -94,79 +94,715 @@ Initializing AI System
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
     $3sv_gamerules = $6InstantAction $5[]$4
-[net 21:22:50.344] network hostname: iMac7
-[net 21:22:50.382]   ip:192.168.0.192
-[net 21:22:50.382]   ip:5.182.209.7
+[net 21:43:19.622] network hostname: iMac7
+[net 21:43:19.625]   ip:192.168.0.192
+[net 21:43:19.625]   ip:5.182.209.7
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/terminal loading time: 6.40 seconds
+*LOADING: Level multiplayer/ia/terminal loading time: 3.84 seconds
 -----------------------------------------------------
+[Warning] Unknown command: ep
     $3sv_gamerules = $6TeamInstantAction $5[]$4
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/Outpost loading time: 1.91 seconds
+*LOADING: Level multiplayer/ia/Outpost loading time: 1.15 seconds
 -----------------------------------------------------
 CHAT Blablah to ALL:
-   g'day shadez!
+   :>
+CHAT Blablah to ALL:
+   lol, oh snap
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   oh, you weren't blind anymore
+CHAT gomgom50 to ALL:
+   i was
+CHAT gomgom50 to ALL:
+   i used my map
+CHAT gomgom50 to ALL:
+   to navigate
+CHAT Blablah to ALL:
+   oh! :P
+CHAT Blablah to ALL:
+   spiffy
+CHAT Blablah to ALL:
+   i'm gonna go get the other faggots
+CHAT gomgom50 to ALL:
+   very spiffy
+CHAT Blablah to ALL:
+   SUNNNLOOOOOOOOK /godly
+CHAT Blablah to ALL:
+   that bitch better!
+CHAT Blablah to ALL:
+   nice
+CHAT Blablah to ALL:
+   god smoke lags
+CHAT Blablah to ALL:
+   c'mere
+CHAT Blablah to ALL:
+   lol, the name
+CHAT Blablah to ALL:
+   it does for me
+CHAT gomgom50 to ALL:
+   the smoke dossent work
+CHAT gomgom50 to ALL:
+   its cause you are on low settings
+CHAT Blablah to ALL:
+   maybe i forgot to update the file, but that'd be strange
+CHAT Blablah to ALL:
+   i always test particles on high
+CHAT Blablah to ALL:
+   D:
+CHAT Blablah to ALL:
+   well
+CHAT Blablah to ALL:
+   sys_spec_particles on high
+CHAT gomgom50 to ALL:
+   im on veryhigh
+CHAT Blablah to ALL:
+   hey gomgom's friend
+CHAT Blablah to ALL:
+   same thing
+CHAT gomgom50 to ALL:
+   what was the command again?
+CHAT The Wanking Ghost to ALL:
+   Hi
+CHAT Blablah to ALL:
+   arite
 CHAT Shadez to ALL:
-   more like evening
+   wtf
+CHAT gomgom50 to ALL:
+   command again
 CHAT Blablah to ALL:
-   yeah
+   what command?
 CHAT Blablah to ALL:
-   lol
+   sys_spec_particles
 CHAT Blablah to ALL:
-   ah!
+   strange
 CHAT Blablah to ALL:
-   this spot is uber sneaky
+   there's sunnlok
+CHAT sunnlok to ALL:
+   rage--
 CHAT Blablah to ALL:
-   oh, cloak
-CHAT Blablah to ALL:
-   gotta hear the sound
-CHAT Blablah to ALL:
-   bah!
-CHAT Blablah to ALL:
-   that's piss, it's using the old sound or something
-CHAT Blablah to ALL:
-   cloak sound is old :<
-CHAT Blablah to ALL:
-   the cloak sound is screwed
+   ?
 CHAT Blablah to ALL:
    guys
 CHAT Blablah to ALL:
-   would you mind
-CHAT Blablah to ALL:
-   if i went to fix the cloak sound
+   did any of you enable lean yet?
 CHAT gomgom50 to ALL:
-   nope
+   nope :P
+CHAT Shadez to ALL:
+   nop
 CHAT Blablah to ALL:
-   and you'd have to update and restart your game?
-CHAT sunnlok to ALL:
-   yes
+   screw you guys then because i'm gonna use it :P
 CHAT Blablah to ALL:
-   you would mind?
+   JESUS CHRIST LOL
 CHAT Blablah to ALL:
-   ...
-CHAT sunnlok to ALL:
-   course
+   i had 0hp :P
 CHAT gomgom50 to ALL:
-   listen to it
+   D:
+CHAT Blablah to Team black:
+   don't hurt meh :P
+CHAT Blablah to Team black:
+   they see where we are when you shoot
 CHAT Blablah to ALL:
-   it's not that bad
+   god damnit, lol
+CHAT Blablah to Team black:
+   nice
+CHAT Blablah to Team black:
+   nice!
+CHAT Blablah to ALL:
+   oooooh so close
 CHAT gomgom50 to ALL:
-   its so loud!
+   LOL
+    $3g_useHitSoundFeedback = $60 $5[]$4
+CHAT Blablah to Team black:
+   we'll have to do this predator style
+CHAT Blablah to Team black:
+   cloak, stalk from the shadows, kill
+CHAT Blablah to Team black:
+   :D
+CHAT Blablah to Team black:
+   let's go to the gauss room
+CHAT Blablah to Team black:
+   hide
+CHAT Blablah to Team black:
+   here
+CHAT Blablah to Team black:
+   other pipe :P
+CHAT Blablah to ALL:
+   oh
+CHAT Blablah to Team black:
+   okay, get them when they aren't looking at you
+CHAT Blablah to Team black:
+   and you know the drill
+CHAT Blablah to Team black:
+   make sure there's not another one looking at you :P
+CHAT Blablah to Team black:
+   also, don't get me C4 to kill you, lol
+CHAT Blablah to Team black:
+   i did this earlier while you were gone
+CHAT Blablah to Team black:
+   on the gauss
+CHAT Blablah to Team black:
+   lol
+CHAT Blablah to Team black:
+   1v3, predator-style
+CHAT Blablah to Team black:
+   i punched em in the face
+CHAT Shadez to Team tan:
+   lol sunnlok , best sniper place ever
+CHAT gomgom50 to ALL:
+   come and get us!
+CHAT Blablah to ALL:
+   hehe
+CHAT Shadez to ALL:
+   we aint going nowher
+CHAT Blablah to ALL:
+   i like the way the cloak looks
+CHAT Blablah to ALL:
+   lol
+CHAT gomgom50 to ALL:
+   yea its kinda like a mirror
+CHAT Blablah to Team black:
+   they're coming
+CHAT Blablah to Team black:
+   when i blow it
+CHAT Blablah to Team black:
+   it means you can start shooting, ya?
+CHAT Blablah to Team black:
+   otherwise they'll stay away from the gauss, lol
+CHAT Blablah to ALL:
+   i should've set the score limit lower
+CHAT Blablah to Team black:
+   wait wait
 CHAT sunnlok to ALL:
-   joking
+   we have voicechat?
+CHAT Blablah to Team black:
+   lure them :P
 CHAT Blablah to ALL:
-   i mean restarting your game
+   yes we do
 CHAT Blablah to ALL:
+   but the quality won't be that good
+CHAT gomgom50 to ALL:
+   over xfirez
+CHAT Blablah to ALL:
+   ingame too
+CHAT gomgom50 to ALL:
+   yea ALT
+CHAT Blablah to ALL:
+   but yes we're using xfire
+CHAT Blablah to Team black:
+   they're still near, lol
+CHAT sunnlok to ALL:
+   skyps better
+CHAT Blablah to Team black:
+   come on, they've GOTTA come for the gauss!
+CHAT Blablah to ALL:
+   not really during gaming
+CHAT The Wanking Ghost to ALL:
+   ts better
+CHAT sunnlok to ALL:
+   it is
+CHAT Blablah to ALL:
+   uses more bandwidth
+CHAT Blablah to ALL:
+   TS3 > all :P
+CHAT The Wanking Ghost to ALL:
+   yeah
+CHAT Blablah to Team black:
+   yeah
+CHAT Blablah to Team black:
+   yep
+CHAT Blablah to Team black:
+   lol
+CHAT Blablah to Team black:
+   good
+CHAT Blablah to Team black:
+   now they'll come this way
+CHAT Blablah to Team black:
+   and you decloaked so :P
+CHAT Shadez to ALL:
+   ok im not coming again lol
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   ALL THIS BASE BELONG TO US
+CHAT gomgom50 to ALL:
+   i haz leet gauss skilz
+CHAT The Wanking Ghost to ALL:
+   we are bores come play with us
+CHAT Blablah to ALL:
+   this is why we need KoTH
+CHAT Shadez to ALL:
+   noy really gomgom
+CHAT gomgom50 to ALL:
+   D:
+CHAT Blablah to ALL:
+   guys, you really have to kill us to win though :P
+CHAT Shadez to ALL:
+   you can shoot a guy in the toe with gauss and hedies
+CHAT Blablah to Team black:
+   lol
+CHAT Blablah to Team black:
+   right there
+CHAT Blablah to Team black:
+   LOL
+CHAT Blablah to Team black:
+   here
+CHAT Blablah to Team black:
+   one guy
+CHAT sunnlok to ALL:
+   cloak is to ueber
+CHAT Blablah to Team black:
+   nice!
+CHAT Blablah to Team black:
+   hehee
+CHAT Blablah to Team black:
+   we need to move
+CHAT sunnlok to ALL:
+   and the gauss too
+CHAT Blablah to Team black:
+   lol
+CHAT Shadez to ALL:
+   meh
+CHAT Shadez to ALL:
+   gauss is op
+CHAT sunnlok to ALL:
+   music in mp is anoiyn
+CHAT sunnlok to ALL:
+   g
+CHAT Blablah to ALL:
+   s_musicenable 0
+CHAT gomgom50 to ALL:
+   turn it off then >.<
+CHAT Blablah to Team black:
+   stun nades
+CHAT gomgom50 to ALL:
+   ghost can you feel any difrence?
+CHAT gomgom50 to ALL:
+   from vanilla
+CHAT Blablah to Team black:
+   grab the stun nades
+CHAT The Wanking Ghost to ALL:
+   Yeah like the "hardcore" gamplay
+CHAT Blablah to Team black:
+   i like your british accent, lol
+CHAT Blablah to Team black:
+   it's easier isn't it? :P
+CHAT The Wanking Ghost to ALL:
+   and few weapons
+CHAT Blablah to Team black:
+   here
+CHAT Shadez to ALL:
+   meh.
+CHAT Blablah to Team black:
+   you sound more british than american
+CHAT Blablah to Team black:
+   i know
+CHAT Blablah to Team black:
+   danish
+CHAT Blablah to Team black:
+   but you sound more british than american
+CHAT Shadez to ALL:
+   its kinda IMPOSSIBLE to see cloak
+CHAT The Wanking Ghost to ALL:
+   auch
+CHAT gomgom50 to ALL:
+   naa not rely
+CHAT Blablah to ALL:
+   which is why i was adding sound to it
+CHAT Blablah to ALL:
+   but the sound refuses to work lol
+CHAT gomgom50 to ALL:
+   i don't think its that hard
+CHAT Blablah to ALL:
+   just
+CHAT Shadez to ALL:
+   if you take away sound then meh
+CHAT Blablah to ALL:
+   try to use different things
+CHAT Blablah to ALL:
+   if you throw a flashbang in here
+CHAT Blablah to ALL:
+   or if you throw a nanonade in here
+CHAT sunnlok to ALL:
+   it is way to imba
+CHAT Shadez to ALL:
+   wtf?
+CHAT Blablah to Team black:
+   LOL
+CHAT Blablah to ALL:
+   we're screwed
+CHAT Shadez to ALL:
+   bs
+CHAT Blablah to Team black:
+   lol
+CHAT Blablah to Team black:
+   shall we?
+CHAT Blablah to Team black:
+   LOL
+CHAT Blablah to ALL:
+   stop running into that, LOL
+CHAT Blablah to ALL:
+   you know we're here guys :P
+CHAT Blablah to ALL:
+   ooooh
+CHAT Shadez to ALL:
+   ?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+CHAT Shadez to ALL:
+   fucking bs
+CHAT Blablah to Team black:
+   LO
+CHAT Shadez to ALL:
+   i DEFINITELY PUNCHED YOU FIRST
+CHAT Blablah to Team black:
+   nice
+CHAT Blablah to Team black:
+   lol
+CHAT Blablah to Team black:
+   nice
+CHAT Shadez to ALL:
+   ragequit
+CHAT Blablah to Team black:
+   whoa, thanks
+CHAT Blablah to Team black:
+   lol
+CHAT Blablah to Team black:
+   k
+[net 22:08:12.415] Disconnect 212-30-197-15.dsl.dynamic.simnet.is:61991; profid=161429488; cause=0; msg='Timeout occurred; no packet for 31.5 seconds'
+CHAT Blablah to Team black:
+   LOL
+CHAT Blablah to Team black:
+   HAHAHAHA
+CHAT Blablah to Team black:
+   it's so silly
+CHAT Blablah to Team black:
+   you're finally out of rounds
+CHAT Blablah to ALL:
+   and bam xD
+CHAT Blablah to ALL:
+   guys
+CHAT Blablah to ALL:
+   work together please :P
+CHAT gomgom50 to ALL:
+   yay
+CHAT sunnlok to ALL:
    great
 CHAT Blablah to ALL:
-   shadez?
-CHAT Shadez to ALL:
-   yeah
-CHAT Shadez to ALL:
-   do that
+   work together and aim for the head
 CHAT Blablah to ALL:
+   :D
+CHAT Blablah to Team black:
+   does the claymore what?
+CHAT The Wanking Ghost to ALL:
+   ul
+CHAT Blablah to Team black:
+   LOL
+CHAT The Wanking Ghost to ALL:
+   damn
+CHAT Blablah to ALL:
+   bs!
+CHAT Blablah to ALL:
+   shadez left?
+CHAT Blablah to ALL:
+   oh okay
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   typekill xD
+CHAT Blablah to Team black:
+   the gauss?
+CHAT Blablah to Team black:
+   yeah
+CHAT Blablah to Team black:
+   yep
+CHAT Blablah to Team black:
+   lol
+CHAT Blablah to Team black:
+   nades here
+CHAT Blablah to Team black:
+   you said he crashed
+CHAT Blablah to Team black:
+   oh
+CHAT Blablah to ALL:
+   do you guys know why shadez left?
+CHAT Blablah to Team black:
+   LOL
+CHAT sunnlok to ALL:
+   of course
+CHAT Blablah to Team black:
+   you're welcome :P
+CHAT gomgom50 to ALL:
+   wow so close XD
+CHAT gomgom50 to ALL:
+   10 hp left
+CHAT Blablah to Team black:
+   haha
+CHAT sunnlok to ALL:
+   yeah
+CHAT Blablah to Team black:
+   why do i feel like
+CHAT Blablah to Team black:
+   i'm the only one who can aim
+CHAT Blablah to Team black:
+   LOL
+CHAT Blablah to Team black:
+   apart from you
+CHAT sunnlok to ALL:
+   ok im out cw is stupid in mp
+CHAT Blablah to Team black:
+   with the exception of you
+CHAT Blablah to Team black:
+   i mean
+CHAT The Wanking Ghost to ALL:
+   NO!
+[net 22:13:41.056] Disconnect blfd-5d820714.pool.mediaWays.net:64205; profid=98074264; cause=0; msg='Timeout occurred; no packet for 31.7 seconds'
+CHAT Blablah to ALL:
+   another ragequit...
+CHAT The Wanking Ghost to ALL:
+   :P
+CHAT Blablah to Team black:
+   lol
+CHAT Blablah to Team black:
+   i hate that they don't work together at all and then ragequit
+CHAT gomgom50 to ALL:
+   codfags as we call them
+CHAT Blablah to ALL:
+   lol, yes
+CHAT Blablah to Team black:
+   bodies aren't synced :(
+CHAT Blablah to Team black:
+   teabag it
+CHAT Blablah to ALL:
+   shall i go check irc?
+CHAT gomgom50 to ALL:
+   yay
+CHAT Blablah to ALL:
+   yeah brb
+CHAT gomgom50 to ALL:
+   s hvad synts du?
+CHAT The Wanking Ghost to ALL:
+   pik
+CHAT gomgom50 to ALL:
+   :D
+CHAT gomgom50 to ALL:
+   mig og blablah har spillet det her for meget sammen
+CHAT The Wanking Ghost to ALL:
+   :P
+CHAT gomgom50 to ALL:
+   men hvad syntes du om det?
+CHAT The Wanking Ghost to ALL:
+   fedt isr den hurtige recharge
+CHAT gomgom50 to ALL:
+   ja
+CHAT The Wanking Ghost to ALL:
+   man kan bruge modes meget mere nu
+CHAT gomgom50 to ALL:
+   men det tar et stykke tid foer den begynder
+CHAT Blablah to ALL:
+   bah, codfags :(
+CHAT gomgom50 to ALL:
+   x
+CHAT gomgom50 to ALL:
+   all tem codfags
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   :D
+CHAT The Wanking Ghost to ALL:
+   damn :P
+CHAT Blablah to ALL:
+   predator time
+CHAT gomgom50 to ALL:
+   crist
+CHAT gomgom50 to ALL:
+   ^^
+CHAT gomgom50 to ALL:
+   hvad syntes du som kunne aendres?
+CHAT The Wanking Ghost to ALL:
+   Ved jeg sgu ikke helt
+CHAT The Wanking Ghost to ALL:
+   mindre liv mske
+CHAT gomgom50 to ALL:
    okay
-[net 21:33:45.672] Disconnect iMac7.telenet.be:51524; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:51524'
-[net 21:33:49.581] Disconnect x1-6-00-1e-2a-86-ff-ba.k622.webspeed.dk:53242; profid=102228471; cause=19; msg='Remote disconnected: User left the game'
-** Server: Have to shut down the server for this **
+CHAT The Wanking Ghost to ALL:
+   men nu ahr man selvf nanosuit p
+CHAT The Wanking Ghost to ALL:
+   wtf
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   damn
+CHAT gomgom50 to ALL:
+   just a sec to late ^^
+CHAT gomgom50 to ALL:
+   oh
+CHAT The Wanking Ghost to ALL:
+   no
+CHAT Blablah to ALL:
+   poo
+CHAT Blablah to ALL:
+   FUCK
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   suit is still down
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   but lol
+CHAT Blablah to ALL:
+   this is why people ragequit
+CHAT Blablah to ALL:
+   xD
+CHAT gomgom50 to ALL:
+   why?
+CHAT Blablah to ALL:
+   because of me.
+CHAT Blablah to ALL:
+   :(
+CHAT gomgom50 to ALL:
+   xD
+CHAT gomgom50 to ALL:
+   and me
+CHAT gomgom50 to ALL:
+   when we play together
+CHAT The Wanking Ghost to ALL:
+   ARRR
+CHAT Blablah to ALL:
+   ouch
+CHAT Blablah to ALL:
+   lol @ gomgom talking to his parents
+CHAT The Wanking Ghost to ALL:
+   ahahah :D
+CHAT Blablah to ALL:
+   dude
+CHAT Blablah to ALL:
+   you snuck RIGHT by me there , lol
+CHAT The Wanking Ghost to ALL:
+   :P
+CHAT Blablah to ALL:
+   ghost
+CHAT Blablah to ALL:
+   i was like "HHOOOOOOOOOLY SHIT"
+CHAT The Wanking Ghost to ALL:
+   snuke and snuke it was speed mode :P
+CHAT The Wanking Ghost to ALL:
+   and i was lke dead :D
+CHAT Blablah to ALL:
+   lo
+CHAT Blablah to ALL:
+   damn
+CHAT gomgom50 to ALL:
+   how nice
+CHAT Blablah to ALL:
+   piss
+CHAT gomgom50 to ALL:
+   no that was pis
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   that was not piss :O
+CHAT gomgom50 to ALL:
+   shot down i nthe air!
+CHAT The Wanking Ghost to ALL:
+   arrrr
+CHAT Blablah to ALL:
+   lol
+CHAT gomgom50 to ALL:
+   would you stop that?
+CHAT Blablah to ALL:
+   that's how i ROLL
+CHAT The Wanking Ghost to ALL:
+   and how i die :D
+CHAT gomgom50 to ALL:
+   nice
+CHAT Blablah to ALL:
+   yeah :P
+CHAT gomgom50 to ALL:
+   oh well i gtg
+CHAT Blablah to ALL:
+   ah, pity
+CHAT Blablah to ALL:
+   me too actually
+CHAT gomgom50 to ALL:
+   aye
+CHAT Blablah to ALL:
+   more tomorrow
+CHAT gomgom50 to ALL:
+   yars
+CHAT Blablah to ALL:
+   and i hope the codnewbs will be back then
+CHAT Blablah to ALL:
+   haha xD
+CHAT Blablah to ALL:
+   yeah
+CHAT gomgom50 to ALL:
+   so we can pwn them again
+CHAT The Wanking Ghost to ALL:
+   woo late :(
+CHAT Blablah to ALL:
+   lol, yes
+CHAT Blablah to ALL:
+   i think we need uhm
+CHAT Blablah to ALL:
+   we need to have better teams
+CHAT gomgom50 to ALL:
+   i59
+CHAT gomgom50 to ALL:
+   yea
+CHAT Blablah to ALL:
+   and they just need to work together
+CHAT Blablah to ALL:
+   yeah
+CHAT gomgom50 to ALL:
+   we pwn to mutch
+CHAT Blablah to ALL:
+   i59 is good
+CHAT The Wanking Ghost to ALL:
+   haha thx ;)
+CHAT Blablah to ALL:
+   LOL, epic fail on my part
+CHAT The Wanking Ghost to ALL:
+   woot?=
+CHAT gomgom50 to ALL:
+   xD
+    $3g_suitSpeedMultMultiplayer = $60.2 $5[]$4
+CHAT The Wanking Ghost to ALL:
+   didnt see anything
+    $3g_suitSpeedMultMultiplayer = $60.35 $5[]$4
+CHAT gomgom50 to ALL:
+   det var derfor jeg skoed ^
+CHAT Blablah to ALL:
+   xD
+CHAT Blablah to ALL:
+   damn
+CHAT The Wanking Ghost to ALL:
+   :D
+CHAT gomgom50 to ALL:
+   oh well
+CHAT Blablah to ALL:
+   LOL
+CHAT gomgom50 to ALL:
+   ygonna go now
+CHAT gomgom50 to ALL:
+   cya
+CHAT The Wanking Ghost to ALL:
+   spray n pray
+CHAT Blablah to ALL:
+   i think i should post it on crymod
+[net 22:34:49.459] Disconnect x1-6-00-1e-2a-86-ff-ba.k622.webspeed.dk:64813; profid=102228471; cause=19; msg='Remote disconnected: User left the game'
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   thanks for coming, ghost :P
+[net 22:34:57.947] Disconnect iMac7.telenet.be:53566; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:53566'
+CHAT The Wanking Ghost to ALL:
+   np :D
+CHAT The Wanking Ghost to ALL:
+   nice mod btw
+CHAT The Wanking Ghost to ALL:
+   :D
+CHAT The Wanking Ghost to ALL:
+   i like it
+[net 22:35:16.360] Disconnect cpe.atm2-0-1291068.odnxx5.customer.tele.dk:23020; profid=116674296; cause=19; msg='Remote disconnected: User left the game'
 System:Quit

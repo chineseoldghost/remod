@@ -239,10 +239,10 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("g_playerSuitEnergyRechargeTimeArmorMoving", &g_playerSuitEnergyRechargeTimeArmorMoving, 5.0f, VF_CHEAT, "Modify suit energy recharge for Player in singleplayer in armor mode while moving.");
 	pConsole->Register("g_playerSuitEnergyRechargeTimeMultiplayer", &g_playerSuitEnergyRechargeTimeMultiplayer, 5.0f, VF_CHEAT, "Modify suit energy recharge for Player in multiplayer.");
 	pConsole->Register("g_playerSuitEnergyRechargeDelay", &g_playerSuitEnergyRechargeDelay, 5.0f, VF_CHEAT, "Delay of energy recharge after the player has been hit.");
-	pConsole->Register("g_playerSuitHealthRegenTime", &g_playerSuitHealthRegenTime, 40.0f, VF_CHEAT, "Modify suit health recharge for Player.");
-	pConsole->Register("g_playerSuitHealthRegenTimeMoving", &g_playerSuitHealthRegenTimeMoving, 40.0f, VF_CHEAT, "Modify suit health recharge for moving Player.");
-	pConsole->Register("g_playerSuitArmorModeHealthRegenTime", &g_playerSuitArmorModeHealthRegenTime, 40.0f, VF_CHEAT, "Modify suit health recharge for Player in armor mode.");
-	pConsole->Register("g_playerSuitArmorModeHealthRegenTimeMoving", &g_playerSuitArmorModeHealthRegenTimeMoving, 40.0f, VF_CHEAT, "Modify suit health recharge for Player moving in armor mode.");
+	pConsole->Register("g_playerSuitHealthRegenTime", &g_playerSuitHealthRegenTime, 45.0f, VF_CHEAT, "Modify suit health recharge for Player.");
+	pConsole->Register("g_playerSuitHealthRegenTimeMoving", &g_playerSuitHealthRegenTimeMoving, 45.0f, VF_CHEAT, "Modify suit health recharge for moving Player.");
+	pConsole->Register("g_playerSuitArmorModeHealthRegenTime", &g_playerSuitArmorModeHealthRegenTime, 45.0f, VF_CHEAT, "Modify suit health recharge for Player in armor mode.");
+	pConsole->Register("g_playerSuitArmorModeHealthRegenTimeMoving", &g_playerSuitArmorModeHealthRegenTimeMoving, 45.0f, VF_CHEAT, "Modify suit health recharge for Player moving in armor mode.");
 	pConsole->Register("g_playerSuitHealthRegenDelay", &g_playerSuitHealthRegenDelay, 1.0f, VF_CHEAT, "Delay of health regeneration after the player has been hit.");
 	pConsole->Register("g_difficultyLevel", &g_difficultyLevel, 2, VF_CHEAT|VF_READONLY, "Difficulty level");
 	pConsole->Register("g_difficultyHintSystem", &g_difficultyHintSystem, 2, VF_CHEAT|VF_READONLY, "Lower difficulty hint system (0 is off, 1 is radius based, 2 is save-game based)");

@@ -10,6 +10,9 @@
 <build_banklists>0</build_banklists>
 <build_programmerreport>0</build_programmerreport>
 <currentbank>Remod_bank00</currentbank>
+<currentlanguage>default</currentlanguage>
+<primarylanguage>default</primarylanguage>
+<language>default</language>
 <eventcategory>
 <name>music</name>
 <guid>{be52f90d-3ac5-4236-885a-8036f1927694}</guid>
@@ -75,8 +78,8 @@
 <layer_nextid>1</layer_nextid>
 <layer>
 <name>layer00</name>
-<height>478</height>
-<envelope_nextid>39</envelope_nextid>
+<height>551</height>
+<envelope_nextid>40</envelope_nextid>
 <mute>0</mute>
 <solo>0</solo>
 <soundlock>0</soundlock>
@@ -91,6 +94,7 @@
 <loopmode>0</loopmode>
 <loopcount2>-1</loopcount2>
 <autopitchenabled>0</autopitchenabled>
+<autopitchparameter>0</autopitchparameter>
 <autopitchreference>0</autopitchreference>
 <autopitchatzero>0</autopitchatzero>
 <finetune>0</finetune>
@@ -104,8 +108,9 @@
 <name>env005</name>
 <dsp_name>Volume</dsp_name>
 <dsp_paramindex>0</dsp_paramindex>
-<point>0,0.01,1,1</point>
-<point>0.996507,2.6077e-08,0,1</point>
+<colour>#ff0000</colour>
+<point>0,0.0316228,1,1</point>
+<point>0.996507,0,0,1</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -139,6 +144,7 @@
 <rangemin>0</rangemin>
 <rangemax>20</rangemax>
 <rangespacing>2.5</rangespacing>
+<keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
 <seekspeed>0</seekspeed>
 </parameter>
@@ -149,7 +155,9 @@
 <car_dialog>0</car_dialog>
 <volume_db>0</volume_db>
 <pitch>0</pitch>
+<pitch_units>Octaves</pitch_units>
 <pitch_randomization>0</pitch_randomization>
+<pitch_randomization_units>Octaves</pitch_randomization_units>
 <volume_randomization>0</volume_randomization>
 <priority>60</priority>
 <maxplaybacks>5</maxplaybacks>
@@ -186,6 +194,8 @@
 <panlevel3d>1</panlevel3d>
 <fadein_time>0</fadein_time>
 <fadeout_time>150</fadeout_time>
+<spawn_intensity>1</spawn_intensity>
+<spawn_intensity_randomization>0</spawn_intensity_randomization>
 <TEMPLATE_PROP_LAYERS>1</TEMPLATE_PROP_LAYERS>
 <TEMPLATE_PROP_VOLUME>0</TEMPLATE_PROP_VOLUME>
 <TEMPLATE_PROP_PITCH>1</TEMPLATE_PROP_PITCH>
@@ -320,6 +330,7 @@
 <varpan>0</varpan>
 <xmafiltering>0</xmafiltering>
 <channelmode>0</channelmode>
+<quality_crossplatform>0</quality_crossplatform>
 <quality>-1</quality>
 <optimisedratereduction>100</optimisedratereduction>
 <enableratereduction>1</enableratereduction>
@@ -330,7 +341,7 @@
 <_PC_optimisesamplerate>1</_PC_optimisesamplerate>
 <_PC_forcesoftware>0</_PC_forcesoftware>
 <_PC_maxstreams>32</_PC_maxstreams>
-<_PC_fileseq>3</_PC_fileseq>
+<_PC_fileseq>2</_PC_fileseq>
 <_XBOX_format>PCM</_XBOX_format>
 <_XBOX_quality>50</_XBOX_quality>
 <_XBOX_optimisesamplerate>0</_XBOX_optimisesamplerate>
@@ -416,6 +427,52 @@
 <_WII_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_WII_audiosourcedirectory>
 <_WII_prebuildcommands></_WII_prebuildcommands>
 <_WII_postbuildcommands></_WII_postbuildcommands>
+<presavecommands></presavecommands>
+<postsavecommands></postsavecommands>
 <neweventusetemplate>0</neweventusetemplate>
 <neweventlasttemplatename></neweventlasttemplatename>
-</project>
+
+<Composition>
+    <CompositionUI>
+        <SceneEditor>
+            <NavigableGraphicsView>
+                <ViewRect>-516.426, -382.723, 1037.87, 770.461</ViewRect>
+                <ZoomLevel>0</ZoomLevel>
+            </NavigableGraphicsView>
+            <SceneEditorItemRepository></SceneEditorItemRepository>
+        </SceneEditor>
+        <ThemeEditor>
+            <NavigableGraphicsView>
+                <ViewRect>-332.359, -248.747, 667.854, 500.629</ViewRect>
+                <ZoomLevel>0</ZoomLevel>
+            </NavigableGraphicsView>
+            <ThemeEditorItemRepository></ThemeEditorItemRepository>
+        </ThemeEditor>
+    </CompositionUI>
+    <CueFactory>
+        <UID>1</UID>
+    </CueFactory>
+    <CueRepository></CueRepository>
+    <ExtLinkFactory>
+        <UID>1</UID>
+    </ExtLinkFactory>
+    <ExtLinkRepository></ExtLinkRepository>
+    <ExtSegmentFactory>
+        <UID>1</UID>
+    </ExtSegmentFactory>
+    <ParameterFactory>
+        <UID>1</UID>
+    </ParameterFactory>
+    <ParameterRepository></ParameterRepository>
+    <SceneRepository>
+        <Scene ID="1">
+            <CueSheet></CueSheet>
+        </Scene>
+    </SceneRepository>
+    <SegmentRepository></SegmentRepository>
+    <SharedFile></SharedFile>
+    <ThemeFactory>
+        <UID>1</UID>
+    </ThemeFactory>
+    <ThemeRepository></ThemeRepository>
+</Composition></project>

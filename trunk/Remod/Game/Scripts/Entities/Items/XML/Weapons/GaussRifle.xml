@@ -16,7 +16,7 @@
 		</dualwield>
 	</params>
 	<ammos>
-		<ammo name="gaussbullet" extra="8" amount="2" />
+		<ammo name="gaussbullet" extra="4" amount="2" />
 	</ammos>
 	<geometry>
 		<firstperson name="objects/weapons/us/gauss/gauss_fp.chr" angles="0,0,0" />

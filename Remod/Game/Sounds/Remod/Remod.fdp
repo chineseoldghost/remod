@@ -1,6 +1,6 @@
 <project>
 <name>Remod</name>
-<guid>{c7e76510-7c33-44c9-987a-5a1962141452}</guid>
+<guid>{86dbe1f0-4920-433f-b3c8-aa55f4caf0a4}</guid>
 <version>4</version>
 <eventgroup_nextid>0</eventgroup_nextid>
 <soundbank_nextid>1</soundbank_nextid>
@@ -15,7 +15,7 @@
 <language>default</language>
 <eventcategory>
 <name>music</name>
-<guid>{be52f90d-3ac5-4236-885a-8036f1927694}</guid>
+<guid>{3c5b928a-5572-4aa2-b8ef-731912943430}</guid>
 <volume_db>0</volume_db>
 <pitch>0</pitch>
 <maxplaybacks>0</maxplaybacks>
@@ -25,7 +25,7 @@
 </eventcategory>
 <eventcategory>
 <name>3rd_pers</name>
-<guid>{8eb403b1-d0ea-4984-817f-708c72132ac9}</guid>
+<guid>{20dc0774-b374-43e7-898d-3e8d1db8a25a}</guid>
 <volume_db>0</volume_db>
 <pitch>0</pitch>
 <maxplaybacks>0</maxplaybacks>
@@ -35,11 +35,11 @@
 </eventcategory>
 <sounddeffolder>
 <name>master</name>
-<guid>{88991697-7104-4b5d-9dd0-905fce1f78f7}</guid>
+<guid>{875a8637-2927-485a-90d4-6a52a3db4e15}</guid>
 <open>0</open>
 <sounddef>
 <name>cloak_tone_high</name>
-<guid>{5dd4e74f-c74e-4628-9874-dae031c38967}</guid>
+<guid>{f586a8e6-7e4c-44c2-bb2a-54499e599698}</guid>
 <type>sequential</type>
 <spawntime_min>0</spawntime_min>
 <spawntime_max>0</spawntime_max>
@@ -66,30 +66,29 @@
 </sounddeffolder>
 <eventgroup>
 <name>suit</name>
-<guid>{b446571e-bd3c-4290-b189-f83cd9fd102c}</guid>
+<guid>{17c7c587-86b1-4e9e-97c4-99d043eeb2ad}</guid>
 <eventgroup_nextid>0</eventgroup_nextid>
 <event_nextid>1</event_nextid>
 <open>1</open>
 <notes></notes>
 <event>
 <name>cloak_tone_high</name>
-<guid>{98c4ec37-9a93-4271-adf3-260367ab6dea}</guid>
-<parameter_nextid>1</parameter_nextid>
+<guid>{a993a7d0-bbe5-40f4-8bfc-675bf156557b}</guid>
+<parameter_nextid>0</parameter_nextid>
 <layer_nextid>1</layer_nextid>
 <layer>
 <name>layer00</name>
-<height>551</height>
-<envelope_nextid>40</envelope_nextid>
+<height>475</height>
+<envelope_nextid>1</envelope_nextid>
 <mute>0</mute>
 <solo>0</solo>
 <soundlock>0</soundlock>
 <envlock>0</envlock>
 <priority>-1</priority>
-<controlparameter>distance</controlparameter>
 <sound>
 <name>cloak_tone_high</name>
 <x>0</x>
-<width>0.99738</width>
+<width>1</width>
 <startmode>0</startmode>
 <loopmode>0</loopmode>
 <loopcount2>-1</loopcount2>
@@ -105,12 +104,12 @@
 <fadeouttype>2</fadeouttype>
 </sound>
 <envelope>
-<name>env005</name>
+<name>env000</name>
 <dsp_name>Volume</dsp_name>
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
-<point>0,0.0316228,1,1</point>
-<point>0.996507,0,0,1</point>
+<point>0,0.0177828,1,1</point>
+<point>1,0,0,1</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -137,12 +136,12 @@
 </layer>
 <parameter>
 <name>distance</name>
-<guid>{b43fa354-f486-4dc4-972c-3765c39c3ee9}</guid>
+<guid>{752dd1e7-f0e5-413c-879b-93af7161886d}</guid>
 <primary>1</primary>
 <loopmode>0</loopmode>
 <rangeunits>meter</rangeunits>
 <rangemin>0</rangemin>
-<rangemax>20</rangemax>
+<rangemax>15</rangemax>
 <rangespacing>2.5</rangespacing>
 <keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
@@ -159,8 +158,8 @@
 <pitch_randomization>0</pitch_randomization>
 <pitch_randomization_units>Octaves</pitch_randomization_units>
 <volume_randomization>0</volume_randomization>
-<priority>60</priority>
-<maxplaybacks>5</maxplaybacks>
+<priority>128</priority>
+<maxplaybacks>1</maxplaybacks>
 <maxplaybacks_behavior>Steal_quietest</maxplaybacks_behavior>
 <mode>x_3d</mode>
 <rolloff>Custom</rolloff>
@@ -173,9 +172,9 @@
 <notes></notes>
 <category>3rd_pers</category>
 <position_randomization>0</position_randomization>
-<speaker_l>0.707946</speaker_l>
+<speaker_l>0.708761</speaker_l>
 <speaker_c>0</speaker_c>
-<speaker_r>0.707946</speaker_r>
+<speaker_r>0.708761</speaker_r>
 <speaker_ls>0</speaker_ls>
 <speaker_rs>0</speaker_rs>
 <speaker_lb>0</speaker_lb>
@@ -214,7 +213,7 @@
 <TEMPLATE_PROP_X_3D_CONE_OUTSIDE_ANGLE>1</TEMPLATE_PROP_X_3D_CONE_OUTSIDE_ANGLE>
 <TEMPLATE_PROP_X_3D_CONE_OUTSIDE_VOLUME>1</TEMPLATE_PROP_X_3D_CONE_OUTSIDE_VOLUME>
 <TEMPLATE_PROP_X_3D_DOPPLER_FACTOR>1</TEMPLATE_PROP_X_3D_DOPPLER_FACTOR>
-<TEMPLATE_PROP_REVERB_WET_LEVEL>0</TEMPLATE_PROP_REVERB_WET_LEVEL>
+<TEMPLATE_PROP_REVERB_WET_LEVEL>1</TEMPLATE_PROP_REVERB_WET_LEVEL>
 <TEMPLATE_PROP_REVERB_DRY_LEVEL>1</TEMPLATE_PROP_REVERB_DRY_LEVEL>
 <TEMPLATE_PROP_X_3D_SPEAKER_SPREAD>1</TEMPLATE_PROP_X_3D_SPEAKER_SPREAD>
 <TEMPLATE_PROP_X_3D_PAN_LEVEL>1</TEMPLATE_PROP_X_3D_PAN_LEVEL>
@@ -229,13 +228,13 @@
 <TEMPLATE_PROP_ONESHOT>1</TEMPLATE_PROP_ONESHOT>
 <TEMPLATE_PROP_FADEIN_TIME>1</TEMPLATE_PROP_FADEIN_TIME>
 <TEMPLATE_PROP_FADEOUT_TIME>1</TEMPLATE_PROP_FADEOUT_TIME>
-<TEMPLATE_PROP_NOTES>1</TEMPLATE_PROP_NOTES>
+<TEMPLATE_PROP_NOTES>0</TEMPLATE_PROP_NOTES>
 <effectevent>0</effectevent>
 </event>
 </eventgroup>
 <default_soundbank_props>
 <name>default_soundbank_props</name>
-<guid>{69bb1160-0d67-4e1f-9bdd-0b1fdf11d3f5}</guid>
+<guid>{5fcc2ece-4c75-4101-85be-9a18017a93e3}</guid>
 <load_into_rsx>0</load_into_rsx>
 <disable_seeking>0</disable_seeking>
 <enable_syncpoints>1</enable_syncpoints>
@@ -301,12 +300,12 @@
 </default_soundbank_props>
 <soundbank>
 <name>Remod_bank00</name>
-<guid>{ac0364c4-03a5-4eb9-bfd3-80bc76ef8570}</guid>
+<guid>{eb65ac2e-1b16-4b71-9b05-6524d56f1066}</guid>
 <load_into_rsx>0</load_into_rsx>
 <disable_seeking>0</disable_seeking>
-<enable_syncpoints>0</enable_syncpoints>
+<enable_syncpoints>1</enable_syncpoints>
 <hasbuiltwithsyncpoints>0</hasbuiltwithsyncpoints>
-<_PC_banktype>Sample</_PC_banktype>
+<_PC_banktype>DecompressedSample</_PC_banktype>
 <_XBOX_banktype>DecompressedSample</_XBOX_banktype>
 <_XBOX360_banktype>DecompressedSample</_XBOX360_banktype>
 <_GC_banktype>DecompressedSample</_GC_banktype>
@@ -318,7 +317,7 @@
 <rebuild>1</rebuild>
 <waveform>
 <filename>cloak_tone_high.wav</filename>
-<guid>{412da15b-76c5-4911-89db-ea9c3711c988}</guid>
+<guid>{6fc26be2-aff2-4e12-8d11-f9197e1163db}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
 <deffreq>44100</deffreq>
@@ -336,12 +335,12 @@
 <enableratereduction>1</enableratereduction>
 <notes></notes>
 </waveform>
-<_PC_format>ADPCM</_PC_format>
+<_PC_format>PCM</_PC_format>
 <_PC_quality>50</_PC_quality>
-<_PC_optimisesamplerate>1</_PC_optimisesamplerate>
+<_PC_optimisesamplerate>0</_PC_optimisesamplerate>
 <_PC_forcesoftware>0</_PC_forcesoftware>
 <_PC_maxstreams>32</_PC_maxstreams>
-<_PC_fileseq>2</_PC_fileseq>
+<_PC_fileseq>1</_PC_fileseq>
 <_XBOX_format>PCM</_XBOX_format>
 <_XBOX_quality>50</_XBOX_quality>
 <_XBOX_optimisesamplerate>0</_XBOX_optimisesamplerate>
@@ -394,37 +393,37 @@
 <_PC_postbuildcommands></_PC_postbuildcommands>
 <_XBOX_encryptionkey></_XBOX_encryptionkey>
 <_XBOX_builddirectory></_XBOX_builddirectory>
-<_XBOX_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_XBOX_audiosourcedirectory>
+<_XBOX_audiosourcedirectory></_XBOX_audiosourcedirectory>
 <_XBOX_prebuildcommands></_XBOX_prebuildcommands>
 <_XBOX_postbuildcommands></_XBOX_postbuildcommands>
 <_XBOX360_encryptionkey></_XBOX360_encryptionkey>
 <_XBOX360_builddirectory></_XBOX360_builddirectory>
-<_XBOX360_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_XBOX360_audiosourcedirectory>
+<_XBOX360_audiosourcedirectory></_XBOX360_audiosourcedirectory>
 <_XBOX360_prebuildcommands></_XBOX360_prebuildcommands>
 <_XBOX360_postbuildcommands></_XBOX360_postbuildcommands>
 <_GC_encryptionkey></_GC_encryptionkey>
 <_GC_builddirectory></_GC_builddirectory>
-<_GC_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_GC_audiosourcedirectory>
+<_GC_audiosourcedirectory></_GC_audiosourcedirectory>
 <_GC_prebuildcommands></_GC_prebuildcommands>
 <_GC_postbuildcommands></_GC_postbuildcommands>
 <_PS2_encryptionkey></_PS2_encryptionkey>
 <_PS2_builddirectory></_PS2_builddirectory>
-<_PS2_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_PS2_audiosourcedirectory>
+<_PS2_audiosourcedirectory></_PS2_audiosourcedirectory>
 <_PS2_prebuildcommands></_PS2_prebuildcommands>
 <_PS2_postbuildcommands></_PS2_postbuildcommands>
 <_PSP_encryptionkey></_PSP_encryptionkey>
 <_PSP_builddirectory></_PSP_builddirectory>
-<_PSP_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_PSP_audiosourcedirectory>
+<_PSP_audiosourcedirectory></_PSP_audiosourcedirectory>
 <_PSP_prebuildcommands></_PSP_prebuildcommands>
 <_PSP_postbuildcommands></_PSP_postbuildcommands>
 <_PS3_encryptionkey></_PS3_encryptionkey>
 <_PS3_builddirectory></_PS3_builddirectory>
-<_PS3_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_PS3_audiosourcedirectory>
+<_PS3_audiosourcedirectory></_PS3_audiosourcedirectory>
 <_PS3_prebuildcommands></_PS3_prebuildcommands>
 <_PS3_postbuildcommands></_PS3_postbuildcommands>
 <_WII_encryptionkey></_WII_encryptionkey>
 <_WII_builddirectory></_WII_builddirectory>
-<_WII_audiosourcedirectory>C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/Remod</_WII_audiosourcedirectory>
+<_WII_audiosourcedirectory></_WII_audiosourcedirectory>
 <_WII_prebuildcommands></_WII_prebuildcommands>
 <_WII_postbuildcommands></_WII_postbuildcommands>
 <presavecommands></presavecommands>
@@ -436,14 +435,14 @@
     <CompositionUI>
         <SceneEditor>
             <NavigableGraphicsView>
-                <ViewRect>-516.426, -382.723, 1037.87, 770.461</ViewRect>
+                <ViewRect>-894.999, -579.696, 1796.57, 1165.96</ViewRect>
                 <ZoomLevel>0</ZoomLevel>
             </NavigableGraphicsView>
             <SceneEditorItemRepository></SceneEditorItemRepository>
         </SceneEditor>
         <ThemeEditor>
             <NavigableGraphicsView>
-                <ViewRect>-332.359, -248.747, 667.854, 500.629</ViewRect>
+                <ViewRect>-337.288, -252.436, 677.758, 508.054</ViewRect>
                 <ZoomLevel>0</ZoomLevel>
             </NavigableGraphicsView>
             <ThemeEditorItemRepository></ThemeEditorItemRepository>

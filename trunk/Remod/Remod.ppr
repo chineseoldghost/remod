@@ -320,7 +320,7 @@ TopLine=183
 Caret=4,225
 [Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml]
 TopLine=1
-Caret=36,19
+Caret=90,14
 [Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon.xml]
 TopLine=1
 Caret=4,30

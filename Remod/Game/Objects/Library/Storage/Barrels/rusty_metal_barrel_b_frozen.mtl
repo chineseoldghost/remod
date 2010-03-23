@@ -1,0 +1,35 @@
+<Material MtlFlags="256" >
+ <SubMaterials>
+  <Material Diffuse="0.41568631,0.41568631,0.41568631" Emissive="0,0,0" GenMask="4115" MtlFlags="128" Name="rusty_metal_barrel_02" Opacity="1" Shader="Metal" Shininess="9.999999" Specular="0.25490198,0.25490198,0.25490198" SurfaceType="mat_metal" >
+   <Textures>
+    <Texture File="objects/library/storage/barrels/barrel_black.tif" Map="Diffuse" >
+     <TexMod />
+    </Texture>
+    <Texture File="objects/library/storage/barrels/barrel_spec_a.tif" Map="Specular" >
+     <TexMod />
+    </Texture>
+    <Texture File="objects/library/storage/barrels/barrel_ddn.tif" Map="Normalmap" >
+     <TexMod />
+    </Texture>
+    <Texture File="textures/cubemaps/beach_blur.dds" Map="Environment" >
+     <TexMod />
+    </Texture>
+    <Texture File="objects/characters/alien/scout/scout_detail.dds" Map="Detail" >
+     <TexMod TileU="12" TileV="3" />
+    </Texture>
+   </Textures>
+   <PublicParams FresnelBias="0.23" Glossiness="0.80000001" IndirLightMultiplier="1" ReflBumpScale="1.54" ReflectionAmount="0.31" SpecularMultiplier="0.2" />
+   <MaterialLayers>
+    <Layer Active="1" Name="Frozenlayer" >
+     <PublicParams BaseDarkening="0.125" EndFrostColor="0.77647066,0.81960791,0.89019614" FrostAmount="0.96039599" FrostBumpAmount="2.41396" FrostDetailTileU="2" FrostDetailTileV="2" FrostMultiplier="1" FrostOffset="0" StartFrostColor="0.25098041,0.33333334,0.43529415" VariationAmount="0.128713" VariationTileU="0.25" VariationTileV="0.34999999" VariationTileW="0.5" />
+    </Layer>
+   </MaterialLayers>
+  </Material>
+  <Material Diffuse="0,0,0.98039222" Emissive="0,0,0" GenMask="0" MtlFlags="1152" Name="proxy_rusty_metal_barrel_02" Opacity="0.29999998" Shader="Nodraw" Shininess="10" Specular="0,0,0" SurfaceType="mat_metal" >
+   <Textures />
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams BumpOffset="0.039999999" DebugUVScale="64" />
+ <MaterialLayers />
+</Material>

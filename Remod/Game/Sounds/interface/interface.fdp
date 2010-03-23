@@ -40,7 +40,7 @@
 <maxplaybacks>0</maxplaybacks>
 <maxplaybacks_behavior>Steal_oldest</maxplaybacks_behavior>
 <notes></notes>
-<open>0</open>
+<open>1</open>
 <eventcategory>
 <name>vehicle_sounds</name>
 <guid>{b71a4234-e9ba-41e1-b98e-9387ca9486a6}</guid>
@@ -170,7 +170,7 @@
 <maxplaybacks>0</maxplaybacks>
 <maxplaybacks_behavior>Steal_oldest</maxplaybacks_behavior>
 <notes></notes>
-<open>0</open>
+<open>1</open>
 <eventcategory>
 <name>3rd_weapon</name>
 <guid>{99b06ecd-a55b-443a-93d3-9c3e5a39bb23}</guid>
@@ -201,7 +201,7 @@
 <maxplaybacks>0</maxplaybacks>
 <maxplaybacks_behavior>Steal_oldest</maxplaybacks_behavior>
 <notes></notes>
-<open>0</open>
+<open>1</open>
 <eventcategory>
 <name>hud_suit</name>
 <guid>{96dc0d39-0c72-4abe-890b-7e16794a96e0}</guid>
@@ -8029,7 +8029,7 @@
 <guid>{d4335f1e-37fb-4625-8c2b-f45d0b83f831}</guid>
 <eventgroup_nextid>0</eventgroup_nextid>
 <event_nextid>0</event_nextid>
-<open>1</open>
+<open>0</open>
 <notes></notes>
 <event>
 <name>binocular_ambience</name>
@@ -12514,7 +12514,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -12546,7 +12546,7 @@
 <loopmode>0</loopmode>
 <rangeunits>meter</rangeunits>
 <rangemin>0</rangemin>
-<rangemax>10</rangemax>
+<rangemax>15</rangemax>
 <rangespacing>1.5</rangespacing>
 <keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
@@ -13254,7 +13254,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -13286,7 +13286,7 @@
 <loopmode>0</loopmode>
 <rangeunits>meter</rangeunits>
 <rangemin>0</rangemin>
-<rangemax>5</rangemax>
+<rangemax>10</rangemax>
 <rangespacing>1.5</rangespacing>
 <keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
@@ -13554,7 +13554,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -15637,7 +15637,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -15669,7 +15669,7 @@
 <loopmode>0</loopmode>
 <rangeunits>meter</rangeunits>
 <rangemin>0</rangemin>
-<rangemax>10</rangemax>
+<rangemax>15</rangemax>
 <rangespacing>1.5</rangespacing>
 <keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
@@ -15937,7 +15937,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -15969,7 +15969,7 @@
 <loopmode>0</loopmode>
 <rangeunits></rangeunits>
 <rangemin>0</rangemin>
-<rangemax>10</rangemax>
+<rangemax>15</rangemax>
 <rangespacing>1.5</rangespacing>
 <keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
@@ -16237,7 +16237,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -16537,7 +16537,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -16569,7 +16569,7 @@
 <loopmode>0</loopmode>
 <rangeunits></rangeunits>
 <rangemin>0</rangemin>
-<rangemax>10</rangemax>
+<rangemax>15</rangemax>
 <rangespacing>1.5</rangespacing>
 <keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
@@ -16837,7 +16837,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -17137,7 +17137,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -17169,7 +17169,7 @@
 <loopmode>0</loopmode>
 <rangeunits>meter</rangeunits>
 <rangemin>0</rangemin>
-<rangemax>10</rangemax>
+<rangemax>15</rangemax>
 <rangespacing>1.5</rangespacing>
 <keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
@@ -17437,7 +17437,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -17469,7 +17469,7 @@
 <loopmode>0</loopmode>
 <rangeunits>meter</rangeunits>
 <rangemin>0</rangemin>
-<rangemax>10</rangemax>
+<rangemax>15</rangemax>
 <rangespacing>1.5</rangespacing>
 <keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
@@ -17737,7 +17737,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -18675,7 +18675,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -25768,7 +25768,7 @@
 <_PC_optimisesamplerate>1</_PC_optimisesamplerate>
 <_PC_forcesoftware>0</_PC_forcesoftware>
 <_PC_maxstreams>32</_PC_maxstreams>
-<_PC_fileseq>1</_PC_fileseq>
+<_PC_fileseq>2</_PC_fileseq>
 <_XBOX_format>PCM</_XBOX_format>
 <_XBOX_quality>50</_XBOX_quality>
 <_XBOX_optimisesamplerate>0</_XBOX_optimisesamplerate>
@@ -26414,7 +26414,7 @@
 <_PC_optimisesamplerate>0</_PC_optimisesamplerate>
 <_PC_forcesoftware>0</_PC_forcesoftware>
 <_PC_maxstreams>32</_PC_maxstreams>
-<_PC_fileseq>1</_PC_fileseq>
+<_PC_fileseq>2</_PC_fileseq>
 <_XBOX_format>PCM</_XBOX_format>
 <_XBOX_quality>50</_XBOX_quality>
 <_XBOX_optimisesamplerate>0</_XBOX_optimisesamplerate>
@@ -28540,7 +28540,7 @@
 <_PC_optimisesamplerate>1</_PC_optimisesamplerate>
 <_PC_forcesoftware>0</_PC_forcesoftware>
 <_PC_maxstreams>32</_PC_maxstreams>
-<_PC_fileseq>1</_PC_fileseq>
+<_PC_fileseq>3</_PC_fileseq>
 <_XBOX_format>PCM</_XBOX_format>
 <_XBOX_quality>50</_XBOX_quality>
 <_XBOX_optimisesamplerate>0</_XBOX_optimisesamplerate>
@@ -28776,14 +28776,14 @@
     <CompositionUI>
         <SceneEditor>
             <NavigableGraphicsView>
-                <ViewRect>-298.337, -221.098, 599.571, 445.092</ViewRect>
+                <ViewRect>-293.145, -217.25, 589.135, 437.345</ViewRect>
                 <ZoomLevel>0</ZoomLevel>
             </NavigableGraphicsView>
             <SceneEditorItemRepository></SceneEditorItemRepository>
         </SceneEditor>
         <ThemeEditor>
             <NavigableGraphicsView>
-                <ViewRect>-327.502, -245.112, 658.094, 493.313</ViewRect>
+                <ViewRect>-332.359, -248.747, 667.854, 500.629</ViewRect>
                 <ZoomLevel>0</ZoomLevel>
             </NavigableGraphicsView>
             <ThemeEditorItemRepository></ThemeEditorItemRepository>

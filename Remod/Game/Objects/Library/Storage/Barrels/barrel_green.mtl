@@ -1,0 +1,28 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="Barrel_green" MtlFlags="128" Shader="Metal" GenMask="19" SurfaceType="mat_metal" Diffuse="0.501961,0.501961,0.501961" Specular="0.505882,0.505882,0.505882" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/storage/barrels/barrel_green.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/storage/barrels/barrel_green_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/storage/barrels/barrel_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/beach_blur.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.318" Glossiness="0.683" IndirLightMultiplier="1" ReflectionAmount="0.4" FresnelBias="0.08"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.3">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams BumpOffset="0.04" DebugUVScale="64"/>
+ <MaterialLayers />
+</Material>

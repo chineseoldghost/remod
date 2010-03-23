@@ -1,0 +1,32 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="rusty_metal_barrel_02" MtlFlags="128" Shader="Metal" GenMask="268443667" SurfaceType="mat_metal" Diffuse="0.176471,0.176471,0.176471" Specular="0.884245,0.884245,0.884245" Emissive="0,0,0" Shininess="71.6" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/storage/barrels/barrel_red_logo.tif" Filter="5">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/storage/barrels/barrel_blue.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/storage/barrels/barrel_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/camera_river_cubemap_bright.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.905" AnisotropicShape="0.248" IndirLightMultiplier="1" ReflectionAmount="1.35" FresnelBias="0.465"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0" ReplaceBasePass="2">
+     <PublicParams FrostDetailTileU="2" FrostDetailTileV="1" FrostMaskContrast="1" DiffuseBlendAmount="1" DiffuseBlendType="0" FrostBumpAmount="0.5" DiffuseMapC="0.014" DiffuseMapM="0.005" DiffuseMapY="-0.043" ReflectContrast="1" ReflectLevel="1.5" ReflectMasking="0.7" FresnelPower="0.2" FresnelBias="0.6" FrostMaskSpecColor="0.501961,0.517647,0.592157" BackDiffuseMultiplier="0" BackViewDep="0.5" ReflShadowBias="1"/>
+    </Layer>
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy_rusty_metal_barrel_02" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_smooth" Diffuse="0,0,0.980392" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.3">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams DebugUVScale="64"/>
+ <MaterialLayers />
+</Material>

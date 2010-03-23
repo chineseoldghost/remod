@@ -40,7 +40,7 @@
 <maxplaybacks>0</maxplaybacks>
 <maxplaybacks_behavior>Steal_oldest</maxplaybacks_behavior>
 <notes></notes>
-<open>0</open>
+<open>1</open>
 <eventcategory>
 <name>vehicle_sounds</name>
 <guid>{b71a4234-e9ba-41e1-b98e-9387ca9486a6}</guid>
@@ -170,7 +170,7 @@
 <maxplaybacks>0</maxplaybacks>
 <maxplaybacks_behavior>Steal_oldest</maxplaybacks_behavior>
 <notes></notes>
-<open>0</open>
+<open>1</open>
 <eventcategory>
 <name>3rd_weapon</name>
 <guid>{99b06ecd-a55b-443a-93d3-9c3e5a39bb23}</guid>
@@ -201,7 +201,7 @@
 <maxplaybacks>0</maxplaybacks>
 <maxplaybacks_behavior>Steal_oldest</maxplaybacks_behavior>
 <notes></notes>
-<open>0</open>
+<open>1</open>
 <eventcategory>
 <name>hud_suit</name>
 <guid>{96dc0d39-0c72-4abe-890b-7e16794a96e0}</guid>
@@ -8029,7 +8029,7 @@
 <guid>{d4335f1e-37fb-4625-8c2b-f45d0b83f831}</guid>
 <eventgroup_nextid>0</eventgroup_nextid>
 <event_nextid>0</event_nextid>
-<open>0</open>
+<open>1</open>
 <notes></notes>
 <event>
 <name>binocular_ambience</name>
@@ -12514,7 +12514,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -12524,49 +12524,6 @@
 <_PSP_enable>1</_PSP_enable>
 <_PS3_enable>1</_PS3_enable>
 <_WII_enable>1</_WII_enable>
-<mute>0</mute>
-<visible>1</visible>
-<hidden>0</hidden>
-<mappingmethod>0</mappingmethod>
-<flags>0</flags>
-</envelope>
-<envelope>
-<name>env002</name>
-<dsp_name>FMOD Highpass</dsp_name>
-<dsp_paramindex>0</dsp_paramindex>
-<colour>#ff00ff</colour>
-<point>0,0.6623,1,1</point>
-<parametername>distance</parametername>
-<_PC_enable>1</_PC_enable>
-<_XBOX_enable>1</_XBOX_enable>
-<_XBOX360_enable>1</_XBOX360_enable>
-<_GC_enable>0</_GC_enable>
-<_PS2_enable>0</_PS2_enable>
-<_PSP_enable>0</_PSP_enable>
-<_PS3_enable>1</_PS3_enable>
-<_WII_enable>0</_WII_enable>
-<mute>0</mute>
-<visible>1</visible>
-<hidden>0</hidden>
-<mappingmethod>1</mappingmethod>
-<flags>0</flags>
-</envelope>
-<envelope>
-<name>env003</name>
-<dsp_name>FMOD Highpass</dsp_name>
-<dsp_paramindex>1</dsp_paramindex>
-<colour>#8000ff</colour>
-<parentname>env002</parentname>
-<point>0,0.2468,1,1</point>
-<parametername>distance</parametername>
-<_PC_enable>1</_PC_enable>
-<_XBOX_enable>1</_XBOX_enable>
-<_XBOX360_enable>1</_XBOX360_enable>
-<_GC_enable>0</_GC_enable>
-<_PS2_enable>0</_PS2_enable>
-<_PSP_enable>0</_PSP_enable>
-<_PS3_enable>1</_PS3_enable>
-<_WII_enable>0</_WII_enable>
 <mute>0</mute>
 <visible>1</visible>
 <hidden>0</hidden>
@@ -12589,7 +12546,7 @@
 <loopmode>0</loopmode>
 <rangeunits>meter</rangeunits>
 <rangemin>0</rangemin>
-<rangemax>10</rangemax>
+<rangemax>15</rangemax>
 <rangespacing>1.5</rangespacing>
 <keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
@@ -13297,7 +13254,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -13329,7 +13286,7 @@
 <loopmode>0</loopmode>
 <rangeunits>meter</rangeunits>
 <rangemin>0</rangemin>
-<rangemax>5</rangemax>
+<rangemax>10</rangemax>
 <rangespacing>1.5</rangespacing>
 <keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
@@ -13597,7 +13554,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -15680,7 +15637,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -15980,7 +15937,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -16280,7 +16237,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -16580,7 +16537,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -16880,7 +16837,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -17180,7 +17137,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -17212,7 +17169,7 @@
 <loopmode>0</loopmode>
 <rangeunits>meter</rangeunits>
 <rangemin>0</rangemin>
-<rangemax>10</rangemax>
+<rangemax>15</rangemax>
 <rangespacing>1.5</rangespacing>
 <keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
@@ -17480,7 +17437,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -17512,7 +17469,7 @@
 <loopmode>0</loopmode>
 <rangeunits>meter</rangeunits>
 <rangemin>0</rangemin>
-<rangemax>10</rangemax>
+<rangemax>15</rangemax>
 <rangespacing>1.5</rangespacing>
 <keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
@@ -17780,7 +17737,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -17812,7 +17769,7 @@
 <loopmode>0</loopmode>
 <rangeunits></rangeunits>
 <rangemin>0</rangemin>
-<rangemax>15</rangemax>
+<rangemax>10</rangemax>
 <rangespacing>1.5</rangespacing>
 <keyoffonsilence>0</keyoffonsilence>
 <velocity>0</velocity>
@@ -18718,7 +18675,7 @@
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
 <point>0,1,1,2</point>
-<point>1,0,0,1</point>
+<point>1,0,0,2</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
 <_XBOX_enable>1</_XBOX_enable>
@@ -24965,7 +24922,7 @@
 <_PS3_banktype>Sample</_PS3_banktype>
 <_WII_banktype>Sample</_WII_banktype>
 <notes></notes>
-<rebuild>1</rebuild>
+<rebuild>0</rebuild>
 <waveform>
 <filename>multiplayer/mp_tac_alarm_suit.wav</filename>
 <guid>{db76db4b-08e8-4c24-8af3-9bf92babb6ba}</guid>
@@ -24991,7 +24948,7 @@
 <guid>{a518fcc9-112a-496c-92a2-6ff005d5b75b}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -25011,7 +24968,7 @@
 <guid>{97eaee3f-37e3-4040-b541-d8eaa5d699f9}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -25211,7 +25168,7 @@
 <guid>{b3faa199-81bc-441d-b1b0-de1c94b81dbe}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -25291,7 +25248,7 @@
 <guid>{a8e3d4cb-b6d6-4fb0-898d-07c0df8f59b9}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -25311,7 +25268,7 @@
 <guid>{37d9c69e-dcb4-44ef-9d39-8e89c008a4fe}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -25371,7 +25328,7 @@
 <guid>{060cace7-d8fd-4012-9154-0164ec1f2ca9}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -25391,7 +25348,7 @@
 <guid>{17441158-ace5-4701-a210-057fb27b5361}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -25611,7 +25568,7 @@
 <guid>{254a91a2-3188-4a05-bd41-e74a3e1b6325}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>8000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -25651,7 +25608,7 @@
 <guid>{bfcd6c5c-c3f8-458d-bbb7-9c55f0c6bf0b}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -25731,7 +25688,7 @@
 <guid>{8c4faff2-e114-4f06-b339-9e43ee54c276}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -25811,7 +25768,7 @@
 <_PC_optimisesamplerate>1</_PC_optimisesamplerate>
 <_PC_forcesoftware>0</_PC_forcesoftware>
 <_PC_maxstreams>32</_PC_maxstreams>
-<_PC_fileseq>14</_PC_fileseq>
+<_PC_fileseq>1</_PC_fileseq>
 <_XBOX_format>PCM</_XBOX_format>
 <_XBOX_quality>50</_XBOX_quality>
 <_XBOX_optimisesamplerate>0</_XBOX_optimisesamplerate>
@@ -25871,7 +25828,7 @@
 <_PS3_banktype>DecompressedSample</_PS3_banktype>
 <_WII_banktype>DecompressedSample</_WII_banktype>
 <notes></notes>
-<rebuild>1</rebuild>
+<rebuild>0</rebuild>
 <waveform>
 <filename>menu/menu_main_start.wav</filename>
 <guid>{1d2e9054-9138-4f7b-8713-4f2686b161bd}</guid>
@@ -26523,7 +26480,7 @@
 <guid>{cb4f30fb-d124-4a10-b435-50cff78829d6}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26543,7 +26500,7 @@
 <guid>{c0ceff9d-0055-4e7a-9849-ff12cf7a96f2}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26603,7 +26560,7 @@
 <guid>{bf80f3db-9bad-4087-b91a-640b91c42b42}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26643,7 +26600,7 @@
 <guid>{64696679-0b19-4d98-901a-508a2704e6c9}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26663,7 +26620,7 @@
 <guid>{10290ec8-df51-45ca-8e35-2497ef5a478d}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>22050</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26683,7 +26640,7 @@
 <guid>{373bfa81-8e53-4727-b841-e34d882e074d}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26703,7 +26660,7 @@
 <guid>{9eb65740-4d45-485b-b96b-89bdf209a84f}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26723,7 +26680,7 @@
 <guid>{74bc5ccf-0509-4fad-b643-d8eeaad5bb63}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>8000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26743,7 +26700,7 @@
 <guid>{c5f9458a-4d54-447f-ba0f-bdd9bd93dce4}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26763,7 +26720,7 @@
 <guid>{e7437af7-279c-4435-b81e-62a8be377ac6}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>4000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26803,7 +26760,7 @@
 <guid>{25252861-2367-489d-a054-6328196c53ec}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26823,7 +26780,7 @@
 <guid>{c4433043-fb31-49fe-9e45-fa2e54f46903}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>8000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26843,7 +26800,7 @@
 <guid>{70c5df41-3045-48d0-a62e-b10803a4dba5}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26883,7 +26840,7 @@
 <guid>{2e105749-9120-426a-8fb9-8828fa64c190}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26923,7 +26880,7 @@
 <guid>{5ad43fe5-af32-44a4-b46d-f44ac958a9aa}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -26983,7 +26940,7 @@
 <guid>{f5be124f-90d9-4f51-adcb-847e45883454}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27063,7 +27020,7 @@
 <guid>{b6f80eb5-8970-422e-ab18-69452816b91c}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>22050</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27123,7 +27080,7 @@
 <guid>{6f94b052-25bf-4629-b018-199dcecb168b}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>16000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27143,7 +27100,7 @@
 <guid>{0ed97c74-c46e-4809-9e17-6f8ed4f4c354}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27163,7 +27120,7 @@
 <guid>{fd81ae4f-0441-4210-b3d3-02b962be0539}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>4000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27203,7 +27160,7 @@
 <guid>{32268af9-dece-436d-921c-f377bcbd4af1}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27303,7 +27260,7 @@
 <guid>{d27fd8bc-d70d-4564-afe9-d5de0850ff5c}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27343,7 +27300,7 @@
 <guid>{380d8af3-b52c-45c6-827d-2d90f6abd621}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>8000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27363,7 +27320,7 @@
 <guid>{7797d611-0615-4153-81ee-d70141a9734f}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27423,7 +27380,7 @@
 <guid>{f4f4c3b2-3640-483d-9943-50f947cafbff}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27443,7 +27400,7 @@
 <guid>{7db73c66-3989-4bb9-a19d-2ea28b8d7509}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27483,7 +27440,7 @@
 <guid>{613ea2e8-2a25-4d62-83e9-c3116989b004}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27503,7 +27460,7 @@
 <guid>{393b9ecf-8e4a-4bd2-94ba-4133062eeb94}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>8000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27523,7 +27480,7 @@
 <guid>{033fb5de-3765-4063-af84-20c4be2396cb}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27543,7 +27500,7 @@
 <guid>{3787a4b0-28bd-40cd-b6fe-04165a6483a1}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>16000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27563,7 +27520,7 @@
 <guid>{5ff6d6f9-11bf-4e52-afe3-c048bee48ae0}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27583,7 +27540,7 @@
 <guid>{3a5931fc-5564-4c34-8326-a750c8efd002}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27623,7 +27580,7 @@
 <guid>{cd6ddd42-01a0-4938-a323-800a8030ddd5}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27643,7 +27600,7 @@
 <guid>{a01858fe-c9a0-4cab-945b-0ad36fa74f77}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>4000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27663,7 +27620,7 @@
 <guid>{7e56d402-73c1-4abf-bec0-89a1a2ba3c57}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27743,7 +27700,7 @@
 <guid>{3691b109-23c5-4f48-a159-e30f2084d46d}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>22050</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27803,7 +27760,7 @@
 <guid>{1c6e7d66-5a01-4ba9-9bff-1bc1ff6e70e6}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27823,7 +27780,7 @@
 <guid>{323f1535-32ed-467b-8015-286fae71ff7c}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>4000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27943,7 +27900,7 @@
 <guid>{9349358d-b22d-452f-8f36-a82215fbb996}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -27983,7 +27940,7 @@
 <guid>{9e37f877-926f-457f-99cc-d3f9346266c1}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28043,7 +28000,7 @@
 <guid>{82a5b08b-3d8d-4634-8894-411ed7bf5135}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>8000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28083,7 +28040,7 @@
 <guid>{79188486-4bdd-4f57-8abd-d1d853f05de9}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28103,7 +28060,7 @@
 <guid>{29cc19ef-7c28-4274-a077-4b2407359c23}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>4000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28143,7 +28100,7 @@
 <guid>{9916600f-5a9a-4d53-b65a-85fed616bc41}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28183,7 +28140,7 @@
 <guid>{74d05583-7640-47fb-92ee-978e2ea2a02d}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>8000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28203,7 +28160,7 @@
 <guid>{8405e57b-97cf-48ae-946a-c58ac3b8ebc0}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28223,7 +28180,7 @@
 <guid>{2de5db8d-2698-4b03-a79a-dc557f75e702}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28263,7 +28220,7 @@
 <guid>{66b58a85-ece3-48ed-aeaf-f0585178452c}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28283,7 +28240,7 @@
 <guid>{8f13daa7-86f8-493a-b0d9-214a9a786462}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28303,7 +28260,7 @@
 <guid>{11a04617-3aef-4b3a-aa0a-5e6eb7a2cc56}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>4000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28343,7 +28300,7 @@
 <guid>{b844fd4c-34a3-4f9c-8cdd-5c622e8c53fa}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28383,7 +28340,7 @@
 <guid>{cc0a5964-f66c-4fae-bf40-1bf31ee94d02}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28423,7 +28380,7 @@
 <guid>{b5ed2198-a93a-4d10-ac44-04726e5a72e1}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>4000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28463,7 +28420,7 @@
 <guid>{112a1bee-8995-425e-a52c-25a36ac8e959}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>8000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28483,7 +28440,7 @@
 <guid>{e542fa13-f76e-4957-b389-fad576bbeae6}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28543,7 +28500,7 @@
 <guid>{a3df889c-6845-4cab-82df-f5e145edb9dc}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28563,7 +28520,7 @@
 <guid>{f195d7c7-4c24-4229-ac1d-64d0fc852739}</guid>
 <mindistance>1</mindistance>
 <maxdistance>10000</maxdistance>
-<deffreq>44100</deffreq>
+<deffreq>32000</deffreq>
 <defvol>1</defvol>
 <defpan>0</defpan>
 <defpri>128</defpri>
@@ -28583,7 +28540,7 @@
 <_PC_optimisesamplerate>1</_PC_optimisesamplerate>
 <_PC_forcesoftware>0</_PC_forcesoftware>
 <_PC_maxstreams>32</_PC_maxstreams>
-<_PC_fileseq>1</_PC_fileseq>
+<_PC_fileseq>2</_PC_fileseq>
 <_XBOX_format>PCM</_XBOX_format>
 <_XBOX_quality>50</_XBOX_quality>
 <_XBOX_optimisesamplerate>0</_XBOX_optimisesamplerate>
@@ -28819,14 +28776,14 @@
     <CompositionUI>
         <SceneEditor>
             <NavigableGraphicsView>
-                <ViewRect>-298.337, -221.098, 599.571, 445.092</ViewRect>
+                <ViewRect>-293.145, -217.25, 589.135, 437.345</ViewRect>
                 <ZoomLevel>0</ZoomLevel>
             </NavigableGraphicsView>
             <SceneEditorItemRepository></SceneEditorItemRepository>
         </SceneEditor>
         <ThemeEditor>
             <NavigableGraphicsView>
-                <ViewRect>-327.502, -245.112, 658.094, 493.313</ViewRect>
+                <ViewRect>-332.359, -248.747, 667.854, 500.629</ViewRect>
                 <ZoomLevel>0</ZoomLevel>
             </NavigableGraphicsView>
             <ThemeEditorItemRepository></ThemeEditorItemRepository>

@@ -1,6 +1,6 @@
 <Material MtlFlags="256">
  <SubMaterials>
-  <Material Name="scope_assault" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="" Diffuse="0.2392157,0.24313727,0.26274511" Specular="0.5,0.5,0.5" Emissive="0,0,0" Shininess="3" Opacity="1">
+  <Material Name="scope_assault" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="mat_metal_thick_weapons" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.70588237,0.70588237,0.70588237" Emissive="0,0,0" Shininess="5" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="objects/weapons/attachments/scope_assault/textures/assault_scope.tif" Filter="7">
      <TexMod />
@@ -11,16 +11,16 @@
     <Texture Map="Normalmap" File="objects/weapons/attachments/scope_assault/textures/assault_scope_ddn.tif" Filter="7">
      <TexMod />
     </Texture>
-    <Texture Map="Environment" File="objects/weapons/us/socom/socom_env.tif">
+    <Texture Map="Environment" File="textures/cubemaps/sphere_hull3_desaturate.dds">
      <TexMod />
     </Texture>
    </Textures>
-   <PublicParams SpecularMultiplier="0.20900001" AnisotropicShape="0.29699999" ReflectionAmount="0.81999999" FresnelBias="0.204" FresnelScale="1"/>
+   <PublicParams SpecularMultiplier="0.40000001" AnisotropicShape="0.52499998" ReflectionAmount="1.5" FresnelBias="0.2" FresnelScale="0.37"/>
   </Material>
   <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_thick_weapons" Diffuse="1,0.58823502,0.58823502" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
    <Textures />
   </Material>
-  <Material Name="google" MtlFlags="128" Shader="Illum" GenMask="285212672" SurfaceType="" Diffuse="1,1,1" Specular="0.047058828,0.047058828,0.047058828" Emissive="0,0,0" Shininess="1" Opacity="0.99000001">
+  <Material Name="google" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="" Diffuse="1,1,1" Specular="0.047058828,0.047058828,0.047058828" Emissive="0,0,0" Shininess="1" Opacity="0.99000001">
    <Textures>
     <Texture Map="Diffuse" File="objects/weapons/attachments/scope_assault/textures/google.tif">
      <TexMod />
@@ -29,7 +29,7 @@
      <TexMod />
     </Texture>
    </Textures>
-   <PublicParams />
+   <PublicParams AmbientMultiplier="1"/>
    <MaterialLayers>
     <Layer />
     <Layer />
@@ -38,13 +38,13 @@
     </Layer>
    </MaterialLayers>
   </Material>
-  <Material Name="crosshair" MtlFlags="128" Shader="Illum" GenMask="285212672" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.99000001">
+  <Material Name="crosshair" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.99000001">
    <Textures>
     <Texture Map="Diffuse" File="objects/weapons/attachments/scope_assault/textures/crosshair.tif">
      <TexMod />
     </Texture>
    </Textures>
-   <PublicParams />
+   <PublicParams AmbientMultiplier="1"/>
    <MaterialLayers>
     <Layer />
     <Layer />
@@ -53,7 +53,7 @@
     </Layer>
    </MaterialLayers>
   </Material>
-  <Material Name="refraction" MtlFlags="2176" Shader="Glass" GenMask="268436737" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Opacity="0.99000001">
+  <Material Name="refraction" MtlFlags="2176" Shader="Glass" GenMask="268435713" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Opacity="0.99000001">
    <Textures>
     <Texture Map="Diffuse" File="objects/weapons/attachments/scope_assault/textures/google.tif">
      <TexMod />
@@ -65,7 +65,7 @@
      <TexMod />
     </Texture>
    </Textures>
-   <PublicParams TintAmount="0" RefrBumpScale="0.50300002" BackLightScale="0" FilterColor="1,1,1"/>
+   <PublicParams TintAmount="0" RefrBumpScale="0.50300002" ReflectionAmount="0.25" FresnelBias="0.2" FresnelScale="1" BackLightScale="0" FilterColor="1,1,1"/>
    <MaterialLayers>
     <Layer />
     <Layer />
@@ -75,5 +75,5 @@
    </MaterialLayers>
   </Material>
  </SubMaterials>
- <PublicParams />
+ <PublicParams AmbientMultiplier="1"/>
 </Material>

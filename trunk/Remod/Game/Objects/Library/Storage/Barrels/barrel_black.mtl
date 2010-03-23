@@ -1,0 +1,32 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="Barrel_black" MtlFlags="128" Shader="Metal" GenMask="268439568" SurfaceType="mat_metal_pipe" Diffuse="0.50196099,0.50196099,0.50196099" Specular="0.49411801,0.49411801,0.49411801" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/storage/barrels/barrel_black.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/storage/barrels/barrel_black.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/storage/barrels/barrel_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/beach_blur.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31999999" Glossiness="0.713" ReflectionAmount="0.41" FresnelBias="0.23" FresnelScale="1"/>
+   <MaterialLayers>
+    <Layer Name="FrozenLayerWip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" WorldSpaceSnow="1" TintColor="1,1,1"/>
+    </Layer>
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_pipe" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.30000001">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

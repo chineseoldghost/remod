@@ -1,0 +1,35 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="Barrel_explosiv_red" MtlFlags="128" Shader="Metal" GenMask="268480528" SurfaceType="" Diffuse="0.33333334,0.33333334,0.33333334" Specular="0.423529,0.423529,0.423529" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/storage/barrels/barrel_explosive_red.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/storage/barrels/barrel_explosive_red_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/storage/barrels/barrel_full_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/beach_blur.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_004_ddn.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.54699999" AnisotropicShape="0.495" ReflectionAmount="7.0100002" FresnelBias="0" FresnelScale="0" DetailBumpTillingU="3" DetailBumpTillingV="1" DetailBumpScale="0.23" DetailBlendAmount="0"/>
+   <MaterialLayers>
+    <Layer Name="FrozenLayerWip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_smooth" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.30000001">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

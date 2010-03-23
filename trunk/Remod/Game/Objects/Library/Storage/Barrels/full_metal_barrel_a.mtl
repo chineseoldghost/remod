@@ -1,0 +1,56 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="barrel_yellow" MtlFlags="128" Shader="Metal" GenMask="268472336" SurfaceType="mat_metal_pipe" Diffuse="0.50196099,0.50196099,0.50196099" Specular="0.33725491,0.33725491,0.33725491" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/storage/barrels/barrel_yellow.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/storage/barrels/barrel_yellow_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/storage/barrels/barrel_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/beach_blur.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_005_ddn.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.2" Glossiness="0.80000001" ReflectionAmount="1.3" FresnelBias="0.2" FresnelScale="1" DetailBumpTillingU="4" DetailBumpTillingV="1" DetailBumpScale="2" DetailBlendAmount="0"/>
+   <MaterialLayers>
+    <Layer Name="FrozenLayerWip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="1" TintColor="1,1,1"/>
+    </Layer>
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_pipe" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.30000001">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+  <Material Name="decal" MtlFlags="160" Shader="Illum" GenMask="322977936" SurfaceType="mat_metal_smooth" Diffuse="0.20784315,0.20784315,0.20784315" Specular="0.56862748,0.56862748,0.56862748" Emissive="0,0,0" Shininess="6" Opacity="0.99000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/library/storage/barrels/oil_decal.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/library/storage/barrels/oil_decal_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/library/architecture/harbour/warehouse/harbour_warehouse_floor5_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/beach_blur.dds" TexType="3">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_005_ddn.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams EnvMapAmount="0.5" FresnelScale="1" FresnelBias="0.5" AmbientMultiplier="1" DetailBumpTillingU="2" DetailBumpTillingV="2" DetailBumpScale="1" DetailBlendAmount="0"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

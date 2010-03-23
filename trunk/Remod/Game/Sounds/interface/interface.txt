@@ -744,10 +744,10 @@ Index           : /EVENTGROUP_INTERFACE_SUIT/EVENT_INTERFACE_SUIT_SUIT_ARMOR_ACT
 Id              : EVENTID_INTERFACE_SUIT_SUIT_ARMOR_ACTIVATE = 61
 Notes           : 
 Max. playbacks  : 3
-DSP Effects     : FMOD Highpass
+DSP Effects     : none
 Parameter name  : distance
 Parameter index : EVENTPARAMETER_INTERFACE_SUIT_SUIT_ARMOR_ACTIVATE_DISTANCE = 0
-Range           : 0.000000 -> 10.000000 meter
+Range           : 0.000000 -> 15.000000 meter
 Velocity        : 0
 Category        : master/3rd_pers/phy_alien_veh/coll_foot_phy_ai/phys_lots
 
@@ -807,7 +807,7 @@ Max. playbacks  : 3
 DSP Effects     : none
 Parameter name  : distance
 Parameter index : EVENTPARAMETER_INTERFACE_SUIT_SUIT_CLOAK_ACTIVATE_DISTANCE = 0
-Range           : 0.000000 -> 5.000000 meter
+Range           : 0.000000 -> 10.000000 meter
 Velocity        : 0
 Category        : master/3rd_pers/phy_alien_veh/coll_foot_phy_ai/phys_lots
 
@@ -999,7 +999,7 @@ Max. playbacks  : 3
 DSP Effects     : none
 Parameter name  : distance
 Parameter index : EVENTPARAMETER_INTERFACE_SUIT_SUIT_SPEED_ACTIVATE_DISTANCE = 0
-Range           : 0.000000 -> 10.000000 meter
+Range           : 0.000000 -> 15.000000 meter
 Velocity        : 0
 Category        : master/3rd_pers/phy_alien_veh/coll_foot_phy_ai/phys_lots
 
@@ -1023,7 +1023,7 @@ Max. playbacks  : 3
 DSP Effects     : none
 Parameter name  : distance
 Parameter index : EVENTPARAMETER_INTERFACE_SUIT_SUIT_SPEED_STOP_DISTANCE = 0
-Range           : 0.000000 -> 10.000000
+Range           : 0.000000 -> 15.000000
 Velocity        : 0
 Category        : master/3rd_pers/phy_alien_veh/coll_foot_phy_ai/phys_lots
 
@@ -1071,7 +1071,7 @@ Max. playbacks  : 3
 DSP Effects     : none
 Parameter name  : distance
 Parameter index : EVENTPARAMETER_INTERFACE_SUIT_SUIT_SPEED_USE_DISTANCE = 0
-Range           : 0.000000 -> 10.000000
+Range           : 0.000000 -> 15.000000
 Velocity        : 0
 Category        : master/3rd_pers/phy_alien_veh/coll_foot_phy_ai/phys_lots
 
@@ -1119,7 +1119,7 @@ Max. playbacks  : 3
 DSP Effects     : none
 Parameter name  : distance
 Parameter index : EVENTPARAMETER_INTERFACE_SUIT_SUIT_STRENGTH_ACTIVATE_DISTANCE = 0
-Range           : 0.000000 -> 10.000000 meter
+Range           : 0.000000 -> 15.000000 meter
 Velocity        : 0
 Category        : master/3rd_pers/phy_alien_veh/coll_foot_phy_ai/phys_lots
 
@@ -1143,7 +1143,7 @@ Max. playbacks  : 3
 DSP Effects     : none
 Parameter name  : distance
 Parameter index : EVENTPARAMETER_INTERFACE_SUIT_SUIT_STRENGTH_DEACTIVATE_DISTANCE = 0
-Range           : 0.000000 -> 10.000000 meter
+Range           : 0.000000 -> 15.000000 meter
 Velocity        : 0
 Category        : master/3rd_pers/phy_alien_veh/coll_foot_phy_ai/phys_lots
 

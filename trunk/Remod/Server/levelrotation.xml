@@ -7,7 +7,7 @@
         <setting setting="g_timelimit 20" />
         <setting setting="net_mapDownloadURL http://dl.getdropbox.com/u/1482890/Crash.zip" />
  </level>-->
-<level name="multiplayer/ia/terminal" gamerules="InstantAction">
+<level name="multiplayer/ia/outpost" gamerules="TeamInstantAction">
  </level>
 <!--<level name="multiplayer/ps/Mesa" gamerules="PowerStruggle">
  </level>-->

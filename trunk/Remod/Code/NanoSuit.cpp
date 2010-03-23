@@ -1160,8 +1160,7 @@ void CNanoSuit::PlaySound(ENanoSound sound, float param, bool stopSound)
 		eSemantic = eSoundSemantic_NanoSuit;
 		break;
 	case ESound_SuitCloakActivate:
-		soundName = "Sounds/interface:suit:suit_cloak_activate";
-		soundName = "";
+		soundName = "Sounds/interface:suit:suit_cloak_deactivate";
 		eSemantic = eSoundSemantic_NanoSuit;
 		break;
 	case ESound_SuitCloakFeedback:

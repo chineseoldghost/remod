@@ -1,0 +1,555 @@
+Debug: 
+Building project 'interface'...
+Debug: Caching waveform details...
+Debug: multiplayer/mp_tac_alarm_suit.wav
+Debug: hud/hud_mission_accomplished.wav
+Debug: hud/hud_reboot_oneshot.wav
+Debug: hud/hud_malfunction_loop.wav
+Debug: hud/target_locked.wav
+Debug: hud/hud_download_stop.wav
+Debug: hud/pda_updated.wav
+Debug: hud/null_fire.wav
+Debug: hud/freeze_player02.wav
+Debug: hud/freeze_burst_02.wav
+Debug: hud/hud_activate_01.wav
+Debug: hud_blood/hud_blood01.wav
+Debug: hud/low_altitude.wav
+Debug: hud/hud_crynet_in.wav
+Debug: hud_water/hud_water_01.wav
+Debug: hud/hud_reboot.wav
+Debug: multiplayer/factory_captured_06.wav
+Debug: multiplayer/mp_tac_alarm_ambience_close.wav
+Debug: hud_blood/hud_blood03.wav
+Debug: hud/freeze_burst_05.wav
+Debug: multiplayer/mp_vehicle_alarm.wav
+Debug: hud/hud_malfunction_hit.wav
+Debug: hud/sniper_scope_zoom_out.wav
+Debug: hud/hud_cloak_feedback.wav
+Debug: hud/hud_download_start.wav
+Debug: hud/hud_dust_01.wav
+Debug: hud/tagged_beep.wav
+Debug: hud/vehicle_target_lock.wav
+Debug: hud/freeze_burst_03.wav
+Debug: hud/hud_law_locking.wav
+Debug: hud/hud_vehicle_in.wav
+Debug: hud/freeze_burst_01.wav
+Debug: hud/hud_nk_suit.wav
+Debug: hud/hud_key_error.wav
+Debug: hud/hud_hazmat_suit.wav
+Debug: hud/sniper_scope_zoom_in.wav
+Debug: hud_blood/hud_blood02.wav
+Debug: hud/freeze_burst_04.wav
+Debug: multiplayer/mp_tac_alarm_ambience_distant.wav
+Debug: hud/hud_crynet_out.wav
+Debug: hud/freeze_player01.wav
+Debug: hud/target.wav
+Debug: menu/menu_main_start.wav
+Debug: menu/menu_close.wav
+Debug: suit/suit_poison_03_fp.wav
+Debug: suit/suit_poison_04_fp.wav
+Debug: menu/menu_dropdown.wav
+Debug: menu/menu_flag.wav
+Debug: menu/menu_open.wav
+Debug: suit/heartbeat_fast.WAV
+Debug: menu/menu_buy_error.wav
+Debug: menu/menu_negative.wav
+Debug: suit/player_breathing_cold_in_helmet_loop.WAV
+Debug: Build failed: Couldn't find 'suit/player_breathing_cold_in_helmet_loop.WAV'.
+Debug: 
+Building project 'interface'...
+Debug: Caching waveform details...
+Debug: multiplayer/mp_tac_alarm_suit.wav
+Debug: hud/hud_mission_accomplished.wav
+Debug: hud/hud_reboot_oneshot.wav
+Debug: hud/hud_malfunction_loop.wav
+Debug: hud/target_locked.wav
+Debug: hud/hud_download_stop.wav
+Debug: hud/pda_updated.wav
+Debug: hud/null_fire.wav
+Debug: hud/freeze_player02.wav
+Debug: hud/freeze_burst_02.wav
+Debug: hud/hud_activate_01.wav
+Debug: hud_blood/hud_blood01.wav
+Debug: hud/low_altitude.wav
+Debug: hud/hud_crynet_in.wav
+Debug: hud_water/hud_water_01.wav
+Debug: hud/hud_reboot.wav
+Debug: multiplayer/factory_captured_06.wav
+Debug: multiplayer/mp_tac_alarm_ambience_close.wav
+Debug: hud_blood/hud_blood03.wav
+Debug: hud/freeze_burst_05.wav
+Debug: multiplayer/mp_vehicle_alarm.wav
+Debug: hud/hud_malfunction_hit.wav
+Debug: hud/sniper_scope_zoom_out.wav
+Debug: hud/hud_cloak_feedback.wav
+Debug: hud/hud_download_start.wav
+Debug: hud/hud_dust_01.wav
+Debug: hud/tagged_beep.wav
+Debug: hud/vehicle_target_lock.wav
+Debug: hud/freeze_burst_03.wav
+Debug: hud/hud_law_locking.wav
+Debug: hud/hud_vehicle_in.wav
+Debug: hud/freeze_burst_01.wav
+Debug: hud/hud_nk_suit.wav
+Debug: hud/hud_key_error.wav
+Debug: hud/hud_hazmat_suit.wav
+Debug: hud/sniper_scope_zoom_in.wav
+Debug: hud_blood/hud_blood02.wav
+Debug: hud/freeze_burst_04.wav
+Debug: multiplayer/mp_tac_alarm_ambience_distant.wav
+Debug: hud/hud_crynet_out.wav
+Debug: hud/freeze_player01.wav
+Debug: hud/target.wav
+Debug: menu/menu_main_start.wav
+Debug: menu/menu_close.wav
+Debug: suit/suit_poison_03_fp.wav
+Debug: suit/suit_poison_04_fp.wav
+Debug: menu/menu_dropdown.wav
+Debug: menu/menu_flag.wav
+Debug: menu/menu_open.wav
+Debug: suit/heartbeat_fast.WAV
+Debug: menu/menu_buy_error.wav
+Debug: menu/menu_negative.wav
+Debug: suit/player_breathing_cold_in_helmet_loop.WAV
+Debug: Build failed: Couldn't find 'suit/player_breathing_cold_in_helmet_loop.WAV'.
+Debug: 
+Building project 'interface'...
+Debug: Caching waveform details...
+Debug: multiplayer/mp_tac_alarm_suit.wav
+Debug: hud/hud_mission_accomplished.wav
+Debug: hud/hud_reboot_oneshot.wav
+Debug: hud/hud_malfunction_loop.wav
+Debug: hud/target_locked.wav
+Debug: hud/hud_download_stop.wav
+Debug: hud/pda_updated.wav
+Debug: hud/null_fire.wav
+Debug: hud/freeze_player02.wav
+Debug: hud/freeze_burst_02.wav
+Debug: hud/hud_activate_01.wav
+Debug: hud_blood/hud_blood01.wav
+Debug: hud/low_altitude.wav
+Debug: hud/hud_crynet_in.wav
+Debug: hud_water/hud_water_01.wav
+Debug: hud/hud_reboot.wav
+Debug: multiplayer/factory_captured_06.wav
+Debug: multiplayer/mp_tac_alarm_ambience_close.wav
+Debug: hud_blood/hud_blood03.wav
+Debug: hud/freeze_burst_05.wav
+Debug: multiplayer/mp_vehicle_alarm.wav
+Debug: hud/hud_malfunction_hit.wav
+Debug: hud/sniper_scope_zoom_out.wav
+Debug: hud/hud_cloak_feedback.wav
+Debug: hud/hud_download_start.wav
+Debug: hud/hud_dust_01.wav
+Debug: hud/tagged_beep.wav
+Debug: hud/vehicle_target_lock.wav
+Debug: hud/freeze_burst_03.wav
+Debug: hud/hud_law_locking.wav
+Debug: hud/hud_vehicle_in.wav
+Debug: hud/freeze_burst_01.wav
+Debug: hud/hud_nk_suit.wav
+Debug: hud/hud_key_error.wav
+Debug: hud/hud_hazmat_suit.wav
+Debug: hud/sniper_scope_zoom_in.wav
+Debug: hud_blood/hud_blood02.wav
+Debug: hud/freeze_burst_04.wav
+Debug: multiplayer/mp_tac_alarm_ambience_distant.wav
+Debug: hud/hud_crynet_out.wav
+Debug: hud/freeze_player01.wav
+Debug: hud/target.wav
+Debug: menu/menu_main_start.wav
+Debug: menu/menu_close.wav
+Debug: suit/suit_poison_03_fp.wav
+Debug: suit/suit_poison_04_fp.wav
+Debug: menu/menu_dropdown.wav
+Debug: menu/menu_flag.wav
+Debug: menu/menu_open.wav
+Debug: suit/heartbeat_fast.WAV
+Debug: menu/menu_buy_error.wav
+Debug: menu/menu_negative.wav
+Debug: suit/player_breathing_cold_in_helmet_loop.WAV
+Debug: menu/menu_buy_beep.wav
+Debug: suit/suit_health_critical.wav
+Debug: menu/menu_difficulty.wav
+Debug: suit/suit_poison_02_fp.wav
+Debug: menu/menu_quit_close.wav
+Debug: menu/close.wav
+Debug: menu/menu_main_close.wav
+Debug: suit/player_being_damaged_by_fire.WAV
+Debug: menu/menu_rollover_main.wav
+Debug: suit/player_breathing_cold_in_helmet_oneshot_fade.WAV
+Debug: suit/suit_poison_01_fp.wav
+Debug: menu/menu_quit_open.wav
+Debug: suit/player_breathing_in_mask_oneshot_fade.WAV
+Debug: menu/menu_main_open.wav
+Debug: menu/menu_rollover.wav
+Debug: suit/player_breathing_in_mask_loop.wav
+Debug: menu/menu_main_ambience.wav
+Debug: suit/suit_deep_freeze.WAV
+Debug: suit/suit_throw_grunt_06_s_cut.wav
+Debug: suit/servo_speed_stop_fp_2.wav
+Debug: suit/suit_armor_108.wav
+Debug: suit/suit_punch_14.wav
+Debug: suit/deactivating_magnetic_boots.wav
+Debug: suit/infrared_deselect.wav
+Debug: suit/suit_bullet_impact_02.wav
+Debug: suit/demotion.wav
+Debug: suit/nano_suit_energy_pulse_MONO_L.wav
+Debug: suit/suit_throw_grunt_08_s_cut.wav
+Debug: suit/suit_bullet_impact_11.wav
+Debug: suit/suit_sound_14.wav
+Debug: suit/silence_03.wav
+Debug: suit/binocular_zoom_out.wav
+Debug: suit/suit_lift_grunt_04.wav
+Debug: suit/suit_bullet_impact_06.wav
+Debug: suit/suit_throw_grunt_02_s_cut.wav
+Debug: suit/suit_medical_use_new.wav
+Debug: suit/suit_bullet_impact_15.wav
+Debug: suit/binocular_ambience.wav
+Debug: suit/suit_punch_11.wav
+Debug: suit/frozen_trying_to_unfreeze_03.wav
+Debug: suit/binocular_target.wav
+Debug: suit/suit_lift_grunt_07.wav
+Debug: suit/infrared_select.wav
+Debug: suit/nightvision_on.wav
+Debug: suit/nightvision_ambience.wav
+Debug: suit/suit_throw_grunt_04_s_cut.wav
+Debug: suit/binocular_deselect.wav
+Debug: suit/binocular_flash.wav
+Debug: suit/suit_strength_activate_04.wav
+Debug: suit/suit_punch_15.wav
+Debug: suit/silence_02.wav
+Debug: suit/binocular_zoom_in.wav
+Debug: suit/suit_lift_grunt_13.wav
+Debug: suit/suit_strength_use_092_through_cut.wav
+Debug: suit/suit_bullet_impact_03.wav
+Debug: suit/suit_thrusters_longer.wav
+Debug: suit/modification_menu_dissapear.WAV
+Debug: suit/suit_lift_grunt_06.wav
+Debug: suit/infrared_ambience.wav
+Debug: suit/suit_bullet_impact_07.wav
+Debug: suit/nano_suit_energy_pulse.wav
+Debug: suit/suit_punch_12.wav
+Debug: suit/frozen_trying_to_unfreeze_04.wav
+Debug: suit/suit_strength_use_051.wav
+Debug: suit/suit_lift_grunt_12.wav
+Debug: suit/preset_navigation_beep_02.WAV
+Debug: suit/suit_lift_grunt_03.wav
+Debug: suit/activating_magnetic_boots.wav
+Debug: suit/suit_throw_grunt_05_s_cut.wav
+Debug: suit/servo_speed_loop_01_underwater.wav
+Debug: suit/promotion.wav
+Debug: suit/suit_strength_activate_131.wav
+Debug: suit/modification_menu_appear.WAV
+Debug: suit/suit_bullet_impact_16.wav
+Debug: suit/silence_01.wav
+Debug: suit/suit_punch_16.wav
+Debug: suit/binocular_tagged.wav
+Debug: suit/frozen_trying_to_unfreeze_01.wav
+Debug: suit/suit_strength_101_r.wav
+Debug: suit/servo_speed_stop_01_underwater.wav
+Debug: suit/suit_sound_07.wav
+Debug: suit/suit_speed_activate_07_good.wav
+Debug: suit/suit_lift_grunt_09.wav
+Debug: suit/silence_05.wav
+Debug: suit/suit_usage_error.wav
+Debug: suit/suit_lift_grunt_02.wav
+Debug: suit/suit_bullet_impact_01.wav
+Debug: suit/suit_thrusters_boost_recharge.wav
+Debug: suit/servo_speed_loop_01c.wav
+Debug: suit/suit_vehicle_ready.wav
+Debug: suit/suit_breath_underwater_activated.wav
+Debug: suit/suit_throw_grunt_01_s_cut.wav
+Debug: suit/suit_cloak_chameleon_101_r.wav
+Debug: suit/binocular_select.wav
+Debug: suit/suit_bullet_impact_13.wav
+Debug: suit/suit_punch_13.wav
+Debug: suit/suit_lift_grunt_15.wav
+Debug: suit/suit_bullet_impact_05.wav
+Debug: suit/suit_thrusters_boost_activate.wav
+Debug: suit/servo_speed_stop_3rd_mono_2.wav
+Debug: suit/suit_strength_use_084_through_cut.wav
+Debug: suit/suit_bullet_impact_10.wav
+Debug: suit/suit_strength_use_072_through_cut.wav
+Debug: suit/cloak_chameleon_activate_12.wav
+Debug: suit/suit_sound_06.wav
+Debug: suit/suit_sound_137.wav
+Debug: suit/suit_lift_grunt_08.wav
+Debug: suit/silence_04.wav
+Debug: suit/nightvision_off.wav
+Debug: suit/suit_lift_grunt_10.wav
+Debug: suit/interface_location_or_scanning_loop.WAV
+Debug: suit/suit_lift_grunt_01.wav
+Debug: suit/temperature_beep.WAV
+Debug: suit/suit_bullet_impact_09.wav
+Debug: suit/suit_grab_vs_throw.wav
+Debug: suit/suit_bullet_impact_14.wav
+Debug: suit/generic_beep.WAV
+Debug: suit/frozen_trying_to_unfreeze_02.wav
+Debug: suit/weapon_modification_beep.WAV
+Debug: suit/suit_lift_grunt_14.wav
+Debug: suit/suit_lift_grunt_05.wav
+Debug: Building project C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\interface.fev...
+Debug: Unique sound definitions 7/120
+Debug: Retrieving waveform info...
+Debug: Retrieving reverb info...
+Debug: FEV file written ok
+Debug: Building header file C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\interface.h...
+Debug: Building programmer report C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\interface.txt...
+Debug: Building 'interface_bank00.fsb'
+Debug: Building C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\interface_bank00.fsb.  Format = IMA ADPCM (3.5:1)
+Debug: Info : Build Mode = FSBANK_BUILDMODE_SINGLE
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\multiplayer/mp_tac_alarm_suit.wav  SRAM Usage 48 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_mission_accomplished.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_mission_accomplished.wav  SRAM Usage 127 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_reboot_oneshot.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_reboot_oneshot.wav  SRAM Usage 194 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/target_locked.wav  SRAM Usage 197 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_download_stop.wav  SRAM Usage 209 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/pda_updated.wav  SRAM Usage 214 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/null_fire.wav  SRAM Usage 216 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/freeze_player02.wav  SRAM Usage 319 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/freeze_burst_02.wav  SRAM Usage 325 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_activate_01.wav  SRAM Usage 358 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud_blood/hud_blood01.wav  SRAM Usage 373 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/low_altitude.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/low_altitude.wav  SRAM Usage 377 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_crynet_in.wav  SRAM Usage 407 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud_water/hud_water_01.wav  SRAM Usage 526 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_reboot.wav  SRAM Usage 651 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\multiplayer/factory_captured_06.wav  SRAM Usage 806 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\multiplayer/mp_tac_alarm_ambience_close.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\multiplayer/mp_tac_alarm_ambience_close.wav  SRAM Usage 909 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud_blood/hud_blood03.wav  SRAM Usage 922 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/freeze_burst_05.wav  SRAM Usage 928 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\multiplayer/mp_vehicle_alarm.wav  SRAM Usage 1021 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_malfunction_hit.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_malfunction_hit.wav  SRAM Usage 1069 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/sniper_scope_zoom_out.wav  SRAM Usage 1071 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_cloak_feedback.wav  SRAM Usage 1494 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_download_start.wav  SRAM Usage 1506 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_dust_01.wav  SRAM Usage 2064 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/tagged_beep.wav  SRAM Usage 2066 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/freeze_burst_03.wav  SRAM Usage 2072 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_law_locking.wav  SRAM Usage 2129 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_vehicle_in.wav  SRAM Usage 2296 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/freeze_burst_01.wav  SRAM Usage 2302 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_nk_suit.wav downsampled from 8.00kHz to 4.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_nk_suit.wav  SRAM Usage 2341 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_key_error.wav  SRAM Usage 2350 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_hazmat_suit.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_hazmat_suit.wav  SRAM Usage 2452 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/sniper_scope_zoom_in.wav  SRAM Usage 2454 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud_blood/hud_blood02.wav  SRAM Usage 2468 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/freeze_burst_04.wav  SRAM Usage 2474 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\multiplayer/mp_tac_alarm_ambience_distant.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\multiplayer/mp_tac_alarm_ambience_distant.wav  SRAM Usage 2578 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/hud_crynet_out.wav  SRAM Usage 2605 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/freeze_player01.wav  SRAM Usage 2708 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\hud/target.wav  SRAM Usage 2710 kb 
+Debug: Info : FSB Compilation complete
+Debug: Building 'interface_menu.fsb'
+Debug: Building C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\interface_menu.fsb.  Format = MP2 (bitrate)
+Debug: Info : Build Mode = FSBANK_BUILDMODE_SINGLE
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_main_start.wav  SRAM Usage 14 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_close.wav  SRAM Usage 20 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_poison_03_fp.wav  SRAM Usage 39 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_poison_04_fp.wav  SRAM Usage 57 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_dropdown.wav  SRAM Usage 59 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_flag.wav  SRAM Usage 60 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_open.wav  SRAM Usage 69 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/heartbeat_fast.WAV  SRAM Usage 167 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_buy_error.wav  SRAM Usage 168 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_negative.wav  SRAM Usage 169 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/player_breathing_cold_in_helmet_loop.WAV  SRAM Usage 376 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_buy_beep.wav  SRAM Usage 378 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_health_critical.wav  SRAM Usage 391 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_difficulty.wav  SRAM Usage 397 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_poison_02_fp.wav  SRAM Usage 415 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_quit_close.wav  SRAM Usage 419 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/close.wav  SRAM Usage 423 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_main_close.wav  SRAM Usage 436 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/player_being_damaged_by_fire.WAV  SRAM Usage 528 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_rollover_main.wav  SRAM Usage 531 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/player_breathing_cold_in_helmet_oneshot_fade.WAV  SRAM Usage 738 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_poison_01_fp.wav  SRAM Usage 756 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_quit_open.wav  SRAM Usage 761 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/player_breathing_in_mask_oneshot_fade.WAV  SRAM Usage 879 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_main_open.wav  SRAM Usage 895 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_rollover.wav  SRAM Usage 896 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/player_breathing_in_mask_loop.wav  SRAM Usage 1005 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\menu/menu_main_ambience.wav  SRAM Usage 1218 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_deep_freeze.WAV  SRAM Usage 1348 kb 
+Debug: Info : FSB Compilation complete
+Debug: Building 'interface_suit.fsb'
+Debug: Building C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\interface_suit.fsb.  Format = IMA ADPCM (3.5:1)
+Debug: Info : Build Mode = FSBANK_BUILDMODE_SINGLE
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_throw_grunt_06_s_cut.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_throw_grunt_06_s_cut.wav  SRAM Usage 10 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/servo_speed_stop_fp_2.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/servo_speed_stop_fp_2.wav  SRAM Usage 70 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_armor_108.wav  SRAM Usage 102 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_punch_14.wav  SRAM Usage 131 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/deactivating_magnetic_boots.wav downsampled from 32.00kHz to 8.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/deactivating_magnetic_boots.wav  SRAM Usage 135 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/infrared_deselect.wav  SRAM Usage 141 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_02.wav  SRAM Usage 152 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/demotion.wav downsampled from 22.05kHz to 16.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/demotion.wav  SRAM Usage 246 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/nano_suit_energy_pulse_MONO_L.wav  SRAM Usage 293 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_throw_grunt_08_s_cut.wav  SRAM Usage 304 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_11.wav downsampled from 8.00kHz to 4.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_11.wav  SRAM Usage 307 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_sound_14.wav  SRAM Usage 328 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/silence_03.wav  SRAM Usage 330 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/binocular_zoom_out.wav  SRAM Usage 334 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_04.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_04.wav  SRAM Usage 337 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_06.wav downsampled from 8.00kHz to 4.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_06.wav  SRAM Usage 339 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_throw_grunt_02_s_cut.wav  SRAM Usage 349 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_medical_use_new.wav  SRAM Usage 637 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_15.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_15.wav  SRAM Usage 647 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/binocular_ambience.wav  SRAM Usage 710 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_punch_11.wav  SRAM Usage 730 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/frozen_trying_to_unfreeze_03.wav  SRAM Usage 745 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_07.wav  SRAM Usage 751 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/infrared_select.wav  SRAM Usage 763 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/nightvision_on.wav  SRAM Usage 775 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/nightvision_ambience.wav  SRAM Usage 800 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_throw_grunt_04_s_cut.wav downsampled from 22.05kHz to 16.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_throw_grunt_04_s_cut.wav  SRAM Usage 806 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/binocular_deselect.wav  SRAM Usage 818 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/binocular_flash.wav  SRAM Usage 850 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_strength_activate_04.wav downsampled from 16.00kHz to 8.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_strength_activate_04.wav  SRAM Usage 863 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_punch_15.wav  SRAM Usage 885 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/silence_02.wav  SRAM Usage 887 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/binocular_zoom_in.wav  SRAM Usage 897 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_13.wav  SRAM Usage 903 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_strength_use_092_through_cut.wav  SRAM Usage 921 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_03.wav  SRAM Usage 942 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_thrusters_longer.wav  SRAM Usage 987 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/modification_menu_dissapear.WAV  SRAM Usage 995 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_06.wav  SRAM Usage 1005 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/infrared_ambience.wav  SRAM Usage 1248 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_07.wav downsampled from 8.00kHz to 4.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_07.wav  SRAM Usage 1250 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/nano_suit_energy_pulse.wav  SRAM Usage 1350 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_punch_12.wav  SRAM Usage 1378 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/frozen_trying_to_unfreeze_04.wav  SRAM Usage 1387 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_strength_use_051.wav  SRAM Usage 1429 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_12.wav  SRAM Usage 1440 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/preset_navigation_beep_02.WAV  SRAM Usage 1444 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_03.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_03.wav  SRAM Usage 1449 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/activating_magnetic_boots.wav downsampled from 8.00kHz to 4.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/activating_magnetic_boots.wav  SRAM Usage 1451 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_throw_grunt_05_s_cut.wav  SRAM Usage 1463 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/servo_speed_loop_01_underwater.wav downsampled from 16.00kHz to 11.03kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/servo_speed_loop_01_underwater.wav  SRAM Usage 1584 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/promotion.wav  SRAM Usage 1739 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_strength_activate_131.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_strength_activate_131.wav  SRAM Usage 1750 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/modification_menu_appear.WAV  SRAM Usage 1766 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_16.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_16.wav  SRAM Usage 1775 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/silence_01.wav  SRAM Usage 1777 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_punch_16.wav  SRAM Usage 1801 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/binocular_tagged.wav  SRAM Usage 1808 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/frozen_trying_to_unfreeze_01.wav  SRAM Usage 1818 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_strength_101_r.wav  SRAM Usage 1861 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/servo_speed_stop_01_underwater.wav downsampled from 22.05kHz to 16.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/servo_speed_stop_01_underwater.wav  SRAM Usage 1898 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_sound_07.wav  SRAM Usage 1919 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_speed_activate_07_good.wav  SRAM Usage 1983 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_09.wav  SRAM Usage 1993 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/silence_05.wav  SRAM Usage 1995 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_usage_error.wav downsampled from 44.10kHz to 32.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_usage_error.wav  SRAM Usage 1998 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_02.wav  SRAM Usage 2005 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_01.wav  SRAM Usage 2022 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_thrusters_boost_recharge.wav  SRAM Usage 2040 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/servo_speed_loop_01c.wav  SRAM Usage 2524 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_vehicle_ready.wav  SRAM Usage 2529 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_breath_underwater_activated.wav  SRAM Usage 2579 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_throw_grunt_01_s_cut.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_throw_grunt_01_s_cut.wav  SRAM Usage 2586 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_cloak_chameleon_101_r.wav  SRAM Usage 2613 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/binocular_select.wav  SRAM Usage 2626 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_13.wav downsampled from 8.00kHz to 4.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_13.wav  SRAM Usage 2627 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_punch_13.wav  SRAM Usage 2656 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_15.wav  SRAM Usage 2661 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_05.wav  SRAM Usage 2663 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_thrusters_boost_activate.wav  SRAM Usage 2688 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/servo_speed_stop_3rd_mono_2.wav  SRAM Usage 2733 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_strength_use_084_through_cut.wav downsampled from 44.10kHz to 32.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_strength_use_084_through_cut.wav  SRAM Usage 2767 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_10.wav downsampled from 8.00kHz to 4.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_10.wav  SRAM Usage 2768 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_strength_use_072_through_cut.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_strength_use_072_through_cut.wav  SRAM Usage 2794 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/cloak_chameleon_activate_12.wav downsampled from 32.00kHz to 8.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/cloak_chameleon_activate_12.wav  SRAM Usage 2808 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_sound_06.wav  SRAM Usage 2840 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_sound_137.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_sound_137.wav  SRAM Usage 2848 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_08.wav  SRAM Usage 2856 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/silence_04.wav  SRAM Usage 2858 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/nightvision_off.wav  SRAM Usage 2864 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_10.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_10.wav  SRAM Usage 2869 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/interface_location_or_scanning_loop.WAV  SRAM Usage 2869 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_01.wav  SRAM Usage 2878 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/temperature_beep.WAV  SRAM Usage 2878 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_09.wav  SRAM Usage 2881 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_grab_vs_throw.wav  SRAM Usage 2898 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_14.wav downsampled from 8.00kHz to 4.00kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_bullet_impact_14.wav  SRAM Usage 2900 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/generic_beep.WAV  SRAM Usage 2901 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/frozen_trying_to_unfreeze_02.wav  SRAM Usage 2908 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/weapon_modification_beep.WAV  SRAM Usage 2920 kb 
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_14.wav  SRAM Usage 2926 kb 
+Debug: C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_05.wav downsampled from 32.00kHz to 22.05kHz
+
+Debug: Info : Added C:/Program Files/Electronic Arts/Crytek/Crysis Wars/Mods/Remod/Game/Sounds/interface\suit/suit_lift_grunt_05.wav  SRAM Usage 2932 kb 
+Debug: Info : FSB Compilation complete
+Debug: Done.
+Warning: QPaintDevice: Cannot destroy paint device that is being painted.  Be sure to QPainter::end() painters!

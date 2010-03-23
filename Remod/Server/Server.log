@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(22 Mar 2010) Time(17 32 26)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(22 Mar 2010) Time(17 40 31)"  -- used by backup system
  
-Log Started at Monday, March 22, 2010 17:32:26
+Log Started at Monday, March 22, 2010 17:40:31
 Running 32 bit version
 Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.279860 MHz
+CPU Speed (estimated): 1997.276602 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.279105 MHz
+CPU Speed (estimated): 1997.293642 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -40,8 +40,8 @@ System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 17:32:26 03/22/10, system running for 271 minutes
-1521MB physical memory installed, 415MB available, 2047MB virtual memory installed, 72 percent of memory in use
+Local time is 17:40:31 03/22/10, system running for 279 minutes
+1521MB physical memory installed, 696MB available, 2047MB virtual memory installed, 54 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
@@ -93,14 +93,11 @@ Initializing AI System
     $3e_dissolve = $61 $5[]$4
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
-    $3sv_gamerules = $6InstantAction $5[]$4
-[net 16:32:28.479] network hostname: iMac7
-[net 16:32:28.493]   ip:192.168.0.192
-[net 16:32:28.493]   ip:5.182.209.7
+    $3sv_gamerules = $6TeamInstantAction $5[]$4
+[net 16:40:32.859] network hostname: iMac7
+[net 16:40:32.862]   ip:192.168.0.192
+[net 16:40:32.862]   ip:5.182.209.7
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/terminal loading time: 8.31 seconds
------------------------------------------------------
------------------------------------------------------
-*LOADING: Level multiplayer/ia/Outpost loading time: 2.01 seconds
+*LOADING: Level multiplayer/ia/outpost loading time: 1.71 seconds
 -----------------------------------------------------
 System:Quit

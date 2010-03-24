@@ -593,7 +593,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 
 	pConsole->Register("g_MPDeathCam", &g_deathCam, 1, 0, "Enables / disables the MP death camera (shows the killer's location)");
 	pConsole->Register("g_MPDeathCamMaxZoomFOV", &g_deathCamMaxZoomFOV, 0.1f, 0, "FOV at maximum zoom of the death camera");
-	pConsole->Register("g_MPDeathCamMinZoom", &g_deathCamMinZoomDistance, 2, 0, "Distance at which the death camera begins to zoom on the killer");
+	pConsole->Register("g_MPDeathCamMinZoom", &g_deathCamMinZoomDistance, 2, 0, "Distance at which the death camera begins to zoom on the killer");re_vehiclecapturing;
 	pConsole->Register("g_MPDeathCamMaxZoom", &g_deathCamMaxZoomDistance, 50, 0, "Distance to the killer at which the death camera is fully zoomed in");
 	pConsole->Register("g_MPDeathEffects", &g_deathEffects, 0, 0, "Enables / disables the MP death screen-effects");
 
@@ -613,6 +613,10 @@ void SCVars::InitCVars(IConsole *pConsole)
 
 	pConsole->Register("g_painSoundGap", &g_painSoundGap, 0.1f, 0, "Minimum time gap between local player pain sounds");
 	pConsole->Register("g_explosionScreenShakeMultiplier", &g_explosionScreenShakeMultiplier, 0.25f, 0, "Multiplier for explosion screenshake");
+	
+	// Remod CVars
+	pConsole->Register("re_vehiclecapturing", &re_vehiclecapturing, 0, 0, "Toggles ability to capture buildings while in a vehicle.");
+	pConsole->Register("re_slowmo", &re_slowmo, 0, VF_CHEAT, "Activates slowmotion effects.", CGame::Slowmo);
 
 //	int iFlags = gEnv->pConsole->GetCVar("r_drawNearFoV")->GetFlags();
 //	gEnv->pConsole->GetCVar("r_drawNearFoV")->SetFlags(iFlags|~VF_CHEAT);

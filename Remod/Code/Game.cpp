@@ -497,17 +497,22 @@ void CGame::PlayerIdSet(EntityId playerId)
 void CGame::Slowmo(ICVar *pCVar)
 {
 	int var = pCVar->GetIVal();
-	if(var==1)
+	if(gEnv->bServer)
 	{
-		IScriptTable *pScriptTable = g_pGame->GetGameRules()->GetEntity()->GetScriptTable();
-		Script::CallMethod(pScriptTable, "Slowmo");
+		if(var==1)
+		{
+			//IScriptTable *pScriptTable = g_pGame->GetGameRules()->GetEntity()->GetScriptTable();
+			//Script::CallMethod(pScriptTable, "Slowmo");
+			ICVar *pCVar = gEnv->pConsole->GetCVar("time_scale");
+			pCVar->Set(0.3f);
 
-		SAFE_SOUNDMOODS_FUNC(AddSoundMood(SOUNDMOOD_SLOWMO));
-	}
-	else
-	{
-		IScriptTable *pScriptTable = g_pGame->GetGameRules()->GetEntity()->GetScriptTable();
-		Script::CallMethod(pScriptTable, "DeSlowmo");
+			SAFE_SOUNDMOODS_FUNC(AddSoundMood(SOUNDMOOD_SLOWMO));
+		}
+		else
+		{
+			//IScriptTable *pScriptTable = g_pGame->GetGameRules()->GetEntity()->GetScriptTable();
+			//Script::CallMethod(pScriptTable, "DeSlowmo");
+		}
 	}
 }
 

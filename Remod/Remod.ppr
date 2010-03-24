@@ -285,13 +285,13 @@ Remod
 15=Game\Scripts\Entities\Items\XML\OffHand.xml
 16=Game\Scripts\Entities\Items\XML\Ammo\NanoDisruptor.xml
 17=Game\Scripts\Entities\Items\XML\Ammo\ExplosiveGrenade.xml
-18=Game\Scripts\Entities\actor\player.lua
-19=Game\Scripts\Entities\actor\BasicActor.lua
-20=Game\Libs\MaterialEffects\SurfaceTypes.xml
-21=Game\Scripts\Remod.lua
+18=Game\Scripts\Entities\actor\BasicActor.lua
+19=Game\Libs\MaterialEffects\SurfaceTypes.xml
+20=Game\Scripts\Remod.lua
+21=Game\Scripts\Entities\actor\player.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Remod.lua
+Selected=Game\Scripts\Entities\actor\player.lua
 [Game\Libs\SoundMoods\SoundMoods.xml]
 TopLine=321
 Caret=9,361
@@ -346,9 +346,6 @@ Caret=148,1
 [Game\Scripts\Entities\Items\XML\Ammo\ExplosiveGrenade.xml]
 TopLine=4
 Caret=34,46
-[Game\Scripts\Entities\actor\player.lua]
-TopLine=1
-Caret=1,1
 [Game\Scripts\Entities\actor\BasicActor.lua]
 TopLine=1
 Caret=1,1
@@ -356,5 +353,8 @@ Caret=1,1
 TopLine=237
 Caret=1,1
 [Game\Scripts\Remod.lua]
-TopLine=1
-Caret=44,25
+TopLine=3
+Caret=35,6
+[Game\Scripts\Entities\actor\player.lua]
+TopLine=179
+Caret=8,208

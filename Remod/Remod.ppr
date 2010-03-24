@@ -288,7 +288,7 @@ Remod
 18=Game\Scripts\Entities\actor\BasicActor.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
+Selected=Game\Scripts\Entities\actor\player.lua
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
@@ -296,7 +296,7 @@ Caret=1,1
 TopLine=1
 Caret=108,39
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
-TopLine=51
+TopLine=641
 Caret=51,683
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
 TopLine=579
@@ -341,7 +341,7 @@ Caret=148,1
 TopLine=4
 Caret=34,46
 [Game\Scripts\Entities\actor\player.lua]
-TopLine=117
+TopLine=1
 Caret=46,117
 [Game\Scripts\Entities\actor\BasicActor.lua]
 TopLine=832

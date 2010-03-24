@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(22 Mar 2010) Time(17 40 31)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(24 Mar 2010) Time(22 28 24)"  -- used by backup system
  
-Log Started at Monday, March 22, 2010 17:40:31
+Log Started at Wednesday, March 24, 2010 22:28:24
 Running 32 bit version
 Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.276602 MHz
+CPU Speed (estimated): 1997.270227 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.293642 MHz
+CPU Speed (estimated): 1997.267647 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -40,8 +40,8 @@ System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 17:40:31 03/22/10, system running for 279 minutes
-1521MB physical memory installed, 696MB available, 2047MB virtual memory installed, 54 percent of memory in use
+Local time is 22:28:25 03/24/10, system running for 251 minutes
+1521MB physical memory installed, 855MB available, 2047MB virtual memory installed, 43 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
@@ -94,10 +94,885 @@ Initializing AI System
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
     $3sv_gamerules = $6TeamInstantAction $5[]$4
-[net 16:40:32.859] network hostname: iMac7
-[net 16:40:32.862]   ip:192.168.0.192
-[net 16:40:32.862]   ip:5.182.209.7
+[net 21:28:26.110] network hostname: iMac7
+[net 21:28:26.110]   ip:192.168.0.192
+[net 21:28:26.110]   ip:5.182.209.7
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/outpost loading time: 1.71 seconds
+*LOADING: Level multiplayer/ia/outpost loading time: 4.38 seconds
 -----------------------------------------------------
+[net 21:32:34.719] Disconnect iMac7.telenet.be:55157; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:55157'
+CHAT [PW]Dempere02 to ALL:
+   yo bitch
+CHAT [PW]i59 to ALL:
+   yo
+CHAT [PW]Dempere02 to ALL:
+   Im missing textures
+CHAT [PW]Dempere02 to ALL:
+   may be my grafix card...
+CHAT [PW]i59 to ALL:
+   :/
+CHAT [PW]i59 to ALL:
+   lower graphics?
+CHAT [PW]Dempere02 to ALL:
+   I think its the VRAM
+CHAT [PW]i59 to ALL:
+   wait, goin fullscreen
+CHAT Blablah to ALL:
+   Hey guys
+CHAT [PW]Dempere02 to ALL:
+   textures take long to load
+CHAT [PW]Dempere02 to ALL:
+   hey
+CHAT Blablah to ALL:
+   am i the only one with fucked up menu sounds
+CHAT Blablah to ALL:
+   ?
+CHAT [PW]Dempere02 to ALL:
+   me 2
+CHAT [PW]i59 to ALL:
+   no...
+CHAT [PW]i59 to ALL:
+   me 2
+CHAT [PW]Dempere02 to ALL:
+   like priririirri
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   i fixed it
+CHAT [PW]Dempere02 to ALL:
+   kay
+CHAT [PW]i59 to ALL:
+   how?
+CHAT Blablah to ALL:
+   little FMOD problem, just a matter of making files unused
+CHAT Blablah to ALL:
+   want me to go commit?
+CHAT [PW]i59 to ALL:
+   -.-
+CHAT [PW]i59 to ALL:
+   nah
+CHAT Blablah to ALL:
+   only takes a moment
+CHAT [PW]Dempere02 to ALL:
+   what is new in this mod?
+CHAT Blablah to ALL:
+   it's just some files renamed
+CHAT [PW]i59 to ALL:
+   nah
+CHAT [PW]i59 to ALL:
+   we gotta restart and stuff
+CHAT [PW]i59 to ALL:
+   mostly gameplay
+CHAT Blablah to ALL:
+   lots, lol
+CHAT [PW]Dempere02 to ALL:
+   fels like different
+CHAT Blablah to ALL:
+   yay
+CHAT [PW]i59 to ALL:
+   :/
+CHAT [PW]Dempere02 to ALL:
+   lolu bitch
+CHAT Blablah to ALL:
+   stuff on your elgs :D
+CHAT [PW]i59 to ALL:
+   x)
+CHAT [PW]i59 to ALL:
+   lagg
+CHAT Blablah to ALL:
+   we have to test that :P
+CHAT [PW]Dempere02 to ALL:
+   test what?
+CHAT Blablah to ALL:
+   if it hurts when i shoot your attachments
+CHAT Blablah to ALL:
+   tell me if this hurts
+CHAT [PW]Dempere02 to ALL:
+   yes
+CHAT [PW]Dempere02 to ALL:
+   not now
+CHAT [PW]i59 to ALL:
+   ouch
+CHAT Blablah to ALL:
+   it does?
+CHAT Blablah to ALL:
+   who are you anyway? :P
+CHAT [PW]Dempere02 to ALL:
+   lol
+CHAT [PW]Dempere02 to ALL:
+   Im his boyfriend
+CHAT Blablah to ALL:
+   dempere or i59?
+CHAT Blablah to ALL:
+   okay so you're dempere
+CHAT [PW]Dempere02 to ALL:
+   Im demp
+CHAT Blablah to ALL:
+   you?
+CHAT [PW]i59 to ALL:
+   i59? 
+CHAT [PW]Dempere02 to ALL:
+   lol
+CHAT Blablah to ALL:
+   ah, i see :P
+CHAT [PW]i59 to ALL:
+   :/
+CHAT [PW]Dempere02 to ALL:
+   lol nanosuit 2 skin
+CHAT Blablah to ALL:
+   did it hurt?
+CHAT [PW]Dempere02 to ALL:
+   no
+CHAT [PW]Dempere02 to ALL:
+   no
+CHAT Blablah to ALL:
+   okay
+CHAT [PW]i59 to ALL:
+   wait, going fullscreen
+CHAT [PW]Dempere02 to ALL:
+   only 1 time now
+CHAT Blablah to ALL:
+   it shoots through the attachments, that's good
+CHAT [PW]Dempere02 to ALL:
+   what attachments btw?
+CHAT [PW]i59 to ALL:
+   that sound remidns me of arabic music
+CHAT Blablah to ALL:
+   on your legs
+CHAT Blablah to ALL:
+   i don't have them
+CHAT [PW]Dempere02 to ALL:
+   ok
+CHAT Blablah to ALL:
+   lol
+CHAT [PW]Dempere02 to ALL:
+   so wat do we do?
+CHAT [PW]i59 to ALL:
+   try it :D
+CHAT Blablah to ALL:
+   cloak for me
+CHAT Blablah to ALL:
+   ah it's a tad too silent
+CHAT Blablah to ALL:
+   listen
+CHAT [PW]Dempere02 to ALL:
+   yep.
+CHAT [PW]Dempere02 to ALL:
+   the glasses
+CHAT [PW]Dempere02 to ALL:
+   thye dont cloack
+CHAT Blablah to ALL:
+   it's because of all the ambient sounds
+CHAT [PW]i59 to ALL:
+   I barely spot myself
+CHAT Blablah to ALL:
+   the glasses?
+CHAT [PW]i59 to ALL:
+   cloak again
+CHAT [PW]i59 to ALL:
+   they cloak for me
+CHAT [PW]Dempere02 to ALL:
+   the galsses dont cloack
+CHAT Blablah to ALL:
+   what glasses?
+CHAT [PW]i59 to ALL:
+   your glasses
+CHAT [PW]Dempere02 to ALL:
+   the nanosuit mask
+CHAT [PW]i59 to ALL:
+   suit mask
+CHAT Blablah to ALL:
+   they do for me
+CHAT [PW]i59 to ALL:
+   do for me too
+CHAT [PW]Dempere02 to ALL:
+   maybe it sonly the NK model
+CHAT [PW]i59 to ALL:
+   oh
+CHAT [PW]i59 to ALL:
+   it really is a NS2 skin
+CHAT Blablah to ALL:
+   nah not really
+CHAT [PW]Dempere02 to ALL:
+   oh nvm, sahder plomer for me
+CHAT [PW]i59 to ALL:
+   yellow on head
+CHAT Blablah to ALL:
+   i just added yellow highlights to make it look heavier
+CHAT Blablah to ALL:
+   well
+CHAT Blablah to ALL:
+   need to add some more
+CHAT [PW]i59 to ALL:
+   yep
+CHAT Blablah to ALL:
+   it's not supposed to be an N2 skin anyway
+CHAT [PW]i59 to ALL:
+   metal on head looks bad
+CHAT [PW]i59 to ALL:
+   well, try the command
+CHAT Blablah to ALL:
+   it's made to look like in the old crysis
+CHAT [PW]Dempere02 to ALL:
+   one problme
+CHAT Blablah to ALL:
+   see, time_scale doesn't work
+CHAT [PW]i59 to ALL:
+   bah
+CHAT [PW]i59 to ALL:
+   re_whatever?
+CHAT Blablah to ALL:
+   nope :|
+CHAT [PW]Dempere02 to ALL:
+   the nanosuit 2 skin has too much mipmaps on low configs
+CHAT [PW]i59 to ALL:
+   -.-
+CHAT Blablah to ALL:
+   i know
+CHAT Blablah to ALL:
+   i don't know how to properly do mipmaps
+CHAT Blablah to ALL:
+   i can't do them manually
+CHAT [PW]Dempere02 to ALL:
+   opne the DDS in PS and remake the mips
+CHAT Blablah to ALL:
+   and if i use fewer it'll still be noisy
+CHAT [PW]i59 to ALL:
+   bahh
+CHAT [PW]i59 to ALL:
+   lag
+CHAT [PW]Dempere02 to ALL:
+   its you
+CHAT Blablah to ALL:
+   these ARE new mips, dempere
+CHAT [PW]Dempere02 to ALL:
+   have you used the old SMG model?
+CHAT [PW]i59 to ALL:
+   omg lag
+CHAT Blablah to ALL:
+   no
+CHAT [PW]i59 to ALL:
+   darn
+CHAT [PW]Dempere02 to ALL:
+   pawn
+CHAT [PW]i59 to ALL:
+   come here
+CHAT [PW]i59 to ALL:
+   go up
+CHAT [PW]i59 to ALL:
+   slowly
+CHAT [PW]i59 to ALL:
+   nvm
+CHAT [PW]i59 to ALL:
+   thought I saw something
+CHAT [PW]i59 to ALL:
+   x)
+CHAT Blablah to ALL:
+   lmao, can't believe i missed you TWICE...
+CHAT [PW]Dempere02 to ALL:
+   lol
+CHAT [PW]i59 to ALL:
+   rofl
+CHAT [PW]Dempere02 to ALL:
+   you've tweaked the etxtures for the guns, rite?
+CHAT Blablah to ALL:
+   some
+CHAT [PW]Dempere02 to ALL:
+   the shotgun looks odd
+CHAT Blablah to ALL:
+   i know
+CHAT [PW]Dempere02 to ALL:
+   wops
+CHAT [PW]i59 to ALL:
+   thx hon'
+CHAT [PW]i59 to ALL:
+   Massive lag here-.-
+CHAT Blablah to ALL:
+   it's you, lol
+CHAT [PW]Dempere02 to ALL:
+   I do not have any lag
+CHAT [PW]i59 to ALL:
+   I lag as I did before
+CHAT [PW]i59 to ALL:
+   dunno why
+CHAT Blablah to ALL:
+   i turned off mouse accel in windows a few days ago
+CHAT Blablah to ALL:
+   i can't aim anymore lol :D
+CHAT [PW]Dempere02 to ALL:
+   hmm.. the zooming in for sniper is too skiw
+CHAT [PW]i59 to ALL:
+   x)
+CHAT Blablah to ALL:
+   believe me, it's not
+CHAT [PW]i59 to ALL:
+   I can't aim with this lag
+CHAT [PW]Dempere02 to ALL:
+   slow*
+CHAT [PW]Dempere02 to ALL:
+   lol
+CHAT [PW]Dempere02 to ALL:
+   and when u shot.. it looks so fake when the gun moves away
+CHAT [PW]i59 to ALL:
+   lol
+CHAT [PW]Dempere02 to ALL:
+   lol owned
+CHAT Blablah to ALL:
+   clearly i was shooting you, lol
+CHAT [PW]i59 to Team black:
+   I swear he'll get the gauss
+CHAT Blablah to ALL:
+   don't
+CHAT [PW]Dempere02 to ALL:
+   :/
+CHAT Blablah to ALL:
+   looking at the shotty
+CHAT [PW]Dempere02 to ALL:
+   dance
+CHAT [PW]Dempere02 to ALL:
+   dude
+CHAT [PW]i59 to ALL:
+   oh sry
+CHAT [PW]Dempere02 to ALL:
+   he said dont
+CHAT Blablah to ALL:
+   it actually has the same mtl as the scar
+CHAT [PW]i59 to ALL:
+   I shot above him
+CHAT [PW]i59 to ALL:
+   but it hit :/
+CHAT Blablah to ALL:
+   well
+CHAT Blablah to ALL:
+   part of it
+CHAT [PW]i59 to ALL:
+   wait, fixing settings
+CHAT [PW]Dempere02 to ALL:
+   whtavag
+CHAT [PW]Dempere02 to ALL:
+   whatevah
+CHAT [PW]Dempere02 to ALL:
+   woah
+CHAT Blablah to ALL:
+   LMAO
+[net 21:49:06.438] Disconnect c83-251-52-47.bredband.comhem.se:49154; profid=200775439; cause=0; msg='Timeout occurred; no packet for 31.4 seconds'
+CHAT [PW]Dempere02 to ALL:
+   OW
+CHAT [PW]Dempere02 to ALL:
+   ylol at slowmo efects on dead
+CHAT Blablah to ALL:
+   where'd he go?
+CHAT [PW]Dempere02 to ALL:
+   he lagged out
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   shall we go as well then?
+CHAT [PW]Dempere02 to ALL:
+   nope
+CHAT Blablah to ALL:
+   or not
+CHAT [PW]Dempere02 to ALL:
+   HACK
+CHAT [PW]Dempere02 to ALL:
+   U HAXXA
+CHAT Blablah to ALL:
+   :P
+CHAT [PW]i59 to ALL:
+   Gotta love crashes
+CHAT Blablah to ALL:
+   this is why the sniper scope zooms slowly
+CHAT Blablah to ALL:
+   mmm smoke
+CHAT [PW]i59 to ALL:
+   lol
+CHAT [PW]Dempere02 to ALL:
+   OWNED
+CHAT [PW]i59 to ALL:
+   bah
+CHAT [PW]i59 to ALL:
+   I'm running ALLLOW
+CHAT Blablah to ALL:
+   so am i
+CHAT [PW]Dempere02 to ALL:
+   me ALLMED
+CHAT Blablah to ALL:
+   at 800x480 D
+CHAT [PW]Dempere02 to ALL:
+   lol 800*600
+CHAT Blablah to ALL:
+   haha, god damn, i love the ragdolls
+CHAT [PW]Dempere02 to ALL:
+   yo fagga
+CHAT Blablah to ALL:
+   <3
+CHAT [PW]i59 to ALL:
+   I'm running 640x480
+CHAT [PW]i59 to ALL:
+   looks like CS1.
+CHAT Blablah to ALL:
+   i used to run 640x480
+CHAT [PW]i59 to ALL:
+   1.6
+CHAT Blablah to ALL:
+   man, miserable aim now xD
+CHAT [PW]Dempere02 to ALL:
+   now tahts ownage
+CHAT [PW]i59 to ALL:
+   ;D
+CHAT Blablah to ALL:
+   i'm trying to get gomgom to come
+CHAT Blablah to ALL:
+   but he's afk
+CHAT [PW]i59 to ALL:
+   lowering les x)
+CHAT Blablah to ALL:
+   LOL
+CHAT [PW]i59 to ALL:
+   what was that res called...
+CHAT [PW]Dempere02 to ALL:
+   bug
+CHAT [PW]Dempere02 to ALL:
+   my weapon wasn't shooting at all
+CHAT Blablah to ALL:
+   you can't shoot while sprinting
+CHAT Blablah to ALL:
+   = why
+CHAT [PW]Dempere02 to ALL:
+   no fucking way
+CHAT Blablah to ALL:
+   it's a bugfix with some side effects
+CHAT [PW]Dempere02 to ALL:
+   thats gay
+CHAT Blablah to ALL:
+   not really
+CHAT [PW]i59 to ALL:
+   heh
+CHAT [PW]Dempere02 to ALL:
+   at least stop srpingitng when shoting like MW2
+CHAT [PW]Dempere02 to ALL:
+   but dont disable it all togheta
+CHAT Blablah to ALL:
+   nope
+CHAT Blablah to ALL:
+   really, it's fine this way
+CHAT [PW]Dempere02 to ALL:
+   noez...
+CHAT [PW]Dempere02 to ALL:
+   SURE
+CHAT [PW]Dempere02 to ALL:
+   come on the assault scope moves too fucki9n g much
+CHAT Blablah to ALL:
+   omgomgomgeverythingissofuckingbad!!11&!111!1
+CHAT [PW]i59 to ALL:
+   so
+CHAT Blablah to ALL:
+   i didn't really change how much the assault scope moves
+CHAT [PW]i59 to ALL:
+   640x360
+CHAT [PW]Dempere02 to ALL:
+   go fak urself Im a bugtester
+CHAT [PW]i59 to ALL:
+   no more lag
+CHAT [PW]Dempere02 to ALL:
+   it sways like a bitch
+CHAT Blablah to ALL:
+   :|
+CHAT Blablah to ALL:
+   of course it fucking does, sit still while you use it
+CHAT [PW]i59 to ALL:
+   fugly, but 60FPS
+CHAT Blablah to Team tan:
+   noice
+CHAT [PW]i59 to Team tan:
+   :P
+CHAT Blablah to Team tan:
+   LMAO
+CHAT [PW]Dempere02 to ALL:
+   come on...
+CHAT Blablah to Team tan:
+   with the SMG
+CHAT [PW]i59 to Team tan:
+   ;D
+CHAT [PW]i59 to Team tan:
+   it pwns all of a sudden :/
+CHAT Blablah to Team tan:
+   didn't touch
+CHAT [PW]i59 to Team tan:
+   did u change something?
+CHAT Blablah to Team tan:
+   he was in strength
+CHAT [PW]i59 to Team tan:
+   lol
+CHAT Blablah to Team tan:
+   and he was prone
+CHAT Blablah to Team tan:
+   so you score headshots
+CHAT [PW]i59 to Team tan:
+   yeah
+CHAT [PW]Dempere02 to ALL:
+   my weeapon aint shot wehn I press the trigger :/
+CHAT [PW]i59 to Team tan:
+   but the other time
+CHAT [PW]i59 to Team tan:
+   before it
+CHAT [PW]i59 to ALL:
+   omfg what is it with my GPU
+CHAT [PW]i59 to ALL:
+   usually run VH @ 40FPS
+CHAT Blablah to ALL:
+   :/
+CHAT [PW]i59 to ALL:
+   now barely 50 on low & lowest LOWEST res
+CHAT [PW]Dempere02 to ALL:
+   its this mod... it makes my GPU go mad
+CHAT Blablah to ALL:
+   i LOVE the new cloaking sound
+CHAT Blablah to ALL:
+   urgh
+CHAT Blablah to ALL:
+   invisible window
+CHAT Blablah to ALL:
+   damn
+CHAT [PW]Dempere02 to Team black:
+   go fak UUU
+CHAT Blablah to Team tan:
+   sorry
+CHAT [PW]i59 to Team tan:
+   sorry? wut
+CHAT [PW]Dempere02 to ALL:
+   go fak u !
+CHAT Blablah to Team tan:
+   ran into your line of fire
+CHAT [PW]i59 to Team tan:
+   np
+CHAT Blablah to ALL:
+   use cloak demp
+CHAT [PW]i59 to Team tan:
+   inside top blue container
+CHAT Blablah to Team tan:
+   thanks
+CHAT Blablah to Team tan:
+   hehe
+CHAT [PW]i59 to Team tan:
+   :P
+CHAT Blablah to ALL:
+   hehe
+CHAT [PW]i59 to ALL:
+   bwhahahah
+CHAT [PW]i59 to ALL:
+   ;)
+CHAT Blablah to ALL:
+   demp
+CHAT [PW]Dempere02 to ALL:
+   sure is fuckign as hell 2 vs 1
+CHAT Blablah to ALL:
+   demp
+CHAT [PW]Dempere02 to ALL:
+   funny*
+CHAT Blablah to ALL:
+   how many mipmaps should you generate?
+CHAT [PW]Dempere02 to ALL:
+   4
+CHAT Blablah to ALL:
+   because i seem to always have either too few or too many
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   does crytek use 4?
+CHAT [PW]Dempere02 to ALL:
+   nope
+CHAT [PW]Dempere02 to ALL:
+   but they dont use shuch a bad texture
+CHAT Blablah to ALL:
+   they don't use such a bad texture?
+CHAT Blablah to ALL:
+   obviously this texture is worse than crytek's, right?
+CHAT [PW]Dempere02 to ALL:
+   I shoted u 5 times at point blank distance
+CHAT [PW]Dempere02 to ALL:
+   and u jsut turned around and BAM.
+CHAT Blablah to Team tan:
+   i think you got married to a whiner :(
+CHAT [PW]i59 to Team tan:
+   hahah
+CHAT Blablah to Team tan:
+   fear of change, can't stand losing, etc...
+CHAT [PW]i59 to Team tan:
+   yeah
+CHAT [PW]i59 to ALL:
+   omfg
+CHAT [PW]Dempere02 to ALL:
+   WTRFCFFF
+CHAT [PW]Dempere02 to ALL:
+   why dont u die in 1 shot like I DOOO
+CHAT Blablah to ALL:
+   i love them ragdolls :')
+CHAT [PW]i59 to ALL:
+   you pushed me!
+CHAT Blablah to ALL:
+   you were in strength
+CHAT [PW]Dempere02 to ALL:
+   yeah, and I hit him with my falcon punch
+CHAT Blablah to ALL:
+   strength = no damage suit damage absorbtion
+CHAT [PW]Dempere02 to ALL:
+   FUCK U
+CHAT Blablah to ALL:
+   LOL random shot
+CHAT Blablah to ALL:
+   i saw you cloak
+CHAT Blablah to ALL:
+   shot at a random spot
+CHAT Blablah to ALL:
+   ...
+CHAT [PW]i59 to ALL:
+   we all did lol
+CHAT [PW]i59 to Team tan:
+   he's comin
+CHAT Blablah to Team tan:
+   here he is
+CHAT [PW]i59 to Team tan:
+   he's up there?
+CHAT Blablah to Team tan:
+   yes he is
+CHAT [PW]i59 to Team tan:
+   wait
+CHAT Blablah to ALL:
+   were you cloaked?
+CHAT [PW]Dempere02 to ALL:
+   nope
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to Team tan:
+   still there
+CHAT [PW]i59 to ALL:
+   damn it
+CHAT Blablah to ALL:
+   AAAAH nice D:
+CHAT [PW]Dempere02 to ALL:
+   yeah
+CHAT Blablah to ALL:
+   fucking invisible windows, lol
+CHAT [PW]Dempere02 to ALL:
+   smg is overpowered
+CHAT Blablah to ALL:
+   of course
+CHAT Blablah to ALL:
+   everything that kills you is
+CHAT [PW]Dempere02 to ALL:
+   seriously
+CHAT [PW]Dempere02 to ALL:
+   no bullet spread
+CHAT [PW]Dempere02 to ALL:
+   WTF
+CHAT [PW]i59 to Team tan:
+   nice
+CHAT Blablah to ALL:
+   shotty is OP as well
+CHAT Blablah to ALL:
+   11!!oneoneeleven
+CHAT [PW]Dempere02 to ALL:
+   ur aim is so wicked
+CHAT Blablah to ALL:
+   i kno rite
+CHAT Blablah to ALL:
+   I IZ A PELICAN RAWR
+CHAT [PW]i59 to ALL:
+   x)
+CHAT Blablah to Team tan:
+   tagged :D
+CHAT [PW]Dempere02 to ALL:
+   no wai I was pone when u shot!
+CHAT Blablah to ALL:
+   PELICAAAAAAN
+CHAT [PW]i59 to Team tan:
+   loool
+CHAT [PW]i59 to Team tan:
+   nice spot
+CHAT Blablah to ALL:
+   FUCK YOU I'M A PELICAN
+CHAT Blablah to Team tan:
+   east
+CHAT Blablah to Team tan:
+   red containers
+CHAT [PW]Dempere02 to ALL:
+   URE A LAGGER
+CHAT Blablah to Team tan:
+   below you
+CHAT Blablah to Team tan:
+   behind
+CHAT Blablah to Team tan:
+   behind you
+CHAT Blablah to Team tan:
+   south
+CHAT Blablah to Team tan:
+   lulz
+CHAT Blablah to ALL:
+   nice
+CHAT [PW]i59 to ALL:
+   ;)
+CHAT Blablah to ALL:
+   about the SMG being OP
+CHAT [PW]Dempere02 to ALL:
+   it is
+CHAT Blablah to ALL:
+   it's not OP, it's out of place
+CHAT [PW]Dempere02 to ALL:
+   orly?
+CHAT Blablah to ALL:
+   there is no real proper place for the SMG
+CHAT Blablah to ALL:
+   in the weapon lineup
+CHAT [PW]i59 to ALL:
+   ;)
+CHAT Blablah to ALL:
+   it's either UP or OP
+CHAT [PW]Dempere02 to ALL:
+   taht was so gay
+CHAT Blablah to ALL:
+   or seems that way anyway
+CHAT Blablah to Team tan:
+   east
+CHAT Blablah to ALL:
+   FUCK YOU I'M A PELICAAAN
+CHAT Blablah to Team tan:
+   coming out
+CHAT Blablah to Team tan:
+   below me
+CHAT Blablah to Team tan:
+   going up
+CHAT [PW]Dempere02 to ALL:
+   no wai
+CHAT Blablah to ALL:
+   you should've know i was there :P
+CHAT [PW]Dempere02 to ALL:
+   i did
+CHAT Blablah to ALL:
+   then why didn't you shoot?
+CHAT Blablah to ALL:
+   you're very vulnerable in cloak
+CHAT [PW]Dempere02 to ALL:
+   coz ure the hsot=u saw me first
+CHAT [PW]Dempere02 to ALL:
+   I headshoted u
+CHAT [PW]Dempere02 to ALL:
+   too abd I have some lag
+CHAT Blablah to ALL:
+   of course
+CHAT Blablah to Team tan:
+   help D:
+CHAT Blablah to Team tan:
+   thanks!
+CHAT [PW]i59 to Team tan:
+   :Pw
+CHAT [PW]Dempere02 to ALL:
+   yeah sure :(
+CHAT [PW]i59 to Team tan:
+   np
+CHAT Blablah to ALL:
+   my nearfov is stuck lol
+CHAT [PW]i59 to ALL:
+   heh
+CHAT Blablah to ALL:
+   eek
+CHAT [PW]i59 to ALL:
+   ;)
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   there we go
+[net 22:14:30.338] Disconnect 62.57.103.122.dyn.user.ono.com:63558; profid=89554143; cause=0; msg='Timeout occurred; no packet for 31.5 seconds'
+CHAT [PW]i59 to ALL:
+   :/
+CHAT Blablah to ALL:
+   ?
+CHAT Blablah to ALL:
+   oh
+CHAT [PW]i59 to ALL:
+   WTF
+CHAT Blablah to ALL:
+   he left
+CHAT [PW]i59 to ALL:
+   *wtf
+CHAT [PW]i59 to ALL:
+   I'll see
+CHAT Blablah to ALL:
+   wait
+CHAT Blablah to ALL:
+   cloak
+CHAT [PW]i59 to ALL:
+   lol wut
+CHAT Blablah to ALL:
+   cloak
+CHAT [PW]i59 to ALL:
+   headshot x)
+CHAT Blablah to ALL:
+   friendlyfireratio
+CHAT [PW]i59 to ALL:
+   oh
+CHAT Blablah to ALL:
+   nono stay cloaked
+CHAT Blablah to ALL:
+   god i love the cloaking sound
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   noes stay
+CHAT Blablah to ALL:
+   xD
+CHAT [PW]i59 to ALL:
+   x)
+CHAT Blablah to ALL:
+   tiny tiny bit too quiet
+CHAT [PW]i59 to ALL:
+   yeah
+CHAT Blablah to ALL:
+   and you're completely cloaked for m
+CHAT Blablah to ALL:
+   e
+CHAT [PW]i59 to ALL:
+   I barely seeu
+CHAT [PW]i59 to ALL:
+   I'd say it's perfect
+CHAT Blablah to ALL:
+   cloak for me again
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   is good enough i think
+CHAT Blablah to ALL:
+   but
+CHAT Blablah to ALL:
+   yaaargh, don't do that :(
+CHAT [PW]i59 to ALL:
+   Are you connected to server?
+CHAT [PW]i59 to ALL:
+   RCon?
+CHAT Blablah to ALL:
+   yeah
+CHAT [PW]i59 to ALL:
+   nvm, you are server lol
+CHAT Blablah to ALL:
+   well
+CHAT [PW]i59 to ALL:
+   well I gtg
+CHAT Blablah to ALL:
+   it's a dedicated server
+CHAT [PW]i59 to ALL:
+   ye
+CHAT Blablah to ALL:
+   but i host it
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   lmao
+CHAT [PW]i59 to ALL:
+   ;)
+CHAT [PW]i59 to ALL:
+   well cya
+CHAT Blablah to ALL:
+   bye!
+[net 22:17:20.488] Disconnect iMac7.telenet.be:53356; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:53356'
+[net 22:17:51.903] Disconnect c83-251-52-47.bredband.comhem.se:59048; profid=200775439; cause=0; msg='Timeout occurred; no packet for 30.0 seconds'
 System:Quit

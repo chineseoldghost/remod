@@ -109,7 +109,7 @@
 <dsp_name>Volume</dsp_name>
 <dsp_paramindex>0</dsp_paramindex>
 <colour>#ff0000</colour>
-<point>0,0.00562341,1,1</point>
+<point>0,0.01,1,1</point>
 <point>1,0,0,1</point>
 <parametername>distance</parametername>
 <_PC_enable>1</_PC_enable>
@@ -342,6 +342,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707</speaker_l>
 <speaker_c>0</speaker_c>
@@ -512,6 +513,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707</speaker_l>
 <speaker_c>0</speaker_c>
@@ -655,6 +657,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707946</speaker_l>
 <speaker_c>0</speaker_c>
@@ -820,6 +823,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707946</speaker_l>
 <speaker_c>0</speaker_c>
@@ -986,6 +990,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.891251</speaker_l>
 <speaker_c>0</speaker_c>
@@ -1188,6 +1193,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.891251</speaker_l>
 <speaker_c>0</speaker_c>
@@ -1389,6 +1395,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.891251</speaker_l>
 <speaker_c>0</speaker_c>
@@ -1625,6 +1632,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.891251</speaker_l>
 <speaker_c>0</speaker_c>
@@ -1861,6 +1869,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.891251</speaker_l>
 <speaker_c>0</speaker_c>
@@ -2063,6 +2072,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707946</speaker_l>
 <speaker_c>0</speaker_c>
@@ -2263,6 +2273,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707946</speaker_l>
 <speaker_c>0</speaker_c>
@@ -2475,6 +2486,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707</speaker_l>
 <speaker_c>0</speaker_c>
@@ -2619,6 +2631,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707</speaker_l>
 <speaker_c>0</speaker_c>
@@ -2820,6 +2833,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707</speaker_l>
 <speaker_c>0</speaker_c>
@@ -2988,6 +3002,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>1</speaker_l>
 <speaker_c>0.316228</speaker_c>
@@ -3291,6 +3306,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707</speaker_l>
 <speaker_c>0</speaker_c>
@@ -3459,6 +3475,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707</speaker_l>
 <speaker_c>0</speaker_c>
@@ -3625,6 +3642,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707</speaker_l>
 <speaker_c>0</speaker_c>
@@ -3813,6 +3831,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>1</speaker_l>
 <speaker_c>0</speaker_c>
@@ -3971,6 +3990,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707</speaker_l>
 <speaker_c>0</speaker_c>
@@ -4172,6 +4192,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707</speaker_l>
 <speaker_c>0</speaker_c>
@@ -4292,6 +4313,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>1</speaker_l>
 <speaker_c>0</speaker_c>
@@ -4458,6 +4480,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707131</speaker_l>
 <speaker_c>0</speaker_c>
@@ -4626,6 +4649,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707131</speaker_l>
 <speaker_c>0</speaker_c>
@@ -4794,6 +4818,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707131</speaker_l>
 <speaker_c>0</speaker_c>
@@ -4938,6 +4963,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>1</speaker_l>
 <speaker_c>0</speaker_c>
@@ -5098,6 +5124,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707</speaker_l>
 <speaker_c>0</speaker_c>
@@ -5241,6 +5268,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>0.707946</speaker_l>
 <speaker_c>0</speaker_c>
@@ -5407,6 +5435,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>1</speaker_l>
 <speaker_c>0</speaker_c>
@@ -5575,6 +5604,7 @@
 <istemplate>Yes</istemplate>
 <usetemplate></usetemplate>
 <notes></notes>
+<category>master</category>
 <position_randomization>0</position_randomization>
 <speaker_l>1</speaker_l>
 <speaker_c>0.316228</speaker_c>
@@ -5839,14 +5869,14 @@
     <CompositionUI>
         <SceneEditor>
             <NavigableGraphicsView>
-                <ViewRect>-878.386, -650.972, 1765.3, 1310.47</ViewRect>
+                <ViewRect>-863.098, -639.642, 1734.57, 1287.66</ViewRect>
                 <ZoomLevel>0</ZoomLevel>
             </NavigableGraphicsView>
             <SceneEditorItemRepository></SceneEditorItemRepository>
         </SceneEditor>
         <ThemeEditor>
             <NavigableGraphicsView>
-                <ViewRect>-342.291, -256.18, 687.81, 515.589</ViewRect>
+                <ViewRect>-347.367, -259.979, 698.011, 523.235</ViewRect>
                 <ZoomLevel>0</ZoomLevel>
             </NavigableGraphicsView>
             <ThemeEditorItemRepository></ThemeEditorItemRepository>

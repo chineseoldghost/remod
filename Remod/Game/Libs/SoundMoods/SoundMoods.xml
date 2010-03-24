@@ -329,6 +329,36 @@
   <Category Name="veh_special"/>
   <Category Name="vehicle_sounds"/>
  </Mood>
+ <Mood Name="slowmo" Priority="101" MusicVolume="0">
+  <Category Name="1st_fire" Pitch="-0.07"/>
+  <Category Name="1st_pers" Pitch="-0.07"/>
+  <Category Name="1st_weapon_foley" Pitch="-0.07"/>
+  <Category Name="3rd_pers" Pitch="-0.07"/>
+  <Category Name="3rd_weapon" Pitch="-0.07"/>
+  <Category Name="3rd_weapon_explos" Pitch="-0.07"/>
+  <Category Name="alien" Pitch="-0.07"/>
+  <Category Name="amb" Pitch="-0.07"/>
+  <Category Name="coll_foot_phy_ai" Pitch="-0.07"/>
+  <Category Name="collision" Pitch="-0.07"/>
+  <Category Name="dialog_ai" Pitch="-0.07"/>
+  <Category Name="explos" Pitch="-0.07"/>
+  <Category Name="hud_suit" Pitch="-0.07"/>
+  <Category Name="key_events" Pitch="-0.07"/>
+  <Category Name="master" Pitch="-0.07"/>
+  <Category Name="menu_sounds"/>
+  <Category Name="mission_dialog" Pitch="-0.07"/>
+  <Category Name="music"/>
+  <Category Name="other" Pitch="-0.07"/>
+  <Category Name="phy_alien_veh" Pitch="-0.07"/>
+  <Category Name="phys_lots" Pitch="-0.07"/>
+  <Category Name="player_foley" Pitch="-0.07"/>
+  <Category Name="ricco" Pitch="-0.07"/>
+  <Category Name="ricco_alien" Pitch="-0.07"/>
+  <Category Name="veh_ext" Pitch="-0.07"/>
+  <Category Name="veh_run" Pitch="-0.07"/>
+  <Category Name="veh_special" Pitch="-0.07"/>
+  <Category Name="vehicle_sounds" Pitch="-0.07"/>
+ </Mood>
  <Mood Name="default" Priority="1" MusicVolume="0.80000001">
   <Category Name="1st_fire"/>
   <Category Name="1st_pers"/>

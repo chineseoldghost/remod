@@ -11,7 +11,7 @@
     <Texture Map="Normalmap" File="objects/weapons/us/shotgun/textures/shotgun_ddn.tif" Filter="7">
      <TexMod />
     </Texture>
-    <Texture Map="Environment" File="textures/cubemaps/camera_wetroad_desaturate.dds">
+    <Texture Map="Environment" File="textures/cubemaps/frosty2.dds">
      <TexMod />
     </Texture>
    </Textures>

@@ -267,8 +267,8 @@ Remod
 		Game\Scripts\main.lua
 		Game\Scripts\Remod.lua
 [Open project files]
-0=Game\Libs\SoundMoods\SoundMoods.xml
-1=Game\Shaders\HWScripts\CryFX\PostProcess.cfx
+0=Game\Shaders\HWScripts\CryFX\PostProcess.cfx
+1=Game\Libs\SoundMoods\SoundMoods.xml
 2=Game\Scripts\Entities\Default\GeomEntity.orig
 3=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
 4=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
@@ -291,13 +291,13 @@ Remod
 21=Game\Scripts\Entities\actor\player.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\actor\player.lua
-[Game\Libs\SoundMoods\SoundMoods.xml]
-TopLine=321
-Caret=9,361
+Selected=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
+[Game\Libs\SoundMoods\SoundMoods.xml]
+TopLine=321
+Caret=9,361
 [Game\Scripts\Entities\Default\GeomEntity.orig]
 TopLine=1
 Caret=108,39
@@ -308,8 +308,8 @@ Caret=51,683
 TopLine=579
 Caret=38,621
 [Game\Scripts\Entities\Items\XML\Weapons\SMG.xml]
-TopLine=552
-Caret=53,575
+TopLine=182
+Caret=35,203
 [Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml]
 TopLine=196
 Caret=37,207

@@ -42,7 +42,7 @@
      <TexMod />
     </Texture>
    </Textures>
-   <PublicParams AnimFrequency="0" AnimAmplitudeWav0="0" AnimAmplitudeWav2="0" AnimPhase="1" AnisotropicShape="0.25" DiffuseExponent="0.30000001" FuzzynessSmoothness="1.1" FuzzynessStrength="0.75" FuzzynessSpread="1.65" FuzzynessSaturation="1" SpecularMultiplier="0.029999999"/>
+   <PublicParams AnimFrequency="0" AnimAmplitudeWav0="0" AnimAmplitudeWav2="0" AnimPhase="1" AnisotropicShape="0.25" DiffuseExponent="0.30000001" FuzzynessSmoothness="1.1" FuzzynessStrength="1.75" FuzzynessSpread="1.65" FuzzynessSaturation="1" SpecularMultiplier="0.029999999"/>
    <MaterialLayers>
     <Layer Name="FrozenLayerWip" NoDraw="0">
      <PublicParams VariationTilling="1" TillingU="1" TillingV="1" ReflectionAmount="0.23999999" TopSnowAmount="0.5" TintColor="1,1,1"/>

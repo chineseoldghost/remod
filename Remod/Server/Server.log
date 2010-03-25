@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(25 Mar 2010) Time(16 21 25)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(25 Mar 2010) Time(17 35 25)"  -- used by backup system
  
-Log Started at Thursday, March 25, 2010 16:21:25
+Log Started at Thursday, March 25, 2010 17:35:25
 Running 32 bit version
 Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.272456 MHz
+CPU Speed (estimated): 1997.273141 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.270890 MHz
+CPU Speed (estimated): 1996.946215 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -40,8 +40,8 @@ System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 16:21:26 03/25/10, system running for 292 minutes
-1521MB physical memory installed, 1000MB available, 2047MB virtual memory installed, 34 percent of memory in use
+Local time is 17:35:25 03/25/10, system running for 366 minutes
+1521MB physical memory installed, 995MB available, 2047MB virtual memory installed, 34 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
@@ -94,20 +94,533 @@ Initializing AI System
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
     $3sv_gamerules = $6TeamInstantAction $5[]$4
-[net 15:21:26.956] network hostname: iMac7
-[net 15:21:26.956]   ip:192.168.0.192
-[net 15:21:26.956]   ip:5.182.209.7
+[net 16:35:26.508] network hostname: iMac7
+[net 16:35:26.524]   ip:192.168.0.192
+[net 16:35:26.524]   ip:5.182.209.7
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/outpost loading time: 5.81 seconds
+*LOADING: Level multiplayer/ia/outpost loading time: 2.90 seconds
 -----------------------------------------------------
+    $3sv_gamerules = $6Mesa $5[]$4
     $3sv_gamerules = $6PowerStruggle $5[]$4
 -----------------------------------------------------
-*LOADING: Level multiplayer/ps/Mesa loading time: 8.52 seconds
+*LOADING: Level multiplayer/ps/Mesa loading time: 12.85 seconds
 -----------------------------------------------------
-    $3g_pp_scale_price = $60 $5[]$4
-    $3time_scale = $60.3 $5[]$4
-    $3re_slowmo = $60 $5[]$4
-    $3re_slowmo = $60 $5[]$4
-    $3time_scale = $61 $5[]$4
-    $3g_energy_scale_income = $6100 $5[]$4
-[net 15:45:23.657] Disconnect iMac7.telenet.be:52303; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:52303'
+CHAT Blablah to ALL:
+   G'day sir!
+CHAT Blablah to ALL:
+   Loaded mesa because i changed some texs
+CHAT [PW]i59 to ALL:
+   G'day
+CHAT [PW]i59 to ALL:
+   ye
+CHAT Blablah to ALL:
+   cap the E4 bunker
+CHAT [PW]i59 to ALL:
+   hmm
+CHAT [PW]i59 to ALL:
+   vehicle's turn slowly
+CHAT Blablah to ALL:
+   i know
+CHAT Blablah to ALL:
+   i'm gonna turn it up a little
+CHAT [PW]i59 to ALL:
+   yeah
+CHAT [PW]i59 to ALL:
+   lul
+CHAT Blablah to ALL:
+   This is not the E4 bunker :P
+CHAT Blablah to ALL:
+   Don't cap it
+CHAT Blablah to ALL:
+   Cap E4
+CHAT [PW]i59 to ALL:
+   :(/s
+CHAT Blablah to ALL:
+   So we each have one
+CHAT [PW]i59 to ALL:
+   ye
+CHAT Blablah to ALL:
+   you me or me you?
+CHAT [PW]i59 to ALL:
+   lol wait
+CHAT [PW]i59 to ALL:
+   I forgot to buy weps lolz
+CHAT Blablah to ALL:
+   just pancho me
+    $3g_revivetime = $60 $5[]$4
+CHAT [PW]i59 to ALL:
+   wtf
+CHAT [PW]i59 to ALL:
+   I wanted your SCAR :(
+CHAT Blablah to ALL:
+   oh$
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   do you need weapons?
+CHAT [PW]i59 to ALL:
+   YEX)
+CHAT [PW]i59 to ALL:
+   *ye
+CHAT Blablah to ALL:
+   won't it work otherwise?
+CHAT [PW]i59 to ALL:
+   BOOM 
+CHAT [PW]i59 to ALL:
+   dickshot
+CHAT Blablah to ALL:
+   DONT CAP MAH BUNKAR
+CHAT [PW]i59 to ALL:
+   lul
+CHAT Blablah to ALL:
+   oh one sec
+CHAT Blablah to ALL:
+   cloak
+CHAT [PW]i59 to ALL:
+   lol
+CHAT [PW]i59 to ALL:
+   cloak done
+CHAT Blablah to ALL:
+   faggot let me hear the cloak sound
+CHAT [PW]i59 to ALL:
+   x)
+CHAT Blablah to ALL:
+   is good
+CHAT [PW]i59 to ALL:
+   :D
+CHAT Blablah to ALL:
+   listen
+CHAT [PW]i59 to ALL:
+   lemme hear
+CHAT [PW]i59 to ALL:
+   nice
+CHAT Blablah to ALL:
+   the range is only 10m
+CHAT [PW]i59 to ALL:
+   yeah
+CHAT Blablah to ALL:
+   i might turn it up to 15
+CHAT [PW]i59 to ALL:
+   lol
+CHAT [PW]i59 to ALL:
+   didn't spot y
+CHAT Blablah to ALL:
+   also
+CHAT Blablah to ALL:
+   i sharpened these textures
+CHAT [PW]i59 to ALL:
+   which
+CHAT [PW]i59 to ALL:
+   pipe?
+CHAT Blablah to ALL:
+   pretty much all of the terrain textures on mesa, lol
+CHAT Blablah to ALL:
+   they aren't many
+CHAT [PW]i59 to ALL:
+   oh
+CHAT [PW]i59 to ALL:
+   yeah
+CHAT [PW]i59 to ALL:
+   reuse
+CHAT [PW]i59 to ALL:
+   wtf
+CHAT [PW]i59 to ALL:
+   lol
+CHAT [PW]i59 to ALL:
+   oooh
+CHAT [PW]i59 to ALL:
+   5 kills
+CHAT [PW]i59 to ALL:
+   brb, checking log
+CHAT Blablah to ALL:
+   k
+CHAT Blablah to ALL:
+   and?
+CHAT Blablah to ALL:
+   i need to
+CHAT Blablah to ALL:
+   replace MMG with CryNet
+CHAT [PW]i59 to ALL:
+   yeah
+CHAT [PW]i59 to ALL:
+   I can do that for ya
+CHAT Blablah to ALL:
+   everywhere, lol
+CHAT Blablah to ALL:
+   nah it's ok
+CHAT [PW]i59 to ALL:
+   after this
+CHAT [PW]i59 to ALL:
+   nah, I'm bored I can do it :D
+CHAT Blablah to ALL:
+   negative sir!
+CHAT [PW]i59 to ALL:
+   I got a Crynet systems logo here
+CHAT [PW]i59 to ALL:
+   :(
+CHAT [PW]i59 to ALL:
+   BITCH!
+CHAT [PW]i59 to ALL:
+   *runs*
+CHAT Blablah to ALL:
+   yeah and i know who you got it from :P
+CHAT [PW]i59 to ALL:
+   who?
+CHAT [PW]i59 to ALL:
+   I made it lol
+CHAT Blablah to ALL:
+   you remade it?
+CHAT [PW]i59 to ALL:
+   yep
+CHAT Blablah to ALL:
+   really? lol
+CHAT [PW]i59 to ALL:
+   yep
+CHAT Blablah to ALL:
+   that's silly :P
+CHAT [PW]i59 to ALL:
+   I made it with vectors
+CHAT Blablah to ALL:
+   i figured
+CHAT [PW]i59 to ALL:
+   bwhahahah
+CHAT Blablah to ALL:
+   i extracted mine from the PDFs
+CHAT [PW]i59 to ALL:
+   well, not remade it
+CHAT [PW]i59 to ALL:
+   I took it from the Crynetsystems site
+CHAT Blablah to ALL:
+   lol
+CHAT [PW]i59 to ALL:
+   and vectored it
+CHAT Blablah to ALL:
+   i posted a "whole" pack with CryNet and N2 logos
+CHAT [PW]i59 to ALL:
+   lol
+CHAT [PW]i59 to ALL:
+   bwhahahahahahahah
+CHAT [PW]i59 to ALL:
+   *evil laughter
+CHAT Blablah to ALL:
+   so anyway
+CHAT Blablah to ALL:
+   any luck with your stuff?
+CHAT [PW]i59 to ALL:
+   achievements?
+CHAT Blablah to ALL:
+   yeah
+CHAT [PW]i59 to ALL:
+   don't think so
+CHAT Blablah to ALL:
+   strange
+CHAT [PW]i59 to ALL:
+   yeah
+CHAT [PW]i59 to ALL:
+   wtf bug
+CHAT [PW]i59 to ALL:
+   bwhahahahah
+CHAT [PW]i59 to ALL:
+   oh shit
+CHAT [PW]i59 to ALL:
+   you're making one two, aren't you? :/
+CHAT Blablah to ALL:
+   ?
+CHAT [PW]i59 to ALL:
+   *too
+CHAT Blablah to ALL:
+   of what?
+CHAT [PW]i59 to ALL:
+   well, VTOL bug
+CHAT [PW]i59 to ALL:
+   buy a VTOL
+CHAT Blablah to ALL:
+   what's bugged about it?
+CHAT [PW]i59 to ALL:
+   buy one and see :P
+CHAT Blablah to ALL:
+   nono tell me
+CHAT [PW]i59 to ALL:
+   it's hard to... explain
+CHAT Blablah to ALL:
+   not going sideways? no ammo?
+CHAT [PW]i59 to ALL:
+   no ammo O.o
+CHAT [PW]i59 to ALL:
+   noticed that now
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   what bug though?
+CHAT [PW]i59 to ALL:
+   wait
+CHAT [PW]i59 to ALL:
+   can you enter it?
+CHAT Blablah to ALL:
+   no
+CHAT [PW]i59 to ALL:
+   or is it locked to team
+CHAT Blablah to ALL:
+   locked
+CHAT [PW]i59 to ALL:
+   wtf btw
+CHAT [PW]i59 to ALL:
+   come
+CHAT Blablah to ALL:
+   getting PP
+CHAT Blablah to ALL:
+   i refuse to make everything free
+CHAT [PW]i59 to ALL:
+   kk
+CHAT [PW]i59 to ALL:
+   wtf o.o
+CHAT [PW]i59 to ALL:
+   omg
+CHAT Blablah to ALL:
+   k, what's bugged?
+CHAT Blablah to ALL:
+   LOL
+CHAT [PW]i59 to ALL:
+   -.-
+CHAT [PW]i59 to ALL:
+   you see? xx)
+CHAT Blablah to ALL:
+   no, seems fine
+CHAT [PW]i59 to ALL:
+   press F1
+CHAT [PW]i59 to ALL:
+   a couple of times
+CHAT Blablah to ALL:
+   that's not a bug
+CHAT [PW]i59 to ALL:
+   it's not? O.o
+CHAT Blablah to ALL:
+   that's an experiment :P
+CHAT Blablah to ALL:
+   it's not no
+CHAT [PW]i59 to ALL:
+   lol
+CHAT Blablah to ALL:
+   it's for parking
+CHAT Blablah to ALL:
+   makes it easier to park
+CHAT [PW]i59 to ALL:
+   heh
+CHAT [PW]i59 to ALL:
+   why no ammo :(
+CHAT Blablah to ALL:
+   it's transport now
+CHAT [PW]i59 to ALL:
+   :(
+CHAT Blablah to ALL:
+   there's this
+CHAT Blablah to ALL:
+   except i got rid of it, nevermind
+CHAT [PW]i59 to ALL:
+   come
+CHAT Blablah to ALL:
+   take it
+CHAT [PW]i59 to ALL:
+   x)
+CHAT [PW]i59 to ALL:
+   thought it was a bomb
+CHAT Blablah to ALL:
+   LOL
+CHAT [PW]i59 to ALL:
+   it was necessary
+CHAT Blablah to ALL:
+   I SABOTAGED your VTOL :D
+CHAT [PW]i59 to ALL:
+   yO.oooooo
+CHAT Blablah to ALL:
+   you can more or less find people with binocs now
+CHAT Blablah to ALL:
+   because of the beep
+CHAT [PW]i59 to ALL:
+   beep?
+CHAT [PW]i59 to ALL:
+   oh
+CHAT [PW]i59 to ALL:
+   ye
+CHAT [PW]i59 to ALL:
+   omfg LAG
+CHAT Blablah to ALL:
+   so
+CHAT Blablah to ALL:
+   any ideas for a forest map?
+CHAT [PW]i59 to ALL:
+   yeah :D
+CHAT [PW]i59 to ALL:
+   wait
+CHAT [PW]i59 to ALL:
+   omg laggg'
+CHAT Blablah to ALL:
+   not me
+CHAT Blablah to ALL:
+   whoa
+CHAT Blablah to ALL:
+   what happened there?! LOL
+CHAT Blablah to ALL:
+   have your AYs back
+CHAT Blablah to ALL:
+   omg
+CHAT Blablah to ALL:
+   nice nade
+CHAT [PW]i59 to ALL:
+   :P
+CHAT [PW]i59 to ALL:
+   WHY DOES IT LAG?!
+CHAT Blablah to ALL:
+   idk it's fine for me
+CHAT Blablah to ALL:
+   OH FUCK
+CHAT Blablah to ALL:
+   NICE
+CHAT [PW]i59 to ALL:
+   X)
+CHAT [PW]i59 to ALL:
+   darn it
+CHAT [PW]i59 to ALL:
+   x)
+CHAT [PW]i59 to ALL:
+   I lost you
+CHAT Blablah to ALL:
+   :P
+CHAT Blablah to ALL:
+   we should do a gamemode that's fun in 1v1
+CHAT [PW]i59 to ALL:
+   yeah
+CHAT [PW]i59 to ALL:
+   Think of something
+CHAT Blablah to ALL:
+   i will
+CHAT Blablah to ALL:
+   not a priority tho :P
+CHAT [PW]i59 to ALL:
+   You can take my bunker if you want
+CHAT [PW]i59 to ALL:
+   :P
+CHAT [PW]i59 to ALL:
+   FUCK
+CHAT Blablah to ALL:
+   :P
+CHAT [PW]i59 to ALL:
+   WTF
+CHAT Blablah to ALL:
+   ?
+CHAT [PW]i59 to ALL:
+   -.-
+CHAT Blablah to ALL:
+   FREEZE
+CHAT Blablah to ALL:
+   I SAID FREEZE MOTHERFUCKA D:
+CHAT [PW]i59 to ALL:
+   omg
+CHAT [PW]i59 to ALL:
+   so... laggy
+CHAT Blablah to ALL:
+   oh graphics laga gain
+CHAT Blablah to ALL:
+   is it only in remod?
+CHAT [PW]i59 to ALL:
+   yeah
+CHAT Blablah to ALL:
+   really?
+CHAT [PW]i59 to ALL:
+   I think
+CHAT [PW]i59 to ALL:
+   I don't play games that muchw
+CHAT Blablah to ALL:
+   how about warhead?
+CHAT [PW]i59 to ALL:
+   not anymore
+CHAT [PW]i59 to ALL:
+   I'll play wars later
+CHAT [PW]i59 to ALL:
+   BAH WHERE?!
+CHAT [PW]i59 to ALL:
+   OMFG
+CHAT Blablah to ALL:
+   ?
+CHAT [PW]i59 to ALL:
+   WHERE x)
+CHAT Blablah to ALL:
+   look on your minimap
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   a predator mode
+CHAT [PW]i59 to ALL:
+   wut?
+CHAT Blablah to ALL:
+   DAMN
+CHAT Blablah to ALL:
+   nice
+CHAT [PW]i59 to ALL:
+   ;)
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   holy shit dude
+CHAT [PW]i59 to ALL:
+   is it lag or is it that way?
+CHAT Blablah to ALL:
+   that was geniusly nice
+CHAT Blablah to ALL:
+   it should be smooth
+CHAT [PW]i59 to ALL:
+   why does it wait like 2 sec before shooting?
+CHAT Blablah to ALL:
+   oh
+CHAT [PW]i59 to ALL:
+   *punching
+CHAT Blablah to ALL:
+   is it because you're trying to fire before you stop sprinting?
+CHAT [PW]i59 to ALL:
+   ohhh
+CHAT Blablah to ALL:
+   wait no
+CHAT Blablah to ALL:
+   you can punch while sprinting
+CHAT [PW]i59 to ALL:
+   DAMN
+CHAT [PW]i59 to ALL:
+   x)
+CHAT Blablah to ALL:
+   but no
+CHAT Blablah to ALL:
+   but
+CHAT Blablah to ALL:
+   it isn't graphical lag?
+CHAT [PW]i59 to ALL:
+   u
+CHAT [PW]i59 to ALL:
+   not sure
+CHAT Blablah to ALL:
+   lol?
+CHAT Blablah to ALL:
+   what kinda lag is it?
+CHAT [PW]i59 to ALL:
+   ... lockup lag
+CHAT [PW]i59 to ALL:
+   it locks upw
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   it's fine for me :|
+CHAT [PW]i59 to ALL:
+   :/w
+CHAT [PW]i59 to ALL:
+   I'll see
+CHAT Blablah to ALL:
+   try wars
+CHAT [PW]i59 to ALL:
+   my PC has become slower
+CHAT Blablah to ALL:
+   what's your fps like?
+CHAT [PW]i59 to ALL:
+   lol
+[net 17:09:42.977] Disconnect iMac7.telenet.be:63918; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:63918'
+CHAT [PW]i59 to ALL:
+   :/
+System:Quit

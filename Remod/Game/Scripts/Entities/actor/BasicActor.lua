@@ -859,7 +859,7 @@ BasicActorParams =
 		grabMultiplier = 0.5, -- Speed is multiplied by this amount when the player is carry the maximun amount carriable
 				
 		inertia = 7, -- 7.0 -- The more, the faster the speed change: 1 is very slow, 10 is very fast already 
-		inertiaAccel = 7, -- same as inertia, but used when the player accel
+		inertiaAccel = 9, -- same as inertia, but used when the player accel
 			
 		jumpHeight = 1.1, -- Meters
 		

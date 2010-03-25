@@ -27,10 +27,10 @@
   <Material Name="Skel_Hand_Left" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_hand_left" Diffuse="0.2,0.145098,0.227451" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
    <Textures />
   </Material>
-  <Material Name="Skel_Hand_Right" MtlFlags="128" Shader="Nodraw" GenMask="0" SurfaceType="mat_hand_right" Diffuse="0.152941,0.223529,0.25882399" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+  <Material Name="Skel_Hand_Right" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_hand_right" Diffuse="0.152941,0.223529,0.25882399" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
    <Textures />
   </Material>
-  <Material Name="nanosuit" MtlFlags="132" Shader="Cloth" GenMask="268468496" SurfaceType="mat_kevlar" Diffuse="0.3,0.3,0.3" Specular="6.5,6.5,6.5" Emissive="0,0,0" Shininess="1" Opacity="1">
+  <Material Name="nanosuit" MtlFlags="132" Shader="Cloth" GenMask="268468496" SurfaceType="mat_kevlar" Diffuse="0.30000001,0.30000001,0.30000001" Specular="6.5,6.5,6.5" Emissive="0,0,0" Shininess="1" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="objects/characters/human/us/nanosuit/nanosuit_us.tif" Filter="7">
      <TexMod />
@@ -39,9 +39,6 @@
      <TexMod />
     </Texture>
     <Texture Map="Normalmap" File="objects/characters/human/us/nanosuit/nanosuit_us_ddn.tif" Filter="7" Amount="50">
-     <TexMod />
-    </Texture>
-    <Texture Map="Environment" File="textures/cubemaps/camera_river_cubemap_bright.dds">
      <TexMod />
     </Texture>
    </Textures>

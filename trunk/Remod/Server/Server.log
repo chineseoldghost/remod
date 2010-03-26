@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(25 Mar 2010) Time(17 35 25)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(26 Mar 2010) Time(20 09 43)"  -- used by backup system
  
-Log Started at Thursday, March 25, 2010 17:35:25
+Log Started at Friday, March 26, 2010 20:09:43
 Running 32 bit version
 Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.273141 MHz
+CPU Speed (estimated): 1997.286764 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1996.946215 MHz
+CPU Speed (estimated): 1997.285058 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -40,8 +40,8 @@ System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 17:35:25 03/25/10, system running for 366 minutes
-1521MB physical memory installed, 995MB available, 2047MB virtual memory installed, 34 percent of memory in use
+Local time is 20:09:43 03/26/10, system running for 547 minutes
+1521MB physical memory installed, 525MB available, 2047MB virtual memory installed, 65 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
@@ -94,533 +94,1090 @@ Initializing AI System
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
     $3sv_gamerules = $6TeamInstantAction $5[]$4
-[net 16:35:26.508] network hostname: iMac7
-[net 16:35:26.524]   ip:192.168.0.192
-[net 16:35:26.524]   ip:5.182.209.7
+[net 19:09:44.476] network hostname: iMac7
+[net 19:09:44.479]   ip:192.168.0.192
+[net 19:09:44.479]   ip:5.182.209.7
 -----------------------------------------------------
-*LOADING: Level multiplayer/ia/outpost loading time: 2.90 seconds
------------------------------------------------------
-    $3sv_gamerules = $6Mesa $5[]$4
-    $3sv_gamerules = $6PowerStruggle $5[]$4
------------------------------------------------------
-*LOADING: Level multiplayer/ps/Mesa loading time: 12.85 seconds
+*LOADING: Level multiplayer/ia/outpost loading time: 4.15 seconds
 -----------------------------------------------------
 CHAT Blablah to ALL:
-   G'day sir!
-CHAT Blablah to ALL:
-   Loaded mesa because i changed some texs
-CHAT [PW]i59 to ALL:
-   G'day
-CHAT [PW]i59 to ALL:
-   ye
-CHAT Blablah to ALL:
-   cap the E4 bunker
-CHAT [PW]i59 to ALL:
-   hmm
-CHAT [PW]i59 to ALL:
-   vehicle's turn slowly
-CHAT Blablah to ALL:
-   i know
-CHAT Blablah to ALL:
-   i'm gonna turn it up a little
-CHAT [PW]i59 to ALL:
-   yeah
-CHAT [PW]i59 to ALL:
-   lul
-CHAT Blablah to ALL:
-   This is not the E4 bunker :P
-CHAT Blablah to ALL:
-   Don't cap it
-CHAT Blablah to ALL:
-   Cap E4
-CHAT [PW]i59 to ALL:
-   :(/s
-CHAT Blablah to ALL:
-   So we each have one
-CHAT [PW]i59 to ALL:
-   ye
-CHAT Blablah to ALL:
-   you me or me you?
-CHAT [PW]i59 to ALL:
-   lol wait
-CHAT [PW]i59 to ALL:
-   I forgot to buy weps lolz
-CHAT Blablah to ALL:
-   just pancho me
-    $3g_revivetime = $60 $5[]$4
-CHAT [PW]i59 to ALL:
-   wtf
-CHAT [PW]i59 to ALL:
-   I wanted your SCAR :(
-CHAT Blablah to ALL:
-   oh$
-CHAT Blablah to ALL:
-   lol
-CHAT Blablah to ALL:
-   do you need weapons?
-CHAT [PW]i59 to ALL:
-   YEX)
-CHAT [PW]i59 to ALL:
-   *ye
-CHAT Blablah to ALL:
-   won't it work otherwise?
-CHAT [PW]i59 to ALL:
-   BOOM 
-CHAT [PW]i59 to ALL:
-   dickshot
-CHAT Blablah to ALL:
-   DONT CAP MAH BUNKAR
-CHAT [PW]i59 to ALL:
-   lul
-CHAT Blablah to ALL:
-   oh one sec
-CHAT Blablah to ALL:
-   cloak
-CHAT [PW]i59 to ALL:
-   lol
-CHAT [PW]i59 to ALL:
-   cloak done
-CHAT Blablah to ALL:
-   faggot let me hear the cloak sound
-CHAT [PW]i59 to ALL:
-   x)
-CHAT Blablah to ALL:
-   is good
-CHAT [PW]i59 to ALL:
-   :D
-CHAT Blablah to ALL:
-   listen
-CHAT [PW]i59 to ALL:
-   lemme hear
-CHAT [PW]i59 to ALL:
-   nice
-CHAT Blablah to ALL:
-   the range is only 10m
-CHAT [PW]i59 to ALL:
-   yeah
-CHAT Blablah to ALL:
-   i might turn it up to 15
-CHAT [PW]i59 to ALL:
-   lol
-CHAT [PW]i59 to ALL:
-   didn't spot y
-CHAT Blablah to ALL:
-   also
-CHAT Blablah to ALL:
-   i sharpened these textures
-CHAT [PW]i59 to ALL:
-   which
-CHAT [PW]i59 to ALL:
-   pipe?
-CHAT Blablah to ALL:
-   pretty much all of the terrain textures on mesa, lol
-CHAT Blablah to ALL:
-   they aren't many
-CHAT [PW]i59 to ALL:
-   oh
-CHAT [PW]i59 to ALL:
-   yeah
-CHAT [PW]i59 to ALL:
-   reuse
-CHAT [PW]i59 to ALL:
-   wtf
-CHAT [PW]i59 to ALL:
-   lol
-CHAT [PW]i59 to ALL:
-   oooh
-CHAT [PW]i59 to ALL:
-   5 kills
-CHAT [PW]i59 to ALL:
-   brb, checking log
+   what's to test?
+CHAT Nomad to ALL:
+   5 kill thing again
 CHAT Blablah to ALL:
    k
 CHAT Blablah to ALL:
-   and?
+   :D
+CHAT Nomad to ALL:
+   :D
 CHAT Blablah to ALL:
-   i need to
-CHAT Blablah to ALL:
-   replace MMG with CryNet
-CHAT [PW]i59 to ALL:
-   yeah
-CHAT [PW]i59 to ALL:
-   I can do that for ya
-CHAT Blablah to ALL:
-   everywhere, lol
-CHAT Blablah to ALL:
-   nah it's ok
-CHAT [PW]i59 to ALL:
-   after this
-CHAT [PW]i59 to ALL:
-   nah, I'm bored I can do it :D
-CHAT Blablah to ALL:
-   negative sir!
-CHAT [PW]i59 to ALL:
-   I got a Crynet systems logo here
-CHAT [PW]i59 to ALL:
-   :(
-CHAT [PW]i59 to ALL:
-   BITCH!
-CHAT [PW]i59 to ALL:
-   *runs*
-CHAT Blablah to ALL:
-   yeah and i know who you got it from :P
-CHAT [PW]i59 to ALL:
-   who?
-CHAT [PW]i59 to ALL:
-   I made it lol
-CHAT Blablah to ALL:
-   you remade it?
-CHAT [PW]i59 to ALL:
-   yep
-CHAT Blablah to ALL:
-   really? lol
-CHAT [PW]i59 to ALL:
-   yep
-CHAT Blablah to ALL:
-   that's silly :P
-CHAT [PW]i59 to ALL:
-   I made it with vectors
-CHAT Blablah to ALL:
-   i figured
-CHAT [PW]i59 to ALL:
-   bwhahahah
-CHAT Blablah to ALL:
-   i extracted mine from the PDFs
-CHAT [PW]i59 to ALL:
-   well, not remade it
-CHAT [PW]i59 to ALL:
-   I took it from the Crynetsystems site
-CHAT Blablah to ALL:
-   lol
-CHAT [PW]i59 to ALL:
-   and vectored it
-CHAT Blablah to ALL:
-   i posted a "whole" pack with CryNet and N2 logos
-CHAT [PW]i59 to ALL:
-   lol
-CHAT [PW]i59 to ALL:
-   bwhahahahahahahah
-CHAT [PW]i59 to ALL:
-   *evil laughter
-CHAT Blablah to ALL:
-   so anyway
-CHAT Blablah to ALL:
-   any luck with your stuff?
-CHAT [PW]i59 to ALL:
-   achievements?
-CHAT Blablah to ALL:
-   yeah
-CHAT [PW]i59 to ALL:
-   don't think so
-CHAT Blablah to ALL:
-   strange
-CHAT [PW]i59 to ALL:
-   yeah
-CHAT [PW]i59 to ALL:
-   wtf bug
-CHAT [PW]i59 to ALL:
-   bwhahahahah
-CHAT [PW]i59 to ALL:
-   oh shit
-CHAT [PW]i59 to ALL:
-   you're making one two, aren't you? :/
-CHAT Blablah to ALL:
-   ?
-CHAT [PW]i59 to ALL:
-   *too
-CHAT Blablah to ALL:
-   of what?
-CHAT [PW]i59 to ALL:
-   well, VTOL bug
-CHAT [PW]i59 to ALL:
-   buy a VTOL
-CHAT Blablah to ALL:
-   what's bugged about it?
-CHAT [PW]i59 to ALL:
-   buy one and see :P
-CHAT Blablah to ALL:
-   nono tell me
-CHAT [PW]i59 to ALL:
-   it's hard to... explain
-CHAT Blablah to ALL:
-   not going sideways? no ammo?
-CHAT [PW]i59 to ALL:
-   no ammo O.o
-CHAT [PW]i59 to ALL:
-   noticed that now
-CHAT Blablah to ALL:
+   ffs
+CHAT Nomad to ALL:
+   wtf
+CHAT Nomad to ALL:
    lol
 CHAT Blablah to ALL:
-   what bug though?
-CHAT [PW]i59 to ALL:
-   wait
-CHAT [PW]i59 to ALL:
-   can you enter it?
+   AAARGH
 CHAT Blablah to ALL:
-   no
-CHAT [PW]i59 to ALL:
-   or is it locked to team
+   keeps hitting the bag
+CHAT Nomad to ALL:
+   x)
+CHAT Nomad to ALL:
+   phail
 CHAT Blablah to ALL:
-   locked
-CHAT [PW]i59 to ALL:
-   wtf btw
-CHAT [PW]i59 to ALL:
-   come
+   again...
 CHAT Blablah to ALL:
-   getting PP
+   jesus that hurt
 CHAT Blablah to ALL:
-   i refuse to make everything free
-CHAT [PW]i59 to ALL:
-   kk
-CHAT [PW]i59 to ALL:
-   wtf o.o
-CHAT [PW]i59 to ALL:
-   omg
+   18hp
+CHAT Nomad to ALL:
+   x)
+CHAT Nomad to ALL:
+   I missed :(
+CHAT Nomad to ALL:
+   BRING IT ON!
+CGameRules::OnKill | Local player is not shooter
 CHAT Blablah to ALL:
-   k, what's bugged?
+   fuck, looping ay sound
+CHAT Nomad to ALL:
+   :/
 CHAT Blablah to ALL:
-   LOL
-CHAT [PW]i59 to ALL:
-   -.-
-CHAT [PW]i59 to ALL:
-   you see? xx)
+   fixeds
+CHAT Nomad to ALL:
+   Did Crytek remove the ability to change your nick while playing?
 CHAT Blablah to ALL:
-   no, seems fine
-CHAT [PW]i59 to ALL:
-   press F1
-CHAT [PW]i59 to ALL:
-   a couple of times
-CHAT Blablah to ALL:
-   that's not a bug
-CHAT [PW]i59 to ALL:
-   it's not? O.o
-CHAT Blablah to ALL:
-   that's an experiment :P
-CHAT Blablah to ALL:
-   it's not no
-CHAT [PW]i59 to ALL:
-   lol
-CHAT Blablah to ALL:
-   it's for parking
-CHAT Blablah to ALL:
-   makes it easier to park
-CHAT [PW]i59 to ALL:
-   heh
-CHAT [PW]i59 to ALL:
-   why no ammo :(
-CHAT Blablah to ALL:
-   it's transport now
-CHAT [PW]i59 to ALL:
+   yes
+CHAT Nomad to ALL:
    :(
 CHAT Blablah to ALL:
-   there's this
+   i tried unlocking the name command but it caused crashes
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   bah
+CHAT Nomad to ALL:
+   RAWR
 CHAT Blablah to ALL:
-   except i got rid of it, nevermind
-CHAT [PW]i59 to ALL:
-   come
+   deerrr
 CHAT Blablah to ALL:
-   take it
-CHAT [PW]i59 to ALL:
-   x)
-CHAT [PW]i59 to ALL:
-   thought it was a bomb
+   i lowered jumpheight by .1
 CHAT Blablah to ALL:
-   LOL
-CHAT [PW]i59 to ALL:
-   it was necessary
+   did you notice?
+CHAT Nomad to ALL:
+   nope
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   lol
+CHAT Nomad to ALL:
+   ambush!
 CHAT Blablah to ALL:
-   I SABOTAGED your VTOL :D
-CHAT [PW]i59 to ALL:
-   yO.oooooo
-CHAT Blablah to ALL:
-   you can more or less find people with binocs now
-CHAT Blablah to ALL:
-   because of the beep
-CHAT [PW]i59 to ALL:
-   beep?
-CHAT [PW]i59 to ALL:
-   oh
-CHAT [PW]i59 to ALL:
-   ye
-CHAT [PW]i59 to ALL:
-   omfg LAG
-CHAT Blablah to ALL:
-   so
-CHAT Blablah to ALL:
-   any ideas for a forest map?
-CHAT [PW]i59 to ALL:
-   yeah :D
-CHAT [PW]i59 to ALL:
-   wait
-CHAT [PW]i59 to ALL:
-   omg laggg'
-CHAT Blablah to ALL:
-   not me
-CHAT Blablah to ALL:
-   whoa
-CHAT Blablah to ALL:
-   what happened there?! LOL
-CHAT Blablah to ALL:
-   have your AYs back
-CHAT Blablah to ALL:
-   omg
-CHAT Blablah to ALL:
-   nice nade
-CHAT [PW]i59 to ALL:
-   :P
-CHAT [PW]i59 to ALL:
-   WHY DOES IT LAG?!
-CHAT Blablah to ALL:
-   idk it's fine for me
-CHAT Blablah to ALL:
-   OH FUCK
-CHAT Blablah to ALL:
-   NICE
-CHAT [PW]i59 to ALL:
-   X)
-CHAT [PW]i59 to ALL:
-   darn it
-CHAT [PW]i59 to ALL:
-   x)
-CHAT [PW]i59 to ALL:
-   I lost you
-CHAT Blablah to ALL:
-   :P
-CHAT Blablah to ALL:
-   we should do a gamemode that's fun in 1v1
-CHAT [PW]i59 to ALL:
-   yeah
-CHAT [PW]i59 to ALL:
-   Think of something
-CHAT Blablah to ALL:
-   i will
-CHAT Blablah to ALL:
-   not a priority tho :P
-CHAT [PW]i59 to ALL:
-   You can take my bunker if you want
-CHAT [PW]i59 to ALL:
-   :P
-CHAT [PW]i59 to ALL:
-   FUCK
-CHAT Blablah to ALL:
-   :P
-CHAT [PW]i59 to ALL:
-   WTF
-CHAT Blablah to ALL:
-   ?
-CHAT [PW]i59 to ALL:
-   -.-
-CHAT Blablah to ALL:
-   FREEZE
-CHAT Blablah to ALL:
-   I SAID FREEZE MOTHERFUCKA D:
-CHAT [PW]i59 to ALL:
-   omg
-CHAT [PW]i59 to ALL:
-   so... laggy
-CHAT Blablah to ALL:
-   oh graphics laga gain
-CHAT Blablah to ALL:
-   is it only in remod?
-CHAT [PW]i59 to ALL:
-   yeah
-CHAT Blablah to ALL:
-   really?
-CHAT [PW]i59 to ALL:
-   I think
-CHAT [PW]i59 to ALL:
-   I don't play games that muchw
-CHAT Blablah to ALL:
-   how about warhead?
-CHAT [PW]i59 to ALL:
-   not anymore
-CHAT [PW]i59 to ALL:
-   I'll play wars later
-CHAT [PW]i59 to ALL:
-   BAH WHERE?!
-CHAT [PW]i59 to ALL:
-   OMFG
-CHAT Blablah to ALL:
-   ?
-CHAT [PW]i59 to ALL:
-   WHERE x)
-CHAT Blablah to ALL:
-   look on your minimap
-CHAT Blablah to ALL:
-   yeah
-CHAT Blablah to ALL:
-   a predator mode
-CHAT [PW]i59 to ALL:
-   wut?
-CHAT Blablah to ALL:
-   DAMN
-CHAT Blablah to ALL:
-   nice
-CHAT [PW]i59 to ALL:
-   ;)
-CHAT Blablah to ALL:
-   LOL
-CHAT Blablah to ALL:
-   holy shit dude
-CHAT [PW]i59 to ALL:
-   is it lag or is it that way?
-CHAT Blablah to ALL:
-   that was geniusly nice
-CHAT Blablah to ALL:
-   it should be smooth
-CHAT [PW]i59 to ALL:
-   why does it wait like 2 sec before shooting?
-CHAT Blablah to ALL:
-   oh
-CHAT [PW]i59 to ALL:
-   *punching
-CHAT Blablah to ALL:
-   is it because you're trying to fire before you stop sprinting?
-CHAT [PW]i59 to ALL:
-   ohhh
-CHAT Blablah to ALL:
-   wait no
-CHAT Blablah to ALL:
-   you can punch while sprinting
-CHAT [PW]i59 to ALL:
-   DAMN
-CHAT [PW]i59 to ALL:
-   x)
-CHAT Blablah to ALL:
-   but no
+   i need to make things feel more futuristic :D
 CHAT Blablah to ALL:
    but
 CHAT Blablah to ALL:
-   it isn't graphical lag?
-CHAT [PW]i59 to ALL:
-   u
-CHAT [PW]i59 to ALL:
-   not sure
+   don't worry about that
+CHAT Nomad to ALL:
+   true
+CHAT Nomad to ALL:
+   how?
 CHAT Blablah to ALL:
-   lol?
+   i'll see
 CHAT Blablah to ALL:
-   what kinda lag is it?
-CHAT [PW]i59 to ALL:
-   ... lockup lag
-CHAT [PW]i59 to ALL:
-   it locks upw
+   i need a clear vision of it
+CHAT Blablah to ALL:
+   i used to have those
+CHAT Nomad to ALL:
+   should be futuristic equipment available
+CHAT Blablah to ALL:
+   but once they faded
+CHAT Blablah to ALL:
+   i stopped executing them
+CHAT Nomad to ALL:
+   what faded?
+CHAT Blablah to ALL:
+   my vision of what i wanted
+CHAT Blablah to ALL:
+   my idea
+CHAT Nomad to ALL:
+   oh
+CHAT Blablah to ALL:
+   idea is a better word
+CHAT Nomad to ALL:
+   yeah
+CHAT Blablah to ALL:
+   i used to have the clearest ideas of things and knew exactly how to exe
+CHAT Blablah to ALL:
+   cute it
+CHAT Blablah to ALL:
+   but then
+CHAT Nomad to ALL:
+   bahz
+CGameRules::OnKill | Local player is not shooter
+CHAT Blablah to ALL:
+   my headphone cable budged a bit
+CHAT Blablah to ALL:
+   and it caused the sound to drop
+CHAT Blablah to ALL:
+   xD
+CHAT Nomad to ALL:
+   :/
+CHAT Blablah to ALL:
+   i was like WTF when everything suddenly went silen
+CHAT Blablah to ALL:
+   anyway
+CHAT Blablah to ALL:
+   what i was saying
+CHAT Blablah to ALL:
+   is so i focused on getting things done
+CHAT Blablah to ALL:
+   and now i lack the idea
+CHAT Nomad to ALL:
+   well
+CHAT Nomad to ALL:
+   Crysis was strangely designed
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   very futuristic
+CHAT Nomad to ALL:
+   stuff
+CHAT Nomad to ALL:
+   *weps
+CHAT Nomad to ALL:
+   but everything else is just boring
+CHAT Nomad to ALL:
+   no feeling in it
+CHAT Blablah to Team tan:
+   yeah, it's a lot easier when starting from scratch
+CHAT Blablah to ALL:
+   LOL
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   wtf
+CHAT Nomad to ALL:
+   did I sit down?
+CHAT Blablah to ALL:
+   you were prone IIRC
+CHAT Nomad to ALL:
+   strange
+CHAT Nomad to ALL:
+   it refused to show that to me x)
+CHAT Nomad to ALL:
+   I was standing :/
+CHAT Blablah to ALL:
+   oh :/
+CHAT Blablah to ALL:
+   PAIN
+CHAT Blablah to ALL:
+   lol
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   lawl
+CHAT Blablah to ALL:
+   damn, yeah i was trapped there
+CHAT Nomad to ALL:
+   heh
+CHAT Blablah to ALL:
+   ouch
+CHAT Blablah to ALL:
+   is that narrow shot?
+CHAT Nomad to ALL:
+   yep
+CHAT Blablah to ALL:
+   it does exactly 50 damage apparently
+CHAT Nomad to ALL:
+   really?
+CHAT Nomad to ALL:
+   from that far? O.o
+CHAT Blablah to ALL:
+   yeah it's supposed to
+CHAT Nomad to ALL:
+   awesome
+CHAT Blablah to ALL:
+   old thing
+CHAT Blablah to ALL:
+   but supposed to add variety
+CHAT Nomad to ALL:
+   ye
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   like 51 dmg
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   dang
+CHAT Blablah to ALL:
+   what i want with the headbob
+CHAT Blablah to ALL:
+   i want it vertical instead of horizontal, lol
+CHAT Blablah to ALL:
+   probably just a value change
+CHAT Nomad to ALL:
+   ffs x)))))
+CHAT Blablah to ALL:
+   i've looked loads at the code
+CHAT Nomad to ALL:
+   yeah
+CHAT Nomad to ALL:
+   I think it's there
+CHAT Nomad to ALL:
+   but disabled
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   -.-
+CHAT Blablah to ALL:
+   close one
+CHAT Nomad to ALL:
+   close one
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   damn it
+CHAT Nomad to ALL:
+   keep losing u
+CHAT Blablah to ALL:
+   woop :P
+CHAT Blablah to ALL:
+   lolol
+CHAT Nomad to ALL:
+   nice run, huh? :P
+CHAT Blablah to ALL:
+   yeah :P
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   BAHZ
+CHAT Blablah to ALL:
+   oh btw
+CHAT Blablah to ALL:
+   i have console messages
+CHAT Nomad to ALL:
+   when you kill, what does it say?
+CHAT Blablah to ALL:
+   CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   fuck
+CHAT Nomad to ALL:
+   can't seem to find a LocalPlayer() function
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   omfg
+CHAT Blablah to ALL:
+   that's funny
+CHAT Blablah to ALL:
+   there's a console command
+CHAT Blablah to ALL:
+   that puts a gigantic name over your head xD
+CHAT Nomad to ALL:
+   lol wut?
+CHAT Nomad to ALL:
+   what's it called x9
+CHAT Blablah to ALL:
+   p_profile
+CHAT Blablah to ALL:
+   don't shoot
+CHAT Nomad to ALL:
+   :/ ?
+CHAT Blablah to ALL:
+   idk
+CHAT Blablah to ALL:
+   p_profile_entities 1
+CHAT Nomad to ALL:
+   oh shit
+CHAT Blablah to ALL:
+   ?
+CHAT Nomad to ALL:
+   p_profile_functions is awesome
+CHAT Blablah to ALL:
+   :P
+CHAT Nomad to ALL:
+   epic debug
+CHAT Blablah to ALL:
+   yhere are EPIC debug commands, you know
+CHAT Blablah to ALL:
+   lots of em
+CHAT Nomad to ALL:
+   but that one....
+CHAT Nomad to ALL:
+   can solve all my problems
+CHAT Blablah to ALL:
+   it can?
+CHAT Nomad to ALL:
+   lol that's cool
+CHAT Nomad to ALL:
+   wait
+CHAT Nomad to ALL:
+   stay
+CHAT Blablah to ALL:
+   k
+CHAT Nomad to ALL:
+   plz don't die x)
+CHAT Nomad to ALL:
+   oh that's cool
+CHAT Nomad to ALL:
+   bigass name
+CHAT Blablah to ALL:
+   lol
+CHAT Nomad to ALL:
+   noscope!
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   :/
+CHAT Blablah to ALL:
+   me too!
+CHAT Nomad to ALL:
+   sniperfight :D
+CHAT Blablah to ALL:
+   lies
+CHAT Nomad to ALL:
+   throw me a sniper
+CHAT Nomad to ALL:
+   omfg
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   :(
+CHAT Blablah to ALL:
+   sorry
+CHAT Blablah to ALL:
+   think you can disable sideways sprinting?
+CHAT Nomad to ALL:
+   nope
+CHAT Blablah to ALL:
+   you can't? xD
+CHAT Nomad to ALL:
+   how to change to EMP?
+CHAT Blablah to ALL:
+   modify your gun
+CHAT Nomad to ALL:
+   Don't thinkso
+CHAT Blablah to ALL:
+   how come not?
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   lol
+CHAT Blablah to ALL:
+   IT'S SO TEMPTING
+CHAT Nomad to ALL:
+   or wait, I think I cna
+CHAT Blablah to ALL:
+   can't you disable the actions when you start
+CHAT Nomad to ALL:
+   but I don't want too :(
+CHAT Blablah to ALL:
+   why not?
+CHAT Nomad to ALL:
+   I do it all the time x9
+CHAT Nomad to ALL:
+   omfg
+CHAT Blablah to ALL:
+   C4?
+CHAT Nomad to ALL:
+   stealer!
+CHAT Blablah to ALL:
+   lmao
+CGameRules::OnKill | Local player is not shooter
+CHAT Blablah to ALL:
+   PISS
+CHAT Blablah to ALL:
+   MEDIC!
+CHAT Blablah to ALL:
+   MEDIC!
+CGameRules::OnKill | Local player is not shooter
+CHAT Blablah to ALL:
+   NO! IS NOT POSSIBLE!
+CHAT Nomad to ALL:
+   lol wut
+CGameRules::OnKill | Local player is not shooter
+CHAT Blablah to ALL:
+   ffs :P
+CHAT Nomad to ALL:
+   lol
+CHAT Blablah to ALL:
+   did you ever fix the slowmo btw?
+CHAT Nomad to ALL:
+   dunno
+CHAT Nomad to ALL:
+   try it
+    $3re_slowmo = $60 $5[]$4
+CHAT Blablah to ALL:
+   nope
+CHAT Nomad to ALL:
+   dang
+    $3re_slowmo = $60 $5[]$4
+CHAT Nomad to ALL:
+   gotta fix it
+CHAT Nomad to ALL:
+   LOOOL
+CHAT Nomad to ALL:
+   your name over your head won't disappear
+CHAT Blablah to ALL:
+   ?
+CHAT Blablah to ALL:
+   LOL
+CHAT Blablah to ALL:
+   god that's gay
+CHAT Blablah to ALL:
+   let's not tell anyone
+CHAT Nomad to ALL:
+   nope
+CHAT Blablah to ALL:
+   or set the command as a cheat :P
+CHAT Nomad to ALL:
+   yeah I will x)
+CHAT Nomad to ALL:
+   I have a dsudden earge to go play Wars
+CHAT Nomad to ALL:
+   with this x)
+CHAT Blablah to ALL:
+   lmao
+CHAT Nomad to ALL:
+   x)
+CHAT Blablah to ALL:
+   can you see it everywhere?
+CHAT Nomad to ALL:
+   no, gotta point at you
 CHAT Blablah to ALL:
    ah
 CHAT Blablah to ALL:
-   it's fine for me :|
-CHAT [PW]i59 to ALL:
-   :/w
-CHAT [PW]i59 to ALL:
-   I'll see
+   near me?
+CHAT Nomad to ALL:
+   wtf
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   DAMN
 CHAT Blablah to ALL:
-   try wars
-CHAT [PW]i59 to ALL:
-   my PC has become slower
+   lolragdolls
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   omfg
+CHAT Nomad to ALL:
+   YOU SCARED ME!
 CHAT Blablah to ALL:
-   what's your fps like?
-CHAT [PW]i59 to ALL:
+   random shot
+CHAT Blablah to ALL:
+   lmao
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   bah
+CHAT Blablah to ALL:
+   1 boolet left
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   omfg
+CHAT Nomad to ALL:
+   no ammo x)
+CHAT Blablah to ALL:
+   14hp, lol
+CHAT Nomad to ALL:
+   oooh
+CHAT Nomad to ALL:
+   Gonna try somethin'
+CHAT Nomad to ALL:
+   don't shoot
+CHAT Blablah to ALL:
+   ?
+CHAT Blablah to ALL:
+   k
+CHAT Nomad to ALL:
+   wait
+CHAT Nomad to ALL:
+   hmm
+CHAT Nomad to ALL:
+   it disappeared
+CHAT Blablah to ALL:
+   the name?
+CHAT Nomad to ALL:
+   yep
+CHAT Nomad to ALL:
+   so, let's plai!
+CHAT Blablah to ALL:
+   wait
+CHAT Blablah to ALL:
+   nonononoo
+CHAT Blablah to ALL:
+   let me see
+CHAT Blablah to ALL:
+   i turned HDR on
+CHAT Nomad to ALL:
+   see wut?
+CHAT Blablah to ALL:
+   how do you jump up there :|
+CHAT Nomad to ALL:
+   strength
+CHAT Nomad to ALL:
    lol
-[net 17:09:42.977] Disconnect iMac7.telenet.be:63918; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:63918'
-CHAT [PW]i59 to ALL:
+CHAT Nomad to ALL:
+   run forward and jump
+CHAT Blablah to ALL:
+   not high enough
+CHAT Nomad to ALL:
+   press forward it
+CHAT Nomad to ALL:
+   don't let go
+CHAT Blablah to ALL:
+   i don't, lol
+CHAT Nomad to ALL:
+   it's a bug in the physics
+CHAT Blablah to ALL:
+   you mean sliding up it?
+CHAT Nomad to ALL:
+   lawl
+CHAT Nomad to ALL:
+   yep
+CHAT Nomad to ALL:
+   omfg
+CHAT Blablah to ALL:
+   but i'm not going high enough
+CHAT Blablah to ALL:
+   anyway let me see your suit
+CHAT Nomad to ALL:
+   bah
+CHAT Blablah to ALL:
+   oh, phone
+CHAT Blablah to ALL:
+   brb
+CHAT Nomad to ALL:
+   lol
+CHAT Nomad to ALL:
+   honey <3
+CHAT Nomad to ALL:
+   sry :(
+CHAT Nomad to ALL:
+   don't kill him
+CHAT [PW]Dempere02 to ALL:
+   yeah...
+CHAT Nomad to ALL:
+   jump up here
+CHAT Nomad to ALL:
+   not that way :P
+CHAT Nomad to ALL:
+   from the bottom x)
+CHAT [PW]Dempere02 to ALL:
+   ass
+CHAT Nomad to ALL:
+   without hopping onto things x)
+CHAT Nomad to ALL:
+   come
+CHAT Nomad to ALL:
+   try :D
+CHAT Nomad to ALL:
+   it's cool
+CHAT Nomad to ALL:
+   physics bug
+CHAT [PW]Dempere02 to ALL:
+   yeah.. to bad I cant do it
+CHAT Nomad to ALL:
+   don't jump like that
+CHAT Nomad to ALL:
+   you gotta jump so that you don't touch it with your hands
+CHAT Nomad to ALL:
+   your hands gotta be above the container before you touch it
+CHAT Nomad to ALL:
+   darn
+CHAT Nomad to ALL:
+   jump from here
+CHAT Nomad to ALL:
+   :D
+CHAT Nomad to ALL:
+   :D
+CHAT Nomad to ALL:
+   :D:D:D
+CHAT Nomad to ALL:
+   lol cool
+CHAT Nomad to ALL:
+   if I land on him, I don't take damage
+CHAT Nomad to ALL:
+   lawl
+CHAT Nomad to ALL:
+   :(
+CHAT Nomad to ALL:
+   let's move him :D
+CHAT Nomad to ALL:
+   :D
+CHAT Nomad to ALL:
+   footbal!
+CHAT [PW]Dempere02 to ALL:
+   lawl
+CHAT Nomad to ALL:
+   lawl
+CHAT Nomad to ALL:
+   where'd he go x)
+CHAT Nomad to ALL:
+   come :D
+CHAT Nomad to ALL:
+   omfg
+CHAT Nomad to ALL:
+   bwhahah
+CHAT Nomad to ALL:
+   leave him :D
+CHAT Nomad to ALL:
+   random spot x)
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   :(
+CHAT [PW]Dempere02 to ALL:
+   lawl
+CHAT Nomad to ALL:
+   :D
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   x)
+CHAT [PW]Dempere02 to ALL:
+   woah 10 HP
+CHAT Nomad to ALL:
+   lol
+CGameRules::OnKill | Local player is shooter
+CHAT Nomad to ALL:
+   lawllll
+CHAT Blablah to ALL:
+   okay
+CHAT [PW]Dempere02 to ALL:
+   lol
+CHAT Nomad to ALL:
+   lol
+CHAT Blablah to ALL:
+   that was a lengthy call with the sister of my grandpa or something
+CHAT Blablah to ALL:
+   she's nice
+CHAT [PW]Dempere02 to ALL:
+   lol
+CHAT Nomad to ALL:
    :/
+CHAT Blablah to ALL:
+   WHOA
+CHAT Nomad to ALL:
+   :D
+CHAT [PW]Dempere02 to ALL:
+   yo wazzua
+CHAT Blablah to ALL:
+   DONT TOUCH ME
+CHAT Nomad to ALL:
+   wazzzahhh
+CHAT Nomad to ALL:
+   x)
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   FREEZE!
+CHAT Nomad to ALL:
+   LOL
+CHAT [PW]Dempere02 to ALL:
+   LOOOOOOL
+CHAT Blablah to ALL:
+   sorry.
+CHAT Nomad to ALL:
+   you don't wanna ask how you got there?
+CHAT Blablah to ALL:
+   whoa
+CHAT Nomad to ALL:
+   we played football with your body.
+CHAT Blablah to ALL:
+   pushed?
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   yep
+CHAT [PW]Dempere02 to ALL:
+   yeah
+CHAT Blablah to ALL:
+   lolol
+CHAT [PW]Dempere02 to ALL:
+   wdn we jumped onto it
+CHAT Nomad to ALL:
+   come
+CHAT [PW]Dempere02 to ALL:
+   and we cummed over it
+CHAT Nomad to ALL:
+   jump training
+CHAT Nomad to ALL:
+   come on!
+CHAT Nomad to ALL:
+   blablahhhh
+CHAT Nomad to ALL:
+   blaaaaaah
+CHAT [PW]Dempere02 to ALL:
+   owned
+CHAT Nomad to ALL:
+   :(
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   lawl
+CHAT [PW]Dempere02 to ALL:
+   lol
+CHAT [PW]Dempere02 to ALL:
+   you hit first
+CHAT Nomad to ALL:
+   :D
+CHAT [PW]Dempere02 to ALL:
+   king of tha hill
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   x)
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   LOOL
+CHAT [PW]Dempere02 to ALL:
+   NOEZ
+CGameRules::OnKill | Local player is not shooter
+CHAT [PW]Dempere02 to ALL:
+   king of tha hill retard
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   :(
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   x)
+CHAT [PW]Dempere02 to ALL:
+   stop it :/
+CGameRules::OnKill | Local player is not shooter
+CHAT [PW]Dempere02 to ALL:
+   im leaving :/
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   :D
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   x)
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   x)
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT Blablah to ALL:
+   gomgom is coming
+CHAT Nomad to ALL:
+   come on pusseh!
+CHAT Nomad to ALL:
+   take it
+CHAT Nomad to ALL:
+   loool
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   I saw you :P
+CHAT Nomad to ALL:
+   still see u X)
+CHAT Nomad to ALL:
+   x)
+CHAT Nomad to ALL:
+   still see you :D
+CHAT Nomad to ALL:
+   he's taking the Gauss
+CHAT [PW]Dempere02 to ALL:
+   yeah
+CHAT Blablah to ALL:
+   FAGGOT
+CHAT Blablah to ALL:
+   turn that off :P
+CHAT Nomad to ALL:
+   see him jumping :D
+CHAT Blablah to ALL:
+   restart
+CHAT [PW]Dempere02 to ALL:
+   like a puseeh
+CHAT [PW]Dempere02 to ALL:
+   were is he?
+CHAT Nomad to ALL:
+   tunnels
+CHAT [PW]Dempere02 to ALL:
+   ok
+CHAT [PW]Dempere02 to ALL:
+   we ar THA BIG BROTHA
+CHAT Nomad to ALL:
+   come on...
+CHAT Nomad to Team black:
+   come
+CHAT Nomad to Team black:
+   he's there
+CHAT Nomad to Team black:
+   wait
+CHAT Nomad to Team black:
+   lost him
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   x)
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   x)
+CGameRules::OnKill | Local player is not shooter
+CHAT [PW]Dempere02 to ALL:
+   hax0rz
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   damn it
+CGameRules::OnKill | Local player is not shooter
+CHAT [PW]Dempere02 to ALL:
+   come on :O
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   in tah back
+CHAT gomgom50 to ALL:
+   HAI FAGS!
+CHAT Nomad to Team black:
+   there
+CHAT Nomad to ALL:
+   hai
+CHAT Blablah to ALL:
+   did you fix your stuff i59? :P
+CHAT [PW]Dempere02 to ALL:
+   hay faggie
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT [PW]Dempere02 to ALL:
+   sucka
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT Blablah to ALL:
+   i59
+CHAT Nomad to ALL:
+   that's m
+CHAT Blablah to ALL:
+   are you still seeing names?
+CHAT Nomad to ALL:
+   sometimes
+CHAT Blablah to ALL:
+   go restart your game :P
+CHAT Nomad to ALL:
+   sometimes they stay :P
+CHAT Blablah to ALL:
+   i'm gonna sv_restart
+CHAT Nomad to ALL:
+   no wait
+CHAT Nomad to ALL:
+   I'll turn it off
+CHAT Blablah to ALL:
+   but you can't?
+CHAT [PW]Dempere02 to ALL:
+   the wallhack?
+CHAT Nomad to ALL:
+   so. off
+CHAT Blablah to ALL:
+   really?
+CHAT Nomad to ALL:
+   just turned off the CVar lol
+CHAT [PW]Dempere02 to ALL:
+   u gotta gimme taht thing
+CHAT Nomad to ALL:
+   nevah
+CHAT Nomad to ALL:
+   I was humpin' u
+CHAT Nomad to ALL:
+   bend over bitch
+CHAT [PW]Dempere02 to ALL:
+   lawl
+CHAT Nomad to ALL:
+   :P
+CHAT Nomad to ALL:
+   DemP, you gotta do a humping animation
+CHAT [PW]Dempere02 to ALL:
+   no wai
+CHAT Nomad to ALL:
+   :D
+CHAT Nomad to ALL:
+   wai!
+CHAT [PW]Dempere02 to ALL:
+   i cant do full body animations
+CHAT Nomad to ALL:
+   :(
+CHAT [PW]Dempere02 to ALL:
+   I could do a humping weapon tho
+CHAT Nomad to ALL:
+   lol
+CHAT Nomad to ALL:
+   rape stick
+CHAT [PW]Dempere02 to ALL:
+   lol
+CHAT Nomad to Team black:
+   they got FGL
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   damn malfunction
+[Warning] Unknown command: g_hitsoundfeedback 0 
+CHAT Nomad to ALL:
+   oops
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   :D
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   omfg
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to Team black:
+   you get em' girl!
+CHAT [PW]Dempere02 to Team black:
+   where are they?
+CHAT Nomad to ALL:
+   d
+CHAT Nomad to Team black:
+   dunno
+CHAT Nomad to ALL:
+   omfg scary :/
+CHAT [PW]Dempere02 to Team black:
+   attarct their attecntion to where you are
+CHAT [PW]Dempere02 to Team black:
+   I will take them down
+CHAT Nomad to Team black:
+   they're in tunnels
+CHAT Nomad to Team black:
+   don't tell them I know x)
+CHAT Nomad to Team black:
+   coming under me soon
+CHAT Nomad to Team black:
+   both of em'
+CHAT Nomad to Team black:
+   no that tunnel
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   omfg
+CGameRules::OnKill | Local player is not shooter
+CHAT [PW]Dempere02 to Team black:
+   make them get up the tunnel
+CGameRules::OnKill | Local player is not shooter
+CHAT [PW]Dempere02 to Team black:
+   entrance
+CHAT Nomad to Team black:
+   how x)
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   omg
+CHAT gomgom50 to ALL:
+   I SEE FAG
+CGameRules::OnKill | Local player is not shooter
+CHAT [PW]Dempere02 to Team black:
+   stay quit I had him in my crosshairs
+CHAT Nomad to ALL:
+   BAHZ
+CHAT gomgom50 to ALL:
+   poeple
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   omfg no ammo XD
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to Team black:
+   nade' em
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT [PW]Dempere02 to Team black:
+   WMAHHAAHA
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT [PW]Dempere02 to Team black:
+   god tehyre infornt of me
+CHAT Nomad to ALL:
+   omg
+CHAT [PW]Dempere02 to Team black:
+   GTFO
+CGameRules::OnKill | Local player is not shooter
+CHAT [PW]Dempere02 to Team black:
+   HAAHHAHAHA
+CHAT [PW]Dempere02 to ALL:
+   YEAH DUDES FIND THE GUILLIE
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   -.-
+CHAT [PW]Dempere02 to ALL:
+   COCKFAGS
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   nice
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   OGEASDGA
+CHAT Nomad to ALL:
+   fffffffffffffuuuuuuuuuuuuu
+CHAT Blablah to ALL:
+   :D
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   OMFG
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   GDASG
+CGameRules::OnKill | Local player is not shooter
+CHAT [PW]Dempere02 to ALL:
+   DAMN U
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   -.-
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT [PW]Dempere02 to ALL:
+   DIEEEE
+CHAT [PW]Dempere02 to ALL:
+   WIGAZZ
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   flash FFUU
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT gomgom50 to ALL:
+   in ta face
+CHAT Nomad to ALL:
+   IN YA FACEH!
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CHAT Nomad to ALL:
+   noeez
+CHAT [PW]Dempere02 to ALL:
+   WHAT?
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+CGameRules::OnKill | Local player is not shooter
+    $3sv_gamerules = $6TeamInstantAction $5[]$4
+-----------------------------------------------------
+*LOADING: Level multiplayer/ia/outpost loading time: 2.41 seconds
+-----------------------------------------------------
+CHAT [PW]Dempere02 to ALL:
+   im leaving, hav fun
+CHAT Nomad to ALL:
+   metoo
+[net 20:25:32.196] Disconnect x1-6-00-1e-2a-86-ff-ba.k622.webspeed.dk:62224; profid=102228471; cause=19; msg='Remote disconnected: User left the game'
+CHAT Blablah to ALL:
+   i guess we'll all be leaving then
+[net 20:25:38.087] Disconnect iMac7.telenet.be:53935; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:53935'
+[net 20:26:04.830] Disconnect 62.57.103.122.dyn.user.ono.com:61002; profid=89554143; cause=0; msg='Timeout occurred; no packet for 31.7 seconds'
+[net 20:26:06.732] Disconnect c83-251-52-47.bredband.comhem.se:54717; profid=200775439; cause=0; msg='Timeout occurred; no packet for 31.6 seconds'
 System:Quit

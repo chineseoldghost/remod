@@ -286,7 +286,7 @@
   <AI fImpactRadius="5" fImpactSoundRadius="25" fFootStepRadius="15" proneMult="0.2" crouchMult="0.5" movingMult="2.5"/>
  </SurfaceType>
  <SurfaceType name="mat_kevlar">
-  <Physics friction="5" elasticity="-2"  pierceability="5"    />
+  <Physics friction="6" elasticity="0"  pierceability="5"    />
   <BreakageParticles type="freeze_shatter" effect="breakable_objects.shatter.vapor_human" count_per_unit="1" count_scale="1" scale="1"/>
  </SurfaceType>
  <SurfaceType name="mat_ladder">

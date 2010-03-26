@@ -33,7 +33,7 @@ CRocketLauncher::CRocketLauncher()
 	m_smoothLaserLength = -1.0f;
 }
 
-//========================================
+//=====
 void CRocketLauncher::OnReset()
 {
 	if(m_stats.backAttachment==eIBA_Unknown)
@@ -65,7 +65,7 @@ void CRocketLauncher::OnReset()
 	m_listeners.clear();
 }
 
-//=========================================
+//======
 void CRocketLauncher::ProcessEvent(SEntityEvent &event)
 {
 	FUNCTION_PROFILER(gEnv->pSystem, PROFILE_GAME);
@@ -87,7 +87,7 @@ void CRocketLauncher::ProcessEvent(SEntityEvent &event)
 		}
 	}	
 }
-//========================================
+//=====
 bool CRocketLauncher::SetAspectProfile(EEntityAspects aspect, uint8 profile)
 {
 	if(aspect!=eEA_Physics)
@@ -155,7 +155,7 @@ bool CRocketLauncher::SetAspectProfile(EEntityAspects aspect, uint8 profile)
 
 	return false;
 }
-//=======================================
+//====
 void CRocketLauncher::Select(bool select)
 {
 	if(select && m_auxSlotUsed)
@@ -186,7 +186,7 @@ void CRocketLauncher::Select(bool select)
 	}
 }
 
-//========================================
+//=====
 void CRocketLauncher::PickUp(EntityId pickerId, bool sound, bool select, bool keepHistory)
 {
 
@@ -202,7 +202,7 @@ void CRocketLauncher::PickUp(EntityId pickerId, bool sound, bool select, bool ke
 		m_stats.first_selection = false;
 }
 
-//========================================
+//=====
 void CRocketLauncher::FullSerialize(TSerialize ser)
 {
 	CWeapon::FullSerialize(ser);
@@ -224,7 +224,7 @@ void CRocketLauncher::FullSerialize(TSerialize ser)
 	}
 }
 
-//=========================================
+//======
 void CRocketLauncher::PostSerialize()
 {
 	CWeapon::PostSerialize();
@@ -243,7 +243,7 @@ void CRocketLauncher::PostSerialize()
 
 }
 
-//=========================================
+//======
 void CRocketLauncher::ActivateLaserDot(bool activate, bool fp)
 {
 	if(activate)
@@ -271,7 +271,7 @@ void CRocketLauncher::ActivateLaserDot(bool activate, bool fp)
 	}
 }
 
-//=======================================
+//====
 void CRocketLauncher::UpdateFPView(float frameTime)
 {
 	CWeapon::UpdateFPView(frameTime);
@@ -280,7 +280,7 @@ void CRocketLauncher::UpdateFPView(float frameTime)
 		UpdateDotEffect(frameTime);
 }
 
-//=======================================
+//====
 void CRocketLauncher::Update(SEntityUpdateContext& ctx, int slot)
 {
 	FUNCTION_PROFILER(GetISystem(), PROFILE_GAME);
@@ -294,7 +294,7 @@ void CRocketLauncher::Update(SEntityUpdateContext& ctx, int slot)
 	}
 }
 
-//========================================
+//=====
 void CRocketLauncher::Drop(float impulseScale, bool selectNext, bool byDeath)
 {
 	CActor* pOwner = GetOwnerActor();
@@ -326,7 +326,7 @@ void CRocketLauncher::Drop(float impulseScale, bool selectNext, bool byDeath)
 	}
 }
 
-//=========================================
+//======
 bool CRocketLauncher::CanPickUp(EntityId userId) const
 {
 	CActor *pActor = GetActor(userId);
@@ -353,7 +353,7 @@ bool CRocketLauncher::CanPickUp(EntityId userId) const
 	return true;
 		
 }
-//=========================================
+//======
 void CRocketLauncher::UpdateDotEffect(float frameTime)
 {
 
@@ -605,7 +605,7 @@ void CRocketLauncher::UpdateTPLaser(float frameTime)
 
 }
 
-//===============================================
+//=====
 void CRocketLauncher::GetAttachmentsAtHelper(const char *helper, std::vector<string> &rAttachments)
 {
 	//Do nothing...

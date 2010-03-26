@@ -166,10 +166,10 @@ bool GetCirclePassingBy(const Vec3& P, const Vec3& Q, const Vec3& Ptan, Vec3& ce
 }
 
 
-//====================================================================
+//=====
 // IntersectSweptSphere
 // hitPos is optional - may be faster if 0
-//====================================================================
+//=====
 /*
 bool IntersectSweptSphere(Vec3 *hitPos, float& hitDist, const Lineseg& lineseg, float radius,IPhysicalEntity** pSkipEnts=0, int nSkipEnts=0, int additionalFilter = 0)
 {

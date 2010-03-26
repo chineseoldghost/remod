@@ -70,7 +70,7 @@ namespace
 	};
 }
 
-//========================Scheduled offhand actions =======================//
+//===Scheduled offhand actions ==//
 namespace
 {
 	//This class help us to select the correct action
@@ -140,7 +140,7 @@ namespace
 	};
 }
 
-//=====================~Scheduled offhand actions======================//
+//~Scheduled offhand actions=//
 
 TActionHandler<COffHand> COffHand::s_actionHandler;
 
@@ -180,7 +180,7 @@ m_restoreStateAfterLoading(false)
 	RegisterActions();
 }
 
-//=============================================================
+//=====
 COffHand::~COffHand()
 {
 	if(m_heldEntityId)
@@ -200,7 +200,7 @@ COffHand::~COffHand()
 	}
 }
 
-//============================================================
+//====
 void COffHand::RegisterActions()
 {
 	if(s_actionHandler.GetNumHandlers() == 0)
@@ -221,7 +221,7 @@ void COffHand::RegisterActions()
 	#undef ADD_HANDLER
 	}
 }
-//=============================================================
+//=====
 void COffHand::Reset()
 {
 	CWeapon::Reset();
@@ -272,7 +272,7 @@ void COffHand::Reset()
 	}
 }
 
-//=============================================================
+//=====
 void COffHand::PostInit(IGameObject *pGameObject)
 {
 	CWeapon::PostInit(pGameObject);
@@ -283,7 +283,7 @@ void COffHand::PostInit(IGameObject *pGameObject)
 	//EnableUpdate(true,eIUS_General);
 }
 
-//============================================================
+//====
 bool COffHand::ReadItemParams(const IItemParamsNode *root)
 {
 	if (!CWeapon::ReadItemParams(root))
@@ -320,7 +320,7 @@ bool COffHand::ReadItemParams(const IItemParamsNode *root)
 
 	return true;
 }
-//============================================================
+//====
 void COffHand::FullSerialize(TSerialize ser)
 {
 	CWeapon::FullSerialize(ser);
@@ -342,7 +342,7 @@ void COffHand::FullSerialize(TSerialize ser)
 	ser.Value("m_prevMainHandId",m_prevMainHandId);
 	ser.Value("m_holdScale",m_holdScale);
 
-	//PATCH ====================
+	//PATCH ======
 	if(ser.IsReading())
 	{
 		m_mainHandIsDualWield = false;
@@ -350,7 +350,7 @@ void COffHand::FullSerialize(TSerialize ser)
 
 	ser.Value("m_mainHandIsDualWield", m_mainHandIsDualWield);
 
-	//============================
+	//
 
 	if(ser.IsReading() && m_heldEntityId != oldHeldId)
 	{
@@ -370,19 +370,19 @@ void COffHand::FullSerialize(TSerialize ser)
 	}
 }
 
-//============================================================
+//====
 bool COffHand::NetSerialize(TSerialize ser, EEntityAspects aspect, uint8 profile, int flags)
 {
 	return true;
 }
 
-//============================================================
+//====
 void COffHand::PostSerialize()
 {
 	m_restoreStateAfterLoading = true; //Will be cleared on first update
 }
 
-//==========================================================
+//==
 void COffHand::PostPostSerialize()
 {
 	RemoveAllAccessories();
@@ -507,19 +507,19 @@ void COffHand::PostPostSerialize()
 	m_restoreStateAfterLoading = false;
 }
 
-//=============================================================
+//=====
 bool COffHand::CanSelect() const
 {
 	return false;
 }
 
-//=============================================================
+//=====
 void COffHand::Select(bool select)
 {
 	CWeapon::Select(select);
 }
 
-//=============================================================
+//=====
 void COffHand::Update(SEntityUpdateContext &ctx, int slot)
 {
 	FUNCTION_PROFILER( GetISystem(), PROFILE_GAME );
@@ -607,7 +607,7 @@ void COffHand::Update(SEntityUpdateContext &ctx, int slot)
 	}
 }
 
-//=============================================================
+//=====
 void COffHand::UpdateFPView(float frameTime)
 {
 	FUNCTION_PROFILER( GetISystem(), PROFILE_GAME );
@@ -642,7 +642,7 @@ void COffHand::UpdateFPView(float frameTime)
  			SetHand(eIH_Left);					//This will be only done once after loading
 			Select(true);Select(false);
 		}
-		//=========================================================
+		//=
 	}
 	else if(m_heldEntityId && m_currentState&(eOHS_HOLDING_OBJECT|eOHS_PICKING|eOHS_THROWING_OBJECT|eOHS_PICKING_ITEM|eOHS_MELEE))
 	{
@@ -670,7 +670,7 @@ void COffHand::UpdateFPView(float frameTime)
 	}
 }
 
-//============================================================
+//====
 
 void COffHand::UpdateCrosshairUsabilitySP()
 {
@@ -771,7 +771,7 @@ void COffHand::UpdateCrosshairUsabilitySP()
 	}
 }
 
-//==========================================================
+//==
 void COffHand::UpdateCrosshairUsabilityMP()
 {
 	//Only update a few times per second
@@ -875,7 +875,7 @@ void COffHand::UpdateCrosshairUsabilityMP()
 	}
 }
 
-//=============================================================
+//=====
 void COffHand::UpdateHeldObject()
 {
 	IEntity *pEntity=m_pEntitySystem->GetEntity(m_heldEntityId);
@@ -938,7 +938,7 @@ void COffHand::UpdateHeldObject()
 			}
 
 		}
-		//====================================
+		//=
 		pEntity->SetWorldTM(finalMatrix,ENTITY_XFORM_USER);
 
 	}
@@ -963,7 +963,7 @@ void COffHand::UpdateHeldObject()
 	}
 }
 
-//===========================================================
+//===
 void COffHand::UpdateGrabbedNPCState()
 {
 	//Get actor
@@ -1008,7 +1008,7 @@ void COffHand::UpdateGrabbedNPCState()
 
 }
 
-//============================================================
+//====
 void COffHand::PostFilterView(struct SViewParams &viewParams)
 {
 	//This should be only be called when grabbing/holding/throwing an NPC from CPlayer::PostUpdateView()
@@ -1018,7 +1018,7 @@ void COffHand::PostFilterView(struct SViewParams &viewParams)
 	UpdateGrabbedNPCWorldPos(pEntity, &viewParams);
 }
 
-//===============================================
+//=====
 void COffHand::PostUpdate(float frameTime)
 {
 	//Update character position here when the game is paused, if I don't do so, character goes invisible!
@@ -1035,7 +1035,7 @@ void COffHand::PostUpdate(float frameTime)
 
 }
 
-//============================================================
+//====
 void COffHand::UpdateGrabbedNPCWorldPos(IEntity *pEntity, struct SViewParams *viewParams)
 {
 	if(pEntity)
@@ -1140,7 +1140,7 @@ void COffHand::UpdateGrabbedNPCWorldPos(IEntity *pEntity, struct SViewParams *vi
 	}
 }
 
-//=============================================================
+//=====
 void COffHand::OnAction(EntityId actorId, const ActionId& actionId, int activationMode, float value)
 {
 	s_actionHandler.Dispatch(this,actorId,actionId,activationMode,value);
@@ -1279,7 +1279,7 @@ bool COffHand::ProcessOffHandActions(EOffHandActions eOHA, int input, int activa
 	return true;
 }
 
-//==================================================================
+//===
 bool COffHand::EvaluateStateTransition(int requestedAction, int activationMode, int	inputMethod)
 {
 	switch(requestedAction)
@@ -1366,7 +1366,7 @@ bool COffHand::EvaluateStateTransition(int requestedAction, int activationMode, 
 	return false;
 }
 
-//==================================================================
+//===
 bool COffHand::PreExecuteAction(int requestedAction, int activationMode, bool forceSelect)
 {
 	if(m_currentState!=eOHS_INIT_STATE && requestedAction != eOHA_REINIT_WEAPON)
@@ -1465,14 +1465,14 @@ void COffHand::NetStopFire()
 }
 
 
-//=============================================================================
+//
 //This function seems redundant...
 void COffHand::CancelAction()
 {
 	SetOffHandState(eOHS_INIT_STATE);
 }
 
-//=============================================================================
+//
 void COffHand::FinishAction(EOffHandActions eOHA)
 {
 	switch(eOHA)
@@ -1588,7 +1588,7 @@ void COffHand::Freeze(bool freeze)
 	}
 }
 
-//==============================================================================
+//=
 void COffHand::SetOffHandState(EOffHandStates eOHS)
 {
 	m_currentState = eOHS;
@@ -1602,7 +1602,7 @@ void COffHand::SetOffHandState(EOffHandStates eOHS)
 	}
 }
 
-//==============================================================================
+//=
 void COffHand::StartSwitchGrenade(bool xi_switch, bool fakeSwitch)
 {
 	//Iterate different firemodes 
@@ -1702,7 +1702,7 @@ void COffHand::StartSwitchGrenade(bool xi_switch, bool fakeSwitch)
 		AttachGrenadeToHand(newMode);
 }
 
-//==============================================================================
+//=
 void COffHand::EndSwitchGrenade()
 {
 	//Play select grenade animation (and un-hide grenade geometry)
@@ -1712,7 +1712,7 @@ void COffHand::EndSwitchGrenade()
 		CSchedulerAction<FinishGrenadeAction>::Create(FinishGrenadeAction(this,m_mainHand)), false);
 }
 
-//==============================================================================
+//=
 void COffHand::PerformThrow(float speedScale)
 {
 	if (!m_fm)
@@ -1731,7 +1731,7 @@ void COffHand::PerformThrow(float speedScale)
 		CSchedulerAction<FinishOffHandAction>::Create(FinishOffHandAction(eOHA_FINISH_AI_THROW_GRENADE, this)), false);
 }
 
-//===============================================================================
+//==
 void COffHand::PerformThrow(int activationMode, EntityId throwableId, int oldFMId /* = 0 */, bool isLivingEnt /*=false*/)
 {
 	if (!m_fm)
@@ -2081,7 +2081,7 @@ int COffHand::CanPerformPickUp(CActor *pActor, IPhysicalEntity *pPhysicalEntity 
 	return CheckItemsInProximity(info.eyePosition,info.eyeDirection,getEntityInfo);
 }
 
-//========================================================================================
+//====
 int COffHand::CheckItemsInProximity(Vec3 pos, Vec3 dir, bool getEntityInfo)
 {
 	float sizeX = 1.2f;
@@ -2154,7 +2154,7 @@ int COffHand::CheckItemsInProximity(Vec3 pos, Vec3 dir, bool getEntityInfo)
 	
 	return OH_NO_GRAB;
 }
-//==========================================================================================
+//======
 bool COffHand::PerformPickUp()
 {
 	//If we are here, we must have the entity ID
@@ -2234,7 +2234,7 @@ bool COffHand::PerformPickUp()
 	return false;
 }
 
-//===========================================================================================
+//
 void COffHand::IgnoreCollisions(bool ignore, EntityId entityId /*=0*/)
 {
 	if (!m_heldEntityId && !entityId)
@@ -2291,7 +2291,7 @@ void COffHand::IgnoreCollisions(bool ignore, EntityId entityId /*=0*/)
 	}
 }
 
-//==========================================================================================
+//======
 void COffHand::DrawNear(bool drawNear, EntityId entityId /*=0*/)
 {
 	if (!m_heldEntityId && !entityId)
@@ -2334,7 +2334,7 @@ void COffHand::DrawNear(bool drawNear, EntityId entityId /*=0*/)
 	}
 }
 
-//=========================================================================================
+//=====
 void COffHand::SelectGrabType(IEntity* pEntity)
 {
 	if(gEnv->bMultiplayer)
@@ -2436,7 +2436,7 @@ void COffHand::SelectGrabType(IEntity* pEntity)
 	}
 }
 
-//========================================================================================================
+//======
 void COffHand::StartPickUpItem()
 {	
 	CPlayer *pPlayer = static_cast<CPlayer*>(GetOwnerActor());
@@ -2568,7 +2568,7 @@ void COffHand::StartPickUpItem()
 	m_startPickUp = true;
 }
 
-//=========================================================================================================
+//
 void COffHand::EndPickUpItem()
 {
 	IFireMode* pReloadFM = 0;
@@ -2630,7 +2630,7 @@ void COffHand::EndPickUpItem()
 	}
 }
 
-//=======================================================================================
+//===
 void COffHand::PickUpObject(bool isLivingEnt /* = false */)
 {	
 	//Grab NPCs-----------------
@@ -2722,7 +2722,7 @@ void COffHand::PickUpObject(bool isLivingEnt /* = false */)
 	RequireUpdate(eIUS_General);
 }
 
-//=========================================================================================
+//=====
 void COffHand::ThrowObject(int activationMode, bool isLivingEnt /*= false*/)
 {
 	if (activationMode == eAAM_OnPress)
@@ -2745,7 +2745,7 @@ void COffHand::ThrowObject(int activationMode, bool isLivingEnt /*= false*/)
 
 }
 
-//==========================================================================================
+//======
 bool COffHand::GrabNPC()
 {
 
@@ -2867,7 +2867,7 @@ bool COffHand::GrabNPC()
 	return true;
 }
 
-//=============================================================================================
+//==
 void COffHand::ThrowNPC(bool kill /*= true*/)
 {
 	//Get actor
@@ -2969,7 +2969,7 @@ void COffHand::ThrowNPC(bool kill /*= true*/)
 
 }
 
-//==============================================================================
+//=
 void COffHand::RunEffectOnGrabbedNPC(CActor* pNPC)
 {
 
@@ -3002,7 +3002,7 @@ void COffHand::RunEffectOnGrabbedNPC(CActor* pNPC)
 
 }
 
-//========================================================================================
+//====
 void COffHand::PlaySound(EOffHandSounds sound, bool play)
 {
 	if(!gEnv->pSoundSystem)
@@ -3069,7 +3069,7 @@ void COffHand::PlaySound(EOffHandSounds sound, bool play)
 
 
 }
-//==========================================================================================
+//======
 void COffHand::MeleeAttack()
 {
 	if(m_melee)
@@ -3100,7 +3100,7 @@ void COffHand::MeleeAttack()
 	}
 }
 
-//=======================================================================================
+//===
 float COffHand::GetObjectMassScale()
 {
 	if(m_currentState&eOHS_HOLDING_NPC)
@@ -3119,7 +3119,7 @@ float COffHand::GetObjectMassScale()
 	return 1.0f;
 }
 
-//=========================================================================================
+//=====
 bool COffHand::IsHoldingEntity()
 {
 	bool ret = false;
@@ -3129,7 +3129,7 @@ bool COffHand::IsHoldingEntity()
 	return ret;
 }
 
-//==============================================================
+//======
 void COffHand::GetAvailableGrenades(std::vector<string> &grenades)
 {
 	if(!GetFireMode(0)->OutOfAmmo())
@@ -3153,7 +3153,7 @@ void COffHand::GetAvailableGrenades(std::vector<string> &grenades)
 	}
 }
 
-//==============================================================
+//======
 int COffHand::CanExchangeWeapons(IItem *pItem, IItem **pExchangeItem)
 {
 	CPlayer* pPlayer = static_cast<CPlayer*>(GetOwnerActor());
@@ -3178,7 +3178,7 @@ int COffHand::CanExchangeWeapons(IItem *pItem, IItem **pExchangeItem)
 	return ITEM_CAN_PICKUP;
 }
 
-//==========================================================================
+//====
 IItem* COffHand::GetExchangeItem(IItem *pPickupItem, CPlayer *pPlayer)
 {
 	if(!pPickupItem || !pPlayer)
@@ -3222,7 +3222,7 @@ IItem* COffHand::GetExchangeItem(IItem *pPickupItem, CPlayer *pPlayer)
 	return NULL;
 }
 
-//========================================================
+//
 EntityId COffHand::SpawnRockProjectile(IRenderNode* pRenderNode)
 {
 	Matrix34 statObjMtx;
@@ -3281,7 +3281,7 @@ EntityId COffHand::SpawnRockProjectile(IRenderNode* pRenderNode)
 	return pEntity->GetId();
 }
 
-//==============================================================
+//======
 //Handle entering cinematic (called from HUD)
 
 void COffHand::OnBeginCutScene()
@@ -3307,7 +3307,7 @@ void COffHand::OnEndCutScene()
 	m_bCutscenePlaying = false;
 }
 
-//==============================================================
+//======
 void COffHand::AttachGrenadeToHand(int grenade, bool fp /*=true*/, bool attach /*=true*/)
 {
 	//Attach grenade to hand
@@ -3381,7 +3381,7 @@ void COffHand::AttachGrenadeToHand(int grenade, bool fp /*=true*/, bool attach /
 
 }
 
-//==============================================================
+//======
 EntityId	COffHand::GetHeldEntityId() const
 {
 	if(m_currentState&(eOHS_HOLDING_NPC|eOHS_HOLDING_OBJECT))

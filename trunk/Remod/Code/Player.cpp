@@ -503,7 +503,7 @@ void CPlayer::Draw(bool draw)
 void CPlayer::UpdateFirstPersonEffects(float frameTime)
 {
 
-	//=========================alien interference effect============================
+	//====alien interference effect
   bool doInterference = g_pGameCVars->hud_enableAlienInterference && !m_interferenceParams.empty();
   if (doInterference)		
 	{
@@ -593,7 +593,7 @@ void CPlayer::UpdateFirstPersonEffects(float frameTime)
 		}
 	}
 
-	//===========================Stop firing weapon while sprinting/prone moving==============
+	//======Stop firing weapon while sprinting/prone moving
 
 	if(IItem *pItem = GetCurrentItem())
 	{
@@ -601,7 +601,7 @@ void CPlayer::UpdateFirstPersonEffects(float frameTime)
 			pItem->GetIWeapon()->StopFire();
 	}
 
-	//========================================================================================
+	//====
 
 	CFists *pFists = static_cast<CFists*>(GetItemByClass(CItem::sFistsClass));
 	COffHand *pOffHand = static_cast<COffHand*>(GetItemByClass(CItem::sOffHandClass));
@@ -5514,7 +5514,7 @@ void CPlayer::PlaySound(EPlayerSounds sound, bool play, bool param /*= false*/, 
 	}
 }
 
-//===========================LADDERS======================
+//======LADDERS=
 
 // NB this will store the details of the usable ladder in m_stats
 bool CPlayer::IsLadderUsable()

@@ -1173,7 +1173,7 @@ void CIronSight::ZoomSway(float time, float &x, float&y)
 	y = dtY*m_zoomsway.maxY*factor*strengthScale*stanceScale;
 }
 
-//======================================================
+//=====
 void CIronSight::PostFilterView(SViewParams & viewparams)
 {
 	if(m_zoomparams.scope_mode)

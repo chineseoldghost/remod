@@ -762,6 +762,10 @@ void CGameRules::OnKill(CActor *pActor, EntityId shooterId, const char *weaponCl
 
 	ScriptHandle handleEntity(pActor->GetEntityId()), handleShooter(shooterId);
 	CallScript(m_clientStateScript, "OnKill", handleEntity, handleShooter, weaponClassName, damage, material, hit_type);
+
+	CAchievementSystem *pAchievements = new CAchievementSystem;
+	pAchievements->UpAchievement("Kills");
+	CryLogAlways("CGameRules::OnKill");
 }
 
 //------------------------------------------------------------------------

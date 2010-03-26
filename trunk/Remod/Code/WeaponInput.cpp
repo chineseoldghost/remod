@@ -21,7 +21,7 @@ History:
 #include "OffHand.h"
 #include "IPlayerInput.h"
 
-//===========AUX FUNCTIONS====================
+//====AUX FUNCTIONS======
 namespace
 {
 	void GetOffHandInfo(CWeapon* pThis, bool &offHandSelected, COffHand** pOffHand)
@@ -49,7 +49,7 @@ namespace
 	}
 }
 
-//=================================================================
+//==
 TActionHandler<CWeapon>	CWeapon::s_actionHandler;
 
 void CWeapon::RegisterActions()

@@ -356,7 +356,7 @@ bool CMelee::PerformRayTest(const Vec3 &pos, const Vec3 &dir, float strength, bo
 	int n =gEnv->pPhysicalWorld->RayWorldIntersection(pos, dir.normalized()*m_meleeparams.range, ent_all|ent_water,
 			rwi_stop_at_pierceable|rwi_ignore_back_faces,&hit, 1, &pIgnore, pIgnore?1:0);
 
-	//===================OffHand melee (also in PerformCylincerTest)===================
+	//=====OffHand melee (also in PerformCylincerTest)=====
 	if(m_ignoredEntity && (n>0))
 	{
 		if(IEntity* pHeldObject = gEnv->pEntitySystem->GetEntity(m_ignoredEntity))
@@ -366,7 +366,7 @@ bool CMelee::PerformRayTest(const Vec3 &pos, const Vec3 &dir, float strength, bo
 				return false;
 		}
 	}
-	//=================================================================================
+	//====
 
 	if (n>0)
 	{

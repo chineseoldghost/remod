@@ -613,6 +613,14 @@
 			Name="Game Files"
 			>
 			<File
+				RelativePath=".\Achievements.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Achievements.h"
+				>
+			</File>
+			<File
 				RelativePath=".\BulletTime.cpp"
 				>
 			</File>
@@ -787,6 +795,38 @@
 						>
 					</File>
 				</Filter>
+			</Filter>
+			<Filter
+				Name="GameRules"
+				>
+				<File
+					RelativePath=".\GameRules.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\GameRules.h"
+					>
+				</File>
+				<File
+					RelativePath=".\GameRulesClientServer.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\ScriptBind_GameRules.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\ScriptBind_GameRules.h"
+					>
+				</File>
+				<File
+					RelativePath=".\ShotValidator.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\ShotValidator.h"
+					>
+				</File>
 			</Filter>
 		</Filter>
 		<Filter
@@ -1764,38 +1804,6 @@
 					>
 				</File>
 			</Filter>
-		</Filter>
-		<Filter
-			Name="GameRules"
-			>
-			<File
-				RelativePath=".\GameRules.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\GameRules.h"
-				>
-			</File>
-			<File
-				RelativePath=".\GameRulesClientServer.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\ScriptBind_GameRules.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\ScriptBind_GameRules.h"
-				>
-			</File>
-			<File
-				RelativePath=".\ShotValidator.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\ShotValidator.h"
-				>
-			</File>
 		</Filter>
 		<Filter
 			Name="Nodes"

@@ -91,7 +91,7 @@ bool CWeaponAttachmentManager::Init()
 	return true;
 }
 
-//======================================================================
+//
 void CWeaponAttachmentManager::CreatePlayerBoneAttachments()
 {
 		
@@ -123,7 +123,7 @@ void CWeaponAttachmentManager::CreatePlayerBoneAttachments()
 
 }
 
-//=======================================================================
+//=
 void CWeaponAttachmentManager::CreatePlayerProjectedAttachments()
 {
 
@@ -160,7 +160,7 @@ void CWeaponAttachmentManager::CreatePlayerProjectedAttachments()
 	}
 }
 
-//======================================================================
+//
 void CWeaponAttachmentManager::DoHandToBackSwitch()
 {
 	CItem* pItem = static_cast<CItem*>(m_pItemSystem->GetItem(m_itemToBack));
@@ -172,7 +172,7 @@ void CWeaponAttachmentManager::DoHandToBackSwitch()
 	m_itemToBack = 0;
 }
 
-//=====================================================================
+//======
 void CWeaponAttachmentManager::DoBackToHandSwitch()
 {
 	CItem* pItem = static_cast<CItem*>(m_pItemSystem->GetItem(m_itemToHand));
@@ -184,7 +184,7 @@ void CWeaponAttachmentManager::DoBackToHandSwitch()
 	m_itemToHand = 0;
 }
 
-//=======================================================================
+//=
 void CWeaponAttachmentManager::SetWeaponAttachment(bool attach, const char* attachmentName, EntityId weaponId)
 {
 	TBoneAttachmentMap::iterator it = m_boneAttachmentMap.find(CONST_TEMPITEM_STRING(attachmentName));
@@ -203,7 +203,7 @@ void CWeaponAttachmentManager::SetWeaponAttachment(bool attach, const char* atta
 	}
 }
 
-//=========================================================================
+//===
 bool CWeaponAttachmentManager::IsAttachmentFree(const char* attachmentName)
 {
 	TBoneAttachmentMap::iterator it = m_boneAttachmentMap.find(CONST_TEMPITEM_STRING(attachmentName));
@@ -218,7 +218,7 @@ bool CWeaponAttachmentManager::IsAttachmentFree(const char* attachmentName)
 	return false;
 }
 
-//========================================================================
+//==
 void CWeaponAttachmentManager::HideAllAttachments(bool hide)
 {
 	TAttachedWeaponsList::const_iterator it = m_attachedWeaponList.begin();

@@ -311,6 +311,7 @@ void CNanoSuit::Reset(CPlayer *owner)
 	ActivateMode(NANOMODE_DEFENSE, true);
 	ActivateMode(NANOMODE_CLOAK, true);
 
+
 	Precache();
 }
 

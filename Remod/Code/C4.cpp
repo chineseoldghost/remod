@@ -177,7 +177,7 @@ void CC4::Drop(float impulseScale, bool selectNext, bool byDeath)
 
 }
 
-//=======================================================================
+//=
 void CC4::SelectDetonator()
 {
 	if (CActor *pOwner=GetOwnerActor())

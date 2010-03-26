@@ -239,4 +239,10 @@ void InitGameFactory(IGameFramework *pFramework)
 	pFramework->GetIGameRulesSystem()->AddGameRulesAlias("PowerStruggle", "ps");
 	pFramework->GetIGameRulesSystem()->AddGameRulesLevelLocation("PowerStruggle", "multiplayer/ps/");
 #endif //spdemo
+
+	// Remod
+	pFramework->GetIGameRulesSystem()->RegisterGameRules("HardcoreDeathmatch", "GameRules");
+	pFramework->GetIGameRulesSystem()->AddGameRulesAlias("HardcoreDeathmatch", "hdm");
+	pFramework->GetIGameRulesSystem()->AddGameRulesLevelLocation("HardcoreDeathmatch", "multiplayer/hdm/");
+	pFramework->GetIGameRulesSystem()->AddGameRulesLevelLocation("HardcoreDeathmatch", "multiplayer/ia/");
 }

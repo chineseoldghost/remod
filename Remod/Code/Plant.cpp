@@ -421,7 +421,7 @@ void CPlant::Plant(const Vec3 &pos, const Vec3 &dir, const Vec3 &vel, bool net, 
 	m_pWeapon->HideItem(true);
 }
 
-//=======================================================================
+//=
 void CPlant::SelectDetonator()
 {
 	if (CActor *pOwner=m_pWeapon->GetOwnerActor())
@@ -432,13 +432,13 @@ void CPlant::SelectDetonator()
 	}
 }
 
-//========================================================================
+//==
 void CPlant::SetProjectileId(EntityId id)
 {
 	stl::push_back_unique(m_projectiles,id);
 }
 
-//====================================================================
+//=====
 EntityId CPlant::GetProjectileId() const
 {
 	if(!m_projectiles.empty())
@@ -446,7 +446,7 @@ EntityId CPlant::GetProjectileId() const
 
 	return 0;
 }
-//=====================================================================
+//======
 EntityId CPlant::RemoveProjectileId() 
 {
 	EntityId id = 0;

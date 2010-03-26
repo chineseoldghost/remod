@@ -1131,6 +1131,8 @@ void CHUD::ShowWarningMessage(EWarningMessages message, const char* optionalText
 	case EHUD_SUICIDE:
 		m_animWarningMessages.Invoke("showErrorMessage", "suicide");
 		break;
+	case EHUD_ACHIEVEMENT:
+		m_animWarningMessages.Invoke("showErrorMessage", optionalText);
 	case EHUD_CONNECTION_LOST:
 		m_animWarningMessages.Invoke("showErrorMessage", "connectionlost");
 		break;

@@ -27,6 +27,7 @@
 #include "ClientSynchedStorage.h"
 #include "ServerSynchedStorage.h"
 #include "Cry_Camera.h"
+#include "Achievements.h"
 
 #define GAME_NAME				"Crysis Wars"
 #define GAME_LONGNAME		"Crysis Wars"

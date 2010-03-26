@@ -27,7 +27,6 @@
 #include "ClientSynchedStorage.h"
 #include "ServerSynchedStorage.h"
 #include "Cry_Camera.h"
-#include "Achievements.h"
 
 #define GAME_NAME				"Crysis Wars"
 #define GAME_LONGNAME		"Crysis Wars"
@@ -194,7 +193,14 @@ public:
 
 	CDownloadTask* GetDownloadTask() const { return m_pDownloadTask; }
 
+	// Achievements
+	static void ResetAchievements();
+	void EarnAchievement(string Achievement, bool state);
+	void UpAchievement(string Achievement);
+	int KillAmount;
+
 protected:
+
 	virtual void LoadActionMaps(const char* filename = "libs/config/defaultProfile.xml");
 
 	virtual void ReleaseActionMaps();

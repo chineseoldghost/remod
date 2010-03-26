@@ -767,8 +767,12 @@ void CGameRules::OnKill(CActor *pActor, EntityId shooterId, const char *weaponCl
 	if(Player == shooterId)
 	{
 		g_pGame->UpAchievement("Kills");
-		CryLogAlways("CGameRules::OnKill"); // This appears in log
+		CryLogAlways("CGameRules::OnKill | Local player is shooter");
 	}
+	else
+	{
+		CryLogAlways("CGameRules::OnKill | Local player is not shooter");
+	}	
 }
 
 //------------------------------------------------------------------------

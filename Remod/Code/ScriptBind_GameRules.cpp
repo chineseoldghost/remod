@@ -89,7 +89,7 @@ void CScriptBind_GameRules::RegisterMethods()
 
 	SCRIPT_REG_TEMPLFUNC(SpawnPlayer, "channelId, name, className, pos, angles");
 	SCRIPT_REG_TEMPLFUNC(ChangePlayerClass, "channelId, className, pos, angles");
-	SCRIPT_REG_TEMPLFUNC(RevivePlayer, "playerId, pos, angles, teamId, clearInventory");
+	SCRIPT_REG_TEMPLFUNC(RevivePlayer, "playerId, pos, angles, teamId, clearInventory"); // self.game:RevivePlayer(player.id, pos, angles, teamId, not keepEquip);
 	SCRIPT_REG_TEMPLFUNC(RevivePlayerInVehicle, "playerId, vehicleId, seatId, teamId, clearInventory");
 	SCRIPT_REG_TEMPLFUNC(RenamePlayer, "playerId, name");
 	SCRIPT_REG_TEMPLFUNC(KillPlayer, "playerId, dropItem, ragdoll, shooterId, weaponId, damage, material, headshot, melee, impulse");
@@ -262,6 +262,10 @@ void CScriptBind_GameRules::RegisterMethods()
 	SCRIPT_REG_TEMPLFUNC(PerformDeadHit, "");
 
 	SCRIPT_REG_TEMPLFUNC(IsItemAllowed, "itemName");
+
+	SCRIPT_REG_TEMPLFUNC(GetAchievements, "achievements");
+	SCRIPT_REG_TEMPLFUNC(UpdateAchievement, "Achievement");
+	SCRIPT_REG_TEMPLFUNC(IncreaseStats, "stats, value"); // self.game:IncreaseStats(stats, value);
 }
 
 //------------------------------------------------------------------------
@@ -2500,3 +2504,40 @@ int CScriptBind_GameRules::IsItemAllowed(IFunctionHandler* pH, const char* itemN
 
 	return pH->EndFunction(false);
 }
+//-----------------------------------------------------------------------------
+int CScriptBind_GameRules::GetAchievements(IFunctionHandler *pH, SmartScriptTable achievements)
+{
+	return pH->EndFunction();
+}
+//-----------------------------------------------------------------------------
+int CScriptBind_GameRules::UpdateAchievement(IFunctionHandler *pH, const char *Achievement)
+{
+	return pH->EndFunction(Achievement);
+}
+//-----------------------------------------------------------------------------
+int CScriptBind_GameRules::IncreaseStats(IFunctionHandler *pH, const char *stats, float value)
+{
+	if(stats == "Kills")
+	{
+		g_pGame->TotalKills = g_pGame->TotalKills + value;
+		if(g_pGame->TotalKills==5)
+		{
+			CryLogAlways("ACHIEVEMENT '1 KILL' ACHIEVED!");
+			CHUD *pHUD = new CHUD;
+			pHUD->ShowWarningMessage(EHUD_ACHIEVEMENT, "Achievement '5 Kills' earned!");
+		}
+	}
+	return pH->EndFunction();
+}
+/*
+int CScriptBind_Actor::CreateCodeEvent(IFunctionHandler *pH,SmartScriptTable params)
+{
+	CActor *pActor = GetActor(pH);
+	if (!pActor)
+		return pH->EndFunction();
+
+	if (pActor)
+		return (pActor->CreateCodeEvent(params));
+			
+	return pH->EndFunction();
+}*/

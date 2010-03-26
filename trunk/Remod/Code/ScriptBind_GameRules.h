@@ -224,6 +224,10 @@ public:
 
 	int IsItemAllowed(IFunctionHandler* pH, const char* itemName);
 
+	int GetAchievements(IFunctionHandler* pH, SmartScriptTable achievement);
+	int UpdateAchievement(IFunctionHandler* pH, const char *Achievement);
+	int IncreaseStats(IFunctionHandler* pH, const char *stats, float value);
+
 private:
 	void RegisterGlobals();
 	void RegisterMethods();

@@ -197,7 +197,7 @@ public:
 	static void ResetAchievements();
 	void EarnAchievement(string Achievement, bool state);
 	void UpAchievement(string Achievement);
-	int KillAmount;
+	float TotalKills;
 
 protected:
 

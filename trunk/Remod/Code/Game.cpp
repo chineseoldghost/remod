@@ -1094,10 +1094,10 @@ void CGame::EarnAchievement(string Achievement, bool state)
 
 void CGame::UpAchievement(string Achievement)
 {
-	if (Achievement == "Kills")
+	if (Achievement == "TotalKills")
 	{
-		KillAmount++;
-		if(KillAmount==5)
+		TotalKills++;
+		if(TotalKills==1)
 		{	
 			CryLogAlways("ACHIEVEMENT '5 KILLS' ACHIEVED!");
 			CHUD *pHUD = new CHUD;

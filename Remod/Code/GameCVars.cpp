@@ -385,6 +385,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("hud_alienInterferenceStrength", &hud_alienInterferenceStrength, 0.8f, VF_SAVEGAME, "Scales alien interference effect strength.");
 	pConsole->Register("hud_godFadeTime", &hud_godFadeTime, 3, VF_CHEAT, "sets the fade time of the god mode message");
 	pConsole->Register("hud_crosshair_enable", &hud_crosshair_enable, 0,0, "Toggles singleplayer crosshair visibility.", CHUD::OnCrosshairCVarChanged);
+	pConsole->Register("re_slowmo", &re_slowmo, 0, VF_CHEAT, "Activates slowmotion!", CGame::Slowmo); // Remod
 	pConsole->Register("hud_crosshair", &hud_crosshair, 8, VF_CHEAT, "Crosshairs are disabled in Remod, get a LAM!", CHUD::OnCrosshairCVarChanged); // Remod
 	pConsole->Register("hud_alternateCrosshairSpread",&hud_iAlternateCrosshairSpread,0, 0, "Switch new crosshair spread code on/off.");
 	pConsole->Register("hud_alternateCrosshairSpreadCrouch",&hud_fAlternateCrosshairSpreadCrouch,12.0f, VF_CHEAT);
@@ -613,10 +614,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 
 	pConsole->Register("g_painSoundGap", &g_painSoundGap, 0.1f, 0, "Minimum time gap between local player pain sounds");
 	pConsole->Register("g_explosionScreenShakeMultiplier", &g_explosionScreenShakeMultiplier, 0.25f, 0, "Multiplier for explosion screenshake");
-	
-	// Remod CVars
-	pConsole->Register("re_vehiclecapturing", &re_vehiclecapturing, 0, 0, "Toggles ability to capture buildings while in a vehicle.");
-	pConsole->Register("re_slowmo", &re_slowmo, 0, VF_CHEAT, "Activates slowmotion effects.", CGame::Slowmo);
+	pConsole->Register("re_vehiclecapturing", &re_vehiclecapturing, 0, 0, "Enables/Disables ability to capture buildings while in vehicles");
 
 //	int iFlags = gEnv->pConsole->GetCVar("r_drawNearFoV")->GetFlags();
 //	gEnv->pConsole->GetCVar("r_drawNearFoV")->SetFlags(iFlags|~VF_CHEAT);

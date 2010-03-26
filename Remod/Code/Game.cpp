@@ -515,8 +515,6 @@ void CGame::Slowmo(ICVar *pCVar)
 		}
 	}
 }
-
-
 string CGame::InitMapReloading()
 {
 	string levelFileName = GetIGameFramework()->GetLevelName();

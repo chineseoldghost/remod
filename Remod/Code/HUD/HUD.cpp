@@ -832,8 +832,6 @@ void CHUD::GameRulesSet(const char* name)
 			gameRules = EHUD_TEAMACTION;
 		else if(!stricmp(name, "TeamInstantAction"))
 			gameRules = EHUD_TEAMINSTANTACTION;
-		else if(!stricmp(name, "HardcoreDeathmatch"))
-			gameRules = EHUD_HARDCOREDEATHMATCH;
   }
 
   if(m_currentGameRules != gameRules)//unload stuff
@@ -5295,7 +5293,6 @@ void CHUD::LoadGameRulesHUD(bool load)
 		}
 		break;
 	case EHUD_TEAMACTION:
-	case EHUD_HARDCOREDEATHMATCH:
     if(load)
     {
       if(!m_animScoreBoard.IsLoaded())

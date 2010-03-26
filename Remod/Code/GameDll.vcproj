@@ -613,14 +613,6 @@
 			Name="Game Files"
 			>
 			<File
-				RelativePath=".\Achievements.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\Achievements.h"
-				>
-			</File>
-			<File
 				RelativePath=".\BulletTime.cpp"
 				>
 			</File>

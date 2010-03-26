@@ -763,10 +763,12 @@ void CGameRules::OnKill(CActor *pActor, EntityId shooterId, const char *weaponCl
 	ScriptHandle handleEntity(pActor->GetEntityId()), handleShooter(shooterId);
 	CallScript(m_clientStateScript, "OnKill", handleEntity, handleShooter, weaponClassName, damage, material, hit_type);
 
-	CAchievementSystem *pAchievements = new CAchievementSystem;
-	string Kills = "Kills";
-	pAchievements->UpAchievement(Kills);
-	CryLogAlways("CGameRules::OnKill");
+	EntityId Player = pActor->GetEntityId();
+	if(Player == shooterId)
+	{
+		g_pGame->UpAchievement("Kills");
+		CryLogAlways("CGameRules::OnKill"); // This appears in log
+	}
 }
 
 //------------------------------------------------------------------------

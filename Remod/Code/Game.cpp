@@ -1079,3 +1079,29 @@ const char* CGame::GetMappedLevelName(const char *levelName) const
 	TLevelMapMap::const_iterator iter = m_mapNames.find(CONST_TEMP_STRING(levelName));
 	return (iter == m_mapNames.end()) ? levelName : iter->second.c_str();
 }
+
+/********************************************
+* REMOD ACHIEVEMENT SYSTEM
+********************************************/
+void CGame::ResetAchievements()
+{
+
+}
+
+void CGame::EarnAchievement(string Achievement, bool state)
+{
+}
+
+void CGame::UpAchievement(string Achievement)
+{
+	if (Achievement == "Kills")
+	{
+		KillAmount++;
+		if(KillAmount==5)
+		{	
+			CryLogAlways("ACHIEVEMENT '5 KILLS' ACHIEVED!");
+			CHUD *pHUD = new CHUD;
+			pHUD->ShowWarningMessage(EHUD_ACHIEVEMENT, "Achievement '5 Kills' earned!");
+		}
+	}
+}

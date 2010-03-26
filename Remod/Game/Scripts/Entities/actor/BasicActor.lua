@@ -861,7 +861,7 @@ BasicActorParams =
 		inertia = 7, -- 7.0 -- The more, the faster the speed change: 1 is very slow, 10 is very fast already 
 		inertiaAccel = 9, -- same as inertia, but used when the player accel
 			
-		jumpHeight = 1.1, -- Meters
+		jumpHeight = 1.0, -- Meters
 		
 		slopeSlowdown = 0.5,
 		

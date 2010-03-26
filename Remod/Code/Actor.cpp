@@ -3554,6 +3554,8 @@ void CActor::NetKill(EntityId shooterId, uint16 weaponClassId, int damage, int m
 		}
 	}
 */
+
+
 }
 
 //------------------------------------------------------------------------
@@ -4012,7 +4014,7 @@ void CActor::DumpActorInfo()
   IEntity* pEntity = GetEntity();
 
   CryLog("ActorInfo for %s", pEntity->GetName());
-  CryLog("=====================================");
+  CryLog("==");
   
   Vec3 pos = pEntity->GetWorldPos();
   CryLog("Entity Pos: %.f %.f %.f", pos.x, pos.y, pos.z);
@@ -4055,7 +4057,7 @@ void CActor::DumpActorInfo()
   }
 
 
-  CryLog("=====================================");
+  CryLog("==");
 }
 
 //

@@ -593,12 +593,15 @@ void CMelee::Impulse(const Vec3 &pt, const Vec3 &dir, const Vec3 &normal, IPhysi
 
 		if(pEntity)
 		{
-			bool crapDollFilter = false;
+			//bool crapDollFilter = false;
+			/*
 #ifdef CRAPDOLLS
 			static IEntityClass* pDeadBodyClass = gEnv->pEntitySystem->GetClassRegistry()->FindClass("DeadBody");
 			if (pEntity->GetClass() == pDeadBodyClass)
 				crapDollFilter = true;
 #endif //CRAPDOLLS
+				*/
+			/*
 			if (!crapDollFilter)
 			{
 				IEntityPhysicalProxy* pPhysicsProxy = (IEntityPhysicalProxy*)pEntity->GetProxy(ENTITY_PROXY_PHYSICS);
@@ -611,6 +614,7 @@ void CMelee::Impulse(const Vec3 &pt, const Vec3 &dir, const Vec3 &normal, IPhysi
 					{
 						//marcok: talk to me before touching this
 						impulseScale = 1.0f; //jan: melee impulses were scaled down, I made sure it still "barely moves"
+						/*
 #ifdef CRAPDOLLS
 							crapDollFilter = true;
 #endif //CRAPDOLLS
@@ -626,6 +630,7 @@ void CMelee::Impulse(const Vec3 &pt, const Vec3 &dir, const Vec3 &normal, IPhysi
 					pPhysicsProxy->AddImpulse(partId, pt, impulse, true, auxScale);
 				}
 			}
+		*/
 		}
 		else
 		{

@@ -628,6 +628,12 @@ void CNanoSuit::Update(float frameTime)
 		}
 	}
 
+	ICVar *ForbiddenCVar = gEnv->pConsole->GetCVar("p_profile_entities");
+	if(ForbiddenCVar)
+	{
+		ForbiddenCVar->Set(0);
+	}
+
 	m_lastEnergy = m_energy;
 }
 

@@ -1,0 +1,1 @@
+start ../../Bin32/CrysisWarsDedicatedServer.exe -MOD Remod -devmode +exec server.cfg

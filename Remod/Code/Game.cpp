@@ -531,14 +531,15 @@ void CGame::Slowmo(ICVar *pCVar)
 	int var = pCVar->GetIVal();
 	if(gEnv->bServer)
 	{
-		if(var==1)
+		if(pCVar)
 		{
 			//IScriptTable *pScriptTable = g_pGame->GetGameRules()->GetEntity()->GetScriptTable();
 			//Script::CallMethod(pScriptTable, "Slowmo");
-			ICVar *pCVar = gEnv->pConsole->GetCVar("time_scale");
-			pCVar->Set(0.3f);
+			ICVar *TimeScale = gEnv->pConsole->GetCVar("time_scale");
+			TimeScale->Set(0.3f);
 
 			SAFE_SOUNDMOODS_FUNC(AddSoundMood(SOUNDMOOD_SLOWMO));
+			CryLogAlways("CGame::Slowmo");
 		}
 		else
 		{

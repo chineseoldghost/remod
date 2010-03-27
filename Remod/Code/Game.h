@@ -326,6 +326,6 @@ extern CGame *g_pGame;
 #define SAFE_SOUNDMOODS_FUNC(func)\
 	{	if(g_pGame && g_pGame->GetSoundMoods()) g_pGame->GetSoundMoods()->func; }
 
-//#define CRAPDOLLS
+#define CRAPDOLLS
 
 #endif //__GAME_H__

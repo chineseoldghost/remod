@@ -284,7 +284,7 @@ int CScriptBind_Actor::RagDollize(IFunctionHandler *pH)
 		return pH->EndFunction();
 
 	pActor->GetGameObject()->SetAspectProfile(eEA_Physics, eAP_Ragdoll);
-	pActor->RagDollize(true);
+//	pActor->RagDollize(true);
 
 	return pH->EndFunction();
 }

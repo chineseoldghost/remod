@@ -1096,7 +1096,7 @@ function InstantAction.Client:OnKill(playerId, shooterId, weaponClassName, damag
 	local melee=string.find(type, "melee");
 	
 	if(playerId == g_localActorId) then
-		self.Actor:Ragdollize();
+		self.actor:SetPhysicalizationProfile("ragdoll");
 		--do return end; -- DeathFX disabled cause it's not resetting properly atm...
 		if(headshot) then
 			HUD.ShowDeathFX(2);
@@ -1119,7 +1119,7 @@ function InstantAction.Client:OnKill(playerId, shooterId, weaponClassName, damag
 		end
 	elseif (shooterId==g_localActorId) then
 		if(playerId==shooterId) then
-			self.game:IncreaseStats("Kills", 1);
+			self.game:IncreaseStats("kills");
 			points = self:CalculateScore(0, 0, 0, 1);
 		else 
 			if(self.game:GetTeamCount()>1 and self.game:GetTeam(shooterId)==self.game:GetTeam(playerId)) then

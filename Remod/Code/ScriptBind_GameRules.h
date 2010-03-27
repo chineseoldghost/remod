@@ -226,7 +226,7 @@ public:
 
 	int GetAchievements(IFunctionHandler* pH, SmartScriptTable achievement);
 	int UpdateAchievement(IFunctionHandler* pH, const char *Achievement);
-	int IncreaseStats(IFunctionHandler* pH, const char *stats, float value);
+	int IncreaseStats(IFunctionHandler* pH, const char *stats);
 
 private:
 	void RegisterGlobals();

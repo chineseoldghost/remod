@@ -1127,7 +1127,7 @@ void CGame::EarnAchievement(string Achievement, bool state)
 
 void CGame::UpAchievement(string Achievement)
 {
-	if (Achievement == "TotalKills")
+	if (Achievement == "Kills")
 	{
 		TotalKills++;
 		if(TotalKills==1)

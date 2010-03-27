@@ -2486,11 +2486,14 @@ int CScriptBind_GameRules::ProcessEMPEffect(IFunctionHandler* pH, ScriptHandle t
 //-----------------------------------------------------------------------------
 int CScriptBind_GameRules::PerformDeadHit(IFunctionHandler* pH)
 {
+	return pH->EndFunction(true);
+	/*
 #ifdef CRAPDOLLS
 	return pH->EndFunction(false);
 #else
 	return pH->EndFunction(true);
 #endif // CRAPDOLLS
+	*/
 }
 
 //-----------------------------------------------------------------------------

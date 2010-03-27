@@ -1096,6 +1096,7 @@ function InstantAction.Client:OnKill(playerId, shooterId, weaponClassName, damag
 	local melee=string.find(type, "melee");
 	
 	if(playerId == g_localActorId) then
+		self.Actor:Ragdollize();
 		--do return end; -- DeathFX disabled cause it's not resetting properly atm...
 		if(headshot) then
 			HUD.ShowDeathFX(2);

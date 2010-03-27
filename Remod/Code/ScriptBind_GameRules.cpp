@@ -2522,7 +2522,7 @@ int CScriptBind_GameRules::IncreaseStats(IFunctionHandler *pH, const char *stats
 		g_pGame->TotalKills = g_pGame->TotalKills + value;
 		if(g_pGame->TotalKills==5)
 		{
-			CryLogAlways("ACHIEVEMENT '1 KILL' ACHIEVED!");
+			CryLogAlways("ACHIEVEMENT '5 KILLS' EARNED!");
 			CHUD *pHUD = new CHUD;
 			pHUD->ShowWarningMessage(EHUD_ACHIEVEMENT, "Achievement '5 Kills' earned!");
 		}

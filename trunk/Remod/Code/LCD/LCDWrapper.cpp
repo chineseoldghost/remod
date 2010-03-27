@@ -35,7 +35,7 @@ CG15LCD::~CG15LCD()
 
 bool CG15LCD::Init()
 {
-	if (m_pImpl->InitYourself(_T("Crysis Wars")) == E_FAIL)
+	if (m_pImpl->InitYourself(_T("Crysis Wars: REMOD")) == E_FAIL)
 		return false;
 
 	m_pImpl->SetDeviceFamilyToUse(LGLCD_DEVICE_FAMILY_KEYBOARD_G15);

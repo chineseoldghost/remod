@@ -2517,6 +2517,7 @@ int CScriptBind_GameRules::UpdateAchievement(IFunctionHandler *pH, const char *A
 //-----------------------------------------------------------------------------
 int CScriptBind_GameRules::IncreaseStats(IFunctionHandler *pH, const char *stats, float value)
 {
+	CryLogAlways("IncreaseStats | SCRIPTBIND");
 	if(stats == "Kills")
 	{
 		g_pGame->TotalKills = g_pGame->TotalKills + value;
@@ -2529,6 +2530,7 @@ int CScriptBind_GameRules::IncreaseStats(IFunctionHandler *pH, const char *stats
 	}
 	return pH->EndFunction();
 }
+//----------------------------------------------------------------------------
 /*
 int CScriptBind_Actor::CreateCodeEvent(IFunctionHandler *pH,SmartScriptTable params)
 {

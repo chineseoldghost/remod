@@ -2443,7 +2443,7 @@ void CFlashMenuObject::HandleFSCommand(const char *szCommand,const char *szArgs)
 
 				m_pMusicSystem->SetMood("middle", true, false);
 				break;
-			case 2:// CRYSIS WARS TEAM
+			case 2:// Crysis Wars: REMOD TEAM
 				break;
 			case 3:// PRODUCTION MANAGEMENT
 				break;

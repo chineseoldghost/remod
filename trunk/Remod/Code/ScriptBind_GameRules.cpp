@@ -265,7 +265,7 @@ void CScriptBind_GameRules::RegisterMethods()
 
 	SCRIPT_REG_TEMPLFUNC(GetAchievements, "achievements");
 	SCRIPT_REG_TEMPLFUNC(UpdateAchievement, "Achievement");
-	SCRIPT_REG_TEMPLFUNC(IncreaseStats, "stats, value"); // self.game:IncreaseStats(stats, value);
+	SCRIPT_REG_TEMPLFUNC(IncreaseStats, "stats"); // self.game:IncreaseStats(stats);
 }
 
 //------------------------------------------------------------------------
@@ -2487,13 +2487,11 @@ int CScriptBind_GameRules::ProcessEMPEffect(IFunctionHandler* pH, ScriptHandle t
 int CScriptBind_GameRules::PerformDeadHit(IFunctionHandler* pH)
 {
 	return pH->EndFunction(true);
-	/*
 #ifdef CRAPDOLLS
 	return pH->EndFunction(false);
 #else
 	return pH->EndFunction(true);
 #endif // CRAPDOLLS
-	*/
 }
 
 //-----------------------------------------------------------------------------
@@ -2518,12 +2516,12 @@ int CScriptBind_GameRules::UpdateAchievement(IFunctionHandler *pH, const char *A
 	return pH->EndFunction(Achievement);
 }
 //-----------------------------------------------------------------------------
-int CScriptBind_GameRules::IncreaseStats(IFunctionHandler *pH, const char *stats, float value)
+int CScriptBind_GameRules::IncreaseStats(IFunctionHandler *pH, const char *stats)
 {
 	CryLogAlways("IncreaseStats | SCRIPTBIND");
-	if(stats == "Kills")
+	if (!stricmp(stats, "kills"))
 	{
-		g_pGame->TotalKills = g_pGame->TotalKills + value;
+		g_pGame->TotalKills++;
 		if(g_pGame->TotalKills==5)
 		{
 			CryLogAlways("ACHIEVEMENT '5 KILLS' EARNED!");

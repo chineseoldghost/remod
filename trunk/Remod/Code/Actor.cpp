@@ -313,7 +313,6 @@ void CActor::ClearExtensionCache()
 void CActor::CrapDollize(bool enable /*= true*/)
 {
 	// make sure dead AI is not affected by explosions
-	/*
 #ifdef CRAPDOLLS
 	IPhysicalEntity* pPhysicalEntity=GetEntity()->GetPhysics();
 	if (pPhysicalEntity)
@@ -329,7 +328,6 @@ void CActor::CrapDollize(bool enable /*= true*/)
 			pPProxy->EnableRestrictedRagdoll(enable);
 	}
 #endif //CRAPDOLLS
-	*/
 }
 
 //------------------------------------------------------------------------
@@ -790,12 +788,10 @@ void CActor::RagDollize( bool fallAndPlay )
 		GetEntity()->Physicalize(pp);
 
 		// make sure dead AI is not affected by explosions
-		/*
 		if (!fallAndPlay || GetHealth()<=0)
 			CrapDollize();
 		else if(fallAndPlay)
 			CrapDollize(false);
-		*/
 
 		pStats->isRagDoll = true;
 
@@ -1313,7 +1309,7 @@ void CActor::Update(SEntityUpdateContext& ctx, int slot)
 					{
 						SetHealth(0);
 						CreateScriptEvent("kill",0);
-						//CrapDollize();
+						CrapDollize();
 						// drop item is not managed inside kill event
 						IItem* currentItem = GetCurrentItem();
 						if(currentItem)
@@ -1753,7 +1749,7 @@ void CActor::SetHealth( int health )
 
 		if (pStats && pStats->isRagDoll)
 		{
-			//CrapDollize();
+			CrapDollize();
 		}
 	}
 

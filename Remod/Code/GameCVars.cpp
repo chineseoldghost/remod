@@ -993,7 +993,7 @@ void CGame::RegisterConsoleCommands()
 	m_pConsole->AddCommand("freeze", "g_gameRules:SetFrozenAmount(g_localActor,1)", 0, "Freezes player");
 
 	m_pConsole->AddCommand("loadactionmap", CmdLoadActionmap, 0, "Loads a key configuration file");
-	m_pConsole->AddCommand("restartgame", CmdRestartGame, 0, "Restarts Crysis Wars completely.");
+	m_pConsole->AddCommand("restartgame", CmdRestartGame, 0, "Restarts Crysis Wars: REMOD completely.");
 
 	m_pConsole->AddCommand("lastinv", CmdLastInv, 0, "Selects last inventory item used.");
 	m_pConsole->AddCommand("team", CmdTeam, VF_RESTRICTEDMODE, "Sets player team.");

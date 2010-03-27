@@ -61,6 +61,10 @@
 
 #include "DownloadTask.h"
 
+#define WIN32_LEAN_AND_MEAN // Exclude rarely-used services from Windows headers
+#include <windows.h>
+#undef GetUserName // GetUserName is a macro in windows:( Gives issues since we have functions that are named the same
+
 #define GAME_DEBUG_MEM  // debug memory usage
 #undef  GAME_DEBUG_MEM
 
@@ -69,7 +73,7 @@
 #elif defined(SP_DEMO)
 	#define CRYSIS_GUID "{CDC82B4A-7540-45A5-B92E-9A7C7033DBF3}"
 #else
-	#define CRYSIS_GUID "{5C95C427-DCFE-4d7a-ACE4-225C6FECA84F}"	// new for Crysis Wars
+	#define CRYSIS_GUID "{5C95C427-DCFE-4d7a-ACE4-225C6FECA84F}"	// new for Crysis Wars: REMOD
 #endif
 
 //FIXME: really horrible. Remove ASAP
@@ -433,6 +437,34 @@ int CGame::Update(bool haveFocus, unsigned int updateFlags)
 
 	if(m_pDownloadTask)
 		m_pDownloadTask->Update();
+
+	// Get the window handle
+	HWND hWnd = (HWND)gEnv->pRenderer->GetHWND();
+	if (hWnd)
+	{
+		// Get the current window style
+		LONG style = GetWindowLongPtr(hWnd, GWL_STYLE);
+ 
+		// Don't run this on a dedicated server/editor. 
+		// Only execute when we are in windowed mode and have launched with the -noborder commandline switch
+		// Only do this when WS_BORDER is still in the style (so this should only execute once)
+		if (!gEnv->pSystem->IsDedicated() && !gEnv->pSystem->IsEditor() && (gEnv->pSystem->GetICmdLine()->FindArg(eCLAT_Pre, "noborder") != 0) && ((style&WS_BORDER) != 0) && gEnv->pConsole->GetCVar("r_fullscreen")->GetFVal() < 1.0f)
+		{
+			// Get the width and height of the primary screen
+			int width = GetSystemMetrics(SM_CXSCREEN);
+			int height = GetSystemMetrics(SM_CYSCREEN);
+ 
+			// Set the render width and height to that
+			gEnv->pConsole->GetCVar("r_width")->Set(width);
+			gEnv->pConsole->GetCVar("r_height")->Set(height);
+ 
+			// Set the new style, minus the WS_CAPTION option. This will remove the border and titlebar
+			SetWindowLongPtr(hWnd, GWL_STYLE, style & ~WS_CAPTION);
+ 
+			// Move the window to the 0, 0 position
+			MoveWindow(hWnd, 0, 0, width, height, true);
+		}
+	}
 
 	return bRun ? 1 : 0;
 }

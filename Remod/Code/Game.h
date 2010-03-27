@@ -28,8 +28,8 @@
 #include "ServerSynchedStorage.h"
 #include "Cry_Camera.h"
 
-#define GAME_NAME				"Crysis Wars"
-#define GAME_LONGNAME		"Crysis Wars"
+#define GAME_NAME				"Crysis Wars: REMOD: REMOD"
+#define GAME_LONGNAME		"Crysis Wars: REMOD: REMOD"
 
 
 struct ISystem;

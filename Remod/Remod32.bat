@@ -1,1 +1,1 @@
-..\..\Bin32\Crysis -mod Remod
+..\..\Bin32\Crysis -mod Remod -Noborder

@@ -1,6 +1,6 @@
 <Material MtlFlags="256">
  <SubMaterials>
-  <Material Name="reflex" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="mat_metal_thick" Diffuse="0.30980399,0.30980399,0.30980399" Specular="0.5,0.5,0.5" Emissive="0,0,0" Shininess="6" Opacity="1">
+  <Material Name="reflex" MtlFlags="128" Shader="Metal" GenMask="268443664" SurfaceType="mat_metal_thick" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.70588237,0.70588237,0.70588237" Emissive="0,0,0" Shininess="5" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="objects/weapons/attachments/reflex_rifle/textures/reflex.tif" Filter="7">
      <TexMod />
@@ -11,11 +11,11 @@
     <Texture Map="Normalmap" File="objects/weapons/attachments/reflex_rifle/textures/reflex_ddn.tif" Filter="7">
      <TexMod />
     </Texture>
-    <Texture Map="Environment" File="objects/weapons/us/socom/socom_env.tif">
+    <Texture Map="Environment" File="textures/cubemaps/sphere_hull3_desaturate.dds">
      <TexMod />
     </Texture>
    </Textures>
-   <PublicParams SpecularMultiplier="0.235" AnisotropicShape="0.257" ReflectionAmount="0.18000001" FresnelBias="0.19" FresnelScale="1"/>
+   <PublicParams SpecularMultiplier="0.40000001" AnisotropicShape="0.52499998" ReflectionAmount="1.5" FresnelBias="0.12" FresnelScale="0.34999999"/>
   </Material>
   <Material Name="glass" MtlFlags="128" Shader="Scopes" GenMask="1" SurfaceType="" Diffuse="0,0,0" Specular="1,1,1" Emissive="0,0,0" Shininess="10" Opacity="0.050000001">
    <Textures>

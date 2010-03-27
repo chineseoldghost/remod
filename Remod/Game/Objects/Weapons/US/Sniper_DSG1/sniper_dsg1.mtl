@@ -1,0 +1,39 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="material_a" MtlFlags="128" Shader="Metal" GenMask="268444176" SurfaceType="" Diffuse="0.50196081,0.50196081,0.50196081" Specular="0.70588237,0.70588237,0.70588237" Emissive="0,0,0" Shininess="5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/us/sniper_dsg1/textures/sniper_dsg1.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/us/sniper_dsg1/textures/sniper_dsg1_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/us/sniper_dsg1/textures/sniper_dsg1_ddn.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="textures/cubemaps/sphere_hull3_desaturate.dds" Filter="7">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.40000001" AnisotropicShape="0.52499998" ReflectionAmount="1.5" FresnelBias="0.12" FresnelScale="0.34999999"/>
+  </Material>
+  <Material Name="nodraw" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="" Diffuse="0.58431375,0.58431375,0.58431375" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="railing" MtlFlags="128" Shader="Metal" GenMask="268443648" SurfaceType="" Diffuse="0.15686275,0.15686275,0.15686275" Specular="0.38823533,0.3921569,0.45490199" Emissive="0,0,0" Shininess="5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/us/scar/textures/railing.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/us/scar/textures/railing_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/us/scar/textures/railing_ddn.tif" Filter="7">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.17900001" AnisotropicShape="0.287"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

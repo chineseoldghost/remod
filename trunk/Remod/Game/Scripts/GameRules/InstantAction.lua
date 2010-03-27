@@ -1117,10 +1117,9 @@ function InstantAction.Client:OnKill(playerId, shooterId, weaponClassName, damag
 			points = self:CalculateScore(1, 0, 0, 0);
 		end
 	elseif (shooterId==g_localActorId) then
-		self.game:IncreaseStats("Kills", 1);
 		if(playerId==shooterId) then
+			self.game:IncreaseStats("Kills", 1);
 			points = self:CalculateScore(0, 0, 0, 1);
-			-- TotalKillAmount++; REMOD
 		else 
 			if(self.game:GetTeamCount()>1 and self.game:GetTeam(shooterId)==self.game:GetTeam(playerId)) then
 				points = self:CalculateScore(0, 0, 1, 0);

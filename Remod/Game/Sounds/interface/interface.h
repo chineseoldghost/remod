@@ -9,13 +9,13 @@
 /*
     Total number of events in the project
 */
-const int EVENTCOUNT_INTERFACE = 139;
+const int EVENTCOUNT_INTERFACE = 169;
 
 /*
     EventGroup/Event-relative indices
 */
 const int EVENTGROUP_INTERFACE_HUD = 0;
-const int EVENTGROUPCOUNT_INTERFACE_HUD = 30;
+const int EVENTGROUPCOUNT_INTERFACE_HUD = 60;
 const int EVENT_INTERFACE_HUD_FREEZE_BURST = 0;
 const int EVENTPARAMETER_INTERFACE_HUD_FREEZE_BURST_DEFAULT = 0;
 const int EVENT_INTERFACE_HUD_FREEZE_PLAYER = 1;

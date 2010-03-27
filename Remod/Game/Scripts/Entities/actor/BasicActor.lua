@@ -722,8 +722,8 @@ BasicActorParams =
 	physicsParams =
 	{
 		flags = 0,
-		mass = 80,
-		stiffness_scale = 10,
+		mass = 90,
+		stiffness_scale = 20,
 					
 		Living = 
 		{

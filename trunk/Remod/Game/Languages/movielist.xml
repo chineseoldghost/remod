@@ -1,4 +1,10 @@
 <MovieList>
-   <Movie Filename="Localized/Video/Trailer_Crytek.sfd" AllowSkip="1"/>
    <Movie Filename="Localized/Video/Trailer_EA.sfd" AllowSkip="1"/>
+   <Movie Filename="Localized/Video/Trailer_Crytek.sfd" AllowSkip="1"/>
+   <Movie Filename="Localized/Video/Trailer_CSSRemade.sfd" AllowSkip"1"/>
+   <Movie Filename="Localized/Video/Trailer_NVidia.sfd" AllowSkip="1"/>
+   <Movie Filename="Localized/Video/Trailer_Intel.sfd" AllowSkip="1"/>
+   <Movie Filename="Localized/Video/english/Trailer_Rating.sfd" AllowSkip="1"/>
+   <Movie Filename="Localized/Video/Trailer_CrytekC.sfd" AllowSkip="1"/>
+   <Movie Filename="Localized/Video/Intro.sfd" AllowSkip="1"/>
 </MovieList>

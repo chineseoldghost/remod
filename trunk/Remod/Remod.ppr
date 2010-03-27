@@ -348,8 +348,8 @@ Caret=148,1
 TopLine=4
 Caret=34,46
 [Game\Scripts\Entities\actor\BasicActor.lua]
-TopLine=856
-Caret=19,864
+TopLine=707
+Caret=23,726
 [Game\Libs\MaterialEffects\SurfaceTypes.xml]
 TopLine=237
 Caret=1,1

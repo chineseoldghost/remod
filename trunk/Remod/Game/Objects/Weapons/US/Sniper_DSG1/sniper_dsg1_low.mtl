@@ -1,0 +1,43 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="material_a" MtlFlags="128" Shader="Metal" GenMask="268444179" SurfaceType="" Diffuse="0.231373,0.231373,0.231373" Specular="0.50196099,0.51764703,0.60000002" Emissive="0,0,0" Shininess="2" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/us/sniper_dsg1/textures/sniper_dsg1_low.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/us/sniper_dsg1/textures/sniper_dsg1_low_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/us/sniper_dsg1/textures/sniper_dsg1_low_ddn.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Environment" File="objects/weapons/us/socom/socom_env.tif" Filter="7">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.23899999" AnisotropicShape="0.792" DebugUVScale="64" ReflectionAmount="0.149" FresnelBias="0.149" FresnelScale="1"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="nodraw" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="" Diffuse="0.588,0.588,0.588" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+  <Material Name="railing" MtlFlags="128" Shader="Illum" GenMask="268435474" SurfaceType="" Diffuse="0.26666668,0.26666668,0.26666668" Specular="0.43137258,0.43137258,0.43137258" Emissive="0,0,0" Shininess="7" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/us/scar/textures/back_rail.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/us/scar/textures/back_rail_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/us/scar/textures/back_rail_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams DebugUVScale="64"/>
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams DebugUVScale="64"/>
+ <MaterialLayers />
+</Material>

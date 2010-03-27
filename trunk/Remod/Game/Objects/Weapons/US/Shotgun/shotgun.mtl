@@ -24,7 +24,7 @@
     <Layer />
    </MaterialLayers>
   </Material>
-  <Material Name="Plastic" MtlFlags="128" Shader="Metal" GenMask="268443648" SurfaceType="mat_metal_thick_weapons" Diffuse="0.30980393,0.30980393,0.30980393" Specular="7,7,7" Emissive="0,0,0" Shininess="5" Opacity="1">
+  <Material Name="Plastic" MtlFlags="128" Shader="Metal" GenMask="268443648" SurfaceType="mat_metal_thick_weapons" Diffuse="0.30980393,0.30980393,0.30980393" Specular="1,1,1" Emissive="0,0,0" Shininess="5" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="objects/weapons/us/shotgun/textures/shotgun_color.tif" Filter="7">
      <TexMod />

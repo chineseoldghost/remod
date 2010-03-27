@@ -1,0 +1,44 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="material_a" MtlFlags="128" Shader="Metal" GenMask="268444160" SurfaceType="" Diffuse="0.42745101,0.42745101,0.42745101" Specular="0.51764703,0.53725499,0.615686" Emissive="0,0,0" Shininess="4" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/us/sniper_dsg1/textures/sniper_dsg1.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/us/sniper_dsg1/textures/sniper_dsg1_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/us/sniper_dsg1/textures/sniper_dsg1_ddn.tif" Filter="7">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.189" AnisotropicShape="0.59399998"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="nodraw" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="" Diffuse="0.58431399,0.58431399,0.58431399" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+  <Material Name="railing" MtlFlags="128" Shader="Metal" GenMask="268443648" SurfaceType="" Diffuse="0.49411801,0.49411801,0.49411801" Specular="0.419608,0.419608,0.419608" Emissive="0,0,0" Shininess="1" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/us/scar/textures/railing.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/weapons/us/scar/textures/railing_spec.tif" Filter="7">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/weapons/us/scar/textures/railing_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.119" AnisotropicShape="0.25"/>
+   <MaterialLayers />
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_metal_thick_weapons" Diffuse="0.71764702,0.964706,0.59215701" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

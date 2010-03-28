@@ -385,7 +385,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("hud_alienInterferenceStrength", &hud_alienInterferenceStrength, 0.8f, VF_SAVEGAME, "Scales alien interference effect strength.");
 	pConsole->Register("hud_godFadeTime", &hud_godFadeTime, 3, VF_CHEAT, "sets the fade time of the god mode message");
 	pConsole->Register("hud_crosshair_enable", &hud_crosshair_enable, 0,0, "Toggles singleplayer crosshair visibility.", CHUD::OnCrosshairCVarChanged);
-	pConsole->Register("re_slowmo", &re_slowmo, 0, VF_CHEAT, "Activates slowmotion!", CGame::Slowmo); // Remod
+	pConsole->Register("hud_voicemode", &hud_voicemode, 1, 0, "Usage of the voice when switching of Nanosuit mode.");
 	pConsole->Register("hud_crosshair", &hud_crosshair, 8, VF_CHEAT, "Crosshairs are disabled in Remod, get a LAM!", CHUD::OnCrosshairCVarChanged); // Remod
 	pConsole->Register("hud_alternateCrosshairSpread",&hud_iAlternateCrosshairSpread,0, 0, "Switch new crosshair spread code on/off.");
 	pConsole->Register("hud_alternateCrosshairSpreadCrouch",&hud_fAlternateCrosshairSpreadCrouch,12.0f, VF_CHEAT);
@@ -616,11 +616,19 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("g_explosionScreenShakeMultiplier", &g_explosionScreenShakeMultiplier, 0.25f, 0, "Multiplier for explosion screenshake");
 	pConsole->Register("re_vehiclecapturing", &re_vehiclecapturing, 0, 0, "Enables/Disables ability to capture buildings while in vehicles");
 
+	// REMOD
+	pConsole->Register("re_suddendeath", &re_suddendeath, 1, 0, "Enables/disables Sudden Death mode in TeamInstantAction.");
+	pConsole->Register("re_suddendeathtime", &re_suddendeathtime, 30, 0, "Enables/disables Sudden Death mode in TeamInstantAction.");
+	pConsole->Register("re_slowmo", &re_slowmo, 0, 0, "Activates slowmotion!", CGame::Slowmo);
+
 //	int iFlags = gEnv->pConsole->GetCVar("r_drawNearFoV")->GetFlags();
 //	gEnv->pConsole->GetCVar("r_drawNearFoV")->SetFlags(iFlags|~VF_CHEAT);
 
 	int iFlags = gEnv->pConsole->GetCVar("e_vegetation_sprites_distance_ratio")->GetFlags();
 	gEnv->pConsole->GetCVar("e_vegetation_sprites_distance_ratio")->SetFlags(iFlags|~VF_CHEAT);
+
+	iFlags = gEnv->pConsole->GetCVar("p_profile_entities")->GetFlags();
+	gEnv->pConsole->GetCVar("p_profile_entities")->SetFlags(iFlags|~VF_CHEAT);
 
 	iFlags = gEnv->pConsole->GetCVar("r_glow")->GetFlags();
 	gEnv->pConsole->GetCVar("r_glow")->SetFlags(iFlags|~VF_CHEAT);

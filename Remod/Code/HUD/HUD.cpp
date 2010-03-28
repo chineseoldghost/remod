@@ -5418,7 +5418,7 @@ void CHUD::UpdateTeamActionHUD()
 
 					Vec3 color=Vec3(1.0f, 1.0f, 1.0f);
 
-					if (remainingTime<g_pGameCVars->g_suddendeathtime || preround)
+					if (remainingTime<g_pGameCVars->re_suddendeathtime || preround)
 					{
 						float t=fabsf(cry_sinf(gEnv->pTimer->GetCurrTime()*2.5f));
 						Vec3 red=Vec3(0.85f, 0.0f, 0.0f);

@@ -96,6 +96,8 @@ Net.Expose {
 		ClSpawnGroupInvalid		= { RELIABLE_UNORDERED, POST_ATTACH, ENTITYID, },
 		ClVictory							= { RELIABLE_ORDERED, POST_ATTACH, INT8, INT8 },
 		
+		ClSuddenDeath					= { RELIABLE_ORDERED, POST_ATTACH, BOOL, },
+
 		ClStartWorking				= { RELIABLE_ORDERED, POST_ATTACH, ENTITYID; STRINGTABLE },
 		ClStepWorking					= { RELIABLE_ORDERED, POST_ATTACH, INT8 },
 		ClStopWorking					= { RELIABLE_ORDERED, POST_ATTACH, ENTITYID, BOOL },
@@ -162,6 +164,36 @@ function TeamInstantAction:AutoTeamBalanceCheck()
 	end
 end
 
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction:CheckSuddenDeath()
+	if (not self.suddenDeath) then
+		if (self.game:IsTimeLimited() and self.game:GetRemainingGameTime()<=System.GetCVar("re_suddendeathtime")) then
+			self:SuddenDeath(true);
+		end
+	end
+end
+
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction:SuddenDeath(enable)
+	if (enable) then	
+		local players=self.game:GetPlayers(true);
+		if (players) then
+			for i,player in pairs(players) do
+				if ((not player:IsDead()) and (player.actor:GetSpectatorMode()==0)) then
+					self.game:SendTextMessage(TextMessageError, "SUDDEN DEATH!", TextMessageToClient, playerId);
+					--player.actor:SetHealth(1);
+				end
+			end
+		end
+
+		self.allClients:ClSuddenDeath(true);
+	else
+		self.allClients:ClSuddenDeath(false);
+	end
+	
+	self.suddenDeath=enable;
+end
+
 
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction:StartAutoTeamBalance()
@@ -185,7 +217,6 @@ function TeamInstantAction:EndAutoTeamBalance()
 		Log("Auto Team Balance finished...");
 	end
 end
-
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction:UpdateAutoTeamBalance()
 	if (not self.auto_team_balancing) then
@@ -406,7 +437,8 @@ end
 
 
 ----------------------------------------------------------------------------------------------------
-function TeamInstantAction:CheckTimeLimit()	
+function TeamInstantAction:CheckTimeLimit()
+	self:CheckSuddenDeath();
 	if (self.game:IsTimeLimited() and self.game:GetRemainingGameTime()<=0) then
 		local state=self:GetState();
 		if (state and state~="InGame") then
@@ -522,12 +554,19 @@ function TeamInstantAction:CanRevive(playerId)
 	
 	result = self.game:GetTeam(playerId)~=0 and result;
 
-	return result;
+	if (self.suddenDeath) then
+		return 0;
+	else
+		return result;
+	end
 end
 
 ----------------------------------------------------------------------------------------------------
 
 function TeamInstantAction.Server:OnChangeTeam(playerId, teamId)
+	if (self.suddenDeath) then
+		return;
+	end
 	if (teamId ~= self.game:GetTeam(playerId)) then
 		local player=System.GetEntity(playerId);
 		if (player) then
@@ -605,7 +644,11 @@ function TeamInstantAction.Server:RequestRevive(playerId)
 	if (player and player.actor) then
 		-- allow respawn if spectating player and on a team
 		if (((player.actor:GetSpectatorMode() == 3 and self.game:GetTeam(playerId)~=0) or (player:IsDead() and player.death_time and _time-player.death_time>2.5))) then
-			self:RevivePlayer(player.actor:GetChannel(), player);
+			if (self.suddenDeath) then
+				--self:RevivePlayer(player.actor:GetChannel(), player);
+			else
+				self:RevivePlayer(player.actor:GetChannel(), player);
+			end
 		end
 	end
 end
@@ -811,11 +854,17 @@ TeamInstantAction.Server.PostGame.OnSpectatorMode = nil;
 
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction.Client.PreGame:OnBeginState()
+	if (self.suddenDeath) then
+		self:SuddenDeath(false)
+	end
 	InstantAction.Client.PreGame.OnBeginState(self);
 end
 
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction.Server.PreGame:OnBeginState()
+	if (self.suddenDeath) then
+		self:SuddenDeath(false)
+	end
 	self:ResetTime();	
 	self:StartTicking();
 	self:ResetPlayers();
@@ -980,6 +1029,24 @@ function TeamInstantAction.Client:ClVictory(teamId, type)
 		end
 	else
 		self.game:GameOver(0, 0, g_localActorId);
+	end
+end
+
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction.Client:ClSuddenDeath(enable)
+	if (enable) then
+		local ownTeamId=self.game:GetTeam(g_localActorId);
+		for i,teamId in pairs(self.teamId) do
+			if (teamId~=ownTeamId) then
+				local players=self.game:GetTeamPlayers(teamId);
+				if (players) then
+					for k,player in pairs(players) do
+						HUD.AddEntityToRadar(player.id);
+						HUD.DisplayBigOverlayFlashMessage("SUDDEN DEATH", 5.0, 400, 375, self.hudWhite);
+					end
+				end
+			end
+		end
 	end
 end
 

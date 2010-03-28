@@ -1,0 +1,8 @@
+<MetaData>
+   <MiniMap Filename="Ruins.dds" startX="2319.704102" startY="1961.086182" endX="2619.704102" endY="2261.086182" mapRadius="30"/>
+   <Gamerules MP1="InstantAction" MP2="TeamInstantAction" MP3="3PCagematch"/>
+   <LoadingScreens screen1="Ruins_Loading.dds"/>
+   <HeaderText text="Ruins"/>
+   <DescriptionText text="@Loading_screen_info_ruins"/>
+   <Display Name="Ruins"/>
+</MetaData>

@@ -1,0 +1,8 @@
+<MetaData>
+   <MiniMap Filename="Outpost.dds" startX="971.890991" startY="850.903564" endX="1221.890991" endY="1100.903564" mapRadius="25"/>
+   <Gamerules MP1="InstantAction" MP2="TeamInstantAction" MP3="3PCagematch"/>
+   <LoadingScreens screen1="Outpost_Loading.dds"/>
+   <HeaderText text="Outpost"/>
+   <DescriptionText text="@Loading_screen_info_outpost"/>
+   <Display Name="Outpost"/>
+</MetaData>

@@ -1,0 +1,8 @@
+<MetaData>
+   <MiniMap Filename="Treehouse.dds" startX="1697.076172" startY="1241.174194" endX="1847.076172" endY="1391.174194" mapRadius="15"/>
+   <Gamerules MP1="InstantAction" MP2="TeamInstantAction" MP3="3PCagematch"/>
+   <LoadingScreens screen1="Treehouse_Loading.dds"/>
+   <HeaderText text="Treehouse"/>
+   <DescriptionText text="@Loading_screen_info_treehouse"/>
+   <Display Name="Treehouse"/>
+</MetaData>

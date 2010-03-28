@@ -1788,3 +1788,4 @@ int CScriptBind_Actor::IsFlying(IFunctionHandler *pH)
 
 	return pH->EndFunction();
 }
+//------------------------------------------------------------------------

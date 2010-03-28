@@ -233,6 +233,7 @@ void CScriptBind_GameRules::RegisterMethods()
   SCRIPT_REG_TEMPLFUNC(GetReviveTime, "");
 	SCRIPT_REG_TEMPLFUNC(GetMinPlayerLimit, "");
 	SCRIPT_REG_TEMPLFUNC(GetMinTeamLimit, "");
+	SCRIPT_REG_TEMPLFUNC(GetMaxTeamLimit, "");
 	SCRIPT_REG_TEMPLFUNC(GetTeamLock, "");
 	SCRIPT_REG_TEMPLFUNC(GetAutoTeamBalance, "");
 	SCRIPT_REG_TEMPLFUNC(GetAutoTeamBalanceThreshold, "");
@@ -2247,6 +2248,12 @@ int CScriptBind_GameRules::GetMinPlayerLimit(IFunctionHandler *pH)
 int CScriptBind_GameRules::GetMinTeamLimit(IFunctionHandler *pH)
 {
 	return pH->EndFunction(g_pGameCVars->g_minteamlimit);
+}
+
+//------------------------------------------------------------------------
+int CScriptBind_GameRules::GetMaxTeamLimit(IFunctionHandler *pH)
+{
+	return pH->EndFunction(g_pGameCVars->g_maxteamlimit);
 }
 
 //------------------------------------------------------------------------

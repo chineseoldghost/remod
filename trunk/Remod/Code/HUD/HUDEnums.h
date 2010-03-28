@@ -1,4 +1,4 @@
-enum ESound
+	enum ESound
 {
 	ESound_Hud_First,
 	ESound_GenericBeep,
@@ -90,6 +90,7 @@ enum EHUDGAMERULES
 	EHUD_POWERSTRUGGLE,
 	EHUD_TEAMACTION,
 	EHUD_TEAMINSTANTACTION,
+	EHUD_3PCAGEMATCH,
 };
 
 //radar objects on mini map and radar

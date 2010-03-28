@@ -221,6 +221,7 @@ struct SCVars
 	int		g_autoteambalance_threshold;
 	int   g_minplayerlimit;
 	int   g_minteamlimit;
+	int   g_maxteamlimit;
 	int		g_mpSpeedRechargeDelay;
 
 	int   g_tk_punish;

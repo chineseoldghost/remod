@@ -832,6 +832,8 @@ void CHUD::GameRulesSet(const char* name)
 			gameRules = EHUD_TEAMACTION;
 		else if(!stricmp(name, "TeamInstantAction"))
 			gameRules = EHUD_TEAMINSTANTACTION;
+		else if(!stricmp(name, "3PCagematch"))
+			gameRules = EHUD_3PCAGEMATCH;
   }
 
   if(m_currentGameRules != gameRules)//unload stuff
@@ -5293,6 +5295,8 @@ void CHUD::LoadGameRulesHUD(bool load)
 		}
 		break;
 	case EHUD_TEAMACTION:
+	case EHUD_3PCAGEMATCH:
+
     if(load)
     {
       if(!m_animScoreBoard.IsLoaded())

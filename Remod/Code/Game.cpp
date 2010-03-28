@@ -528,19 +528,23 @@ void CGame::PlayerIdSet(EntityId playerId)
 
 void CGame::Slowmo(ICVar *pCVar)
 {
-	int var = pCVar->GetIVal();if(pCVar)
+	int var = pCVar->GetIVal();
+	if(pCVar)
 	{
-			//IScriptTable *pScriptTable = g_pGame->GetGameRules()->GetEntity()->GetScriptTable();
-			//Script::CallMethod(pScriptTable, "Slowmo");
 		
 	ICVar *TimeScale = gEnv->pConsole->GetCVar("time_scale");
 	float scale = 0.3;
 	TimeScale->Set(scale);
 	
 	SAFE_SOUNDMOODS_FUNC(AddSoundMood(SOUNDMOOD_SLOWMO));
-	
-	CryLogAlways("CGame::Slowmo");
 	}
+	else
+	{
+		ICVar *TimeScale = gEnv->pConsole->GetCVar("time_scale");
+		float scale = 1;
+		TimeScale->Set(scale);
+	}
+
 }
 string CGame::InitMapReloading()
 {

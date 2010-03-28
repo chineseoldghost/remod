@@ -8,7 +8,7 @@
  -------------------------------------------------------------------------
   History:
   - 11:8:2004   10:50 : Created by Márcio Martins
-
+f
 *************************************************************************/
 #include "StdAfx.h"
 #include "GameCVars.h"
@@ -594,7 +594,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 
 	pConsole->Register("g_MPDeathCam", &g_deathCam, 1, 0, "Enables / disables the MP death camera (shows the killer's location)");
 	pConsole->Register("g_MPDeathCamMaxZoomFOV", &g_deathCamMaxZoomFOV, 0.1f, 0, "FOV at maximum zoom of the death camera");
-	pConsole->Register("g_MPDeathCamMinZoom", &g_deathCamMinZoomDistance, 2, 0, "Distance at which the death camera begins to zoom on the killer");re_vehiclecapturing;
+	pConsole->Register("g_MPDeathCamMinZoom", &g_deathCamMinZoomDistance, 2, 0, "Distance at which the death camera begins to zoom on the killer");
 	pConsole->Register("g_MPDeathCamMaxZoom", &g_deathCamMaxZoomDistance, 50, 0, "Distance to the killer at which the death camera is fully zoomed in");
 	pConsole->Register("g_MPDeathEffects", &g_deathEffects, 0, 0, "Enables / disables the MP death screen-effects");
 

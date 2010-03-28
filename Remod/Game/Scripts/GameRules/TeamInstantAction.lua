@@ -908,7 +908,7 @@ function TeamInstantAction:ResetRoundTime()
 	self.game:ResetRoundTime();
 end
 ----------------------------------------------------------------------------------------------------
-function LastTeamStanding.Server:OnClientDisconnect(channelId)
+function TeamInstantAction.Server:OnClientDisconnect(channelId)
 	InstantAction.Server.OnClientDisconnect(self, channelId);
 	
 	local player=self.game:GetPlayerByChannelId(channelId);

@@ -1747,11 +1747,14 @@ IEntity *CPlayer::LinkToVehicle(EntityId vehicleId)
 	}
 	else
 	{
+		/*
     if (IsThirdPerson() && !g_pGameCVars->goc_enable)
       ToggleThirdPerson();
+	  
 
 		if (g_pGameCVars->goc_enable && !IsThirdPerson())
 			ToggleThirdPerson();
+			*/
 
 		CALL_PLAYER_EVENT_LISTENERS(OnExitVehicle(this));
 		m_vehicleViewDir.Set(0,1,0);

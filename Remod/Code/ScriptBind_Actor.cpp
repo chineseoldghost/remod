@@ -1789,3 +1789,14 @@ int CScriptBind_Actor::IsFlying(IFunctionHandler *pH)
 	return pH->EndFunction();
 }
 //------------------------------------------------------------------------
+
+int CScriptBind_Actor::ViewThirdPerson(IFunctionHandler *pH)
+{
+	CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+	if(pPlayer && !pPlayer->IsThirdPerson())
+	{
+		pPlayer->ToggleThirdPerson();
+	}
+
+	return pH->EndFunction();
+}

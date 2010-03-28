@@ -476,6 +476,7 @@ struct SCVars
 	// Remod Commands
 	float	re_vehiclecapturing;
 	int     re_slowmo;
+	int     re_fistsonly;
 	int     re_suddendeath;
 	int     re_suddendeathtime;
 

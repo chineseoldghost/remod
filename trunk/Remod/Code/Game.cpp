@@ -531,21 +531,31 @@ void CGame::Slowmo(ICVar *pCVar)
 	int var = pCVar->GetIVal();
 	if(pCVar)
 	{
-		
-	ICVar *TimeScale = gEnv->pConsole->GetCVar("time_scale");
-	float scale = 0.3;
-	TimeScale->Set(scale);
-	
-	SAFE_SOUNDMOODS_FUNC(AddSoundMood(SOUNDMOOD_SLOWMO));
-	}
-	else
-	{
+		float scale;
 		ICVar *TimeScale = gEnv->pConsole->GetCVar("time_scale");
-		float scale = 1;
-		TimeScale->Set(scale);
+		
+		if(TimeScale->GetIVal()==1)
+		
+		{
+			scale = 0.3;
+			TimeScale->Set(scale);
+			SAFE_SOUNDMOODS_FUNC(AddSoundMood(SOUNDMOOD_SLOWMO));
+		}
+		else
+		{
+			scale = 1;
+			TimeScale->Set(scale);
+		}
 	}
-
 }
+
+void CGame::Fistsonly(ICVar *pCVar)
+{
+	CNanoSuit *pNano = new CNanoSuit;
+	CPlayer *pOwner = const_cast<CPlayer*>(pNano->GetOwner());
+		pOwner->Fistsonly("remove");
+}
+
 string CGame::InitMapReloading()
 {
 	string levelFileName = GetIGameFramework()->GetLevelName();

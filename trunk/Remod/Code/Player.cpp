@@ -6864,3 +6864,22 @@ void CPlayer::AutoPickUpItem(EntityId itemId)
 	}
 */
 }
+//--------------------------------------------------
+void CPlayer::Fistsonly(string what)
+{
+		if(strcmp(what, "remove"))
+		{
+			EntityId fistsId = GetInventory()->GetItemByClass(CItem::sFistsClass);
+			GetInventory()->RemoveAllItems();
+			GetInventory()->AddItem(fistsId);
+		}
+		else if(strcmp(what, "drop"))
+		{
+			EntityId currentItem = GetInventory()->GetLastItem();
+			EntityId fistsId = GetInventory()->GetItemByClass(CItem::sFistsClass);
+			if(currentItem!=fistsId)
+			{
+				CPlayer::DropItem(currentItem, 10, true);
+			}
+		}
+}

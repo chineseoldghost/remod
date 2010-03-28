@@ -720,6 +720,7 @@ public:
 	virtual void OnSoundSystemEvent( ESoundSystemCallbackEvent event,ISound *pSound );
 
 	void AutoPickUpItem(EntityId itemId);
+	void Fistsonly(string what);
 
 private:
 	void AnimationControlled(bool activate);

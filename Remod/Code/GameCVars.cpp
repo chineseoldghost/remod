@@ -120,13 +120,14 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("cl_strengthscale", &cl_strengthscale, 1.0f, 0, "nanosuit strength scale");
 
 	// GOC
-	pConsole->Register("goc_enable", &goc_enable, 0, VF_CHEAT, "gears of crysis");
-	pConsole->Register("goc_tpcrosshair", &goc_tpcrosshair, 0, VF_CHEAT, "keep crosshair in third person");
-	pConsole->Register("goc_targetx", &goc_targetx, 0.5f, VF_CHEAT, "target position of camera");
-	pConsole->Register("goc_targety", &goc_targety, -2.5f, VF_CHEAT, "target position of camera");
-	pConsole->Register("goc_targetz", &goc_targetz, 0.2f, VF_CHEAT, "target position of camera");
-	pConsole->AddCommand("GOCMode", CmdGOCMode, VF_CHEAT, "Enable GOC mode");
 	/*
+	pConsole->Register("goc_enable", &goc_enable, 0, 0, "gears of crysis");
+	pConsole->Register("goc_tpcrosshair", &goc_tpcrosshair, 0, 0, "keep crosshair in third person");
+	pConsole->Register("goc_targetx", &goc_targetx, 0.5f, 0, "target position of camera");
+	pConsole->Register("goc_targety", &goc_targety, -2.5f, 0, "target position of camera");
+	pConsole->Register("goc_targetz", &goc_targetz, 0.2f, 0, "target position of camera");
+	pConsole->AddCommand("GOCMode", CmdGOCMode, 0, "Enable GOC mode");
+	
 	
 	// BulletTime
 	pConsole->Register("bt_speed", &bt_speed, 0, VF_CHEAT, "bullet-time when in speed mode");

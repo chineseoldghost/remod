@@ -832,8 +832,8 @@ void CHUD::GameRulesSet(const char* name)
 			gameRules = EHUD_TEAMACTION;
 		else if(!stricmp(name, "TeamInstantAction"))
 			gameRules = EHUD_TEAMINSTANTACTION;
-		else if(!stricmp(name, "3PCagematch"))
-			gameRules = EHUD_3PCAGEMATCH;
+		else if(!stricmp(name, "Cagematch"))
+			gameRules = EHUD_CAGEMATCH;
   }
 
   if(m_currentGameRules != gameRules)//unload stuff
@@ -5294,9 +5294,47 @@ void CHUD::LoadGameRulesHUD(bool load)
 			m_pHUDInstantAction->Show(false);
 		}
 		break;
+		case EHUD_CAGEMATCH:
+		if(load)
+		{
+			m_pHUDTeamInstantAction->Show(true);
+			if(!m_animScoreBoard.IsLoaded())
+			{
+				m_animScoreBoard.Load("Libs/UI/HUD_MultiplayerScoreboard_TDM.gfx");
+				SetFlashColor(&m_animScoreBoard);
+			}
+			if(!m_animChat.IsLoaded())
+			{
+				m_animChat.Load("Libs/UI/HUD_ChatSystem.gfx", eFD_Left);
+				if(m_pHUDTextChat)
+					m_pHUDTextChat->Init(&m_animChat);
+			}
+			if(!m_animVoiceChat.IsLoaded())
+				m_animVoiceChat.Load("Libs/UI/HUD_MultiPlayer_VoiceChat.gfx", eFD_Right, eFAF_ThisHandler);
+			if(!m_animBattleLog.IsLoaded())
+				m_animBattleLog.Load("Libs/UI/HUD_MP_Log.gfx", eFD_Left);
+			// This one is on top of others because it displays important
+			// messages, so let's put it at the end of the rendering list
+			if(!m_animMessages.IsLoaded())
+				m_animMessages.Load("Libs/UI/HUD_Messages.gfx");
+			if(!m_animMPMessages.IsLoaded())
+				m_animMPMessages.Load("Libs/UI/HUD_MP_Messages.gfx", eFD_Center, eFAF_Visible);
+		}
+		else
+		{
+			m_animScoreBoard.Unload();
+			if(m_pHUDTextChat)
+				m_pHUDTextChat->Init(0);
+			m_animChat.Unload();
+			m_animVoiceChat.Unload();
+			m_animBattleLog.Unload();
+			m_animMessages.Unload();
+			m_animMPMessages.Unload();
+			m_pHUDTeamInstantAction->Show(false);
+			m_pHUDInstantAction->Show(false);
+		}
+		break;
 	case EHUD_TEAMACTION:
-	case EHUD_3PCAGEMATCH:
-
     if(load)
     {
       if(!m_animScoreBoard.IsLoaded())

@@ -1,6 +1,6 @@
 <MetaData>
    <MiniMap Filename="Coast.dds" startX="1112.875854" startY="1487.171387" endX="1292.875854" endY="1667.171387" mapRadius="20"/>
-   <Gamerules MP1="InstantAction" MP2="TeamInstantAction" MP3="3PCagematch"/>
+   <Gamerules MP1="InstantAction" MP2="TeamInstantAction" MP3="Cagematch"/>
    <LoadingScreens screen1="Coast_Loading.dds"/>
    <HeaderText text="Coast"/>
    <DescriptionText text="@Loading_screen_info_coast"/>

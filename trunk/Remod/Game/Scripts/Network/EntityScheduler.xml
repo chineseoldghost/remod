@@ -4,7 +4,7 @@
 	<Class name="TeamAction" policy="rule"/>
 	<Class name="TeamInstantAction" policy="rule"/>
 	<Class name="PowerStruggle" policy="rule"/>
-	<Class name="3PCagematch" policy="rule"/>
+	<Class name="Cagematch" policy="rule"/>
 	<!-- actors -->
 	<Class name="Player" policy="dude" own="own"/>
 	<!-- weapons -->

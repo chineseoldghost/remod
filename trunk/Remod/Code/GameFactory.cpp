@@ -240,7 +240,7 @@ void InitGameFactory(IGameFramework *pFramework)
 	pFramework->GetIGameRulesSystem()->AddGameRulesLevelLocation("PowerStruggle", "multiplayer/ps/");
 #endif //spdemo
 
-	pFramework->GetIGameRulesSystem()->RegisterGameRules("3PCagematch", "GameRules");
-	pFramework->GetIGameRulesSystem()->AddGameRulesAlias("3PCagematch", "3PC");
-	pFramework->GetIGameRulesSystem()->AddGameRulesLevelLocation("3PCagematch", "multiplayer/ia/");
+	pFramework->GetIGameRulesSystem()->RegisterGameRules("Cagematch", "GameRules");
+	pFramework->GetIGameRulesSystem()->AddGameRulesAlias("Cagematch", "CM");
+	pFramework->GetIGameRulesSystem()->AddGameRulesLevelLocation("Cagematch", "multiplayer/ia/");
 }

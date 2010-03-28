@@ -362,12 +362,14 @@ void CNanoSuit::SetCloakLevel(ENanoCloakMode mode)
 
 void CNanoSuit::Update(float frameTime)
 {
+	/*
 	if(isFistsonly()) // This is just a quick fix! A better way of doing this must be found
 	{
 		CNanoSuit *pNano = new CNanoSuit;
 		CPlayer *pOwner = const_cast<CPlayer*>(pNano->GetOwner());
 		pOwner->Fistsonly("drop");
 	}
+	*/
 
 	if (!m_pOwner || m_pOwner->GetHealth()<=0)
 		return;

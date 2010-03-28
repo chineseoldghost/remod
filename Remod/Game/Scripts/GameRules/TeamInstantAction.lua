@@ -439,12 +439,6 @@ end
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction:CheckTimeLimit()
 	self:CheckSuddenDeath();
-	if (self.game:IsTimeLimited() and self.game:GetRemainingGameTime()<=10) then
-		System.SetCVar("re_slowmo", 1);
-	end
-	if (self.game:IsTimeLimited() and self.game:GetRemainingGameTime()<=3) then
-		System.SetCVar("re_slowmo", 0);
-	end
 	if (self.game:IsTimeLimited() and self.game:GetRemainingGameTime()<=0) then
 		local state=self:GetState();
 		if (state and state~="InGame") then
@@ -645,16 +639,16 @@ end
 
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction.Server:RequestRevive(playerId)
+	if (self.suddenDeath) then
+		self.game:ChangeSpectatorMode(player.id, 3, NULL_ENTITY);
+	end
+	
 	local player = System.GetEntity(playerId);
 
 	if (player and player.actor) then
 		-- allow respawn if spectating player and on a team
 		if (((player.actor:GetSpectatorMode() == 3 and self.game:GetTeam(playerId)~=0) or (player:IsDead() and player.death_time and _time-player.death_time>2.5))) then
-			if (self.suddenDeath) then
-				self.game:ChangeSpectatorMode(player.id, 3, NULL_ENTITY);
-			else
 				self:RevivePlayer(player.actor:GetChannel(), player);
-			end
 		end
 	end
 end

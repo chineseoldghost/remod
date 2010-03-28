@@ -267,7 +267,7 @@ public:
 	void AddListener(INanoSuitListener* pListener);
 	void RemoveListener(INanoSuitListener* pListener);
 
-	bool isFistsonly() const { return m_fistsonly; };
+	//bool isFistsonly() const { return m_fistsonly; };
 
 private:
 	void Precache();
@@ -299,7 +299,7 @@ private:
 
 	bool m_bNightVisionEnabled;
 	bool m_invulnerable;
-	bool m_fistsonly;
+	//bool m_fistsonly;
 
 	std::vector<bool> m_disabledFlags;
 	std::vector<float> m_disabledTimes;

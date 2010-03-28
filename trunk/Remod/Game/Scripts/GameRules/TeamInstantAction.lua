@@ -1168,13 +1168,11 @@ end
 
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction.Client.PreRound:OnBeginState()
-	self.game:FreezeInput(true);
 end
 
 
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction.Client.PreRound:OnEndState()
-	self.game:FreezeInput(false);
 end
 
 

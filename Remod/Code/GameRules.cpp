@@ -762,17 +762,6 @@ void CGameRules::OnKill(CActor *pActor, EntityId shooterId, const char *weaponCl
 
 	ScriptHandle handleEntity(pActor->GetEntityId()), handleShooter(shooterId);
 	CallScript(m_clientStateScript, "OnKill", handleEntity, handleShooter, weaponClassName, damage, material, hit_type);
-
-	EntityId Player = pActor->GetEntityId();
-	if(Player == shooterId)
-	{
-		g_pGame->UpAchievement("Kills");
-		CryLogAlways("CGameRules::OnKill | Local player is shooter");
-	}
-	else
-	{
-		CryLogAlways("CGameRules::OnKill | Local player is not shooter");
-	}	
 }
 
 //------------------------------------------------------------------------

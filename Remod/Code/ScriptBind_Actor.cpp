@@ -73,6 +73,7 @@ CScriptBind_Actor::CScriptBind_Actor(ISystem *pSystem)
 	SCRIPT_REG_TEMPLFUNC(SetAngles,"vAngles");
 	SCRIPT_REG_FUNC(GetAngles);
 	SCRIPT_REG_TEMPLFUNC(AddAngularImpulse,"vAngular,deceleration,duration");
+	SCRIPT_REG_TEMPLFUNC(AddImpulse,"x,y,z");
 	SCRIPT_REG_TEMPLFUNC(SetViewLimits,"dir,rangeH,rangeV");
 	SCRIPT_REG_TEMPLFUNC(PlayAction,"action,extension");
 	SCRIPT_REG_TEMPLFUNC(SimulateOnAction,"action,mode,value");
@@ -559,6 +560,15 @@ int CScriptBind_Actor::AddAngularImpulse(IFunctionHandler *pH,Ang3 vAngular,floa
 	CActor *pActor = GetActor(pH);
 	if (pActor)
 		pActor->AddAngularImpulse(vAngular,deceleration,duration);
+
+	return pH->EndFunction();
+}
+
+int CScriptBind_Actor::AddImpulse(IFunctionHandler *pH,float x, float y, float z)
+{
+	CActor *pActor = GetActor(pH);
+	if (pActor)
+		pActor->AddImpulse(x,y,z);
 
 	return pH->EndFunction();
 }

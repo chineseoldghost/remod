@@ -16,14 +16,16 @@
 Script.LoadScript("scripts/gamerules/instantaction.lua", 1, 1);
 --------------------------------------------------------------------------
 TeamInstantAction = new(InstantAction);
-TeamInstantAction.States = { "Reset", "PreGame", "InGame", "PostGame", };
+TeamInstantAction.States = { "Reset", "PreGame", "PreRound", "InGame", "PostRound", "PostGame", };
 
 
 -- timers
 TeamInstantAction.TEAM_CHANGE_MIN_TIME			= 60; -- time before allowing teamchange
 TeamInstantAction.MIN_TEAM_LIMIT_WARN_TIMER	= 15; -- team limit warning timer
 
-
+TeamInstantAction.PREROUND_TIMERID						= 1060;
+TeamInstantAction.POSTROUND_TIMERID					= 1070;
+TeamInstantAction.POSTROUND_TIME							= 3000;
 
 TeamInstantAction.TIA_SPAWN_LOCATIONS			= true;
 TeamInstantAction.TEAM_SPAWN_LOCATIONS			= true;
@@ -95,7 +97,8 @@ Net.Expose {
 		ClSetPlayerSpawnGroup	= { RELIABLE_UNORDERED, POST_ATTACH, ENTITYID, ENTITYID },
 		ClSpawnGroupInvalid		= { RELIABLE_UNORDERED, POST_ATTACH, ENTITYID, },
 		ClVictory							= { RELIABLE_ORDERED, POST_ATTACH, INT8, INT8 },
-		
+		ClRoundVictory				= { RELIABLE_ORDERED, POST_ATTACH, INT8, },
+
 		ClSuddenDeath					= { RELIABLE_ORDERED, POST_ATTACH, BOOL, },
 
 		ClStartWorking				= { RELIABLE_ORDERED, POST_ATTACH, ENTITYID; STRINGTABLE },
@@ -216,6 +219,21 @@ function TeamInstantAction:EndAutoTeamBalance()
 		
 		Log("Auto Team Balance finished...");
 	end
+end
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction:Reset(forcePregame)
+	self:ResetTime();
+
+	self.roundCount=0;
+
+	if ((self:PlayerCountOk() and (not forcePregame)) or (self.forceInGame)) then		
+		self:GotoState("PreRound");
+	else
+		self:GotoState("PreGame");
+	end
+	self.forceInGame=nil;
+	
+	self.works={};
 end
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction:UpdateAutoTeamBalance()
@@ -574,7 +592,7 @@ function TeamInstantAction.Server:OnChangeTeam(playerId, teamId)
 		if (player) then
 		
 			if (player.last_team_change and teamId~=0) then
-				if (self:GetState()=="InGame") then
+				if (self:GetState()=="InGame" or self:GetState()=="PreRound") then
 					if (_time-player.last_team_change<self.TEAM_CHANGE_MIN_TIME) then
 						if ((not player.last_team_change_warning) or (_time-player.last_team_change_warning>=4)) then
 							player.last_team_change_warning=_time;
@@ -753,6 +771,8 @@ function TeamInstantAction.Server:OnPlayerKilled(hit)
 	local tk = self:IsTeamKill(hit.target, hit.shooter);
 	self.game:KillPlayer(hit.targetId, not tk, true, hit.shooterId, hit.weaponId, hit.damage, hit.materialId, hit.typeId, hit.dir);
 	self:ProcessScores(hit, tk);
+
+	self:CheckRoundEnd();
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -800,9 +820,114 @@ end
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction.Server:OnTimer(timerId, msec)
 	InstantAction.Server.OnTimer(self, timerId, msec);
+
+	
+	if (timerId == self.PREROUND_TIMERID) then
+		self:GotoState("InGame");
+	elseif (timerId == self.POSTROUND_TIMERID) then
+		self:CheckRoundLimit();
+		
+		if (self:GetState()~="PostGame") then
+			self:GotoState("PreRound");
+		end
+	end
 	
 	if (timerId==self.BALANCE_ACTION_TIMERID) then
 		self:StartAutoTeamBalance();
+	end
+end
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction:CheckRoundTime()
+	if (self.game:IsRoundTimeLimited() and self.game:GetRemainingRoundTime()<=0) then
+		local minAlive=999999;
+		local minId=0;
+		local draw=false;
+
+		for i,id in pairs(self.teamId) do
+			local alive=self:GetTeamAliveCount(id);
+			if (alive<=minAlive) then
+				if ((minId~=0) and (minAlive==alive)) then
+					draw=true;
+				else
+					draw=false;
+					minId=id;
+					minAlive=alive;
+				end
+			end
+		end
+
+		if (not draw) then
+			for i,id in pairs(self.teamId) do
+				if (id~=minId) then
+					self:SetTeamScore(id, self:GetTeamScore(id)+1);
+				end
+			end
+			
+			self.losingTeamId=mindId;
+		else
+			self.losingTeamId=0;
+		end
+
+		self:GotoState("PostRound");
+	else
+		self:CheckSuddenDeath();
+	end
+end
+
+
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction:CheckRoundEnd()
+	local losing=0;
+	for i,teamId in ipairs(self.teamId) do
+		if (self:GetTeamAliveCount(teamId)<1) then
+			losing=teamId;
+			break;
+		end
+	end
+
+	if (losing~=0) then
+		for i,teamId in ipairs(self.teamId) do
+			if (teamId ~= losing) then
+				self:SetTeamScore(teamId, self:GetTeamScore(teamId)+1);
+			end
+		end
+		
+		self.losingTeamId=losing;
+
+		self:GotoState("PostRound");
+	end
+end
+
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction:StartRound()
+	self:GotoState("PreRound");
+end
+
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction:ResetRoundTime()
+	self.game:ResetRoundTime();
+end
+----------------------------------------------------------------------------------------------------
+function LastTeamStanding.Server:OnClientDisconnect(channelId)
+	InstantAction.Server.OnClientDisconnect(self, channelId);
+	
+	local player=self.game:GetPlayerByChannelId(channelId);
+
+	if (player) then
+		self.inBuyZone[player.id]=nil;
+		self.assists[player.id]=nil;
+	end
+
+	self:CheckRoundEnd();
+end
+
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction:CheckRoundLimit()
+	local roundlimit=self.game:GetRoundLimit();
+	if (roundlimit > 0) then
+		if (self.roundCount>=roundlimit) then
+			self:OnGameEnd(self:GetLeadingTeam(), 4);
+		end
 	end
 end
 
@@ -841,6 +966,9 @@ TeamInstantAction:DefaultState("Client", "Reset");
 TeamInstantAction:DefaultState("Server", "PreGame");
 TeamInstantAction:DefaultState("Client", "PreGame");
 
+TeamInstantAction:DefaultState("Server", "PreRound");
+TeamInstantAction:DefaultState("Client", "PreRound");
+
 ----------------------------------------------------------------------------------------------------
 TeamInstantAction:DefaultState("Server", "InGame");
 TeamInstantAction:DefaultState("Client", "InGame");
@@ -848,6 +976,10 @@ TeamInstantAction:DefaultState("Client", "InGame");
 ----------------------------------------------------------------------------------------------------
 TeamInstantAction:DefaultState("Server", "PostGame");
 TeamInstantAction:DefaultState("Client", "PostGame");
+
+TeamInstantAction:DefaultState("Server", "PostRound");
+TeamInstantAction:DefaultState("Client", "PostRound");
+
 
 ----------------------------------------------------------------------------------------------------
 TeamInstantAction.Server.PostGame.OnChangeTeam = nil;
@@ -867,7 +999,8 @@ function TeamInstantAction.Server.PreGame:OnBeginState()
 	if (self.suddenDeath) then
 		self:SuddenDeath(false)
 	end
-	self:ResetTime();	
+	self:ResetTime();
+	self:ResetRoundTime();	
 	self:StartTicking();
 	self:ResetPlayers();
 	self:ResetTeamScores();
@@ -973,6 +1106,7 @@ function TeamInstantAction.Server.InGame:OnUpdate(frameTime)
 	TeamInstantAction.Server.OnUpdate(self, frameTime);
 
 	self:CheckTimeLimit();
+	self:CheckRoundTime();
 	self:UpdateClAlerts();	
 end
 
@@ -983,11 +1117,128 @@ function TeamInstantAction.Server.PostGame:OnBeginState()
 	self:SetTimer(self.NEXTLEVEL_TIMERID, self.NEXTLEVEL_TIME);
 end
 
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction.Server.PreRound:OnBeginState()
+	self:CollectDroppedItems();
+	
+	if (self.suddenDeath) then
+		self:SuddenDeath(false)
+	end
+
+	
+	self.roundCount=self.roundCount+1;
+	self:StartTicking();
+	
+	if (self.roundCount>1) then
+		self:ReviveAllPlayers(true);
+	end
+	
+	self:SetTimer(self.PREROUND_TIMERID, math.max(0, self.game:GetPreRoundTime())*1000);
+	self.game:ResetPreRoundTime();
+	
+
+	if (self.losingTeamId and self.losingTeamId~=0) then	
+		for i,id in pairs(self.teamId) do
+			if (id ~= self.losingTeamId) then
+				local players=self.game:GetTeamPlayers(id);
+				if (players) then
+					for k,player in ipairs(players) do
+						self:AwardPPCount(player.id, self.ppList.WON_ROUND);
+					end
+				end
+			else
+				local players=self.game:GetTeamPlayers(id);
+				if (players) then
+					for k,player in ipairs(players) do
+						self:AwardPPCount(player.id, self.ppList.LOST_ROUND);
+					end
+				end
+			end
+		end
+
+		self.losingTeamId=nil;
+	end
+end
+
+
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction.Server.PreRound:OnEndState()
+end
+
+
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction.Client.PreRound:OnBeginState()
+	self.game:FreezeInput(true);
+end
+
+
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction.Client.PreRound:OnEndState()
+	self.game:FreezeInput(false);
+end
+
+
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction.Server.PostRound:OnBeginState()
+	self:StartTicking();
+	self:SetTimer(self.POSTROUND_TIMERID, self.POSTROUND_TIME);
+	
+	--self.game:SendTextMessage(TextMessageCenter, string.format("Round end", self.roundCount), TextMessageToAll);
+	HUD.DisplayBigOverlayFlashMessage("End of Round", 5, 405, 300, {1,1,1}, (TextMessageToAll));
+	
+	if (self.suddenDeath) then
+		self:SuddenDeath(false)
+	end
+
+	if (self.losingTeamId) then
+		for i,id in pairs(self.teamId) do
+			if (id~=self.losingTeamId) then
+				self.allClients:ClRoundVictory(id);
+			end
+		end
+	end	
+end
+
+
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction.Server.PostRound:OnEndState()
+end
+----------------------------------------------------------------------------------------------------
+
+function TeamInstantAction.Client.PostRound:OnBeginState()
+	--self.game:FreezeInput(true);
+	HUD.DisplayBigOverlayFlashMessage("End of Round", 5, 405, 300, {1,1,1}, (TextMessageToAll));
+end
+
+
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction.Client.PostRound:OnEndState()
+	self.game:FreezeInput(false);
+end
+
 
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction.Client.PostGame:OnBeginState()
 	
 	InstantAction.Client.PostGame.OnBeginState(self);
+end
+
+----------------------------------------------------------------------------------------------------
+function TeamInstantAction.Client:ClRoundVictory(teamId)
+	if (teamId and teamId~=0) then
+		local ownTeamId=self.game:GetTeam(g_localActorId);
+		if(ownTeamId == teamId) then
+			--self:PlaySoundAlert("win", ownTeamId);
+			--self:PlayRadioAlert("win", ownTeamId);
+			self.game:GameOver(1);
+		else
+			--self:PlaySoundAlert("lose", ownTeamId);
+			--self:PlayRadioAlert("lose", ownTeamId);
+			self.game:GameOver(-1);
+		end
+	else
+		self.game:GameOver(0);
+	end
 end
 
 

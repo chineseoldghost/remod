@@ -1,0 +1,1 @@
+..\..\Bin32\crysis -mod Remod -noborder

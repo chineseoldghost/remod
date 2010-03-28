@@ -1,0 +1,8 @@
+<MetaData>
+   <MiniMap Filename="Excavation.dds" startX="1805.282104" startY="1359.346191" endX="2025.282104" endY="1579.346191" mapRadius="28"/>
+   <Gamerules MP1="InstantAction" MP2="TeamInstantAction" MP3="3PCagematch"/>
+   <LoadingScreens screen1="Excavation_Loading.dds"/>
+   <HeaderText text="Excavation"/>
+   <DescriptionText text="@Loading_screen_info_excavation"/>
+   <Display Name="Excavation"/>
+</MetaData>

@@ -1,0 +1,8 @@
+<MetaData>
+   <MiniMap Filename="Battleground.dds" startX="437.071289" startY="1828.489990" endX="1637.071289" endY="3028.489990" mapRadius="100"/>
+   <Gamerules MP1="InstantAction" MP2="TeamInstantAction" MP3="3PCagematch"/>
+   <LoadingScreens screen1="Battleground_Loading.dds"/>
+   <HeaderText text="Battleground"/>
+   <DescriptionText text="@Loading_screen_info_battleground"/>
+   <Display Name="Battleground"/>
+</MetaData>

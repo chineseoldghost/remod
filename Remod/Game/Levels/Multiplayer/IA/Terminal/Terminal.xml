@@ -1,0 +1,8 @@
+<MetaData>
+   <MiniMap Filename="Terminal.dds" startX="1657.850708" startY="1091.507080" endX="2257.850586" endY="1691.507080"/>
+    <Gamerules MP1="InstantAction" MP2="TeamInstantAction" MP3="3PCagematch"/>
+   <LoadingScreens screen1="Terminal_Loading.dds"/>
+   <HeaderText text="Terminal"/>
+   <DescriptionText text="@Loading_screen_info_terminal"/>
+   <Display Name="Terminal"/>
+</MetaData>

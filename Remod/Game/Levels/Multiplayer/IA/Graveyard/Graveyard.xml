@@ -1,0 +1,8 @@
+<MetaData>
+   <MiniMap Filename="Graveyard.dds" startX="1088.603516" startY="1436.040283" endX="1328.603516" endY="1676.040283" mapRadius="20"/>
+   <Gamerules MP1="InstantAction" MP2="TeamInstantAction" MP3="3PCagematch"/>
+   <LoadingScreens screen1="Graveyard_Loading.dds"/>
+   <HeaderText text="Graveyard"/>
+   <DescriptionText text="@Loading_screen_info_graveyard"/>
+   <Display Name="Graveyard"/>
+</MetaData>

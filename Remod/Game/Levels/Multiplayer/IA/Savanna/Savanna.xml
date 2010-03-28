@@ -1,0 +1,8 @@
+<MetaData>
+  <MiniMap Filename="Savanna.dds" startX="1614.889404" startY="2063.368896" endX="2814.889404" endY="3263.368896" mapRadius="110"/>
+   <Gamerules MP1="InstantAction" MP2="TeamInstantAction" MP3="3PCagematch"/>
+   <LoadingScreens screen1="Savanna_Loading.dds"/>
+   <HeaderText text="Savanna"/>
+   <DescriptionText text="@Loading_screen_info_savanna"/>
+   <Display Name="Savanna"/>
+</MetaData>

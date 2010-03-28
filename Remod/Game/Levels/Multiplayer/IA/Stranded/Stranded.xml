@@ -1,0 +1,8 @@
+<MetaData>
+   <MiniMap Filename="Stranded.dds" startX="2506.969727" startY="1234.310791" endX="2946.969727" endY="1674.310791" mapRadius="50"/>
+   <Gamerules MP1="InstantAction" MP2="TeamInstantAction" MP3="3PCagematch"/>
+   <LoadingScreens screen1="Stranded_Loading.dds"/>
+   <HeaderText text="Stranded"/>
+   <DescriptionText text="@Loading_screen_info_stranded"/>
+   <Display Name="Stranded"/>
+</MetaData>

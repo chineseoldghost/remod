@@ -1,0 +1,8 @@
+<MetaData>
+   <MiniMap Filename="Peak.dds" startX="951.163330" startY="1256.295044" endX="1111.163330" endY="1416.295044" mapRadius="20"/>
+   <Gamerules MP1="InstantAction" MP2="TeamInstantAction" MP3="3PCagematch"/>
+   <LoadingScreens screen1="Peak_Loading.dds"/>
+   <HeaderText text="Peak"/>
+   <DescriptionText text="@Loading_screen_info_peak"/>
+   <Display Name="Peak"/>
+</MetaData>

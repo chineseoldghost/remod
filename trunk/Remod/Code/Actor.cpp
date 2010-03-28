@@ -4146,3 +4146,16 @@ void CActor::ForceAutoDrop()
 		}
 	}
 }
+//--------------------------------------------------
+void CActor::AddImpulse(float x, float y, float z)
+{
+	if(IPhysicalEntity *pPE = GetEntity()->GetPhysics())
+	{
+		pe_status_dynamics dynStat;
+		pe_action_impulse actionImp;
+		actionImp.impulse = Vec3(x,y,z) * dynStat.mass;
+		actionImp.iApplyTime = 0;
+		pPE->Action(&actionImp);
+	}
+}
+//--------------------------------------------------

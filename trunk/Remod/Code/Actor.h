@@ -1268,6 +1268,7 @@ public:
 
 	void	SetDropWeaponTimer( EntityId weaponId, float delay );
 	void	ForceAutoDrop();
+	void	AddImpulse(float x, float y, float z);
 
 	// Can occur only when we're not zooming out
 	int m_autoZoomInID;

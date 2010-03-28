@@ -343,7 +343,6 @@ struct SCVars
 	float	hud_alienInterferenceStrength;
 	int		hud_godFadeTime;
 	int		hud_crosshair_enable;
-	int     re_slowmo;
 	int		hud_crosshair;
 	int		hud_chDamageIndicator;
 	int		hud_panoramicHeight;
@@ -475,7 +474,10 @@ struct SCVars
 	float		g_explosionScreenShakeMultiplier;
 
 	// Remod Commands
-	float re_vehiclecapturing;
+	float	re_vehiclecapturing;
+	int     re_slowmo;
+	int     re_suddendeath;
+	int     re_suddendeathtime;
 
 	SCVars()
 	{

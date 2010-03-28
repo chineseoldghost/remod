@@ -620,6 +620,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("re_suddendeath", &re_suddendeath, 1, 0, "Enables/disables Sudden Death mode in TeamInstantAction.");
 	pConsole->Register("re_suddendeathtime", &re_suddendeathtime, 30, 0, "Enables/disables Sudden Death mode in TeamInstantAction.");
 	pConsole->Register("re_slowmo", &re_slowmo, 0, 0, "Activates slowmotion!", CGame::Slowmo);
+	pConsole->Register("re_fistsonly", &re_fistsonly, 0, 0, "Activates 'Fists Only' mode!", CGame::Fistsonly);
 
 //	int iFlags = gEnv->pConsole->GetCVar("r_drawNearFoV")->GetFlags();
 //	gEnv->pConsole->GetCVar("r_drawNearFoV")->SetFlags(iFlags|~VF_CHEAT);

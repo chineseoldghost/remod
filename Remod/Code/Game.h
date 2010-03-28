@@ -150,7 +150,11 @@ public:
   void BlockingProcess(BlockingConditionFunction f);
   void GameChannelDestroyed(bool isServer);
   void DestroyHUD();
+
+  // REMOD
   static void Slowmo(ICVar* pCVar);
+  static void Fistsonly(ICVar* pCVar);
+
 
 	virtual CScriptBind_Actor *GetActorScriptBind() { return m_pScriptBindActor; }
 	virtual CScriptBind_Item *GetItemScriptBind() { return m_pScriptBindItem; }

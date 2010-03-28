@@ -439,6 +439,12 @@ end
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction:CheckTimeLimit()
 	self:CheckSuddenDeath();
+	if (self.game:IsTimeLimited() and self.game:GetRemainingGameTime()<=10) then
+		System.SetCVar("re_slowmo", 1);
+	end
+	if (self.game:IsTimeLimited() and self.game:GetRemainingGameTime()<=3) then
+		System.SetCVar("re_slowmo", 0);
+	end
 	if (self.game:IsTimeLimited() and self.game:GetRemainingGameTime()<=0) then
 		local state=self:GetState();
 		if (state and state~="InGame") then

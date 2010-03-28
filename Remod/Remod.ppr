@@ -292,7 +292,7 @@ Remod
 22=Game\Scripts\Entities\Items\XML\Weapons\AlienMount.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\actor\BasicActor.lua
+Selected=Game\Scripts\Entities\Items\XML\Weapons\AlienMount.xml
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
@@ -349,7 +349,7 @@ TopLine=4
 Caret=34,46
 [Game\Scripts\Entities\actor\BasicActor.lua]
 TopLine=707
-Caret=23,726
+Caret=119,707
 [Game\Libs\MaterialEffects\SurfaceTypes.xml]
 TopLine=237
 Caret=1,1

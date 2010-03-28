@@ -548,13 +548,14 @@ void CGame::Slowmo(ICVar *pCVar)
 		}
 	}
 }
-
+/*
 void CGame::Fistsonly(ICVar *pCVar)
 {
 	CNanoSuit *pNano = new CNanoSuit;
 	CPlayer *pOwner = const_cast<CPlayer*>(pNano->GetOwner());
 		pOwner->Fistsonly("remove");
 }
+*/
 
 string CGame::InitMapReloading()
 {

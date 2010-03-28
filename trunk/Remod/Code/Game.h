@@ -153,7 +153,7 @@ public:
 
   // REMOD
   static void Slowmo(ICVar* pCVar);
-  static void Fistsonly(ICVar* pCVar);
+  //static void Fistsonly(ICVar* pCVar);
 
 
 	virtual CScriptBind_Actor *GetActorScriptBind() { return m_pScriptBindActor; }

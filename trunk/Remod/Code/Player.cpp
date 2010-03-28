@@ -6865,6 +6865,7 @@ void CPlayer::AutoPickUpItem(EntityId itemId)
 */
 }
 //--------------------------------------------------
+/*
 void CPlayer::Fistsonly(string what)
 {
 		if(strcmp(what, "remove"))
@@ -6882,4 +6883,4 @@ void CPlayer::Fistsonly(string what)
 				CPlayer::DropItem(currentItem, 10, true);
 			}
 		}
-}
+}*/

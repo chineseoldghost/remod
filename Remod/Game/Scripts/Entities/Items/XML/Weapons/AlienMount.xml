@@ -256,7 +256,7 @@
 				<thirdperson effect="muzzleflash.Alien.MOAC_charge" helper="weapon_term_moac" light_helper="weapon_term" light_radius="3" scale="1.0" />
 			</muzzleflash>
 		</firemode>-->
-		<firemode name="MOAR" type="FreezingBeam" enabled="1" >
+		<firemode name="MOAR" type="FreezingBeam" enabled="0" >
 			<fire>
 				<param name="clip_size" value="-1" />
 				<param name="helper_tp" value="weapon_term" />

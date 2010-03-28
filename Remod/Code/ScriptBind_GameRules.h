@@ -192,6 +192,7 @@ public:
   int GetReviveTime(IFunctionHandler *pH);
 	int GetMinPlayerLimit(IFunctionHandler *pH);
 	int GetMinTeamLimit(IFunctionHandler *pH);
+	int GetMaxTeamLimit(IFunctionHandler *pH);
 	int GetTeamLock(IFunctionHandler *pH);
 	int GetAutoTeamBalance(IFunctionHandler *pH);
 	int GetAutoTeamBalanceThreshold(IFunctionHandler *pH);

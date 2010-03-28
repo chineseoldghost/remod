@@ -119,7 +119,6 @@ void SCVars::InitCVars(IConsole *pConsole)
 	//FIXME:just for testing
 	pConsole->Register("cl_strengthscale", &cl_strengthscale, 1.0f, 0, "nanosuit strength scale");
 
-	/*
 	// GOC
 	pConsole->Register("goc_enable", &goc_enable, 0, VF_CHEAT, "gears of crysis");
 	pConsole->Register("goc_tpcrosshair", &goc_tpcrosshair, 0, VF_CHEAT, "keep crosshair in third person");
@@ -127,6 +126,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("goc_targety", &goc_targety, -2.5f, VF_CHEAT, "target position of camera");
 	pConsole->Register("goc_targetz", &goc_targetz, 0.2f, VF_CHEAT, "target position of camera");
 	pConsole->AddCommand("GOCMode", CmdGOCMode, VF_CHEAT, "Enable GOC mode");
+	/*
 	
 	// BulletTime
 	pConsole->Register("bt_speed", &bt_speed, 0, VF_CHEAT, "bullet-time when in speed mode");
@@ -321,6 +321,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 
 	pConsole->Register("g_minplayerlimit", &g_minplayerlimit, 2, 0, "Minimum number of players to start a match.");
 	pConsole->Register("g_minteamlimit", &g_minteamlimit, 1, 0, "Minimum number of players in each team to start a match.");
+	pConsole->Register("g_maxteamlimit", &g_maxteamlimit, 1, 0, "Maximum number of players in each team to start a match. (3rd  person cagematch ONLY!)");
 	pConsole->Register("g_tk_punish", &g_tk_punish, 1, 0, "Turns on punishment for team kills");
 	pConsole->Register("g_tk_punish_limit", &g_tk_punish_limit, 5, 0, "Number of team kills user will be banned for");
 	pConsole->Register("g_teamlock", &g_teamlock, 2, 0, "Number of players one team needs to have over the other, for the game to deny joining it. 0 disables.");

@@ -323,7 +323,8 @@ function TeamInstantAction.Client:OnKill(playerId, shooterId, weaponClassName, d
 		if(shooterId == playerId) then
 			
 		else
-			self.game:IncreaseStats("kills");
+			kills = "kills";
+			self.game:IncreaseStats(kills);
 		end
 	end
 

@@ -1,4 +1,1 @@
 cpu	memory	committed	bwin	bwout	nchan
-49.6	79.9	115.3	0.0	0.0	0
-0.0	79.8	115.3	0.0	0.0	0
-0.0	79.8	115.3	0.0	0.0	0

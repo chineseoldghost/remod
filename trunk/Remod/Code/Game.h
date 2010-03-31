@@ -153,6 +153,7 @@ public:
 
   // REMOD
   static void Slowmo(ICVar* pCVar);
+  void GetAchievementXML();
   //static void Fistsonly(ICVar* pCVar);
 
 

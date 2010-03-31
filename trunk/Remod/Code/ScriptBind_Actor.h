@@ -59,6 +59,7 @@ public:
 	virtual int LinkToEntity(IFunctionHandler *pH);
   virtual int IsGhostPit(IFunctionHandler *pH);
 	virtual int IsFlying(IFunctionHandler *pH);
+	virtual int DropInventory(IFunctionHandler *pH, float impulse);
 	virtual int SetAngles(IFunctionHandler *pH,Ang3 vAngles );
 	virtual int GetAngles(IFunctionHandler *pH);
 	virtual int AddAngularImpulse(IFunctionHandler *pH,Ang3 vAngular,float deceleration,float duration);

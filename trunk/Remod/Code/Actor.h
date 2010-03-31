@@ -1267,6 +1267,7 @@ protected:
 public:
 
 	void	SetDropWeaponTimer( EntityId weaponId, float delay );
+	void	DropInventory(float impulse);
 	void	ForceAutoDrop();
 	void	AddImpulse(float x, float y, float z);
 

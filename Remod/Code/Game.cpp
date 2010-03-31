@@ -545,9 +545,12 @@ void CGame::Slowmo(ICVar *pCVar)
 		{
 			scale = 1;
 			TimeScale->Set(scale);
+			ICVar *Sound = gEnv->pConsole->GetCVar("s_soundEnable"); // This will fix the sound still being in slowmo when Slowmo is disabled
+			Sound->Set(1);
 		}
 	}
 }
+
 /*
 void CGame::Fistsonly(ICVar *pCVar)
 {
@@ -1125,25 +1128,29 @@ const char* CGame::GetMappedLevelName(const char *levelName) const
 /********************************************
 * REMOD ACHIEVEMENT SYSTEM
 ********************************************/
-void CGame::ResetAchievements()
+void CGame::GetAchievementXML()
 {
+	IXmlParser*	pxml = g_pGame->GetIGameFramework()->GetISystem()->GetXmlUtils()->CreateXmlParser();
+	if(!pxml)
+		return;
 
-}
+	XmlNodeRef node = GetISystem()->LoadXmlFile("Game/Scripts/GameRules/AchievementSystem.xml");
+	if(!node)
+		return;
 
-void CGame::EarnAchievement(string Achievement, bool state)
-{
-}
-
-void CGame::UpAchievement(string Achievement)
-{
-	if (Achievement == "Kills")
-	{
-		TotalKills++;
-		if(TotalKills==1)
-		{	
-			CryLogAlways("ACHIEVEMENT '5 KILLS' ACHIEVED!");
-			CHUD *pHUD = new CHUD;
-			pHUD->ShowWarningMessage(EHUD_ACHIEVEMENT, "Achievement '5 Kills' earned!");
+	XmlNodeRef achievementsNode = node->findChild("achievements");
+		if(achievementsNode)
+		{
+			for (int i = 0; i < achievementsNode->getChildCount(); ++i)
+			{
+				XmlNodeRef achievementNode = achievementsNode->getChild(i);
+				if(achievementNode)
+				{
+					XmlString name;
+					int achieved = 0;
+					achievementNode->getAttr("name", name);
+					achievementNode->getAttr("achieved", achieved);
+				}
+			}
 		}
-	}
 }

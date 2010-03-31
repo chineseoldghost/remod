@@ -4118,6 +4118,26 @@ void CActor::UpdateSuicide(float frameTime)
 		pGameRules->ClientHit(suicideInfo);
 	}
 }
+//-------------------------------------------------------------------
+void CActor::DropInventory(float impulse)
+{
+	IInventory *pInventory = GetInventory();
+	if (!pInventory)
+		return;
+
+	int count = pInventory->GetCount();
+	for (int i=0; i<count; i++)
+	{
+		if (EntityId itemId=pInventory->GetItem (i))
+		{
+			if (IItem *pItem=gEnv->pGame->GetIGameFramework()->GetIItemSystem()->GetItem(itemId))
+			{
+				CWeapon *pWeapon=static_cast<CWeapon *>(pItem->GetIWeapon());
+				pWeapon->Drop(impulse,true,false);
+			}
+		}
+	}
+}
 
 
 //-------------------------------------------------------------------
@@ -4141,6 +4161,7 @@ void CActor::ForceAutoDrop()
 					continue;
 				if(!pWeapon->IsAutoDroppable())
 					continue;
+				pWeapon->Drop(10,true,false);
 				pWeapon->AutoDrop( false );
 			}
 		}

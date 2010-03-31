@@ -2526,7 +2526,7 @@ int CScriptBind_GameRules::UpdateAchievement(IFunctionHandler *pH, const char *A
 int CScriptBind_GameRules::IncreaseStats(IFunctionHandler *pH, const char *stats)
 {
 	CryLogAlways("IncreaseStats | SCRIPTBIND");
-	if (!stricmp(stats, "kills"))
+	if (stricmp(stats, "kills"))
 	{
 		g_pGame->TotalKills++;
 		if(g_pGame->TotalKills==5)

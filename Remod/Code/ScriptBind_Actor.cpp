@@ -132,6 +132,8 @@ CScriptBind_Actor::CScriptBind_Actor(ISystem *pSystem)
 	SCRIPT_REG_TEMPLFUNC(PlayNanoSuitSound,"sound");
 	SCRIPT_REG_TEMPLFUNC(NanoSuitHit,"damage");
 
+	SCRIPT_REG_TEMPLFUNC(DropInventory,"impulse");
+
 	//------------------------------------------------------------------------
 	// NETWORK
 	//------------------------------------------------------------------------
@@ -1786,5 +1788,15 @@ int CScriptBind_Actor::IsFlying(IFunctionHandler *pH)
 			return pH->EndFunction(livStat.bFlying!=0);
 	}
 
+	return pH->EndFunction();
+}
+//------------------------------------------------------------------------
+int CScriptBind_Actor::DropInventory(IFunctionHandler *pH, float impulse)
+{
+	CActor *pActor = GetActor(pH);
+	if (!pActor)
+		return pH->EndFunction();
+
+	pActor->DropInventory(impulse);
 	return pH->EndFunction();
 }

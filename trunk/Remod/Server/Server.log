@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(29 Mar 2010) Time(09 20 58)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(31 Mar 2010) Time(11 37 44)"  -- used by backup system
  
-Log Started at Monday, March 29, 2010 09:20:58
+Log Started at Wednesday, March 31, 2010 11:37:44
 Running 32 bit version
 Executable: C:\Program Files (x86)\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 Quad  CPU   Q9000  @ 2.00GHz
 Family: 6, Model: 7, Stepping: 10
 FPU: On-Chip
-CPU Speed (estimated): 1994.974369 MHz
+CPU Speed (estimated): 1994.961988 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 Quad  CPU   Q9000  @ 2.00GHz
 Family: 6, Model: 7, Stepping: 10
 FPU: On-Chip
-CPU Speed (estimated): 1994.965533 MHz
+CPU Speed (estimated): 1832.018571 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -36,7 +36,7 @@ Processor 2:
 CPU: Intel Intel(R) Core(TM)2 Quad  CPU   Q9000  @ 2.00GHz
 Family: 6, Model: 7, Stepping: 10
 FPU: On-Chip
-CPU Speed (estimated): 1994.957746 MHz
+CPU Speed (estimated): 1682.149203 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -46,7 +46,7 @@ Processor 3:
 CPU: Intel Intel(R) Core(TM)2 Quad  CPU   Q9000  @ 2.00GHz
 Family: 6, Model: 7, Stepping: 10
 FPU: On-Chip
-CPU Speed (estimated): 1994.972216 MHz
+CPU Speed (estimated): 938.832454 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -60,11 +60,11 @@ System language: Swedish
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 09:20:58 03/29/10, system running for 24 minutes
-4091MB physical memory installed, 2448MB available, 4095MB virtual memory installed, 40 percent of memory in use
+Local time is 11:37:45 03/31/10, system running for 164 minutes
+4091MB physical memory installed, 2287MB available, 4095MB virtual memory installed, 44 percent of memory in use
 PageFile usage: 30MB, Working Set: 9MB, Peak PageFile usage: 30MB,
-Current display mode is 1440x900x32, (Unknown graphics card)
-IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
+Current display mode is 1920x1080x32, (Unknown graphics card)
+IBM enhanced (101/102-key) keyboard and 16+ button mouse installed
 --------------------------------------------------------------------------------
 Stream Engine Initialization
 Network initialization
@@ -115,9 +115,10 @@ Initializing AI System
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
     $3sv_gamerules = $6TeamInstantAction $5[]$4
-[net 07:20:59.746] network hostname: Filip-PC
-[net 07:20:59.776]   ip:5.116.120.97
-[net 07:20:59.776]   ip:10.17.182.84
+[net 09:37:46.303] network hostname: Filip-PC
+[net 09:37:46.336]   ip:83.251.51.214
+[net 09:37:46.336]   ip:5.116.120.97
+[net 09:37:46.336]   ip:192.168.1.2
     $3con_restricted = $60 $5[RESTRICTEDMODE]$4
     $3e_screenshot_min_slices = $615 $5[]$4
     $3e_screenshot_width = $63840 $5[]$4

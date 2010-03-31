@@ -138,7 +138,7 @@ CGame::~CGame()
 	SAFE_DELETE(m_pOptionsManager);
 	SAFE_DELETE(m_pLaptopUtil);
 	SAFE_DELETE(m_pBulletTime);
-	SAFE_DELETE(m_pSoundMoods);
+	//SAFE_DELETE(m_pSoundMoods);
 	SAFE_DELETE(m_pHUD);
 	SAFE_DELETE(m_pSPAnalyst);
 	m_pWeaponSystem->Release();
@@ -535,11 +535,11 @@ void CGame::Slowmo(ICVar *pCVar)
 		ICVar *TimeScale = gEnv->pConsole->GetCVar("time_scale");
 		
 		if(TimeScale->GetIVal()==1)
-		
 		{
 			scale = 0.3;
 			TimeScale->Set(scale);
-			SAFE_SOUNDMOODS_FUNC(AddSoundMood(SOUNDMOOD_SLOWMO));
+			//SAFE_SOUNDMOODS_FUNC(AddSoundMood(SOUNDMOOD_SLOWMO));
+			g_pGame->GetSoundMoods()->AddSoundMood(SOUNDMOOD_SLOWMO,1000);
 		}
 		else
 		{
@@ -1128,6 +1128,7 @@ const char* CGame::GetMappedLevelName(const char *levelName) const
 /********************************************
 * REMOD ACHIEVEMENT SYSTEM
 ********************************************/
+/*
 void CGame::GetAchievementXML()
 {
 	IXmlParser*	pxml = g_pGame->GetIGameFramework()->GetISystem()->GetXmlUtils()->CreateXmlParser();
@@ -1154,3 +1155,4 @@ void CGame::GetAchievementXML()
 			}
 		}
 }
+*/

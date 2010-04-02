@@ -292,7 +292,7 @@ Remod
 22=Game\Scripts\Entities\Items\XML\Weapons\AlienMount.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\actor\BasicActor.lua
+Selected=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
@@ -303,11 +303,11 @@ Caret=9,361
 TopLine=1
 Caret=108,39
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
-TopLine=641
-Caret=51,683
+TopLine=216
+Caret=35,227
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
-TopLine=579
-Caret=38,621
+TopLine=631
+Caret=18,673
 [Game\Scripts\Entities\Items\XML\Weapons\SMG.xml]
 TopLine=182
 Caret=35,203

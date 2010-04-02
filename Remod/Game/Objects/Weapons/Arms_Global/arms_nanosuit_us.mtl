@@ -1,6 +1,6 @@
 <Material MtlFlags="256">
  <SubMaterials>
-  <Material Name="arms" MtlFlags="128" Shader="Cloth" GenMask="268435712" SurfaceType="mat_kevlar" Diffuse="0.25098041,0.25098041,0.25098041" Specular="6.5,6.5,6.5" Emissive="0,0,0" Shininess="1" Opacity="1">
+  <Material Name="arms" MtlFlags="128" Shader="Cloth" GenMask="268435712" SurfaceType="mat_kevlar" Diffuse="0.5,0.5,0.5" Specular="6.5,6.5,6.5" Emissive="0,0,0" Shininess="1" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="objects/weapons/arms_global/arms_nanosuit_us_strength.tif" Filter="7">
      <TexMod />
@@ -17,7 +17,7 @@
    </Textures>
    <PublicParams AnimFrequency="0" AnimAmplitudeWav0="0" AnimAmplitudeWav2="0" AnimPhase="1" AnisotropicShape="0.25" DiffuseExponent="0.30000001" FuzzynessSmoothness="1.11" FuzzynessStrength="1.75" FuzzynessSpread="1.65" FuzzynessSaturation="1" SpecularMultiplier="0.029999999"/>
   </Material>
-  <Material Name="nanosuit" MtlFlags="132" Shader="Cloth" GenMask="268435728" SurfaceType="mat_kevlar" Diffuse="0.49803925,0.49803925,0.49803925" Specular="1,1,1" Emissive="0,0,0" Shininess="10" Opacity="1">
+  <Material Name="nanosuit" MtlFlags="132" Shader="Cloth" GenMask="268435728" SurfaceType="mat_kevlar" Diffuse="0.49803925,0.49803925,0.49803925" Specular="6.5,6.5,6.5" Emissive="0,0,0" Shininess="1" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="objects/characters/human/us/nanosuit/nanosuit_us.tif" Filter="7">
      <TexMod />
@@ -29,7 +29,7 @@
      <TexMod />
     </Texture>
    </Textures>
-   <PublicParams AnimFrequency="0" AnimAmplitudeWav0="0" AnimAmplitudeWav2="0" AnimPhase="1" AnisotropicShape="0.25" DiffuseExponent="0.109" FuzzynessSmoothness="2.75" FuzzynessStrength="1.35" FuzzynessSpread="0.99000001" FuzzynessSaturation="1" SpecularMultiplier="0.31400001"/>
+   <PublicParams AnimFrequency="0" AnimAmplitudeWav0="0" AnimAmplitudeWav2="0" AnimPhase="1" AnisotropicShape="0.25" DiffuseExponent="0.30000001" FuzzynessSmoothness="1.11" FuzzynessStrength="1.75" FuzzynessSpread="1.65" FuzzynessSaturation="1" SpecularMultiplier="0.029999999"/>
   </Material>
  </SubMaterials>
  <PublicParams AmbientMultiplier="1"/>

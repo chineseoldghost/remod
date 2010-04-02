@@ -1,6 +1,6 @@
 <Material MtlFlags="256">
  <SubMaterials>
-  <Material Name="Helmet" MtlFlags="128" Shader="Cloth" GenMask="268435712" SurfaceType="mat_kevlar" Diffuse="0.30000001,0.30000001,0.30000001" Specular="6.5,6.5,6.5" Emissive="0,0,0" Shininess="1" Opacity="1">
+  <Material Name="Helmet" MtlFlags="128" Shader="Cloth" GenMask="268435712" SurfaceType="mat_kevlar" Diffuse="0.5,0.5,0.5" Specular="6.5,6.5,6.5" Emissive="0,0,0" Shininess="1" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="objects/characters/human/us/nanosuit/nanosuit_helm _mask_strength.dds" Filter="7">
      <TexMod />

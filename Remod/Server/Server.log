@@ -1,6 +1,6 @@
-BackupNameAttachment=" Build(6729) Date(05 Apr 2010) Time(14 14 20)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(05 Apr 2010) Time(16 40 17)"  -- used by backup system
  
-Log Started at Monday, April 05, 2010 14:14:20
+Log Started at Monday, April 05, 2010 16:40:17
 Running 32 bit version
 Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
@@ -16,7 +16,7 @@ Processor 0:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.277844 MHz
+CPU Speed (estimated): 1997.277022 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -26,7 +26,7 @@ Processor 1:
 CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
 Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1997.278911 MHz
+CPU Speed (estimated): 1997.265870 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
@@ -40,8 +40,8 @@ System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 14:14:21 04/05/10, system running for 91 minutes
-1521MB physical memory installed, 967MB available, 2047MB virtual memory installed, 36 percent of memory in use
+Local time is 16:40:18 04/05/10, system running for 237 minutes
+1521MB physical memory installed, 654MB available, 2047MB virtual memory installed, 56 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
@@ -95,10 +95,3 @@ Initializing AI System
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
     $3sv_gamerules = $6TeamInstantAction $5[]$4
-[net 12:14:21.902] network hostname: iMac7
-[net 12:14:21.917]   ip:192.168.0.192
-[net 12:14:21.917]   ip:5.182.209.7
------------------------------------------------------
-*LOADING: Level multiplayer/ia/outpost loading time: 4.79 seconds
------------------------------------------------------
-[net 12:17:03.618] Disconnect iMac7.telenet.be:52088; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:52088'

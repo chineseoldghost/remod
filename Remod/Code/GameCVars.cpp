@@ -44,39 +44,6 @@ static void BroadcastChangeSafeMode( ICVar * )
 	}
 }
 
-void CmdBulletTimeMode( IConsoleCmdArgs* cmdArgs)
-{
-	g_pGameCVars->goc_enable = 0;
-	g_pGameCVars->goc_tpcrosshair = 0;
-
-	g_pGameCVars->bt_ironsight = 1;
-	g_pGameCVars->bt_speed = 0;
-	g_pGameCVars->bt_energy_decay = 2.5;
-	g_pGameCVars->bt_end_reload = 1;
-	g_pGameCVars->bt_end_select = 1;
-	g_pGameCVars->bt_end_melee = 0;
-}
-
-void CmdGOCMode( IConsoleCmdArgs* cmdArgs)
-{
-	g_pGameCVars->goc_enable = 1;
-	g_pGameCVars->goc_tpcrosshair = 1;
-	
-	g_pGameCVars->bt_ironsight = 1;
-	g_pGameCVars->bt_speed = 0;
-	g_pGameCVars->bt_energy_decay = 0;
-	g_pGameCVars->bt_end_reload = 1;
-	g_pGameCVars->bt_end_select = 1;
-	g_pGameCVars->bt_end_melee = 0;
-
-	//
-	CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
-	if(pPlayer && !pPlayer->IsThirdPerson())
-	{
-		pPlayer->ToggleThirdPerson();
-	}
-}
-
 void CmdListInvisiblePlayers(IConsoleCmdArgs* cmdArgs)
 {
 	IActorIteratorPtr it = g_pGame->GetIGameFramework()->GetIActorSystem()->CreateActorIterator();
@@ -119,30 +86,6 @@ void SCVars::InitCVars(IConsole *pConsole)
 	//FIXME:just for testing
 	pConsole->Register("cl_strengthscale", &cl_strengthscale, 1.0f, 0, "nanosuit strength scale");
 
-	// GOC
-	/*
-	pConsole->Register("goc_enable", &goc_enable, 0, 0, "gears of crysis");
-	pConsole->Register("goc_tpcrosshair", &goc_tpcrosshair, 0, 0, "keep crosshair in third person");
-	pConsole->Register("goc_targetx", &goc_targetx, 0.5f, 0, "target position of camera");
-	pConsole->Register("goc_targety", &goc_targety, -2.5f, 0, "target position of camera");
-	pConsole->Register("goc_targetz", &goc_targetz, 0.2f, 0, "target position of camera");
-	pConsole->AddCommand("GOCMode", CmdGOCMode, 0, "Enable GOC mode");
-	
-	
-	// BulletTime
-	pConsole->Register("bt_speed", &bt_speed, 0, VF_CHEAT, "bullet-time when in speed mode");
-	pConsole->Register("bt_ironsight", &bt_ironsight, 0, VF_CHEAT, "bullet-time when in ironsight");
-	pConsole->Register("bt_end_reload", &bt_end_reload, 0, VF_CHEAT, "end bullet-time when reloading");
-	pConsole->Register("bt_end_select", &bt_end_select, 0, VF_CHEAT, "end bullet-time when selecting a new weapon");
-	pConsole->Register("bt_end_melee", &bt_end_melee, 0, VF_CHEAT, "end bullet-time when melee");
-	pConsole->Register("bt_time_scale", &bt_time_scale, 0.2f, VF_CHEAT, "bullet-time time scale to apply");
-	pConsole->Register("bt_pitch", &bt_pitch, -0.4f, VF_CHEAT, "sound pitch shift for bullet-time");
-	pConsole->Register("bt_energy_max", &bt_energy_max, 1.0f, VF_CHEAT, "maximum bullet-time energy");
-	pConsole->Register("bt_energy_decay", &bt_energy_decay, 2.5f, VF_CHEAT, "bullet time energy decay rate");
-	pConsole->Register("bt_energy_regen", &bt_energy_regen, 0.5f, VF_CHEAT, "bullet time energy regeneration rate");
-	pConsole->AddCommand("bulletTimeMode", CmdBulletTimeMode, VF_CHEAT, "Enable bullet time mode");
-	*/
-
 	pConsole->Register("dt_enable", &dt_enable, 0, 0, "suit actions activated by double-tapping");
 	pConsole->Register("dt_time", &dt_time, 0.25f, 0, "time in seconds between double taps");
 	pConsole->Register("dt_meleeTime", &dt_meleeTime, 0.3f, 0, "time in seconds between double taps for melee");
@@ -170,8 +113,6 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->RegisterInt("cl_screeneffects", 1, 0, "Enable player screen effects (depth-of-field, motion blur, ...).");
 	
 	pConsole->Register("cl_debugSwimming", &cl_debugSwimming, 0, VF_CHEAT, "enable swimming debugging");
-	pConsole->Register("cl_g15lcdEnable", &cl_g15lcdEnable, 1, VF_DUMPTODISK, "enable support for Logitech G15 LCD");
-	pConsole->Register("cl_g15lcdTick", &cl_g15lcdTick, 250, VF_DUMPTODISK, "milliseconds between lcd updates");
 
 	ca_GameControlledStrafingPtr = pConsole->GetCVar("ca_GameControlledStrafing");
 	pConsole->Register("pl_curvingSlowdownSpeedScale", &pl_curvingSlowdownSpeedScale, 0.5f, VF_CHEAT, "Player only slowdown speedscale when curving/leaning extremely.");
@@ -585,10 +526,10 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("g_spectate_TeamOnly", &g_spectate_TeamOnly, 1, 0, "If true, you can only spectate players on your team");
 	pConsole->Register("g_spectate_FixedOrientation", &g_spectate_FixedOrientation, 0, 0, "If true, spectator camera is fixed behind player. Otherwise spectator controls orientation");
 	pConsole->Register("g_spectate_FreeLookMoveSpeed", &g_spectate_FreeLookMoveSpeed, 1.0f, 0, "Controls how fast the free look camera moves");
-	pConsole->Register("g_claymore_limit", &g_explosiveLimits[eET_Claymore], 2, 0, "Max claymores a player can place (recycled above this value)");
+	pConsole->Register("g_claymore_limit", &g_explosiveLimits[eET_Claymore], 10, 0, "Max claymores a player can place (recycled above this value)");
 	pConsole->Register("g_avmine_limit", &g_explosiveLimits[eET_AVMine], 3, 0, "Max avmines a player can place (recycled above this value)");
 	pConsole->Register("g_c4_limit", &g_explosiveLimits[eET_C4], 1, 0, "Max C4 a player can place (recycled above this value)");
-	pConsole->Register("g_fgl_limit", &g_explosiveLimits[eET_LaunchedGrenade], 2, 0, "Max FGL remote grenades a player can launch (recycled above this value)");
+	pConsole->Register("g_fgl_limit", &g_explosiveLimits[eET_LaunchedGrenade], 1, 0, "Max FGL remote grenades a player can launch (recycled above this value)");
 	pConsole->Register("g_debugMines", &g_debugMines, 0, 0, "Enable debug output for mines and claymores");
 
   pConsole->Register("aim_assistCrosshairSize", &aim_assistCrosshairSize, 25, VF_CHEAT, "screen size used for crosshair aim assistance");
@@ -616,12 +557,14 @@ void SCVars::InitCVars(IConsole *pConsole)
 
 	pConsole->Register("g_painSoundGap", &g_painSoundGap, 0.1f, 0, "Minimum time gap between local player pain sounds");
 	pConsole->Register("g_explosionScreenShakeMultiplier", &g_explosionScreenShakeMultiplier, 0.25f, 0, "Multiplier for explosion screenshake");
-	pConsole->Register("re_vehiclecapturing", &re_vehiclecapturing, 0, 0, "Enables/Disables ability to capture buildings while in vehicles");
 
 	// REMOD
+	pConsole->Register("re_vehiclecapturing", &re_vehiclecapturing, 0, 0, "Enables/Disables ability to capture buildings while in vehicles");
 	pConsole->Register("re_suddendeath", &re_suddendeath, 1, 0, "Enables/disables Sudden Death mode in TeamInstantAction.");
 	pConsole->Register("re_suddendeathtime", &re_suddendeathtime, 30, 0, "Enables/disables Sudden Death mode in TeamInstantAction.");
 	pConsole->Register("re_slowmo", &re_slowmo, 0, 0, "Activates slowmotion!", CGame::Slowmo);
+	pConsole->Register("re_vehicles",&re_vehicles, 1, 0, "Disables/Enables vehicles");
+	pConsole->Register("re_intros",&re_intros, 1, 0, "Disables/Enables intros");
 	//pConsole->Register("re_fistsonly", &re_fistsonly, 0, 0, "Activates 'Fists Only' mode!", CGame::Fistsonly);
 
 //	int iFlags = gEnv->pConsole->GetCVar("r_drawNearFoV")->GetFlags();
@@ -1071,8 +1014,6 @@ void CGame::UnregisterConsoleCommands()
 
 
 	m_pConsole->RemoveCommand("g_battleDust_reload");
-	m_pConsole->RemoveCommand("bulletTimeMode");
-	m_pConsole->RemoveCommand("GOCMode");
 
 	// variables from CHUDCommon
 	m_pConsole->RemoveCommand("ShowGODMode");
@@ -1111,21 +1052,6 @@ void CGame::CmdLoadLastSave(IConsoleCmdArgs *pArgs)
 
 	if(g_pGame->GetMenu() && g_pGame->GetMenu()->IsActive())
 		return;
-
-	string* lastSave = NULL;
-	if(g_pGame->GetMenu())
-		lastSave = g_pGame->GetMenu()->GetLastInGameSave();
-	if(lastSave && lastSave->size())
-	{
-		if(!g_pGame->GetIGameFramework()->LoadGame(lastSave->c_str(), true))
-			g_pGame->GetIGameFramework()->LoadGame(g_pGame->GetLastSaveGame().c_str(), false);
-	}
-	else
-	{
-		const string& file = g_pGame->GetLastSaveGame().c_str();
-		if(!g_pGame->GetIGameFramework()->LoadGame(file.c_str(), true))
-			g_pGame->GetIGameFramework()->LoadGame(file.c_str(), false);
-	}
 }
 
 //------------------------------------------------------------------------

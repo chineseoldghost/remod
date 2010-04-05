@@ -17,7 +17,6 @@ History:
 #include "Weapon.h"
 #include "GameRules.h"
 #include "Player.h"
-#include "BulletTime.h"
 #include <IEntitySystem.h>
 #include "IMaterialEffects.h"
 #include "GameCVars.h"
@@ -216,10 +215,6 @@ void CMelee::StartFire()
 	m_pWeapon->ExitZoom();
 
 	bool isClient = pOwner?pOwner->IsClient():false;
-
-	if (g_pGameCVars->bt_end_melee && isClient)
-		g_pGame->GetBulletTime()->Activate(false);
-
 
 	float speedOverride = -1.0f;
 

@@ -36,8 +36,6 @@ struct SCVars
 	int		cl_fpBody;
 	int   cl_hud;
 	int		cl_debugSwimming;
-	int   cl_g15lcdEnable;
-	int   cl_g15lcdTick;
 
 	ICVar* 	ca_GameControlledStrafingPtr;
 	float pl_curvingSlowdownSpeedScale;
@@ -57,23 +55,6 @@ struct SCVars
 	float cl_frozenMouseMult;
 	float cl_frozenKeyMult;
 	float cl_frozenSoundDelta;
-	int		goc_enable;
-	int		goc_tpcrosshair;
-	float goc_targetx;
-	float goc_targety;
-	float goc_targetz;
-
-	// bullet time CVars
-	int		bt_ironsight;
-	int		bt_speed;
-	int		bt_end_reload;
-	int		bt_end_select;
-	int		bt_end_melee;
-	float bt_time_scale;
-	float bt_pitch;
-	float bt_energy_max;
-	float bt_energy_decay;
-	float bt_energy_regen;
 
 	int		dt_enable;
 	float dt_time;
@@ -475,11 +456,13 @@ struct SCVars
 	float		g_explosionScreenShakeMultiplier;
 
 	// Remod Commands
-	float	re_vehiclecapturing;
+	int   	re_vehiclecapturing;
 	int     re_slowmo;
+	int     re_vehicles;
 	//int     re_fistsonly;
 	int     re_suddendeath;
 	int     re_suddendeathtime;
+	int		re_intros;
 
 	SCVars()
 	{

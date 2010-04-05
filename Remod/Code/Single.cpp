@@ -1518,12 +1518,6 @@ bool CSingle::InternalShoot(IEntityClass* spawn_ammo, bool resetAnimation, bool 
     
 		int frequency = m_tracerparams.frequency;
 
-		// marcok: please don't touch
-		if (g_pGameCVars->bt_ironsight || g_pGameCVars->bt_speed)
-		{
-			frequency = 1;
-		}
-
 		bool emit = false;
 		if(m_pWeapon->GetStats().fp)
 			emit = (!m_tracerparams.geometryFP.empty() || !m_tracerparams.effectFP.empty()) && (ammoCount==GetClipSize() || (ammoCount%frequency==0));
@@ -1767,13 +1761,6 @@ Vec3 CSingle::GetProbableHit(float range, bool *pbHit, ray_hit *pHit) const
     else
 		{
       dir = range * info.fireDirection;    
-
-			// marcok: leave this alone
-			if (g_pGameCVars->goc_enable && pActor->IsClient())
-			{
-				CPlayer* pPlayer = (CPlayer*)pActor;
-				pos = pPlayer->GetViewMatrix().GetTranslation();
-			}
 		}
 		dir = ApplySpread(dir.GetNormalized(), GetSpread()) * range;
   }

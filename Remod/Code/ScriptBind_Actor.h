@@ -145,8 +145,6 @@ public:
 	virtual int ResetScores(IFunctionHandler *pH);
 	virtual int RenderScore(IFunctionHandler *pH, ScriptHandle player, int kills, int deaths, int ping, int teamKills);
 
-  virtual int SetSearchBeam(IFunctionHandler *pH, Vec3 dir);
-
 	//misc
 	//virtual int MeleeEffect(IFunctionHandler *pH);
 

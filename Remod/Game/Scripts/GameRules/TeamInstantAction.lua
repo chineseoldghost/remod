@@ -167,7 +167,7 @@ end
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction:CheckSuddenDeath()
 	if (not self.suddenDeath) then
-		if (self.game:IsTimeLimited() and self.game:GetRemainingGameTime()<=System.GetCVar("re_suddendeathtime")) then
+		if(System.GetCVar("re_suddendeath")==1) then
 			self:SuddenDeath(true);
 		end
 	end

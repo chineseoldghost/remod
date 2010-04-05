@@ -19,7 +19,6 @@
 #include "Menus/OptionsManager.h"
 
 #include "GameRules.h"
-#include "BulletTime.h"
 #include "SoundMoods.h"
 #include "HUD/HUD.h"
 #include "WeaponSystem.h"
@@ -33,6 +32,7 @@
 #include <IVehicleSystem.h>
 #include <IMovieSystem.h>
 #include <IPlayerProfiles.h>
+#include <ISound.h>
 
 #include "ScriptBind_Actor.h"
 #include "ScriptBind_Item.h"
@@ -41,7 +41,6 @@
 #include "ScriptBind_Game.h"
 #include "HUD/ScriptBind_HUD.h"
 #include "LaptopUtil.h"
-#include "LCD/LCDWrapper.h"
 
 #include "GameFactory.h"
 
@@ -56,8 +55,8 @@
 
 #include "SPAnalyst.h"
 
-#include "ISaveGame.h"
-#include "ILoadGame.h"
+//#include "ISaveGame.h"
+//#include "ILoadGame.h"
 
 #include "DownloadTask.h"
 
@@ -75,13 +74,14 @@
 #else
 	#define CRYSIS_GUID "{5C95C427-DCFE-4d7a-ACE4-225C6FECA84F}"	// new for Crysis Wars: REMOD
 #endif
-
+/*
 //FIXME: really horrible. Remove ASAP
 int OnImpulse( const EventPhys *pEvent ) 
 { 
 	//return 1;
 	return 0;
 }
+*/
 
 //
 
@@ -102,7 +102,6 @@ CGame::CGame()
 	m_pScriptBindActor(0),
 	m_pScriptBindGame(0),
 	m_pPlayerProfileManager(0),
-	m_pBulletTime(0),
 	m_pSoundMoods(0),
 	m_pHUD(0),
 	m_pServerSynchedStorage(0),
@@ -137,7 +136,6 @@ CGame::~CGame()
 	SAFE_DELETE(m_pFlashMenuObject);
 	SAFE_DELETE(m_pOptionsManager);
 	SAFE_DELETE(m_pLaptopUtil);
-	SAFE_DELETE(m_pBulletTime);
 	//SAFE_DELETE(m_pSoundMoods);
 	SAFE_DELETE(m_pHUD);
 	SAFE_DELETE(m_pSPAnalyst);
@@ -303,7 +301,7 @@ bool CGame::Init(IGameFramework *pFramework)
 			}
 			else
 			{
-				GameWarning("[GameProfiles]: User 'dude' has no profiles");
+				GameWarning("[GameProfiles]: User has no profiles");
 			}
 		}
 		else
@@ -323,23 +321,6 @@ bool CGame::Init(IGameFramework *pFramework)
 	// CLaptopUtil must be created before CFlashMenuObject as this one relies on it
 	if(!m_pLaptopUtil)
 		m_pLaptopUtil = new CLaptopUtil;
-
-	if (!m_pLCD)
-	{
-#ifdef USE_G15_LCD
-		if(gEnv->pSystem->IsDedicated())
-			m_pLCD = new CNullLCD();
-		else
-			m_pLCD = new CG15LCD();
-#else
-		m_pLCD = new CNullLCD();
-#endif
-
-		if (!m_pLCD->Init())
-		{
-			SAFE_DELETE(m_pLCD);
-		}
-	}
 
 	if (!gEnv->pSystem->IsDedicated())
 	{
@@ -365,11 +346,6 @@ bool CGame::Init(IGameFramework *pFramework)
 
 	if (!m_pServerSynchedStorage)
 		m_pServerSynchedStorage = new CServerSynchedStorage(GetIGameFramework());
-
-	if (!m_pBulletTime)
-	{
-		m_pBulletTime = new CBulletTime();
-	}
 
 	if (!m_pSoundMoods)
 	{
@@ -418,7 +394,6 @@ int CGame::Update(bool haveFocus, unsigned int updateFlags)
 	{
 		m_pWeaponSystem->Update(frameTime);
 
-		m_pBulletTime->Update();
 		m_pSoundMoods->Update();
 	}
 
@@ -431,9 +406,6 @@ int CGame::Update(bool haveFocus, unsigned int updateFlags)
 	m_pFramework->GetIActionMapManager()->EnableActionMap("debug", m_inDevMode);
 
 	CheckReloadLevel();
-
-	if (m_pLCD)
-		m_pLCD->Update(frameTime);
 
 	if(m_pDownloadTask)
 		m_pDownloadTask->Update();
@@ -533,32 +505,28 @@ void CGame::Slowmo(ICVar *pCVar)
 	{
 		float scale;
 		ICVar *TimeScale = gEnv->pConsole->GetCVar("time_scale");
-		
+		ISound *pSound = NULL;
 		if(TimeScale->GetIVal()==1)
 		{
 			scale = 0.3;
 			TimeScale->Set(scale);
-			//SAFE_SOUNDMOODS_FUNC(AddSoundMood(SOUNDMOOD_SLOWMO));
-			g_pGame->GetSoundMoods()->AddSoundMood(SOUNDMOOD_SLOWMO,1000);
+			pSound = gEnv->pSoundSystem->CreateSound("Sounds/interface/hud/slowmotion_activate_01.mp3", FLAG_SOUND_2D|FLAG_SOUND_RELATIVE|FLAG_SOUND_16BITS|FLAG_SOUND_LOAD_SYNCHRONOUSLY);
+			pSound->Play();
 		}
-		else
+		else if(TimeScale->GetIVal()==0)
 		{
 			scale = 1;
 			TimeScale->Set(scale);
+
+			pSound = gEnv->pSoundSystem->CreateSound("Sounds/interface/hud/slowmotion_deactivate_01.mp3", FLAG_SOUND_2D|FLAG_SOUND_RELATIVE|FLAG_SOUND_16BITS|FLAG_SOUND_LOAD_SYNCHRONOUSLY);
+			pSound->Play();
+
 			ICVar *Sound = gEnv->pConsole->GetCVar("s_soundEnable"); // This will fix the sound still being in slowmo when Slowmo is disabled
+			Sound->Set(0);
 			Sound->Set(1);
 		}
 	}
 }
-
-/*
-void CGame::Fistsonly(ICVar *pCVar)
-{
-	CNanoSuit *pNano = new CNanoSuit;
-	CPlayer *pOwner = const_cast<CPlayer*>(pNano->GetOwner());
-		pOwner->Fistsonly("remove");
-}
-*/
 
 string CGame::InitMapReloading()
 {
@@ -582,6 +550,7 @@ string CGame::InitMapReloading()
 				prefix+="_";
 				levelFileName = prefix + levelFileName;
 			}
+			/*
 			ISaveGameEnumeratorPtr pSGE = pProfile->CreateSaveGameEnumerator();
 			ISaveGameEnumerator::SGameDescription desc;	
 			const int nSaveGames = pSGE->GetCount();
@@ -596,6 +565,7 @@ string CGame::InitMapReloading()
 					}
 				}
 			}
+			*/
 		}
 	}
 	m_bReload = false;
@@ -628,83 +598,6 @@ const char *CGame::GetName()
 
 void CGame::OnPostUpdate(float fDeltaTime)
 {
-}
-
-void CGame::OnSaveGame(ISaveGame* pSaveGame)
-{
-	CPlayer *pPlayer = static_cast<CPlayer*>(GetIGameFramework()->GetClientActor());
-	GetGameRules()->PlayerPosForRespawn(pPlayer, true);
-
-	//save difficulty
-	pSaveGame->AddMetadata("sp_difficulty", g_pGameCVars->g_difficultyLevel);
-
-	//save mod info
-	SModInfo info;
-	if(GetIGameFramework()->GetModInfo(&info))
-	{
-		pSaveGame->AddMetadata("ModName", info.m_name);
-		pSaveGame->AddMetadata("ModVersion", info.m_version);
-	}
-
-	//write file to profile
-	if(m_pPlayerProfileManager)
-	{
-		const char* saveGameFolder = m_pPlayerProfileManager->GetSharedSaveGameFolder();
-		const bool bSaveGameFolderShared = saveGameFolder && *saveGameFolder;
-		const char *user = m_pPlayerProfileManager->GetCurrentUser();
-		if(IPlayerProfile *pProfile = m_pPlayerProfileManager->GetCurrentProfile(user))
-		{
-			string filename(pSaveGame->GetFileName());
-			CryFixedStringT<128> profilename(pProfile->GetName());
-			profilename+='_';
-			filename = filename.substr(filename.rfind('/')+1);
-			// strip profileName_ prefix
-			if (bSaveGameFolderShared)
-			{
-				if(strnicmp(filename.c_str(), profilename.c_str(), profilename.length()) == 0)
-					filename = filename.substr(profilename.length());
-			}
-			pProfile->SetAttribute("Singleplayer.LastSavedGame", filename);
-		}
-	}
-
-	pSaveGame->AddMetadata("v_altitudeLimit", g_pGameCVars->pAltitudeLimitCVar->GetString());
-}
-
-void CGame::OnLoadGame(ILoadGame* pLoadGame)
-{
-	int difficulty = g_pGameCVars->g_difficultyLevel;
-	pLoadGame->GetMetadata("sp_difficulty", difficulty);
-	if(difficulty != g_pGameCVars->g_difficultyLevel)
-	{
-		m_pFlashMenuObject->SetDifficulty(difficulty);
-		//ICVar *diff = gEnv->pConsole->GetCVar("g_difficultyLevel");
-		//if(diff)
-		//{
-			//string diffVal = "Option.";
-			//diffVal.append(diff->GetName());
-			//GetOptions()->SaveCVarToProfile(diffVal.c_str(), diff->GetString());
-			IPlayerProfile *pProfile = m_pPlayerProfileManager->GetCurrentProfile(m_pPlayerProfileManager->GetCurrentUser());
-			if(pProfile)
-			{
-				pProfile->SetAttribute("Singleplayer.LastSelectedDifficulty", difficulty);
-				pProfile->SetAttribute("Option.g_difficultyLevel", difficulty);
-				IPlayerProfileManager::EProfileOperationResult result;
-				m_pPlayerProfileManager->SaveProfile(m_pPlayerProfileManager->GetCurrentUser(), result);
-			}
-		//}
-	}
-
-	// altitude limit
-	const char* v_altitudeLimit =	pLoadGame->GetMetadata("v_altitudeLimit");
-	if (v_altitudeLimit && *v_altitudeLimit)
-		g_pGameCVars->pAltitudeLimitCVar->ForceSet(v_altitudeLimit);
-	else
-	{
-		CryFixedStringT<128> buf;
-		buf.FormatFast("%g", g_pGameCVars->v_altitudeLimitDefault());
-		g_pGameCVars->pAltitudeLimitCVar->ForceSet(buf.c_str());
-	}
 }
 
 void CGame::OnActionEvent(const SActionEvent& event)
@@ -778,11 +671,6 @@ void CGame::BlockingProcess(BlockingConditionFunction f)
 CGameRules *CGame::GetGameRules() const
 {
 	return static_cast<CGameRules *>(m_pFramework->GetIGameRulesSystem()->GetCurrentGameRules());
-}
-
-CBulletTime *CGame::GetBulletTime() const
-{
-	return m_pBulletTime;
 }
 
 CSoundMoods *CGame::GetSoundMoods() const
@@ -949,7 +837,6 @@ void CGame::RegisterGameObjectEvents()
 	pGOS->RegisterEvent(eCGE_DisablePhysicalCollider,"DisablePhysicalCollider");
 	pGOS->RegisterEvent(eCGE_RebindAnimGraphInputs,"RebindAnimGraphInputs");
 	pGOS->RegisterEvent(eCGE_OpenParachute, "OpenParachute");
-
 }
 
 void CGame::GetMemoryStatistics(ICrySizer * s)
@@ -1017,39 +904,6 @@ void CGame::DumpMemInfo(const char* format, ...)
 	// gEnv->pSystem->GetILog()->LogV( ILog::eAlways, "%s alloc=%llu kb  instring=%llu kb  stl-alloc=%llu kb  stl-wasted=%llu kb", text, memInfo.allocated >> 10 , memInfo.CryString_allocated >> 10, memInfo.STL_allocated >> 10 , memInfo.STL_wasted >> 10);
 }
 
-
-const string& CGame::GetLastSaveGame(string &levelName)
-{
-	if (m_pPlayerProfileManager)
-	{
-		const char* userName = GetISystem()->GetUserName();
-		IPlayerProfile* pProfile = m_pPlayerProfileManager->GetCurrentProfile(userName);
-		if (pProfile)
-		{
-			ISaveGameEnumeratorPtr pSGE = pProfile->CreateSaveGameEnumerator();
-			ISaveGameEnumerator::SGameDescription desc;	
-			time_t curLatestTime = (time_t) 0;
-			const char* lastSaveGame = "";
-			const int nSaveGames = pSGE->GetCount();
-			for (int i=0; i<nSaveGames; ++i)
-			{
-				if (pSGE->GetDescription(i, desc))
-				{
-					if (desc.metaData.saveTime > curLatestTime)
-					{
-						lastSaveGame = desc.name;
-						curLatestTime = desc.metaData.saveTime;
-						levelName = desc.metaData.levelName;
-					}
-				}
-			}
-			m_lastSaveGame = lastSaveGame;
-		}
-	}
-
-	return m_lastSaveGame;
-}
-
 ILINE void expandSeconds(int secs, int& days, int& hours, int& minutes, int& seconds)
 {
 	days  = secs / 86400;
@@ -1072,59 +926,12 @@ void secondsToString(int secs, string& outString)
 		outString.Format("%02dm_%02ds", m, s);
 }
 
-const char* CGame::CreateSaveGameName()
-{
-	//design wants to have different, more readable names for the savegames generated
-	char buffer[16];
-	int id = 0;
-
-	//saves a running savegame id which is displayed with the savegame name
-	if(IPlayerProfileManager *m_pPlayerProfileManager = gEnv->pGame->GetIGameFramework()->GetIPlayerProfileManager())
-	{
-		const char *user = m_pPlayerProfileManager->GetCurrentUser();
-		if(IPlayerProfile *pProfile = m_pPlayerProfileManager->GetCurrentProfile(user))
-		{
-			pProfile->GetAttribute("Singleplayer.SaveRunningID", id);
-			pProfile->SetAttribute("Singleplayer.SaveRunningID", id+1);
-			IPlayerProfileManager::EProfileOperationResult result;
-			m_pPlayerProfileManager->SaveProfile(user, result);
-		}
-	}
-
-	itoa(id, buffer, 10);
-	m_newSaveGame.clear();
-	if(id < 10)
-		m_newSaveGame += "0";
-	m_newSaveGame += buffer;
-	m_newSaveGame += "_";
-
-	const char* levelName = GetIGameFramework()->GetLevelName();
-	const char* mappedName = GetMappedLevelName(levelName);
-	m_newSaveGame += mappedName;
-
-	m_newSaveGame += "_";
-	string timeString;
-	secondsToString(m_pSPAnalyst->GetTimePlayed(), timeString);
-	m_newSaveGame += timeString;
-
-	SModInfo info;
-	if(GetIGameFramework()->GetModInfo(&info))
-	{
-		m_newSaveGame += "_";
-		m_newSaveGame += info.m_name;
-	}
-
-	m_newSaveGame+=".CRYSISJMSF";
-
-	return m_newSaveGame.c_str();
-}
 
 const char* CGame::GetMappedLevelName(const char *levelName) const
 { 
 	TLevelMapMap::const_iterator iter = m_mapNames.find(CONST_TEMP_STRING(levelName));
 	return (iter == m_mapNames.end()) ? levelName : iter->second.c_str();
 }
-
 /********************************************
 * REMOD ACHIEVEMENT SYSTEM
 ********************************************/

@@ -1283,12 +1283,6 @@ void CHUD::UpdateVoiceChat()
 
 void CHUD::UpdateCrosshairVisibility()
 {
-	// marcok: don't touch this, please
-	if (g_pGameCVars->goc_enable)
-	{
-		m_pHUDCrosshair->GetFlashAnim()->Invoke("setVisible", 1);
-		return;
-	}
 
 	bool wasVisible = false;
 

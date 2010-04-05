@@ -20,12 +20,6 @@
 #include "StdAfx.h"
 #include "Game.h"
 #include "Player.h"
-//aliens
-#include "Alien.h"
-#include "Scout.h"
-#include "Hunter.h"
-#include "Trooper.h"
-//#include "Observer.h"
 #include "Shark.h"
 //
 #include "Item.h"
@@ -182,19 +176,7 @@ void InitGameFactory(IGameFramework *pFramework)
   REGISTER_FACTORY(pVehicleSystem, "Amphibious", CVehicleMovementAmphibious, false);
 
 #ifndef SP_DEMO
-  //aliens
-  REGISTER_FACTORY(pFramework, "AlienPlayer", CAlien, false);
-  REGISTER_FACTORY(pFramework, "Aliens/Alien", CAlien, true);
-//  REGISTER_FACTORY(pFramework, "Aliens/Observer", CObserver, true);
-  REGISTER_FACTORY(pFramework, "Aliens/Trooper", CTrooper, true);
-  REGISTER_FACTORY(pFramework, "Aliens/Scout", CScout, true);
-  REGISTER_FACTORY(pFramework, "Aliens/Hunter", CHunter, true);
 	REGISTER_FACTORY(pFramework, "Misc/Shark", CShark, true);
-  //	REGISTER_FACTORY(m_pFramework, "Aliens/Warrior", CDrone, true);
-  //REGISTER_FACTORY(pFramework, "Aliens/Coordinator", CObserver, true);
-#else
-	REGISTER_FACTORY(pFramework, "Aliens/Scout", CScout, true);
-	REGISTER_FACTORY(pFramework, "Aliens/Trooper", CTrooper, true);
 #endif
 
 	// Custom GameObjects

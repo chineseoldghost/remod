@@ -9,6 +9,7 @@ float Script : STANDARDSGLOBAL
            "ShaderDrawType = Custom;"
            "ShaderType = FX;"
            "LocalConstants;"
+           "PreprType = GenerateClouds;"
 >;
 
 /// Un-Tweakables //////////////////////
@@ -39,9 +40,17 @@ sampler2D imposterMap
 
 float4 ScreenSize  : PB_ScreenSize;
 
-struct pixout_cl
+struct pixout_clouds
 {
-  float4 Color  : COLOR0;
+  half4 Color  : COLOR0;
+};
+
+struct pixout_clear
+{
+  half4 Color0  : COLOR0;
+  half4 Color1  : COLOR1;
+  half4 Color2  : COLOR2;
+  half4 Color3  : COLOR3;
 };
 
 struct app2vertCS
@@ -54,7 +63,11 @@ struct app2vertCS
 struct vert2frag
 {
   float4 HPosition  : POSITION;
+#ifdef PS3 || XENON
+  float2 baseTC     : TEXCOORD0;
+#else
   float2 baseTC     : TEXCOORD0_centroid;
+#endif
   float3 vCamToPixel : TEXCOORD1;
   float3 vCamPosDiff : TEXCOORD2;
   float3 ImposterCameraFront : TEXCOORD3;
@@ -65,9 +78,17 @@ struct vert2frag
 struct vert2fragImp
 {
   float4 HPosition  : POSITION;
+#ifdef PS3 || XENON
+  float2 baseTC     : TEXCOORD0;
+#else
   float2 baseTC     : TEXCOORD0_centroid;
+#endif
   float3 posTC      : TEXCOORD1;  
+#ifdef PS3 || XENON
+  float  distOpac   : TEXCOORD2;
+#else
   float  distOpac   : TEXCOORD2_centroid;
+#endif
   
   float4 hPosTexProj : TEXCOORD3;
   float4 Color       : COLOR0;
@@ -134,11 +155,14 @@ vert2fragCloud TransformedClearVS(app2vertCloud IN)
   return OUT;
 }
 
-pixout ClearPS(vert2fragCloud IN)
+pixout_clear ClearPS(vert2fragCloud IN)
 {
-  pixout OUT;
+  pixout_clear OUT;
 
-  OUT.Color = IN.Color;
+  OUT.Color0 = IN.Color;
+  OUT.Color1 = IN.Color;
+  OUT.Color2 = IN.Color;
+  OUT.Color3 = IN.Color;
 
   return OUT;
 }
@@ -256,7 +280,7 @@ pixout ImposterPS(vert2frag IN)
   pixout OUT;
 
   half4 vTex = tex2D(imposterMap, IN.baseTC.xy);
-  half4 vDepth = tex2D(depthMap, IN.baseTC.xy);
+  half4 vDepth = GetLinearDepth(depthMap, IN.baseTC.xy);
   float fDepth = lerp(PS_ZRange.x, PS_ZRange.y, vTex.a);
   OUT.Color = vTex;
   float fLinearZ = (PS_ZRange.w / (fDepth - PS_ZRange.z)) * IN.NearFar.w;
@@ -309,9 +333,9 @@ pixout2 PanoramaClusterPS(vert2frag IN)
   return OUT;
 }
 
-pixout_cl CloudPS(vert2fragCloud IN)
+pixout_clouds CloudPS(vert2fragCloud IN)
 {
-  pixout_cl OUT;
+  pixout_clouds OUT;
 
   half4 vTex = tex2D(baseMap, IN.baseTC.xy); 
   OUT.Color =  half4( vTex.xyz * IN.Color.xyz, vTex.w ) * IN.Color.w;
@@ -467,7 +491,7 @@ pixout CloudScreenImposterPS(vert2fragCSImp IN)
 #endif		
 	color.xyz += IN.Lightning.xyz * alpha;	
 
-	float sceneDepth = tex2D( depthMap, IN.sceneDepthTC.xy ).x;
+	float sceneDepth = GetLinearDepth( depthMap, IN.sceneDepthTC.xy );
 	float scale = saturate( ( sceneDepth * IN.NearFar.y - IN.linearDepth ) * 0.05 );    	
 
 	half4 finalColor = half4( lerp( vFog.xyz * alpha, color.xyz, vFog.w ).xyz, alpha );
@@ -491,9 +515,9 @@ vert2frag ImposterPostVS(app2vertCloud IN)
   return OUT;
 }
 
-pixout_cl ImposterPostPS(vert2frag IN)
+pixout_clouds ImposterPostPS(vert2frag IN)
 {
-  pixout_cl OUT;
+  pixout_clouds OUT;
 
  #if %_RT_DEBUG0 || %_RT_DEBUG1 || %_RT_DEBUG2 || %_RT_DEBUG3
    DebugOutput(OUT.Color, float4(IN.baseTC.xy, 0, 0));
@@ -501,7 +525,7 @@ pixout_cl ImposterPostPS(vert2frag IN)
  #endif
 
   half4 vTex = tex2D(baseMap, IN.baseTC.xy);
-  half4 vDepth = tex2D(depthMap, IN.baseTC.xy);
+  half4 vDepth = GetLinearDepth( depthMap, IN.baseTC.xy );
   OUT.Color.xyz = vTex.xyz;
   OUT.Color.a = vTex.a;
 
@@ -618,8 +642,7 @@ technique Clear
   {
     VertexShader = compile vs_Auto TransformedClearVS();
     
-    ZEnable = true;
-    ZWriteEnable = true;
+    ZEnable = false;
     CullMode = None;
        
     PixelShader = compile ps_Auto ClearPS();

@@ -1,70 +1,50 @@
-BackupNameAttachment=" Build(6729) Date(31 Mar 2010) Time(11 37 44)"  -- used by backup system
+BackupNameAttachment=" Build(6729) Date(05 Apr 2010) Time(14 14 20)"  -- used by backup system
  
-Log Started at Wednesday, March 31, 2010 11:37:44
+Log Started at Monday, April 05, 2010 14:14:20
 Running 32 bit version
-Executable: C:\Program Files (x86)\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
+Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
 ProductVersion: 1.1.1.6729
 Using STLport C++ Standard Library implementation
  
 Added MOD directory <Mods\Remod\> to CryPak
 --- CPU detection ---
-Total number of logical processors: 4
-Number of available logical processors: 4
+Total number of logical processors: 2
+Number of available logical processors: 2
 
 Processor 0:
-CPU: Intel Intel(R) Core(TM)2 Quad  CPU   Q9000  @ 2.00GHz
-Family: 6, Model: 7, Stepping: 10
+CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1994.961988 MHz
+CPU Speed (estimated): 1997.277844 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
 Serial number not present or disabled
 
 Processor 1:
-CPU: Intel Intel(R) Core(TM)2 Quad  CPU   Q9000  @ 2.00GHz
-Family: 6, Model: 7, Stepping: 10
+CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+Family: 6, Model: 15, Stepping: 6
 FPU: On-Chip
-CPU Speed (estimated): 1832.018571 MHz
+CPU Speed (estimated): 1997.278911 MHz
 MMX: not present
 SSE: present
 3DNow!: not present
 Serial number not present or disabled
 
-Processor 2:
-CPU: Intel Intel(R) Core(TM)2 Quad  CPU   Q9000  @ 2.00GHz
-Family: 6, Model: 7, Stepping: 10
-FPU: On-Chip
-CPU Speed (estimated): 1682.149203 MHz
-MMX: not present
-SSE: present
-3DNow!: not present
-Serial number not present or disabled
-
-Processor 3:
-CPU: Intel Intel(R) Core(TM)2 Quad  CPU   Q9000  @ 2.00GHz
-Family: 6, Model: 7, Stepping: 10
-FPU: On-Chip
-CPU Speed (estimated): 938.832454 MHz
-MMX: not present
-SSE: present
-3DNow!: not present
-Serial number not present or disabled
-
-Total number of system cores: 4
-Number of cores available to process: 4
+Total number of system cores: 2
+Number of cores available to process: 2
 ---------------------
-Windows Vista 64 bit SP 2 (build 6.0.6002)
-System language: Swedish
+Windows 32 bit (build 6.1.7600)
+System language: Dutch
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 11:37:45 03/31/10, system running for 164 minutes
-4091MB physical memory installed, 2287MB available, 4095MB virtual memory installed, 44 percent of memory in use
-PageFile usage: 30MB, Working Set: 9MB, Peak PageFile usage: 30MB,
-Current display mode is 1920x1080x32, (Unknown graphics card)
-IBM enhanced (101/102-key) keyboard and 16+ button mouse installed
+Local time is 14:14:21 04/05/10, system running for 91 minutes
+1521MB physical memory installed, 967MB available, 2047MB virtual memory installed, 36 percent of memory in use
+PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
+Current display mode is 1440x900x32, VGA
+IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
 --------------------------------------------------------------------------------
 Stream Engine Initialization
 Network initialization
@@ -81,11 +61,11 @@ Initializing 3D Engine
 Script System Initialization
 Entity system initialization
 Initializing AI System
-[PlayerProfiles] Login of user 'Filip' successful.
+[PlayerProfiles] Login of user 'Charlie the Unicorn' successful.
 [PlayerProfiles] Found 2 profiles.
-   Profile 0 : 'default'
-   Profile 1 : 'i59'
-[GameProfiles]: Successfully activated profile 'i59' for user 'Filip'
+   Profile 0 : 'Blablah'
+   Profile 1 : 'default'
+[GameProfiles]: Successfully activated profile 'Blablah' for user 'Charlie the Unicorn'
     $3sv_servername = $6Blablah's Server $5[DUMPTODISK]$4
     $3sv_password = $6 $5[DUMPTODISK]$4
 [Warning] Unknown command: sv_lan = 1
@@ -115,78 +95,10 @@ Initializing AI System
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
     $3sv_gamerules = $6TeamInstantAction $5[]$4
-[net 09:37:46.303] network hostname: Filip-PC
-[net 09:37:46.336]   ip:83.251.51.214
-[net 09:37:46.336]   ip:5.116.120.97
-[net 09:37:46.336]   ip:192.168.1.2
-    $3con_restricted = $60 $5[RESTRICTEDMODE]$4
-    $3e_screenshot_min_slices = $615 $5[]$4
-    $3e_screenshot_width = $63840 $5[]$4
-    $3e_screenshot_height = $63072 $5[]$4
-    $3e_screenshot_quality = $6100 $5[]$4
-    $3e_screenshot_file_format = $6jpg $5[]$4
-    $3r_ColorGrading = $61 $5[]$4
-    $3r_MotionBlurShutterSpeed = $60.02 $5[]$4
-    $3r_SSAO_amount = $60.5 $5[]$4
-    $3r_SSAO_darkening = $60.9 $5[]$4
-    $3r_SSAO_quality = $62 $5[]$4
-    $3r_SSAO_radius = $61.525 $5[]$4
-    $3r_SSAO_blur = $64 $5[]$4
-    $3r_SSAO_blurriness = $61 $5[]$4
-    $3r_EyeAdaptationBase = $60.001 $5[]$4
-    $3r_EyeAdaptationFactor = $61 $5[DUMPTODISK]$4
-    $3r_EyeAdaptionBase = $60 $5[DUMPTODISK]$4
-    $3r_EyeAdaptionClamp = $62.75 $5[DUMPTODISK]$4
-    $3r_EyeAdaptionSpeed = $60.1 $5[DUMPTODISK]$4
-    $3r_HDRBrightOffset = $6128 $5[DUMPTODISK]$4
-    $3r_HDRLevel = $61.25 $5[DUMPTODISK]$4
-    $3g_dof_ironsight = $61 $5[]$4
-    $3r_ColorGradingDof = $61 $5[]$4
-    $3r_HDRRendering = $61 $5[DUMPTODISK]$4
-    $3r_sunshafts = $61 $5[]$4
-    $3r_Reflections = $61 $5[DUMPTODISK]$4
-    $3r_refraction = $61 $5[]$4
-[Warning] Unknown command: q_Shader= 3
-    $3e_shadows_max_texture_size = $61024 $5[]$4
-    $3r_ShadowJittering = $61.5 $5[]$4
-    $3r_UseEdgeAA = $61 $5[]$4
-    $3r_UsePOM = $61 $5[]$4
-    $3e_phys_foliage = $62 $5[]$4
-    $3r_WaterCaustics = $61 $5[]$4
-[Warning] Unknown command: r_WaterGodRay = 1
-    $3e_water_ocean_fft = $61 $5[]$4
-    $3r_ShadowGenGS = $61 $5[DUMPTODISK]$4
-    $3r_DepthOfField = $62 $5[]$4
-    $3r_Flares = $61 $5[DUMPTODISK]$4
-    $3r_Coronas = $61 $5[DUMPTODISK]$4
-[Warning] Unknown command: q_ShaderWater=4
-[Warning] Unknown command: q_ShaderGeneral=4
-[Warning] Unknown command: q_ShaderMetal=4
-[Warning] Unknown command: q_ShaderGlass=4
-[Warning] Unknown command: q_ShaderVegetation=4
-[Warning] Unknown command: q_ShaderIce=4
-[Warning] Unknown command: q_ShaderTerrain=4
-[Warning] Unknown command: q_ShaderShadow=4
-[Warning] Unknown command: q_ShaderFX=4
-[Warning] Unknown command: q_ShaderPostProcess=4
-[Warning] Unknown command: q_ShaderHDR=4
-[Warning] Unknown command: q_ShaderSky=4
-[Warning] Unknown command: q_Renderer=4
-    $3r_LightsSinglePass = $60 $5[]$4
-    $3e_ram_maps = $61 $5[DUMPTODISK, REQUIRE_LEVEL_RELOAD]$4
-    $3r_FillLights = $614 $5[]$4
-    $3e_particles_lights = $61 $5[]$4
-    $3e_view_dist_ratio_detail = $625 $5[]$4
-    $3e_view_dist_ratio_vegetation = $634 $5[]$4
-    $3e_vegetation_sprites_distance_custom_ratio_min = $63 $5[]$4
-    $3r_VegetationSpritesTexRes = $6128 $5[]$4
-    $3e_terrain_deformations = $60 $5[]$4
-    $3r_BeamsMaxSlices = $6200 $5[]$4
-    $3r_CloudsUpdateAlways = $61 $5[]$4
-    $3r_OceanMaxSplashes = $616 $5[]$4
-    $3e_detail_materials = $61 $5[]$4
-    $3e_detail_materials_view_dist_z = $6512 $5[]$4
-    $3e_detail_materials_view_dist_xy = $64096 $5[]$4
-    $3e_ambient_occlusion = $60 $5[]$4
-    $3e_shadows_from_terrain_in_all_lods = $61 $5[]$4
-    $3e_shadows_water = $61 $5[]$4
+[net 12:14:21.902] network hostname: iMac7
+[net 12:14:21.917]   ip:192.168.0.192
+[net 12:14:21.917]   ip:5.182.209.7
+-----------------------------------------------------
+*LOADING: Level multiplayer/ia/outpost loading time: 4.79 seconds
+-----------------------------------------------------
+[net 12:17:03.618] Disconnect iMac7.telenet.be:52088; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:52088'

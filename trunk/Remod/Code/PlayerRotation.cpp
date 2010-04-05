@@ -90,7 +90,7 @@ void CPlayerRotation::Process()
 		ProcessNormal();
 	}
 
-	//CHECKQNAN_MAT33(m_viewMtx);
+	CHECKQNAN_MAT33(m_viewMtx); //REMOD 
 
 	//update freelook when linked to an entity
 	SLinkStats *pLinkStats = &m_player.m_linkStats;
@@ -121,8 +121,8 @@ void CPlayerRotation::Commit( CPlayer& player )
 	CHECKQNAN_QUAT(m_viewQuat);
 	if (!player.IsTimeDemo())
 	{
-		//CHECKQNAN_MAT33(m_baseMtx);
-		//CHECKQNAN_MAT33(m_viewMtx);
+		CHECKQNAN_MAT33(m_baseMtx); //REMOD
+		CHECKQNAN_MAT33(m_viewMtx);
 		player.m_viewQuatFinal = m_viewQuatFinal.GetNormalized();
 	}
 
@@ -591,16 +591,16 @@ void CPlayerRotation::ProcessNormal()
 	CHECKQNAN_VEC(forward);
 
 	m_baseQuat = Quat(Matrix33::CreateFromVectors(forward % up,forward,up));
-	//CHECKQNAN_MAT33(m_baseMtx);
+	CHECKQNAN_MAT33(m_baseMtx); // REMOD
 	m_baseQuat *= Quat::CreateRotationZ(m_deltaAngles.z);
-	//m_baseQuat.Normalize();
+	m_baseQuat.Normalize(); // REMOD
 
 	m_viewQuat = m_baseQuat * 
 		Quat::CreateRotationX(GetLocalPitch() + m_deltaAngles.x) * 
 		Quat::CreateRotationY(m_viewRoll);
-	//m_viewQuat.Normalize();
+	m_viewQuat.Normalize(); //REMOD
 
-	//CHECKQNAN_MAT33(m_viewMtx);
+	CHECKQNAN_MAT33(m_viewMtx); // REMOD
 }
 
 void CPlayerRotation::ProcessLean()

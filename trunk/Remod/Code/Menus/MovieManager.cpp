@@ -28,6 +28,8 @@ History:
 
 CMovieManager::CMovieManager()
 {
+	if(gEnv->pConsole->GetCVar("re_intros")->GetIVal() == 0)
+		return;
 	m_movieList.clear();
 
 	XmlNodeRef movieInfo = GetISystem()->LoadXmlFile("Languages/movielist.xml");

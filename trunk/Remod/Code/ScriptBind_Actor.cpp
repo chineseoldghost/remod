@@ -18,7 +18,6 @@
 #include "HUD/HUD.h"
 #include "Game.h"
 #include "Player.h"
-#include "Alien.h"
 #include "GameCVars.h"
 
 #include <IGameFramework.h>
@@ -155,8 +154,6 @@ CScriptBind_Actor::CScriptBind_Actor(ISystem *pSystem)
 
 	SCRIPT_REG_TEMPLFUNC(ResetScores, "");
 	SCRIPT_REG_TEMPLFUNC(RenderScore, "");
-
-  SCRIPT_REG_TEMPLFUNC(SetSearchBeam, "dir");
 			
 	m_pSS->SetGlobalValue("STANCE_PRONE", STANCE_PRONE);
 	m_pSS->SetGlobalValue("STANCE_CROUCH", STANCE_CROUCH);
@@ -1753,18 +1750,6 @@ int CScriptBind_Actor::NanoSuitHit(IFunctionHandler *pH, int damage)
 
 	if(CNanoSuit *pSuit = ((CPlayer*)pActor)->GetNanoSuit())
 		pSuit->Hit(damage);
-
-  return pH->EndFunction();
-}
-
-//------------------------------------------------------------------------
-int CScriptBind_Actor::SetSearchBeam(IFunctionHandler *pH, Vec3 dir)
-{
-  CActor *pActor = GetActor(pH);
-  if (!pActor || pActor->GetActorClass() != CAlien::GetActorClassType())
-    return pH->EndFunction();
-  
-  ((CAlien*)pActor)->SetSearchBeamGoal(dir);
 
   return pH->EndFunction();
 }

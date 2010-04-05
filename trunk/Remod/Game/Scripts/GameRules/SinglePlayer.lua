@@ -14,25 +14,7 @@
 --
 --------------------------------------------------------------------------
 
-SinglePlayer = {
-	DamagePlayerToAI =
-	{
-		helmet		= 4.0,
-		kevlar		= 0.75,
-
-		head 			= 50.0,
-		torso 		= 1.2,
-		arm_left	= 0.65,
-		arm_right	= 0.65,
-		hand_left	= 0.3,
-		hand_right= 0.3,
-		leg_left	= 0.65,
-		leg_right	= 0.65,
-		foot_left	= 0.3,
-		foot_right= 0.3,
-		assist_min	=0.8,
-	},
-	
+SinglePlayer = {	
 	DamagePlayerToPlayer=
 	{
 		helmet		= 4.0,
@@ -40,42 +22,6 @@ SinglePlayer = {
 
 		head 			= 20.0,
 		torso 		= 1.4,
-		arm_left	= 0.65,
-		arm_right	= 0.65,
-		hand_left	= 0.3,
-		hand_right= 0.3,
-		leg_left	= 0.65,
-		leg_right	= 0.65,
-		foot_left	= 0.3,
-		foot_right= 0.3,
-		assist_min	=0.8,
-	},
-	
-	DamageAIToPlayer=
-	{
-		helmet		= 1.0,
-		kevlar		= 0.45,
-
-		head 			= 1.0,
-		torso 		= 1.0,
-		arm_left	= 0.65,
-		arm_right	= 0.65,
-		hand_left	= 0.3,
-		hand_right= 0.3,
-		leg_left	= 0.65,
-		leg_right	= 0.65,
-		foot_left	= 0.3,
-		foot_right= 0.3,
-		assist_min	=0.8,
-	},
-	
-	DamageAIToAI=
-	{
-		helmet		= 4.0,
-		kevlar		= 0.75,
-
-		head 			= 20.0,
-		torso 		= 1.0,
 		arm_left	= 0.65,
 		arm_right	= 0.65,
 		hand_left	= 0.3,
@@ -132,18 +78,6 @@ function SinglePlayer:InitHitMaterials()
 		"mat_leg_right",
 		"mat_foot_left",
 		"mat_foot_right",
-			
-			--aliens		
-		"mat_alien_vulnerable",
-		"mat_alien_hunter_leg",
-		"mat_alien_hunter_torso",
-		"mat_alien_hunter_head",
-		"mat_alien_hunter_vulnerable",
-		--
-		"mat_alien_hunter_topFace",
-		"mat_alien_hunter_bottomFace",
-		"mat_alien_hunter_leftFace",
-		"mat_alien_hunter_rightFace",
 	};
 	
 	for i,v in ipairs(mats) do

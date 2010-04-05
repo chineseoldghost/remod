@@ -70,8 +70,6 @@ History:
 #include "WeaponSystem.h"
 #include "Radio.h"
 
-#include "LCD/LCDWrapper.h"
-
 static const float NIGHT_VISION_ENERGY = 30.0f;
 static const float SPAWN_WARNING_TIMER = 2.0f;
 
@@ -4066,15 +4064,6 @@ bool CHUD::UpdateTimers(float frameTime)
 				g_pGame->GetMenu()->ShowInGameMenu(false);
 				m_animWarningMessages.GetFlashPlayer()->SetVisible(false);
 				m_fPlayerDeathTime = now.GetSeconds(); //just in case loading fails
-
-				string *lastSave = g_pGame->GetMenu()->GetLastInGameSave();
-				if(lastSave && lastSave->size())
-				{
-					if(!g_pGame->GetIGameFramework()->LoadGame(lastSave->c_str()))
-						g_pGame->GetIGameFramework()->LoadGame(g_pGame->GetLastSaveGame().c_str());
-				}
-				else
-					g_pGame->GetIGameFramework()->LoadGame(g_pGame->GetLastSaveGame().c_str());
 
 				return true;
 			}

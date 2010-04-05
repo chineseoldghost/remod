@@ -14,7 +14,6 @@ History:
 #include "Item.h"
 #include "Actor.h"
 #include "Player.h"
-#include "Alien.h"
 #include "GameCVars.h"
 #include <IViewSystem.h>
 

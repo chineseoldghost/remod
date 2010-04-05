@@ -449,56 +449,6 @@ void CPlayerView::ViewThirdPerson(SViewParams &viewParams)
 		viewParams.rotation *= Quat::CreateRotationXYZ(Ang3(0,0,m_in.thirdPersonYaw * gf_PI/180.0f));
 		m_io.viewQuatFinal = viewParams.rotation;
 	}
-
-	if (g_pGameCVars->goc_enable)
-	{
-		Vec3 target(g_pGameCVars->goc_targetx, g_pGameCVars->goc_targety, g_pGameCVars->goc_targetz);
-		static Vec3 current(target);
-
-		Interpolate(current, target, 5.0f, m_in.frameTime);
-
-		// make sure we don't clip through stuff that much
-		Vec3 offsetX(0,0,0);
-		Vec3 offsetY(0,0,0);
-		Vec3 offsetZ(0,0,0);
-		offsetX = m_io.viewQuatFinal.GetColumn0() * current.x;
-		offsetY = m_io.viewQuatFinal.GetColumn1() * current.y;
-		offsetZ = m_io.viewQuatFinal.GetColumn2() * current.z;
-
-		IActor* pActor = g_pGame->GetIGameFramework()->GetIActorSystem()->GetActor(m_in.entityId);
-		if (pActor)
-		{
-			static ray_hit hit;	
-			IPhysicalEntity* pSkipEntities[10];
-			int nSkip = 0;
-			IItem* pItem = pActor->GetCurrentItem();
-			if (pItem)
-			{
-				CWeapon* pWeapon = (CWeapon*)pItem->GetIWeapon();
-				if (pWeapon)
-					 nSkip = CSingle::GetSkipEntities(pWeapon, pSkipEntities, 10);
-			}
-
-			float oldLen = offsetY.len();
-
-			Vec3 start = m_io.baseQuat * m_io.eyeOffsetView + viewParams.position+offsetX+offsetZ;
-			if (gEnv->pPhysicalWorld->RayWorldIntersection(start, offsetY, ent_static|ent_terrain|ent_rigid,
-				rwi_ignore_noncolliding | rwi_stop_at_pierceable, &hit, 1, pSkipEntities, nSkip))
-			{
-				offsetY = hit.pt - start;
-				if (offsetY.len()> 0.25f)
-				{
-					offsetY -= offsetY.GetNormalized()*0.25f;
-				}
-				current.y = current.y * (hit.dist/oldLen);
-			}
-		}
-		
-		//viewParams.position += m_io.viewQuatFinal.GetColumn0() * current.x;		// right 
-		//viewParams.position += m_io.viewQuatFinal.GetColumn1() * current.y;	// back
-		//viewParams.position += m_io.viewQuatFinal.GetColumn2() * current.z;	// up
-		viewParams.position += offsetX + offsetY + offsetZ;
-	}
 	else
 	{
 	if (m_io.bUsePivot)			

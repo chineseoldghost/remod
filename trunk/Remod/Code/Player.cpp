@@ -28,7 +28,7 @@ History:
 #include <IItemSystem.h>
 #include <IPhysics.h>
 #include <ICryAnimation.h>
-#include "IAISystem.h"
+//#include "IAISystem.h"
 #include "IAgent.h"
 #include <IVehicleSystem.h>
 #include <ISerialize.h>
@@ -57,7 +57,7 @@ History:
 #include "PlayerRotation.h"
 #include "PlayerInput.h"
 #include "NetPlayerInput.h"
-#include "AIDemoInput.h"
+//#include "AIDemoInput.h"
 
 #include "CryCharAnimationParams.h"
 
@@ -948,10 +948,12 @@ void CPlayer::Update(SEntityUpdateContext& ctx, int updateSlot)
 		{
 			if (client) //|| ((demoMode == 2) && this == gEnv->pGame->GetIGameFramework()->GetIActorSystem()->GetOriginalDemoSpectator()))
 			{
+				/*
 				if ( GetISystem()->IsDedicated() )
-					m_pPlayerInput.reset( new CDedicatedInput(this) );
+					m_pPlayerInput.reset( new CDedicatedInput(this) ); // BACKUP :D
 				else
 					m_pPlayerInput.reset( new CPlayerInput(this) );
+					*/
 			}
 			else
 				m_pPlayerInput.reset( new CNetPlayerInput(this) );
@@ -1747,13 +1749,6 @@ IEntity *CPlayer::LinkToVehicle(EntityId vehicleId)
 	}
 	else
 	{
-		
-    if (IsThirdPerson() && !g_pGameCVars->goc_enable)
-      ToggleThirdPerson();
-	  
-
-		if (g_pGameCVars->goc_enable && !IsThirdPerson())
-			ToggleThirdPerson();
 			
 
 		CALL_PLAYER_EVENT_LISTENERS(OnExitVehicle(this));
@@ -1890,6 +1885,7 @@ void CPlayer::StanceChanged(EStance last)
 			m_stats.heightPivot = playerDim.heightPivot;
 	}
 
+	/*
 	if(GetEntity() && GetEntity()->GetAI())
 	{
 		IAIActor* pAIActor = CastToIAIActorSafe(GetEntity()->GetAI());
@@ -1905,6 +1901,7 @@ void CPlayer::StanceChanged(EStance last)
 			}
 		}
 	}
+	*/
 
 	bool player(IsPlayer());
 
@@ -3151,6 +3148,7 @@ int CPlayer::IsGod()
 	if (IsClient())
 		return godMode;
 
+	/*
 	//check if is a squadmate
 	IAIActor* pAIActor = CastToIAIActorSafe(GetEntity()->GetAI());
 	if (pAIActor)
@@ -3159,6 +3157,7 @@ int CPlayer::IsGod()
 		if(group>= 0 && group<10)
 			return (godMode==2?1:0);
 	}
+	*/
 	return 0;
 }
 
@@ -3333,8 +3332,10 @@ void CPlayer::Revive( bool fromInit )
 		m_pNanoSuit->SetCloakLevel(CLOAKMODE_REFRACTION);
 		//m_pNanoSuit->ActivateMode(NANOMODE_CLOAK, false);	// cloak must be picked up or bought
 
+		/*
 		if (GetEntity()->GetAI())	//just for the case the player was still cloaked (happens in editor when exiting game cloaked)
 			gEnv->pAISystem->SendSignal(SIGNALFILTER_SENDER,1, "OnNanoSuitUnCloak", GetEntity()->GetAI());
+			*/
 	}
 
 	// marcio: reset pose on the dedicated server (dedicated server doesn't update animationgraphs)

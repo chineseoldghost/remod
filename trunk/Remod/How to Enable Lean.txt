@@ -10,6 +10,5 @@
 </action>
 
 4) Change "q" and "e" to whatever suits you.
-5) Look for any other actions that use these keys by searching for "q" and "e" (with quotes).
-6) Save the file.
+5) Look for any other actions that use these keys by searching for "q" and "e" (with quotes) and change them.
 7) G'day!

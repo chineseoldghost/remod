@@ -32,7 +32,7 @@ sampler2D glowDecalMapSampler = sampler_state { Texture = $DecalOverlay; };
 ///////////////// vertex input/output //////////////////
 struct vert2fragGlow
 {
-  float4 HPosition : POSITION;
+  OUT_P
   float4 baseTC     : TEXCOORDN;
   float4 maskTC     : TEXCOORDN;
 
@@ -52,19 +52,14 @@ vert2fragGlow Common_GlowPassVS(app2vertGlow IN)
   streamPos vertPassPos = (streamPos)0;
   streamPos_FromGlow(IN, vertPassPos);
 
-#if !%TEMP_TERRAIN
-	float3 vNorm = TangNormal(IN.Tangent, IN.Binormal);
-#else
-	float3 vNorm = vertPassPos.Normal;
-#endif
-
 #if %_RT_DECAL_TEXGEN_2D || %_RT_DECAL_TEXGEN_3D 
-  float3 vBinormalProjToSurface = DecalBinormal.xyz - dot( DecalBinormal.xyz, vNorm ) * vNorm;
-  float3 vTangentProjToSurface = DecalTangent.xyz - dot( DecalTangent.xyz, vNorm ) * vNorm;
+  float3 vBinormalProjToSurface = DecalBinormal.xyz - dot( DecalBinormal.xyz, vertPassPos.ObjToTangentSpace[2] ) * vertPassPos.ObjToTangentSpace[2];
+  float3 vTangentProjToSurface = DecalTangent.xyz - dot( DecalTangent.xyz, vertPassPos.ObjToTangentSpace[2] ) * vertPassPos.ObjToTangentSpace[2];
   
   IN.Binormal = float4( normalize( vBinormalProjToSurface ), 1 );
   IN.Tangent = float4( normalize( vTangentProjToSurface ), -1 );
 #endif
+
 
   OUT.HPosition = Pos_VS_General(g_VS_ViewProjZeroMatr, vertPassPos);
   
@@ -89,6 +84,8 @@ vert2fragGlow Common_GlowPassVS(app2vertGlow IN)
   float decalPlaneDist = dot( DecalNormal.xyz, distWS ); //float3 DecalNormal = normalize( cross( DecalBinormal.xyz, DecalTangent.xyz ) );  
 
   float invDecalSize = 1.0 / DecalAtten.w;  
+  
+  float3 vNorm = vertPassPos.ObjToTangentSpace[2];
   
   OUT.DistAtten.x = decalPlaneDist * invDecalSize; 
   OUT.DistAtten.y = saturate(dot(vNorm, DecalNormal) * 10);
@@ -158,7 +155,7 @@ pixout Common_GlowPassPS(vert2fragGlow IN)
 #endif
   
   OUT.Color.w = 1.0;
-
+    
   return OUT;
 }
 

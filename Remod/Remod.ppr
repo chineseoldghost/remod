@@ -292,7 +292,7 @@ Remod
 22=Game\Scripts\Entities\Items\XML\Weapons\AlienMount.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\actor\player.lua
+Selected=Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
@@ -315,7 +315,7 @@ Caret=35,203
 TopLine=196
 Caret=37,207
 [Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml]
-TopLine=100
+TopLine=1
 Caret=70,100
 [Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml]
 TopLine=171
@@ -357,7 +357,7 @@ Caret=1,1
 TopLine=3
 Caret=35,6
 [Game\Scripts\Entities\actor\player.lua]
-TopLine=1
+TopLine=166
 Caret=8,208
 [Game\Scripts\Entities\Items\XML\Weapons\AlienMount.xml]
 TopLine=259

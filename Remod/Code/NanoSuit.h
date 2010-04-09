@@ -259,12 +259,6 @@ public:
 	//set energy back to max
 	void ResetEnergy();
 
-	// Remod | Commander
-	EntityId USCommander;
-	EntityId NKCommander;
-	EntityId player;
-	bool isCommander;
-
 	//plays an ENanoSound
 	void PlaySound(ENanoSound sound, float param = 1.0f, bool stopSound = false);
 

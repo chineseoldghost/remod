@@ -247,12 +247,6 @@ void CNanoSuit::Reset(CPlayer *owner)
 	m_bSprintUnderwater = false;
 	m_energy = 0.0f;
 
-	// Remod | Commander
-	USCommander = 0;
-	NKCommander = 0;
-	player = 0;
-	isCommander = false;
-
 	m_bNightVisionEnabled = false;
 
 	for(int k = 0; k < NANOSLOT_LAST; ++k)

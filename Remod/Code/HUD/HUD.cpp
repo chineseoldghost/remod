@@ -476,8 +476,6 @@ bool CHUD::Init()
 		m_animKillLog.Load("Libs/UI/HUD_KillLog.gfx", eFD_Left, eFAF_Visible);
 	}
 
-	// Remod | Commander
-	m_animCommander.Load("Libs/UI/HUD_Commander.gfx", eFD_Right, eFAF_Visible|eFAF_ThisHandler);
 	m_animPlayerStats.Load("Libs/UI/HUD_AmmoHealthEnergySuit.gfx", eFD_Right, eFAF_Visible|eFAF_ThisHandler);
 	m_animAmmoPickup.Load("Libs/UI/HUD_AmmoPickup.gfx", eFD_Right, eFAF_Visible);
 	m_animFriendlyProjectileTracker.Load("Libs/UI/HUD_GrenadeDetect_Friendly.gfx", eFD_Center, eFAF_Visible);
@@ -1668,50 +1666,6 @@ void CHUD::HandleFSCommand(const char *szCommand,const char *szArgs)
 			}
 		}
 	}
-	else if(!strcmp(szCommand, "Commander")) // Remod | Commander HUD FSCommand
-	{
-		CryLogAlways("HUD.CPP LINE 1672");
-		// The first part is about joining the actual team.
-		if(!gEnv->pSystem->IsDedicated())
-		{
-			CGameRules* pRules = g_pGame->GetGameRules();
-			IActor *pTempActor = g_pGame->GetIGameFramework()->GetClientActor();
-			if(pRules && pRules->GetTeamCount() > 1 && pTempActor)
-			{
-				if(pRules->GetTeamId(szArgs) != pRules->GetTeam(pTempActor->GetEntityId()))
-				{
-					string command("team ");
-					command.append(szArgs);
-					m_prevSpectatorTeam = pRules->GetTeam(pTempActor->GetEntityId());
-					gEnv->pConsole->ExecuteString(command.c_str());
-					ShowPDA(false);
-
-					if(GetModalHUD() == &m_animTeamSelection)
-					{
-						m_animTeamSelection.SetVisible(false);
-						SwitchToModalHUD(NULL, false);
-					}
-				}
-			}
-			// Becoming a Commander
-			int teamId = g_pGame->GetGameRules()->GetTeam(pTempActor->GetEntityId());
-			//EntityId teamId = g_pGame->GetGameRules()->GetTeamId(team);
-			CryLogAlways("HUD.CPP LINE 1703");
-			AddCommander(teamId);
-		}
-	}
-	else if(!strcmp(szCommand, "CommanderAlertProto")) // Remod | Commander Alert
-	{
-		CryLogAlways("HUD.CPP LINE 1708");
-		int teamId = g_pGame->GetGameRules()->GetTeam(g_pGame->GetIGameFramework()->GetClientActor()->GetEntityId());
-		g_pGame->GetGameRules()->SendTextMessage(eTextMessageServer, "CAPTURE PROTOTYPE FACILITY", eRMI_ToClientChannel/*eRMI_ToAllClients*/);
-	}
-	else if(!strcmp(szCommand, "CommanderAlertEnergysite"))
-	{
-		CryLogAlways("HUD.CPP LINE 1715");
-		int teamId = g_pGame->GetGameRules()->GetTeam(g_pGame->GetIGameFramework()->GetClientActor()->GetEntityId());
-		g_pGame->GetGameRules()->SendTextMessage(eTextMessageServer, "CAPTURE ENERGYSITE FACILITY", eRMI_ToClientChannel/*eRMI_ToAllClients*/);
-	}
 	else if(!strcmp(szCommand,"StopInitialize"))
 	{
 		m_bDestroyInitializePending = true;
@@ -1885,29 +1839,6 @@ void CHUD::HandleFSCommand(const char *szCommand,const char *szArgs)
 			}
 		}
 	}
-}
-//-----------------------------------------------------------------------------------------------------
-void  CHUD::AddCommander(EntityId teamId)
-{
-	CryLogAlways("HUD.CPP LINE 1897");
-	if(teamId==1)
-		if(!USHasCommander)
-		{
-			USHasCommander = true;
-			EntityId player = g_pGame->GetIGameFramework()->GetClientActor()->GetEntityId();
-			USCommander = player;
-		}
-		else
-			DisplayFlashMessage("Commander spot already taken!", 2);
-	else if(teamId==2)
-		if(!NKHasCommander)
-		{
-			NKHasCommander = true;
-			EntityId player = g_pGame->GetIGameFramework()->GetClientActor()->GetEntityId();
-			NKCommander = player;
-		}
-		else
-			DisplayFlashMessage("Commander spot already taken!", 2);
 }
 //-----------------------------------------------------------------------------------------------------
 
@@ -3255,26 +3186,6 @@ void CHUD::OnPostUpdate(float frameTime)
 
 	if (gEnv->bMultiplayer)
 	{
-		// Remod | Commander
-		if(!gEnv->pSystem->IsDedicated())
-		{
-			CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
-			CNanoSuit *pSuit=pPlayer->GetNanoSuit();
-			player = g_pGame->GetIGameFramework()->GetClientActor()->GetEntityId();
-
-			if(USCommander==player || NKCommander==player)
-			{
-				pSuit->isCommander = true;
-				m_animPlayerStats.SetVisible(false);
-				m_animCommander.SetVisible(true);
-			}
-			else
-			{
-				pSuit->isCommander = false;
-				m_animCommander.SetVisible(false);
-				m_animPlayerStats.SetVisible(true);
-			}
-		}
 		UpdateTeamActionHUD();
 
 		//MP team selection is always rendered if available

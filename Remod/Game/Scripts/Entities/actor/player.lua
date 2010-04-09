@@ -85,7 +85,7 @@ Player = {
 			{
 				stanceId = STANCE_STAND,
 				normalSpeed = 1.75,
-				maxSpeed = 3.825,
+				maxSpeed = 3.75,
 				heightCollider = 1.2,
 				heightPivot = 0.0,
 				size = {x=0.4,y=0.4,z=0.3},

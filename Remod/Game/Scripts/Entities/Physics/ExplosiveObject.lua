@@ -30,22 +30,22 @@ ExplosiveObject =
 		},
 
 		bExplodeOnHit				= 1,
-		bPlayerOnly					= 1,
-		fDensity 						= 5000,
-		fMass 							= 10,
-		bResting 						= 1, -- If rigid body is originally in resting state.
-		bRigidBody 					= 0,
-		UsageText						= "Press USE to set the timer!",
-		UsageRadius					= 5,
+		bPlayerOnly				= 1,
+		fDensity 				= 5000,
+		fMass 					= 10,
+		bResting 				= 1, -- If rigid body is originally in resting state.
+		bRigidBody 				= 1,
+		UsageText				= "Press USE to set the timer!",
+		UsageRadius				= 5,
 		TimeLeftText				= "%d...",
 
 		PhysicsBuoyancy=
 		{
 			water_density = 1,
 			water_damping = 1.5,
-			water_resistance = 0,	
+			water_resistance = 0,
 		},
-		
+
 		PhysicsSimulation=
 		{
 			max_time_step = 0.01,
@@ -90,9 +90,9 @@ function ExplosiveObject:OnReset()
 	};
 
 	local bRigidBody = (tonumber(self.Properties.bRigidBody) ~= 0);
-	if (CryAction.IsImmersivenessEnabled() == 0) then
-		bRigidBody = nil
-	end
+--	if (CryAction.IsImmersivenessEnabled() == 0) then
+--		bRigidBody = nil
+--	end
 
 	if (bRigidBody) then
 		self:Physicalize(0, PE_RIGID, params);
@@ -102,7 +102,7 @@ function ExplosiveObject:OnReset()
 		else
 			self:AwakePhysics(1);
 		end
-		
+
 		self:SetPhysicParams(PHYSICPARAM_BUOYANCY, self.Properties.PhysicsBuoyancy);
 		self:SetPhysicParams(PHYSICPARAM_SIMULATION, self.Properties.PhysicsSimulation);
 	else
@@ -112,7 +112,7 @@ function ExplosiveObject:OnReset()
 	self:Activate(0);
 
 	self.active = false;
-	self.timer = nil;	
+	self.timer = nil;
 
 	if (self.useMessageId) then
 		HUD:SetInstructionObsolete(self.useMessageId);
@@ -125,7 +125,7 @@ function ExplosiveObject:OnReset()
 	else
 		self:SetFlags(ENTITY_FLAG_AI_HIDEABLE, 2); -- remove
 	end
-	
+
 
 end
 
@@ -203,7 +203,7 @@ end
 function ExplosiveObject:Explode(shooterId)
 	self:Activate(0);
 	System.RemoveEntity(self.id);
-	
+
 	local props = self.Properties.Explosion;
 	g_gameRules:CreateExplosion(shooterId or NULL_ENTITY,weaponId or NULL_ENTITY,damage,self:GetWorldPos(),
 		props.Direction,props.Radius,nil,props.Pressure,props.HoleSize,props.Effect,props.EffectScale);
@@ -220,7 +220,7 @@ function ExplosiveObject:IsUsable(user)
 	if (self.active) then
 		return 0;
 	end
-	
+
 	local mp = System.IsMultiplayer();
 	if(mp and mp~=0) then
 		return 0;
@@ -228,7 +228,7 @@ function ExplosiveObject:IsUsable(user)
 
 	self.userpos = user:GetWorldPos(self.userpos);
 	self.pos = self:GetWorldPos(self.pos);
-	
+
 	local radius = self.Properties.UsageRadius;
 
 	if (vecDistanceSq(self.userpos, self.pos) < radius*radius) then
@@ -248,7 +248,7 @@ end
 ----------------------------------------------------------------------------------------------------
 function ExplosiveObject:Event_Explode()
 	self:Explode(NULL_ENTITY);
-	
+
 	BroadcastEvent(self, "Explode");
 end
 
@@ -264,11 +264,11 @@ function ExplosiveObject:Event_StartTimer()
 	self.active = true;
 	self.timer = math.floor(self.Properties.ExplosionTimer+0.5)+0.5;
 	self:Activate(1);
-	
+
 	if (self.useMessageId) then
 		HUD:SetInstructionObsolete(self.useMessageId);
 		self.useMessageId = nil;
-	end	
+	end
 end
 
 

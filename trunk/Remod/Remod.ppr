@@ -76,7 +76,7 @@ Remod
 				Game\Scripts\Entities\Vehicles\VehicleSeat.lua
 				Game\Scripts\Entities\Vehicles\VehicleBase.lua
 				Game\Scripts\Entities\Vehicles\VehiclePool.lua
-			-Actor
+			+Actor
 				Game\Scripts\Entities\actor\BasicActor.lua
 				Game\Scripts\Entities\actor\player.lua
 			-Items
@@ -273,15 +273,19 @@ Remod
 0=Game\Scripts\Entities\Items\XML\Ammo\Bullet.xml
 1=Game\Scripts\GameRules\PowerStruggleBuying.lua
 2=Game\Scripts\GameRules\PowerStruggleRank.lua
+3=Game\Scripts\Entities\actor\BasicActor.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\GameRules\PowerStruggleBuying.lua
+Selected=Game\Scripts\Entities\actor\BasicActor.lua
 [Game\Scripts\Entities\Items\XML\Ammo\Bullet.xml]
 TopLine=1
 Caret=30,17
 [Game\Scripts\GameRules\PowerStruggleBuying.lua]
-TopLine=1480
+TopLine=198
 Caret=18,198
 [Game\Scripts\GameRules\PowerStruggleRank.lua]
 TopLine=21
 Caret=103,37
+[Game\Scripts\Entities\actor\BasicActor.lua]
+TopLine=835
+Caret=27,858

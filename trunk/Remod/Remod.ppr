@@ -276,16 +276,16 @@ Remod
 3=Game\Scripts\Entities\actor\BasicActor.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\actor\BasicActor.lua
+Selected=Game\Scripts\GameRules\PowerStruggleRank.lua
 [Game\Scripts\Entities\Items\XML\Ammo\Bullet.xml]
 TopLine=1
 Caret=30,17
 [Game\Scripts\GameRules\PowerStruggleBuying.lua]
-TopLine=198
+TopLine=146
 Caret=18,198
 [Game\Scripts\GameRules\PowerStruggleRank.lua]
-TopLine=21
-Caret=103,37
+TopLine=7
+Caret=1,14
 [Game\Scripts\Entities\actor\BasicActor.lua]
 TopLine=835
 Caret=27,858

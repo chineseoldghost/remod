@@ -28,12 +28,13 @@
 #include "ServerSynchedStorage.h"
 #include "Cry_Camera.h"
 
-#define GAME_NAME				"Crysis Wars: REMOD: REMOD"
-#define GAME_LONGNAME		"Crysis Wars: REMOD: REMOD"
+#define GAME_NAME				"Crysis Wars: Remod"
+#define GAME_LONGNAME		"Crysis Wars: Remod"
 
 
 struct ISystem;
 struct IConsole;
+struct ILCD;
 
 class	CScriptBind_Actor;
 class CScriptBind_Item;
@@ -49,6 +50,7 @@ struct IActionMap;
 struct IActionFilter;
 class  CGameActions;
 class CGameRules;
+class CBulletTime;
 class CHUD;
 class CSynchedStorage;
 class CClientSynchedStorage;
@@ -59,6 +61,7 @@ class CItemSharedParamsList;
 class CSPAnalyst;
 class CSoundMoods;
 class CLaptopUtil;
+class CLCDWrapper;
 class CDownloadTask;
 
 // when you add stuff here, also update in CGame::RegisterGameObjectEvents
@@ -131,13 +134,15 @@ public:
 
 	virtual void OnClearPlayerIds();
 	//auto-generated save game file name
-	//virtual const char* CreateSaveGameName();
+	virtual const char* CreateSaveGameName();
 	//level names were renamed without changing the file/directory
 	virtual const char* GetMappedLevelName(const char *levelName) const;
 	// ~IGame
 
   // IGameFrameworkListener
   virtual void OnPostUpdate(float fDeltaTime);
+  virtual void OnSaveGame(ISaveGame* pSaveGame);
+  virtual void OnLoadGame(ILoadGame* pLoadGame);
 	virtual void OnLevelEnd(const char* nextLevel) {};
   virtual void OnActionEvent(const SActionEvent& event);
   // ~IGameFrameworkListener
@@ -146,10 +151,14 @@ public:
   void GameChannelDestroyed(bool isServer);
   void DestroyHUD();
 
-  // REMOD
+  // Remod | Slowmo functions
   static void Slowmo(ICVar* pCVar);
   _smart_ptr<ISound> pSound;
 
+
+  // Remod | Stats
+  void SaveStats(string stat);
+  int KillStats;
 
 	virtual CScriptBind_Actor *GetActorScriptBind() { return m_pScriptBindActor; }
 	virtual CScriptBind_Item *GetItemScriptBind() { return m_pScriptBindItem; }
@@ -162,6 +171,7 @@ public:
 	CGameActions&	Actions() const {	return *m_pGameActions;	};
 
 	CGameRules *GetGameRules() const;
+	CBulletTime *GetBulletTime() const;
 	CSoundMoods *GetSoundMoods() const;
 	CLaptopUtil *GetLaptopUtil() const;
 	CHUD *GetHUD() const;
@@ -183,19 +193,15 @@ public:
 
 	CSPAnalyst* GetSPAnalyst() const { return m_pSPAnalyst; }
 
+	const string& GetLastSaveGame(string &levelName);
+	const string& GetLastSaveGame() { string tmp; return GetLastSaveGame(tmp); }
+
   ILINE SCVars *GetCVars() {return m_pCVars;}
 	static void DumpMemInfo(const char* format, ...) PRINTF_PARAMS(1, 2);
 
 	CDownloadTask* GetDownloadTask() const { return m_pDownloadTask; }
 
-	// Achievements
-	static void ResetAchievements();
-	void EarnAchievement(string Achievement, bool state);
-	void UpAchievement(string Achievement);
-	float TotalKills;
-
 protected:
-
 	virtual void LoadActionMaps(const char* filename = "libs/config/defaultProfile.xml");
 
 	virtual void ReleaseActionMaps();
@@ -283,8 +289,10 @@ protected:
 	string                 m_lastSaveGame;
 	string								 m_newSaveGame;
 
+	CBulletTime						*m_pBulletTime;
 	CSoundMoods						*m_pSoundMoods;
 	CLaptopUtil						*m_pLaptopUtil;
+	ILCD									*m_pLCD;
 
 	typedef std::map<string, string, stl::less_stricmp<string> > TLevelMapMap;
 	TLevelMapMap m_mapNames;

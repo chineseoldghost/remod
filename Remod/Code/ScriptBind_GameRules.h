@@ -112,6 +112,7 @@ public:
 	int GetTeamPlayerCount(IFunctionHandler *pH, int teamId);
 	int GetTeamChannelCount(IFunctionHandler *pH, int teamId);
 	int GetTeamPlayers(IFunctionHandler *pH, int teamId);
+	int GetTeamAliveCount(IFunctionHandler *pH, int teamId);
 
 	int SetTeam(IFunctionHandler *pH, int teamId, ScriptHandle playerId);
 	int GetTeam(IFunctionHandler *pH, ScriptHandle playerId);
@@ -192,7 +193,6 @@ public:
   int GetReviveTime(IFunctionHandler *pH);
 	int GetMinPlayerLimit(IFunctionHandler *pH);
 	int GetMinTeamLimit(IFunctionHandler *pH);
-	int GetMaxTeamLimit(IFunctionHandler *pH);
 	int GetTeamLock(IFunctionHandler *pH);
 	int GetAutoTeamBalance(IFunctionHandler *pH);
 	int GetAutoTeamBalanceThreshold(IFunctionHandler *pH);
@@ -224,10 +224,6 @@ public:
 	int PerformDeadHit(IFunctionHandler* pH);
 
 	int IsItemAllowed(IFunctionHandler* pH, const char* itemName);
-
-	int GetAchievements(IFunctionHandler* pH, SmartScriptTable achievement);
-	int UpdateAchievement(IFunctionHandler* pH, const char *Achievement);
-	int IncreaseStats(IFunctionHandler* pH, const char *stats);
 
 private:
 	void RegisterGlobals();

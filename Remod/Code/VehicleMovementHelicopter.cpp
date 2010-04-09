@@ -706,13 +706,13 @@ void CVehicleMovementHelicopter::Boost(bool enable)
 	CVehicleMovementBase::Boost(enable);
 }
 
-//====
+//===================================================================
 // ProcessAI
 // This treats the helicopter as able to move in any horizontal direction
 // by tilting in any direction. Yaw control is thus secondary. Throttle
 // control is also secondary since it is adjusted to maintain or change
 // the height, and the amount needed depends on the tilt.
-//====
+//===================================================================
 //////////////////////////////////////////////////////////////////////////
 // NOTE: This function must be thread-safe. Before adding stuff contact MarcoC.
 void CVehicleMovementHelicopter::ProcessAI(const float deltaTime)

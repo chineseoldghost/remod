@@ -28,7 +28,7 @@ History:
 #include <IItemSystem.h>
 #include <IPhysics.h>
 #include <ICryAnimation.h>
-//#include "IAISystem.h"
+#include "IAISystem.h"
 #include "IAgent.h"
 #include <IVehicleSystem.h>
 #include <ISerialize.h>
@@ -57,7 +57,7 @@ History:
 #include "PlayerRotation.h"
 #include "PlayerInput.h"
 #include "NetPlayerInput.h"
-//#include "AIDemoInput.h"
+#include "AIDemoInput.h"
 
 #include "CryCharAnimationParams.h"
 
@@ -503,7 +503,7 @@ void CPlayer::Draw(bool draw)
 void CPlayer::UpdateFirstPersonEffects(float frameTime)
 {
 
-	//====alien interference effect
+	//=========================alien interference effect============================
   bool doInterference = g_pGameCVars->hud_enableAlienInterference && !m_interferenceParams.empty();
   if (doInterference)		
 	{
@@ -593,7 +593,7 @@ void CPlayer::UpdateFirstPersonEffects(float frameTime)
 		}
 	}
 
-	//======Stop firing weapon while sprinting/prone moving
+	//===========================Stop firing weapon while sprinting/prone moving==============
 
 	if(IItem *pItem = GetCurrentItem())
 	{
@@ -601,7 +601,7 @@ void CPlayer::UpdateFirstPersonEffects(float frameTime)
 			pItem->GetIWeapon()->StopFire();
 	}
 
-	//====
+	//========================================================================================
 
 	CFists *pFists = static_cast<CFists*>(GetItemByClass(CItem::sFistsClass));
 	COffHand *pOffHand = static_cast<COffHand*>(GetItemByClass(CItem::sOffHandClass));
@@ -948,12 +948,10 @@ void CPlayer::Update(SEntityUpdateContext& ctx, int updateSlot)
 		{
 			if (client) //|| ((demoMode == 2) && this == gEnv->pGame->GetIGameFramework()->GetIActorSystem()->GetOriginalDemoSpectator()))
 			{
-				/*
 				if ( GetISystem()->IsDedicated() )
-					m_pPlayerInput.reset( new CDedicatedInput(this) ); // BACKUP :D
+					m_pPlayerInput.reset( new CDedicatedInput(this) );
 				else
 					m_pPlayerInput.reset( new CPlayerInput(this) );
-					*/
 			}
 			else
 				m_pPlayerInput.reset( new CNetPlayerInput(this) );
@@ -971,7 +969,7 @@ void CPlayer::Update(SEntityUpdateContext& ctx, int updateSlot)
 	}
 
 	// small workaround for ded server: fake a view update
-	if (gEnv->bMultiplayer && gEnv->bServer && !IsClient())
+	if ((gEnv->bMultiplayer) && gEnv->bServer && !IsClient())
 	{
 		SViewParams viewParams;
 		UpdateView(viewParams);
@@ -980,7 +978,7 @@ void CPlayer::Update(SEntityUpdateContext& ctx, int updateSlot)
 	UpdateWeaponRaising();
 
 	// if spectating, send health of the spectator target to our client when it changes
-	if(gEnv->bServer && gEnv->bMultiplayer && g_pGame->GetGameRules() && m_stats.spectatorMode == CActor::eASM_Follow)
+	if(gEnv->bServer && (gEnv->bMultiplayer) && g_pGame->GetGameRules() && m_stats.spectatorMode == CActor::eASM_Follow)
 	{
 		IActor* pActor = g_pGame->GetIGameFramework()->GetIActorSystem()->GetActor(m_stats.spectatorTarget);
 		if (pActor)
@@ -1060,7 +1058,7 @@ void CPlayer::UpdateSounds(float fFrameTime)
 		}
 	}
 
-	if(gEnv->bMultiplayer && gEnv->bServer && gEnv->bClient && !IsClient())
+	if((gEnv->bMultiplayer) && gEnv->bServer && gEnv->bClient && !IsClient())
 	{
 		if(g_pGame->GetIGameFramework()->IsGameStarted())
 		{
@@ -1331,7 +1329,7 @@ void CPlayer::PrePhysicsUpdate()
 	{
 		params.flags |= eACF_AlwaysPhysics | eACF_ImmediateStance | eACF_NoLMErrorCorrection;
 
-		if ((gEnv->bMultiplayer && !client) || IsThirdPerson())
+		if (((gEnv->bMultiplayer) && !client) || IsThirdPerson())
 		{	
 			params.physErrorInnerRadiusFactor = 0.05f;
 			params.physErrorOuterRadiusFactor = 0.2f;
@@ -1456,7 +1454,7 @@ void CPlayer::PrePhysicsUpdate()
 				playerMovement.Commit(*this);
 			}
 
-			if (m_linkStats.CanDoIK() || (gEnv->bMultiplayer && GetLinkedVehicle()))
+			if (m_linkStats.CanDoIK() || ((gEnv->bMultiplayer) && GetLinkedVehicle()))
 				SetIK(frameMovementParams);
 		}
 	}
@@ -1749,7 +1747,11 @@ IEntity *CPlayer::LinkToVehicle(EntityId vehicleId)
 	}
 	else
 	{
-			
+    if (IsThirdPerson() && !g_pGameCVars->goc_enable)
+      ToggleThirdPerson();
+
+		if (g_pGameCVars->goc_enable && !IsThirdPerson())
+			ToggleThirdPerson();
 
 		CALL_PLAYER_EVENT_LISTENERS(OnExitVehicle(this));
 		m_vehicleViewDir.Set(0,1,0);
@@ -1885,7 +1887,6 @@ void CPlayer::StanceChanged(EStance last)
 			m_stats.heightPivot = playerDim.heightPivot;
 	}
 
-	/*
 	if(GetEntity() && GetEntity()->GetAI())
 	{
 		IAIActor* pAIActor = CastToIAIActorSafe(GetEntity()->GetAI());
@@ -1901,7 +1902,6 @@ void CPlayer::StanceChanged(EStance last)
 			}
 		}
 	}
-	*/
 
 	bool player(IsPlayer());
 
@@ -2248,7 +2248,7 @@ void CPlayer::UpdateSwimStats(float frameTime)
 	if (ShouldSwim())
 	{
 		//by design : AI cannot swim and drowns no matter what
-		if((GetHealth() > 0) && !isClient && !gEnv->bMultiplayer)
+		if((GetHealth() > 0) && !isClient && gEnv->bMultiplayer)
 		{
 			// apply damage same way as all the other kinds
 			HitInfo hitInfo;
@@ -2941,7 +2941,7 @@ void CPlayer::UpdateStats(float frameTime)
 
 			CNanoSuit* pSuit = GetNanoSuit();
 			float maxEnergy = (pSuit != NULL) ? NANOSUIT_ENERGY : 0.0f;
-			float damagePerEnergy = 1.0f; // Remod, default 1.0f
+			float damagePerEnergy = 1.0f;
 
 			if (IGameRules *pGameRules=g_pGame->GetGameRules())
 			{
@@ -3148,7 +3148,6 @@ int CPlayer::IsGod()
 	if (IsClient())
 		return godMode;
 
-	/*
 	//check if is a squadmate
 	IAIActor* pAIActor = CastToIAIActorSafe(GetEntity()->GetAI());
 	if (pAIActor)
@@ -3157,7 +3156,6 @@ int CPlayer::IsGod()
 		if(group>= 0 && group<10)
 			return (godMode==2?1:0);
 	}
-	*/
 	return 0;
 }
 
@@ -3332,10 +3330,8 @@ void CPlayer::Revive( bool fromInit )
 		m_pNanoSuit->SetCloakLevel(CLOAKMODE_REFRACTION);
 		//m_pNanoSuit->ActivateMode(NANOMODE_CLOAK, false);	// cloak must be picked up or bought
 
-		/*
 		if (GetEntity()->GetAI())	//just for the case the player was still cloaked (happens in editor when exiting game cloaked)
 			gEnv->pAISystem->SendSignal(SIGNALFILTER_SENDER,1, "OnNanoSuitUnCloak", GetEntity()->GetAI());
-			*/
 	}
 
 	// marcio: reset pose on the dedicated server (dedicated server doesn't update animationgraphs)
@@ -3465,7 +3461,7 @@ void CPlayer::RagDollize( bool fallAndPlay )
 			}
 		}
 
-		if (gEnv->bMultiplayer)
+		if(gEnv->bMultiplayer)
 		{
 			pe_params_part pp;
 			pp.flagsAND = ~(geom_colltype_player|geom_colltype_vehicle|geom_colltype6);
@@ -5518,7 +5514,7 @@ void CPlayer::PlaySound(EPlayerSounds sound, bool play, bool param /*= false*/, 
 	}
 }
 
-//======LADDERS=
+//===========================LADDERS======================
 
 // NB this will store the details of the usable ladder in m_stats
 bool CPlayer::IsLadderUsable()
@@ -6635,7 +6631,7 @@ void CPlayer::ResetScreenFX()
 
 void CPlayer::ResetFPView()
 {
-	float defaultFov = 60.0f; // Remod, r_drawNearFov, default is 60
+	float defaultFov = 60.0f;
 	gEnv->pRenderer->EF_Query(EFQ_DrawNearFov,(INT_PTR)&defaultFov);
 	g_pGameCVars->i_offset_front = g_pGameCVars->i_offset_right = g_pGameCVars->i_offset_up = 0.0f;
 }
@@ -6868,23 +6864,3 @@ void CPlayer::AutoPickUpItem(EntityId itemId)
 	}
 */
 }
-//--------------------------------------------------
-/*
-void CPlayer::Fistsonly(string what)
-{
-		if(strcmp(what, "remove"))
-		{
-			EntityId fistsId = GetInventory()->GetItemByClass(CItem::sFistsClass);
-			GetInventory()->RemoveAllItems();
-			GetInventory()->AddItem(fistsId);
-		}
-		else if(strcmp(what, "drop"))
-		{
-			EntityId currentItem = GetInventory()->GetLastItem();
-			EntityId fistsId = GetInventory()->GetItemByClass(CItem::sFistsClass);
-			if(currentItem!=fistsId)
-			{
-				CPlayer::DropItem(currentItem, 10, true);
-			}
-		}
-}*/

@@ -59,11 +59,11 @@ public:
 	virtual int LinkToEntity(IFunctionHandler *pH);
   virtual int IsGhostPit(IFunctionHandler *pH);
 	virtual int IsFlying(IFunctionHandler *pH);
-	virtual int DropInventory(IFunctionHandler *pH, float impulse);
+	virtual int DropInventory(IFunctionHandler *pH, float impulse); // Remod | Used to drop inventory on death
+	virtual int AddImpulse(IFunctionHandler *pH,float x,float y,float z); // Remod | Used to add a impulse for explosions
 	virtual int SetAngles(IFunctionHandler *pH,Ang3 vAngles );
 	virtual int GetAngles(IFunctionHandler *pH);
 	virtual int AddAngularImpulse(IFunctionHandler *pH,Ang3 vAngular,float deceleration,float duration);
-	virtual int AddImpulse(IFunctionHandler *pH,float x,float y,float z);
 	virtual int SetViewLimits(IFunctionHandler *pH,Vec3 dir,float rangeH,float rangeV);
 	virtual int PlayAction(IFunctionHandler *pH,const char *action,const char *extension);
 	virtual int SimulateOnAction(IFunctionHandler *pH,const char *action,int mode,float value);
@@ -144,6 +144,8 @@ public:
 	virtual int CreateIKLimb( IFunctionHandler *pH, int slot, const char *limbName, const char *rootBone, const char *midBone, const char *endBone, int flags);
 	virtual int ResetScores(IFunctionHandler *pH);
 	virtual int RenderScore(IFunctionHandler *pH, ScriptHandle player, int kills, int deaths, int ping, int teamKills);
+
+  virtual int SetSearchBeam(IFunctionHandler *pH, Vec3 dir);
 
 	//misc
 	//virtual int MeleeEffect(IFunctionHandler *pH);

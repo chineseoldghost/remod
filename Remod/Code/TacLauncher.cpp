@@ -23,7 +23,7 @@ CTacLauncher::CTacLauncher()
 	m_smokeEffectSlot = -1;
 }
 
-//=====
+//========================================
 void CTacLauncher::OnReset()
 {
 	CWeapon::OnReset();
@@ -35,7 +35,7 @@ void CTacLauncher::OnReset()
 	}
 }
 
-//=====
+//========================================
 void CTacLauncher::FullSerialize(TSerialize ser)
 {
 	CWeapon::FullSerialize(ser);
@@ -50,7 +50,7 @@ void CTacLauncher::FullSerialize(TSerialize ser)
 	}
 }
 
-//======
+//=========================================
 void CTacLauncher::PostSerialize()
 {
 	CWeapon::PostSerialize();
@@ -79,7 +79,7 @@ void CTacLauncher::AutoDrop()
 	}
 }
 
-//=====
+//========================================
 void CTacLauncher::Drop(float impulseScale, bool selectNext, bool byDeath)
 {
 	bool empty = false;
@@ -119,7 +119,7 @@ void CTacLauncher::Drop(float impulseScale, bool selectNext, bool byDeath)
 	}
 }
 
-//======
+//=========================================
 bool CTacLauncher::CanPickUp(EntityId userId) const
 {
 	CActor *pActor = GetActor(userId);

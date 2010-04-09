@@ -153,7 +153,7 @@ void CC4Projectile::Stick(EventPhysCollision *pCollision)
 			//Not in MP
 			if(pActor && gEnv->bMultiplayer)
 			{
-				m_notStick = true; // Remod, C4 sticking in MP
+				m_notStick = true;
 				return;
 			}
 
@@ -161,7 +161,7 @@ void CC4Projectile::Stick(EventPhysCollision *pCollision)
 			{
 				if(pActor->GetActorSpecies()!=eGCT_HUMAN)
 				{
-					m_notStick = true; // Remod, C4 here too
+					m_notStick = true;
 					return;
 				}	
 

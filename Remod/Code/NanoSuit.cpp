@@ -19,6 +19,7 @@
 #include "HUD/HUD.h"
 #include "GameRules.h"
 #include "NetInputChainDebug.h"
+#include "BulletTime.h"
 #include "SoundMoods.h"
 #include "WeaponSystem.h"
 #include "OffHand.h"
@@ -246,6 +247,12 @@ void CNanoSuit::Reset(CPlayer *owner)
 	m_bSprintUnderwater = false;
 	m_energy = 0.0f;
 
+	// Remod | Commander
+	USCommander = 0;
+	NKCommander = 0;
+	player = 0;
+	isCommander = false;
+
 	m_bNightVisionEnabled = false;
 
 	for(int k = 0; k < NANOSLOT_LAST; ++k)
@@ -310,7 +317,6 @@ void CNanoSuit::Reset(CPlayer *owner)
 	ActivateMode(NANOMODE_DEFENSE, true);
 	ActivateMode(NANOMODE_CLOAK, true);
 
-
 	Precache();
 }
 
@@ -367,7 +373,7 @@ void CNanoSuit::Update(float frameTime)
 	// invulnerability effect works even with a powered down suit
 	// it's a spawn protection mechanism, so we need to make sure
 	// nanogrenades don't disrupt this spawn protection
-	if (gEnv->bServer)	
+	if (gEnv->bServer)
 	{
 		if (!m_invulnerable)
 			m_invulnerabilityTimeout=0.0f;
@@ -429,6 +435,7 @@ void CNanoSuit::Update(float frameTime)
 		}
 	}
 
+
 	if (!IsActive())
 		return;
 
@@ -443,19 +450,24 @@ void CNanoSuit::Update(float frameTime)
 	float rechargeTime = 20.0f;
 
 	const SPlayerStats stats = *(static_cast<SPlayerStats*>(m_pOwner->GetActorStats()));
-	
-	if (gEnv->bMultiplayer)
-		rechargeTime=g_pGameCVars->g_playerSuitEnergyRechargeTimeMultiplayer;
+
+	if (isAI)
+		rechargeTime=g_pGameCVars->g_AiSuitEnergyRechargeTime;
 	else
 	{
-		if(m_currentMode != NANOMODE_DEFENSE)
-			rechargeTime=g_pGameCVars->g_playerSuitEnergyRechargeTime;
+		if (gEnv->bMultiplayer)
+			rechargeTime=g_pGameCVars->g_playerSuitEnergyRechargeTimeMultiplayer;
 		else
 		{
-			if(stats.speedFlat > 0.1f) //moving
-				rechargeTime=g_pGameCVars->g_playerSuitEnergyRechargeTimeArmorMoving;
+			if(m_currentMode != NANOMODE_DEFENSE)
+				rechargeTime=g_pGameCVars->g_playerSuitEnergyRechargeTime;
 			else
+			{
+				if(stats.speedFlat > 0.1f) //moving
+					rechargeTime=g_pGameCVars->g_playerSuitEnergyRechargeTimeArmorMoving;
+				else
 					rechargeTime=g_pGameCVars->g_playerSuitEnergyRechargeTimeArmor;
+			}
 		}
 	}
 
@@ -464,6 +476,11 @@ void CNanoSuit::Update(float frameTime)
 	m_energyRechargeRate = recharge;
 
 	m_now = gEnv->pTimer->GetFrameStartTime().GetMilliSeconds();
+/*
+	CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+	if(m_currentMode == NANOMODE_SPEED && m_energy<g_pGameCVars->g_playerSuitMinSpeedEnergy && pPlayer->IsSprinting()) // Remod | Do not allow players to sprint in speed if energy is too low
+		SetMode(NANOMODE_DEFENSE, true, false);
+*/
 
 	if (currentHealth < maxHealth || m_cloak.m_active)
 	{
@@ -479,21 +496,27 @@ void CNanoSuit::Update(float frameTime)
 
 		if(m_currentMode == NANOMODE_DEFENSE) //some additional energy in defense mode
 		{
-			if(stats.speedFlat > 0.1f)
-			{
-				m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_playerSuitArmorModeHealthRegenTimeMoving);
-			}
+			if (isAI)
+				m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_AiSuitArmorModeHealthRegenTime);
 			else
 			{
-				m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_playerSuitArmorModeHealthRegenTime);
+				if(stats.speedFlat > 0.1f)
+					m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_playerSuitArmorModeHealthRegenTimeMoving);
+				else
+					m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_playerSuitArmorModeHealthRegenTime);
 			}
 		}
 		else
 		{
-			if(stats.speedFlat > 0.1f)
-				m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_playerSuitHealthRegenTimeMoving);
+			if (isAI)
+				m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_AiSuitHealthRegenTime);
 			else
-				m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_playerSuitHealthRegenTime);
+			{
+				if(stats.speedFlat > 0.1f)
+					m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_playerSuitHealthRegenTimeMoving);
+				else
+					m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_playerSuitHealthRegenTime);
+			}
 		}
 
 		//cap the health regeneration rate to a maximum (for AIs with lots of health)
@@ -501,7 +524,7 @@ void CNanoSuit::Update(float frameTime)
 
 		m_healthRegenRate -= (m_cloak.m_active?m_cloak.m_healthCost:0.0f);
 	}
-
+	
 	//subtract energy from suit for cloaking
 	if(m_cloak.m_active)
 	{
@@ -615,7 +638,6 @@ void CNanoSuit::Update(float frameTime)
 			pRenderProxy->SetMotionBlurAmount(amt);
 		}
 	}
-
 	m_lastEnergy = m_energy;
 }
 
@@ -746,6 +768,11 @@ bool CNanoSuit::SetMode(ENanoMode mode, bool forceUpdate, bool keepInvul)
 	if (!IsActive())
 		return false;
 
+	/*if(m_pOwner && (!stricmp("Kyong1", m_pOwner->GetEntity()->GetName()) || !stricmp("ai_kyong", m_pOwner->GetEntity()->GetName())))
+	{
+		mode = NANOMODE_STRENGTH;
+	}*/
+
 	if(m_currentMode == mode && !forceUpdate)
 		return false;
 
@@ -764,6 +791,16 @@ bool CNanoSuit::SetMode(ENanoMode mode, bool forceUpdate, bool keepInvul)
 				PlaySound(ESound_SuitSpeedActivate);
 			SetCloak(false);
 			effectName = "suit_speedmode";
+			//marcok: don't touch please
+			if (g_pGameCVars->bt_speed)
+			{
+				IItem *pItem = m_pOwner->GetCurrentItem();
+				IWeapon *pWeapon = pItem ? pItem->GetIWeapon() : NULL;
+				if (!g_pGameCVars->bt_ironsight || (pWeapon && pWeapon->IsZoomed()))
+				{
+					g_pGame->GetBulletTime()->Activate(true);
+				}
+			}
 			break;
 		case NANOMODE_STRENGTH:
 			SetAllSlots(50.0f, 100.0f, 25.0f);
@@ -788,6 +825,18 @@ bool CNanoSuit::SetMode(ENanoMode mode, bool forceUpdate, bool keepInvul)
 			assert(0);
 			GameWarning("Non existing NANOMODE selected: %d", mode);
 			return false;
+	}
+
+	//marcok: don't touch please
+	if (g_pGameCVars->bt_speed)
+	{
+		if (lastMode != m_currentMode)
+		{
+			if (lastMode == NANOMODE_SPEED)
+			{
+				g_pGame->GetBulletTime()->Activate(false);
+			}
+		}
 	}
 
 	if(m_pOwner)
@@ -836,6 +885,26 @@ bool CNanoSuit::SetMode(ENanoMode mode, bool forceUpdate, bool keepInvul)
 
 	if (m_pOwner)
 		m_pOwner->GetGameObject()->ChangedNetworkState(CPlayer::ASPECT_NANO_SUIT_SETTING);
+
+	// player's squadmates mimicking nanosuit modifications
+	if (gEnv->pAISystem && m_pOwner && m_pOwner->GetEntity()->GetAI())
+	{
+		IAISignalExtraData* pData = gEnv->pAISystem->CreateSignalExtraData();//AI System will be the owner of this data
+		pData->iValue = mode;
+		gEnv->pAISystem->SendSignal(SIGNALFILTER_SENDER,1,"OnNanoSuitMode",m_pOwner->GetEntity()->GetAI(),pData);
+	}
+
+	// Report cloak usage to AI system.
+	if (lastMode == NANOMODE_CLOAK && m_currentMode != NANOMODE_CLOAK)
+	{
+		if (GetOwner()->GetEntity() && GetOwner()->GetEntity()->GetAI())
+			GetOwner()->GetEntity()->GetAI()->Event(AIEVENT_PLAYER_STUNT_UNCLOAK, 0);
+	}
+	if (lastMode != NANOMODE_CLOAK && m_currentMode == NANOMODE_CLOAK)
+	{
+		if (GetOwner()->GetEntity() && GetOwner()->GetEntity()->GetAI())
+			GetOwner()->GetEntity()->GetAI()->Event(AIEVENT_PLAYER_STUNT_CLOAK, 0);
+	}
 
 	return true;
 }
@@ -930,6 +999,10 @@ void CNanoSuit::SetCloak(bool on, bool force)
 			}
 
 			m_pOwner->CreateScriptEvent("cloaking",on?cloakMode:0);
+								
+			// player's squadmates mimicking nanosuit modifications
+			if (m_pOwner->GetEntity()->GetAI())
+				gEnv->pAISystem->SendSignal(SIGNALFILTER_SENDER,1, (on?"OnNanoSuitCloak":"OnNanoSuitUnCloak"),m_pOwner->GetEntity()->GetAI());
 		}
 	}
 }
@@ -1062,7 +1135,7 @@ void CNanoSuit::PlaySound(ENanoSound sound, float param, bool stopSound)
 		setParam = true;
 		break;
 	case STRENGTH_JUMP_SOUND:
-		soundName = "Sounds/interface:suit:suit_strength_jump"; // Remod 3rd person strength jump sound, default is suit_strength_jump
+		soundName = "Sounds/interface:suit:suit_strength_jump";
 		eSemantic = eSoundSemantic_NanoSuit;
 		if(m_pOwner->IsClient())
 			if (gEnv->pInput && !stopSound)  gEnv->pInput->ForceFeedbackEvent( SFFOutputEvent(eDI_XI, eFF_Rumble_Basic, 0.10f, 0.2f*param, 0.1f*param) );
@@ -1098,11 +1171,11 @@ void CNanoSuit::PlaySound(ENanoSound sound, float param, bool stopSound)
 		eSemantic = eSoundSemantic_NanoSuit;
 		break;
 	case ESound_SuitCloakActivate:
-		soundName = "Sounds/interface:suit:suit_cloak_deactivate";
+		soundName = "Sounds/interface:suit:suit_cloak_activate";
 		eSemantic = eSoundSemantic_NanoSuit;
 		break;
 	case ESound_SuitCloakFeedback:
-		soundName = "Sounds/Remod:suit:cloak_tone_high"; // Remod cloak sound
+		soundName = "Sounds/Remod:suit:cloak_tone_high"; // Remod | New cloak sound
 		eSemantic = eSoundSemantic_NanoSuit;
 		force3DSound = true;
 		break;
@@ -1125,7 +1198,7 @@ void CNanoSuit::PlaySound(ENanoSound sound, float param, bool stopSound)
 		eSemantic = eSoundSemantic_NanoSuit;
 		break;
 	case ESound_AISuitCloakFeedback:
-		soundName = "Sounds/Remod:suit:cloak_tone_high"; // Remod cloak sound for AI
+		soundName = "Sounds/Remod:suit:cloak_tone_high"; // Remod | New cloak sound for AI [DEBUG]
 		eSemantic = eSoundSemantic_NanoSuit;
 		break;
 	case ESound_GBootsLanded:

@@ -38,7 +38,7 @@ CVehicleMovementTank::CVehicleMovementTank()
   m_currPedal = 0;
   m_currSteer = 0;
 
-  m_boostEndurance = 0.f; // Remod, vehicle boost
+  m_boostEndurance = 5.f;
   m_boostRegen = m_boostEndurance;
   m_boostStrength = 4.f;
 

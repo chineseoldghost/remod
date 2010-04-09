@@ -1518,6 +1518,12 @@ bool CSingle::InternalShoot(IEntityClass* spawn_ammo, bool resetAnimation, bool 
     
 		int frequency = m_tracerparams.frequency;
 
+		// marcok: please don't touch
+		if (g_pGameCVars->bt_ironsight || g_pGameCVars->bt_speed)
+		{
+			frequency = 1;
+		}
+
 		bool emit = false;
 		if(m_pWeapon->GetStats().fp)
 			emit = (!m_tracerparams.geometryFP.empty() || !m_tracerparams.effectFP.empty()) && (ammoCount==GetClipSize() || (ammoCount%frequency==0));
@@ -1761,6 +1767,13 @@ Vec3 CSingle::GetProbableHit(float range, bool *pbHit, ray_hit *pHit) const
     else
 		{
       dir = range * info.fireDirection;    
+
+			// marcok: leave this alone
+			if (g_pGameCVars->goc_enable && pActor->IsClient())
+			{
+				CPlayer* pPlayer = (CPlayer*)pActor;
+				pos = pPlayer->GetViewMatrix().GetTranslation();
+			}
 		}
 		dir = ApplySpread(dir.GetNormalized(), GetSpread()) * range;
   }
@@ -2911,9 +2924,8 @@ void CSingle::InternalNetShootEx(IEntityClass* spawn_ammo, const Vec3 &pos, cons
     m_barrelId = 0;
 
 	ammoCount--;
-	
-	// Remod fix
-	 if(m_fireparams.clip_size!=-1) //Don't trigger the assert in this case
+	// This used to be a fix :D
+	if(m_fireparams.clip_size!=-1) //Don't trigger the assert in this case
 		assert(ammoCount>=0);
 
 	//Hurricane fire rate fake

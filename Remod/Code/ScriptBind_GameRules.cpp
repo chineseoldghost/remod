@@ -89,7 +89,7 @@ void CScriptBind_GameRules::RegisterMethods()
 
 	SCRIPT_REG_TEMPLFUNC(SpawnPlayer, "channelId, name, className, pos, angles");
 	SCRIPT_REG_TEMPLFUNC(ChangePlayerClass, "channelId, className, pos, angles");
-	SCRIPT_REG_TEMPLFUNC(RevivePlayer, "playerId, pos, angles, teamId, clearInventory"); // self.game:RevivePlayer(player.id, pos, angles, teamId, not keepEquip);
+	SCRIPT_REG_TEMPLFUNC(RevivePlayer, "playerId, pos, angles, teamId, clearInventory");
 	SCRIPT_REG_TEMPLFUNC(RevivePlayerInVehicle, "playerId, vehicleId, seatId, teamId, clearInventory");
 	SCRIPT_REG_TEMPLFUNC(RenamePlayer, "playerId, name");
 	SCRIPT_REG_TEMPLFUNC(KillPlayer, "playerId, dropItem, ragdoll, shooterId, weaponId, damage, material, headshot, melee, impulse");
@@ -154,6 +154,7 @@ void CScriptBind_GameRules::RegisterMethods()
 	SCRIPT_REG_TEMPLFUNC(GetTeamPlayerCount, "teamId");
 	SCRIPT_REG_TEMPLFUNC(GetTeamChannelCount, "teamId");
 	SCRIPT_REG_TEMPLFUNC(GetTeamPlayers, "teamId");
+	SCRIPT_REG_TEMPLFUNC(GetTeamAliveCount, "teamId");
 
 	SCRIPT_REG_TEMPLFUNC(SetTeam, "teamId, playerId");
 	SCRIPT_REG_TEMPLFUNC(GetTeam, "playerId");
@@ -233,7 +234,6 @@ void CScriptBind_GameRules::RegisterMethods()
   SCRIPT_REG_TEMPLFUNC(GetReviveTime, "");
 	SCRIPT_REG_TEMPLFUNC(GetMinPlayerLimit, "");
 	SCRIPT_REG_TEMPLFUNC(GetMinTeamLimit, "");
-	SCRIPT_REG_TEMPLFUNC(GetMaxTeamLimit, "");
 	SCRIPT_REG_TEMPLFUNC(GetTeamLock, "");
 	SCRIPT_REG_TEMPLFUNC(GetAutoTeamBalance, "");
 	SCRIPT_REG_TEMPLFUNC(GetAutoTeamBalanceThreshold, "");
@@ -263,10 +263,6 @@ void CScriptBind_GameRules::RegisterMethods()
 	SCRIPT_REG_TEMPLFUNC(PerformDeadHit, "");
 
 	SCRIPT_REG_TEMPLFUNC(IsItemAllowed, "itemName");
-
-	SCRIPT_REG_TEMPLFUNC(GetAchievements, "achievements");
-	SCRIPT_REG_TEMPLFUNC(UpdateAchievement, "Achievement");
-	SCRIPT_REG_TEMPLFUNC(IncreaseStats, "stats"); // self.game:IncreaseStats(stats);
 }
 
 //------------------------------------------------------------------------
@@ -421,6 +417,13 @@ int CScriptBind_GameRules::KillPlayer(IFunctionHandler *pH, ScriptHandle playerI
 
 	if (pActor)
 		pGameRules->KillPlayer(pActor, dropItem, ragdoll, (EntityId)shooterId.n, (EntityId)weaponId.n, damage, material, hit_type, impulse);
+
+	int teamId = pGameRules->GetTeam((EntityId)pActor);
+
+	if(teamId==1)
+		pGameRules->USAliveCount--;
+	else if(teamId==2)
+		pGameRules->NKAliveCount--;
 
 	return pH->EndFunction();
 }
@@ -1331,6 +1334,22 @@ int CScriptBind_GameRules::GetTeamPlayerCount(IFunctionHandler *pH, int teamId)
 		pH->GetParam(2, inGame);
 
 	return pH->EndFunction(pGameRules->GetTeamPlayerCount(teamId, inGame));
+}
+
+//------------------------------------------------------------------------
+int CScriptBind_GameRules::GetTeamAliveCount(IFunctionHandler *pH, int teamId)
+{
+	CGameRules *pGameRules=GetGameRules(pH);
+
+	if (!pGameRules)
+		return pH->EndFunction();
+
+	if(teamId==1)
+		return pH->EndFunction(pGameRules->USAliveCount);
+	else if(teamId==2)
+		return pH->EndFunction(pGameRules->NKAliveCount);
+	else
+		return pH->EndFunction();
 }
 
 //------------------------------------------------------------------------
@@ -2251,12 +2270,6 @@ int CScriptBind_GameRules::GetMinTeamLimit(IFunctionHandler *pH)
 }
 
 //------------------------------------------------------------------------
-int CScriptBind_GameRules::GetMaxTeamLimit(IFunctionHandler *pH)
-{
-	return pH->EndFunction(g_pGameCVars->g_maxteamlimit);
-}
-
-//------------------------------------------------------------------------
 int CScriptBind_GameRules::GetTeamLock(IFunctionHandler *pH)
 {
 	return pH->EndFunction(g_pGameCVars->g_teamlock);
@@ -2493,7 +2506,6 @@ int CScriptBind_GameRules::ProcessEMPEffect(IFunctionHandler* pH, ScriptHandle t
 //-----------------------------------------------------------------------------
 int CScriptBind_GameRules::PerformDeadHit(IFunctionHandler* pH)
 {
-	return pH->EndFunction(true);
 #ifdef CRAPDOLLS
 	return pH->EndFunction(false);
 #else
@@ -2512,42 +2524,3 @@ int CScriptBind_GameRules::IsItemAllowed(IFunctionHandler* pH, const char* itemN
 
 	return pH->EndFunction(false);
 }
-//-----------------------------------------------------------------------------
-int CScriptBind_GameRules::GetAchievements(IFunctionHandler *pH, SmartScriptTable achievements)
-{
-	return pH->EndFunction();
-}
-//-----------------------------------------------------------------------------
-int CScriptBind_GameRules::UpdateAchievement(IFunctionHandler *pH, const char *Achievement)
-{
-	return pH->EndFunction(Achievement);
-}
-//-----------------------------------------------------------------------------
-int CScriptBind_GameRules::IncreaseStats(IFunctionHandler *pH, const char *stats)
-{
-	CryLogAlways("IncreaseStats | SCRIPTBIND");
-	if (stricmp(stats, "kills"))
-	{
-		g_pGame->TotalKills++;
-		if(g_pGame->TotalKills==5)
-		{
-			CryLogAlways("ACHIEVEMENT '5 KILLS' EARNED!");
-			CHUD *pHUD = new CHUD;
-			pHUD->ShowWarningMessage(EHUD_ACHIEVEMENT, "Achievement '5 Kills' earned!");
-		}
-	}
-	return pH->EndFunction();
-}
-//----------------------------------------------------------------------------
-/*
-int CScriptBind_Actor::CreateCodeEvent(IFunctionHandler *pH,SmartScriptTable params)
-{
-	CActor *pActor = GetActor(pH);
-	if (!pActor)
-		return pH->EndFunction();
-
-	if (pActor)
-		return (pActor->CreateCodeEvent(params));
-			
-	return pH->EndFunction();
-}*/

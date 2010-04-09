@@ -1,4 +1,4 @@
-	enum ESound
+enum ESound
 {
 	ESound_Hud_First,
 	ESound_GenericBeep,
@@ -55,7 +55,6 @@ enum EHUDBATTLELOG_EVENTTYPE
 enum EWarningMessages
 {
 	EHUD_SPECTATOR,
-	EHUD_ACHIEVEMENT,
 	EHUD_SWITCHTOTAN,
 	EHUD_SWITCHTOBLACK,
 	EHUD_SUICIDE,
@@ -90,7 +89,6 @@ enum EHUDGAMERULES
 	EHUD_POWERSTRUGGLE,
 	EHUD_TEAMACTION,
 	EHUD_TEAMINSTANTACTION,
-	EHUD_CAGEMATCH,
 };
 
 //radar objects on mini map and radar

@@ -2200,6 +2200,22 @@ void CFlashMenuObject::HandleFSCommand(const char *szCommand,const char *szArgs)
       ShowInGameMenu(m_bUpdate);
     else
       HideInGameMenuNextFrame(true);
+
+		if(IActor *pPlayer = g_pGame->GetIGameFramework()->GetClientActor())
+		{
+			if(pPlayer->GetHealth() <= 0)
+			{
+				string lastSaveGame = string(GetLastInGameSave()->c_str());
+				if(!lastSaveGame.size())
+					lastSaveGame = g_pGame->GetLastSaveGame();
+				if(lastSaveGame.size())
+				{
+					SAFE_HUD_FUNC(DisplayFlashMessage("", 2));	//removing warning / loading text
+					m_sLoadSave.save = false;
+					m_sLoadSave.name = lastSaveGame;
+				}
+			}
+		}
 	}
 	else if(!strcmp(szCommand,"Restart"))
 	{
@@ -2427,7 +2443,7 @@ void CFlashMenuObject::HandleFSCommand(const char *szCommand,const char *szArgs)
 
 				m_pMusicSystem->SetMood("middle", true, false);
 				break;
-			case 2:// Crysis Wars: REMOD TEAM
+			case 2:// CRYSIS WARS TEAM
 				break;
 			case 3:// PRODUCTION MANAGEMENT
 				break;

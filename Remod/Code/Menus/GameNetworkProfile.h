@@ -122,7 +122,7 @@ struct SStoredServer
 	void Serialize(struct IStoredSerialize* ser);
 };
 
-static const char* AUTO_INVITE_TEXT  = "Crysis Wars: REMOD auto generated invitation";
+static const char* AUTO_INVITE_TEXT  = "Crysis Wars auto generated invitation";
 
 class CGameNetworkProfile
 {

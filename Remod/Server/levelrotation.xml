@@ -1,14 +1,4 @@
 <levelrotation randomize="0">
-<!--<level name="multiplayer/ps/area" gamerules="PowerStruggle">
-	   <setting setting="g_timelimit 0" />
-	   <setting setting="g_mpdeathcam 0" />
-</level>-->
-<!--<level name="multiplayer/ia/crash" gamerules="InstantAction">
-        <setting setting="g_timelimit 20" />
-        <setting setting="net_mapDownloadURL http://dl.getdropbox.com/u/1482890/Crash.zip" />
- </level>-->
-<level name="multiplayer/ia/outpost" gamerules="TeamInstantAction">
+<level name="multiplayer/ps/beach" gamerules="PowerStruggle">
  </level>
-<!--<level name="multiplayer/ps/Mesa" gamerules="PowerStruggle">
- </level>-->
 </levelrotation>

@@ -21,7 +21,7 @@ History:
 #include "OffHand.h"
 #include "IPlayerInput.h"
 
-//====AUX FUNCTIONS======
+//===========AUX FUNCTIONS====================
 namespace
 {
 	void GetOffHandInfo(CWeapon* pThis, bool &offHandSelected, COffHand** pOffHand)
@@ -49,7 +49,7 @@ namespace
 	}
 }
 
-//==
+//=================================================================
 TActionHandler<CWeapon>	CWeapon::s_actionHandler;
 
 void CWeapon::RegisterActions()
@@ -138,7 +138,6 @@ void CWeapon::ForcePendingActions()
 //--------------------------------------------------------------------
 bool CWeapon::PreActionAttack(bool startFire)
 {
-
 	// Melee while pressing SHIFT for SP
 	CPlayer *pPlayer = static_cast<CPlayer*>(GetOwnerActor());
 	if(!pPlayer)
@@ -167,7 +166,8 @@ bool CWeapon::PreActionAttack(bool startFire)
 	}
 
 	return false;
-*/
+	*/
+
 	if(startFire && pPlayer->IsSprinting()) return true;
 	else return false;
 }

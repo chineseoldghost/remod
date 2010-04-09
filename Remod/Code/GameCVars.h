@@ -36,6 +36,8 @@ struct SCVars
 	int		cl_fpBody;
 	int   cl_hud;
 	int		cl_debugSwimming;
+	int   cl_g15lcdEnable;
+	int   cl_g15lcdTick;
 
 	ICVar* 	ca_GameControlledStrafingPtr;
 	float pl_curvingSlowdownSpeedScale;
@@ -55,6 +57,23 @@ struct SCVars
 	float cl_frozenMouseMult;
 	float cl_frozenKeyMult;
 	float cl_frozenSoundDelta;
+	int		goc_enable;
+	int		goc_tpcrosshair;
+	float goc_targetx;
+	float goc_targety;
+	float goc_targetz;
+
+	// bullet time CVars
+	int		bt_ironsight;
+	int		bt_speed;
+	int		bt_end_reload;
+	int		bt_end_select;
+	int		bt_end_melee;
+	float bt_time_scale;
+	float bt_pitch;
+	float bt_energy_max;
+	float bt_energy_decay;
+	float bt_energy_regen;
 
 	int		dt_enable;
 	float dt_time;
@@ -115,6 +134,7 @@ struct SCVars
 	float g_AiSuitHealthRegenTime;
 	float g_AiSuitArmorModeHealthRegenTime;
 	float g_playerSuitEnergyRechargeTime;
+	float g_playerSuitMinSpeedEnergy;
 	float g_playerSuitEnergyRechargeTimeArmor;
 	float g_playerSuitEnergyRechargeTimeArmorMoving;
 	float g_playerSuitEnergyRechargeTimeMultiplayer;
@@ -202,7 +222,6 @@ struct SCVars
 	int		g_autoteambalance_threshold;
 	int   g_minplayerlimit;
 	int   g_minteamlimit;
-	int   g_maxteamlimit;
 	int		g_mpSpeedRechargeDelay;
 
 	int   g_tk_punish;

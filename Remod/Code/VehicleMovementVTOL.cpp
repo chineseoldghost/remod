@@ -160,7 +160,7 @@ void CVehicleMovementVTOL::SetHorizontalMode(float horizontal)
 		m_maxFwdSpeed += m_maxFwdSpeedHorizMode * 0.75f * m_horizontal;
 
 		m_maxUpSpeed = m_maxUpSpeedHorizMode * 0.50f;
-		m_maxUpSpeed += m_maxUpSpeedHorizMode * 0.50f * (1.0f - m_horizontal);
+		m_maxUpSpeed += m_maxUpSpeedHorizMode * 0.5f * (1.0f - m_horizontal);
 
 		m_engineUpDir.Set(0.0f, 1.0f, 0.0f);
 	}

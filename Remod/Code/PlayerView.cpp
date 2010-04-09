@@ -449,6 +449,56 @@ void CPlayerView::ViewThirdPerson(SViewParams &viewParams)
 		viewParams.rotation *= Quat::CreateRotationXYZ(Ang3(0,0,m_in.thirdPersonYaw * gf_PI/180.0f));
 		m_io.viewQuatFinal = viewParams.rotation;
 	}
+
+	if (g_pGameCVars->goc_enable)
+	{
+		Vec3 target(g_pGameCVars->goc_targetx, g_pGameCVars->goc_targety, g_pGameCVars->goc_targetz);
+		static Vec3 current(target);
+
+		Interpolate(current, target, 5.0f, m_in.frameTime);
+
+		// make sure we don't clip through stuff that much
+		Vec3 offsetX(0,0,0);
+		Vec3 offsetY(0,0,0);
+		Vec3 offsetZ(0,0,0);
+		offsetX = m_io.viewQuatFinal.GetColumn0() * current.x;
+		offsetY = m_io.viewQuatFinal.GetColumn1() * current.y;
+		offsetZ = m_io.viewQuatFinal.GetColumn2() * current.z;
+
+		IActor* pActor = g_pGame->GetIGameFramework()->GetIActorSystem()->GetActor(m_in.entityId);
+		if (pActor)
+		{
+			static ray_hit hit;	
+			IPhysicalEntity* pSkipEntities[10];
+			int nSkip = 0;
+			IItem* pItem = pActor->GetCurrentItem();
+			if (pItem)
+			{
+				CWeapon* pWeapon = (CWeapon*)pItem->GetIWeapon();
+				if (pWeapon)
+					 nSkip = CSingle::GetSkipEntities(pWeapon, pSkipEntities, 10);
+			}
+
+			float oldLen = offsetY.len();
+
+			Vec3 start = m_io.baseQuat * m_io.eyeOffsetView + viewParams.position+offsetX+offsetZ;
+			if (gEnv->pPhysicalWorld->RayWorldIntersection(start, offsetY, ent_static|ent_terrain|ent_rigid,
+				rwi_ignore_noncolliding | rwi_stop_at_pierceable, &hit, 1, pSkipEntities, nSkip))
+			{
+				offsetY = hit.pt - start;
+				if (offsetY.len()> 0.25f)
+				{
+					offsetY -= offsetY.GetNormalized()*0.25f;
+				}
+				current.y = current.y * (hit.dist/oldLen);
+			}
+		}
+		
+		//viewParams.position += m_io.viewQuatFinal.GetColumn0() * current.x;		// right 
+		//viewParams.position += m_io.viewQuatFinal.GetColumn1() * current.y;	// back
+		//viewParams.position += m_io.viewQuatFinal.GetColumn2() * current.z;	// up
+		viewParams.position += offsetX + offsetY + offsetZ;
+	}
 	else
 	{
 	if (m_io.bUsePivot)			
@@ -566,12 +616,12 @@ void CPlayerView::ViewFirstPerson(SViewParams &viewParams)
 			// To tweak the scale of strafing lag: (may need to manually adjust the strafing angle offsets as well.)
 			const float kStrafeHorzScale=0.05f;
 
-			kBobWidth = 0.1f; // Remod, default 0.15f
-			kBobHeight = 0.15f; // Remod, default 0.06f
+			kBobWidth = 0.1f; // Remod | default 0.15f
+			kBobHeight = 0.15f; // Remod | default 0.06f
 
 			m_io.stats_bobCycle += m_in.frameTime * kSpeedToBobFactor * speedMul;// * (m_in.bSprinting?1.25f:1.0f);
 
-			//if player is standing set the bob to rest. (bobCycle reaches 1.0f within 1 second) // Remod, defaults for below
+			//if player is standing set the bob to rest. (bobCycle reaches 1.0f within 1 second)
 			if (speedMul < 0.1f)
 				m_io.stats_bobCycle = min(m_io.stats_bobCycle + m_in.frameTime * 1.0f,1.0f);
 
@@ -583,15 +633,15 @@ void CPlayerView::ViewFirstPerson(SViewParams &viewParams)
 				kBobWidth *= 2.0f * speedMul;
 			else if (m_in.bSprinting)
 				kBobWidth *= 1.25f * speedMul;
-				kBobHeight *= 0.5f * speedMul; // Remod, line added. Reduces the bob when sprinting so it doesn't get in your face.
+				kBobHeight *= 0.5f * speedMul; // Remod | Reduces the bob when sprinting so it doesn't get in your face.
 
 			//set the bob offset
 			Vec3 bobDir(cry_sinf(m_io.stats_bobCycle*gf_PI*2.0f)*kBobWidth*speedMul,0,cry_sinf(m_io.stats_bobCycle*gf_PI*4.0f)*kBobHeight*speedMul);
 						
-			// Vertical weapon bob direction.
-			bobDir *= 0.25f; // Remod, default 0.25f
+			//not the bob offset for the weapon
+			bobDir *= 0.25f;
 			//if player is strafing shift a bit the weapon on left/right
-			if (speedMul > 0.005f)
+			if (speedMul > 0.01f)
 			{
 				// right vector dot speed vector
 				float dot(m_io.viewQuatFinal.GetColumn0() * vSpeed);
@@ -793,7 +843,7 @@ void CPlayerView::ViewFirstPerson(SViewParams &viewParams)
 			float headBobScale = (m_in.stats_flatSpeed / m_in.standSpeed);
 			headBobScale = min(1.0f, headBobScale);
 
-			m_io.bobOffset = m_io.vFPWeaponOffset * 5.0f * g_pGameCVars->cl_headBob * headBobScale;
+			m_io.bobOffset = m_io.vFPWeaponOffset * 5.0f * g_pGameCVars->cl_headBob * headBobScale; // Remod | Not sure if it does something, but let's keep it
 			float bobLenSq = m_io.bobOffset.GetLengthSquared();
 			float bobLenLimit = g_pGameCVars->cl_headBobLimit;
 			if (bobLenSq > bobLenLimit*bobLenLimit)

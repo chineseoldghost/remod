@@ -20,7 +20,7 @@ Remod
 		-Libs
 			+ Config
 				Game\Libs\Config\defaultProfile.xml
-		-GameRules
+		+GameRules
 			Game\Scripts\GameRules\BattleDust.xml
 			Game\Scripts\GameRules\InstantAction.lua
 			Game\Scripts\GameRules\PowerStruggle.lua
@@ -76,10 +76,10 @@ Remod
 				Game\Scripts\Entities\Vehicles\VehicleSeat.lua
 				Game\Scripts\Entities\Vehicles\VehicleBase.lua
 				Game\Scripts\Entities\Vehicles\VehiclePool.lua
-			-actor
+			-Actor
 				Game\Scripts\Entities\actor\BasicActor.lua
 				Game\Scripts\Entities\actor\player.lua
-			+Items
+			-Items
 				+XML
 					-Accessories
 						Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml
@@ -271,9 +271,17 @@ Remod
 		Game\Scripts\Remod.lua
 [Open project files]
 0=Game\Scripts\Entities\Items\XML\Ammo\Bullet.xml
+1=Game\Scripts\GameRules\PowerStruggleBuying.lua
+2=Game\Scripts\GameRules\PowerStruggleRank.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Ammo\Bullet.xml
+Selected=Game\Scripts\GameRules\PowerStruggleBuying.lua
 [Game\Scripts\Entities\Items\XML\Ammo\Bullet.xml]
 TopLine=1
 Caret=30,17
+[Game\Scripts\GameRules\PowerStruggleBuying.lua]
+TopLine=1480
+Caret=18,198
+[Game\Scripts\GameRules\PowerStruggleRank.lua]
+TopLine=21
+Caret=103,37

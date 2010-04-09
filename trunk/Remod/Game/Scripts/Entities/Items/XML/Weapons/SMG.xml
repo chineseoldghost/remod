@@ -200,7 +200,7 @@
 				<param name="ammo_type" value="smgbullet" />
 				<param name="hit_type" value="ht_SMGBullet" />
 				<param name="rate" value="950" />
-				<param name="damage" value="13.5" />
+				<param name="damage" value="12.5" />
 				<param name="reload_time" value="1.75" />
 				<param name="bullet_chamber" value="1" />
 				<param name="helper_tp" value="weapon_term" />
@@ -572,7 +572,7 @@
 				<firemodes>
 					<firemode type="default">
 						<fire>
-				                <param name="damage" value="11.5" />
+				                <param name="damage" value="10.5" />
 						</fire>
 						<muzzleflash>
 							<firstperson effect="muzzleflash.AssaultRifle.silenced_smoke" helper="muzzle_flash_effect" time="0.1" light_radius="0" />

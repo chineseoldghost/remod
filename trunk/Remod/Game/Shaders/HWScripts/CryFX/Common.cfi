@@ -401,7 +401,29 @@ void DebugOutput(out half4 Color, in float4 baseTC)
 
 half4 tex2DTerrain(sampler2D s, float2 terrainTC)
 {
-	return tex2D(s, terrainTC);
+  half4 terrainColor = tex2D(s, terrainTC);
+
+	// blue stores brightness
+//	float fScale=terrainColor.b;
+//	terrainColor.b = (dot(terrainColor.rgb,float3(-1,-1,0))+62.0f/63.0f)*0.997f;
+//	terrainColor.rgb*=3.0f*63.0f/62.0f*fScale;
+
+
+	// improved color reproduction (prefect grey from a 565 DXT color)	
+	
+	float fScale=terrainColor.b;
+	// test grey
+//		terrainColor.r = 10.0f/31.0f;		// 1/3 = 10/30      Red range     0..30, 31 unused
+//		terrainColor.g = 21.0f/63.0f;		// 1/3 = 21/63      Green range   0..63
+	terrainColor.r += 0.001012;		// minor improvement in color reproduction
+	terrainColor.r *= 31.0f/30.0f;		// 
+	terrainColor.g *= 63.0f/63.0f;		//
+	terrainColor.b = 1.0f-terrainColor.r-terrainColor.g;
+	terrainColor.rgb *= 3.0f*fScale;
+
+
+	
+	return saturate(terrainColor);
 }
 
 sampler2D sRotSamplerCMTerrain = sampler_state

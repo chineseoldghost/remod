@@ -155,6 +155,8 @@ public:
   static void Slowmo(ICVar* pCVar);
   _smart_ptr<ISound> pSound;
 
+  // Remod | Vehicle functions
+  static void Vehicles(ICVar* pCVar);
 
   // Remod | Stats
   void SaveStats(string stat);

@@ -329,7 +329,7 @@
   <Category Name="veh_special"/>
   <Category Name="vehicle_sounds"/>
  </Mood>
- <Mood Name="slowmo" Priority="101" MusicVolume="0">
+ <Mood Name="slowmo" Priority="101" MusicVolume="0.80000001">
   <Category Name="1st_fire" Pitch="-0.07"/>
   <Category Name="1st_pers" Pitch="-0.07"/>
   <Category Name="1st_weapon_foley" Pitch="-0.07"/>

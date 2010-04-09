@@ -969,7 +969,7 @@ void CPlayer::Update(SEntityUpdateContext& ctx, int updateSlot)
 	}
 
 	// small workaround for ded server: fake a view update
-	if ((gEnv->bMultiplayer) && gEnv->bServer && !IsClient())
+	if (gEnv->bMultiplayer && gEnv->bServer && !IsClient())
 	{
 		SViewParams viewParams;
 		UpdateView(viewParams);
@@ -978,7 +978,7 @@ void CPlayer::Update(SEntityUpdateContext& ctx, int updateSlot)
 	UpdateWeaponRaising();
 
 	// if spectating, send health of the spectator target to our client when it changes
-	if(gEnv->bServer && (gEnv->bMultiplayer) && g_pGame->GetGameRules() && m_stats.spectatorMode == CActor::eASM_Follow)
+	if(gEnv->bServer && gEnv->bMultiplayer && g_pGame->GetGameRules() && m_stats.spectatorMode == CActor::eASM_Follow)
 	{
 		IActor* pActor = g_pGame->GetIGameFramework()->GetIActorSystem()->GetActor(m_stats.spectatorTarget);
 		if (pActor)
@@ -1058,7 +1058,7 @@ void CPlayer::UpdateSounds(float fFrameTime)
 		}
 	}
 
-	if((gEnv->bMultiplayer) && gEnv->bServer && gEnv->bClient && !IsClient())
+	if(gEnv->bMultiplayer && gEnv->bServer && gEnv->bClient && !IsClient())
 	{
 		if(g_pGame->GetIGameFramework()->IsGameStarted())
 		{
@@ -1329,7 +1329,7 @@ void CPlayer::PrePhysicsUpdate()
 	{
 		params.flags |= eACF_AlwaysPhysics | eACF_ImmediateStance | eACF_NoLMErrorCorrection;
 
-		if (((gEnv->bMultiplayer) && !client) || IsThirdPerson())
+		if ((gEnv->bMultiplayer && !client) || IsThirdPerson())
 		{	
 			params.physErrorInnerRadiusFactor = 0.05f;
 			params.physErrorOuterRadiusFactor = 0.2f;
@@ -1454,7 +1454,7 @@ void CPlayer::PrePhysicsUpdate()
 				playerMovement.Commit(*this);
 			}
 
-			if (m_linkStats.CanDoIK() || ((gEnv->bMultiplayer) && GetLinkedVehicle()))
+			if (m_linkStats.CanDoIK() || (gEnv->bMultiplayer && GetLinkedVehicle()))
 				SetIK(frameMovementParams);
 		}
 	}
@@ -2248,7 +2248,7 @@ void CPlayer::UpdateSwimStats(float frameTime)
 	if (ShouldSwim())
 	{
 		//by design : AI cannot swim and drowns no matter what
-		if((GetHealth() > 0) && !isClient && gEnv->bMultiplayer)
+		if((GetHealth() > 0) && !isClient && !gEnv->bMultiplayer)
 		{
 			// apply damage same way as all the other kinds
 			HitInfo hitInfo;

@@ -1,50 +1,94 @@
-BackupNameAttachment=" Build(6729) Date(09 Apr 2010) Time(13 11 57)"  -- used by backup system
+<<<<<<< .mine
+BackupNameAttachment=" Build(6729) Date(08 Apr 2010) Time(01 03 57)"  -- used by backup system
+=======
+BackupNameAttachment=" Build(6729) Date(07 Apr 2010) Time(18 21 51)"  -- used by backup system
+>>>>>>> .r142
  
-Log Started at Friday, April 09, 2010 13:11:57
+<<<<<<< .mine
+Log Started at Thursday, April 08, 2010 01:03:57
+=======
+Log Started at Wednesday, April 07, 2010 18:21:51
+>>>>>>> .r142
 Running 32 bit version
-Executable: C:\Program Files\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
+Executable: C:\Program Files (x86)\Electronic Arts\Crytek\Crysis Wars\Bin32\CrysisWarsDedicatedServer.exe
 FileVersion: 1.1.1.6729
 ProductVersion: 1.1.1.6729
 Using STLport C++ Standard Library implementation
  
 Added MOD directory <Mods\Remod\> to CryPak
 --- CPU detection ---
-Total number of logical processors: 2
-Number of available logical processors: 2
+Total number of logical processors: 4
+Number of available logical processors: 4
 
 Processor 0:
-CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
-Family: 6, Model: 15, Stepping: 6
+CPU: Intel Intel(R) Core(TM)2 Quad  CPU   Q9000  @ 2.00GHz
+Family: 6, Model: 7, Stepping: 10
 FPU: On-Chip
-CPU Speed (estimated): 1997.277058 MHz
+<<<<<<< .mine
+CPU Speed (estimated): 1994.961052 MHz
+=======
+CPU Speed (estimated): 1997.281433 MHz
+>>>>>>> .r142
 MMX: not present
 SSE: present
 3DNow!: not present
 Serial number not present or disabled
 
 Processor 1:
-CPU: Intel Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
-Family: 6, Model: 15, Stepping: 6
+CPU: Intel Intel(R) Core(TM)2 Quad  CPU   Q9000  @ 2.00GHz
+Family: 6, Model: 7, Stepping: 10
 FPU: On-Chip
-CPU Speed (estimated): 1997.275204 MHz
+<<<<<<< .mine
+CPU Speed (estimated): 1994.978014 MHz
+=======
+CPU Speed (estimated): 1997.277945 MHz
+>>>>>>> .r142
 MMX: not present
 SSE: present
 3DNow!: not present
 Serial number not present or disabled
 
-Total number of system cores: 2
-Number of cores available to process: 2
+Processor 2:
+CPU: Intel Intel(R) Core(TM)2 Quad  CPU   Q9000  @ 2.00GHz
+Family: 6, Model: 7, Stepping: 10
+FPU: On-Chip
+CPU Speed (estimated): 1994.964555 MHz
+MMX: not present
+SSE: present
+3DNow!: not present
+Serial number not present or disabled
+
+Processor 3:
+CPU: Intel Intel(R) Core(TM)2 Quad  CPU   Q9000  @ 2.00GHz
+Family: 6, Model: 7, Stepping: 10
+FPU: On-Chip
+CPU Speed (estimated): 1994.970872 MHz
+MMX: not present
+SSE: present
+3DNow!: not present
+Serial number not present or disabled
+
+Total number of system cores: 4
+Number of cores available to process: 4
 ---------------------
-Windows 32 bit (build 6.1.7600)
-System language: Dutch
+Windows Vista 64 bit SP 2 (build 6.0.6002)
+System language: Swedish
 Windows Directory: "C:\Windows"
 Prerequisites...
 * Installation of KB940105 hotfix required: no! (either not needed or already installed)
-Local time is 13:11:57 04/09/10, system running for 82 minutes
-1521MB physical memory installed, 857MB available, 2047MB virtual memory installed, 43 percent of memory in use
+<<<<<<< .mine
+Local time is 01:03:58 04/08/10, system running for 603 minutes
+4091MB physical memory installed, 2017MB available, 4095MB virtual memory installed, 50 percent of memory in use
+PageFile usage: 30MB, Working Set: 9MB, Peak PageFile usage: 30MB,
+Current display mode is 1920x1080x32, (Unknown graphics card)
+IBM enhanced (101/102-key) keyboard and 16+ button mouse installed
+=======
+Local time is 18:21:51 04/07/10, system running for 342 minutes
+1521MB physical memory installed, 973MB available, 2047MB virtual memory installed, 35 percent of memory in use
 PageFile usage: 26MB, Working Set: 5MB, Peak PageFile usage: 26MB,
 Current display mode is 1440x900x32, VGA
 IBM enhanced (101/102-key) keyboard and 5+ button mouse installed
+>>>>>>> .r142
 --------------------------------------------------------------------------------
 Stream Engine Initialization
 Network initialization
@@ -61,11 +105,11 @@ Initializing 3D Engine
 Script System Initialization
 Entity system initialization
 Initializing AI System
-[PlayerProfiles] Login of user 'Charlie the Unicorn' successful.
+[PlayerProfiles] Login of user 'Filip' successful.
 [PlayerProfiles] Found 2 profiles.
-   Profile 0 : 'Blablah'
-   Profile 1 : 'default'
-[GameProfiles]: Successfully activated profile 'Blablah' for user 'Charlie the Unicorn'
+   Profile 0 : 'default'
+   Profile 1 : 'i59'
+[GameProfiles]: Successfully activated profile 'i59' for user 'Filip'
     $3sv_servername = $6Blablah's Server $5[DUMPTODISK]$4
     $3sv_password = $6 $5[DUMPTODISK]$4
 [Warning] Unknown command: sv_lan = 1
@@ -94,7 +138,622 @@ Initializing AI System
     $3e_dissolve = $61 $5[]$4
     $3e_particles_min_draw_pixels = $61 $5[]$4
     $3hud_mpNamesDuration = $60 $5[]$4
+    $3sv_gamerules = $6TeamInstantAction $5[]$4
+<<<<<<< .mine
+[net 23:03:59.369] network hostname: Filip-PC
+[net 23:03:59.407]   ip:5.116.120.97
+[net 23:03:59.407]   ip:192.168.0.10
+    $3con_restricted = $60 $5[RESTRICTEDMODE]$4
+    $3e_screenshot_min_slices = $615 $5[]$4
+    $3e_screenshot_width = $63840 $5[]$4
+    $3e_screenshot_height = $63072 $5[]$4
+    $3e_screenshot_quality = $6100 $5[]$4
+    $3e_screenshot_file_format = $6jpg $5[]$4
+    $3r_ColorGrading = $61 $5[]$4
+    $3r_MotionBlurShutterSpeed = $60.02 $5[]$4
+    $3r_SSAO_amount = $60.5 $5[]$4
+    $3r_SSAO_darkening = $60.9 $5[]$4
+    $3r_SSAO_quality = $62 $5[]$4
+    $3r_SSAO_radius = $61.525 $5[]$4
+    $3r_SSAO_blur = $64 $5[]$4
+    $3r_SSAO_blurriness = $61 $5[]$4
+    $3r_EyeAdaptationBase = $60.001 $5[]$4
+    $3r_EyeAdaptationFactor = $61 $5[DUMPTODISK]$4
+    $3r_EyeAdaptionBase = $60 $5[DUMPTODISK]$4
+    $3r_EyeAdaptionClamp = $62.75 $5[DUMPTODISK]$4
+    $3r_EyeAdaptionSpeed = $60.1 $5[DUMPTODISK]$4
+    $3r_HDRBrightOffset = $6128 $5[DUMPTODISK]$4
+    $3r_HDRLevel = $61.25 $5[DUMPTODISK]$4
+    $3g_dof_ironsight = $61 $5[]$4
+    $3r_ColorGradingDof = $61 $5[]$4
+    $3r_HDRRendering = $61 $5[DUMPTODISK]$4
+    $3r_sunshafts = $61 $5[]$4
+    $3r_Reflections = $61 $5[DUMPTODISK]$4
+    $3r_refraction = $61 $5[]$4
+[Warning] Unknown command: q_Shader= 3
+    $3e_shadows_max_texture_size = $61024 $5[]$4
+    $3r_ShadowJittering = $61.5 $5[]$4
+    $3r_UseEdgeAA = $61 $5[]$4
+    $3r_UsePOM = $61 $5[]$4
+    $3e_phys_foliage = $62 $5[]$4
+    $3r_WaterCaustics = $61 $5[]$4
+[Warning] Unknown command: r_WaterGodRay = 1
+    $3e_water_ocean_fft = $61 $5[]$4
+    $3r_ShadowGenGS = $61 $5[DUMPTODISK]$4
+    $3r_DepthOfField = $62 $5[]$4
+    $3r_Flares = $61 $5[DUMPTODISK]$4
+    $3r_Coronas = $61 $5[DUMPTODISK]$4
+[Warning] Unknown command: q_ShaderWater=4
+[Warning] Unknown command: q_ShaderGeneral=4
+[Warning] Unknown command: q_ShaderMetal=4
+[Warning] Unknown command: q_ShaderGlass=4
+[Warning] Unknown command: q_ShaderVegetation=4
+[Warning] Unknown command: q_ShaderIce=4
+[Warning] Unknown command: q_ShaderTerrain=4
+[Warning] Unknown command: q_ShaderShadow=4
+[Warning] Unknown command: q_ShaderFX=4
+[Warning] Unknown command: q_ShaderPostProcess=4
+[Warning] Unknown command: q_ShaderHDR=4
+[Warning] Unknown command: q_ShaderSky=4
+[Warning] Unknown command: q_Renderer=4
+    $3r_LightsSinglePass = $60 $5[]$4
+    $3e_ram_maps = $61 $5[DUMPTODISK, REQUIRE_LEVEL_RELOAD]$4
+    $3r_FillLights = $614 $5[]$4
+    $3e_particles_lights = $61 $5[]$4
+    $3e_view_dist_ratio_detail = $625 $5[]$4
+    $3e_view_dist_ratio_vegetation = $634 $5[]$4
+    $3e_vegetation_sprites_distance_custom_ratio_min = $63 $5[]$4
+    $3r_VegetationSpritesTexRes = $6128 $5[]$4
+    $3e_terrain_deformations = $60 $5[]$4
+    $3r_BeamsMaxSlices = $6200 $5[]$4
+    $3r_CloudsUpdateAlways = $61 $5[]$4
+    $3r_OceanMaxSplashes = $616 $5[]$4
+    $3e_detail_materials = $61 $5[]$4
+    $3e_detail_materials_view_dist_z = $6512 $5[]$4
+    $3e_detail_materials_view_dist_xy = $64096 $5[]$4
+    $3e_ambient_occlusion = $60 $5[]$4
+    $3e_shadows_from_terrain_in_all_lods = $61 $5[]$4
+    $3e_shadows_water = $61 $5[]$4
+=======
+[net 16:21:52.500] network hostname: iMac7
+[net 16:21:52.503]   ip:192.168.0.192
+[net 16:21:52.503]   ip:5.182.209.7
+-----------------------------------------------------
+*LOADING: Level multiplayer/ia/outpost loading time: 3.13 seconds
+-----------------------------------------------------
     $3sv_gamerules = $6PowerStruggle $5[]$4
-[net 11:11:58.450] network hostname: iMac7
-[net 11:11:58.453]   ip:192.168.0.192
-[net 11:11:58.453]   ip:5.182.209.7
+-----------------------------------------------------
+*LOADING: Level multiplayer/ps/Shore loading time: 10.29 seconds
+-----------------------------------------------------
+    $3g_pp_scale_price = $60 $5[]$4
+CHAT i59 to ALL:
+   brb xD
+CHAT Blablah to ALL:
+   ah there you are
+CHAT i59 to ALL:
+   :O
+CHAT i59 to ALL:
+   did it work
+CHAT Blablah to ALL:
+   no
+CHAT i59 to ALL:
+   lol wut
+CHAT Blablah to ALL:
+   still got endless speed
+CHAT i59 to ALL:
+   that bug is odd
+CHAT i59 to ALL:
+   I'll check on it in the Editor later
+CHAT Blablah to ALL:
+   it works fine in SP
+CHAT i59 to ALL:
+   yeah :/
+CHAT i59 to ALL:
+   lol wtf
+CHAT i59 to ALL:
+   water is fucked
+CHAT i59 to ALL:
+   :S
+CHAT Blablah to ALL:
+   :D
+CHAT Blablah to ALL:
+   what?
+CHAT i59 to ALL:
+   nothing :P
+CHAT Blablah to ALL:
+   :P
+CHAT i59 to ALL:
+   omfg
+CHAT i59 to ALL:
+   heartattack O.o
+CHAT Blablah to ALL:
+   oh dude
+CHAT Blablah to ALL:
+   you dropped your inventory
+CHAT i59 to ALL:
+   rly? all of it? O.o
+CHAT Blablah to ALL:
+   two AYs anyway
+CHAT Blablah to ALL:
+   wait
+CHAT i59 to ALL:
+   and the FGL?
+CHAT Blablah to ALL:
+   you didn't drop your FGL
+CHAT i59 to ALL:
+   :/ wtf
+CHAT i59 to ALL:
+   I might've switched in the last minute
+CHAT Blablah to ALL:
+   it's not part of your inventory perhaps
+CHAT Blablah to ALL:
+   yeah
+CHAT Blablah to ALL:
+   let's test
+CHAT Blablah to ALL:
+   piss
+CHAT Blablah to ALL:
+   did i drop an SMG?
+CHAT i59 to ALL:
+   yep
+CHAT Blablah to ALL:
+   ah
+CHAT i59 to ALL:
+   ooh  frog
+CHAT i59 to ALL:
+   noo  stay
+CHAT i59 to ALL:
+   don't run :(
+CHAT Blablah to ALL:
+   lol
+CHAT i59 to ALL:
+   DIE FUICKER
+CHAT Blablah to ALL:
+   D:
+CHAT Blablah to ALL:
+   noes
+CHAT Blablah to ALL:
+   dun keel teh frags
+CHAT Blablah to ALL:
+   teh frugs
+CHAT i59 to ALL:
+   Xd
+CHAT Blablah to ALL:
+   froogs
+CHAT i59 to ALL:
+   epich
+CHAT Blablah to ALL:
+   that was quick... you did drop and FGL, and it's floating awa
+CHAT Blablah to ALL:
+   that was quick
+CHAT Blablah to ALL:
+   but you did drop an FGL
+CHAT i59 to ALL:
+   yeah
+CHAT i59 to ALL:
+   lol
+CHAT Blablah to ALL:
+   got you tagged!
+CHAT i59 to ALL:
+   noez
+CHAT i59 to ALL:
+   xD
+CHAT Blablah to ALL:
+   does it do too much damage?
+CHAT Blablah to ALL:
+   too much dmg?
+CHAT i59 to ALL:
+   nope
+CHAT Blablah to ALL:
+   LAW is useless against inf :P
+CHAT i59 to ALL:
+   RAWR
+CHAT Blablah to ALL:
+   hmm
+CHAT Blablah to ALL:
+   i don't think it drops your inv no
+CHAT i59 to ALL:
+   nope
+CHAT Blablah to ALL:
+   well
+CHAT Blablah to ALL:
+   that was clear already
+CHAT i59 to ALL:
+   FUCK
+CHAT Blablah to ALL:
+   i'm out of ammo
+CHAT i59 to ALL:
+   SHIT
+CHAT Blablah to ALL:
+   btw
+CHAT Blablah to ALL:
+   didn't you say there was a dualwield problem?
+CHAT i59 to ALL:
+   I meant that you could have SOCOM and AY69 ath the same timew
+CHAT Blablah to ALL:
+   ah
+CHAT i59 to ALL:
+   lol
+CHAT Blablah to ALL:
+   epic lag
+CHAT Blablah to ALL:
+   holy shit
+CHAT Blablah to ALL:
+   lag
+CHAT i59 to ALL:
+   RAWR
+CHAT Blablah to ALL:
+   you bumped into me on your way in
+CHAT Blablah to ALL:
+   LOL
+CHAT i59 to ALL:
+   Xd
+CHAT i59 to ALL:
+   *wannabe ninja*
+CHAT Blablah to ALL:
+   you can have it
+CHAT Blablah to ALL:
+   kind of me right?
+CHAT i59 to ALL:
+   :/
+CHAT i59 to ALL:
+   darn
+CHAT i59 to ALL:
+   my plan :'
+CHAT Blablah to ALL:
+   l;ol
+CHAT i59 to ALL:
+   shit I hear something
+CHAT Blablah to ALL:
+   me parking my car xD
+CHAT i59 to ALL:
+   xD
+CHAT Blablah to ALL:
+   omfg
+CHAT i59 to ALL:
+   SHIT
+CHAT Blablah to ALL:
+   that hurt
+CHAT Blablah to ALL:
+   22hp
+CHAT Blablah to ALL:
+   i saw you cloak though
+CHAT Blablah to ALL:
+   i wonder if it's  a graphics bug
+CHAT i59 to ALL:
+   :/
+CHAT i59 to ALL:
+   what happens
+CHAT Blablah to ALL:
+   i see people cloak when they're already cloaked
+CHAT Blablah to ALL:
+   and i look at them
+CHAT Blablah to ALL:
+   i think it's e_dissolve
+CHAT Blablah to ALL:
+   laaaaaaaaag
+CHAT i59 to ALL:
+   omfg
+CHAT Blablah to ALL:
+   idk what causes the lag :(
+CHAT i59 to ALL:
+   haxx
+CHAT i59 to ALL:
+   come out
+CHAT i59 to ALL:
+   bitch
+CHAT i59 to ALL:
+   :/
+CHAT Blablah to ALL:
+   i'm still considering doing a class system...
+CHAT i59 to ALL:
+   class?
+CHAT Blablah to ALL:
+   with classes
+CHAT Blablah to ALL:
+   a la BF2
+CHAT i59 to ALL:
+   hmm
+CHAT i59 to ALL:
+   saw your shadow
+CHAT Blablah to ALL:
+   argh, lagspike right whne you started shooting
+CHAT i59 to ALL:
+   lulz
+CHAT Blablah to ALL:
+   i'll save the nanosuit textures with crytiff
+CHAT Blablah to ALL:
+   but it's complicated
+CHAT i59 to ALL:
+   what's the difference
+CHAT Blablah to ALL:
+   i'm not sure
+CHAT Blablah to ALL:
+   but i know it compresses better
+CHAT i59 to ALL:
+   omfg
+CHAT i59 to ALL:
+   what do I hear
+CHAT i59 to ALL:
+   -.-
+CHAT Blablah to ALL:
+   lol
+CHAT i59 to ALL:
+   FINE
+CHAT i59 to ALL:
+   no nukes .(
+CHAT Blablah to ALL:
+   can't yet
+CHAT Blablah to ALL:
+   btw
+CHAT Blablah to ALL:
+   are you taking pics
+CHAT Blablah to ALL:
+   ?
+CHAT i59 to ALL:
+   no xD
+CHAT Blablah to ALL:
+   noob! :P
+CHAT i59 to ALL:
+   o.o
+CHAT i59 to ALL:
+   so close
+CHAT Blablah to Team black:
+   fuck! D:
+CHAT i59 to ALL:
+   -.-
+CHAT Blablah to ALL:
+   oh and you forgot boost
+CHAT i59 to ALL:
+   wtf
+CHAT i59 to ALL:
+   omfg
+CHAT i59 to ALL:
+   it bugged
+CHAT i59 to ALL:
+   the car looped
+CHAT i59 to ALL:
+   fell, fell and flel
+CHAT Blablah to ALL:
+   1 FPS since i jumped over the ramp...
+CHAT Blablah to ALL:
+   and again
+CHAT Blablah to ALL:
+   whenever you get on screen :(
+CHAT Blablah to ALL:
+   i can hardly shoot at 1fps lol :D
+CHAT i59 to ALL:
+   -.-
+CHAT i59 to ALL:
+   wait
+CHAT i59 to ALL:
+   wait
+CHAT i59 to ALL:
+   where did the butterflies come from
+CHAT Blablah to ALL:
+   always been there
+CHAT i59 to ALL:
+   rly? O:
+CHAT Blablah to ALL:
+   yeah
+CHAT i59 to ALL:
+   FUCKING LAG
+CHAT i59 to ALL:
+   Proto is really laggy
+CHAT Blablah to ALL:
+   xD
+CHAT Blablah to ALL:
+   us christ lag
+CHAT i59 to ALL:
+   wait
+CHAT i59 to ALL:
+   phone
+CHAT i59 to ALL:
+   FUCKING HAXX
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   sorry
+CHAT Blablah to ALL:
+   but you said phone
+CHAT Blablah to ALL:
+   so i figured i might as well do you
+CHAT i59 to ALL:
+   ye?
+CHAT i59 to ALL:
+   --.-
+CHAT i59 to ALL:
+   fine.new strategy
+CHAT Blablah to ALL:
+   lol
+CHAT Blablah to ALL:
+   epic lag
+CHAT Blablah to ALL:
+   everytime you come on screen
+CHAT i59 to ALL:
+   ye
+CHAT i59 to ALL:
+   LOL
+CHAT Blablah to ALL:
+   you have it too?
+CHAT i59 to ALL:
+   WHAT?
+CHAT Blablah to ALL:
+   haha, awesome jerkoff position
+CHAT i59 to ALL:
+   LOL
+CHAT Blablah to ALL:
+   actually, more like a "look at me i'm dead" position
+CHAT Blablah to ALL:
+   but okay
+CHAT Blablah to ALL:
+   looked fuckable
+CHAT i59 to ALL:
+   ...
+CHAT Blablah to ALL:
+   by a woman
+CHAT Blablah to ALL:
+   that is
+CHAT i59 to ALL:
+   wait xD
+CHAT Blablah to ALL:
+   or you
+CHAT i59 to ALL:
+   shit
+CHAT Blablah to ALL:
+   because you're gay
+CHAT Blablah to ALL:
+   did you say you also have that lag?
+CHAT i59 to ALL:
+   I have it
+CHAT i59 to ALL:
+   yesw
+CHAT Blablah to ALL:
+   ah
+CHAT Blablah to ALL:
+   it's weird
+CHAT i59 to ALL:
+   mostly in proto
+CHAT Blablah to ALL:
+   the dsg1 isn't for that :P
+CHAT i59 to ALL:
+   I love doing it like that
+CHAT Blablah to ALL:
+   i used to own badly in the beta
+CHAT Blablah to ALL:
+   wiht DSG1 + nothing
+CHAT i59 to ALL:
+   RAWR
+CHAT i59 to ALL:
+   WAIT
+CHAT i59 to ALL:
+   WAIT
+CHAT i59 to ALL:
+   WAIT
+CHAT i59 to ALL:
+   WAIR
+CHAT i59 to ALL:
+   WAIT
+CHAT i59 to ALL:
+   WATI
+CHAT i59 to ALL:
+   OMG
+CHAT Blablah to ALL:
+   lol :D
+CHAT Blablah to ALL:
+   STOP ME
+CHAT i59 to ALL:
+   LOL
+CHAT Blablah to ALL:
+   LOL
+CHAT i59 to ALL:
+   xD
+CHAT Blablah to ALL:
+   sorry but i was lagging so bad
+CHAT Blablah to ALL:
+   that was awesome though
+CHAT i59 to ALL:
+   me too xD
+CHAT i59 to ALL:
+   does it disappear now?
+CHAT Blablah to ALL:
+   the lag caused this pause after i shot, i think
+CHAT Blablah to ALL:
+   does what disappear?
+CHAT Blablah to ALL:
+   the TAC?
+CHAT i59 to ALL:
+   the TAC
+CHAT i59 to ALL:
+   yeah
+CHAT Blablah to ALL:
+   no
+CHAT i59 to ALL:
+   shit xD
+CHAT Blablah to ALL:
+   but you can't buy ammo for it i think
+CHAT Blablah to ALL:
+   maybe you can
+CHAT i59 to ALL:
+   oh, only 1 shot?
+CHAT Blablah to ALL:
+   yeh
+CHAT i59 to ALL:
+   try again wiggah
+CHAT i59 to ALL:
+   D:
+CHAT i59 to ALL:
+   *waits*
+CHAT Blablah to ALL:
+   lag...
+CHAT i59 to ALL:
+   :/
+CHAT Blablah to ALL:
+   LOL
+CHAT i59 to ALL:
+   -.-
+CHAT Blablah to ALL:
+   sorry!
+CHAT Blablah to ALL:
+   it's just that i start lagging
+CHAT Blablah to ALL:
+   like hell
+CHAT i59 to ALL:
+   lol
+CHAT Blablah to ALL:
+   and i have no choice but to shoot xD
+CHAT i59 to ALL:
+   fucking lag
+CHAT Blablah to ALL:
+   miss xD
+CHAT Blablah to ALL:
+   LOL
+CHAT i59 to ALL:
+   wutw
+CHAT Blablah to ALL:
+   i can't believe i got you there
+CHAT i59 to ALL:
+   where xD
+CHAT Blablah to ALL:
+   there
+CHAT i59 to ALL:
+   rofl
+CHAT Blablah to ALL:
+   OOOOOOOOOOO
+CHAT i59 to ALL:
+   xD
+CHAT i59 to ALL:
+   epic
+CHAT Blablah to ALL:
+   screenies eh
+CHAT i59 to ALL:
+   :8 it disappeared
+CHAT i59 to ALL:
+   forgot xD
+CHAT Blablah to ALL:
+   lag
+CHAT Blablah to ALL:
+   terrible lag
+CHAT i59 to ALL:
+   lul
+CHAT i59 to ALL:
+   lawl
+CHAT Blablah to ALL:
+   finally
+CHAT i59 to ALL:
+   wtf
+CHAT Blablah to ALL:
+   ?
+CHAT i59 to ALL:
+   ...
+CHAT Blablah to ALL:
+   can we quit so i can try to fix the lag? :P
+CHAT i59 to ALL:
+   sure
+CHAT Blablah to ALL:
+   or do you want to take some nice screenies first?
+CHAT Blablah to ALL:
+   which one?
+[net 17:14:55.416] Disconnect c83-251-55-238.bredband.comhem.se:55715; profid=200775439; cause=0; msg='Timeout occurred; no packet for 31.6 seconds'
+[net 17:15:05.693] Disconnect iMac7.telenet.be:61379; profid=113168429; cause=14; msg='Unreachable address iMac7.telenet.be:61379'
+>>>>>>> .r142

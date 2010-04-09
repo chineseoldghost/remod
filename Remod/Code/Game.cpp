@@ -530,21 +530,34 @@ void CGame::PlayerIdSet(EntityId playerId)
 void CGame::Slowmo(ICVar *pCVar)
 {
 	int var = pCVar->GetIVal();
-	if(pCVar)
+	if(var==1)
 	{
 		ICVar *TimeScale = gEnv->pConsole->GetCVar("time_scale");
+		TimeScale->Set(0.3f);
+		//CSoundMoods* pSound = new CSoundMoods;
+		//pSound->AddSoundMood(SOUNDMOOD_ENTER_SLOWMO, 100);
+		SAFE_SOUNDMOODS_FUNC(AddSoundMood(SOUNDMOOD_ENTER_SLOWMO));
+	}
+	else
+	{
+		TimeScale->Set(1.0f);
+		//CSoundMoods* pSound = new CSoundMoods;
+		//pSound->RemoveSoundMood(SOUNDMOOD_LEAVE_SLOWMO,);
+		SAFE_SOUNDMOODS_FUNC(AddSoundMood(SOUNDMOOD_LEAVE_SLOWMO));
+	}
+}
+
+void CGame::Vehicles(ICVar *pCVar)
+{
+	int var = pCVar->GetIVal();
+	if(pCVar)
+	{
 		if(var==1)
 		{
-			ISound *pSound = NULL;
-			TimeScale->Set(0.3f);
+			 gEnv->pGame->GetIGameFramework()->GetIVehicleSystem()
 		}
 		else
 		{
-			TimeScale->Set(1.0f);
-
-			ICVar *Sound = gEnv->pConsole->GetCVar("s_soundEnable"); // This will fix the sound still being in slowmo when Slowmo is disabled
-			Sound->Set(0);
-			Sound->Set(1);
 		}
 	}
 }

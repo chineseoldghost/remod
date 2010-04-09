@@ -571,10 +571,7 @@ bool CHUD::Init()
 		{
 			ICVar* var = gEnv->pConsole->GetCVar("sv_gamerules");
 			string Gamemode = var->GetString();
-			if(m_currentGameRules == EHUD_POWERSTRUGGLE ||  stricmp(Gamemode, "PowerStruggle") || g_pGame->GetHUD()->GetCurrentGameRules() == EHUD_POWERSTRUGGLE)
-				m_animTeamSelection.Load("Libs/UI/HUD_TeamSelectionPS.gfx", eFD_Center, eFAF_ManualRender|eFAF_ThisHandler);
-			else
-				m_animTeamSelection.Load("Libs/UI/HUD_TeamSelection.gfx", eFD_Center, eFAF_ManualRender|eFAF_ThisHandler);
+			m_animTeamSelection.Load("Libs/UI/HUD_TeamSelection.gfx", eFD_Center, eFAF_ManualRender|eFAF_ThisHandler);
 			m_animTeamSelection.GetFlashPlayer()->SetVisible(false);
 		}
 	}

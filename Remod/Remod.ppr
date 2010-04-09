@@ -15,7 +15,7 @@ HTServer=blablahs.uuuq.com
 [Project tree]
 Remod
 	+Remod
-		-Languages
+		+Languages
 			Game\Languages\game_text_messages.xml
 		-Libs
 			+ Config
@@ -270,22 +270,30 @@ Remod
 		Game\Scripts\main.lua
 		Game\Scripts\Remod.lua
 [Open project files]
-0=Game\Scripts\Entities\Items\XML\Ammo\Bullet.xml
-1=Game\Scripts\GameRules\PowerStruggleBuying.lua
-2=Game\Scripts\GameRules\PowerStruggleRank.lua
-3=Game\Scripts\Entities\actor\BasicActor.lua
+0=Game\Shaders\HWScripts\CryFX\PostProcess.cfx
+1=Game\Scripts\Entities\Items\XML\Ammo\Bullet.xml
+2=Game\Scripts\GameRules\PowerStruggleBuying.lua
+3=Game\Scripts\GameRules\PowerStruggleRank.lua
+4=Game\Scripts\Entities\actor\BasicActor.lua
+5=Game\Languages\game_text_messages.xml
 [Selected Project Files]
 Main=
 Selected=Game\Scripts\GameRules\PowerStruggleRank.lua
+[Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
+TopLine=1
+Caret=1,1
 [Game\Scripts\Entities\Items\XML\Ammo\Bullet.xml]
 TopLine=1
 Caret=30,17
 [Game\Scripts\GameRules\PowerStruggleBuying.lua]
-TopLine=146
-Caret=18,198
+TopLine=152
+Caret=6,179
 [Game\Scripts\GameRules\PowerStruggleRank.lua]
 TopLine=7
-Caret=1,14
+Caret=68,23
 [Game\Scripts\Entities\actor\BasicActor.lua]
 TopLine=835
 Caret=27,858
+[Game\Languages\game_text_messages.xml]
+TopLine=1
+Caret=1,1

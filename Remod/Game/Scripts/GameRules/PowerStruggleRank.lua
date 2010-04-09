@@ -15,12 +15,12 @@ PowerStruggle.rankList=
 {
 	{ name="@ui_short_rank_1", 	desc="@ui_rank_1",	cp=0, 		min_pp=100,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
 	{ name="@ui_short_rank_2",	desc="@ui_rank_2",	cp=4, 		min_pp=125,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
-	{ name="@ui_short_rank_3", 	desc="@ui_rank_3",	cp=8, 		min_pp=175,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
-	{ name="@ui_short_rank_4", 	desc="@ui_rank_4",  cp=16,		min_pp=200,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
-	{ name="@ui_short_rank_5", 	desc="@ui_rank_5",	cp=32, 	min_pp=225,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
-	{ name="@ui_short_rank_6", 	desc="@ui_rank_6",	cp=64, 	min_pp=250,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
-	{ name="@ui_short_rank_7", 	desc="@ui_rank_7",	cp=128,	 	min_pp=275,		equip={ "SOCOM", "SOCOM", "Binoculars", "NightVision", 	},},
-	{ name="@ui_short_rank_8", 	desc="@ui_rank_8",	cp=256, 	min_pp=300,	  	equip={ "SOCOM", "SOCOM", "Binoculars", "NightVision", 	},},
+	{ name="@ui_short_rank_3", 	desc="@ui_rank_3",	cp=8, 		min_pp=150,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
+	{ name="@ui_short_rank_4", 	desc="@ui_rank_4",  cp=16,		min_pp=175,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
+	{ name="@ui_short_rank_5", 	desc="@ui_rank_5",	cp=32, 	min_pp=200,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
+	{ name="@ui_short_rank_6", 	desc="@ui_rank_6",	cp=64, 	min_pp=225,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
+	{ name="@ui_short_rank_7", 	desc="@ui_rank_7",	cp=128,	 	min_pp=250,		equip={ "SOCOM", "SOCOM", "Binoculars", "NightVision", 	},},
+	{ name="@ui_short_rank_8", 	desc="@ui_rank_8",	cp=256, 	min_pp=275,	  	equip={ "SOCOM", "SOCOM", "Binoculars", "NightVision", 	},},
 };
 
 --[[{

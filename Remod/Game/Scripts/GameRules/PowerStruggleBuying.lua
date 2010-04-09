@@ -169,9 +169,9 @@ for i,v in ipairs(PowerStruggle.ammoList) do PowerStruggle.buyList[v.id]=v; if (
 
 PowerStruggle.captureValue=
 {
-	[1]=0,
-	[2]=0,
-	[3]=0,
+	[1]=25,
+	[2]=50,
+	[3]=100,
 };
 
 PowerStruggle.defenseValue=
@@ -186,7 +186,7 @@ PowerStruggle.ppList=
 {
 	SPAWN							= 100,
 	START							= 100,
-	KILL							= 0,
+--	KILL							= 0,
 	KILL_RANKDIFF_MULT				= 1,
 	TURRETKILL						= 0,
 	HEADSHOT						= 0,

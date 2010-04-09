@@ -9,7 +9,7 @@ InteractiveEntity = {
 		bTurnedOn	= 0,
 		bUsable	= 1,
 		bTwoState	= 0,
-		UseMessage = "",
+		UseMessage = "Switch",
 		OnUse = {
 			fUseDelay = 0,
 			fCoolDownTime = 1,
@@ -22,7 +22,7 @@ InteractiveEntity = {
 			soundSound = "sounds/physics:destructibles:body_shatter",
 			soundTurnOnSound = "",
 			soundTurnOffSound = "",
-			
+
 		},
 		Effect = {
 			ParticleEffect="explosions.gauss.hit",
@@ -41,17 +41,18 @@ InteractiveEntity = {
 		Physics = {
 			bRigidBody=1,
 			bRigidBodyActive = 1,
+			bRigidBodyAfterDeath = 1,
 			bResting = 1,
-			Density = -1,
-			Mass = 300,
+			Density = 5000,
+			Mass = 100,
       Buoyancy=
 			{
 				water_density = 1000,
 				water_damping = 0,
-				water_resistance = 1000,	
+				water_resistance = 1000,
 			},
-			
-			bStaticInDX9Multiplayer = 1,
+
+--			bStaticInDX9Multiplayer = 1,
 		},
 		Breakage =
 		{
@@ -126,14 +127,14 @@ InteractiveEntity = {
 
 MakePickable(InteractiveEntity);
 
-local Physics_DX9MP_Simple = {
-	bPhysicalize = 1, -- True if object should be physicalized at all.
-	bPushableByPlayers = 0,
-		
-	Density = -1,
-	Mass = -1,
-	bStaticInDX9Multiplayer = 1,
-}
+--local Physics_DX9MP_Simple = {
+--	bPhysicalize = 1, -- True if object should be physicalized at all.
+--	bPushableByPlayers = 0,
+--
+--	Density = -1,
+--	Mass = -1,
+--	bStaticInDX9Multiplayer = 1,
+--}
 
 function InteractiveEntity:OnPropertyChange()
 	self:OnReset();
@@ -207,11 +208,11 @@ end;
 
 function InteractiveEntity:PhysicalizeThis(slot)
 	local physics = self.Properties.Physics;
-	if (CryAction.IsImmersivenessEnabled() == 0) then
-		physics = Physics_DX9MP_Simple;
-	end	
+--	if (CryAction.IsImmersivenessEnabled() == 0) then
+--		physics = Physics_DX9MP_Simple;
+--	end
 	EntityCommon.PhysicalizeRigid( self,slot,physics,1 );
-	
+
 	if (physics.Buoyancy) then
 		self:SetPhysicParams(PHYSICPARAM_BUOYANCY, physics.Buoyancy);
 	end
@@ -225,14 +226,15 @@ function InteractiveEntity.Server:OnHit(hit)
 	elseif (pass and hit.type=="bullet") then pass = NumberToBool(vul.bBullet);
 	elseif (pass and hit.type=="melee") then pass = NumberToBool(vul.bMelee);
 	elseif (pass) then pass = NumberToBool(vul.bOther); end
-	
+
 	if(pass)then
 		local damage= hit.damage;
 		self.shooterId=hit.shooterId;
 		BroadcastEvent( self,"Hit" );
 		self.health=self.health-damage;
-		if(self.health<=0 and CryAction.IsImmersivenessEnabled()~=0)then
-			self:GotoState("Destroyed");	
+		if(self.health<=0 )then
+-- original	if(self.health<=0 and CryAction.IsImmersivenessEnabled()~=0)then
+			self:GotoState("Destroyed");
 		end;
 	end;
 end;
@@ -256,7 +258,7 @@ function InteractiveEntity:OnUsed(user, idx)
 				self:Use(user, idx);
 			end;
 		end;
-	end;	
+	end;
 end;
 
 InteractiveEntity.ResetMat = function(self)
@@ -298,7 +300,7 @@ end;
 function InteractiveEntity:IsUsable(user)
 	local mp = System.IsMultiplayer();
 	if(mp and mp~=0) then
-		return 0;
+		return 1;
 	end
 
 	if((self.bUsable==1) and (self:GetState()~="Destroyed"))then
@@ -306,7 +308,7 @@ function InteractiveEntity:IsUsable(user)
 	else
 		return 0;
 	end;
-	
+
 end;
 
 function InteractiveEntity:GetUsableMessage(idx)
@@ -335,7 +337,7 @@ function InteractiveEntity:DoSpawn()
 	self.spawncount=self.spawncount+1;
 	if(spawnedEntity~=nil)then
 		spawnedEntity.health=5;
-		
+
 		local pos = self:GetWorldPos();
 		local dirX = self:GetDirectionVector(0);
 		local dirY = self:GetDirectionVector(1);
@@ -343,11 +345,11 @@ function InteractiveEntity:DoSpawn()
 		local offset= g_Vectors.temp_v1;
 
 		CopyVector(offset,self.Properties.SpawnEntity.vOffset);
-		
+
 		pos.x = pos.x + dirX.x * offset.x + dirY.x * offset.y + dirZ.x * offset.z;
 		pos.y = pos.y + dirX.y * offset.x + dirY.y * offset.y + dirZ.y * offset.z;
 		pos.z = pos.z + dirX.z * offset.x + dirY.z * offset.y + dirZ.z * offset.z;
-		
+
 		spawnedEntity:SetWorldPos(pos);
 		spawnedEntity:SetAngles(self.Properties.SpawnEntity.vRotation);
 		if(props.fImpulse>0)then
@@ -419,32 +421,32 @@ function InteractiveEntity:Explode()
 	local props=self.Properties;
 	local hitPos = self.LastHit.pos;
 	local hitImp = self.LastHit.impulse;
-		
-	self:BreakToPieces( 
+
+	self:BreakToPieces(
 		0, 0,
 		props.Breakage.fExplodeImpulse,
 		hitPos,
 		hitImp,
-		props.Breakage.fLifeTime, 
+		props.Breakage.fLifeTime,
 		props.Breakage.bSurfaceEffects
 	);
 	self:Stop(0);
 	if(NumberToBool(self.Properties.Destruction.bExplode))then
 		local explosion=self.Properties.Destruction;
-		
+
 		local pos = self:GetWorldPos();
 		local dirX = self:GetDirectionVector(0);
 		local dirY = self:GetDirectionVector(1);
 		local dirZ = self:GetDirectionVector(2);
 		local offset={x=0,y=0,z=0};
 		CopyVector(offset,explosion.vOffset);
-		
+
 		pos.x = pos.x + dirX.x * offset.x + dirY.x * offset.y + dirZ.x * offset.z;
 		pos.y = pos.y + dirX.y * offset.x + dirY.y * offset.y + dirZ.y * offset.z;
 		pos.z = pos.z + dirX.z * offset.x + dirY.z * offset.y + dirZ.z * offset.z;
 		local explo_pos=pos;
-		
-		g_gameRules:CreateExplosion(self.shooterId,self.id,explosion.Damage,explo_pos,explosion.Direction,explosion.Radius,nil,explosion.Pressure,explosion.HoleSize,explosion.Effect,explosion.EffectScale);	
+
+		g_gameRules:CreateExplosion(self.shooterId,self.id,explosion.Damage,explo_pos,explosion.Direction,explosion.Radius,nil,explosion.Pressure,explosion.HoleSize,explosion.Effect,explosion.EffectScale);
 	end;
 	self:RemoveDecals();
 	self:SetCurrentSlot(1);
@@ -487,7 +489,7 @@ function InteractiveEntity.Server:OnInit()
 		self:OnReset();
 		self.bInitialized=1;
 	end;
-	
+
 end;
 
 ----------------------------------------------------------------------------------------------------
@@ -596,7 +598,7 @@ InteractiveEntity.Server.Destroyed=
 		self:ActivateOutput("Destroyed",1);
 	end,
 	OnEndState = function( self )
-		
+
 	end,
 }
 

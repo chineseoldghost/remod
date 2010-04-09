@@ -224,7 +224,7 @@
 				<param name="ammo_type" value="bullet" />
 				<param name="hit_type" value="ht_Bullet" />
 				<param name="rate" value="700" />
-				<param name="damage" value="20.5" />
+				<param name="damage" value="19.5" />
 				<param name="reload_time" value="2" />
 				<param name="bullet_chamber" value="1" />
 				<param name="clip_size" value="40" />
@@ -680,7 +680,7 @@
 				<firemodes>
 					<firemode type="default">
 						<fire>
-                  <param name="damage" value="18.5" />
+                  <param name="damage" value="17.5" />
 						</fire>
 						<muzzleflash>
 							<firstperson effect="muzzleflash.AssaultRifle.silenced_smoke" helper="muzzle_flash_effect" time="0.1" light_radius="0" />

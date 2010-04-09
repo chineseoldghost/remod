@@ -166,7 +166,7 @@
   <BreakageParticles type="destroy" effect="bullet.hit_feathers.chicken_passing" count_per_unit="1" count_scale="1" scale="1"/>
  </SurfaceType>
  <SurfaceType name="mat_flesh">
-  <Physics friction="0.60000002" elasticity="-2"  pierceability="10" can_shatter="1"  />
+  <Physics friction="6" elasticity="0"  pierceability="6" can_shatter="1"  />
  </SurfaceType>
  <SurfaceType name="mat_fish">
   <Physics friction="0.60000002" elasticity="-2"  pierceability="10" can_shatter="1"  />
@@ -247,10 +247,10 @@
   <AI fImpactRadius="2.5" fImpactSoundRadius="20" fFootStepRadius="30" proneMult="0.2" crouchMult="0.5" movingMult="2.5"/>
  </SurfaceType>
  <SurfaceType name="mat_grenade">
-  <Physics friction="2.0" elasticity="0.25"  pierceability="3"    />
+  <Physics friction="1" elasticity="0.5"  pierceability="3"    />
  </SurfaceType>
  <SurfaceType name="mat_bounce_grenade">
-   <Physics friction="2" elasticity="0.5"  pierceability="3"    />
+   <Physics friction="1.5" elasticity="0.5"  pierceability="3"    />
  </SurfaceType>
  <SurfaceType name="mat_hand_left">
   <Physics friction="1.1" elasticity="-2"  pierceability="5" can_shatter="1"  />
@@ -286,7 +286,7 @@
   <AI fImpactRadius="5" fImpactSoundRadius="25" fFootStepRadius="15" proneMult="0.2" crouchMult="0.5" movingMult="2.5"/>
  </SurfaceType>
  <SurfaceType name="mat_kevlar">
-  <Physics friction="6" elasticity="-2"  pierceability="5"    />
+  <Physics friction="6" elasticity="0"  pierceability="5"    />
   <BreakageParticles type="freeze_shatter" effect="breakable_objects.shatter.vapor_human" count_per_unit="1" count_scale="1" scale="1"/>
  </SurfaceType>
  <SurfaceType name="mat_ladder">
@@ -374,7 +374,7 @@
   <Physics friction="0.80000001" elasticity="0.2"  pierceability="3"    />
  </SurfaceType>
  <SurfaceType name="mat_metal_thick_weapons" type="metal">
-  <Physics friction="3.0" elasticity="0.2"  pierceability="3"    />
+  <Physics friction="2.0" elasticity="0.2"  pierceability="3"    />
  </SurfaceType>
  <SurfaceType name="mat_metal_vehicleonly" type="metal">
   <Physics friction="0.80000001" elasticity="0.2"  pierceability="3"     vehicle_only_collisions="1"/>

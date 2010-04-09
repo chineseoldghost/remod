@@ -26,6 +26,7 @@ struct fragPassCustom
   half3 vTangent;        // perturbed tangent vector
   half3 vBinormal;       // perturbed binormal vector
   
+  half fFresnel;         // fresnel term
   half fSpecMultiplier;
   half2 vSurfaceRoughness;
     
@@ -34,9 +35,6 @@ struct fragPassCustom
 struct fragLightPassCustom
 {
   // ... Custom per light data ...
-#ifdef PS3
-	float4 Dummy;
-#endif
 }; 
 
 #include "ShadeLib.cfi"
@@ -245,9 +243,9 @@ vert2FragGeneral MetalVS(app2vertGeneral IN)
   
 #endif
 
- // Override specular multiplier for low-specs
+ // Override specular multiplier for medium & low-specs
  int nQuality = GetShaderQuality(); 
- if( nQuality == QUALITY_LOW)
+ if( nQuality < QUALITY_HIGH)
  {
    OUT.vBinormal.w = SpecularMultiplier * 5;
  }
@@ -270,7 +268,7 @@ void frag_unify_parameters( inout fragPass pPass )
   #endif
 
   #if %VERTCOLORS
-    pPass.bVertexColors = true;
+    pPass.bVertexColors = true; 
   #endif
 
 #if %BUMP_DIFFUSE
@@ -335,12 +333,6 @@ void frag_custom_begin(inout fragPass pPass)
   }
 
 #endif
-
-//#if %_RT_DEFERRED_SHADING
-  // testing..
-  //pPass.cDiffuseAccRT.w *= 0.25;
-//#endif
-
 
 }
 
@@ -421,10 +413,23 @@ void frag_custom_ambient(inout fragPass pPass, inout half3 cAmbient)
   {
 		// darken ambient if there is unoccluded area direction
 		cAmbient.xyz *= saturate( dot(pPass.vNormalDiffuse.xyz, pPass.vNormal.xyz) );		
-	}	
+  }	
 
   pPass.cAmbientAcc.xyz += cAmbient.xyz;
-  
+
+  if( pPass.nQuality == QUALITY_HIGH )
+  {
+    half fInput = max(pPass.fNdotE, 0.001);
+
+    half fSpecular = pow( fInput, pPass.fSpecPow ) * pPass.pCustom.fSpecMultiplier;		//pow
+#if %ANISO_SPECULAR
+    fSpecular *= 0.1;		//pow
+#else
+    fSpecular *= 0.5;
+#endif
+    pPass.cAmbientAcc.xyz *= fInput*0.5+0.5;					//mul
+    pPass.cSpecularAcc.xyz += (fSpecular*pPass.cAmbientAcc.xyz);		//mad 
+  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -449,6 +454,7 @@ pixout MetalPS(vert2FragGeneral IN)
   fragPass pPass = (fragPass) 0;              // Initialize fragPass structure
   frag_unify(pPass, IN);                      // Unify data      
   
+  pPass.bViewDependentAmbient = false;  
   half4 cFinal = frag_shared_output(pPass);
       		  
   HDROutput(OUT, cFinal, 1);

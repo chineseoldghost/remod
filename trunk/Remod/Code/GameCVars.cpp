@@ -8,7 +8,7 @@
  -------------------------------------------------------------------------
   History:
   - 11:8:2004   10:50 : Created by Márcio Martins
-f
+
 *************************************************************************/
 #include "StdAfx.h"
 #include "GameCVars.h"
@@ -44,6 +44,39 @@ static void BroadcastChangeSafeMode( ICVar * )
 	}
 }
 
+void CmdBulletTimeMode( IConsoleCmdArgs* cmdArgs)
+{
+	g_pGameCVars->goc_enable = 0;
+	g_pGameCVars->goc_tpcrosshair = 0;
+
+	g_pGameCVars->bt_ironsight = 1;
+	g_pGameCVars->bt_speed = 0;
+	g_pGameCVars->bt_energy_decay = 2.5;
+	g_pGameCVars->bt_end_reload = 1;
+	g_pGameCVars->bt_end_select = 1;
+	g_pGameCVars->bt_end_melee = 0;
+}
+
+void CmdGOCMode( IConsoleCmdArgs* cmdArgs)
+{
+	g_pGameCVars->goc_enable = 1;
+	g_pGameCVars->goc_tpcrosshair = 1;
+	
+	g_pGameCVars->bt_ironsight = 1;
+	g_pGameCVars->bt_speed = 0;
+	g_pGameCVars->bt_energy_decay = 0;
+	g_pGameCVars->bt_end_reload = 1;
+	g_pGameCVars->bt_end_select = 1;
+	g_pGameCVars->bt_end_melee = 0;
+
+	//
+	CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+	if(pPlayer && !pPlayer->IsThirdPerson())
+	{
+		pPlayer->ToggleThirdPerson();
+	}
+}
+
 void CmdListInvisiblePlayers(IConsoleCmdArgs* cmdArgs)
 {
 	IActorIteratorPtr it = g_pGame->GetIGameFramework()->GetIActorSystem()->CreateActorIterator();
@@ -71,7 +104,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("cl_fov", &cl_fov, 60.0f, 0, "field of view.");
 	pConsole->Register("cl_bob", &cl_bob, 1.0f, VF_CHEAT, "view/weapon bobbing multiplier");
 	pConsole->Register("cl_headBob", &cl_headBob, 1.0f, VF_CHEAT, "head bobbing multiplier");
-	pConsole->Register("cl_headBobLimit", &cl_headBobLimit, 0.15f, VF_CHEAT, "head bobbing distance limit");
+	pConsole->Register("cl_headBobLimit", &cl_headBobLimit, 0.15f, VF_CHEAT, "head bobbing distance limit"); // rEMOD
 	pConsole->Register("cl_tpvDist", &cl_tpvDist, 3.5f, 0, "camera distance in 3rd person view");
 	pConsole->Register("cl_tpvYaw", &cl_tpvYaw, 0, 0, "camera angle offset in 3rd person view");
 	pConsole->Register("cl_nearPlane", &cl_nearPlane, 0, 0, "overrides the near clipping plane if != 0, just for testing.");
@@ -82,9 +115,32 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("cl_invertMouse", &cl_invertMouse, 0, VF_DUMPTODISK, "mouse invert?");
 	pConsole->Register("cl_invertController", &cl_invertController, 0, VF_DUMPTODISK, "Controller Look Up-Down invert");
 	pConsole->Register("cl_crouchToggle", &cl_crouchToggle, 0, VF_DUMPTODISK, "To make the crouch key work as a toggle");
-	pConsole->Register("cl_fpBody", &cl_fpBody, 1, 0, "first person body");
+	pConsole->Register("cl_fpBody", &cl_fpBody, 2, 0, "first person body");
 	//FIXME:just for testing
 	pConsole->Register("cl_strengthscale", &cl_strengthscale, 1.0f, 0, "nanosuit strength scale");
+
+	/*
+	// GOC
+	pConsole->Register("goc_enable", &goc_enable, 0, VF_CHEAT, "gears of crysis");
+	pConsole->Register("goc_tpcrosshair", &goc_tpcrosshair, 0, VF_CHEAT, "keep crosshair in third person");
+	pConsole->Register("goc_targetx", &goc_targetx, 0.5f, VF_CHEAT, "target position of camera");
+	pConsole->Register("goc_targety", &goc_targety, -2.5f, VF_CHEAT, "target position of camera");
+	pConsole->Register("goc_targetz", &goc_targetz, 0.2f, VF_CHEAT, "target position of camera");
+	pConsole->AddCommand("GOCMode", CmdGOCMode, VF_CHEAT, "Enable GOC mode");
+	
+	// BulletTime
+	pConsole->Register("bt_speed", &bt_speed, 0, VF_CHEAT, "bullet-time when in speed mode");
+	pConsole->Register("bt_ironsight", &bt_ironsight, 0, VF_CHEAT, "bullet-time when in ironsight");
+	pConsole->Register("bt_end_reload", &bt_end_reload, 0, VF_CHEAT, "end bullet-time when reloading");
+	pConsole->Register("bt_end_select", &bt_end_select, 0, VF_CHEAT, "end bullet-time when selecting a new weapon");
+	pConsole->Register("bt_end_melee", &bt_end_melee, 0, VF_CHEAT, "end bullet-time when melee");
+	pConsole->Register("bt_time_scale", &bt_time_scale, 0.2f, VF_CHEAT, "bullet-time time scale to apply");
+	pConsole->Register("bt_pitch", &bt_pitch, -0.4f, VF_CHEAT, "sound pitch shift for bullet-time");
+	pConsole->Register("bt_energy_max", &bt_energy_max, 1.0f, VF_CHEAT, "maximum bullet-time energy");
+	pConsole->Register("bt_energy_decay", &bt_energy_decay, 2.5f, VF_CHEAT, "bullet time energy decay rate");
+	pConsole->Register("bt_energy_regen", &bt_energy_regen, 0.5f, VF_CHEAT, "bullet time energy regeneration rate");
+	pConsole->AddCommand("bulletTimeMode", CmdBulletTimeMode, VF_CHEAT, "Enable bullet time mode");
+	*/
 
 	pConsole->Register("dt_enable", &dt_enable, 0, 0, "suit actions activated by double-tapping");
 	pConsole->Register("dt_time", &dt_time, 0.25f, 0, "time in seconds between double taps");
@@ -113,6 +169,8 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->RegisterInt("cl_screeneffects", 1, 0, "Enable player screen effects (depth-of-field, motion blur, ...).");
 	
 	pConsole->Register("cl_debugSwimming", &cl_debugSwimming, 0, VF_CHEAT, "enable swimming debugging");
+	pConsole->Register("cl_g15lcdEnable", &cl_g15lcdEnable, 1, VF_DUMPTODISK, "enable support for Logitech G15 LCD");
+	pConsole->Register("cl_g15lcdTick", &cl_g15lcdTick, 250, VF_DUMPTODISK, "milliseconds between lcd updates");
 
 	ca_GameControlledStrafingPtr = pConsole->GetCVar("ca_GameControlledStrafing");
 	pConsole->Register("pl_curvingSlowdownSpeedScale", &pl_curvingSlowdownSpeedScale, 0.5f, VF_CHEAT, "Player only slowdown speedscale when curving/leaning extremely.");
@@ -125,7 +183,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 
 	pConsole->RegisterInt("g_grabLog", 0, 0, "verbosity for grab logging (0-2)");
 
-	pConsole->Register("pl_inputAccel", &pl_inputAccel, 15.0f, 0, "Movement input acceleration");
+	pConsole->Register("pl_inputAccel", &pl_inputAccel, 15.0f, 0, "Movement input acceleration"); // Remod
 
 	pConsole->RegisterInt("cl_actorsafemode", 0, VF_CHEAT, "Enable/disable actor safe mode", BroadcastChangeSafeMode);
 	pConsole->Register("h_useIK", &h_useIK, 1, 0, "Hunter uses always IK");
@@ -164,7 +222,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 
 	pConsole->Register("g_playerHealthValue", &g_playerHealthValue, 100, VF_CHEAT, "Maximum player health.");
 	pConsole->Register("g_walkMultiplier", &g_walkMultiplier, 1, VF_SAVEGAME, "Modify movement speed");
-	pConsole->Register("g_suitRecoilEnergyCost", &g_suitRecoilEnergyCost, 1.0f, VF_CHEAT, "Subtracted energy when weapon is fired in strength mode.");
+	pConsole->Register("g_suitRecoilEnergyCost", &g_suitRecoilEnergyCost, 3.0f, VF_CHEAT, "Subtracted energy when weapon is fired in strength mode.");
 	pConsole->Register("g_suitSpeedMult", &g_suitSpeedMult, 1.85f, 0, "Modify speed mode effect.");
 	pConsole->Register("g_suitSpeedMultMultiplayer", &g_suitSpeedMultMultiplayer, 0.35f, 0, "Modify speed mode effect for Multiplayer.");
 	pConsole->Register("g_suitArmorHealthValue", &g_suitArmorHealthValue, 200.0f, 0, "This defines how much damage is reduced by 100% energy, not considering recharge. The value should be between 1 and <SuitMaxEnergy>.");
@@ -176,7 +234,8 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("g_AiSuitStrengthMeleeMult", &g_AiSuitStrengthMeleeMult, 0.4f, VF_CHEAT, "Modify AI strength mode melee damage relative to player damage.");
 	pConsole->Register("g_AiSuitHealthRegenTime", &g_AiSuitHealthRegenTime, 33.3f, VF_CHEAT, "Modify suit health recharge for AI.");
 	pConsole->Register("g_AiSuitArmorModeHealthRegenTime", &g_AiSuitArmorModeHealthRegenTime, 20.0f, VF_CHEAT, "Modify suit health recharge for AI in armor mode.");
-	pConsole->Register("g_playerSuitEnergyRechargeTime", &g_playerSuitEnergyRechargeTime, 5.0f, VF_CHEAT, "Modify suit energy recharge for Player.");
+	pConsole->Register("g_playerSuitEnergyRechargeTime", &g_playerSuitEnergyRechargeTime, 5.0f, VF_CHEAT, "Modify suit energy recharge for Player."); // Remod
+	pConsole->Register("g_playerSuitMinSpeedEnergy", &g_playerSuitMinSpeedEnergy, 20.0f, VF_CHEAT, "Minimum suit energy to be in Speed mode"); // Remod
 	pConsole->Register("g_playerSuitEnergyRechargeTimeArmor", &g_playerSuitEnergyRechargeTimeArmor, 5.0f, VF_CHEAT, "Modify suit energy recharge for Player in singleplayer in armor mode.");
 	pConsole->Register("g_playerSuitEnergyRechargeTimeArmorMoving", &g_playerSuitEnergyRechargeTimeArmorMoving, 5.0f, VF_CHEAT, "Modify suit energy recharge for Player in singleplayer in armor mode while moving.");
 	pConsole->Register("g_playerSuitEnergyRechargeTimeMultiplayer", &g_playerSuitEnergyRechargeTimeMultiplayer, 5.0f, VF_CHEAT, "Modify suit energy recharge for Player in multiplayer.");
@@ -185,7 +244,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("g_playerSuitHealthRegenTimeMoving", &g_playerSuitHealthRegenTimeMoving, 45.0f, VF_CHEAT, "Modify suit health recharge for moving Player.");
 	pConsole->Register("g_playerSuitArmorModeHealthRegenTime", &g_playerSuitArmorModeHealthRegenTime, 45.0f, VF_CHEAT, "Modify suit health recharge for Player in armor mode.");
 	pConsole->Register("g_playerSuitArmorModeHealthRegenTimeMoving", &g_playerSuitArmorModeHealthRegenTimeMoving, 45.0f, VF_CHEAT, "Modify suit health recharge for Player moving in armor mode.");
-	pConsole->Register("g_playerSuitHealthRegenDelay", &g_playerSuitHealthRegenDelay, 1.0f, VF_CHEAT, "Delay of health regeneration after the player has been hit.");
+	pConsole->Register("g_playerSuitHealthRegenDelay", &g_playerSuitHealthRegenDelay, 1.0f, VF_CHEAT, "Delay of health regeneration after the player has been hit."); // Remod ^
 	pConsole->Register("g_difficultyLevel", &g_difficultyLevel, 2, VF_CHEAT|VF_READONLY, "Difficulty level");
 	pConsole->Register("g_difficultyHintSystem", &g_difficultyHintSystem, 2, VF_CHEAT|VF_READONLY, "Lower difficulty hint system (0 is off, 1 is radius based, 2 is save-game based)");
 	pConsole->Register("g_difficultyRadius", &g_difficultyRadius, 300, VF_CHEAT|VF_READONLY, "Radius in which player needs to die to display lower difficulty level hint.");
@@ -200,8 +259,8 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("g_playerRespawns", &g_playerRespawns, 0, VF_SAVEGAME, "Sets the player lives.");
 	pConsole->Register("g_playerLowHealthThreshold", &g_playerLowHealthThreshold, 40.0f, VF_CHEAT, "The player health threshold when the low health effect kicks in.");
 	pConsole->Register("g_playerLowHealthThreshold2", &g_playerLowHealthThreshold2, 60.0f, VF_CHEAT, "The player health threshold when the low health effect reaches maximum.");
-	pConsole->Register("g_playerLowHealthThresholdMultiplayer", &g_playerLowHealthThresholdMultiplayer, 30.0f, VF_CHEAT, "The player health threshold when the low health effect kicks in.");
-	pConsole->Register("g_playerLowHealthThreshold2Multiplayer", &g_playerLowHealthThreshold2Multiplayer, 60.0f, VF_CHEAT, "The player health threshold when the low health effect reaches maximum.");
+	pConsole->Register("g_playerLowHealthThresholdMultiplayer", &g_playerLowHealthThresholdMultiplayer, 20.0f, VF_CHEAT, "The player health threshold when the low health effect kicks in.");
+	pConsole->Register("g_playerLowHealthThreshold2Multiplayer", &g_playerLowHealthThreshold2Multiplayer, 30.0f, VF_CHEAT, "The player health threshold when the low health effect reaches maximum.");
 	pConsole->Register("g_punishFriendlyDeaths", &g_punishFriendlyDeaths, 1, VF_CHEAT, "The player gets punished by death when killing a friendly unit.");
 	pConsole->Register("g_enableMPStealthOMeter", &g_enableMPStealthOMeter, 0, VF_CHEAT, "Enables the stealth-o-meter to detect enemies in MP matches.");
 	pConsole->Register("g_meleeWhileSprinting", &g_meleeWhileSprinting, 0, 0, "Enables option to melee while sprinting, using left mouse button.");
@@ -263,11 +322,10 @@ void SCVars::InitCVars(IConsole *pConsole)
 
 	pConsole->Register("g_minplayerlimit", &g_minplayerlimit, 2, 0, "Minimum number of players to start a match.");
 	pConsole->Register("g_minteamlimit", &g_minteamlimit, 1, 0, "Minimum number of players in each team to start a match.");
-	pConsole->Register("g_maxteamlimit", &g_maxteamlimit, 1, 0, "Maximum number of players in each team to start a match. (3rd  person cagematch ONLY!)");
 	pConsole->Register("g_tk_punish", &g_tk_punish, 1, 0, "Turns on punishment for team kills");
 	pConsole->Register("g_tk_punish_limit", &g_tk_punish_limit, 5, 0, "Number of team kills user will be banned for");
 	pConsole->Register("g_teamlock", &g_teamlock, 2, 0, "Number of players one team needs to have over the other, for the game to deny joining it. 0 disables.");
-	pConsole->Register("g_useHitSoundFeedback", &g_useHitSoundFeedback, 0, 0, "Switches hit readability feedback sounds on/off.");
+	pConsole->Register("g_useHitSoundFeedback", &g_useHitSoundFeedback, 1, 0, "Switches hit readability feedback sounds on/off.");
 
 	pConsole->Register("g_debugNetPlayerInput", &g_debugNetPlayerInput, 0, VF_CHEAT, "Show some debug for player input");
 	pConsole->Register("g_debug_fscommand", &g_debug_fscommand, 0, 0, "Print incoming fscommands to console");
@@ -327,9 +385,12 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("hud_enableAlienInterference", &hud_enableAlienInterference, 1, VF_SAVEGAME, "Switched the alien interference effect.");
 	pConsole->Register("hud_alienInterferenceStrength", &hud_alienInterferenceStrength, 0.8f, VF_SAVEGAME, "Scales alien interference effect strength.");
 	pConsole->Register("hud_godFadeTime", &hud_godFadeTime, 3, VF_CHEAT, "sets the fade time of the god mode message");
-	pConsole->Register("hud_crosshair_enable", &hud_crosshair_enable, 0,0, "Toggles singleplayer crosshair visibility.", CHUD::OnCrosshairCVarChanged);
+	pConsole->Register("hud_crosshair_enable", &hud_crosshair_enable, 1,0, "Toggles singleplayer crosshair visibility.", CHUD::OnCrosshairCVarChanged);
+
+	// Remod
 	pConsole->Register("hud_voicemode", &hud_voicemode, 1, 0, "Usage of the voice when switching of Nanosuit mode.");
-	pConsole->Register("hud_crosshair", &hud_crosshair, 8, VF_CHEAT, "Crosshairs are disabled in Remod, get a LAM!", CHUD::OnCrosshairCVarChanged); // Remod
+	pConsole->Register("hud_crosshair", &hud_crosshair, 8,VF_CHEAT, "Disabled", CHUD::OnCrosshairCVarChanged);
+
 	pConsole->Register("hud_alternateCrosshairSpread",&hud_iAlternateCrosshairSpread,0, 0, "Switch new crosshair spread code on/off.");
 	pConsole->Register("hud_alternateCrosshairSpreadCrouch",&hud_fAlternateCrosshairSpreadCrouch,12.0f, VF_CHEAT);
 	pConsole->Register("hud_alternateCrosshairSpreadNeutral",&hud_fAlternateCrosshairSpreadNeutral,6.0f, VF_CHEAT);
@@ -358,7 +419,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("hud_radarJammingThreshold", &hud_radarJammingThreshold, 0.99f, 0, "Threshold to disable the radar (independent from effect).");
 	pConsole->Register("hud_startPaused", &hud_startPaused, 1, 0, "The game starts paused, waiting for user input.");
 	pConsole->Register("hud_faderDebug", &hud_faderDebug, 0, 0, "Show Debug Information for FullScreen Faders.");
-	pConsole->Register("hud_nightVisionConsumption", &hud_nightVisionConsumption, 0.0f, VF_CHEAT, "Scales the energy consumption of the night vision.");
+	pConsole->Register("hud_nightVisionConsumption", &hud_nightVisionConsumption, 0.5f, VF_CHEAT, "Scales the energy consumption of the night vision.");
 	pConsole->Register("hud_nightVisionRecharge", &hud_nightVisionRecharge, 2.0f, VF_CHEAT, "Scales the energy recharge of the night vision.");
 	pConsole->Register("hud_showBigVehicleReload", &hud_showBigVehicleReload, 0, 0, "Enables an additional reload bar around the crosshair in big vehicles.");
 	pConsole->Register("hud_radarScanningDelay", &hud_binocsScanningDelay, 0.55f, VF_CHEAT, "Defines the delay in seconds the binoculars take to scan an object.");
@@ -416,7 +477,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("v_stabilizeVTOL", &v_stabilizeVTOL, 0.35f, VF_DUMPTODISK, "Specifies if the air movements should automatically stabilize");
 
   	
-	pConsole->Register("pl_swimBaseSpeed", &pl_swimBaseSpeed, 2.0f, VF_CHEAT, "Swimming base speed.");
+	pConsole->Register("pl_swimBaseSpeed", &pl_swimBaseSpeed, 2.0f, VF_CHEAT, "Swimming base speed."); // Remod
 	pConsole->Register("pl_swimBackSpeedMul", &pl_swimBackSpeedMul, 0.8f, VF_CHEAT, "Swimming backwards speed mul.");
 	pConsole->Register("pl_swimSideSpeedMul", &pl_swimSideSpeedMul, 0.9f, VF_CHEAT, "Swimming sideways speed mul.");
 	pConsole->Register("pl_swimVertSpeedMul", &pl_swimVertSpeedMul, 0.5f, VF_CHEAT, "Swimming vertical speed mul.");
@@ -565,7 +626,6 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("re_slowmo", &re_slowmo, 0, 0, "Activates slowmotion!", CGame::Slowmo);
 	pConsole->Register("re_vehicles",&re_vehicles, 1, 0, "Disables/Enables vehicles");
 	pConsole->Register("re_intros",&re_intros, 1, 0, "Disables/Enables intros");
-	//pConsole->Register("re_fistsonly", &re_fistsonly, 0, 0, "Activates 'Fists Only' mode!", CGame::Fistsonly);
 
 //	int iFlags = gEnv->pConsole->GetCVar("r_drawNearFoV")->GetFlags();
 //	gEnv->pConsole->GetCVar("r_drawNearFoV")->SetFlags(iFlags|~VF_CHEAT);
@@ -947,7 +1007,7 @@ void CGame::RegisterConsoleCommands()
 	m_pConsole->AddCommand("freeze", "g_gameRules:SetFrozenAmount(g_localActor,1)", 0, "Freezes player");
 
 	m_pConsole->AddCommand("loadactionmap", CmdLoadActionmap, 0, "Loads a key configuration file");
-	m_pConsole->AddCommand("restartgame", CmdRestartGame, 0, "Restarts Crysis Wars: REMOD completely.");
+	m_pConsole->AddCommand("restartgame", CmdRestartGame, 0, "Restarts Crysis Wars completely.");
 
 	m_pConsole->AddCommand("lastinv", CmdLastInv, 0, "Selects last inventory item used.");
 	m_pConsole->AddCommand("team", CmdTeam, VF_RESTRICTEDMODE, "Sets player team.");
@@ -1014,6 +1074,8 @@ void CGame::UnregisterConsoleCommands()
 
 
 	m_pConsole->RemoveCommand("g_battleDust_reload");
+	m_pConsole->RemoveCommand("bulletTimeMode");
+	m_pConsole->RemoveCommand("GOCMode");
 
 	// variables from CHUDCommon
 	m_pConsole->RemoveCommand("ShowGODMode");
@@ -1052,6 +1114,21 @@ void CGame::CmdLoadLastSave(IConsoleCmdArgs *pArgs)
 
 	if(g_pGame->GetMenu() && g_pGame->GetMenu()->IsActive())
 		return;
+
+	string* lastSave = NULL;
+	if(g_pGame->GetMenu())
+		lastSave = g_pGame->GetMenu()->GetLastInGameSave();
+	if(lastSave && lastSave->size())
+	{
+		if(!g_pGame->GetIGameFramework()->LoadGame(lastSave->c_str(), true))
+			g_pGame->GetIGameFramework()->LoadGame(g_pGame->GetLastSaveGame().c_str(), false);
+	}
+	else
+	{
+		const string& file = g_pGame->GetLastSaveGame().c_str();
+		if(!g_pGame->GetIGameFramework()->LoadGame(file.c_str(), true))
+			g_pGame->GetIGameFramework()->LoadGame(file.c_str(), false);
+	}
 }
 
 //------------------------------------------------------------------------
@@ -1503,7 +1580,7 @@ void SCVars::RestrictedItemsChanged(ICVar* var)
 {
 	// pass new restricted item string to game rules
 	CGameRules* pGameRules = g_pGame->GetGameRules();
-	if(pGameRules && var && gEnv->bMultiplayer)
+	if(pGameRules && var && (gEnv->bMultiplayer))
 	{
 		pGameRules->CreateRestrictedItemList(var->GetString());
 	}

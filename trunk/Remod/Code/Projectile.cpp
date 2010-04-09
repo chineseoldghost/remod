@@ -1210,7 +1210,7 @@ float CProjectile::GetSpeed() const
 	return m_pAmmoParams->speed;
 }
 
-//===
+//==================================================================
 void CProjectile::OnHit(const HitInfo& hit)
 {
 	//C4, special case
@@ -1235,12 +1235,12 @@ void CProjectile::OnHit(const HitInfo& hit)
 	}
 }
 
-//===
+//==================================================================
 void CProjectile::OnExplosion(const ExplosionInfo& explosion)
 {	
 
 }
-//===
+//==================================================================
 void CProjectile::OnServerExplosion(const ExplosionInfo& explosion)
 {
 	//In case this was the same projectile that created the explosion, hitPoints should be already 0

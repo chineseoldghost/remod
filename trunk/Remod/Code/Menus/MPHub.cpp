@@ -359,7 +359,7 @@ bool CMPHub::HandleFSCommand(const char* pCmd, const char* pArgs)
         break;
 			if(serv->GetState() == eNSS_Failed)
 			{
-				ShowError("Online support for Crysis Wars: REMOD is no longer available.");
+				ShowError("Online support for Crysis Wars is no longer available.");
 				break;
 			}
 			CheckTSPIPs();

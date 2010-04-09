@@ -18,6 +18,7 @@
 #include "HUD/HUD.h"
 #include "Game.h"
 #include "Player.h"
+#include "Alien.h"
 #include "GameCVars.h"
 
 #include <IGameFramework.h>
@@ -69,10 +70,11 @@ CScriptBind_Actor::CScriptBind_Actor(ISystem *pSystem)
 	SCRIPT_REG_FUNC(LinkToVehicleRemotely);
   SCRIPT_REG_FUNC(IsGhostPit);
 	SCRIPT_REG_FUNC(IsFlying);
+	SCRIPT_REG_TEMPLFUNC(AddImpulse,"x,y,z");
+	SCRIPT_REG_TEMPLFUNC(DropInventory,"impulse");
 	SCRIPT_REG_TEMPLFUNC(SetAngles,"vAngles");
 	SCRIPT_REG_FUNC(GetAngles);
 	SCRIPT_REG_TEMPLFUNC(AddAngularImpulse,"vAngular,deceleration,duration");
-	SCRIPT_REG_TEMPLFUNC(AddImpulse,"x,y,z");
 	SCRIPT_REG_TEMPLFUNC(SetViewLimits,"dir,rangeH,rangeV");
 	SCRIPT_REG_TEMPLFUNC(PlayAction,"action,extension");
 	SCRIPT_REG_TEMPLFUNC(SimulateOnAction,"action,mode,value");
@@ -131,8 +133,6 @@ CScriptBind_Actor::CScriptBind_Actor(ISystem *pSystem)
 	SCRIPT_REG_TEMPLFUNC(PlayNanoSuitSound,"sound");
 	SCRIPT_REG_TEMPLFUNC(NanoSuitHit,"damage");
 
-	SCRIPT_REG_TEMPLFUNC(DropInventory,"impulse");
-
 	//------------------------------------------------------------------------
 	// NETWORK
 	//------------------------------------------------------------------------
@@ -154,6 +154,8 @@ CScriptBind_Actor::CScriptBind_Actor(ISystem *pSystem)
 
 	SCRIPT_REG_TEMPLFUNC(ResetScores, "");
 	SCRIPT_REG_TEMPLFUNC(RenderScore, "");
+
+  SCRIPT_REG_TEMPLFUNC(SetSearchBeam, "dir");
 			
 	m_pSS->SetGlobalValue("STANCE_PRONE", STANCE_PRONE);
 	m_pSS->SetGlobalValue("STANCE_CROUCH", STANCE_CROUCH);
@@ -284,7 +286,7 @@ int CScriptBind_Actor::RagDollize(IFunctionHandler *pH)
 		return pH->EndFunction();
 
 	pActor->GetGameObject()->SetAspectProfile(eEA_Physics, eAP_Ragdoll);
-//	pActor->RagDollize(true);
+	//pActor->RagDollize();
 
 	return pH->EndFunction();
 }
@@ -559,15 +561,6 @@ int CScriptBind_Actor::AddAngularImpulse(IFunctionHandler *pH,Ang3 vAngular,floa
 	CActor *pActor = GetActor(pH);
 	if (pActor)
 		pActor->AddAngularImpulse(vAngular,deceleration,duration);
-
-	return pH->EndFunction();
-}
-
-int CScriptBind_Actor::AddImpulse(IFunctionHandler *pH,float x, float y, float z)
-{
-	CActor *pActor = GetActor(pH);
-	if (pActor)
-		pActor->AddImpulse(x,y,z);
 
 	return pH->EndFunction();
 }
@@ -1755,6 +1748,18 @@ int CScriptBind_Actor::NanoSuitHit(IFunctionHandler *pH, int damage)
 }
 
 //------------------------------------------------------------------------
+int CScriptBind_Actor::SetSearchBeam(IFunctionHandler *pH, Vec3 dir)
+{
+  CActor *pActor = GetActor(pH);
+  if (!pActor || pActor->GetActorClass() != CAlien::GetActorClassType())
+    return pH->EndFunction();
+  
+  ((CAlien*)pActor)->SetSearchBeamGoal(dir);
+
+  return pH->EndFunction();
+}
+
+//------------------------------------------------------------------------
 int CScriptBind_Actor::IsFlying(IFunctionHandler *pH)
 {
 	CActor *pActor = GetActor(pH);
@@ -1772,6 +1777,15 @@ int CScriptBind_Actor::IsFlying(IFunctionHandler *pH)
 		if(pPhysEnt->GetStatus(&livStat))
 			return pH->EndFunction(livStat.bFlying!=0);
 	}
+
+	return pH->EndFunction();
+}
+//------------------------------------------------------------------------
+int CScriptBind_Actor::AddImpulse(IFunctionHandler *pH,float x, float y, float z)
+{
+	CActor *pActor = GetActor(pH);
+	if (pActor)
+		pActor->AddImpulse(x,y,z);
 
 	return pH->EndFunction();
 }

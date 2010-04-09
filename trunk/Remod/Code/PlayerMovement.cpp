@@ -1120,7 +1120,7 @@ void CPlayerMovement::ProcessOnGroundOrJumping(CPlayer& player)
 			//this is used to easily find steep ground
 			float slopeDelta = (m_stats.inZeroG)? 0.0f : (m_stats.upVector - m_stats.groundNormal).len();
 
-			if (pSuit && (pSuit->GetSuitEnergy()>=100.0f || isRemoteClient)) // Remod, minimum energy required to strength jump, default is 70.0f
+			if (pSuit && (pSuit->GetSuitEnergy()>=100.0f || isRemoteClient)) // Remod | Changed minimum jumpenergy, default is 70.0f.
 			{
 				ENanoMode mode = pSuit->GetMode();
 				if(m_stats.inZeroG)
@@ -1135,7 +1135,7 @@ void CPlayerMovement::ProcessOnGroundOrJumping(CPlayer& player)
 				else if(mode == NANOMODE_STRENGTH)
 				{
 					// marcok: always perform strength jump
-					mult = 6.25f; // Default 4.7f (Remod)
+					mult = 6.25f; // Remod | Default 4.7f
 			}
 			}
 			
@@ -1185,7 +1185,7 @@ void CPlayerMovement::ProcessOnGroundOrJumping(CPlayer& player)
 			CNanoSuit *pSuit = m_player.GetNanoSuit();
 			if(pSuit && pSuit->GetMode() == NANOMODE_STRENGTH)
 			{
-				if (pSuit->GetSuitEnergy() >= 100.0f) // Remod, minimum energy required to strength jump, default is 70.0f
+				if (pSuit->GetSuitEnergy() >= 100.0f) // Remod | Minimum energy for strengthjump. Default: 70.0f
 				{
 					if(m_stats.inZeroG)
 						pSuit->SetSuitEnergy(pSuit->GetSuitEnergy()-10.0f);
@@ -1197,7 +1197,7 @@ void CPlayerMovement::ProcessOnGroundOrJumping(CPlayer& player)
 							pSuit->Tap(eNA_None);
 						}
 
-						pSuit->SetSuitEnergy(pSuit->GetSuitEnergy()-100.0f); // Remod, strength jump energy consumption, default is -70.0f
+						pSuit->SetSuitEnergy(pSuit->GetSuitEnergy()-100.0f); // Remod | Strengthjump energy consumption. Default: -70.0f
 						pSuit->PlaySound(STRENGTH_JUMP_SOUND, (pSuit->GetSlotValue(NANOSLOT_STRENGTH))*0.01f);
 
 						// Report super jump to AI system.
@@ -1412,10 +1412,10 @@ void CPlayerMovement::AdjustMovementForEnvironment( Vec3& move, bool sprinting )
 					NETINPUT_TRACE(m_player.GetEntityId(), nanoSpeedMul);
 				}
 				else //confirmed with CJ : also in MP the suit is a bit faster in speed mode walking
-					move *= 1.4f;
+					move *= 1.4f; // Remod | Adjusted movement
 			}
 		}
-		else
+		else	
 		{
 			float nanoSpeed = 0;
 			if(!sprinting && pSuit->GetMode() == NANOMODE_SPEED)

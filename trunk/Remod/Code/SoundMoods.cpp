@@ -38,6 +38,7 @@ CSoundMoods::~CSoundMoods()
 }
 
 //-----------------------------------------------------------------------------------------------------
+
 void CSoundMoods::AddSoundMood(const char *szSoundMood,uint32 uiFadeIn,float fDuration,uint32 uiFadeOut,float fFade)
 {
 	if(!m_pSoundMoodManager)
@@ -132,6 +133,7 @@ void CSoundMoods::AddSoundMood(ESOUNDMOOD eSoundMood,float fPercent)
 	case SOUNDMOOD_SLOWMO:
 		AddSoundMood("slowmo",1000,-1.0f,0,1.0f);
 		break;
+
 	default:
 		CRY_ASSERT(0);
 		break;

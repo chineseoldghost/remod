@@ -760,7 +760,7 @@ void CHUD::IndicateHit(bool enemyIndicator,IEntity *pEntity, bool explosionFeedb
 	if(explosionFeedback && g_pGameCVars->g_useHitSoundFeedback)
 		PlaySound(ESound_SpecialHitFeedback);
 
-	m_animHitIndicator.Invoke("indicateHit"); // Remod
+	m_animHitIndicator.Invoke("indicateHit");
 
 	if(pPlayer->GetLinkedVehicle())
 	{
@@ -1283,6 +1283,12 @@ void CHUD::UpdateVoiceChat()
 
 void CHUD::UpdateCrosshairVisibility()
 {
+	// marcok: don't touch this, please
+	if (g_pGameCVars->goc_enable)
+	{
+		m_pHUDCrosshair->GetFlashAnim()->Invoke("setVisible", 1);
+		return;
+	}
 
 	bool wasVisible = false;
 

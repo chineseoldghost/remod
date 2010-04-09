@@ -306,6 +306,7 @@ void CSPAnalyst::StartRecording()
 	if(g_pGame->GetIGameFramework()->IsGameStarted())
 	{
 		m_recordingFileName = string("GameplayRecord_");
+		m_recordingFileName.append(g_pGame->CreateSaveGameName());
 		m_recordingData = GetISystem()->CreateXmlNode(m_recordingFileName.c_str());
 		m_frameCount = 0;
 	}

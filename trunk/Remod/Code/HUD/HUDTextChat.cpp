@@ -193,7 +193,7 @@ bool CHUDTextChat::OnInputEventUI(const SInputEvent &event)
 
 	Insert(keyName);
 
-	if (m_inputText.length()>70)
+	if (m_inputText.length()>60)
 		Flush(false);
 
 	return true;
@@ -595,6 +595,6 @@ bool CHUDTextChat::Lowtec(const char* param1, const char* param2)
 bool CHUDTextChat::Quarantine(const char* param1, const char* param2)
 {
 	SAFE_HUD_FUNC(StartInterference(30.0, 100.0, 100.0, 5.0));
-	AddChatMessage("", "LEGEN - wait for it! - DARY", 0, false);
+	AddChatMessage("", "LEGEN -wait for it !- DARY", 0, false);
 	return true;
 }

@@ -482,7 +482,7 @@ void CHUDCrosshair::SelectCrosshair(IItem *pItem)
 			}
 
 			// No current item or current item are fists or AlienCloak or LAW
-			/*if(!bSpecialCrosshairSet) // Remod, crosshair fix, commented
+			if(!bSpecialCrosshairSet)
 			{
 				if(pItem->GetEntity()->GetClass() == CItem::sRocketLauncherClass ||
 					pItem->GetEntity()->GetClass() == CItem::sTACGunFleetClass)
@@ -511,7 +511,7 @@ void CHUDCrosshair::SelectCrosshair(IItem *pItem)
 					SetCrosshair(15);
 					bSpecialCrosshairSet = true;
 				}
-			}*/
+			}
 		}
 	}
 

@@ -70,6 +70,8 @@ History:
 #include "WeaponSystem.h"
 #include "Radio.h"
 
+#include "LCD/LCDWrapper.h"
+
 static const float NIGHT_VISION_ENERGY = 30.0f;
 static const float SPAWN_WARNING_TIMER = 2.0f;
 
@@ -474,6 +476,8 @@ bool CHUD::Init()
 		m_animKillLog.Load("Libs/UI/HUD_KillLog.gfx", eFD_Left, eFAF_Visible);
 	}
 
+	// Remod | Commander
+	m_animCommander.Load("Libs/UI/HUD_Commander.gfx", eFD_Right, eFAF_Visible|eFAF_ThisHandler);
 	m_animPlayerStats.Load("Libs/UI/HUD_AmmoHealthEnergySuit.gfx", eFD_Right, eFAF_Visible|eFAF_ThisHandler);
 	m_animAmmoPickup.Load("Libs/UI/HUD_AmmoPickup.gfx", eFD_Right, eFAF_Visible);
 	m_animFriendlyProjectileTracker.Load("Libs/UI/HUD_GrenadeDetect_Friendly.gfx", eFD_Center, eFAF_Visible);
@@ -504,6 +508,7 @@ bool CHUD::Init()
 	m_animPDA.Load("Libs/UI/HUD_PDA_Map.gfx", eFD_Right, eFAF_ThisHandler);
 	m_animDownloadEntities.Load("Libs/UI/HUD_DownloadEntities.gfx");
 	m_animHitIndicator.Load("Libs/UI/HUD_HitIndicator.gfx", eFD_Center, eFAF_Visible);
+
 	// these are delay-loaded elsewhere!!!
 	if(loadEverything)
 	{
@@ -566,7 +571,12 @@ bool CHUD::Init()
 
 		if(g_pGame->GetGameRules()->GetTeamCount() > 1)
 		{
-			m_animTeamSelection.Load("Libs/UI/HUD_TeamSelection.gfx", eFD_Center, eFAF_ManualRender|eFAF_ThisHandler);
+			ICVar* var = gEnv->pConsole->GetCVar("sv_gamerules");
+			string Gamemode = var->GetString();
+			if(m_currentGameRules == EHUD_POWERSTRUGGLE ||  stricmp(Gamemode, "PowerStruggle") || g_pGame->GetHUD()->GetCurrentGameRules() == EHUD_POWERSTRUGGLE)
+				m_animTeamSelection.Load("Libs/UI/HUD_TeamSelectionPS.gfx", eFD_Center, eFAF_ManualRender|eFAF_ThisHandler);
+			else
+				m_animTeamSelection.Load("Libs/UI/HUD_TeamSelection.gfx", eFD_Center, eFAF_ManualRender|eFAF_ThisHandler);
 			m_animTeamSelection.GetFlashPlayer()->SetVisible(false);
 		}
 	}
@@ -830,8 +840,6 @@ void CHUD::GameRulesSet(const char* name)
 			gameRules = EHUD_TEAMACTION;
 		else if(!stricmp(name, "TeamInstantAction"))
 			gameRules = EHUD_TEAMINSTANTACTION;
-		else if(!stricmp(name, "Cagematch"))
-			gameRules = EHUD_CAGEMATCH;
   }
 
   if(m_currentGameRules != gameRules)//unload stuff
@@ -1660,6 +1668,50 @@ void CHUD::HandleFSCommand(const char *szCommand,const char *szArgs)
 			}
 		}
 	}
+	else if(!strcmp(szCommand, "Commander")) // Remod | Commander HUD FSCommand
+	{
+		CryLogAlways("HUD.CPP LINE 1672");
+		// The first part is about joining the actual team.
+		if(!gEnv->pSystem->IsDedicated())
+		{
+			CGameRules* pRules = g_pGame->GetGameRules();
+			IActor *pTempActor = g_pGame->GetIGameFramework()->GetClientActor();
+			if(pRules && pRules->GetTeamCount() > 1 && pTempActor)
+			{
+				if(pRules->GetTeamId(szArgs) != pRules->GetTeam(pTempActor->GetEntityId()))
+				{
+					string command("team ");
+					command.append(szArgs);
+					m_prevSpectatorTeam = pRules->GetTeam(pTempActor->GetEntityId());
+					gEnv->pConsole->ExecuteString(command.c_str());
+					ShowPDA(false);
+
+					if(GetModalHUD() == &m_animTeamSelection)
+					{
+						m_animTeamSelection.SetVisible(false);
+						SwitchToModalHUD(NULL, false);
+					}
+				}
+			}
+			// Becoming a Commander
+			int teamId = g_pGame->GetGameRules()->GetTeam(pTempActor->GetEntityId());
+			//EntityId teamId = g_pGame->GetGameRules()->GetTeamId(team);
+			CryLogAlways("HUD.CPP LINE 1703");
+			AddCommander(teamId);
+		}
+	}
+	else if(!strcmp(szCommand, "CommanderAlertProto")) // Remod | Commander Alert
+	{
+		CryLogAlways("HUD.CPP LINE 1708");
+		int teamId = g_pGame->GetGameRules()->GetTeam(g_pGame->GetIGameFramework()->GetClientActor()->GetEntityId());
+		g_pGame->GetGameRules()->SendTextMessage(eTextMessageServer, "CAPTURE PROTOTYPE FACILITY", eRMI_ToClientChannel/*eRMI_ToAllClients*/);
+	}
+	else if(!strcmp(szCommand, "CommanderAlertEnergysite"))
+	{
+		CryLogAlways("HUD.CPP LINE 1715");
+		int teamId = g_pGame->GetGameRules()->GetTeam(g_pGame->GetIGameFramework()->GetClientActor()->GetEntityId());
+		g_pGame->GetGameRules()->SendTextMessage(eTextMessageServer, "CAPTURE ENERGYSITE FACILITY", eRMI_ToClientChannel/*eRMI_ToAllClients*/);
+	}
 	else if(!strcmp(szCommand,"StopInitialize"))
 	{
 		m_bDestroyInitializePending = true;
@@ -1834,7 +1886,29 @@ void CHUD::HandleFSCommand(const char *szCommand,const char *szArgs)
 		}
 	}
 }
-
+//-----------------------------------------------------------------------------------------------------
+void  CHUD::AddCommander(EntityId teamId)
+{
+	CryLogAlways("HUD.CPP LINE 1897");
+	if(teamId==1)
+		if(!USHasCommander)
+		{
+			USHasCommander = true;
+			EntityId player = g_pGame->GetIGameFramework()->GetClientActor()->GetEntityId();
+			USCommander = player;
+		}
+		else
+			DisplayFlashMessage("Commander spot already taken!", 2);
+	else if(teamId==2)
+		if(!NKHasCommander)
+		{
+			NKHasCommander = true;
+			EntityId player = g_pGame->GetIGameFramework()->GetClientActor()->GetEntityId();
+			NKCommander = player;
+		}
+		else
+			DisplayFlashMessage("Commander spot already taken!", 2);
+}
 //-----------------------------------------------------------------------------------------------------
 
 void CHUD::SpawnPointInvalid()
@@ -3181,6 +3255,26 @@ void CHUD::OnPostUpdate(float frameTime)
 
 	if (gEnv->bMultiplayer)
 	{
+		// Remod | Commander
+		if(!gEnv->pSystem->IsDedicated())
+		{
+			CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+			CNanoSuit *pSuit=pPlayer->GetNanoSuit();
+			player = g_pGame->GetIGameFramework()->GetClientActor()->GetEntityId();
+
+			if(USCommander==player || NKCommander==player)
+			{
+				pSuit->isCommander = true;
+				m_animPlayerStats.SetVisible(false);
+				m_animCommander.SetVisible(true);
+			}
+			else
+			{
+				pSuit->isCommander = false;
+				m_animCommander.SetVisible(false);
+				m_animPlayerStats.SetVisible(true);
+			}
+		}
 		UpdateTeamActionHUD();
 
 		//MP team selection is always rendered if available
@@ -4064,6 +4158,15 @@ bool CHUD::UpdateTimers(float frameTime)
 				g_pGame->GetMenu()->ShowInGameMenu(false);
 				m_animWarningMessages.GetFlashPlayer()->SetVisible(false);
 				m_fPlayerDeathTime = now.GetSeconds(); //just in case loading fails
+
+				string *lastSave = g_pGame->GetMenu()->GetLastInGameSave();
+				if(lastSave && lastSave->size())
+				{
+					if(!g_pGame->GetIGameFramework()->LoadGame(lastSave->c_str()))
+						g_pGame->GetIGameFramework()->LoadGame(g_pGame->GetLastSaveGame().c_str());
+				}
+				else
+					g_pGame->GetIGameFramework()->LoadGame(g_pGame->GetLastSaveGame().c_str());
 
 				return true;
 			}
@@ -5283,46 +5386,6 @@ void CHUD::LoadGameRulesHUD(bool load)
 			m_pHUDInstantAction->Show(false);
 		}
 		break;
-		case EHUD_CAGEMATCH:
-		if(load)
-		{
-			m_pHUDTeamInstantAction->Show(true);
-			if(!m_animScoreBoard.IsLoaded())
-			{
-				m_animScoreBoard.Load("Libs/UI/HUD_MultiplayerScoreboard_TDM.gfx");
-				SetFlashColor(&m_animScoreBoard);
-			}
-			if(!m_animChat.IsLoaded())
-			{
-				m_animChat.Load("Libs/UI/HUD_ChatSystem.gfx", eFD_Left);
-				if(m_pHUDTextChat)
-					m_pHUDTextChat->Init(&m_animChat);
-			}
-			if(!m_animVoiceChat.IsLoaded())
-				m_animVoiceChat.Load("Libs/UI/HUD_MultiPlayer_VoiceChat.gfx", eFD_Right, eFAF_ThisHandler);
-			if(!m_animBattleLog.IsLoaded())
-				m_animBattleLog.Load("Libs/UI/HUD_MP_Log.gfx", eFD_Left);
-			// This one is on top of others because it displays important
-			// messages, so let's put it at the end of the rendering list
-			if(!m_animMessages.IsLoaded())
-				m_animMessages.Load("Libs/UI/HUD_Messages.gfx");
-			if(!m_animMPMessages.IsLoaded())
-				m_animMPMessages.Load("Libs/UI/HUD_MP_Messages.gfx", eFD_Center, eFAF_Visible);
-		}
-		else
-		{
-			m_animScoreBoard.Unload();
-			if(m_pHUDTextChat)
-				m_pHUDTextChat->Init(0);
-			m_animChat.Unload();
-			m_animVoiceChat.Unload();
-			m_animBattleLog.Unload();
-			m_animMessages.Unload();
-			m_animMPMessages.Unload();
-			m_pHUDTeamInstantAction->Show(false);
-			m_pHUDInstantAction->Show(false);
-		}
-		break;
 	case EHUD_TEAMACTION:
     if(load)
     {
@@ -5449,7 +5512,7 @@ void CHUD::UpdateTeamActionHUD()
 
 					Vec3 color=Vec3(1.0f, 1.0f, 1.0f);
 
-					if (remainingTime<g_pGameCVars->re_suddendeathtime || preround)
+					if (remainingTime<g_pGameCVars->g_suddendeathtime || preround)
 					{
 						float t=fabsf(cry_sinf(gEnv->pTimer->GetCurrTime()*2.5f));
 						Vec3 red=Vec3(0.85f, 0.0f, 0.0f);
@@ -5568,7 +5631,7 @@ void CHUD::UpdatePlayerAmmo()
 				if(CWeapon *pWeapon = static_cast<CWeapon*>(pItem->GetIWeapon()))
 				{
 
-					IEntityClass *tacgun = gEnv->pEntitySystem->GetClassRegistry()->FindClass("TACLauncher");
+					IEntityClass *tacgun = gEnv->pEntitySystem->GetClassRegistry()->FindClass("TACGun");
 					if(pItem->GetEntity() && pItem->GetEntity()->GetClass()==tacgun)
 					{
 						TACLauncherMode	= true;

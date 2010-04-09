@@ -287,6 +287,13 @@ IEntity *CWorkOnTarget::CanWork()
 		else
 		{
 			dir = range * info.fireDirection;    
+
+			// marcok: leave this alone
+			if (g_pGameCVars->goc_enable && pActor->IsClient())
+			{
+				CPlayer *pPlayer = (CPlayer*)pActor;
+				pos = pPlayer->GetViewMatrix().GetTranslation();
+			}
 		}
 	}
 	else

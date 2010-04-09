@@ -332,6 +332,8 @@ public:
 	virtual int GetTeamChannelCount(int teamId, bool inGame=false) const;
 	virtual EntityId GetTeamPlayer(int teamId, int idx) const;
 	EntityId GetTeamActivePlayer(int teamId, int idx) const;
+	int NKAliveCount;
+	int USAliveCount;
 
 	virtual void GetTeamPlayers(int teamId, TPlayers &players);
 	

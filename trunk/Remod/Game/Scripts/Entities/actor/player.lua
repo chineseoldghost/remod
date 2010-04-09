@@ -230,6 +230,8 @@ end
 
 
 function Player:SetModel(model, arms, frozen, fp3p)
+	if(commander) then -- Remod | Commander
+	end
 	if (model) then
 		if (fp3p) then
 			self.Properties.clientFileModel = fp3p;

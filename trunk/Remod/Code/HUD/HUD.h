@@ -61,6 +61,7 @@ class CHUDScopes;
 class CHUDCrosshair;
 class CHUDSilhouettes;
 class CHUDTagNames;
+class CLCDWrapper;
 class CWeapon;
 
 //-----------------------------------------------------------------------------------------------------
@@ -477,6 +478,12 @@ public:
 	void SetTeamDisplay(const char* team);
 
 	void SpawnPointInvalid();
+	void AddCommander(EntityId teamId);
+	bool USHasCommander;
+	bool NKHasCommander;
+	EntityId USCommander;
+	EntityId NKCommander;
+	EntityId player;
 
 	//interface effects
 	void IndicateDamage(EntityId weaponId, Vec3 direction, bool onVehicle = false);
@@ -753,10 +760,11 @@ private:
 	CGameFlashAnimation m_animNightVisionBattery;
 	CGameFlashAnimation m_animHUDCornerLeft;
 	CGameFlashAnimation m_animHUDCornerRight;
-	CGameFlashAnimation m_animPlayerStats;
 	CGameFlashAnimation m_animHexIcons;
 	CGameFlashAnimation m_animKillLog;
 	CGameFlashAnimation m_animOverlayMessages;
+	CGameFlashAnimation m_animPlayerStats;
+	CGameFlashAnimation m_animCommander;
 	CGameFlashAnimation m_animBigOverlayMessages;
 	CGameFlashAnimation m_animWeaponSelection;
 	CGameFlashAnimation m_animSpawnCycle;

@@ -15,6 +15,7 @@ History:
 #include "Player.h"
 #include "GameCVars.h"
 #include "Single.h"
+#include "BulletTime.h"
 
 #define PHYS_FOREIGN_ID_DOF_QUERY PHYS_FOREIGN_ID_USER+3
 
@@ -98,6 +99,12 @@ void CIronSight::Update(float frameTime, uint frameId)
 			AdjustNearFov(t*1.25f,m_startFoV>m_endFoV);
 		}
 
+		// marcok: please don't touch
+		if (isClient && g_pGameCVars->goc_enable)
+		{
+			g_pGameCVars->goc_targety = LERP((-2.5f), (-1.5f), doft*doft);
+		}
+
 		if (t>=1.0f)
 		{
 			if (m_zoomingIn)
@@ -114,6 +121,9 @@ void CIronSight::Update(float frameTime, uint frameId)
 			m_zoomTime = 0.0f;
 		}
 	}
+
+	if (isClient && g_pGameCVars->g_dof_ironsight != 0 && g_pGameCVars->goc_enable==0)
+		UpdateDepthOfField(pActor, frameTime, doft);
 
 	bool wasZooming = m_zoomTimer>0.0f;
 	if (wasZooming || m_zoomed)
@@ -439,18 +449,22 @@ void CIronSight::EnterZoom(float time, const char *zoom_layer, bool smooth, int 
 	}
 	ResetTurnOff();
 	OnEnterZoom();
-	SetActorSpeedScale(0.45f); // Remod, zoom speed scale, default is 0.35f
+	SetActorSpeedScale(0.45f); // Remod | Increased zoom scale (+0.10)
+
+	// marcok: please leave goc alone
+	if(!UseAlternativeIronSight() && !g_pGameCVars->goc_tpcrosshair)
+		m_pWeapon->FadeCrosshair(1.0f, 0.0f, WEAPON_FADECROSSHAIR_ZOOM);
 
 	float oFoV = GetZoomFoVScale(0);
 	float tFoV = GetZoomFoVScale(zoomStep);
 
 	ZoomIn(time, oFoV, tFoV, smooth);
 
-	/*if(UseAlternativeIronSight()) // Remod, simple ironsight fix
+	if(UseAlternativeIronSight())
 		m_pWeapon->SetActionSuffix(m_zoomparams.suffix_FC.c_str());
-	else*/
+	else
 		m_pWeapon->SetActionSuffix(m_zoomparams.suffix.c_str());
-		m_pWeapon->PlayAction(m_actions.zoom_in, 0, false, CItem::eIPAF_Default);
+	m_pWeapon->PlayAction(m_actions.zoom_in, 0, false, CItem::eIPAF_Default);
 }
 
 void CIronSight::LeaveZoom(float time, bool smooth)
@@ -463,7 +477,10 @@ void CIronSight::LeaveZoom(float time, bool smooth)
 	OnLeaveZoom();
 	SetActorSpeedScale(1.0f);
 
-	if(UseAlternativeIronSight())
+	// marcok: please leave goc alone
+	if(!UseAlternativeIronSight() && !g_pGameCVars->goc_tpcrosshair)
+		m_pWeapon->FadeCrosshair(0.0f, 1.0f, WEAPON_FADECROSSHAIR_ZOOM);
+	else if(UseAlternativeIronSight())
 		m_pWeapon->FadeCrosshair(1.0f, 1.0f, 0.1f);
 
 	float oFoV = GetZoomFoVScale(0);
@@ -504,9 +521,9 @@ struct CIronSight::DisableTurnOffAction
 
 	void execute(CItem *pWeapon)
 	{
-		/*if(ironSight->UseAlternativeIronSight()) // Remod, simple ironsight fix 2
+		if(ironSight->UseAlternativeIronSight())
 			pWeapon->SetActionSuffix(ironSight->m_zoomparams.suffix_FC.c_str());
-		else*/
+		else
 			pWeapon->SetActionSuffix(ironSight->m_zoomparams.suffix.c_str());
 		
 		ironSight->OnZoomedIn();
@@ -539,9 +556,9 @@ void CIronSight::TurnOff(bool enable, bool smooth, bool anim)
 
 		if (anim)
 		{
-			/*if(UseAlternativeIronSight())
+			if(UseAlternativeIronSight())
 				m_pWeapon->SetActionSuffix(m_zoomparams.suffix_FC.c_str());
-			else*/
+			else
 				m_pWeapon->SetActionSuffix(m_zoomparams.suffix.c_str());
 			m_pWeapon->PlayAction(m_actions.zoom_in);
 		}
@@ -659,6 +676,15 @@ void CIronSight::OnEnterZoom()
 		{
 			gEnv->p3DEngine->SetPostEffectParam("FilterMaskedBlurring_Amount", m_zoomparams.blur_amount);
 			gEnv->p3DEngine->SetPostEffectParamString("FilterMaskedBlurring_MaskTexName", m_zoomparams.blur_mask);
+		}
+
+		if (pActor->GetActorClass() == CPlayer::GetActorClassType())
+		{
+			CPlayer* pPlayer = static_cast<CPlayer*>(pActor);
+			if (g_pGameCVars->bt_ironsight && (!g_pGameCVars->bt_speed || (pPlayer->GetNanoSuit() && (pPlayer->GetNanoSuit()->GetMode() == NANOMODE_SPEED))))
+			{
+				g_pGame->GetBulletTime()->Activate(true);
+			}
 		}
 	}
 	m_swayTime = 0.0f;
@@ -950,6 +976,15 @@ void CIronSight::ClearDoF()
 	if (pActor && pActor->IsClient())
 	{
 		gEnv->p3DEngine->SetPostEffectParam("Dof_Active", 0.0f);
+
+		if (pActor->GetActorClass() == CPlayer::GetActorClassType())
+		{
+			CPlayer* pPlayer = static_cast<CPlayer*>(pActor);
+			if (g_pGameCVars->bt_ironsight && (!g_pGameCVars->bt_speed || (pPlayer->GetNanoSuit() && (pPlayer->GetNanoSuit()->GetMode() == NANOMODE_SPEED))))
+			{
+				g_pGame->GetBulletTime()->Activate(false);
+			}
+		}
 	}
 }
 
@@ -1138,7 +1173,7 @@ void CIronSight::ZoomSway(float time, float &x, float&y)
 	y = dtY*m_zoomsway.maxY*factor*strengthScale*stanceScale;
 }
 
-//=====
+//======================================================
 void CIronSight::PostFilterView(SViewParams & viewparams)
 {
 	if(m_zoomparams.scope_mode)

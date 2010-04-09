@@ -282,7 +282,7 @@ void CHUD::DisplayFlashMessage(const char* label, int pos /* = 1 */, const Color
 		pos = 1;
 
 	if(pos == 2 && m_fMiddleTextLineTimeout <= 0.0f)
-		m_fMiddleTextLineTimeout = gEnv->pTimer->GetFrameStartTime().GetSeconds() + 5.0f;
+		m_fMiddleTextLineTimeout = gEnv->pTimer->GetFrameStartTime().GetSeconds() + 3.0f;
 
 	const wchar_t* localizedText = L"";
 	if(formatWStringWithParams)
@@ -1131,8 +1131,6 @@ void CHUD::ShowWarningMessage(EWarningMessages message, const char* optionalText
 	case EHUD_SUICIDE:
 		m_animWarningMessages.Invoke("showErrorMessage", "suicide");
 		break;
-	case EHUD_ACHIEVEMENT:
-		m_animWarningMessages.Invoke("showErrorMessage", optionalText);
 	case EHUD_CONNECTION_LOST:
 		m_animWarningMessages.Invoke("showErrorMessage", "connectionlost");
 		break;

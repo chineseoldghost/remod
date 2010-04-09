@@ -29,7 +29,7 @@ void CHUD::PlaySound(ESound eSound, bool play)
 		szSound = "Sounds/interface:suit:modification_menu_disappear";
 		break;
 	case ESound_WeaponModification:
-		szSound = "Sounds/interface:suit:preset_navigation_beep"; // Remod modification select sound
+		szSound = "Sounds/interface:suit:weapon_modification_beep";
 		break;
 	case ESound_BinocularsZoomIn:
 		szSound = "Sounds/interface:suit:binocular_zoom_in";
@@ -83,10 +83,10 @@ void CHUD::PlaySound(ESound eSound, bool play)
 		szSound = "Sounds/interface:menu:buy_error";
 		break;
 	case ESound_SniperZoomIn:
-		szSound = "Sounds/interface:suit:night_vision_select"; // Remod sniper scope sound
+		szSound = "Sounds/interface:hud:sniper_scope_zoom_in";
 		break;
 	case ESound_SniperZoomOut:
-		szSound = "Sounds/interface:suit:night_vision_deselect"; // Remod sniper scope sound
+		szSound = "Sounds/interface:hud:sniper_scope_zoom_out";
 		break;
 	case ESound_Highlight:
 		szSound = "sounds/interface:menu:rollover";

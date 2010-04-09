@@ -57,7 +57,7 @@ CVehicleMovementBase::CVehicleMovementBase()
   m_boost(false),
 	m_wasBoosting(false),
   m_boostCounter(1.f),
-  m_boostEndurance(0.f), // Remod, vehicle boost
+  m_boostEndurance(10.f),
   m_boostStrength(1.f),
   m_boostRegen(10.f),
   m_lastMeasuredVel(ZERO),
@@ -812,6 +812,49 @@ void CVehicleMovementBase::OnAction(const TVehicleActionId actionId, int activat
     else if (activationMode == eAAM_OnRelease)
       Boost(false);   
   }
+
+	if(g_pGameCVars->goc_enable)
+	{
+/*
+		Matrix34 camMat = gEnv->pRenderer->GetCamera().GetMatrix();
+		Vec3 viewDir = gEnv->pRenderer->GetCamera().GetViewdir();
+		Matrix34 vehicleMat = m_pVehicle->GetEntity()->GetWorldTM();
+		Vec3 vehicleDir = vehicleMat.GetColumn1();
+		float s = 1.0f;
+		if (vehicleDir.Dot(camMat.GetColumn0())>0.0f)
+			s = -1.0f;
+
+		s*=m_movementAction.power;
+
+		// get angle difference
+		viewDir.z = 0;
+		viewDir.Normalize();
+		vehicleDir.z = 0;
+		vehicleDir.Normalize();
+		float amount = viewDir.Dot(vehicleDir);
+
+		float minAngle = 0.9999f;
+		float maxAngle = 0.0f;
+
+		if (amount > minAngle)
+		{
+			m_movementAction.rotateYaw = 0.0f;
+		}
+		else
+		{
+			if (amount > maxAngle)
+			{
+				// soft range
+				float scale = 1.0f - (amount - maxAngle)/(minAngle - maxAngle);
+				m_movementAction.rotateYaw = s * scale;
+			}
+			else
+			{
+				m_movementAction.rotateYaw = s;
+			}
+		}
+*/
+	}
 }
 
 //------------------------------------------------------------------------

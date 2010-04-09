@@ -67,7 +67,7 @@ CPlayerInput::CPlayerInput( CPlayer * pPlayer ) :
 		//ADD_HANDLER(zerogbrake, OnActionZeroGBrake);
 		ADD_HANDLER(gyroscope, OnActionGyroscope);
 		ADD_HANDLER(gboots, OnActionGBoots);
-		ADD_HANDLER(leanleft, OnActionLeanLeft);
+		ADD_HANDLER(leanleft, OnActionLeanLeft); // Remod | I said we want leaning! Bad bad bad bad bad Crytek.
 		ADD_HANDLER(leanright, OnActionLeanRight);
 		//ADD_HANDLER(holsteritem, OnActionHolsterItem);
 		ADD_HANDLER(use, OnActionUse);
@@ -593,7 +593,7 @@ const Vec3 &CPlayerInput::FilterMovement(const Vec3 &desired)
 
 		float len(delta.len());
 		if (len<=1.0f)
-			delta = delta * (1.0f - len*0.55f); //Remod, original is 0.55f
+			delta = delta * (1.0f - len*0.55f);
 
 		m_filteredDeltaMovement += delta * min(frameTimeCap * inputAccel,1.0f);
 	}
@@ -1239,7 +1239,7 @@ bool CPlayerInput::OnActionCrouch(EntityId entityId, const ActionId& actionId, i
 
 bool CPlayerInput::OnActionSprint(EntityId entityId, const ActionId& actionId, int activationMode, float value)
 {
-	if (CanMove() && !m_pPlayer->IsFiring())
+	if (CanMove() && !m_pPlayer->IsFiring()) // Remod | Don't allow firing while sprinting
 	{
 		if (value > 0.0f)
 		{

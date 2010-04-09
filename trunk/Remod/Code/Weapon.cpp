@@ -24,6 +24,7 @@ History:
 #include "ISerialize.h"
 #include "ScriptBind_Weapon.h"
 #include "Player.h"
+#include "BulletTime.h"
 #include "HUD/HUD.h"
 #include "HUD/HUDRadar.h"
 #include "HUD/HUDCrosshair.h"
@@ -1065,6 +1066,9 @@ void CWeapon::Select(bool select)
 	}
 	ClearInputFlags();
 
+	if (g_pGameCVars && g_pGameCVars->bt_end_select && isClient)
+		g_pGame->GetBulletTime()->Activate(false);
+
 	if (!select)
 	{
 		if(GetEntity()->GetClass() == CItem::sTACGunFleetClass)
@@ -1749,6 +1753,8 @@ void CWeapon::Reload(bool force)
 
 	if (m_fm && (m_fm->CanReload() || force))
 	{
+		if (g_pGameCVars->bt_end_reload && isClient)
+			g_pGame->GetBulletTime()->Activate(false);
 
 		if (m_zm)
 			m_fm->Reload(m_zm->GetCurrentStep());

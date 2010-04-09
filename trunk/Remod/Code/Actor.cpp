@@ -623,7 +623,7 @@ void CActor::Physicalize(EStance stance)
 
 			// for MP allow players to stand on fast moving surfaces (specifically moving vehicles, but will apply to everything)
 			if(gEnv->bMultiplayer)
-				playerDyn.maxVelGround = 300.0f; // Remod, default 200
+				playerDyn.maxVelGround = 300.0f; // Remod | Default: 200.0f
 
 			SActorParams* params = GetActorParams();
 
@@ -2522,7 +2522,7 @@ bool CActor::CheckInventoryRestrictions(const char *itemClassName)
 			int mediumCount = pInventory->GetCountOfCategory("medium");
 			int heavyCount = pInventory->GetCountOfCategory("heavy");
 			
-			if ((mediumCount + heavyCount) >= 1 && !noLimit) // Remod, default 2
+			if ((mediumCount + heavyCount) >= 1 && !noLimit) // Remod | default 2
 			{
 				if (pInventory->GetCountOfClass(itemClassName) == 0)
 					return false;
@@ -2561,10 +2561,9 @@ bool CActor::CheckVirtualInventoryRestrictions(const std::vector<string> &invent
 			else if (!stricmp(category, "heavy"))
 				++heavyCount;
 		}
-
-		if ((mediumCount + heavyCount) >= 1 && !noLimit) // Remod, default is 2
+		if ((mediumCount + heavyCount) >= 2 && !noLimit)
 			return false;
-	}
+		}
 
 	return true;
 }
@@ -3554,8 +3553,6 @@ void CActor::NetKill(EntityId shooterId, uint16 weaponClassId, int damage, int m
 		}
 	}
 */
-
-
 }
 
 //------------------------------------------------------------------------
@@ -4014,7 +4011,7 @@ void CActor::DumpActorInfo()
   IEntity* pEntity = GetEntity();
 
   CryLog("ActorInfo for %s", pEntity->GetName());
-  CryLog("==");
+  CryLog("=====================================");
   
   Vec3 pos = pEntity->GetWorldPos();
   CryLog("Entity Pos: %.f %.f %.f", pos.x, pos.y, pos.z);
@@ -4057,7 +4054,7 @@ void CActor::DumpActorInfo()
   }
 
 
-  CryLog("==");
+  CryLog("=====================================");
 }
 
 //
@@ -4118,7 +4115,7 @@ void CActor::UpdateSuicide(float frameTime)
 		pGameRules->ClientHit(suicideInfo);
 	}
 }
-//-------------------------------------------------------------------
+//------------------------------------------------------------------- Remod
 void CActor::DropInventory(float impulse)
 {
 	IInventory *pInventory = GetInventory();
@@ -4136,6 +4133,19 @@ void CActor::DropInventory(float impulse)
 				pWeapon->Drop(impulse,true,false);
 			}
 		}
+	}
+}
+
+//-------------------------------------------------- Remod
+void CActor::AddImpulse(float x, float y, float z)
+{
+	if(IPhysicalEntity *pPE = GetEntity()->GetPhysics())
+	{
+		pe_status_dynamics dynStat;
+		pe_action_impulse actionImp;
+		actionImp.impulse = Vec3(x,y,z) * dynStat.mass;
+		actionImp.iApplyTime = 0;
+		pPE->Action(&actionImp);
 	}
 }
 
@@ -4161,22 +4171,8 @@ void CActor::ForceAutoDrop()
 					continue;
 				if(!pWeapon->IsAutoDroppable())
 					continue;
-				pWeapon->Drop(10,true,false);
 				pWeapon->AutoDrop( false );
 			}
 		}
 	}
 }
-//--------------------------------------------------
-void CActor::AddImpulse(float x, float y, float z)
-{
-	if(IPhysicalEntity *pPE = GetEntity()->GetPhysics())
-	{
-		pe_status_dynamics dynStat;
-		pe_action_impulse actionImp;
-		actionImp.impulse = Vec3(x,y,z) * dynStat.mass;
-		actionImp.iApplyTime = 0;
-		pPE->Action(&actionImp);
-	}
-}
-//--------------------------------------------------

@@ -1,7 +1,6 @@
 
 #include "Common.cfi"
 #include "ModificatorVT.cfi"
-#include "shadeLib.cfi"
 
 // Shader global descriptions
 float Script : STANDARDSGLOBAL
@@ -99,12 +98,6 @@ pixout SkyPS(v2f IN)
 //	half sunInfluence = dot( normalize( IN.viewDir.xyz ), g_PS_SunLightDir.xyz ) * 0.25 + 0.75;
 //	sunInfluence *= saturate( g_PS_SunLightDir.z * 4.0 ) * 0.666 + 0.333;		
 //	Color *= sunInfluence;
-
-#if PS3
-  #if %_RT_HDR_MODE
-    Color = EncodeRGBE( Color );
-  #endif
-#endif
 
 	HDROutput(OUT, Color, 1);
 	

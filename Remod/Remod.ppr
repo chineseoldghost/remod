@@ -15,12 +15,12 @@ HTServer=blablahs.uuuq.com
 [Project tree]
 Remod
 	+Remod
-		+Languages
+		-Languages
 			Game\Languages\game_text_messages.xml
 		-Libs
 			+ Config
 				Game\Libs\Config\defaultProfile.xml
-		+GameRules
+		-GameRules
 			Game\Scripts\GameRules\BattleDust.xml
 			Game\Scripts\GameRules\InstantAction.lua
 			Game\Scripts\GameRules\PowerStruggle.lua
@@ -32,7 +32,7 @@ Remod
 			Game\Scripts\GameRules\TeamInstantAction.lua
 			Game\Scripts\GameRules\PowerStruggleAlert_NeedsFix.lua
 		+Entities
-			+Multiplayer
+			-Multiplayer
 				Game\Scripts\Entities\Multiplayer\HQ.lua
 				Game\Scripts\Entities\Multiplayer\TeamSoundSpot.lua
 				Game\Scripts\Entities\Multiplayer\TeamRandomSoundVolume.lua
@@ -45,7 +45,7 @@ Remod
 				Game\Scripts\Entities\Multiplayer\Factory.lua
 				Game\Scripts\Entities\Multiplayer\BuyZone.lua
 				Game\Scripts\Entities\Multiplayer\AlienEnergyPoint.lua
-			+Vehicles
+			-Vehicles
 				+Implementations
 					+XML
 						Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_aaa.xml
@@ -76,12 +76,12 @@ Remod
 				Game\Scripts\Entities\Vehicles\VehicleSeat.lua
 				Game\Scripts\Entities\Vehicles\VehicleBase.lua
 				Game\Scripts\Entities\Vehicles\VehiclePool.lua
-			+actor
+			-actor
 				Game\Scripts\Entities\actor\BasicActor.lua
 				Game\Scripts\Entities\actor\player.lua
 			+Items
 				+XML
-					+Accessories
+					-Accessories
 						Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml
 						Game\Scripts\Entities\Items\XML\Accessories\LAWScope.xml
 						Game\Scripts\Entities\Items\XML\Accessories\Silencer.xml
@@ -180,7 +180,9 @@ Remod
 						Game\Scripts\Entities\Items\XML\Ammo\A2GHomingMissile.xml
 						Game\Scripts\Entities\Items\XML\Ammo\A2AHomingMissile_AscMod.xml
 						Game\Scripts\Entities\Items\XML\Ammo\A2AHomingMissile.xml
-					+Weapons
+						Game\Scripts\Entities\Items\Explosive.lua
+						Game\Scripts\Entities\Items\XML\Ammo\TACC4Explosive.xml
+					-Weapons
 						-AmmoPickups
 							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\EMPGrenade.xml
 							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\SmokeGrenade.xml
@@ -260,6 +262,7 @@ Remod
 						Game\Scripts\Entities\Items\XML\Weapons\AIFlashbangs.xml
 						Game\Scripts\Entities\Items\XML\Weapons\TACLauncher.xml
 						Game\Scripts\Entities\Items\XML\Weapons\TACGun.xml
+						Game\Scripts\Entities\Items\XML\Weapons\TACC4.xml
 					Game\Scripts\Entities\Items\XML\RadarKit.xml
 					Game\Scripts\Entities\Items\XML\RepairKit.xml
 					Game\Scripts\Entities\Items\XML\OffHand.xml
@@ -269,45 +272,45 @@ Remod
 [Open project files]
 0=Game\Shaders\HWScripts\CryFX\PostProcess.cfx
 1=Game\Libs\SoundMoods\SoundMoods.xml
-2=Game\Scripts\Entities\Default\GeomEntity.orig
-3=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
-4=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
-5=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
-6=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
-7=Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml
-8=Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml
-9=Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
-10=Game\Scripts\Entities\Items\XML\Weapons\FGL40.xml
-11=Game\Scripts\Entities\Items\XML\Weapons\Hurricane.xml
-12=Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
-13=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon.xml
-14=Game\Scripts\GameRules\InstantAction.lua
-15=Game\Scripts\Entities\Items\XML\OffHand.xml
-16=Game\Scripts\Entities\Items\XML\Ammo\NanoDisruptor.xml
-17=Game\Scripts\Entities\Items\XML\Ammo\ExplosiveGrenade.xml
-18=Game\Scripts\Entities\actor\BasicActor.lua
-19=Game\Libs\MaterialEffects\SurfaceTypes.xml
-20=Game\Scripts\Remod.lua
-21=Game\Scripts\Entities\actor\player.lua
-22=Game\Scripts\Entities\Items\XML\Weapons\AlienMount.xml
+2=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
+3=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
+4=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
+5=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
+6=Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml
+7=Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml
+8=Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
+9=Game\Scripts\Entities\Items\XML\Weapons\FGL40.xml
+10=Game\Scripts\Entities\Items\XML\Weapons\Hurricane.xml
+11=Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
+12=Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon.xml
+13=Game\Scripts\GameRules\InstantAction.lua
+14=Game\Scripts\Entities\Items\XML\OffHand.xml
+15=Game\Scripts\Entities\Items\XML\Ammo\NanoDisruptor.xml
+16=Game\Scripts\Entities\Items\XML\Ammo\ExplosiveGrenade.xml
+17=Game\Scripts\Entities\actor\BasicActor.lua
+18=Game\Libs\MaterialEffects\SurfaceTypes.xml
+19=Game\Scripts\Remod.lua
+20=Game\Scripts\Entities\actor\player.lua
+21=Game\Scripts\Entities\Items\XML\Weapons\AlienMount.xml
+22=Game\Scripts\Entities\Items\XML\Ammo\TACC4Explosive.xml
+23=Game\Scripts\Entities\Items\XML\Weapons\TACC4.xml
+24=Game\Scripts\Entities\Items\XML\Weapons\TACGun.xml
+25=Game\Scripts\Entities\Items\XML\Ammo\TACGunProjectile.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml
+Selected=Game\Libs\MaterialEffects\SurfaceTypes.xml
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
 [Game\Libs\SoundMoods\SoundMoods.xml]
 TopLine=321
 Caret=9,361
-[Game\Scripts\Entities\Default\GeomEntity.orig]
-TopLine=1
-Caret=108,39
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
-TopLine=216
-Caret=35,227
+TopLine=653
+Caret=49,683
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
-TopLine=197
-Caret=39,213
+TopLine=630
+Caret=32,651
 [Game\Scripts\Entities\Items\XML\Weapons\SMG.xml]
 TopLine=182
 Caret=35,203
@@ -315,7 +318,7 @@ Caret=35,203
 TopLine=196
 Caret=37,207
 [Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml]
-TopLine=1
+TopLine=58
 Caret=70,100
 [Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml]
 TopLine=171
@@ -345,20 +348,32 @@ Caret=36,139
 TopLine=1
 Caret=148,1
 [Game\Scripts\Entities\Items\XML\Ammo\ExplosiveGrenade.xml]
-TopLine=4
+TopLine=24
 Caret=34,46
 [Game\Scripts\Entities\actor\BasicActor.lua]
-TopLine=840
+TopLine=820
 Caret=19,862
 [Game\Libs\MaterialEffects\SurfaceTypes.xml]
-TopLine=237
-Caret=1,1
+TopLine=228
+Caret=23,250
 [Game\Scripts\Remod.lua]
 TopLine=3
 Caret=35,6
 [Game\Scripts\Entities\actor\player.lua]
-TopLine=166
+TopLine=208
 Caret=8,208
 [Game\Scripts\Entities\Items\XML\Weapons\AlienMount.xml]
 TopLine=259
 Caret=130,272
+[Game\Scripts\Entities\Items\XML\Ammo\TACC4Explosive.xml]
+TopLine=1
+Caret=45,30
+[Game\Scripts\Entities\Items\XML\Weapons\TACC4.xml]
+TopLine=1
+Caret=18,12
+[Game\Scripts\Entities\Items\XML\Weapons\TACGun.xml]
+TopLine=121
+Caret=1,1
+[Game\Scripts\Entities\Items\XML\Ammo\TACGunProjectile.xml]
+TopLine=1
+Caret=3,38

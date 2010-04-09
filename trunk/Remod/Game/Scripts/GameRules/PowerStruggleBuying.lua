@@ -25,26 +25,26 @@ PowerStruggle.BUY_ALL				= 32-1;
 
 PowerStruggle.weaponList=
 {
-	{ id="flashbang",				name="@mp_eFlashbang",				price=25,			amount=1, ammo=true, weapon=false, 	category="@mp_catExplosives", loadout=1},
-	{ id="smokegrenade",			name="@mp_eSmokeGrenade",			price=25,			amount=1, ammo=true, weapon=false, 	category="@mp_catExplosives", loadout=1 },
-	{ id="explosivegrenade",		name="@mp_eFragGrenade",			price=75,			amount=1, ammo=true, weapon=false, 	category="@mp_catExplosives", loadout=1 },
+	{ id="flashbang",				name="@mp_eFlashbang",				price=50,			amount=1, ammo=true, weapon=false, 	category="@mp_catExplosives", loadout=1},
+	{ id="smokegrenade",			name="@mp_eSmokeGrenade",			price=50,			amount=1, ammo=true, weapon=false, 	category="@mp_catExplosives", loadout=1 },
+	{ id="explosivegrenade",		name="@mp_eFragGrenade",			price=50,			amount=1, ammo=true, weapon=false, 	category="@mp_catExplosives", loadout=1 },
 	{ id="empgrenade",				name="@mp_eEMPGrenade",				price=50,			amount=1, ammo=true, weapon=false, 	category="@mp_catExplosives", loadout=1 },
 	
 	{ id="pistol",					name="@mp_ePistol",					price=50, 			class="SOCOM",						category="@mp_catWeapons", loadout=1, uniqueloadoutgroup=3, uniqueloadoutcount=2},
 	{ id="claymore",				name="@mp_eClaymore",				price=75,			class="Claymore",					category="@mp_catExplosives", buyammo="claymoreexplosive", selectOnBuyAmmo="true", loadout=1 },
 	{ id="avmine",					name="@mp_eMine",					price=50,			class="AVMine",						category="@mp_catExplosives", buyammo="avexplosive",				selectOnBuyAmmo="true", loadout=1 },
-	{ id="c4",						name="@mp_eExplosive",				price=125, 			class="C4", 						category="@mp_catExplosives", buyammo="c4explosive",				selectOnBuyAmmo="true", loadout=1 },
+	{ id="c4",						name="@mp_eExplosive",				price=100, 			class="C4", 						category="@mp_catExplosives", buyammo="c4explosive",				selectOnBuyAmmo="true", loadout=1 },
 	{ id="ay69",					name="@mp_eAY69",					price=50, 			class="AY69",						category="@mp_catWeapons", loadout=1, 		uniqueloadoutgroup=4, uniqueloadoutcount=2},
 
 	{ id="shotgun",					name="@mp_eShotgun", 				price=100, 			class="Shotgun", 					uniqueId=4,		category="@mp_catWeapons", loadout=1, 		uniqueloadoutgroup=1, uniqueloadoutcount=2},
 	{ id="smg",						name="@mp_eSMG", 					price=100, 			class="SMG", 						uniqueId=5,		category="@mp_catWeapons", loadout=1, 		uniqueloadoutgroup=1, uniqueloadoutcount=2},
 	{ id="fy71",					name="@mp_eFY71", 					price=100, 			class="FY71", 						uniqueId=6,		category="@mp_catWeapons", loadout=1, 	uniqueloadoutgroup=1, uniqueloadoutcount=2},
 	{ id="macs",					name="@mp_eSCAR", 					price=100, 			class="SCAR", 						uniqueId=7,		category="@mp_catWeapons", loadout=1, 		uniqueloadoutgroup=1, uniqueloadoutcount=2},
-	{ id="rpg",						name="@mp_eML", 					price=175, 			class="LAW", 						uniqueId=8,		category="@mp_catExplosives", loadout=1},
+	{ id="rpg",						name="@mp_eML", 					price=150, 			class="LAW", 						uniqueId=8,		category="@mp_catExplosives", loadout=1},
 	{ id="fgl40",					name="@mp_eFGL40", 					price=250, 			class="FGL40",		    			uniqueId=15,	category="@mp_catWeapons", loadout=1},
 
 	{ id="dsg1",					name="@mp_eSniper"	,				price=150, 			class="DSG1", 						uniqueId=9,		category="@mp_catWeapons", loadout=1, uniqueloadoutgroup=1, uniqueloadoutcount=2},
-	{ id="minigun",					name="@mp_eMinigun",				price=250, 			class="Hurricane", 					uniqueId=13,	category="@mp_catWeapons", loadout=1, 		uniqueloadoutgroup=1, uniqueloadoutcount=2},
+	{ id="minigun",					name="@mp_eMinigun",				price=225, 			class="Hurricane", 					uniqueId=13,	category="@mp_catWeapons", loadout=1, 		uniqueloadoutgroup=1, uniqueloadoutcount=2},
 };
 
 
@@ -54,7 +54,7 @@ PowerStruggle.equipList=
 -- { id="nsivion",			name="@mp_eNightvision",		price=10, 			class="NightVision", 			uniqueId=102,		category="@mp_catEquipment", loadout=1 },
 	{ id="radarkit",		name="@mp_eRadar",				price=100, 			class="RadarKit", 				uniqueId=110,		category="@mp_catEquipment", loadout=1, 	uniqueloadoutgroup=2, uniqueloadoutcount=1},
 	{ id="repairkit",		name="@mp_eRepair",				price=100, 			class="RepairKit", 				uniqueId=110,		category="@mp_catEquipment", loadout=1, 	uniqueloadoutgroup=2, uniqueloadoutcount=1},
-	{ id="lockkit",			name="@mp_eLockpick",			price=50, 			class="LockpickKit",			uniqueId=110,		category="@mp_catEquipment", loadout=1, 	uniqueloadoutgroup=2, uniqueloadoutcount=1},
+	{ id="lockkit",			name="@mp_eLockpick",			price=100, 			class="LockpickKit",			uniqueId=110,		category="@mp_catEquipment", loadout=1, 	uniqueloadoutgroup=2, uniqueloadoutcount=1},
 }
 
 
@@ -81,7 +81,7 @@ PowerStruggle.vehicleList=
 	{ id="us4wd",					name="@mp_eHeavyVehicle", 			price=25,			class="US_ltv",						modification="MP", 		buildtime=5,					category="@mp_catVehicles", loadout=0 },
 	{ id="usgauss4wd",		name="@mp_eGaussVehicle",			price=50,		class="US_ltv", 						modification="Gauss", buildtime=10,					category="@mp_catVehicles", loadout=0 },
 
-	{ id="nktruck",				name="@mp_eTruck",						price=0,			class="Asian_truck", 				modification="Hardtop_MP", buildtime=5,			category="@mp_catVehicles", loadout=0 },
+	{ id="nktruck",				name="@mp_eTruck",						price=100,			class="Asian_truck", 				modification="Hardtop_MP", buildtime=5,			category="@mp_catVehicles", loadout=0 },
 
 	{ id="ussupplytruck",		name="@mp_eSupplyTruck",				price=150,		class="Asian_truck",				modification="spawntruck",	teamlimit=3, abandon=0, spawngroup=true,	buyzoneradius=11, servicezoneradius=11,	buyzoneflags=bor(bor(PowerStruggle.BUY_AMMO, PowerStruggle.BUY_WEAPON), PowerStruggle.BUY_EQUIPMENT),			buildtime=15,		category="@mp_catVehicles", loadout=0		},
 		
@@ -154,7 +154,7 @@ PowerStruggle.ammoList=
 	{ id="reflex",							name="@mp_eReflex",					price=25,				class="Reflex", 					uniqueId=125, ammo=false, equip=true,		category="@mp_catAddons", loadout=1 },
 	{ id="ascope",							name="@mp_eAScope",					price=50, 			class="AssaultScope", 			uniqueId=126, ammo=false, equip=true,		category="@mp_catAddons", loadout=1 },
 	{ id="scope",							name="@mp_eSScope",					price=100, 			class="SniperScope", 			uniqueId=127, ammo=false, equip=true,		category="@mp_catAddons", loadout=1 },
-	{ id="gl",									name="@mp_eGL",							price=75, 			class="GrenadeLauncher",		uniqueId=128, ammo=false, equip=true,		category="@mp_catAddons", loadout=1 },
+	{ id="gl",									name="@mp_eGL",							price=100, 			class="GrenadeLauncher",		uniqueId=128, ammo=false, equip=true,		category="@mp_catAddons", loadout=1 },
 	
 };
 
@@ -169,16 +169,16 @@ for i,v in ipairs(PowerStruggle.ammoList) do PowerStruggle.buyList[v.id]=v; if (
 
 PowerStruggle.captureValue=
 {
-	[1]=50,
-	[2]=100,
-	[3]=150,
+	[1]=0,
+	[2]=0,
+	[3]=0,
 };
 
 PowerStruggle.defenseValue=
 {
-	[1]=25,
-	[2]=50,
-	[3]=75,
+	[1]=0,
+	[2]=0,
+	[3]=0,
 };
 
 -- pp values
@@ -186,26 +186,26 @@ PowerStruggle.ppList=
 {
 	SPAWN							= 100,
 	START							= 100,
-	KILL							= 25,
+	KILL							= 0,
 	KILL_RANKDIFF_MULT				= 1,
-	TURRETKILL						= 50,
+	TURRETKILL						= 0,
 	HEADSHOT						= 0,
 	MELEE							= 0,
 	SUICIDE							= 0,
-	TEAMKILL						= -50,
+	TEAMKILL						= 0,
 	
 	--REPAIR							= 1/5, -- Points/damage repaired.
-	LOCKPICK						= 75,
+	LOCKPICK						= 0,
 --	DISARM							= 50,
-	TAG_ENEMY						= 5,
+	TAG_ENEMY						= 0,
 		
-	VEHICLE_REFUND_MULT		  		= 1,
-	VEHICLE_KILL_MIN				= 10,
+	VEHICLE_REFUND_MULT		  		= 0,
+	VEHICLE_KILL_MIN				= 0,
 	VEHICLE_KILL_MULT				= 0,
 	
 	--ATTACKING_FACILITY        = 50,
 	--DEFENDING_FACILITY        = 25,
-	--KILLING_TAC_WEAPON_BEARER = 200,
+	KILLING_TAC_WEAPON_BEARER = 250,
 };
 
 

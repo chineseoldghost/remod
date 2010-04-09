@@ -569,8 +569,6 @@ bool CHUD::Init()
 
 		if(g_pGame->GetGameRules()->GetTeamCount() > 1)
 		{
-			ICVar* var = gEnv->pConsole->GetCVar("sv_gamerules");
-			string Gamemode = var->GetString();
 			m_animTeamSelection.Load("Libs/UI/HUD_TeamSelection.gfx", eFD_Center, eFAF_ManualRender|eFAF_ThisHandler);
 			m_animTeamSelection.GetFlashPlayer()->SetVisible(false);
 		}
@@ -1837,6 +1835,7 @@ void CHUD::HandleFSCommand(const char *szCommand,const char *szArgs)
 		}
 	}
 }
+
 //-----------------------------------------------------------------------------------------------------
 
 void CHUD::SpawnPointInvalid()

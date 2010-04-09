@@ -25,7 +25,6 @@ float Script : STANDARDSGLOBAL
 <
   string Script =
            "NoPreview;"
-           "LocalConstants;"
            "ShaderDrawType = Custom;"
            "ShaderType = FX;"
 >; 
@@ -48,11 +47,6 @@ sampler2D perlinNoiseSampler : register (s6)
   MipFilter = POINT;
   AddressU = Wrap;
   AddressV = Wrap;	
-};
-
-sampler2D chartSampler = sampler_state
-{
-  Texture = $ColorChart;
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -83,7 +77,6 @@ sampler2D screenMaskSampler : register (s6)
 /// Constants ////////////////////////////
 
 float4 viewModeParams;
-float colorChartWidthFixPS3 : PB_ColorCharts_WidthFixPS3;
 
 /// Samplers ////////////////////////////
 
@@ -292,7 +285,7 @@ float4 waterDropletsParams;
 
 /// Samplers ////////////////////////////
 
-sampler2D waterDropletsBumpSampler : register (s5)
+sampler2D waterDropletsBumpSampler
 {
   Texture = textures/defaults/water_droplets.dds;
   MinFilter = LINEAR;
@@ -335,7 +328,7 @@ pixout waterDropletsPS(vtxOutWaterDroplets IN)
   
 #if D3D10	
   // temporary workaround for d3d10 hlsl compiler bug
-  OUT.Color = tex2D(screenMapSampler, IN.baseTC.xy);
+  OUT.Color = tex2D(screenMapSampler, IN.baseTC.xy);;
 #endif
            
   half4 noiseColorA = tex2D(waterDropletsBumpSampler, IN.noiseTC.xy);        
@@ -357,8 +350,8 @@ pixout waterDropletsPS(vtxOutWaterDroplets IN)
   // some issue in d3d10 
   //half fSpec = clamp(pow(refrUV.x, 9)*0.5, -0.5, 0.5) * waterDropletsParams.w;
   
-  half fSpec = saturate(pow(refrUV.x, 9) * 0.5) * waterDropletsParams.w;
-  
+  half fSpec = saturate(pow(saturate(refrUV.x), 9) * 0.5) * waterDropletsParams.w;
+ 
   OUT.Color.xyz = screenColor.xyz + fSpec;
   OUT.Color.w = 1;
 
@@ -738,17 +731,7 @@ float4 screenFrostParamsPS;
 
 sampler2D frostBumpSampler = sampler_state
 {    
-  Texture = textures/defaults/screenfrost_ddn.tif;
-  MinFilter = LINEAR;
-  MagFilter = LINEAR;
-  MipFilter = LINEAR; 
-  AddressU = Wrap;
-  AddressV = Wrap;
-};
-
-sampler2D frostAlphaSampler = sampler_state
-{    
-  Texture = textures/defaults/screenfrost_alpha.tif;
+  Texture = textures/defaults/screenfrost.dds;
   MinFilter = LINEAR;
   MagFilter = LINEAR;
   MipFilter = LINEAR; 
@@ -785,7 +768,6 @@ vtxOutScreenFrost ScreenFrostVS(vtxIn IN)
 ///////////////// pixel shader //////////////////
 pixout ScreenFrostPS(vtxOutScreenFrost IN)
 {
-
   pixout OUT;
   
   half4 cScreen = tex2D(screenMapSampler, IN.baseTC.xy);
@@ -793,18 +775,17 @@ pixout ScreenFrostPS(vtxOutScreenFrost IN)
   half fAttenFactor = saturate( length(IN.baseTC.xy*2-1) +  screenFrostParamsPS.z);
   
   
-  half cNoise = tex2D(frostAlphaSampler, IN.noiseTC0.xy).x;
-  cNoise += tex2D(frostAlphaSampler, IN.noiseTC1.xy).x;
+  half cNoise = tex2D(frostBumpSampler, IN.noiseTC0.xy).w;
+  cNoise += tex2D(frostBumpSampler, IN.noiseTC1.xy).w;
   
-  half3 cFrost0 = GetNormalMap(frostBumpSampler, IN.noiseTC0.xy);
-  half3 cFrost1 = GetNormalMap(frostBumpSampler, IN.noiseTC2.xy);
-  half cFrost1Alpha = tex2D(frostAlphaSampler, IN.noiseTC2.xy).x;
+  half4 cFrost0 = tex2D(frostBumpSampler, IN.noiseTC0.xy);
+  half4 cFrost1 = tex2D(frostBumpSampler, IN.noiseTC2.xy);
   
-  //cFrost0.xyz = (cFrost0.xyz*2-1);
-  //cFrost1.xyz = (cFrost1.xyz*2-1);
+  cFrost0.xyz = (cFrost0.xyz*2-1);
+  cFrost1.xyz = (cFrost1.xyz*2-1);
   
   half cNoise0 = cNoise ;
-  half cNoise1 = cFrost1Alpha*0.5+0.5;
+  half cNoise1 = cFrost1.w*0.5+0.5;
   
   half cNoiseAccum = cNoise0;// + cNoise1;
   
@@ -825,13 +806,15 @@ pixout ScreenFrostPS(vtxOutScreenFrost IN)
   half4 cScreenBlured = tex2D(screenMapScaledSampler_d4, IN.baseTC.xy +  (cFrost0.xy) *0.5);
     
   // interpolate bettwen screen and frosted areas
-  half lerpp = dot(0.25, vCommonGrowFrost.xyzw);
+  half lerpp = (vCommonGrowFrost.x + vCommonGrowFrost.y + vCommonGrowFrost.z + vCommonGrowFrost.w)/4;
   OUT.Color = (cScreenBlured*0.7 + float4(0.85, 0.95, 1.1, 1)*0.3) * lerpp;
-  OUT.Color += cScreen * (1-lerpp);
-    
+  OUT.Color += cScreen * (1-lerpp) ;
+  
+  
   // fake some specularity
   float3 fakespec = normalize( (cFrost0.xyz+cFrost1.xyz) * float3( vCommonGrowFrost.xx, 1) );   
-  OUT.Color += fakespec.x * fakespec.x * (lerpp)*4;    
+  OUT.Color += pow( fakespec.x , 2) * (lerpp)*4;
+    
     
   return OUT;
 }
@@ -1015,7 +998,7 @@ pixout NightVisionPS(vtxOutNightVision IN)
   half4 cScreenBlurred = tex2D(_tex1, IN.baseTC.xy);
   
   // sharpen screen
-  cScreen =  saturate(lerp(cScreenBlurred,cScreen,  2));
+  cScreen =  saturate(lerp(cScreenBlurred,cScreen,  1.5));
   half fLum = dot(cScreen.xyz, 0.33);
 
   float fSceneLum = 0.5;
@@ -1024,18 +1007,18 @@ pixout NightVisionPS(vtxOutNightVision IN)
 #endif
 
   // add noisy glow
-  half fNoise = dot(tex2D(_tex2, IN.noiseTC.xy).xy, 0.5);
-  fNoise += dot(tex2D(_tex2, IN.noiseTC.wz).xy, 0.5);
+  half fNoise = dot(tex2D(_tex2, IN.noiseTC.xy).xy, 1);
+  fNoise += dot(tex2D(_tex2, IN.noiseTC.wz).xy, 1);
   fNoise *= 0.25;;
 
-  half fInterlation = abs(frac((IN.baseTC.y)*PS_ScreenSize.y*0.25)*2-1)*0.75+0.25;
+  half fInterlation = abs(frac((IN.baseTC.y)*PS_ScreenSize.y*0)*0-1)*0.75+0.25;
   fNoise = (fInterlation + fInterlation*fNoise);
 
   // Darken edges (and lerp between 1.0 and darken term). Overbright white areas also
   half fDistToCenter = length(IN.baseTC.xy * 2 - 1);
-  half fDarken = saturate( 1 - fDistToCenter*0.7);  
+  half fDarken = saturate( 1 - fDistToCenter*0.6); // Darkened edges, default is 0.7
 
-  half4 cScreenEdges = 0;//
+  half4 cScreenEdges = 0;
   if( flareCount )
   {
     cScreenEdges = tex2D(_tex1, IN.baseTC.xy - normalize((IN.baseTC.xy+0.005*(tex2D(_tex3, IN.noiseTC.xy).xy*2-1)) * 2 - 1)*0.15);
@@ -1051,7 +1034,7 @@ pixout NightVisionPS(vtxOutNightVision IN)
   fBlurEdges *= fBlurEdges;
   fBlurEdges *= fBlurEdges;
 
-  cScreen = lerp(cScreen, cScreenEdges, saturate(fBlurEdges*0.5));
+  cScreen = lerp(cScreen, cScreenEdges, saturate(fBlurEdges*0));
   cScreen = (cScreen  + cScreenBlurred * saturate(fNoise));
             
   fLum = dot(cScreen.xyz, 0.33);;
@@ -1061,19 +1044,19 @@ pixout NightVisionPS(vtxOutNightVision IN)
   OUT.Color = cScreen * fDarken;
 
 //if %_RT_HDR_MODE  
-  OUT.Color.xyz =   (1 - exp( -  4*( OUT.Color.xyz+ saturate(cScreenBlurred*1.25  -fNoise))));
+  //OUT.Color.xyz =   (1 - exp( -  5*( OUT.Color.xyz+ saturate(cScreenBlurred*1.25  -fNoise))));
 //else
   //OUT.Color.xyz = fSceneLum *(fSceneLum * 0.25 + saturate(cScreenBlurred * 2 -(fNoise)   )) + (1 - exp( -4*(OUT.Color.xyz  )));
 //endif
   
   // get absolute value, stuff totaly black will get whitish
 
-  fLum = ( dot(OUT.Color.xyz, 0.33) );
+  fLum = ( dot(OUT.Color.xyz, 1) );
   OUT.Color.xyz = tex2D(_tex3, fLum.xx);
 
   //OUT.Color.xyz =   (1 - exp( -( *OUT.Color.xyz) ) );
-  OUT.Color.xyz= max( lerp(0.5, OUT.Color.xyz, 1.25), 0);
-  OUT.Color.xyz = lerp(fLum, OUT.Color.xyz,0.65);
+  OUT.Color.xyz= max( lerp(0.75, OUT.Color.xyz, 2), 0); // Contrast & Brightness
+  OUT.Color.xyz = lerp(fLum, OUT.Color.xyz,0.4); // Saturation
 
   OUT.Color.xyz = lerp(cScreenOrig.xyz, OUT.Color.xyz, nightVisionParamsPS.w*nightVisionParamsPS.w);
 
@@ -1419,7 +1402,7 @@ pixout StylizedFilterPS(vtxOut IN)
   cScreen = lerp(cScreenBlur, cScreen, 2);
   
 
-  float fDepth = GetLinearDepth( depthMapSampler, IN.baseTC );
+  float fDepth = tex2D(depthMapSampler, IN.baseTC).x;
 
   float lum = dot(cScreen, float3(0.33, 0.59, 0.11));
   float4  c= lerp(lum, cScreenBlur, 0.025);// * float4(0.7, 1, 0.9, 1);
@@ -1631,13 +1614,12 @@ technique BinocularViewFinalNoTinting
 /// Color grading technique /////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-half4 ColorGradingParams0;
-half4 ColorGradingParams1;
-half4 ColorGradingParams2;
-half4 ColorGradingParams3;
-half4 ColorGradingParams4;
-half4 ColorGradingParams5;
-half4 mColorGradingMatrix[3];
+float4 ColorGradingParams0;
+float4 ColorGradingParams1;
+float4 ColorGradingParams2;
+float4 ColorGradingParams3;
+float4 ColorGradingParams4;
+float4 mColorGradingMatrix[3];
 
 sampler2D grainSampler = sampler_state
 {
@@ -1743,58 +1725,18 @@ void SelectiveColor( inout half3 cImage )
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-void LookupColorChart(in sampler2D chartSampler, inout half3 cImage)
-{
-	const float chartDim = 16.0;
-	
-	//cImage = float3(0.5, 1.0, 4.0 / chartDim); // debug lookup color to test addressing of "unwrapped" chart slices
-	
-	// convert input color into 2d color chart lookup address 
-	half3 scale = half3(chartDim - 1.0, chartDim - 1.0, chartDim - 1.0) / chartDim;
-	half3 bias = half3(0.5, 0.5, 0.0) / chartDim;
-	float3 lookup = saturate(cImage) * scale + bias;
-	
-#if PS3
-	lookup.x *= colorChartWidthFixPS3;
-#endif	
-	
-	half slice = lookup.z * chartDim;	
-	half sliceFrac = frac(slice);	
-	half sliceIdx = slice - sliceFrac;
-	
-	lookup.y = (lookup.y + sliceIdx) / chartDim;
-	
- 	// lookup adjacent slices
- 	half3 col0 = tex2D(chartSampler, lookup.xy); 	
- 	lookup.y += 1.0 / chartDim;
- 	half3 col1 = tex2D(chartSampler, lookup.xy);
-
-	// linearly blend between slices 	 	
-	cImage = col0 + (col1 - col0) * sliceFrac;
-		
- 	//cImage = sliceFrac;
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
 pixout ColorGradingPS(vtxOut IN)
 {
   pixout OUT = (pixout) 0;
 
-#if PS3
-  #pragma sce-cgc("-texformat default COMPRESSED_RGBA_S3TC_DXT5");
-#endif
-
   half4 cImage = half4( tex2D(screenMapSampler, IN.baseTC.xy).xyz, 1.0);
 
 
-#if %_RT_SAMPLE1 
+#if %_RT_SAMPLE1
 
-#if !XENON && !PS3
   // Unsharpening
   half4 cImageScaledDown = tex2D( screenMapScaledSampler_d2, IN.baseTC.xy );
   cImage = lerp(cImageScaledDown, cImage, ColorGradingParams3.w);
-#endif
 
   // Noise filter
   AddNoise( IN.baseTC.xy, cImage.xyz );
@@ -1808,7 +1750,7 @@ pixout ColorGradingPS(vtxOut IN)
 
 #endif
 
-#if %_RT_SAMPLE4
+#if %_RT_SAMPLE1
 
   // Photo filter
   ApplyPhotoFilter( cImage );
@@ -1816,32 +1758,17 @@ pixout ColorGradingPS(vtxOut IN)
 #endif
 
   // General color adjustment
-#if !%_RT_SAMPLE3
-
   AdjustColor(cImage );
-
-#endif
   
 #if %_RT_SAMPLE2
 
   // Selective color adjustment
-  SelectiveColor( cImage.xyz );
+  SelectiveColor( cImage.xyz );;
 
 #endif
 
-#if %_RT_SAMPLE3
+  OUT.Color.xyz = cImage;
 
-	LookupColorChart(chartSampler, cImage.xyz);
-	 	
-#endif
-
-  half fCenterDist = length(IN.baseTC.xy*2-1);
-  half fVignetting = lerp(1, sqrt(1 - saturate(fCenterDist - ColorGradingParams5.z)), ColorGradingParams5.w );
-  fVignetting = smoothstep(0, 1, fVignetting);
-  //half fCenterDist = length(IN.baseTC.xy*2-1);
-  //fCenterDist *= fCenterDist;
-  //half fVignetting = saturate( 1 - fCenterDist * ColorGradingParams5.w  );
-  OUT.Color.xyz = cImage * fVignetting;
   return OUT;
 }
 
@@ -1851,8 +1778,8 @@ technique ColorGrading
 {
   pass p0
   {
-    VertexShader = compile vs_2_0 BaseVS();
-    PixelShader = compile ps_2_x ColorGradingPS();
+    VertexShader = compile vs_2_0 BaseVS() GeneralVS;            
+    PixelShader = compile ps_2_x ColorGradingPS() GeneralPS;
     CullMode = None;        
   }
 }
@@ -1893,304 +1820,5 @@ technique WaterVolumesNormalGen
     CullMode = None;    
   }
 }
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// color charts merging
-
-sampler2D layer0Sampler : register (s0);
-sampler2D layer1Sampler : register (s1);
-sampler2D layer2Sampler : register (s2);
-sampler2D layer3Sampler : register (s3);
-
-float4 LayerBlendAmount;
-
-struct a2v_cch
-{
-  IN_P
-  IN_TBASE
-  IN_C0
-};
-
-struct v2f_cch
-{
-	float4 HPosition : POSITION;	
-	float2 baseTC : TEXCOORD0;
-};
-
-v2f_cch MergeColorChartsVS(a2v_cch IN)
-{
-	v2f_cch OUT = (v2f_cch)0;
-
-  OUT.baseTC.xy = IN.Position.xy * float2(0.5, -0.5) + 0.5;
-	OUT.HPosition = IN.Position;
-#if !D3D10 && !PS3
-  OUT.HPosition.xy += 2 * float2(-g_VS_ScreenSize.z, g_VS_ScreenSize.w);
-#endif
-
-	return OUT;
-}
-
-pixout MergeColorChartsPS(v2f_cch IN)
-{
-	pixout OUT;
-
-	half3 col = half3(tex2D(layer0Sampler, IN.baseTC.xy).xyz) * half(LayerBlendAmount.x);
-	
-	#if %_RT_SAMPLE1 || %_RT_SAMPLE0
-		col += half3(tex2D(layer1Sampler, IN.baseTC.xy).xyz) * half(LayerBlendAmount.y);
-	#endif
-	
-	#if %_RT_SAMPLE1
-		col += half3(tex2D(layer2Sampler, IN.baseTC.xy).xyz) * half(LayerBlendAmount.z);
-	#endif
-	
-	#if %_RT_SAMPLE1 && %_RT_SAMPLE0
-		col += half3(tex2D(layer3Sampler, IN.baseTC.xy).xyz) * half(LayerBlendAmount.w);
-	#endif
- 
-  OUT.Color = half4(col, 1);
-  
-	return OUT;
-}
-
-technique MergeColorCharts
-{
-  pass p0
-  {
-    VertexShader = compile vs_Auto MergeColorChartsVS();
-    PixelShader = compile ps_Auto MergeColorChartsPS();
-    CullMode = None;    
-  }
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// combine color matrix with color chart
-
-sampler2D identityChartSampler : register (s0);
-sampler2D mergedChartSampler : register (s1);
-
-float4 ColorMatrixRow0;
-float4 ColorMatrixRow1;
-float4 ColorMatrixRow2;
-
-v2f_cch CombineColorGradingWithColorChartVS(a2v_cch IN)
-{
-	v2f_cch OUT = (v2f_cch)0;
-
-  OUT.baseTC.xy = IN.Position.xy * float2(0.5, -0.5) + 0.5;
-	OUT.HPosition = IN.Position;
-#if !D3D10 && !PS3
-  OUT.HPosition.xy += 2 * float2(-g_VS_ScreenSize.z, g_VS_ScreenSize.w);
-#endif
-
-	return OUT;
-}
-
-pixout CombineColorGradingWithColorChartPS(v2f_cch IN)
-{
-	pixout OUT;
-
-	half4 col = half4(tex2D(identityChartSampler, IN.baseTC.xy).xyz, 1);	
-
-#if %_RT_SAMPLE0
-
-  // Levels adjustment
-  AdjustLevels( col.xyz );
-
-#endif
-
-#if %_RT_SAMPLE4
-
-  // Photo filter
-  ApplyPhotoFilter( col );
-
-#endif
-
-  // General color adjustment
-  AdjustColor(col );
-  
-#if %_RT_SAMPLE2
-
-  // Selective color adjustment
-  SelectiveColor( col.xyz );
-
-#endif
-
-  col = saturate(col);
-
-
-	LookupColorChart(mergedChartSampler, col.xyz);
-  OUT.Color = col;
-  
-	return OUT;
-}
-
-technique CombineColorGradingWithColorChart
-{
-  pass p0
-  {
-    VertexShader = compile vs_Auto CombineColorGradingWithColorChartVS();
-    PixelShader = compile ps_Auto CombineColorGradingWithColorChartPS();
-    CullMode = None;
-  }
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// color charts debug viz
-
-sampler2D dispChartSampler : register (s0);
-
-v2f_cch DisplayColorChartsVS(a2v_cch IN)
-{
-	v2f_cch OUT = (v2f_cch)0;
-
-  OUT.baseTC.xy = IN.baseTC.xy;
-	OUT.HPosition = IN.Position;
-	OUT.HPosition.xy = 2 * IN.Position.xy * (2 * float2(g_VS_ScreenSize.z, -g_VS_ScreenSize.w)) + float2(-1, 1);
-#if !D3D10 && !PS3
-  OUT.HPosition.xy += 2 * float2(-g_VS_ScreenSize.z, g_VS_ScreenSize.w);
-#endif
-
-	return OUT;
-}
-
-pixout DisplayColorChartsPS(v2f_cch IN)
-{
-	pixout OUT;
-
-	half3 col = tex2D(dispChartSampler, IN.baseTC.xy).xyz;	
-  OUT.Color = half4(col, 1);
-  
-	return OUT;
-}
-
-technique DisplayColorCharts
-{
-  pass p0
-  {
-    VertexShader = compile vs_Auto DisplayColorChartsVS();
-    PixelShader = compile ps_Auto DisplayColorChartsPS();
-    CullMode = None;
-  }
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-/// SceneRain technique //////////////////////////////////////////////////////////////////////
-
-half4 sceneRainParams;
-
-sampler2D rainFallSampler : register (s5)
-{
-  Texture = textures/defaults/rainfall.tif;
-  MinFilter = LINEAR;
-  MagFilter = LINEAR;
-  MipFilter = LINEAR; 
-  AddressU = Wrap;
-  AddressV = Wrap;	
-};
-
-struct vtxOutRain
-{
-  float4 HPosition  : POSITION;
-  float4 tcProj     : TEXCOORDN;
-  float4 baseTC  : TEXCOORDN;
-  float2 tcWeights  : TEXCOORDN;
-};
-
-
-vtxOutRain SceneRainVS(vtxIn IN)
-{
-  vtxOutRain OUT = (vtxOutRain)0; 
-  
-  float4 vPos = IN.Position;
-  float3 vCone = vPos.xyz;
-  
-  // generate uvs
-  float3 fLen = length(g_VS_WorldViewPos.xyz);
-
-  OUT.tcWeights.x = 1;
-  if( dot(vPos.xy, 1) == 0)
-  {
-    vCone.z = 8;
-    g_VS_WorldViewPos.xy += 2*float2(sin(g_VS_AnimGenParams.w+ sceneRainParams.w), cos(g_VS_AnimGenParams.w +  sceneRainParams.w));
-    OUT.tcWeights.x = 0;
-  }
-  
-  vCone.z -= 1;
-#if !XENON
-	// why not working properly on 360 ?
-  vCone.xy *= 4;
-#else
-	vCone.xy *= 2;
-#endif
-
-  vCone.xy *= sceneRainParams.w;
-
-  OUT.baseTC = vCone.xyzz;
-  //g_VS_WorldViewPos.xyz = normalize(g_VS_WorldViewPos.xyz) * fLen;
-
-  // position for using correct depth test to exclude weapons
-  vPos.xyz = (vCone) + g_VS_WorldViewPos.xyz;
-  OUT.HPosition = mul(vpMatrix, vPos);  
-
-  OUT.tcProj = HPosToScreenTC( OUT.HPosition );
-  return OUT;
-}
-
-
-///////////////// pixel shader //////////////////
-
-pixout SceneRainPS(vtxOutRain IN)
-{
-  pixout OUT;
-
-#if PS3
-  #pragma sce-cgc("-texformat default COMPRESSED_RGBA_S3TC_DXT5");
-  #pragma sce-cgc("-fastprecision");  
-#endif
-  
-  half4 cScreen = tex2Dproj(screenMapSampler, IN.tcProj );      
-  float cDepth = GetLinearDepth_ProjTC(depthMapSampler, IN.tcProj ) *PS_NearFarClipDist.y;       
-  half fSoftIsec = saturate((cDepth-IN.tcProj.w)*2);
-
-  // todo: compute all this per-vertex, pass through as interpolators
-
-  half2 vDir = normalize(IN.baseTC.xy);
-  half2 vBlend = abs(vDir);
-  vBlend *=vBlend;
-  vBlend *=vBlend;
-  float4 baseTC = IN.baseTC.yzxz;
-
-  AnimGenParams.x*= 1.25;
-
-  OUT.Color = tex2D(rainFallSampler, baseTC.xy*1.5+float2(0, AnimGenParams.x)) * vBlend.x+
-    tex2D(rainFallSampler, baseTC.zw*1.5+  float2(0, AnimGenParams.x)) * vBlend.y;
-
-  OUT.Color += tex2D(rainFallSampler, baseTC.xy+  0.2 +float2(0, AnimGenParams.x*1.5)) * vBlend.x+
-    tex2D(rainFallSampler, baseTC.zw+  0.2 +float2(0, AnimGenParams.x*1.5)) * vBlend.y;
-
-  // soft intersection with depth, attenuate top to minimize artefacts, and soften bottom
-  OUT.Color *= 0.3 * fSoftIsec * saturate(IN.tcWeights.x ) * saturate( 10*(1-IN.tcWeights.x) );
-  
-  // todo: take VdotR into account
-  OUT.Color += 2*OUT.Color*sceneRainParams.z;
-
-  OUT.Color *= sceneRainParams.x;
-      
-  return OUT;
-}
-
-////////////////// technique /////////////////////
-
-technique SceneRain
-{
-  pass p0
-  {
-    VertexShader = compile vs_Auto SceneRainVS();
-    PixelShader = compile ps_Auto SceneRainPS();    
-    CullMode = None;        
-  }
-}
-
 /////////////////////// eof ///
 

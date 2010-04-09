@@ -11,7 +11,7 @@
 --  - 30/ 6/2006   12:30 : Created by Márcio Martins
 --
 ----------------------------------------------------------------------------------------------------
---[[PowerStruggle.rankList=
+PowerStruggle.rankList=
 {
 	{ name="@ui_short_rank_1", 	desc="@ui_rank_1",	cp=0, 		min_pp=100,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
 	{ name="@ui_short_rank_2",	desc="@ui_rank_2",	cp=4, 		min_pp=125,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
@@ -21,9 +21,9 @@
 	{ name="@ui_short_rank_6", 	desc="@ui_rank_6",	cp=64, 	min_pp=250,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
 	{ name="@ui_short_rank_7", 	desc="@ui_rank_7",	cp=128,	 	min_pp=275,		equip={ "SOCOM", "SOCOM", "Binoculars", "NightVision", 	},},
 	{ name="@ui_short_rank_8", 	desc="@ui_rank_8",	cp=256, 	min_pp=300,	  	equip={ "SOCOM", "SOCOM", "Binoculars", "NightVision", 	},},
-};--]]
+};
 
-{
+--[[{
 	{ name="1", 	desc="1",	cp=0, 		min_pp=100,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
 	{ name="2",	desc="2",	cp=2, 		min_pp=125,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
 	{ name="3", 	desc="3",	cp=4, 		min_pp=150,		equip={ "SOCOM", "Binoculars", "NightVision", 	},},
@@ -35,7 +35,7 @@
 	{ name="9", 	desc="9",	cp=256, 	min_pp=300,	  	equip={ "SOCOM", "Binoculars", "NightVision", 	},},
 	{ name="10", 	desc="10",	cp=512, 	min_pp=325,	  	equip={ "SOCOM", "Binoculars", "NightVision", 	},},
 	{ name="11", 	desc="11",	cp=1024, 	min_pp=350,	  	equip={ "SOCOM", "Binoculars", "NightVision", 	},},
-};
+};--]]
 
 
 PowerStruggle.cpList=

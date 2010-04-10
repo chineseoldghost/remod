@@ -16,12 +16,12 @@
 				<param name="zoom_in_time" value="0.2" />
 				<param name="zoom_out_time" value="0.2" />
 				<stages>
-					<stage value="2" />
+					<stage value="1" />
 					<stage value="6" />
-					<stage value="18" />
+					<stage value="12" />
 				</stages>
 			</zoom>
-			<zoomSway>
+			<!--<zoomSway>
 				<param name="maxX" value="0.012" />
 				<param name="maxY" value="0.015" />
 				<param name="stabilizeTime" value="1.5"/>
@@ -30,7 +30,7 @@
 				<param name="strengthScaleTime" value="0.75"/>
 				<param name="crouchScale" value="0.75"/>
 				<param name="proneScale" value="0.5"/>
-			</zoomSway>
+			</zoomSway>-->
 			<scope>
 				<param name="scope" value="scope_binoculars" />
 			</scope>

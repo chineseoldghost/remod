@@ -79,7 +79,7 @@ Remod
 			+Actor
 				Game\Scripts\Entities\actor\BasicActor.lua
 				Game\Scripts\Entities\actor\player.lua
-			-Items
+			+Items
 				+XML
 					-Accessories
 						Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml
@@ -113,7 +113,7 @@ Remod
 						Game\Scripts\Entities\Items\XML\Accessories\FGL40Detonator.xml
 						Game\Scripts\Entities\Items\XML\Accessories\AssaultScope.xml
 						Game\Scripts\Entities\Items\XML\Accessories\AlienCore.xml
-					+Ammo
+					-Ammo
 						-Vehicles
 							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\ASV20.xml
 							Game\Scripts\Entities\Items\XML\Ammo\Vehicles\GaussTankBullet.xml
@@ -182,7 +182,7 @@ Remod
 						Game\Scripts\Entities\Items\XML\Ammo\A2AHomingMissile.xml
 						Game\Scripts\Entities\Items\Explosive.lua
 						Game\Scripts\Entities\Items\XML\Ammo\TACC4Explosive.xml
-					-Weapons
+					+Weapons
 						-AmmoPickups
 							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\EMPGrenade.xml
 							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\SmokeGrenade.xml
@@ -193,7 +193,7 @@ Remod
 							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\CustomAmmoPickupLarge.xml
 							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\CustomAmmoPickup.xml
 							Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\AlienPowerCore.xml
-						+Vehicles
+						-Vehicles
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AACannon.xml
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\APCCannon.xml
 							Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AsianCoaxialGun.xml
@@ -270,30 +270,38 @@ Remod
 		Game\Scripts\main.lua
 		Game\Scripts\Remod.lua
 [Open project files]
-0=Game\Shaders\HWScripts\CryFX\PostProcess.cfx
-1=Game\Scripts\Entities\Items\XML\Ammo\Bullet.xml
-2=Game\Scripts\GameRules\PowerStruggleBuying.lua
-3=Game\Scripts\GameRules\PowerStruggleRank.lua
-4=Game\Scripts\Entities\actor\BasicActor.lua
-5=Game\Languages\game_text_messages.xml
+0=Game\Languages\game_text_messages.xml
+1=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
+2=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
+3=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
+4=Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml
+5=Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
+6=Game\Scripts\Entities\Items\XML\Weapons\Binoculars.xml
+7=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\GameRules\PowerStruggleRank.lua
-[Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
-TopLine=1
-Caret=1,1
-[Game\Scripts\Entities\Items\XML\Ammo\Bullet.xml]
-TopLine=1
-Caret=30,17
-[Game\Scripts\GameRules\PowerStruggleBuying.lua]
-TopLine=152
-Caret=6,179
-[Game\Scripts\GameRules\PowerStruggleRank.lua]
-TopLine=7
-Caret=68,23
-[Game\Scripts\Entities\actor\BasicActor.lua]
-TopLine=835
-Caret=27,858
+Selected=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
 [Game\Languages\game_text_messages.xml]
 TopLine=1
 Caret=1,1
+[Game\Scripts\Entities\Items\XML\Weapons\SMG.xml]
+TopLine=133
+Caret=71,147
+[Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
+TopLine=33
+Caret=60,46
+[Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
+TopLine=25
+Caret=71,150
+[Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml]
+TopLine=101
+Caret=78,120
+[Game\Scripts\Entities\Items\XML\Weapons\AY69.xml]
+TopLine=119
+Caret=81,143
+[Game\Scripts\Entities\Items\XML\Weapons\Binoculars.xml]
+TopLine=1
+Caret=39,36
+[..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml]
+TopLine=333
+Caret=27,354

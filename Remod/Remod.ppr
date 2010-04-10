@@ -279,9 +279,11 @@ Remod
 6=Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
 7=Game\Scripts\Entities\Items\XML\Weapons\Binoculars.xml
 8=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
+9=Game\Scripts\GameRules\PowerStruggleBuying.lua
+10=Game\Scripts\GameRules\PowerStruggleRank.lua
 [Selected Project Files]
 Main=
-Selected=Game\Languages\game_text_messages.xml
+Selected=Game\Scripts\GameRules\PowerStruggleBuying.lua
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
@@ -309,3 +311,9 @@ Caret=39,36
 [..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml]
 TopLine=333
 Caret=27,354
+[Game\Scripts\GameRules\PowerStruggleBuying.lua]
+TopLine=1
+Caret=17,189
+[Game\Scripts\GameRules\PowerStruggleRank.lua]
+TopLine=1
+Caret=3,24

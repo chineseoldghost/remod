@@ -186,7 +186,7 @@ PowerStruggle.ppList=
 {
 	SPAWN							= 100,
 	START							= 100,
---	KILL							= 0,
+	KILL							= 25,
 	KILL_RANKDIFF_MULT				= 1,
 	TURRETKILL						= 0,
 	HEADSHOT						= 0,

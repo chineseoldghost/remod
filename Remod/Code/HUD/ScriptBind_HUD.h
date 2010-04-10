@@ -77,8 +77,6 @@ protected:
 	virtual int GetLastInGameSave(IFunctionHandler *pH);
 	virtual int DisplayKillMessage(IFunctionHandler *pH, const char* name, int times, bool teamkill, bool frag, bool selfkill, int points);
 	virtual int DisplayFunMessage(IFunctionHandler *pH, const char* msg);
-	virtual int BootHUD(IFunctionHandler *pH);
-	virtual int BreakHUD(IFunctionHandler *pH);
 
 private:
 	void RegisterGlobals();

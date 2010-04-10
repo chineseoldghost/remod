@@ -399,6 +399,7 @@ void CHUD::MP_ResetBegin()
 	m_bNoMouse	= g_pGameActions->FilterNoMouse	()->Enabled();
 	m_bNoMove		= g_pGameActions->FilterNoMove	()->Enabled();
 	m_bSuitMenuFilter = g_pGameActions->FilterSuitMenu()->Enabled();
+	RebootHUD();
 }
 
 //-----------------------------------------------------------------------------------------------------

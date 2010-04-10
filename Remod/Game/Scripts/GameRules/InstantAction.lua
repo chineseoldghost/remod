@@ -483,8 +483,6 @@ function InstantAction.Server:OnClientConnect(channelId, reset, name)
 		end
 	end
 
-	HUD.BootHUD();
-
 	return player;
 end
 
@@ -1098,7 +1096,6 @@ function InstantAction.Client:OnKill(playerId, shooterId, weaponClassName, damag
 	local melee=string.find(type, "melee");
 	
 	if(playerId == g_localActorId) then
-		HUD.BreakHUD();
 		if(headshot) then
 			HUD.ShowDeathFX(2);
 		elseif (melee) then

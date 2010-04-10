@@ -105,9 +105,6 @@ void CScriptBind_HUD::RegisterMethods()
 	
 	SCRIPT_REG_TEMPLFUNC(FadeOutBigOverlayFlashMessage, "");
 	SCRIPT_REG_TEMPLFUNC(GetLastInGameSave, "");
-
-	SCRIPT_REG_TEMPLFUNC(BootHUD, "");
-	SCRIPT_REG_TEMPLFUNC(BreakHUD, "");
 	
 #undef SCRIPT_REG_CLASSNAME
 }
@@ -662,31 +659,6 @@ int CScriptBind_HUD::GetLastInGameSave(IFunctionHandler *pH)
 	if (lastSave)
 	{
 		return pH->EndFunction(lastSave->c_str());
-	}
-	return pH->EndFunction();
-}
-
-int CScriptBind_HUD::BootHUD(IFunctionHandler *pH)
-{
-	if(!gEnv->pSystem->IsDedicated())
-	{
-		CHUD *pHUD = g_pGame->GetHUD();
-		pHUD->m_animBreakHUD.Load("Libs/UI/HUD_Reboot.gfx", eFD_Center, eFAF_ManualRender|eFAF_Visible);
-		pHUD->m_animBreakHUD.SetVisible(true);
-		pHUD->m_animBreakHUD.Init("Libs/UI/HUD_Reboot.gfx", eFD_Center, eFAF_ManualRender|eFAF_Visible);
-	}
-	return pH->EndFunction();
-}
-
-
-int CScriptBind_HUD::BreakHUD(IFunctionHandler *pH)
-{
-	if(!gEnv->pSystem->IsDedicated())
-	{
-		CHUD *pHUD = g_pGame->GetHUD();
-		pHUD->m_animBreakHUD.Load("Libs/UI/HUD_Lost.gfx", eFD_Center, eFAF_ManualRender|eFAF_Visible);
-		pHUD->m_animBreakHUD.SetVisible(true);
-		pHUD->m_animBreakHUD.Init("Libs/UI/HUD_Lost.gfx", eFD_Center, eFAF_ManualRender|eFAF_Visible);
 	}
 	return pH->EndFunction();
 }

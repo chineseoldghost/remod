@@ -128,7 +128,7 @@ public:
 	//void RebootHUDTimerExpired(TimerID id);
 	//void BreakHUDTimerExpired(TimerID id);
 
-	void RegisterKill(EntityId playerId, EntityId shooterId, const char *weaponClassName, int material);
+	void RegisterKill(EntityId shooterId);
 	//void TimerExpired(TimerID id);
 
 	float RegisteredKills;

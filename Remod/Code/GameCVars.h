@@ -482,6 +482,7 @@ struct SCVars
 	int     re_suddendeath;
 	int     re_suddendeathtime;
 	int		re_intros;
+	int		re_thirdpersondeaths;
 
 	SCVars()
 	{

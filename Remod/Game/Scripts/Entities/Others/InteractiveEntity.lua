@@ -43,7 +43,7 @@ InteractiveEntity = {
 			bRigidBodyActive = 1,
 			bRigidBodyAfterDeath = 1,
 			bResting = 1,
-			Density = 5000,
+			Density = 10,
 			Mass = 100,
       Buoyancy=
 			{

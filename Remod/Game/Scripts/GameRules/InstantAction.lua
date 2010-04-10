@@ -1187,7 +1187,6 @@ function InstantAction.Client:OnKill(playerId, shooterId, weaponClassName, damag
 		local forceRespawnTime = System.GetCVar("g_spawn_force_timeout")*1000;
 		self:SetTimer(self.FORCERESPAWN_TIMERID, forceRespawnTime);
 	end
-	self.game:RegisterKill(playerId, shooterId, weaponClassName, material);
 end
 
 ----------------------------------------------------------------------------------------------------

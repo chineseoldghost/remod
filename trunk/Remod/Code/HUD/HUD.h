@@ -553,7 +553,9 @@ public:
 	// marcok: I know it's bad to even have this in the HUD, but the way gamerulessystem is currently used I don't want to duplicate this elsewhere
 	EHUDGAMERULES GetCurrentGameRules()	{	return m_currentGameRules;	}
 
-private:
+	CGameFlashAnimation m_animBreakHUD;
+	CGameFlashAnimation m_animRebootHUD;
+
 
 	//some Update functions
 	void UpdateHealth();
@@ -732,8 +734,8 @@ private:
 	CGameFlashAnimation m_animWarningMessages;
 	CGameFlashAnimation m_animDownloadEntities;
 	CGameFlashAnimation	m_animInitialize;
-	CGameFlashAnimation m_animBreakHUD;
-	CGameFlashAnimation m_animRebootHUD;
+	//CGameFlashAnimation m_animBreakHUD;
+	//CGameFlashAnimation m_animRebootHUD;
 	CGameFlashAnimation m_animAirStrike;
 	CGameFlashAnimation m_animMessages;
 	CGameFlashAnimation m_animChat;

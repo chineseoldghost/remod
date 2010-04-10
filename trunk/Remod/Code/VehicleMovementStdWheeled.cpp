@@ -70,7 +70,7 @@ CVehicleMovementStdWheeled::CVehicleMovementStdWheeled()
   m_airbrakeTime = 0.f;
   m_brakeTimer = 0.f;
   m_tireBlownTimer = 0.f;
-  m_boostEndurance = 7.5f;
+  m_boostEndurance = 0.0f;
   m_boostRegen = m_boostEndurance;
   m_brakeImpulse = 0.f;
   m_boostStrength = 6.f;

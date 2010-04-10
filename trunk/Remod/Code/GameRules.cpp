@@ -760,8 +760,13 @@ void CGameRules::OnKill(CActor *pActor, EntityId shooterId, const char *weaponCl
 {
 	SAFE_HUD_FUNC(ActorDeath(pActor));
 
+	CPlayer *pPlayer = new CPlayer;
+
 	ScriptHandle handleEntity(pActor->GetEntityId()), handleShooter(shooterId);
 	CallScript(m_clientStateScript, "OnKill", handleEntity, handleShooter, weaponClassName, damage, material, hit_type);
+
+	if(shooterId==pPlayer->GetEntityId())
+		g_pGame->RegisterKill(shooterId, weaponClassName, damage, hit_type);
 }
 
 //------------------------------------------------------------------------

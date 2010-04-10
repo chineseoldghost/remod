@@ -1505,6 +1505,14 @@
 				RelativePath=".\ScriptUtils.h"
 				>
 			</File>
+			<File
+				RelativePath=".\TimerEx.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\TimerEx.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="HUD"

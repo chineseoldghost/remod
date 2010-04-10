@@ -105,6 +105,9 @@ void CScriptBind_HUD::RegisterMethods()
 	
 	SCRIPT_REG_TEMPLFUNC(FadeOutBigOverlayFlashMessage, "");
 	SCRIPT_REG_TEMPLFUNC(GetLastInGameSave, "");
+
+	SCRIPT_REG_TEMPLFUNC(BootHUD, "");
+	SCRIPT_REG_TEMPLFUNC(BreakHUD, "");
 	
 #undef SCRIPT_REG_CLASSNAME
 }
@@ -660,5 +663,20 @@ int CScriptBind_HUD::GetLastInGameSave(IFunctionHandler *pH)
 	{
 		return pH->EndFunction(lastSave->c_str());
 	}
+	return pH->EndFunction();
+}
+
+int CScriptBind_HUD::BootHUD(IFunctionHandler *pH)
+{
+	CHUD *pHUD = g_pGame->GetHUD();
+	pHUD->m_animRebootHUD.SetVisible(true);
+	return pH->EndFunction();
+}
+
+
+int CScriptBind_HUD::BreakHUD(IFunctionHandler *pH)
+{
+	CHUD *pHUD = g_pGame->GetHUD();
+	pHUD->m_animBreakHUD.SetVisible(true);
 	return pH->EndFunction();
 }

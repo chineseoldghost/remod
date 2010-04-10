@@ -159,6 +159,6 @@ int CScriptBind_Game::GetNumLightsActivated(IFunctionHandler *pH)
 //////////////////////////////////////////////////////////////////////////
 int CScriptBind_Game::RegisterKill(IFunctionHandler *pH, EntityId playerId, EntityId shooterId, const char *weaponClassName, int material)
 {
-	g_pGame->RegisterKill(playerId, shooterId, weaponClassName, material);
+	g_pGame->RegisterKill(shooterId);
 	return pH->EndFunction();
 }

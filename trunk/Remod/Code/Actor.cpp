@@ -531,6 +531,8 @@ void CActor::Revive( bool fromInit )
 
 	if (IEntityPhysicalProxy* pPProxy = (IEntityPhysicalProxy*)GetEntity()->GetProxy(ENTITY_PROXY_PHYSICS))
 		pPProxy->EnableRestrictedRagdoll(false);
+
+	g_pGame->GetHUD()->BreakHUD();
 }
 
 IGrabHandler *CActor::CreateGrabHanlder()
@@ -3465,6 +3467,7 @@ void CActor::NetKill(EntityId shooterId, uint16 weaponClassId, int damage, int m
 		SetHealth(0);
 
 	Kill();
+	g_pGame->RegisterKill(shooterId);
 
 	g_pGame->GetGameRules()->OnKillMessage(GetEntityId(), shooterId, weaponClassName, damage, material, hit_type);
 
@@ -3487,8 +3490,11 @@ void CActor::NetKill(EntityId shooterId, uint16 weaponClassId, int damage, int m
 				SAFE_HUD_FUNC(GetTagNames()->AddEnemyTagName(shooterId));
 
 			// ensure full body is displayed (otherwise player is headless)
-			if(!IsThirdPerson())
-				ToggleThirdPerson();
+			if(g_pGameCVars->re_thirdpersondeaths==1)
+			{
+				if(!IsThirdPerson())
+					ToggleThirdPerson();
+			}
 		}
 	}
 

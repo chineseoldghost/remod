@@ -507,14 +507,16 @@ void CGame::EditorResetGame(bool bStart)
 	}
 }
 
-void CGame::RegisterKill(EntityId playerId, EntityId shooterId, const char *weaponClassName, int material)
+void CGame::RegisterKill(EntityId shooterId)
 {
+	CryLogAlways("512");
 	RegisteredKills++;
 	CheckKillStats();
 }
 
 void CGame::CheckKillStats()
 {
+	CryLogAlways("518");
 	if(RegisteredKills==5)
 	{
 		CHUD *pHUD = g_pGame->GetHUD();

@@ -3690,8 +3690,6 @@ void CPlayer::SetHealth(int health )
 				if (bIsGod)
 				{
 				SAFE_HUD_FUNC(TextMessage("GodMode:died!"));
-				CHUD *pHUD = g_pGame->GetHUD();
-				pHUD->RebootHUD();
 			}
 		}
 		if (bIsGod)		// report GOD death
@@ -3719,7 +3717,7 @@ void CPlayer::SetHealth(int health )
 		if(IsClient())
 		{
 			SAFE_HUD_FUNC(GetRadar()->Reset());
-			SAFE_HUD_FUNC(BreakHUD(2));
+			SAFE_HUD_FUNC(BreakHUD(1)); // default is 2
 			SAFE_HUD_FUNC(OnSetActorItem(NULL,NULL));
 
 			if(IItem *pItem = GetCurrentItem(false))

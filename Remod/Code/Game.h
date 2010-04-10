@@ -63,7 +63,7 @@ class CSoundMoods;
 class CLaptopUtil;
 class CLCDWrapper;
 class CDownloadTask;
-class CTimerManager; // Remod | Timer
+//class CTimerManager; // Remod | Timer
 
 // when you add stuff here, also update in CGame::RegisterGameObjectEvents
 enum ECryGameEvent
@@ -117,7 +117,7 @@ public:
 	virtual ~CGame();
 
 	// IGame
-	CTimerManager* GetTimerManager(){return m_pTimerManager;};
+	//CTimerManager* GetTimerManager(){return m_pTimerManager;};
 	virtual bool  Init(IGameFramework *pFramework);
 	virtual bool  CompleteInit();
 	virtual void  Shutdown();
@@ -217,9 +217,6 @@ public:
 	static void DumpMemInfo(const char* format, ...) PRINTF_PARAMS(1, 2);
 
 	CDownloadTask* GetDownloadTask() const { return m_pDownloadTask; };
-
-private:
-	CTimerManager* m_pTimerManager;
 
 protected:
 	virtual void LoadActionMaps(const char* filename = "libs/config/remodProfile.xml");

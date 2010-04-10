@@ -52,7 +52,7 @@
 // Remod | Additions
 #include "MODCursor.h"
  MODCursor *m_pCursor = NULL;
-#include "TimerEx.h"
+//#include "TimerEx.h"
 
 #include "ServerSynchedStorage.h"
 #include "ClientSynchedStorage.h"
@@ -114,8 +114,7 @@ CGame::CGame()
 	m_uiPlayerID(-1),
 	m_pSPAnalyst(0),
 	m_pLaptopUtil(0),
-	m_pDownloadTask(0),
-	m_pTimerManager(0)// Remod | Timer
+	m_pDownloadTask(0)
 {
 	m_pCVars = new SCVars();
 	g_pGameCVars = m_pCVars;
@@ -146,7 +145,7 @@ CGame::~CGame()
 	SAFE_DELETE(m_pSoundMoods);
 	SAFE_DELETE(m_pHUD);
 	SAFE_DELETE(m_pSPAnalyst);
-	SAFE_DELETE(m_pTimerManager); // Remod | Timer
+	//SAFE_DELETE(m_pTimerManager); // Remod | Timer
 	m_pWeaponSystem->Release();
 	SAFE_DELETE(m_pItemStrings);
 	SAFE_DELETE(m_pItemSharedParamsList);
@@ -161,9 +160,6 @@ CGame::~CGame()
 bool CGame::Init(IGameFramework *pFramework)
 {
   LOADING_TIME_PROFILE_SECTION(GetISystem());
-
-  if(!m_pTimerManager)
-      m_pTimerManager = new CTimerManager();
 
 #ifdef GAME_DEBUG_MEM
 	DumpMemInfo("CGame::Init start");
@@ -429,8 +425,6 @@ int CGame::Update(bool haveFocus, unsigned int updateFlags)
 
 		m_pBulletTime->Update();
 		m_pSoundMoods->Update();
-		if(m_pTimerManager)
-         m_pTimerManager->Update();
 	}
 
 	m_pFramework->PostUpdate( true, updateFlags );
@@ -512,24 +506,6 @@ void CGame::EditorResetGame(bool bStart)
 		SAFE_DELETE(m_pHUD);
 	}
 }
-/*
-void CGame::BreakHUDTimerExpired(TimerID id) // Remod | Timer
-{
-   pHUD->m_animBreakHUD.SetVisible(false);
-}
-
-void CGame::RebootHUDTimerExpired(TimerID id) // Remod | Timer
-{
-   pHUD->m_animRebootHUD.SetVisible(false);
-}
-*/
-
-void TimerExpired(TimerID id)
-{
-   CryLogAlways("TIMER EXPIRED...%d", id);
-}
-
-// g_pGame->GetTimerManager()->CreateTimer(2.0f, true, TimerExpired);
 
 void CGame::RegisterKill(EntityId shooterId, const char *weaponClassName, int damage, int hit_type)
 {

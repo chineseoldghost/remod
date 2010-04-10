@@ -39,7 +39,8 @@ protected:
 	//!	Queries battle status, range from 0 (quiet) to 1 (full combat)
 	int	QueryBattleStatus(IFunctionHandler *pH);
 	int GetNumLightsActivated(IFunctionHandler *pH);
-	int RegisterKill(IFunctionHandler *pH);
+	int RegisterKill(IFunctionHandler *pH, EntityId playerId, EntityId shooterId, const char *weaponClassName, int material);
+
 
 private:
 	void RegisterGlobals();

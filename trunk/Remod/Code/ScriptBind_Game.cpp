@@ -53,7 +53,7 @@ void CScriptBind_Game::RegisterMethods()
 	SCRIPT_REG_TEMPLFUNC(PlayVideo, "");
 	SCRIPT_REG_TEMPLFUNC(QueryBattleStatus, "");
 	SCRIPT_REG_TEMPLFUNC(GetNumLightsActivated,"");
-	SCRIPT_REG_TEMPLFUNC(RegisterKill,"");
+	SCRIPT_REG_TEMPLFUNC(RegisterKill, "playerId, shooterId, weaponClassName, hit_type");
 
 #undef SCRIPT_REG_CLASSNAME
 }
@@ -157,10 +157,8 @@ int CScriptBind_Game::GetNumLightsActivated(IFunctionHandler *pH)
 	return pH->EndFunction(CLam::GetNumLightsActivated());
 }
 //////////////////////////////////////////////////////////////////////////
-int CScriptBind_Game::RegisterKill(IFunctionHandler *pH)
+int CScriptBind_Game::RegisterKill(IFunctionHandler *pH, EntityId playerId, EntityId shooterId, const char *weaponClassName, int material)
 {
-	g_pGame->KillStats++;
-	g_pGame->GetHUD()->DisplayFlashMessage("KILL REGISTERED", 2, ColorF(1.0f, 0,0), true, 0);
-
+	g_pGame->RegisterKill(playerId, shooterId, weaponClassName, hit_type);
 	return pH->EndFunction();
 }

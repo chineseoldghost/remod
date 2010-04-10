@@ -669,8 +669,9 @@ int CScriptBind_HUD::GetLastInGameSave(IFunctionHandler *pH)
 int CScriptBind_HUD::BootHUD(IFunctionHandler *pH)
 {
 	CHUD *pHUD = g_pGame->GetHUD();
-	pHUD->m_animRebootHUD.Reload();
-	pHUD->m_animRebootHUD.SetVisible(true);
+	pHUD->m_animBreakHUD.Load("Libs/UI/HUD_Reboot.gfx", eFD_Center, eFAF_ManualRender|eFAF_Visible);
+	pHUD->m_animBreakHUD.SetVisible(true);
+	pHUD->m_animBreakHUD.Init("Libs/UI/HUD_Reboot.gfx", eFD_Center, eFAF_ManualRender|eFAF_Visible);
 	return pH->EndFunction();
 }
 
@@ -678,7 +679,8 @@ int CScriptBind_HUD::BootHUD(IFunctionHandler *pH)
 int CScriptBind_HUD::BreakHUD(IFunctionHandler *pH)
 {
 	CHUD *pHUD = g_pGame->GetHUD();
-	pHUD->m_animBreakHUD.Reload();
+	pHUD->m_animBreakHUD.Load("Libs/UI/HUD_Lost.gfx", eFD_Center, eFAF_ManualRender|eFAF_Visible);
 	pHUD->m_animBreakHUD.SetVisible(true);
+	pHUD->m_animBreakHUD.Init("Libs/UI/HUD_Lost.gfx", eFD_Center, eFAF_ManualRender|eFAF_Visible);
 	return pH->EndFunction();
 }

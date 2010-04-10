@@ -510,9 +510,6 @@ void CGame::EditorResetGame(bool bStart)
 void CGame::RegisterKill(EntityId playerId, EntityId shooterId, const char *weaponClassName, int material)
 {
 	RegisteredKills++;
-	string mat = g_pGame->GetGameRules()->GetHitMaterial(material);
-	if(stricmp(mat, "head")
-		RegisteredHeadshots++;
 	CheckKillStats();
 }
 
@@ -523,11 +520,6 @@ void CGame::CheckKillStats()
 		CHUD *pHUD = g_pGame->GetHUD();
 		if(pHUD)
 			pHUD->DisplayBigOverlayFlashMessage("DEBUG ACHIEVEMENT 'OHMAIGAWD5KILLZ' EARNED", 3.0f, 400, 300, ColorF(1,1,1));
-	}
-	if(RegisteredHeadshots==5)
-		CHUD *pHUD = g_pGame->GetHUD();
-		if(pHUD)
-			pHUD->DisplayBigOverlayFlashMessage("DEBUG ACHIEVEMENT '5 HEADSHAWTZ' EARNED", 3.0f, 400, 300, ColorF(1,1,1));
 	}
 }
 

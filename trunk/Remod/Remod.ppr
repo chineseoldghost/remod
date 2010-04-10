@@ -270,17 +270,21 @@ Remod
 		Game\Scripts\main.lua
 		Game\Scripts\Remod.lua
 [Open project files]
-0=Game\Languages\game_text_messages.xml
-1=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
-2=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
-3=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
-4=Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml
-5=Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
-6=Game\Scripts\Entities\Items\XML\Weapons\Binoculars.xml
-7=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
+0=Game\Shaders\HWScripts\CryFX\PostProcess.cfx
+1=Game\Languages\game_text_messages.xml
+2=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
+3=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
+4=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
+5=Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml
+6=Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
+7=Game\Scripts\Entities\Items\XML\Weapons\Binoculars.xml
+8=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
 [Selected Project Files]
 Main=
-Selected=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
+Selected=Game\Languages\game_text_messages.xml
+[Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
+TopLine=1
+Caret=1,1
 [Game\Languages\game_text_messages.xml]
 TopLine=1
 Caret=1,1
@@ -291,7 +295,7 @@ Caret=71,147
 TopLine=33
 Caret=60,46
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
-TopLine=25
+TopLine=108
 Caret=71,150
 [Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml]
 TopLine=101

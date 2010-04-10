@@ -473,14 +473,15 @@ void CGameRules::ClientExplosion(const ExplosionInfo &explosionInfo)
 		{
 			fSuitEnergyBeforeExplosion = static_cast<CPlayer *>(pClientActor)->GetNanoSuit()->GetSuitEnergy();
 			fHealthBeforeExplosion = pClientActor->GetHealth();
-		}
-		if(IPhysicalEntity *pPE = GetEntity()->GetPhysics())
-		{
-			pe_status_dynamics dynStat;
-			pe_action_impulse actionImp;
-			actionImp.impulse = Vec3(0,0,10) * dynStat.mass;
-			actionImp.iApplyTime = 0;
-			pPE->Action(&actionImp);
+			CActor *pActor = (CActor *)pClientActor;
+			if(IPhysicalEntity *pPE = pActor->GetEntity()->GetPhysics())
+			{
+				pe_status_dynamics dynStat;
+				pe_action_impulse actionImp;
+				actionImp.impulse = Vec3(0,0,10) * dynStat.mass;
+				actionImp.iApplyTime = 0;
+				pPE->Action(&actionImp);
+			}
 		}
 		
 

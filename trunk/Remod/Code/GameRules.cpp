@@ -3675,6 +3675,7 @@ void CGameRules::UpdateAffectedEntitiesSet(TExplosionAffectedEntities &affectedE
 					IPhysicalEntity* pEnt = pEntity->GetPhysics();
 					if (pEnt)
 					{
+
 						float affected=gEnv->pPhysicalWorld->IsAffectedByExplosion(pEnt);
 
 						AddOrUpdateAffectedEntity(affectedEnts, pEntity, affected);

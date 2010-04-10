@@ -22,6 +22,7 @@
 #include "BulletTime.h"
 #include "SoundMoods.h"
 #include "HUD/HUD.h"
+#include "Actor.h"
 #include "WeaponSystem.h"
 
 #include <ICryPak.h>

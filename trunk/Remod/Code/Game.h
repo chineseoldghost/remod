@@ -52,6 +52,7 @@ class  CGameActions;
 class CGameRules;
 class CBulletTime;
 class CHUD;
+class CActor;
 class CSynchedStorage;
 class CClientSynchedStorage;
 class CServerSynchedStorage;
@@ -292,6 +293,7 @@ protected:
 	CGameActions				*m_pGameActions;	
 	IPlayerProfileManager* m_pPlayerProfileManager;
 	CHUD								*m_pHUD;
+	CActor								*m_pActor;
 
 	CServerSynchedStorage	*m_pServerSynchedStorage;
 	CClientSynchedStorage	*m_pClientSynchedStorage;
@@ -344,6 +346,6 @@ extern CGame *g_pGame;
 #define SAFE_SOUNDMOODS_FUNC(func)\
 	{	if(g_pGame && g_pGame->GetSoundMoods()) g_pGame->GetSoundMoods()->func; }
 
-#define CRAPDOLLS
+//#define CRAPDOLLS
 
 #endif //__GAME_H__

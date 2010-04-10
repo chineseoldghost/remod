@@ -401,10 +401,10 @@ void CGameRules::CullEntitiesInExplosion(const ExplosionInfo &explosionInfo)
 void CGameRules::ClientExplosion(const ExplosionInfo &explosionInfo)
 {
 	// let 3D engine know about explosion (will create holes and remove vegetation)
-	//if (explosionInfo.hole_size > 0.0f)
-	//{
-		//gEnv->p3DEngine->OnExplosion(explosionInfo.pos, explosionInfo.hole_size, true);
-	//}
+	if (explosionInfo.hole_size > 0.0f)
+	{
+		gEnv->p3DEngine->OnExplosion(explosionInfo.pos, explosionInfo.hole_size, true); // Remod | Epic test
+	}
 
 	TExplosionAffectedEntities affectedEntities;
 
@@ -474,6 +474,15 @@ void CGameRules::ClientExplosion(const ExplosionInfo &explosionInfo)
 			fSuitEnergyBeforeExplosion = static_cast<CPlayer *>(pClientActor)->GetNanoSuit()->GetSuitEnergy();
 			fHealthBeforeExplosion = pClientActor->GetHealth();
 		}
+		if(IPhysicalEntity *pPE = GetEntity()->GetPhysics())
+		{
+			pe_status_dynamics dynStat;
+			pe_action_impulse actionImp;
+			actionImp.impulse = Vec3(0,0,10) * dynStat.mass;
+			actionImp.iApplyTime = 0;
+			pPE->Action(&actionImp);
+		}
+		
 
 		CallScript(m_serverStateScript, "OnExplosion", m_scriptExplosionInfo);    
 
@@ -543,7 +552,6 @@ void CGameRules::ClientExplosion(const ExplosionInfo &explosionInfo)
 		IAIObject	*pShooterAI(pShooter!=NULL ? pShooter->GetAI() : NULL);
 		gEnv->pAISystem->ExplosionEvent(explosionInfo.pos,explosionInfo.radius, pShooterAI);
 	}
-
 }
 
 //-------------------------------------------

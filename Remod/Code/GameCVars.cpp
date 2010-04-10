@@ -617,7 +617,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->AddCommand("g_listVisiblePlayers", CmdListInvisiblePlayers, 0, "List all players and their visible status");
 
 	pConsole->Register("g_painSoundGap", &g_painSoundGap, 0.1f, 0, "Minimum time gap between local player pain sounds");
-	pConsole->Register("g_explosionScreenShakeMultiplier", &g_explosionScreenShakeMultiplier, 0.25f, 0, "Multiplier for explosion screenshake");
+	pConsole->Register("g_explosionScreenShakeMultiplier", &g_explosionScreenShakeMultiplier, 0.5f, 0, "Multiplier for explosion screenshake");
 
 	// REMOD
 	pConsole->Register("re_vehiclecapturing", &re_vehiclecapturing, 0, 0, "Enables/Disables ability to capture buildings while in vehicles");

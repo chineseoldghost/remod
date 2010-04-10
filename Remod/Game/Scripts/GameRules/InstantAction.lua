@@ -1190,7 +1190,7 @@ function InstantAction.Client:OnKill(playerId, shooterId, weaponClassName, damag
 		local forceRespawnTime = System.GetCVar("g_spawn_force_timeout")*1000;
 		self:SetTimer(self.FORCERESPAWN_TIMERID, forceRespawnTime);
 	end
-
+	self.game:RegisterKill(playerId, shooterId, weaponClassName, material);
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -2020,6 +2020,7 @@ end
 function InstantAction.Client:ClWorkComplete(entityId, workName)
 	local sound;		
 	if (workName=="repair") then
+		HUD.SetProgressBar(false, -1, self.work_name);
 		sound="sounds/weapons:repairkit:repairkit_successful"
 	elseif (workName=="lockpick") then
 		sound="sounds/weapons:lockpick:lockpick_successful"

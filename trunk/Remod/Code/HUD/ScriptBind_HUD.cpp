@@ -669,6 +669,7 @@ int CScriptBind_HUD::GetLastInGameSave(IFunctionHandler *pH)
 int CScriptBind_HUD::BootHUD(IFunctionHandler *pH)
 {
 	CHUD *pHUD = g_pGame->GetHUD();
+	pHUD->m_animRebootHUD.Reload();
 	pHUD->m_animRebootHUD.SetVisible(true);
 	return pH->EndFunction();
 }
@@ -677,6 +678,7 @@ int CScriptBind_HUD::BootHUD(IFunctionHandler *pH)
 int CScriptBind_HUD::BreakHUD(IFunctionHandler *pH)
 {
 	CHUD *pHUD = g_pGame->GetHUD();
+	pHUD->m_animBreakHUD.Reload();
 	pHUD->m_animBreakHUD.SetVisible(true);
 	return pH->EndFunction();
 }

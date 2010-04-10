@@ -4,15 +4,15 @@ BreakableObject =
 {
 	Properties =
 	{
-	
+
 		bCXP_special = 0,		-- fixme - quick fix, somehow broadcasting event not working for particula entity
-	
+
 		objModel = "objects/brushes/prototype/breakable/bridge.cgf",
 		fDensity = 5000,
-		fMass = -1,
+		fMass = 10,
 		bResting = 0, -- If rigid body is originally in resting state.
-		bRigidBody = 0,
-		bPickable = 0,
+		bRigidBody = 1,
+		bPickable = 1,
 		bUsable = 0,
 		nBreakableType = 0,
 
@@ -20,16 +20,16 @@ BreakableObject =
 		{
 			water_density = 1,
 			water_damping = 1.5,
-			water_resistance = 0,	
+			water_resistance = 0,
 		},
-		
+
 		PhysicsSimulation=
 		{
 			max_time_step = 0.01,
 			sleep_speed = 0.04,
 			damping = 0,
 		},
-		
+
 		PhysicsBreakable=
 		{
 			max_push_force = 0.01,
@@ -72,10 +72,10 @@ end
 ----------------------------------------------------------------------------------------------------
 function BreakableObject:OnReset()
 	self:ResetOnUsed()
-	
+
 	self:LoadObject(0, self.Properties.objModel);
 	self:DrawSlot(0, 1);
-	
+
 	local physType;
 	if (tonumber(self.Properties.bRigidBody) ~= 0) then
 		physType = PE_RIGID;
@@ -84,17 +84,17 @@ function BreakableObject:OnReset()
 	end
 
 	local props = self.Properties;
-	
+
 	self:Physicalize(0, physType, { mass = props.fMass, density = props.fDensity,});
 	self:LoadObjectLattice(0);
 	self:SetPhysicParams(PHYSICPARAM_SUPPORT_LATTICE, props.PhysicsBreakable);
 	self:SetPhysicParams(PHYSICPARAM_SIMULATION, props.PhysicsSimulation);
 	self:SetPhysicParams(PHYSICPARAM_BUOYANCY, props.PhysicsBuoyancy);
 	self:SetPhysicParams(PHYSICPARAM_PART_FLAGS, {partId = 0, mat_breakable = props.nBreakableType});
-	
+
 	local planes = props.PhysicsBreakable.GroundPlanes;
 	local plane = 0;
-	
+
 	if (planes.positiveX ~= 0) then
 		self:SetGroundPlane(plane, 1, {x=1, y=0, z=0}, planes.positiveX);
 		plane = plane+1;
@@ -119,13 +119,13 @@ function BreakableObject:OnReset()
 		self:SetGroundPlane(plane, 3, {x=0, y=0, z=-1}, planes.negativeZ);
 		plane = plane+1;
 	end
-	
+
 	if (tonumber(self.Properties.bResting) ~= 0) then
 		self:AwakePhysics(0);
 	else
 		self:AwakePhysics(1);
 	end
-	
+
 	self.first_break = true;
 end
 
@@ -135,7 +135,7 @@ function BreakableObject:SetGroundPlane(index, axis, n, distance)
 	local size = { x=wmax.x-wmin.x, y=wmax.y-wmin.y, z=wmax.z-wmin.z };
 	local c = { x=(wmax.x+wmin.x)*0.5, y=(wmax.y+wmin.y)*0.5, z=(wmax.z+wmin.z)*0.5 };
 	local org = { x=c.x+n.x*size.x*(distance-0.5), y=c.y+n.y*size.y*(distance-0.5), z=c.z+n.z*size.z*(distance-0.5) };
-	
+
 	self:SetPhysicParams(PHYSICPARAM_GROUND_PLANE, { origin = org, normal = n, plane_index = index});
 end
 
@@ -157,7 +157,7 @@ end
 ----------------------------------------------------------------------------------------------------
 function BreakableObject:OnPhysicsBreak()
 	self:Event_OnBreak();
-	
+
 	if (self.first_break) then
 		self:Event_OnFirstBreak();
 		self.first_break = false;

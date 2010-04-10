@@ -778,11 +778,13 @@ end
 
 ----------------------------------------------------------------------------------------------------
 function PowerStruggle.Client:OnRevive(playerId, pos, rot, teamId)
+	HUD.BootHUD();
 	TeamInstantAction.Client.OnRevive(self, playerId, pos, rot, teamId);
 end
 
 ----------------------------------------------------------------------------------------------------
 function PowerStruggle.Client:OnReviveInVehicle(playerId, vehicleId, seatId, teamId)
+	HUD.BootHUD();
 	TeamInstantAction.Client.OnRevive(self, playerId, vehicleId, seatId, teamId);
 end
 

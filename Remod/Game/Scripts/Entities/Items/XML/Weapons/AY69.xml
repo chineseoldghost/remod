@@ -137,10 +137,10 @@
       <sound target="firstperson" name="Sounds/interface:hud:null_fire" radius="2" />
     </action>
     <action name="zoom_in">
-      <animation target="firstperson" name="zoom_in_%suffix%%hand%_01" speed="1.5" />
+      <animation target="firstperson" name="zoom_in_%suffix%%hand%_01" speed="1" />
     </action>
     <action name="zoom_out">
-      <animation target="firstperson" name="zoom_out_%suffix%%hand%_01" speed="1.5" />
+      <animation target="firstperson" name="zoom_out_%suffix%%hand%_01" speed="1" />
     </action>
 
     <action name="offhand_on">

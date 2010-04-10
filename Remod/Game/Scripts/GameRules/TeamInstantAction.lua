@@ -204,7 +204,7 @@ end
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction:CheckSuddenDeath()
         if (not self.suddenDeath) then
-                if (System.GetCVar("re_suddendeath")==1)
+                if (System.GetCVar("re_suddendeath")==1) then
                         self:SuddenDeath(true);
                 end
         end

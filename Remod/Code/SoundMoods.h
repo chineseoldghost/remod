@@ -33,9 +33,7 @@ enum ESOUNDMOOD
 	SOUNDMOOD_ENTER_FREEZE,
 	SOUNDMOOD_LEAVE_FREEZE,
 	SOUNDMOOD_EXPLOSION,
-	SOUNDMOOD_LOWHEALTH,
-	SOUNDMOOD_ENTER_SLOWMO,
-	SOUNDMOOD_LEAVE_SLOWMO
+	SOUNDMOOD_LOWHEALTH
 };
 
 //-----------------------------------------------------------------------------------------------------
@@ -50,7 +48,7 @@ public:
 	void AddSoundMood(ESOUNDMOOD eSoundMood,float fPercent=0.0f);
 	void Serialize(TSerialize ser);
 	void Update();
-	:
+
 private:
 
 	void AddSoundMood(const char *szSoundMood,uint32 uiFadeIn,float fDuration,uint32 fFadeOut,float fFade);

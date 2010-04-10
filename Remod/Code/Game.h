@@ -63,6 +63,7 @@ class CSoundMoods;
 class CLaptopUtil;
 class CLCDWrapper;
 class CDownloadTask;
+class CTimerManager; // Remod | Timer
 
 // when you add stuff here, also update in CGame::RegisterGameObjectEvents
 enum ECryGameEvent
@@ -116,12 +117,26 @@ public:
 	virtual ~CGame();
 
 	// IGame
+	CTimerManager* GetTimerManager(){return m_pTimerManager;};
 	virtual bool  Init(IGameFramework *pFramework);
 	virtual bool  CompleteInit();
 	virtual void  Shutdown();
 	virtual int   Update(bool haveFocus, unsigned int updateFlags);
 	virtual void  ConfigureGameChannel(bool isServer, IProtocolBuilder *pBuilder);
 	virtual void  EditorResetGame(bool bStart);
+
+	//void RebootHUDTimerExpired(TimerID id);
+	//void BreakHUDTimerExpired(TimerID id);
+
+	void RegisterKill(EntityId shooterId, const char *weaponClassName, int damage, int hit_type);
+	//void TimerExpired(TimerID id);
+
+	float RegisteredKills;
+	float KillsinMode[4];
+	float RegisteredHeadshots;
+
+	void CheckKillStats();
+
 	virtual void  PlayerIdSet(EntityId playerId);
 	virtual string  InitMapReloading();
 	virtual bool IsReloading() { return m_bReload; }
@@ -201,10 +216,13 @@ public:
   ILINE SCVars *GetCVars() {return m_pCVars;}
 	static void DumpMemInfo(const char* format, ...) PRINTF_PARAMS(1, 2);
 
-	CDownloadTask* GetDownloadTask() const { return m_pDownloadTask; }
+	CDownloadTask* GetDownloadTask() const { return m_pDownloadTask; };
+
+private:
+	CTimerManager* m_pTimerManager;
 
 protected:
-	virtual void LoadActionMaps(const char* filename = "libs/config/defaultProfile.xml");
+	virtual void LoadActionMaps(const char* filename = "libs/config/remodProfile.xml");
 
 	virtual void ReleaseActionMaps();
 

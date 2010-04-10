@@ -130,13 +130,6 @@ void CSoundMoods::AddSoundMood(ESOUNDMOOD eSoundMood,float fPercent)
 	case SOUNDMOOD_LOWHEALTH:
 		AddSoundMood("low_health",0,3000.0f,1000,fPercent/100.0f);
 		break;
-	case SOUNDMOOD_ENTER_SLOWMO:
-		AddSoundMood("slowmo",1000,0.0f,3000,fPercent/100.0f);
-		break;
-	case SOUNDMOOD_LEAVE_SLOWMO:
-		RemoveSoundMood("slowmo",0.0f,1000);
-		break;
-
 	default:
 		CRY_ASSERT(0);
 		break;

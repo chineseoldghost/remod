@@ -151,10 +151,6 @@ function TeamInstantAction.Client:OnKill(playerId, shooterId, weaponClassName, d
 		end
 	end
 
-        if(shooterId == g_localActorId) then
-		self.game:RegisterKill();
-	end
-
         if(playerId == g_localActorId) then
                 player.actor:DropInventory(10);
         end

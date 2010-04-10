@@ -19,59 +19,59 @@ PressurizedObject =
 		objModel 					= "objects/library/props/fire extinguisher/fire_extinguisher.cgf",
 		Vulnerability	=
 		{
-			bExplosion	= 1,
-			bCollision 	= 1,
-			bMelee 		= 1,
-			bBullet		= 1,
-			bOther		= 1,
+			bExplosion = 1,
+			bCollision = 1,
+			bMelee		 = 1,
+			bBullet		 = 1,
+			bOther	   = 1,
 		},
-		DamageMultipliers =
+		DamageMultipliers = 
 		{
 		  fCollision = 1.0,
-		  fBullet    = 1.0,
+		  fBullet    = 1.0,		  
 		},
 		fDamageTreshold		= 0,
 		Leak=
 		{
 			Effect =
 			{
-				Effect			= "bullet.hit_metal.a",
-				SpawnPeriod		= 0.1,
-				Scale			= 1,
-				CountScale		= 1,
+				Effect					= "bullet.hit_metal.a",
+				SpawnPeriod			= 0.1,
+				Scale						= 1,
+				CountScale			= 1,
 				bCountPerUnit		= 0,
 				bSizePerUnit		= 0,
-				AttachType		= "none",
-				AttachForm		= "none",
-				bPrime			= 1,
+				AttachType			= "none",
+				AttachForm			= "none",
+				bPrime					= 1,
 			},
-			Damage			= 100,
-			DamageRange		= 3,
+			Damage					= 100,
+			DamageRange			= 3,
 			DamageHitType		= "fire",
-			Pressure		= 1000,
+			Pressure				= 1000,
 			PressureDecay		= 10,
-			PressureImpulse		= 100,
-			MaxLeaks		= 10,
+			PressureImpulse	= 100,
+			MaxLeaks				= 10,
 			ImpulseScale		= 1,
-			Volume			= 10;
-			VolumeDecay		= 1;
+			Volume					= 10;
+			VolumeDecay			= 1;
 		},
 
-		bPlayerOnly		= 1,
-		fDensity 		= 1000,
-		fMass 			= 10,
-		bResting 		= 1, 		-- If rigid body is originally in resting state.
-		bRigidBody 		= 1,
-   		bCanBreakOthers   	= 0,
-		bPushableByPlayers 	= 1,
+		bPlayerOnly					= 1,
+		fDensity 						= 1000,
+		fMass 							= 10,
+		bResting 						= 1, -- If rigid body is originally in resting state.
+		bRigidBody 					= 0,
+    bCanBreakOthers     = 0,
+		bPushableByPlayers  = 0,
 
 		PhysicsBuoyancy=
 		{
 			water_density = 1,
 			water_damping = 1.5,
-			water_resistance = 0,
+			water_resistance = 0,	
 		},
-
+		
 		PhysicsSimulation=
 		{
 			max_time_step = 0.01,
@@ -93,7 +93,7 @@ MakePickable(PressurizedObject);
 function PressurizedObject:IsUsable(user, idx)
 	local ret = nil;
 	if not self.__usable then self.__usable = self.Properties.bUsable end;
-
+	
 	local mp = System.IsMultiplayer();
 	if(mp and mp~=0) then
 		return 0;
@@ -106,7 +106,7 @@ function PressurizedObject:IsUsable(user, idx)
 			ret = user:CanGrabObject(self)
 		end
 	end
-
+		
 	return ret or 0
 end
 
@@ -150,9 +150,9 @@ function PressurizedObject:OnReset()
 	};
 
 	local bRigidBody = (tonumber(self.Properties.bRigidBody) ~= 0);
---	if (CryAction.IsImmersivenessEnabled() == 0) then
---		bRigidBody = nil
---	end
+	if (CryAction.IsImmersivenessEnabled() == 0) then
+		bRigidBody = nil
+	end
 
 	if (bRigidBody) then
 		self:Physicalize(0, PE_RIGID, params);
@@ -162,7 +162,7 @@ function PressurizedObject:OnReset()
 		else
 			self:AwakePhysics(1);
 		end
-
+		
 		self:SetPhysicParams(PHYSICPARAM_BUOYANCY, self.Properties.PhysicsBuoyancy);
 		self:SetPhysicParams(PHYSICPARAM_SIMULATION, self.Properties.PhysicsSimulation);
 	else
@@ -188,13 +188,13 @@ function PressurizedObject:OnReset()
 	self.pressureDecay = self.Properties.Leak.PressureDecay;
 	self.pressureImpulse = self.Properties.Leak.PressureImpulse;
 	self.maxLeaks = self.Properties.Leak.MaxLeaks;
-
+	
 	self.damage = self.Properties.Leak.Damage;
 	self.damageRange = self.Properties.Leak.DamageRange;
-
+	
 	self.damageCheckTime = 0.5;
 	self.damageCheckTimer = self.damageCheckTime;
-
+	
 	self.shooterId = nil;
 	self.volume=self.Properties.Leak.Volume;
 	if (self.volume>0) then
@@ -208,7 +208,7 @@ function PressurizedObject:OnReset()
 	else
 		self:SetFlags(ENTITY_FLAG_AI_HIDEABLE, 2); -- remove
 	end
-
+	
 end
 
 
@@ -228,32 +228,32 @@ function PressurizedObject.Server:OnHit(hit)
 	if (hit.explosion or (not hit.normal)) then
 		return;
 	end
-
+	
 	local playerOnly = NumberToBool(self.Properties.bPlayerOnly);
 	local playerHit = hit.shooterId == g_localActorId;
 
-	local damage = hit.damage;
+	local damage = hit.damage;	
 	local vul = self.Properties.Vulnerability;
 	local mult = self.Properties.DamageMultipliers;
-
+	
 	local pass = true;
 	if (hit.explosion) then pass = NumberToBool(vul.bExplosion);
 	elseif (hit.type=="collision") then pass = NumberToBool(vul.bCollision); damage = damage * mult.fCollision;
 	elseif (hit.type=="bullet") then pass = NumberToBool(vul.bBullet); hit.damage = damage * mult.fBullet;
-	elseif (hit.type=="melee") then pass = NumberToBool(vul.bMelee);
-	else pass = NumberToBool(vul.bOther); end
-
+	elseif (hit.type=="melee") then pass = NumberToBool(vul.bMelee); 
+	else pass = NumberToBool(vul.bOther); end	
+	
 	pass = pass and damage >= self.Properties.fDamageTreshold;
-
+	
 	if(not pass)then return;end;
-
+	
 	if ((not hit.shooterId) or (not playerOnly) or playerHit) then
 		self:Event_Hit();
 	end
 
-	if (self.leaks < self.maxLeaks ) then
+	if (self.leaks < self.maxLeaks and CryAction.IsImmersivenessEnabled() ~= 0) then
 		self:AddLeak(hit.pos, hit.normal);
-
+		
 		if (self.leaks==0) then
 			self.shooterId=hit.shooterId;
 		end
@@ -271,19 +271,19 @@ function PressurizedObject:CheckDamage(frameTime)
 	else
 		return;
 	end
-
+	
 	if (self.leaks > 0) then
 		for i,leak in ipairs(self.leakInfo) do
 			self.leakPos = self:GetSlotWorldPos(leak.slot, self.leakPos);
 			self.leakDir = self:GetSlotWorldDir(leak.slot, self.leakDir);
-
+			
 			local hits = Physics.RayWorldIntersection(self.leakPos, vecScale(self.leakDir, self.damageRange), 2, ent_all, self.id, nil, g_HitTable);
 			if (hits > 0) then
 				local entity = g_HitTable[1].entity;
 				if (entity) then
 					local dead = (entity.IsDead and entity:IsDead());
 					if ((not dead) and entity.Server and entity.Server.OnHit) then
-						local damage = (self.damage*self.damageCheckTime)/self.leaks;
+						local damage = (self.damage*self.damageCheckTime)/self.leaks;						
 						g_gameRules:CreateHit(entity.id,self.shooterId,self.id,damage,nil,nil,nil,self.Properties.DamageHitType);
 					end
 				end
@@ -306,7 +306,7 @@ function PressurizedObject:UpdateLeaks(frameTime)
 	if (self.volume<=0 and self.leaks>0) then
 		self:ClearLeaks();
 	end
-
+	
 	self.gravity=self:GetGravity(self.gravity);
 
 	for i,v in ipairs(self.leakInfo) do
@@ -317,15 +317,15 @@ end
 
 ----------------------------------------------------------------------------------------------------
 function PressurizedObject:UpdateLeak(frameTime, leak, gravityDir)
-
+	
 	self.leakPos = self:GetSlotWorldPos(leak.slot, self.leakPos);
 	local submergedVolume=self:GetSubmergedVolume(0, gravityDir, self.leakPos)*self.volumeConv;
-
+	
 	local leaking=false;
 	if (submergedVolume<self.volume) then
 		leaking=true;
 	end
-
+	
 	if (leaking or self.pressure>0) then
 		self.volume=self.volume-self.Properties.Leak.VolumeDecay*frameTime;
 		if (self.volume <=0) then
@@ -411,12 +411,12 @@ function PressurizedObject.Client:OnUpdate(frameTime)
 
 	if (self.pressure>0) then
 		local impulse = ((self.pressureImpulse*self.pressure)/self.leaks)*frameTime*self.Properties.Leak.ImpulseScale;
-
+		
 		if (impulse>0) then
 			for i,leak in ipairs(self.leakInfo) do
 				self.impulseDir = self:GetSlotWorldDir(leak.slot, self.impulseDir);
 				self.impulsePos = self:GetSlotWorldPos(leak.slot, self.impulsePos);
-
+				
 				self:AddImpulse(-1, self.impulsePos, self.impulseDir, -impulse, 1);
 			end
 		end

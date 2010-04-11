@@ -283,7 +283,7 @@ Remod
 10=Game\Scripts\GameRules\PowerStruggleRank.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\GameRules\PowerStruggleBuying.lua
+Selected=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
@@ -294,7 +294,7 @@ Caret=1,1
 TopLine=133
 Caret=71,147
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
-TopLine=33
+TopLine=1
 Caret=60,46
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
 TopLine=108
@@ -312,8 +312,8 @@ Caret=39,36
 TopLine=333
 Caret=27,354
 [Game\Scripts\GameRules\PowerStruggleBuying.lua]
-TopLine=1
-Caret=17,189
+TopLine=163
+Caret=15,189
 [Game\Scripts\GameRules\PowerStruggleRank.lua]
 TopLine=1
 Caret=3,24

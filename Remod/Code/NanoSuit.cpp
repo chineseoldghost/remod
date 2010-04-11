@@ -1735,7 +1735,6 @@ void CNanoSuit::GetMemoryStatistics(ICrySizer * s)
 
 void CNanoSuit::StatModeCheck()
 {
-	CryLogAlways("NS1738");
 	if(GetMode()==NANOMODE_DEFENSE)
 		g_pGame->KillMode[0]++;
 	else if(GetMode()==NANOMODE_SPEED)
@@ -1744,6 +1743,5 @@ void CNanoSuit::StatModeCheck()
 		g_pGame->KillMode[2]++;
 	else if(GetMode()==NANOMODE_CLOAK)
 		g_pGame->KillMode[3]++;
-	CryLogAlways("NS1747");
 	g_pGame->CheckKillStats();
 }

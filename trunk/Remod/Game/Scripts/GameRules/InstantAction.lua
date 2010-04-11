@@ -1586,6 +1586,11 @@ function InstantAction:ResetPlayers( )
 	end
 end
 
+----------------------------------------------------------------------------------------------------
+--function InstantAction:AnnounceAchievement(achievement)
+--	player = g_gameRules:GetEntityName();
+--	Utils.SendChatToAll(nil, "PLAYER %q EARNED THE '%s" ACHIEVEMENT!", player, achievement);
+--end
 
 ----------------------------------------------------------------------------------------------------
 function InstantAction:ReviveAllPlayers(keepEquip)
@@ -2150,3 +2155,4 @@ function InstantAction.Client:ClTimerAlert(time)
 		self:PlayRadioAlert("timer5s", teamId);
 	end
 end
+----------------------------------------------------------------------------------------------------

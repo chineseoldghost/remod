@@ -514,6 +514,7 @@ void CGame::RegisterKill(EntityId shooterId)
 		playerId = pPlayer->GetEntityId();
 		if(shooterId!=playerId)
 			return;
+
 		CryLogAlways("511");
 
 		CryLogAlways("514");
@@ -523,9 +524,11 @@ void CGame::RegisterKill(EntityId shooterId)
 		CryLogAlways("520");
 		RegisteredKills++;
 		CryLogAlways("522");
-
-		if(IVehicle *pVehicle = pPlayer->GetLinkedVehicle())
+		
+		if(pPlayer->GetLinkedVehicle())
 			KillsinVehicle++;
+		
+
 		CryLogAlways("526");
 
 		//CPlayer *pPlayer = g_pGame->GetIGameFramework()->GetClientActor();
@@ -541,6 +544,11 @@ void CGame::RegisterKill(EntityId shooterId)
 				SCARKills++;
 			CryLogAlways("537");
 		}
+		if(pPlayer->IsParachuteEnabled())
+			ParachuteKills++;
+		if(pSuit->IsNightVisionEnabled())
+			NightVisionKills++;
+
 		pSuit->StatModeCheck();
 	}
 	
@@ -556,29 +564,21 @@ void CGame::CheckKillStats()
 
 		//Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
 		if(RegisteredKills==5)
-		{
-			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "Achievement 'Rookie Shooter' Earned", false);
-		}
+			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "earned the 'Rookie Shooter' Achievement!", false);
 		if(KillMode[2]==5)
-		{
-			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "Achievement 'Maximum Strength' Earned", false);
-		}
+			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "earned the 'Maximum Strength' Achievement!", false);
 		else if(KillMode[3]==1)
-		{
-			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "Achievement 'Sneaky Assassin' Earned", false);
-		}
+			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "earned the 'Sneaky Assassin' Achievement!", false);
 		if(KillsinVehicle==5)
-		{
-			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "Achievement 'Bodycrusher' Earned", false);
-		}
+			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "earned the 'Bodycrusher' Achievement!", false);
 		if(NodamageKills==5)
-		{
-			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "Achievement 'N00BKILLAH' Earned", false);
-		}	
+			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "earned the 'N00BKILLAH' Achievement!", false);
 		if(SCARKills==5)
-		{
-			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "Achievement 'SCARRED for life' Earned", false);
-		}
+			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "earned the 'SCARRED for life' Achievement!", false);
+		if(ParachuteKills==5)
+			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "earned the 'Death from Above' Achievement!", false);
+		if(NightVisionKills==5)
+			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "earned the 'Nightcrawler' Achievement!", false);
 	}
 }
 void CGame::PlayerIdSet(EntityId playerId)

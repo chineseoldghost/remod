@@ -138,6 +138,8 @@ public:
 	float RegisteredHeadshots;
 	float KillsinVehicle;
 	float NodamageKills;
+	float ParachuteKills;
+	float NightVisionKills;
 
 	// Scriptsystem
 	IScriptTable *pScriptTable;

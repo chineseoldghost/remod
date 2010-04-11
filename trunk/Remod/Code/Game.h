@@ -132,7 +132,7 @@ public:
 	//void TimerExpired(TimerID id);
 
 	// Remod | Stats
-	EntityId shooter;
+	EntityId playerId;
 	float RegisteredKills;
 	float KillMode[4]; // 0 = Armor, 1 = Speed, 2 = Strength, 3 = Cloak
 	float RegisteredHeadshots;
@@ -189,6 +189,9 @@ public:
   // Remod | Stats
   void SaveStats(string stat);
   int KillStats;
+
+  // Chat Entity
+    void CreateChatEntity();
 
 	virtual CScriptBind_Actor *GetActorScriptBind() { return m_pScriptBindActor; }
 	virtual CScriptBind_Item *GetItemScriptBind() { return m_pScriptBindItem; }

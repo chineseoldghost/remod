@@ -507,41 +507,64 @@ void CGame::EditorResetGame(bool bStart)
 }
 
 void CGame::RegisterKill(EntityId shooterId)
-{/*
+{
+	playerId = g_pGame->GetGameRules()->GetEntityId();
+	if(shooterId!=playerId)
+		return;
+	CryLogAlways("511");
 	if(!gEnv->pSystem->IsDedicated())
 	{
-		shooter = shooterId;
-		CNanoSuit *pSuit = ((CPlayer*)m_pActor)->GetNanoSuit();
-		RegisteredKills++;
-
+		CryLogAlways("514");
 		CPlayer *pPlayer = static_cast<CPlayer*>(GetIGameFramework()->GetClientActor());
+		CryLogAlways("516");
+		CNanoSuit *pSuit = pPlayer->GetNanoSuit();
+		CryLogAlways("518");
+		CryLogAlways("520");
+		RegisteredKills++;
+		CryLogAlways("522");
+
 		if(IVehicle *pVehicle = pPlayer->GetLinkedVehicle())
 			KillsinVehicle++;
+		CryLogAlways("526");
 
 		//CPlayer *pPlayer = g_pGame->GetIGameFramework()->GetClientActor();
 		if(pSuit->GetSuitEnergy()==100 && pPlayer->GetHealth()==100)
 			NodamageKills++;
+		CryLogAlways("531");
 
 		// Check which weapon was used, and register it
-		weaponClass = pPlayer->GetCurrentItem()->GetEntity()->GetClass()->GetName();
-		if(!stricmp(weaponClass, "SCAR"))
-			SCARKills++;
-
+		if(!pPlayer->GetLinkedVehicle())
+		{
+			weaponClass = pPlayer->GetCurrentItem()->GetEntity()->GetClass()->GetName();
+			if(!stricmp(weaponClass, "SCAR"))
+				SCARKills++;
+			CryLogAlways("537");
+		}
 		pSuit->StatModeCheck();
+		CryLogAlways("538");
 	}
-	*/
+	
 }
 
 void CGame::CheckKillStats()
-{/*
+{
+	CryLogAlways("539");
 	if(!gEnv->pSystem->IsDedicated())
 	{
+		CryLogAlways("550");
 		pScriptTable = GetGameRules()->GetEntity()->GetScriptTable();
+		CryLogAlways("552");
 		AnnounceAchievement = 0;
+		CryLogAlways("554");
 		if(RegisteredKills==5)
 		{
+			CryLogAlways("557");
 			achievement = "5 KILLS";
+			CryLogAlways("559");
 			Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
+			CryLogAlways("561");
+			//CHUDTextChat *pChat = SAFE_HUD_FUNC_RET(GetMPChat()))
+		//pChat->AddChatMessage(sourceId, msg, teamFaction, teamChatOnly);
 		}
 		if(KillMode[2]==5)
 		{
@@ -568,7 +591,7 @@ void CGame::CheckKillStats()
 			achievement = "SCAR's are hot";
 			Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
 		}
-	}*/
+	}
 }
 void CGame::PlayerIdSet(EntityId playerId)
 {

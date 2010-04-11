@@ -400,12 +400,6 @@ void CGameRules::CullEntitiesInExplosion(const ExplosionInfo &explosionInfo)
 //------------------------------------------------------------------------
 void CGameRules::ClientExplosion(const ExplosionInfo &explosionInfo)
 {
-	// let 3D engine know about explosion (will create holes and remove vegetation)
-	if (explosionInfo.hole_size > 0.0f)
-	{
-		gEnv->p3DEngine->OnExplosion(explosionInfo.pos, explosionInfo.hole_size, true); // Remod | Epic test
-	}
-
 	TExplosionAffectedEntities affectedEntities;
 
 	if (gEnv->bServer)
@@ -460,6 +454,7 @@ void CGameRules::ClientExplosion(const ExplosionInfo &explosionInfo)
 			explosion.rmax=0.0001f;
 		explosion.r = explosion.rmin;
 		explosion.holeSize = explosionInfo.hole_size;
+
 		explosion.nOccRes = -1;	// makes second call re-use occlusion info
 		gEnv->pPhysicalWorld->SimulateExplosion( &explosion, 0, 0, ent_rigid|ent_sleeping_rigid|ent_independent|ent_static );
 
@@ -473,17 +468,7 @@ void CGameRules::ClientExplosion(const ExplosionInfo &explosionInfo)
 		{
 			fSuitEnergyBeforeExplosion = static_cast<CPlayer *>(pClientActor)->GetNanoSuit()->GetSuitEnergy();
 			fHealthBeforeExplosion = pClientActor->GetHealth();
-			CActor *pActor = (CActor *)pClientActor;
-			if(IPhysicalEntity *pPE = pActor->GetEntity()->GetPhysics())
-			{
-				pe_status_dynamics dynStat;
-				pe_action_impulse actionImp;
-				actionImp.impulse = Vec3(0,0,10) * dynStat.mass;
-				actionImp.iApplyTime = 0;
-				pPE->Action(&actionImp);
-			}
 		}
-		
 
 		CallScript(m_serverStateScript, "OnExplosion", m_scriptExplosionInfo);    
 

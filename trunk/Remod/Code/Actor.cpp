@@ -788,12 +788,10 @@ void CActor::RagDollize( bool fallAndPlay )
 		GetEntity()->Physicalize(pp);
 
 		// make sure dead AI is not affected by explosions
-		/*if (!fallAndPlay || GetHealth()<=0)
+		if (!fallAndPlay || GetHealth()<=0)
 			CrapDollize();
 		else if(fallAndPlay)
 			CrapDollize(false);
-			*/
-		CrapDollize(false); // Remod 
 
 		pStats->isRagDoll = true;
 
@@ -3468,6 +3466,8 @@ void CActor::NetKill(EntityId shooterId, uint16 weaponClassId, int damage, int m
 
 	Kill();
 
+	g_pGame->RegisterKill(shooterId);
+
 	g_pGame->GetGameRules()->OnKillMessage(GetEntityId(), shooterId, weaponClassName, damage, material, hit_type);
 
 	CHUD *pHUD=g_pGame->GetHUD();
@@ -3481,7 +3481,6 @@ void CActor::NetKill(EntityId shooterId, uint16 weaponClassId, int damage, int m
 		// use the spectator target to store who killed us (used for the MP death cam - not quite spectator mode but similar...).
 		if(g_pGame->GetIGameFramework()->GetIActorSystem()->GetActor(shooterId))
 		{
-			g_pGame->RegisterKill(shooterId);
 
 			SetSpectatorTarget(shooterId);
 			SetSpectatorHealth(killerHealthOnKill);

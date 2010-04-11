@@ -225,6 +225,8 @@ public:
 
 	int IsItemAllowed(IFunctionHandler* pH, const char* itemName);
 
+	int GetEntityName(IFunctionHandler* pH);
+
 private:
 	void RegisterGlobals();
 	void RegisterMethods();

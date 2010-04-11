@@ -63,8 +63,8 @@
 		<action name="fire">
 			<animation target="firstperson" name="fire_bullets_%hand%_%suffix%01" />
 			<animation target="owner" name="shoot" />
-			<sound target="firstperson" name="sounds/weapons:sniperrifle:fire%env%_fp" radius="400" static="1" />
-			<sound target="thirdperson" name="sounds/weapons:sniperrifle:fire%env%" radius="400" static="1" />
+			<sound target="firstperson" name="sounds/weapons:sniperrifle:fire%env%_fp" radius="500" static="1" />
+			<sound target="thirdperson" name="sounds/weapons:sniperrifle:fire%env%" radius="500" static="1" />
 		</action>
 
 		<action name="cock">
@@ -167,7 +167,7 @@
 				<param name="clip_size" value="5" />
 				<param name="bullet_chamber" value="1" />
 				<param name="damage" value="150" />
-				<param name="reload_time" value="1.8" />
+				<param name="reload_time" value="3.6" />
 				<param name="helper_tp" value="weapon_term" />
 				<param name="nearmiss_signal" value="OnNearMiss" />
 			</fire>

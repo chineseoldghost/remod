@@ -18,7 +18,6 @@ History:
 # pragma once
 #endif
 
-
 #include "Projectile.h"
 
 class CBullet : public CProjectile

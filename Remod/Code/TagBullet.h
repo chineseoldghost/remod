@@ -1,11 +1,22 @@
-#include "Projectile.h"
-#pragma once
+#ifndef __TAGBULLET_H__
+#define __TAGBULLET_H__
 
-class CTagBullet :
-	public CProjectile
+#if _MSC_VER > 1000
+# pragma once
+#endif
+
+#include "Projectile.h"
+
+class CTagBullet : public CProjectile
 {
 public:
-	CTagBullet(void);
-	~CTagBullet(void);
+	CTagBullet();
+	virtual ~CTagBullet();
+
+	// CProjectile
 	virtual void HandleEvent(const SGameObjectEvent &);
+
+	static IEntityClass*	EntityClass;
 };
+
+#endif // __TAGBULLET_H__

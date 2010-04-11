@@ -52,7 +52,6 @@ class  CGameActions;
 class CGameRules;
 class CBulletTime;
 class CHUD;
-class CActor;
 class CSynchedStorage;
 class CClientSynchedStorage;
 class CServerSynchedStorage;
@@ -132,9 +131,22 @@ public:
 	void RegisterKill(EntityId shooterId);
 	//void TimerExpired(TimerID id);
 
+	// Remod | Stats
+	EntityId shooter;
 	float RegisteredKills;
-	float KillsinMode[4];
+	float KillMode[4]; // 0 = Armor, 1 = Speed, 2 = Strength, 3 = Cloak
 	float RegisteredHeadshots;
+	float KillsinVehicle;
+	float NodamageKills;
+
+	// Scriptsystem
+	IScriptTable *pScriptTable;
+	const char* achievement;
+	HSCRIPTFUNCTION	AnnounceAchievement;
+
+	// Weapons
+	const char* weaponClass;
+	float SCARKills;
 
 	void CheckKillStats();
 
@@ -293,7 +305,6 @@ protected:
 	CGameActions				*m_pGameActions;	
 	IPlayerProfileManager* m_pPlayerProfileManager;
 	CHUD								*m_pHUD;
-	CActor								*m_pActor;
 
 	CServerSynchedStorage	*m_pServerSynchedStorage;
 	CClientSynchedStorage	*m_pClientSynchedStorage;

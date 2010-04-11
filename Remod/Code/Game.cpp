@@ -22,7 +22,6 @@
 #include "BulletTime.h"
 #include "SoundMoods.h"
 #include "HUD/HUD.h"
-#include "Actor.h"
 #include "WeaponSystem.h"
 
 #include <ICryPak.h>
@@ -146,7 +145,6 @@ CGame::~CGame()
 	SAFE_DELETE(m_pSoundMoods);
 	SAFE_DELETE(m_pHUD);
 	SAFE_DELETE(m_pSPAnalyst);
-	//SAFE_DELETE(m_pTimerManager); // Remod | Timer
 	m_pWeaponSystem->Release();
 	SAFE_DELETE(m_pItemStrings);
 	SAFE_DELETE(m_pItemSharedParamsList);
@@ -509,23 +507,69 @@ void CGame::EditorResetGame(bool bStart)
 }
 
 void CGame::RegisterKill(EntityId shooterId)
-{
-	CryLogAlways("512");
-	RegisteredKills++;
-	CheckKillStats();
+{/*
+	if(!gEnv->pSystem->IsDedicated())
+	{
+		shooter = shooterId;
+		CNanoSuit *pSuit = ((CPlayer*)m_pActor)->GetNanoSuit();
+		RegisteredKills++;
+
+		CPlayer *pPlayer = static_cast<CPlayer*>(GetIGameFramework()->GetClientActor());
+		if(IVehicle *pVehicle = pPlayer->GetLinkedVehicle())
+			KillsinVehicle++;
+
+		//CPlayer *pPlayer = g_pGame->GetIGameFramework()->GetClientActor();
+		if(pSuit->GetSuitEnergy()==100 && pPlayer->GetHealth()==100)
+			NodamageKills++;
+
+		// Check which weapon was used, and register it
+		weaponClass = pPlayer->GetCurrentItem()->GetEntity()->GetClass()->GetName();
+		if(!stricmp(weaponClass, "SCAR"))
+			SCARKills++;
+
+		pSuit->StatModeCheck();
+	}
+	*/
 }
 
 void CGame::CheckKillStats()
-{
-	CryLogAlways("518");
-	if(RegisteredKills==5)
+{/*
+	if(!gEnv->pSystem->IsDedicated())
 	{
-		CHUD *pHUD = g_pGame->GetHUD();
-		if(pHUD)
-			pHUD->DisplayBigOverlayFlashMessage("DEBUG ACHIEVEMENT 'OHMAIGAWD5KILLZ' EARNED", 3.0f, 400, 300, ColorF(1,1,1));
-	}
+		pScriptTable = GetGameRules()->GetEntity()->GetScriptTable();
+		AnnounceAchievement = 0;
+		if(RegisteredKills==5)
+		{
+			achievement = "5 KILLS";
+			Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
+		}
+		if(KillMode[2]==5)
+		{
+			achievement = "Maximum Strength";
+			Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
+		}
+		else if(KillMode[3]==1)
+		{
+			achievement = "Sneaky Assassin";
+			Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
+		}
+		if(KillsinVehicle==5)
+		{
+			achievement = "We ride on our enemies";
+			Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
+		}
+		if(NodamageKills==5)
+		{
+			achievement = "N00bkillah";
+			Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
+		}	
+		if(SCARKills==5)
+		{
+			achievement = "SCAR's are hot";
+			Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
+		}
+	}*/
 }
-
 void CGame::PlayerIdSet(EntityId playerId)
 {
 	if(!gEnv->pSystem->IsEditor() && playerId != 0 && !gEnv->pSystem->IsDedicated())

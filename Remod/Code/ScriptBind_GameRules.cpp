@@ -263,6 +263,8 @@ void CScriptBind_GameRules::RegisterMethods()
 	SCRIPT_REG_TEMPLFUNC(PerformDeadHit, "");
 
 	SCRIPT_REG_TEMPLFUNC(IsItemAllowed, "itemName");
+
+	SCRIPT_REG_TEMPLFUNC(GetEntityName, "");
 }
 
 //------------------------------------------------------------------------
@@ -2523,4 +2525,13 @@ int CScriptBind_GameRules::IsItemAllowed(IFunctionHandler* pH, const char* itemN
 	}
 
 	return pH->EndFunction(false);
+}
+//-----------------------------------------------------------------------------
+int CScriptBind_GameRules::GetEntityName(IFunctionHandler* pH)
+{
+	CGameRules* pGameRules = g_pGame->GetGameRules();
+	EntityId entityId = pGameRules->GetEntityId();
+	const char* entityName = pGameRules->GetActorNameByEntityId(entityId);
+
+	return pH->EndFunction(entityName);
 }

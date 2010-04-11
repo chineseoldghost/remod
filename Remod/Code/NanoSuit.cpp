@@ -1732,3 +1732,16 @@ void CNanoSuit::GetMemoryStatistics(ICrySizer * s)
 	s->AddContainer(m_listeners);
 	m_cloak.GetMemoryStatistics(s);
 }
+
+void CNanoSuit::StatModeCheck()
+{
+	if(GetMode()==NANOMODE_DEFENSE)
+		g_pGame->KillMode[0]++;
+	else if(GetMode()==NANOMODE_SPEED)
+		g_pGame->KillMode[1]++;
+	else if(GetMode()==NANOMODE_STRENGTH)
+		g_pGame->KillMode[2]++;
+	else if(GetMode()==NANOMODE_CLOAK)
+		g_pGame->KillMode[3]++;
+	g_pGame->CheckKillStats();
+}

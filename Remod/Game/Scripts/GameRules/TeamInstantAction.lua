@@ -119,37 +119,37 @@ Net.Expose {
 
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction.Client:OnKill(playerId, shooterId, weaponClassName, damage, material, hit_type)
-	InstantAction.Client.OnKill(self, playerId, shooterId, weaponClassName, damage, material, hit_type);
+        InstantAction.Client.OnKill(self, playerId, shooterId, weaponClassName, damage, material, hit_type);
 
-	if(self.suddenDeath) then
-		-- Check if one team is dead
-		NK = self.game:GetTeamId("NK");
-		US = self.game:GetTeamId("US");
-		
-		NKCount = self.game:GetTeamAliveCount(NK);
-		USCount = self.game:GetTeamAliveCount(US);
+        if(self.suddenDeath) then
+                -- Check if one team is dead
+                NK = self.game:GetTeamId("NK");
+                US = self.game:GetTeamId("US");
+                
+                NKCount = self.game:GetTeamAliveCount(NK);
+                USCount = self.game:GetTeamAliveCount(US);
 
-		if(USCount==0) then
-			if(NKCount==0) then
-				self:SuddenDeath(false);
-                        	local overtimeTime=3;
-                        	self.game:AddOvertime(overtimeTime);
-                        	self.game:SendTextMessage(TextMessageBig, "@ui_msg_overtime_0", TextMessageToAll, nil, overtimeTime);
-			else
-				self:OnGameEnd(NK, 3);
-			end
-		end
-		else if(NKCount==0) then
-			if(USCount==0) then
-				self:SuddenDeath(false);
-                        	local overtimeTime=3;
-                        	self.game:AddOvertime(overtimeTime);
-                        	self.game:SendTextMessage(TextMessageBig, "@ui_msg_overtime_0", TextMessageToAll, nil, overtimeTime);
-			else
-				self:OnGameEnd(US, 3);
-			end
-		end
-	end
+                if(USCount==0) then
+                        if(NKCount==0) then
+                                self:SuddenDeath(false);
+                                local overtimeTime=3;
+                                self.game:AddOvertime(overtimeTime);
+                                self.game:SendTextMessage(TextMessageBig, "@ui_msg_overtime_0", TextMessageToAll, nil, overtimeTime);
+                        else
+                                self:OnGameEnd(NK, 3);
+                        end
+                end
+                else if(NKCount==0) then
+                        if(USCount==0) then
+                                self:SuddenDeath(false);
+                                local overtimeTime=3;
+                                self.game:AddOvertime(overtimeTime);
+                                self.game:SendTextMessage(TextMessageBig, "@ui_msg_overtime_0", TextMessageToAll, nil, overtimeTime);
+                        else
+                                self:OnGameEnd(US, 3);
+                        end
+                end
+        end
 
         if(playerId == g_localActorId) then
                 player.actor:DropInventory(10);

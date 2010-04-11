@@ -594,7 +594,6 @@ bool CGameRules::OnClientConnect(int channelId, bool isReset)
 			SetTeam(GetChannelTeam(channelId), pActor->GetEntityId());
 		}
 	}
-
 	return pActor != 0;
 }
 

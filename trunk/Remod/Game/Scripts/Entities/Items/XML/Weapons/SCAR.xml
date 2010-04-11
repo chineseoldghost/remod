@@ -18,9 +18,7 @@
 	<ammos>
 		<ammo name="bullet" extra="80" amount="40" />
 		<ammo name="scargrenade" extra="0" amount="0" accessoryAmmo="1"/>
-		<ammo name="tacbullet" extra="0" amount="0" accessoryAmmo="5"/>
-		<ammo name="tagbullet" extra="0" amount="0" accessoryAmmo="5"/>
-		<!--<ammo name="tacalienbullet" extra="5" amount="5" />-->
+		<ammo name="tagbullet" extra="0" amount="5" accessoryAmmo="5"/>
 	</ammos>
 	<geometry>
 		<firstperson name="objects/weapons/us/scar/scar_l-c_fp.chr" angles="0,0,0" position="0,0,0" />
@@ -669,6 +667,7 @@
 		<initialsetup>
 			<accessory name="GrenadeShell" />
 			<accessory name="SCARNormalAmmo" />
+			<accessory name="SCARTagAmmo" />
 			<!--<accessory name="Silencer" />
 			<accessory name="AssaultScope" />
 			<accessory name="GrenadeLauncher" />-->

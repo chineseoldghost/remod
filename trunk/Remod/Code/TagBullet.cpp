@@ -1,9 +1,12 @@
 #include "StdAfx.h"
-#include "TagBullet.h"
 #include "Game.h"
+#include "TagBullet.h"
 #include "GameRules.h"
-#include "HUD/HUD.h"
 #include <IEntitySystem.h>
+#include "HUD/HUD.h"
+#include "AmmoParams.h"
+
+IEntityClass* CTagBullet::EntityClass = 0;
 
 CTagBullet::CTagBullet(void)
 {
@@ -15,13 +18,15 @@ CTagBullet::~CTagBullet(void)
 
 void CTagBullet::HandleEvent(const SGameObjectEvent &event)
 {
-	if (m_destroying)
-		return;
+	FUNCTION_PROFILER(GetISystem(), PROFILE_GAME);
 
 	CProjectile::HandleEvent(event);
 
 	if (event.event == eGFE_OnCollision)
 	{
+		if (m_destroying)
+			return;
+
 		EventPhysCollision *pCollision = reinterpret_cast<EventPhysCollision *>(event.ptr);
 		if (!pCollision)
 			return;
@@ -30,6 +35,9 @@ void CTagBullet::HandleEvent(const SGameObjectEvent &event)
 		if (pTarget)
 		{
 			EntityId targetId = pTarget->GetId();
+
+			CHUD *pHUD = g_pGame->GetHUD();
+			pHUD->AddToRadar(targetId);
 
 			SimpleHitInfo info(m_ownerId, targetId, m_weaponId, 0); // 0=tag,1=tac
 			info.remote=IsRemote();

@@ -1589,7 +1589,7 @@ end
 ----------------------------------------------------------------------------------------------------
 function InstantAction:AnnounceAchievement(achievement)
 	player = g_gameRules:GetEntityName();
-	Chat.SendChatToAll(nil, "PLAYER %q EARNED THE '%s' ACHIEVEMENT!", player, achievement);
+	--Chat.SendChatToAll(nil, "PLAYER %q EARNED THE '%s' ACHIEVEMENT!", player, achievement);
 end
 
 ----------------------------------------------------------------------------------------------------

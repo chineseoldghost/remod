@@ -508,14 +508,15 @@ void CGame::EditorResetGame(bool bStart)
 
 void CGame::RegisterKill(EntityId shooterId)
 {
-	playerId = g_pGame->GetGameRules()->GetEntityId();
-	if(shooterId!=playerId)
-		return;
-	CryLogAlways("511");
-	if(!gEnv->pSystem->IsDedicated())
+	if(!gEnv->pSystem->IsDedicated()) // Since PlayerID checks are involved, we must see to it that the server does not initiate this
 	{
-		CryLogAlways("514");
 		CPlayer *pPlayer = static_cast<CPlayer*>(GetIGameFramework()->GetClientActor());
+		playerId = pPlayer->GetEntityId();
+		if(shooterId!=playerId)
+			return;
+		CryLogAlways("511");
+
+		CryLogAlways("514");
 		CryLogAlways("516");
 		CNanoSuit *pSuit = pPlayer->GetNanoSuit();
 		CryLogAlways("518");
@@ -528,7 +529,7 @@ void CGame::RegisterKill(EntityId shooterId)
 		CryLogAlways("526");
 
 		//CPlayer *pPlayer = g_pGame->GetIGameFramework()->GetClientActor();
-		if(pSuit->GetSuitEnergy()==100 && pPlayer->GetHealth()==100)
+		if(pSuit->GetSuitEnergy()==200 && pPlayer->GetHealth()==100)
 			NodamageKills++;
 		CryLogAlways("531");
 
@@ -541,7 +542,6 @@ void CGame::RegisterKill(EntityId shooterId)
 			CryLogAlways("537");
 		}
 		pSuit->StatModeCheck();
-		CryLogAlways("538");
 	}
 	
 }
@@ -551,45 +551,33 @@ void CGame::CheckKillStats()
 	CryLogAlways("539");
 	if(!gEnv->pSystem->IsDedicated())
 	{
-		CryLogAlways("550");
-		pScriptTable = GetGameRules()->GetEntity()->GetScriptTable();
-		CryLogAlways("552");
-		AnnounceAchievement = 0;
-		CryLogAlways("554");
+		CPlayer *pPlayer = static_cast<CPlayer*>(GetIGameFramework()->GetClientActor());
+		playerId = pPlayer->GetEntityId();
+
+		//Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
 		if(RegisteredKills==5)
 		{
-			CryLogAlways("557");
-			achievement = "5 KILLS";
-			CryLogAlways("559");
-			Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
-			CryLogAlways("561");
-			//CHUDTextChat *pChat = SAFE_HUD_FUNC_RET(GetMPChat()))
-		//pChat->AddChatMessage(sourceId, msg, teamFaction, teamChatOnly);
+			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "Achievement 'Rookie Shooter' Earned", false);
 		}
 		if(KillMode[2]==5)
 		{
-			achievement = "Maximum Strength";
-			Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
+			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "Achievement 'Maximum Strength' Earned", false);
 		}
 		else if(KillMode[3]==1)
 		{
-			achievement = "Sneaky Assassin";
-			Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
+			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "Achievement 'Sneaky Assassin' Earned", false);
 		}
 		if(KillsinVehicle==5)
 		{
-			achievement = "We ride on our enemies";
-			Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
+			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "Achievement 'Bodycrusher' Earned", false);
 		}
 		if(NodamageKills==5)
 		{
-			achievement = "N00bkillah";
-			Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
+			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "Achievement 'N00BKILLAH' Earned", false);
 		}	
 		if(SCARKills==5)
 		{
-			achievement = "SCAR's are hot";
-			Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
+			g_pGame->GetGameRules()->OnChatMessage(eChatToAll, playerId, 0, "Achievement 'SCARRED for life' Earned", false);
 		}
 	}
 }

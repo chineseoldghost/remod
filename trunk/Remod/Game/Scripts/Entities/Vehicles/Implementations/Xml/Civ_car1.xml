@@ -404,7 +404,7 @@
   </SeatGroup>
  </SeatGroups>
  <MovementParams>
-  <StdWheeled vMaxSteerMax="20" steerSpeed="10" steerSpeedMin="50" steerSpeedScale="1" steerSpeedScaleMin="1" v0SteerMax="55" kvSteerMax="4" steerRelaxation="500" pedalLimitMax="0.1" rpmInterpSpeed="4" rpmRelaxSpeed="2" rpmGearShiftSpeed="3">
+  <StdWheeled vMaxSteerMax="25" steerSpeed="10" steerSpeedMin="50" steerSpeedScale="1" steerSpeedScaleMin="1" v0SteerMax="55" kvSteerMax="4" steerRelaxation="500" pedalLimitMax="0.1" rpmInterpSpeed="4" rpmRelaxSpeed="2" rpmGearShiftSpeed="3">
    <Wheeled axleFriction="350" axleFrictionMax="2000" brakeTorque="5000" brakeImpulse="0.5" clutchSpeed="2.3" damping="0" engineIdleRPM="250" engineMaxRPM="3800" engineMinRPM="10" enginePower="160" engineShiftDownRPM="1300" engineShiftUpRPM="2000" engineStartRPM="500" stabilizer="0" maxBrakingFriction="0.69999999" rearWheelBrakingFrictionMult="1" maxSteer="0.44999999" maxSpeed="130" maxTimeStep="0.02" minEnergy="0.012" slipThreshold="0.02" suspDampingMin="-0.18000001" suspDampingMax="-0.5" suspDampingMaxSpeed="13" gearDirSwitchRPM="1000" dynFriction="1.2">
     <gearRatios>
      <gearRatio value="-8.5"/>

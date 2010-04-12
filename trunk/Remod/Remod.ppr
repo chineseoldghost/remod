@@ -79,7 +79,7 @@ Remod
 			+Actor
 				Game\Scripts\Entities\actor\BasicActor.lua
 				Game\Scripts\Entities\actor\player.lua
-			+Items
+			-Items
 				+XML
 					-Accessories
 						Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml
@@ -281,9 +281,13 @@ Remod
 8=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
 9=Game\Scripts\GameRules\PowerStruggleBuying.lua
 10=Game\Scripts\GameRules\PowerStruggleRank.lua
+11=Game\Scripts\Entities\Vehicles\Implementations\Xml\Civ_car1.xml
+12=Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_ltv.xml
+13=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
+14=Game\Scripts\Entities\actor\BasicActor.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
+Selected=Game\Scripts\Entities\actor\BasicActor.lua
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
@@ -294,7 +298,7 @@ Caret=1,1
 TopLine=133
 Caret=71,147
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
-TopLine=1
+TopLine=4
 Caret=60,46
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
 TopLine=108
@@ -317,3 +321,15 @@ Caret=15,189
 [Game\Scripts\GameRules\PowerStruggleRank.lua]
 TopLine=1
 Caret=3,24
+[Game\Scripts\Entities\Vehicles\Implementations\Xml\Civ_car1.xml]
+TopLine=387
+Caret=31,407
+[Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_ltv.xml]
+TopLine=605
+Caret=30,626
+[Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml]
+TopLine=601
+Caret=30,618
+[Game\Scripts\Entities\actor\BasicActor.lua]
+TopLine=705
+Caret=12,726

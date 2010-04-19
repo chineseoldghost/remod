@@ -17,7 +17,7 @@
 	<ai_descriptor handler="instant" burstBulletCountMin="1" burstBulletCountMax="10"
 		burstPauseTimeMin="0.8" burstPauseTimeMax="3.5" singleFireTriggerTime="-1" />
 	<ammos>
-		<ammo name="fybullet" extra="60" amount="30" />
+		<ammo name="fybullet" extra="150" amount="30" />
 		<ammo name="scargrenade" extra="0" amount="0" accessoryAmmo="1"/>
 		<ammo name="incendiarybullet" extra="0" amount="0" accessoryAmmo="30"/>
 	</ammos>
@@ -218,11 +218,11 @@
 				<param name="nearmiss_signal" value="OnNearMiss" />
 			</fire>
    			<recoil>
-	   		<param name="max_recoil"	value="1.8" />
-				<param name="attack" 			value="1.8" />
+	   		<param name="max_recoil"	value="2.05" />
+				<param name="attack" 			value="2.05" />
 				<param name="decay" 			value="0.175" />
-				<param name="maxx" 				value="1.8" />
-				<param name="maxy" 				value="1.8" />
+				<param name="maxx" 				value="2.05" />
+				<param name="maxy" 				value="2.05" />
 				<param name="randomness" 	value="0.25" />
 				<param name="recoil_prone_m" value="0.25" />
 				<param name="recoil_crouch_m" value="0.5" />

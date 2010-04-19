@@ -16,7 +16,7 @@
 	</params>
 	<ai_descriptor handler="instant" burstBulletCountMin="1" burstBulletCountMax="10" burstPauseTimeMin="0.8" burstPauseTimeMax="3.5" singleFireTriggerTime="-1" />
 	<ammos>
-		<ammo name="bullet" extra="80" amount="40" />
+		<ammo name="bullet" extra="200" amount="40" />
 		<ammo name="scargrenade" extra="0" amount="0" accessoryAmmo="1"/>
 		<ammo name="tagbullet" extra="0" amount="5" accessoryAmmo="5"/>
 	</ammos>
@@ -230,11 +230,11 @@
 				<param name="nearmiss_signal" value="OnNearMiss" />
 			</fire>
 			<recoil>
-				<param name="max_recoil"	value="1.5" />
-				<param name="attack" 			value="1.5" />
+				<param name="max_recoil"	value="1.75" />
+				<param name="attack" 			value="1.75" />
 				<param name="decay" 			value="0.175" />
-				<param name="maxx" 				value="1.5" />
-				<param name="maxy" 				value="1.5" />
+				<param name="maxx" 				value="1.75" />
+				<param name="maxy" 				value="1.75" />
 				<param name="randomness" 	value="0.25" />
 				<param name="recoil_prone_m" value="0.25" />
 				<param name="recoil_crouch_m" value="0.5" />
@@ -265,6 +265,11 @@
 				<param name="speed_m" value="1.25" />
 				<param name="rotation_m" value="0" />
 			</spread>-->
+			<!--<burst>
+				<param name="rate" value="700" />
+				<param name="nshots" value="2" />
+        <param name="onesound" value="1" />
+			</burst>-->
 			<!--<muzzleflash>
 				<firstperson effect="muzzleflash.AssaultRifle.silenced_smoke" helper="muzzle_flash_effect"/>
 				<thirdperson effect="muzzleflash.AssaultRifle.silenced_smoke_tp" helper="weapon_term"/>
@@ -375,7 +380,7 @@
 				<param name="back_impulse" value="0.2" />
 			</recoil>
 		</firemode>
-		<firemode name="Tac Sleep" type="Single" enabled="0" >
+		<!--<firemode name="Tac Sleep" type="Single" enabled="0" >
 			<fire>
 				<param name="ammo_type" value="tacbullet" />
 				<param name="clip_size" value="5" />
@@ -391,7 +396,7 @@
 				<param name="reload_chamber_empty" value="reload_tac"/>
 				<param name="reload_chamber_full" value="reload_tac"/>
 			</actions>
-		</firemode>
+		</firemode>-->
 		<!--<firemode name="FireTacEMP" type="Single" enabled="0" >
 			<fire>
 				<param name="ammo_type" value="tacalienbullet" />
@@ -752,7 +757,7 @@
 			<attach helper="attachment_side" layer="flashlight" />
 			<detach />
 		</accessory>
-		<accessory name="SCARTagAmmo" switchToFireMode="Single">
+		<!--<accessory name="SCARTagAmmo" switchToFireMode="Single">
 			<attach helper="magazine" layer="" />
 			<detach />
 			<params>
@@ -774,6 +779,6 @@
 					</firemode>
 				</firemodes>
 			</params>
-		</accessory>
+		</accessory>-->
 	</accessories>
 </item>

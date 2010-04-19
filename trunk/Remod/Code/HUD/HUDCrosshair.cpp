@@ -497,18 +497,18 @@ void CHUDCrosshair::SelectCrosshair(IItem *pItem)
 				}
 				else if(g_pHUD->GetSelectedFiremode() == 6) //sleep bullet
 				{
-					SetCrosshair(12);
+					SetCrosshair(0);
 					bSpecialCrosshairSet = true;
 				}
 				else if(g_pHUD->GetSelectedFiremode() == 4) //grenade launcher
 				{
-					SetCrosshair(13);
+					SetCrosshair(0); // Remod default is 13
 					bSpecialCrosshairSet = true;
 				}
 				else if(g_pHUD->GetSelectedFiremode() == 31 || g_pHUD->GetSelectedFiremode() == 26 || g_pHUD->GetSelectedFiremode() == 29 ||
 								g_pHUD->GetSelectedFiremode() == 28 || g_pHUD->GetSelectedFiremode() == 27 || g_pHUD->GetSelectedFiremode() == 30) //auto grenade launcher: needs fire mode because of pickup
 				{
-					SetCrosshair(15);
+					SetCrosshair(0);
 					bSpecialCrosshairSet = true;
 				}
 			}

@@ -79,7 +79,7 @@ Remod
 			+Actor
 				Game\Scripts\Entities\actor\BasicActor.lua
 				Game\Scripts\Entities\actor\player.lua
-			-Items
+			+Items
 				+XML
 					-Accessories
 						Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml
@@ -270,39 +270,32 @@ Remod
 		Game\Scripts\main.lua
 		Game\Scripts\Remod.lua
 [Open project files]
-0=Game\Shaders\HWScripts\CryFX\PostProcess.cfx
-1=Game\Languages\game_text_messages.xml
-2=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
-3=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
-4=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
-5=Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml
-6=Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
-7=Game\Scripts\Entities\Items\XML\Weapons\Binoculars.xml
-8=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
-9=Game\Scripts\GameRules\PowerStruggleBuying.lua
-10=Game\Scripts\GameRules\PowerStruggleRank.lua
-11=Game\Scripts\Entities\Vehicles\Implementations\Xml\Civ_car1.xml
-12=Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_ltv.xml
-13=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
-14=Game\Scripts\Entities\actor\BasicActor.lua
+0=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
+1=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
+2=Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml
+3=Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
+4=Game\Scripts\Entities\Items\XML\Weapons\Binoculars.xml
+5=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
+6=Game\Scripts\GameRules\PowerStruggleBuying.lua
+7=Game\Scripts\GameRules\PowerStruggleRank.lua
+8=Game\Scripts\Entities\Vehicles\Implementations\Xml\Civ_car1.xml
+9=Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_ltv.xml
+10=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
+11=Game\Scripts\Entities\actor\BasicActor.lua
+12=Game\Libs\MaterialEffects\SurfaceTypes.xml
+13=Game\Scripts\GameRules\InstantAction.lua
+14=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
+15=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
+16=Game\Scripts\Entities\actor\player.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\actor\BasicActor.lua
-[Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
-TopLine=1
-Caret=1,1
-[Game\Languages\game_text_messages.xml]
-TopLine=1
-Caret=1,1
+Selected=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
 [Game\Scripts\Entities\Items\XML\Weapons\SMG.xml]
 TopLine=133
 Caret=71,147
-[Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
-TopLine=4
-Caret=60,46
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
-TopLine=108
-Caret=71,150
+TopLine=197
+Caret=39,225
 [Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml]
 TopLine=101
 Caret=78,120
@@ -331,5 +324,20 @@ Caret=30,626
 TopLine=601
 Caret=30,618
 [Game\Scripts\Entities\actor\BasicActor.lua]
-TopLine=705
-Caret=12,726
+TopLine=713
+Caret=24,726
+[Game\Libs\MaterialEffects\SurfaceTypes.xml]
+TopLine=1
+Caret=22,11
+[Game\Scripts\GameRules\InstantAction.lua]
+TopLine=720
+Caret=1,1
+[Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml]
+TopLine=194
+Caret=45,230
+[Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
+TopLine=214
+Caret=39,237
+[Game\Scripts\Entities\actor\player.lua]
+TopLine=483
+Caret=1,1

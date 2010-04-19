@@ -89,23 +89,23 @@ ActorShared =
 			{
 				{
 					direction = {x=0,y=0,z=1},
-					strength = 50,
+					strength = 0,
 					partId = -1,
 				},
 				{
 					use_direction = true,
 					direction = {x=1,y=1,z=1},
-					strength = 50,
+					strength = 0,
 					partId = 31,
 				},
 				{
 					direction = {x=0,y=1,z=0},
-					strength = 25,
+					strength = 0,
 					partId = 2,
 				},
 				{
 					direction = {x=0,y=1,z=0},
-					strength = 25,
+					strength = 0,
 					partId = 3,
 				},							
 			},
@@ -113,14 +113,14 @@ ActorShared =
 			{
 				{
 					direction = {x=0,y=0,z=1},
-					strength = 50,
+					strength = 0,
 					partId = -1,
 				},
 				{
 					use_direction = true,
 					direction = {x=1,y=1,z=1},
 					use_strength = true,
-					strength = 5,
+					strength = 0,
 				},
 			},
 			rotate = 0,
@@ -138,12 +138,12 @@ ActorShared =
 					direction = {x=1,y=1,z=1},
 					use_strength = true,
 					partId = -1,
-					strength = 50,
+					strength = 0,
 				},						
 				{ -- Front
 					use_direction = true,
 					direction = {x=1,y=1,z=1},
-					strength = 150,
+					strength = 0,
 					partId = 31,
 				},
 			},
@@ -151,7 +151,7 @@ ActorShared =
 			{
 				{
 					direction = {x=0,y=0,z=1},
-					strength = 150,
+					strength = 0,
 					use_strength = true,
 					partId = -1,
 					strength = 10,
@@ -161,35 +161,35 @@ ActorShared =
 					direction = {x=1,y=1,z=1},
 					use_strength = true,
 					partId = -1,
-					strength = 4,
+					strength = 0,
 				},
 				{
 					use_direction = true,
 					direction = {x=1,y=1,z=1},
 					use_strength = true,
 					partId = 23,
-					strength = 2,
+					strength = 0,
 				},
 				{
 					use_direction = true,
 					direction = {x=1,y=1,z=1},
 					use_strength = true,
 					partId = 6,
-					strength = 2,
+					strength = 0,
 				},
 				{
 					use_direction = true,
 					direction = {x=-1,y=-1,z=-1},
 					use_strength = true,
 					partId = 62,
-					strength = 0.3,
+					strength = 0,
 				},
 				{
 					use_direction = true,
 					direction = {x=-1,y=-1,z=-1},
 					use_strength = true,
 					partId = 38,
-					strength = 0.3,
+					strength = 0,
 				},
 			},
 			rotate = 0.3,
@@ -199,23 +199,23 @@ ActorShared =
 			{
 				{
 					direction = {x=0,y=0,z=1},
-					strength = 40,
+					strength = 0,
 					partId = -1,
 				},
 				{
 					use_direction = true,
 					direction = {x=1,y=1,z=1},
-					strength = 75,
+					strength = 0,
 					partId = 31,
 				},
 				{
 					direction = {x=0,y=1,z=0},
-					strength = 50,
+					strength = 0,
 					partId = 2,
 				},
 				{
 					direction = {x=0,y=1,z=0},
-					strength = 50,
+					strength = 0,
 					partId = 3,
 				},					
 			},
@@ -223,14 +223,14 @@ ActorShared =
 			{
 				{
 					direction = {x=0,y=0,z=1},
-					strength = 30,
+					strength = 0,
 					partId = -1,
 				},
 				{
 					use_direction = true,
 					direction = {x=1,y=1,z=1},
 					use_strength = true,
-					strength = 5,
+					strength = 0,
 				},
 			},
 			rotate = 1,
@@ -240,23 +240,23 @@ ActorShared =
 			{
 				{
 					direction = {x=0,y=0,z=1},
-					strength = 40,
+					strength = 0,
 					partId = -1,
 				},
 				{
 					use_direction = true,
 					direction = {x=1,y=1,z=1},
-					strength = 100,
+					strength = 0,
 					partId = 31,
 				},
 				{
 					direction = {x=0,y=1,z=0},
-					strength = 50,
+					strength = 0,
 					partId = 2,
 				},
 				{
 					direction = {x=0,y=1,z=0},
-					strength = 50,
+					strength = 0,
 					partId = 3,
 				},								
 			},
@@ -264,14 +264,14 @@ ActorShared =
 			{
 				{
 					direction = {x=0,y=0,z=1},
-					strength = 40,
+					strength = 0,
 					partId = -1,
 				},
 				{
 					use_direction = true,
 					direction = {x=1,y=1,z=1},
 					use_strength = true,
-					strength = 2,
+					strength = 0,
 				},
 			},
 			rotate = 1,
@@ -281,23 +281,23 @@ ActorShared =
 			{
 				{
 					direction = {x=0,y=0,z=1},
-					strength = 40,
+					strength = 0,
 					partId = -1,
 				},
 				{
 					use_direction = true,
 					direction = {x=1,y=1,z=1},
-					strength = 100,
+					strength = 0,
 					partId = 31,
 				},
 				{
 					direction = {x=0,y=1,z=0},
-					strength = 50,
+					strength = 0,
 					partId = 2,
 				},
 				{
 					direction = {x=0,y=1,z=0},
-					strength = 50,
+					strength = 0,
 					partId = 3,
 				},								
 			},
@@ -305,14 +305,14 @@ ActorShared =
 			{
 				{
 					direction = {x=0,y=0,z=1},
-					strength = 100,
+					strength = 0,
 					partId = -1,
 				},
 				{
 					use_direction = true,
 					direction = {x=1,y=1,z=1},
 					use_strength = true,
-					strength = 4,
+					strength = 0,
 				},
 			},
 			rotate = 1,
@@ -322,23 +322,23 @@ ActorShared =
 			{
 				{
 					direction = {x=0,y=0,z=1},
-					strength = 175,
+					strength = 125,
 					partId = -1,
 				},
 				{
 					use_direction = true,
 					direction = {x=1,y=1,z=1},
-					strength = 200,
+					strength = 125,
 					partId = 31,
 				},
 				{
 					direction = {x=0,y=1,z=0},
-					strength = 175,
+					strength = 125,
 					partId = 2,
 				},
 				{
 					direction = {x=0,y=1,z=0},
-					strength = 175,
+					strength = 125,
 					partId = 3,
 				},				
 			},
@@ -346,14 +346,14 @@ ActorShared =
 			{
 				{
 					direction = {x=0,y=0,z=1},
-					strength = 175,
+					strength = 125,
 					partId = -1,
 				},
 				{
 					use_direction = true,
 					direction = {x=1,y=1,z=1},
 					use_strength = true,
-					strength = 175,
+					strength = 125,
 				},
 			},
 			rotate = 0,
@@ -723,13 +723,13 @@ BasicActorParams =
 	{
 		flags = 0,
 		mass = 90,
-		stiffness_scale = 20,
+		stiffness_scale = 0.5,
 					
 		Living = 
 		{
 			gravity = 9.81,--15,--REMINDER: if there is a ZeroG sphere in the map, gravity is set to 9.81.
 						 --It will be fixed, but for now just do all the tweaks without any zeroG sphere in the map.
-			mass = 80,
+			mass = 90,
 			air_resistance = 0.5, --used in zeroG
 			
 			k_air_control = 0.3,
@@ -865,8 +865,8 @@ BasicActorParams =
 		
 		slopeSlowdown = 0.5,
 		
-		leanShift = 0.35, -- How much the view shift on the side when leaning
-		leanAngle = 15, -- How much the view rotate when leaning
+		leanShift = 0.3, -- How much the view shift on the side when leaning
+		leanAngle = 10, -- How much the view rotate when leaning
 		
 		-- ZeroG stuff:
 		thrusterImpulse = 14.0, -- Thruster power, for the moment very related to air_resistance.

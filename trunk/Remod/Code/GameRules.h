@@ -339,6 +339,9 @@ public:
 	virtual int GetTeam(EntityId entityId) const;
 	virtual int GetChannelTeam(int channelId) const;
 
+	int NKAliveCount;
+	int USAliveCount;
+
 	//------------------------------------------------------------------------
 	// objectives
 	virtual void AddObjective(int teamId, const char *objective, int status, EntityId entityId);

@@ -594,6 +594,7 @@ bool CGameRules::OnClientConnect(int channelId, bool isReset)
 			SetTeam(GetChannelTeam(channelId), pActor->GetEntityId());
 		}
 	}
+
 	return pActor != 0;
 }
 
@@ -758,8 +759,6 @@ void CGameRules::OnRevive(CActor *pActor, const Vec3 &pos, const Quat &rot, int 
 void CGameRules::OnKill(CActor *pActor, EntityId shooterId, const char *weaponClassName, int damage, int material, int hit_type)
 {
 	SAFE_HUD_FUNC(ActorDeath(pActor));
-
-	CPlayer *pPlayer = new CPlayer;
 
 	ScriptHandle handleEntity(pActor->GetEntityId()), handleShooter(shooterId);
 	CallScript(m_clientStateScript, "OnKill", handleEntity, handleShooter, weaponClassName, damage, material, hit_type);
@@ -3674,7 +3673,6 @@ void CGameRules::UpdateAffectedEntitiesSet(TExplosionAffectedEntities &affectedE
 					IPhysicalEntity* pEnt = pEntity->GetPhysics();
 					if (pEnt)
 					{
-
 						float affected=gEnv->pPhysicalWorld->IsAffectedByExplosion(pEnt);
 
 						AddOrUpdateAffectedEntity(affectedEnts, pEntity, affected);

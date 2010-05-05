@@ -36,8 +36,9 @@ Player = {
 			sightrange = 50,
 		}	,
 		--
-		fileModel = "objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf", -- Third person player model.
-		clientFileModel = "objects/characters/human/us/nanosuit/nanosuit_us_fp3p.cdf", -- First person legs?
+		--fileModel = "objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf", -- Original third person player model.
+		fileModel = "objects/characters/human/us/marine/marine_04_helmet_goggles_on.cdf", -- Third person player model.
+		clientFileModel = "objects/characters/human/us/marine/marine_04_helmet_goggles_on.cdf", -- First person legs?
 		--fileModel = "objects/characters/human/asian/nanosuit/nanosuit_asian_fp3p.cdf",
 		fpItemHandsModel = "objects/weapons/arms_global/arms_nanosuit_us.chr", -- First person viewmodel (arms).
 		--fpItemHandsModel = "objects/weapons/arms_global/arms_nanosuit_asian.chr",	
@@ -84,8 +85,8 @@ Player = {
 		{
 			{
 				stanceId = STANCE_STAND,
-				normalSpeed = 1.75,
-				maxSpeed = 3.75,
+				normalSpeed = 1.3,
+				maxSpeed = 2.5,
 				heightCollider = 1.2,
 				heightPivot = 0.0,
 				size = {x=0.4,y=0.4,z=0.3},
@@ -102,7 +103,7 @@ Player = {
 			{
 				stanceId = STANCE_CROUCH,
 				normalSpeed = 1.0,
-				maxSpeed = 2.0,
+				maxSpeed = 1.55,
 				heightCollider = 0.9,
 				heightPivot = 0,
 				size = {x=0.4,y=0.4,z=0.1},

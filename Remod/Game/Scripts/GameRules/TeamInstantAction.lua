@@ -55,7 +55,7 @@ TeamInstantAction.teamModel=
                                         
         tan             ={
                                                 {
-                                                        "objects/characters/human/asian/nk_soldier/nk_soldier_elite_camper_light_gren_03.cgf",
+                                                        "objects/characters/human/asian/nk_soldier/nk_soldier_elite_camper_light_gren_03.cdf",
                                                         "objects/weapons/arms_global/arms_nanosuit_asian.chr",
                                                         "objects/characters/human/asian/nk_soldier/nk_soldier_frozen_scatter.cgf",
                                                         "objects/characters/human/asian/nanosuit/nanosuit_asian_fp3p.cdf",

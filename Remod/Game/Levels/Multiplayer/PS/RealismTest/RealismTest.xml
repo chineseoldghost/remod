@@ -1,4 +1,5 @@
 <MetaData>
+          <MiniMap Filename="minimap.jpg" startX="248.379395" startY="249.322998" endX="3848.379395" endY="3849.322998"/>
    <Gamerules MP1="PowerStruggle"/>
    <LoadingScreens screen1=""/>
    <HeaderText text="RealismTest"/>

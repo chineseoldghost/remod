@@ -853,8 +853,8 @@ BasicActorParams =
 		},
 					
 		sprintMultiplier = 1.8, -- Speed is multiplied by this amount if sprint key is pressed -- 1.2 for a more counter-striky feel
-		strafeMultiplier = 1.0, -- Speed is multiplied by this amount when strafing in SP
-		strafeMultiplierMP = 0.5, -- Speed is multiplied by this amount when strafing in MP
+		strafeMultiplier = 0.75, -- Speed is multiplied by this amount when strafing in SP
+		strafeMultiplierMP = 0.75, -- Speed is multiplied by this amount when strafing in MP
 		backwardMultiplier = 0.5, -- Speed is multiplied by this amount when going backward
 		grabMultiplier = 0.5, -- Speed is multiplied by this amount when the player is carry the maximun amount carriable
 				

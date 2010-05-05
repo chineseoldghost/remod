@@ -119,15 +119,16 @@ void SCVars::InitCVars(IConsole *pConsole)
 	//FIXME:just for testing
 	pConsole->Register("cl_strengthscale", &cl_strengthscale, 1.0f, 0, "nanosuit strength scale");
 
-	/*
+	
 	// GOC
-	pConsole->Register("goc_enable", &goc_enable, 0, VF_CHEAT, "gears of crysis");
+	pConsole->Register("goc_enable", &goc_enable, 1, VF_CHEAT, "gears of crysis");
 	pConsole->Register("goc_tpcrosshair", &goc_tpcrosshair, 0, VF_CHEAT, "keep crosshair in third person");
 	pConsole->Register("goc_targetx", &goc_targetx, 0.5f, VF_CHEAT, "target position of camera");
-	pConsole->Register("goc_targety", &goc_targety, -2.5f, VF_CHEAT, "target position of camera");
-	pConsole->Register("goc_targetz", &goc_targetz, 0.2f, VF_CHEAT, "target position of camera");
+	pConsole->Register("goc_targety", &goc_targety, -1.7f, VF_CHEAT, "target position of camera");
+	pConsole->Register("goc_targetz", &goc_targetz, 0.0f, VF_CHEAT, "target position of camera");
 	pConsole->AddCommand("GOCMode", CmdGOCMode, VF_CHEAT, "Enable GOC mode");
 	
+	/*
 	// BulletTime
 	pConsole->Register("bt_speed", &bt_speed, 0, VF_CHEAT, "bullet-time when in speed mode");
 	pConsole->Register("bt_ironsight", &bt_ironsight, 0, VF_CHEAT, "bullet-time when in ironsight");
@@ -389,7 +390,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 
 	// Remod
 	pConsole->Register("hud_voicemode", &hud_voicemode, 1, 0, "Usage of the voice when switching of Nanosuit mode.");
-	pConsole->Register("hud_crosshair", &hud_crosshair, 8,VF_CHEAT, "Disabled", CHUD::OnCrosshairCVarChanged);
+	pConsole->Register("hud_crosshair", &hud_crosshair, 2, 0, "Disabled", CHUD::OnCrosshairCVarChanged);
 
 	pConsole->Register("hud_alternateCrosshairSpread",&hud_iAlternateCrosshairSpread,0, 0, "Switch new crosshair spread code on/off.");
 	pConsole->Register("hud_alternateCrosshairSpreadCrouch",&hud_fAlternateCrosshairSpreadCrouch,12.0f, VF_CHEAT);

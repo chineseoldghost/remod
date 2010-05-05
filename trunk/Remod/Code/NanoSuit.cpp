@@ -1003,7 +1003,7 @@ void CNanoSuit::SetCloak(bool on, bool force)
 
 void CNanoSuit::SelectSuitMaterial()
 {
-	if(!m_pOwner)
+	/*if(!m_pOwner)
 		return;
 
 	if(m_currentMode == NANOMODE_CLOAK && m_cloak.GetType() != CLOAKMODE_CHAMELEON)
@@ -1021,7 +1021,7 @@ void CNanoSuit::SelectSuitMaterial()
 		mode = NANOMODE_DEFENSE_HIT_REACTION;
 
 	SNanoMaterial* pNanoMat = &m_pNanoMaterial[mode];
-	AssignNanoMaterialToEntity(pEntity, pNanoMat);
+	AssignNanoMaterialToEntity(pEntity, pNanoMat);*/
 }
 
 void CNanoSuit::Precache()

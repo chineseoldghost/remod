@@ -292,7 +292,7 @@ Remod
 19=Game\Scripts\GameRules\TeamInstantAction.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\GameRules\PowerStruggle.lua
+Selected=Game\Scripts\Entities\actor\BasicActor.lua
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
@@ -330,8 +330,8 @@ Caret=30,626
 TopLine=601
 Caret=30,618
 [Game\Scripts\Entities\actor\BasicActor.lua]
-TopLine=547
-Caret=20,620
+TopLine=706
+Caret=22,739
 [Game\Libs\MaterialEffects\SurfaceTypes.xml]
 TopLine=243
 Caret=31,264
@@ -345,11 +345,11 @@ Caret=45,230
 TopLine=214
 Caret=39,237
 [Game\Scripts\Entities\actor\player.lua]
-TopLine=18
-Caret=86,41
+TopLine=94
+Caret=13,112
 [Game\Scripts\GameRules\PowerStruggle.lua]
-TopLine=34
-Caret=72,62
+TopLine=38
+Caret=9,59
 [Game\Scripts\GameRules\TeamInstantAction.lua]
 TopLine=37
-Caret=58,58
+Caret=140,58

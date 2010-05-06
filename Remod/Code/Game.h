@@ -28,8 +28,8 @@
 #include "ServerSynchedStorage.h"
 #include "Cry_Camera.h"
 
-#define GAME_NAME				"Crysis Wars: Remod"
-#define GAME_LONGNAME		"Crysis Wars: Remod"
+#define GAME_NAME				"SPEHS MAHREENS"
+#define GAME_LONGNAME		"SPEHS MAHREENS"
 
 
 struct ISystem;
@@ -52,7 +52,6 @@ class  CGameActions;
 class CGameRules;
 class CBulletTime;
 class CHUD;
-class CPlayer;
 class CSynchedStorage;
 class CClientSynchedStorage;
 class CServerSynchedStorage;
@@ -211,7 +210,6 @@ public:
 	CSoundMoods *GetSoundMoods() const;
 	CLaptopUtil *GetLaptopUtil() const;
 	CHUD *GetHUD() const;
-	CPlayer *GetPlayer() const;
 	CFlashMenuObject *GetMenu() const;
 	COptionsManager *GetOptions() const;
 
@@ -312,7 +310,6 @@ protected:
 	CGameActions				*m_pGameActions;	
 	IPlayerProfileManager* m_pPlayerProfileManager;
 	CHUD								*m_pHUD;
-	CPlayer								*m_pPlayer;
 	CServerSynchedStorage	*m_pServerSynchedStorage;
 	CClientSynchedStorage	*m_pClientSynchedStorage;
 	CSPAnalyst          *m_pSPAnalyst;

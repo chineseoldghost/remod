@@ -3129,7 +3129,6 @@ void CPlayer::UpdateStats(float frameTime)
 void CPlayer::ToggleThirdPerson()
 {
 	m_stats.isThirdPerson = true;
-	gEnv->pConsole->ExecuteString("GOCMode");
 
 	CALL_PLAYER_EVENT_LISTENERS(OnToggleThirdPerson(this,m_stats.isThirdPerson));
 }

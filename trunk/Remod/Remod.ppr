@@ -292,7 +292,7 @@ Remod
 19=Game\Scripts\GameRules\TeamInstantAction.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\actor\player.lua
+Selected=Game\Scripts\GameRules\PowerStruggle.lua
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
@@ -319,7 +319,7 @@ TopLine=147
 Caret=15,189
 [Game\Scripts\GameRules\PowerStruggleRank.lua]
 TopLine=1
-Caret=139,23
+Caret=1,1
 [Game\Scripts\Entities\Vehicles\Implementations\Xml\Civ_car1.xml]
 TopLine=387
 Caret=31,407
@@ -330,14 +330,14 @@ Caret=30,626
 TopLine=601
 Caret=30,618
 [Game\Scripts\Entities\actor\BasicActor.lua]
-TopLine=821
-Caret=28,857
+TopLine=547
+Caret=20,620
 [Game\Libs\MaterialEffects\SurfaceTypes.xml]
 TopLine=243
 Caret=31,264
 [Game\Scripts\GameRules\InstantAction.lua]
-TopLine=15
-Caret=19,57
+TopLine=31
+Caret=18,57
 [Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml]
 TopLine=194
 Caret=45,230
@@ -345,11 +345,11 @@ Caret=45,230
 TopLine=214
 Caret=39,237
 [Game\Scripts\Entities\actor\player.lua]
-TopLine=42
-Caret=34,84
+TopLine=18
+Caret=86,41
 [Game\Scripts\GameRules\PowerStruggle.lua]
-TopLine=32
-Caret=92,59
+TopLine=34
+Caret=72,62
 [Game\Scripts\GameRules\TeamInstantAction.lua]
 TopLine=37
-Caret=141,58
+Caret=58,58

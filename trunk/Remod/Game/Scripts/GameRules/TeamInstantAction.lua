@@ -46,7 +46,7 @@ TeamInstantAction.teamModel=
 {
         black   ={
                                                 {
-                                                        "objects/characters/human/us/marine/marine_04_helmet_goggles_on.cdf",
+                                                        "objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf",
                                                         "objects/weapons/arms_global/arms_nanosuit_us.chr",
                                                         "objects/characters/human/asian/nk_soldier/nk_soldier_frozen_scatter.cgf",
                                                         "objects/characters/human/us/nanosuit/nanosuit_us_fp3p.cdf",
@@ -55,7 +55,7 @@ TeamInstantAction.teamModel=
                                         
         tan             ={
                                                 {
-                                                        "objects/characters/human/asian/nk_soldier/nk_soldier_elite_camper_light_gren_03.cdf",
+                                                        "objects/characters/human/asian/nanosuit/nanosuit_asian_multiplayer.cdf",
                                                         "objects/weapons/arms_global/arms_nanosuit_asian.chr",
                                                         "objects/characters/human/asian/nk_soldier/nk_soldier_frozen_scatter.cgf",
                                                         "objects/characters/human/asian/nanosuit/nanosuit_asian_fp3p.cdf",

@@ -41,20 +41,20 @@ InstantAction.SCORE_LAST_KEY 			= 104;	-- make sure this is always the last one
 
 InstantAction.DamagePlayerToPlayer =
 {
-	helmet		= 3.99,
-	kevlar		= 3.45,
+	helmet		= 2.66,
+	kevlar		= 2.3,
 
-	head 	        = 5.25,
-	torso 		= 3,
-	arm_left	= 2.55,
-	arm_right	= 2.55,
-	leg_left	= 2.55,
-	leg_right	= 2.55,
+	head 	        = 3.5,
+	torso 		= 2,
+	arm_left	= 1.7,
+	arm_right	= 1.7,
+	leg_left	= 1.7,
+	leg_right	= 1.7,
 
-	foot_left	= 1.95,
-	foot_right	= 1.95,
-	hand_left	= 1.95,
-	hand_right	= 1.95,
+	foot_left	= 1.3,
+	foot_right	= 1.3,
+	hand_left	= 1.3,
+	hand_right	= 1.3,
 	assist_min  = 0.6,
 };
 

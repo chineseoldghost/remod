@@ -1750,8 +1750,8 @@ IEntity *CPlayer::LinkToVehicle(EntityId vehicleId)
     if (IsThirdPerson() && !g_pGameCVars->goc_enable)
       //ToggleThirdPerson();
 
-		/*if (g_pGameCVars->goc_enable && !IsThirdPerson())
-			ToggleThirdPerson();*/
+		//if (g_pGameCVars->goc_enable && !IsThirdPerson())
+			//ToggleThirdPerson();
 
 		CALL_PLAYER_EVENT_LISTENERS(OnExitVehicle(this));
 		m_vehicleViewDir.Set(0,1,0);
@@ -3128,7 +3128,7 @@ void CPlayer::UpdateStats(float frameTime)
 //-----------------------------------------------------------------------------
 void CPlayer::ToggleThirdPerson()
 {
-	m_stats.isThirdPerson = true;	
+	m_stats.isThirdPerson = true;
 
 	CALL_PLAYER_EVENT_LISTENERS(OnToggleThirdPerson(this,m_stats.isThirdPerson));
 }
@@ -3201,9 +3201,12 @@ void CPlayer::Revive( bool fromInit )
 	m_frozenAmount = 0.0f;
 
 	m_viewAnglesOffset.Set(0,0,0);
+	
+  if (IsClient() && IsThirdPerson())
+    ToggleThirdPerson();
 
 	// HAX: to fix player spawning and floating in dedicated server: Marcio fix me?
-	if (!gEnv->pSystem->IsEditor())  // AlexL: in editor, we never keep spectator mode
+	if (gEnv->pSystem->IsEditor() == false)  // AlexL: in editor, we never keep spectator mode
 	{
 		uint8 spectator=m_stats.spectatorMode;
 		m_stats = SPlayerStats();
@@ -3319,6 +3322,16 @@ void CPlayer::Revive( bool fromInit )
 		CFists *pFists = static_cast<CFists*>(GetItemByClass(CItem::sFistsClass));
 		if(pFists)
 			g_pGame->GetIGameFramework()->GetIItemSystem()->SetActorItem(this, pFists->GetEntityId());
+	}
+
+	if (!fromInit && m_pNanoSuit)
+	{
+		m_pNanoSuit->SetMode(NANOMODE_DEFENSE, true, true);
+		m_pNanoSuit->SetCloakLevel(CLOAKMODE_REFRACTION);
+		//m_pNanoSuit->ActivateMode(NANOMODE_CLOAK, false);	// cloak must be picked up or bought
+
+		if (GetEntity()->GetAI())	//just for the case the player was still cloaked (happens in editor when exiting game cloaked)
+			gEnv->pAISystem->SendSignal(SIGNALFILTER_SENDER,1, "OnNanoSuitUnCloak", GetEntity()->GetAI());
 	}
 
 	// marcio: reset pose on the dedicated server (dedicated server doesn't update animationgraphs)
@@ -3448,7 +3461,7 @@ void CPlayer::RagDollize( bool fallAndPlay )
 			}
 		}
 
-		if (gEnv->bMultiplayer)
+		if(gEnv->bMultiplayer)
 		{
 			pe_params_part pp;
 			pp.flagsAND = ~(geom_colltype_player|geom_colltype_vehicle|geom_colltype6);
@@ -4596,7 +4609,7 @@ void CPlayer::HandleEvent( const SGameObjectEvent& event )
 				m_pNanoSuit->SelectSuitMaterial();
 			}
 			Physicalize();
-			//CALL_PLAYER_EVENT_LISTENERS(OnToggleThirdPerson(this,m_stats.isThirdPerson));
+			CALL_PLAYER_EVENT_LISTENERS(OnToggleThirdPerson(this,m_stats.isThirdPerson));
 		}
 	}
 }
@@ -4745,8 +4758,6 @@ void CPlayer::ChangeParachuteState(int8 newState)
 					int flags = GetEntity()->GetSlotFlags(m_nParachuteSlot)&~ENTITY_SLOT_RENDER;			
 					GetEntity()->SetSlotFlags(m_nParachuteSlot,flags );		
 				}
-
-				ToggleThirdPerson();
 
 				if (IsClient())
 				{

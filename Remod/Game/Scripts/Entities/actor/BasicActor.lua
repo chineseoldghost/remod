@@ -736,7 +736,7 @@ BasicActorParams =
 			
 			max_vel_ground = 200,
 			
-			min_slide_angle = 25.0,
+			min_slide_angle = 30.0,
 			max_climb_angle = 35.0,
 			min_fall_angle = 50.0,
 			
@@ -861,7 +861,7 @@ BasicActorParams =
 		inertia = 9, -- 7.0 -- The more, the faster the speed change: 1 is very slow, 10 is very fast already 
 		inertiaAccel = 6, -- same as inertia, but used when the player accel
 			
-		jumpHeight = 1.0, -- Meters
+		jumpHeight = 0.5, -- Meters
 		
 		slopeSlowdown = 0.5,
 		

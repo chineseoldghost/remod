@@ -311,7 +311,6 @@ void CNanoSuit::Reset(CPlayer *owner)
 	ActivateMode(NANOMODE_DEFENSE, true);
 	ActivateMode(NANOMODE_CLOAK, true);
 
-
 	Precache();
 }
 
@@ -368,6 +367,7 @@ void CNanoSuit::Update(float frameTime)
 	// invulnerability effect works even with a powered down suit
 	// it's a spawn protection mechanism, so we need to make sure
 	// nanogrenades don't disrupt this spawn protection
+
 	if(m_currentMode!=NANOMODE_DEFENSE)
 	{
 		ActivateMode(NANOMODE_DEFENSE, true);
@@ -446,157 +446,10 @@ void CNanoSuit::Update(float frameTime)
 	//update health
 	int32 currentHealth = m_pOwner->GetHealth();
 	int32 maxHealth(m_pOwner->GetMaxHealth());
-	//float recharge = 0.0f;
-	//float rechargeTime = 20.0f;
-
-	const SPlayerStats stats = *(static_cast<SPlayerStats*>(m_pOwner->GetActorStats()));
-	/*
-	if (isAI)
-		rechargeTime=g_pGameCVars->g_AiSuitEnergyRechargeTime;
-	else
-	{
-		if (gEnv->bMultiplayer)
-			rechargeTime=g_pGameCVars->g_playerSuitEnergyRechargeTimeMultiplayer;
-		else
-		{
-			if(m_currentMode != NANOMODE_DEFENSE)
-				rechargeTime=g_pGameCVars->g_playerSuitEnergyRechargeTime;
-			else
-			{
-				if(stats.speedFlat > 0.1f) //moving
-					rechargeTime=g_pGameCVars->g_playerSuitEnergyRechargeTimeArmorMoving;
-				else
-					rechargeTime=g_pGameCVars->g_playerSuitEnergyRechargeTimeArmor;
-			}
-		}
-	}
-	*/
-
-	//recharge = NANOSUIT_ENERGY / max(0.01f, rechargeTime);
-
-	//m_energyRechargeRate = recharge;
-
-	//m_now = gEnv->pTimer->GetFrameStartTime().GetMilliSeconds();
-/*
-	CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
-	if(m_currentMode == NANOMODE_SPEED && m_energy<g_pGameCVars->g_playerSuitMinSpeedEnergy && pPlayer->IsSprinting()) // Remod | Do not allow players to sprint in speed if energy is too low
-		SetMode(NANOMODE_DEFENSE, true, false);
-*/
-	/*
-	if (currentHealth < maxHealth || m_cloak.m_active)
-	{
-		//check for low health and play sound
-		if(currentHealth < maxHealth*0.9f && GetSlotValue(NANOSLOT_MEDICAL, true) > 50)
-		{
-			if(m_now - m_fLastSoundPlayedMedical > 30000.0f)
-			{
-				m_fLastSoundPlayedMedical = m_now;
-				PlaySound(MEDICAL_SOUND);
-			}
-		}
-
-		if(m_currentMode == NANOMODE_DEFENSE) //some additional energy in defense mode
-		{
-			if (isAI)
-				m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_AiSuitArmorModeHealthRegenTime);
-			else
-			{
-				if(stats.speedFlat > 0.1f)
-					m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_playerSuitArmorModeHealthRegenTimeMoving);
-				else
-					m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_playerSuitArmorModeHealthRegenTime);
-			}
-		}
-		else
-		{
-			if (isAI)
-				m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_AiSuitHealthRegenTime);
-			else
-			{
-				if(stats.speedFlat > 0.1f)
-					m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_playerSuitHealthRegenTimeMoving);
-				else
-					m_healthRegenRate = maxHealth / max(0.01f, g_pGameCVars->g_playerSuitHealthRegenTime);
-			}
-		}
-
-		//cap the health regeneration rate to a maximum (for AIs with lots of health)
-		m_healthRegenRate = min(m_healthRegenRate, NANOSUIT_MAXIMUM_HEALTH_REGEN);
-
-		m_healthRegenRate -= (m_cloak.m_active?m_cloak.m_healthCost:0.0f);
-	}
-	*/
-	
-	//subtract energy from suit for cloaking
-	/*
-	if(m_cloak.m_active)
-	{
-		float energyCost = m_cloak.m_energyCost * g_pGameCVars->g_suitCloakEnergyDrainAdjuster;
-		if(stats.inFreefall)
-			recharge = min(recharge-max(1.0f, energyCost*8.0f),-max(1.0f, energyCost*8.0f));
-		else if(stats.isOnLadder)
-			recharge = min(recharge-max(1.0f, energyCost*stats.speedFlat),-max(1.0f, energyCost*stats.speedFlat));
-		else
-			recharge = min(recharge-max(1.0f, energyCost*(stats.speedFlat * 0.5f)),-max(1.0f, energyCost*(stats.speedFlat * 0.5f)));
-	}
-	*/
-
-	//this deals with sprinting
-	//UpdateSprinting(recharge, stats, frameTime);
-
-	//NETINPUT_TRACE(m_pOwner->GetEntityId(), m_energy);
-	//NETINPUT_TRACE(m_pOwner->GetEntityId(), recharge);
-
-	/*if (isServer)
-	{
-		if (recharge < 0.0f || m_energyRechargeDelay <= 0.0f)
-		{
-			SetSuitEnergy(clamp(m_energy + recharge*frameTime, 0.0f, NANOSUIT_ENERGY));
-		}
-	}
-	*/
-
-	//CryLogAlways("%s Suit Energy: %.3f", m_pOwner->GetEntity()->GetName(), m_energy);
-	/*
-	if (m_healthRegenDelay > 0.0f)
-	{
-		bool regenAfterFullEnergy = g_pGameCVars->g_playerSuitHealthRegenDelay < 0.0f;
-		if (!regenAfterFullEnergy || GetSuitEnergy() >= NANOSUIT_ENERGY)
-			m_healthRegenDelay = max(0.0f, m_healthRegenDelay - frameTime);
-	}
-	*/
-
-	//if (m_energyRechargeDelay > 0.0f)
-		//m_energyRechargeDelay = max(0.0f, m_energyRechargeDelay - frameTime);
 
 	for (int i=0;i<NANOSLOT_LAST;++i)
 		m_slots[i].realVal = m_slots[i].desiredVal;
-	/*
-	if (isServer)
-	{
-		//adjust the player health.
-		if (m_healthRegenDelay <= 0.0f)
-		{
-			m_healTime -= frameTime;
-			if (m_healTime < 0.0f)
-			{
-				m_healTime += NANOSUIT_HEALTH_REGEN_INTERVAL;
 
-				// Calculate the new health increase
-				float healthInc = m_healthAccError + m_healthRegenRate * NANOSUIT_HEALTH_REGEN_INTERVAL;
-				int healthIncInt = (int32)healthInc;
-				// Since the health is measured as integer, carry on the fractions for the next addition
-				// to get more accurate result in the health regeneration rate.
-				m_healthAccError = healthInc - healthIncInt;
-
-				int newHealth = min(maxHealth,(int32)(currentHealth + healthIncInt));
-				if (currentHealth != newHealth)
-					m_pOwner->SetHealth(newHealth);
-			}
-		}
-	}
-	*/
-	/*
 	if (m_energy!=m_lastEnergy)
 	{
 		if (isServer)
@@ -613,19 +466,17 @@ void CNanoSuit::Update(float frameTime)
 			}
 		}
 		//CryLogAlways("[nano]-- updating %s's nanosuit energy: %f", m_pOwner->GetEntity()->GetName(), m_energy);
-	}*/
+	}
 
-	//Balance(m_energy);
 	NETINPUT_TRACE(m_pOwner->GetEntityId(), m_slots[NANOSLOT_SPEED].realVal);
 	NETINPUT_TRACE(m_pOwner->GetEntityId(), m_slots[NANOSLOT_SPEED].desiredVal);
-
-	//m_cloak.Update(this);
 
 	//update object motion blur amount
 	float motionBlurAmt(0.0f);
 	if (m_currentMode == NANOMODE_SPEED)
 		motionBlurAmt = 1.0f;
 
+	const SPlayerStats stats = *(static_cast<SPlayerStats*>(m_pOwner->GetActorStats()));
 	IEntityRenderProxy * pRenderProxy = (IEntityRenderProxy*)m_pOwner->GetEntity()->GetProxy(ENTITY_PROXY_RENDER);
 	if (pRenderProxy && stats.bSprinting)
 	{ 

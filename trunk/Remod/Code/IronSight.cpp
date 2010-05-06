@@ -100,12 +100,10 @@ void CIronSight::Update(float frameTime, uint frameId)
 		}
 
 		// marcok: please don't touch
-		/*
-		if (isClient && g_pGameCVars->goc_enable)
+		/*if (isClient && g_pGameCVars->goc_enable)
 		{
 			g_pGameCVars->goc_targety = LERP((-2.5f), (-1.5f), doft*doft);
-		}
-		*/
+		}*/
 
 		if (t>=1.0f)
 		{

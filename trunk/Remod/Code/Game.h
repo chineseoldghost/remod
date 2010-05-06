@@ -294,8 +294,6 @@ protected:
 
 	bool								m_bReload;
 
-	
-
 	// script binds
 	CScriptBind_Actor		*m_pScriptBindActor;
 	CScriptBind_Item		*m_pScriptBindItem;
@@ -315,7 +313,6 @@ protected:
 	IPlayerProfileManager* m_pPlayerProfileManager;
 	CHUD								*m_pHUD;
 	CPlayer								*m_pPlayer;
-
 	CServerSynchedStorage	*m_pServerSynchedStorage;
 	CClientSynchedStorage	*m_pClientSynchedStorage;
 	CSPAnalyst          *m_pSPAnalyst;

@@ -45,21 +45,21 @@ PowerStruggle.TEAMPOWER_TEAM0_KEY 			= 300;
 PowerStruggle.teamName	={ "tan", "black" };
 PowerStruggle.teamModel	=
 {
-	black	={
+	black	={ -- objects/characters/human/us/marine/marine_simple.cdf
 						{
-							"objects/characters/human/us/marine/marine_05_helmet_goggles_on.cdf",
+							"objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf",
 							"objects/weapons/arms_global/arms_nanosuit_us.chr",
 							"objects/characters/human/asian/nk_soldier/nk_soldier_frozen_scatter.cgf",
-							"objects/characters/human/us/marine/marine_05_helmet_goggles_on.cdf",
+							"objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf",
 						},
 					},
 
-	tan		={
+	tan		={ -- objects/characters/human/asian/nk_soldier/nk_soldier_elite_cover_light_gren_01.cdf
 						{
-							"objects/characters/human/asian/nk_soldier/nk_soldier_elite_cover_light_gren_01.cdf",
+							"objects/characters/human/asian/nanosuit/nanosuit_asian_multiplayer.cdf",
 							"objects/weapons/arms_global/arms_nanosuit_asian.chr",
 							"objects/characters/human/asian/nk_soldier/nk_soldier_frozen_scatter.cgf",
-							"objects/characters/human/asian/nk_soldier/nk_soldier_elite_cover_light_gren_01.cdf",
+							"objects/characters/human/asian/nanosuit/nanosuit_asian_multiplayer.cdf",
 						},
 					},
 }

@@ -654,6 +654,9 @@ bool CGameRules::OnClientEnteredGame(int channelId, bool isReset)
 	if (!pActor)
 		return false;
 
+	if(!pActor->IsThirdPerson())
+		pActor->ToggleThirdPerson();
+
 	if (g_pGame->GetServerSynchedStorage())
 		g_pGame->GetServerSynchedStorage()->OnClientEnteredGame(channelId);
 

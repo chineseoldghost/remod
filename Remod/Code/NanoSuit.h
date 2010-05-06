@@ -267,9 +267,6 @@ public:
 	// listener 
 	void AddListener(INanoSuitListener* pListener);
 	void RemoveListener(INanoSuitListener* pListener);
-	
-	// Remod
-	void StatModeCheck();
 
 private:
 	void Precache();

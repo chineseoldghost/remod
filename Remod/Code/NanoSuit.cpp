@@ -252,7 +252,7 @@ void CNanoSuit::Reset(CPlayer *owner)
 	for(int k = 0; k < NANOSLOT_LAST; ++k)
 		m_slots[k].desiredVal = 50.0f;
 
-	ResetEnergy();
+	//ResetEnergy();
 	
 	m_energyRechargeRate = 0.0f;
 	m_healthRegenRate = 0.0f;
@@ -311,6 +311,7 @@ void CNanoSuit::Reset(CPlayer *owner)
 	ActivateMode(NANOMODE_DEFENSE, true);
 	ActivateMode(NANOMODE_CLOAK, true);
 
+
 	Precache();
 }
 
@@ -367,6 +368,11 @@ void CNanoSuit::Update(float frameTime)
 	// invulnerability effect works even with a powered down suit
 	// it's a spawn protection mechanism, so we need to make sure
 	// nanogrenades don't disrupt this spawn protection
+	if(m_currentMode!=NANOMODE_DEFENSE)
+	{
+		ActivateMode(NANOMODE_DEFENSE, true);
+	}
+
 	if (gEnv->bServer)
 	{
 		if (!m_invulnerable)
@@ -440,11 +446,11 @@ void CNanoSuit::Update(float frameTime)
 	//update health
 	int32 currentHealth = m_pOwner->GetHealth();
 	int32 maxHealth(m_pOwner->GetMaxHealth());
-	float recharge = 0.0f;
-	float rechargeTime = 20.0f;
+	//float recharge = 0.0f;
+	//float rechargeTime = 20.0f;
 
 	const SPlayerStats stats = *(static_cast<SPlayerStats*>(m_pOwner->GetActorStats()));
-
+	/*
 	if (isAI)
 		rechargeTime=g_pGameCVars->g_AiSuitEnergyRechargeTime;
 	else
@@ -464,18 +470,19 @@ void CNanoSuit::Update(float frameTime)
 			}
 		}
 	}
+	*/
 
-	recharge = NANOSUIT_ENERGY / max(0.01f, rechargeTime);
+	//recharge = NANOSUIT_ENERGY / max(0.01f, rechargeTime);
 
-	m_energyRechargeRate = recharge;
+	//m_energyRechargeRate = recharge;
 
-	m_now = gEnv->pTimer->GetFrameStartTime().GetMilliSeconds();
+	//m_now = gEnv->pTimer->GetFrameStartTime().GetMilliSeconds();
 /*
 	CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
 	if(m_currentMode == NANOMODE_SPEED && m_energy<g_pGameCVars->g_playerSuitMinSpeedEnergy && pPlayer->IsSprinting()) // Remod | Do not allow players to sprint in speed if energy is too low
 		SetMode(NANOMODE_DEFENSE, true, false);
 */
-
+	/*
 	if (currentHealth < maxHealth || m_cloak.m_active)
 	{
 		//check for low health and play sound
@@ -518,8 +525,10 @@ void CNanoSuit::Update(float frameTime)
 
 		m_healthRegenRate -= (m_cloak.m_active?m_cloak.m_healthCost:0.0f);
 	}
+	*/
 	
 	//subtract energy from suit for cloaking
+	/*
 	if(m_cloak.m_active)
 	{
 		float energyCost = m_cloak.m_energyCost * g_pGameCVars->g_suitCloakEnergyDrainAdjuster;
@@ -530,36 +539,39 @@ void CNanoSuit::Update(float frameTime)
 		else
 			recharge = min(recharge-max(1.0f, energyCost*(stats.speedFlat * 0.5f)),-max(1.0f, energyCost*(stats.speedFlat * 0.5f)));
 	}
+	*/
 
 	//this deals with sprinting
-	UpdateSprinting(recharge, stats, frameTime);
+	//UpdateSprinting(recharge, stats, frameTime);
 
-	NETINPUT_TRACE(m_pOwner->GetEntityId(), m_energy);
-	NETINPUT_TRACE(m_pOwner->GetEntityId(), recharge);
+	//NETINPUT_TRACE(m_pOwner->GetEntityId(), m_energy);
+	//NETINPUT_TRACE(m_pOwner->GetEntityId(), recharge);
 
-	if (isServer)
+	/*if (isServer)
 	{
 		if (recharge < 0.0f || m_energyRechargeDelay <= 0.0f)
 		{
 			SetSuitEnergy(clamp(m_energy + recharge*frameTime, 0.0f, NANOSUIT_ENERGY));
 		}
 	}
+	*/
 
 	//CryLogAlways("%s Suit Energy: %.3f", m_pOwner->GetEntity()->GetName(), m_energy);
-
+	/*
 	if (m_healthRegenDelay > 0.0f)
 	{
 		bool regenAfterFullEnergy = g_pGameCVars->g_playerSuitHealthRegenDelay < 0.0f;
 		if (!regenAfterFullEnergy || GetSuitEnergy() >= NANOSUIT_ENERGY)
 			m_healthRegenDelay = max(0.0f, m_healthRegenDelay - frameTime);
 	}
+	*/
 
-	if (m_energyRechargeDelay > 0.0f)
-		m_energyRechargeDelay = max(0.0f, m_energyRechargeDelay - frameTime);
+	//if (m_energyRechargeDelay > 0.0f)
+		//m_energyRechargeDelay = max(0.0f, m_energyRechargeDelay - frameTime);
 
 	for (int i=0;i<NANOSLOT_LAST;++i)
 		m_slots[i].realVal = m_slots[i].desiredVal;
-
+	/*
 	if (isServer)
 	{
 		//adjust the player health.
@@ -583,7 +595,8 @@ void CNanoSuit::Update(float frameTime)
 			}
 		}
 	}
-
+	*/
+	/*
 	if (m_energy!=m_lastEnergy)
 	{
 		if (isServer)
@@ -600,13 +613,13 @@ void CNanoSuit::Update(float frameTime)
 			}
 		}
 		//CryLogAlways("[nano]-- updating %s's nanosuit energy: %f", m_pOwner->GetEntity()->GetName(), m_energy);
-	}
+	}*/
 
-	Balance(m_energy);
+	//Balance(m_energy);
 	NETINPUT_TRACE(m_pOwner->GetEntityId(), m_slots[NANOSLOT_SPEED].realVal);
 	NETINPUT_TRACE(m_pOwner->GetEntityId(), m_slots[NANOSLOT_SPEED].desiredVal);
 
-	m_cloak.Update(this);
+	//m_cloak.Update(this);
 
 	//update object motion blur amount
 	float motionBlurAmt(0.0f);
@@ -632,7 +645,7 @@ void CNanoSuit::Update(float frameTime)
 			pRenderProxy->SetMotionBlurAmount(amt);
 		}
 	}
-	m_lastEnergy = m_energy;
+	m_energy = 0.0f;
 }
 
 void CNanoSuit::Balance(float energy)
@@ -1731,17 +1744,4 @@ void CNanoSuit::GetMemoryStatistics(ICrySizer * s)
 	s->Add(*this);
 	s->AddContainer(m_listeners);
 	m_cloak.GetMemoryStatistics(s);
-}
-
-void CNanoSuit::StatModeCheck()
-{
-	if(GetMode()==NANOMODE_DEFENSE)
-		g_pGame->KillMode[0]++;
-	else if(GetMode()==NANOMODE_SPEED)
-		g_pGame->KillMode[1]++;
-	else if(GetMode()==NANOMODE_STRENGTH)
-		g_pGame->KillMode[2]++;
-	else if(GetMode()==NANOMODE_CLOAK)
-		g_pGame->KillMode[3]++;
-	g_pGame->CheckKillStats();
 }

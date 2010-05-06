@@ -121,12 +121,12 @@ void SCVars::InitCVars(IConsole *pConsole)
 
 	
 	// GOC
-	pConsole->Register("goc_enable", &goc_enable, 1, VF_CHEAT, "gears of crysis");
-	pConsole->Register("goc_tpcrosshair", &goc_tpcrosshair, 0, VF_CHEAT, "keep crosshair in third person");
-	pConsole->Register("goc_targetx", &goc_targetx, 0.5f, VF_CHEAT, "target position of camera");
-	pConsole->Register("goc_targety", &goc_targety, -1.7f, VF_CHEAT, "target position of camera");
-	pConsole->Register("goc_targetz", &goc_targetz, 0.0f, VF_CHEAT, "target position of camera");
-	pConsole->AddCommand("GOCMode", CmdGOCMode, VF_CHEAT, "Enable GOC mode");
+	pConsole->Register("goc_enable", &goc_enable, 1, 0, "gears of crysis");
+	pConsole->Register("goc_tpcrosshair", &goc_tpcrosshair, 1, 0, "keep crosshair in third person");
+	pConsole->Register("goc_targetx", &goc_targetx, 0.5f, 0, "target position of camera");
+	pConsole->Register("goc_targety", &goc_targety, -1.7f, 0, "target position of camera");
+	pConsole->Register("goc_targetz", &goc_targetz, 0.0f, 0, "target position of camera");
+	pConsole->AddCommand("GOCMode", CmdGOCMode, 0, "Enable GOC mode");
 	
 	/*
 	// BulletTime

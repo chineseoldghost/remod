@@ -190,7 +190,9 @@ public:
 
 	// IGameFrameworkListener
 	virtual void OnPostUpdate(float fDeltaTime);
+	void DisplayAchievement(string Achievement);
 	virtual void OnSaveGame(ISaveGame* pSaveGame);
+	string AchievementString;
 	virtual void OnLoadGame(ILoadGame* pLoadGame) {};
 	virtual void OnLevelEnd(const char* nextLevel) {};
   virtual void OnActionEvent(const SActionEvent& event);
@@ -760,6 +762,7 @@ public:
 	CGameFlashAnimation m_animKillLog;
 	CGameFlashAnimation m_animOverlayMessages;
 	CGameFlashAnimation m_animPlayerStats;
+	CGameFlashAnimation m_animAchievements;
 	CGameFlashAnimation m_animBigOverlayMessages;
 	CGameFlashAnimation m_animWeaponSelection;
 	CGameFlashAnimation m_animSpawnCycle;
@@ -869,8 +872,12 @@ public:
 	bool m_cineHideHUD;
 	bool m_bCutscenePlaying;
 	bool m_bStopCutsceneNextUpdate;
+
 	bool m_bCutsceneAbortPressed;
 	bool m_bCutsceneCanBeAborted;
+	char AchievementName;
+	bool ShowAchievement;
+	float m_now;
 	float m_fCutsceneSkipTimer;
 	float m_fBackPressedTime;
 

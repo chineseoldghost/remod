@@ -3143,18 +3143,18 @@ bool CHUD::WeaponHasAttachments()
 }
 
 //-----------------------------------------------------------------------------------------------------
-/*
+
 void CHUD::DisplayAchievement(string Achievement)
 {
 	AchievementString = Achievement.MakeUpper();
 	ShowAchievement = true;
-}*/
+}
 
 //-----------------------------------------------------------------------------------------------------
 
 void CHUD::OnPostUpdate(float frameTime)
 {
-	/*if(ShowAchievement)
+	if(ShowAchievement)
 	{
 		ShowAchievement = false;
 		SFlashVarValue args[1] = {AchievementString};
@@ -3165,7 +3165,6 @@ void CHUD::OnPostUpdate(float frameTime)
 
 	if(m_now - gEnv->pTimer->GetFrameStartTime().GetSeconds() > 3.0f)
 		m_animAchievements.GetFlashPlayer()->SetVisible(false);
-		*/
 
 	FUNCTION_PROFILER(GetISystem(),PROFILE_GAME);
 

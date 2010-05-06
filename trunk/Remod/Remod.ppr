@@ -275,21 +275,20 @@ Remod
 2=Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml
 3=Game\Scripts\Entities\Items\XML\Weapons\AY69.xml
 4=Game\Scripts\Entities\Items\XML\Weapons\Binoculars.xml
-5=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
-6=Game\Scripts\GameRules\PowerStruggleBuying.lua
-7=Game\Scripts\GameRules\PowerStruggleRank.lua
-8=Game\Scripts\Entities\Vehicles\Implementations\Xml\Civ_car1.xml
-9=Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_ltv.xml
-10=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
-11=Game\Scripts\Entities\actor\BasicActor.lua
-12=Game\Libs\MaterialEffects\SurfaceTypes.xml
-13=Game\Scripts\GameRules\InstantAction.lua
-14=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
-15=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
-16=Game\Scripts\Entities\actor\player.lua
-17=Game\Scripts\GameRules\PowerStruggle.lua
-18=Game\Scripts\GameRules\TeamInstantAction.lua
-19=Game\Languages\game_text_messages.xml
+5=Game\Scripts\GameRules\PowerStruggleBuying.lua
+6=Game\Scripts\GameRules\PowerStruggleRank.lua
+7=Game\Scripts\Entities\Vehicles\Implementations\Xml\Civ_car1.xml
+8=Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_ltv.xml
+9=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
+10=Game\Scripts\Entities\actor\BasicActor.lua
+11=Game\Libs\MaterialEffects\SurfaceTypes.xml
+12=Game\Scripts\GameRules\InstantAction.lua
+13=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
+14=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
+15=Game\Scripts\Entities\actor\player.lua
+16=Game\Scripts\GameRules\PowerStruggle.lua
+17=Game\Scripts\GameRules\TeamInstantAction.lua
+18=Game\Languages\game_text_messages.xml
 [Selected Project Files]
 Main=
 Selected=Game\Scripts\GameRules\TeamInstantAction.lua
@@ -308,9 +307,6 @@ Caret=81,143
 [Game\Scripts\Entities\Items\XML\Weapons\Binoculars.xml]
 TopLine=1
 Caret=39,36
-[..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml]
-TopLine=333
-Caret=27,354
 [Game\Scripts\GameRules\PowerStruggleBuying.lua]
 TopLine=147
 Caret=15,189
@@ -327,8 +323,8 @@ Caret=30,626
 TopLine=601
 Caret=30,618
 [Game\Scripts\Entities\actor\BasicActor.lua]
-TopLine=846
-Caret=19,866
+TopLine=833
+Caret=19,864
 [Game\Libs\MaterialEffects\SurfaceTypes.xml]
 TopLine=243
 Caret=31,264
@@ -342,13 +338,13 @@ Caret=45,230
 TopLine=214
 Caret=39,237
 [Game\Scripts\Entities\actor\player.lua]
-TopLine=70
-Caret=20,106
+TopLine=44
+Caret=38,125
 [Game\Scripts\GameRules\PowerStruggle.lua]
 TopLine=38
 Caret=91,62
 [Game\Scripts\GameRules\TeamInstantAction.lua]
-TopLine=37
+TopLine=33
 Caret=124,52
 [Game\Languages\game_text_messages.xml]
 TopLine=16114

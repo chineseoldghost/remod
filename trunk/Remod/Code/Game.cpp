@@ -510,36 +510,38 @@ void CGame::EditorResetGame(bool bStart)
 
 void CGame::RegisterKill(EntityId shooterId)
 {
-	if(!gEnv->pSystem->IsDedicated()) // Since PlayerID checks are involved, we must see to it that the server does not initiate this
+	if(!gEnv->pSystem->IsDedicated())
 	{
-		CPlayer *pPlayer = static_cast<CPlayer*>(GetIGameFramework()->GetClientActor());
-		playerId = pPlayer->GetEntityId();
-		if(shooterId!=playerId)
-			return;
+		playerId = g_pGame->GetPlayer()->GetEntityId();
 
-		RegisteredKills++;
-		if(pPlayer->GetLinkedVehicle())
-			KillsinVehicle++;
-
-		//CPlayer *pPlayer = g_pGame->GetIGameFramework()->GetClientActor();
-		if(pPlayer->GetHealth()==100)
-			NodamageKills++;
-		CryLogAlways("531");
-
-		// Check which weapon was used, and register it
-		if(!pPlayer->GetLinkedVehicle())
+		//Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
+		if(RegisteredKills==5)
 		{
-			weaponClass = pPlayer->GetCurrentItem()->GetEntity()->GetClass()->GetName();
-			if(!stricmp(weaponClass, "SCAR"))
-				SCARKills++;
+			AchievementName = "Rookie Shooter";
+			g_pGame->GetHUD()->DisplayAchievement(AchievementName);
 		}
-		if(pPlayer->IsParachuteEnabled())
-			ParachuteKills++;
-		CNanoSuit *pSuit = pPlayer->GetNanoSuit();
-		if(pSuit->IsNightVisionEnabled())
-			NightVisionKills++;
+			//g_pGame->GetGameRules()->SendChatMessage(eChatToAll, playerId, 0, "earned the 'Rookie Shooter' Achievement!");
+		if(KillsinVehicle==2)
+			AchievementName = "Bodycrusher";
+			g_pGame->GetHUD()->DisplayAchievement(AchievementName);
+			//g_pGame->GetGameRules()->SendChatMessage(eChatToAll, playerId, 0, "earned the 'Bodycrusher' Achievement!");
+		if(NodamageKills==2)
+			AchievementName = "N00BKILLAH";
+			g_pGame->GetHUD()->DisplayAchievement(AchievementName);
+			//g_pGame->GetGameRules()->SendChatMessage(eChatToAll, playerId, 0, "earned the 'N00BKILLAH' Achievement!");
+		if(SCARKills==2)
+			AchievementName = "SCARRED for life";
+			g_pGame->GetHUD()->DisplayAchievement(AchievementName);
+			//g_pGame->GetGameRules()->SendChatMessage(eChatToAll, playerId, 0, "earned the 'SCARRED for life' Achievement!");
+		if(ParachuteKills==2)
+			AchievementName = "Death from above";
+			g_pGame->GetHUD()->DisplayAchievement(AchievementName);
+			//g_pGame->GetGameRules()->SendChatMessage(eChatToAll, playerId, 0, "earned the 'Death from Above' Achievement!");
+		if(NightVisionKills==1)
+			AchievementName = "Nightcrawler";
+			g_pGame->GetHUD()->DisplayAchievement(AchievementName);
+			//g_pGame->GetGameRules()->SendChatMessage(eChatToAll, playerId, 0, "earned the 'Nightcrawler' Achievement!");
 	}
-	
 }
 
 void CGame::CheckKillStats()

@@ -3129,6 +3129,7 @@ void CPlayer::UpdateStats(float frameTime)
 void CPlayer::ToggleThirdPerson()
 {
 	m_stats.isThirdPerson = true;
+	gEnv->pConsole->ExecuteString("GOCMode");
 
 	CALL_PLAYER_EVENT_LISTENERS(OnToggleThirdPerson(this,m_stats.isThirdPerson));
 }
@@ -3202,7 +3203,7 @@ void CPlayer::Revive( bool fromInit )
 
 	m_viewAnglesOffset.Set(0,0,0);
 	
-  if (IsClient() && IsThirdPerson())
+  if (IsClient() && !IsThirdPerson())
     ToggleThirdPerson();
 
 	// HAX: to fix player spawning and floating in dedicated server: Marcio fix me?

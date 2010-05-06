@@ -37,8 +37,8 @@ Player = {
 		}	,
 		--
 		--fileModel = "objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf", -- Original third person player model.
-		fileModel = "objects/characters/human/us/marine/marine_04_helmet_goggles_on.cdf", -- Third person player model.
-		clientFileModel = "objects/characters/human/us/marine/marine_04_helmet_goggles_on.cdf", -- First person legs?
+		fileModel = "objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf", -- Third person player model.
+		clientFileModel = "objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf", -- First person legs?
 		--fileModel = "objects/characters/human/asian/nanosuit/nanosuit_asian_fp3p.cdf",
 		fpItemHandsModel = "objects/weapons/arms_global/arms_nanosuit_us.chr", -- First person viewmodel (arms).
 		--fpItemHandsModel = "objects/weapons/arms_global/arms_nanosuit_asian.chr",	

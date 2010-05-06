@@ -52,6 +52,7 @@ class  CGameActions;
 class CGameRules;
 class CBulletTime;
 class CHUD;
+class CPlayer;
 class CSynchedStorage;
 class CClientSynchedStorage;
 class CServerSynchedStorage;
@@ -134,7 +135,6 @@ public:
 	// Remod | Stats
 	EntityId playerId;
 	float RegisteredKills;
-	float KillMode[4]; // 0 = Armor, 1 = Speed, 2 = Strength, 3 = Cloak
 	float RegisteredHeadshots;
 	float KillsinVehicle;
 	float NodamageKills;
@@ -151,6 +151,7 @@ public:
 	float SCARKills;
 
 	void CheckKillStats();
+	string AchievementName;
 
 	virtual void  PlayerIdSet(EntityId playerId);
 	virtual string  InitMapReloading();
@@ -210,6 +211,7 @@ public:
 	CSoundMoods *GetSoundMoods() const;
 	CLaptopUtil *GetLaptopUtil() const;
 	CHUD *GetHUD() const;
+	CPlayer *GetPlayer() const;
 	CFlashMenuObject *GetMenu() const;
 	COptionsManager *GetOptions() const;
 
@@ -292,6 +294,8 @@ protected:
 
 	bool								m_bReload;
 
+	
+
 	// script binds
 	CScriptBind_Actor		*m_pScriptBindActor;
 	CScriptBind_Item		*m_pScriptBindItem;
@@ -310,6 +314,7 @@ protected:
 	CGameActions				*m_pGameActions;	
 	IPlayerProfileManager* m_pPlayerProfileManager;
 	CHUD								*m_pHUD;
+	CPlayer								*m_pPlayer;
 
 	CServerSynchedStorage	*m_pServerSynchedStorage;
 	CClientSynchedStorage	*m_pClientSynchedStorage;

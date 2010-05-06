@@ -122,7 +122,7 @@ function TeamInstantAction.Client:OnKill(playerId, shooterId, weaponClassName, d
         InstantAction.Client.OnKill(self, playerId, shooterId, weaponClassName, damage, material, hit_type);
 
         if(self.suddenDeath) then
-                -- Check if one team is dead
+                -- Check if one team is dead // TODO: Fix this function! It can be simplified
                 NK = self.game:GetTeamId("NK");
                 US = self.game:GetTeamId("US");
                 

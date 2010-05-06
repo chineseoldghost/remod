@@ -477,13 +477,15 @@ bool CHUD::Init()
 	}
 
 	m_animPlayerStats.Load("Libs/UI/HUD_AmmoHealthEnergySuit.gfx", eFD_Right, eFAF_Visible|eFAF_ThisHandler);
+	//m_animAchievements.Load("Libs/UI/HUD_Achievement.gfx", eFD_Center, eFAF_ManualRender|eFAF_ThisHandler);
+//	m_animAchievements.GetFlashPlayer()->SetVisible(false);
 	m_animAmmoPickup.Load("Libs/UI/HUD_AmmoPickup.gfx", eFD_Right, eFAF_Visible);
 	m_animFriendlyProjectileTracker.Load("Libs/UI/HUD_GrenadeDetect_Friendly.gfx", eFD_Center, eFAF_Visible);
 	if(!m_animFriendlyProjectileTracker.IsLoaded()) //asset missing so far ..
 		m_animFriendlyProjectileTracker.Load("Libs/UI/HUD_GrenadeDetect.gfx", eFD_Center, eFAF_Visible);
 	m_animHostileProjectileTracker.Load("Libs/UI/HUD_GrenadeDetect.gfx", eFD_Center, eFAF_Visible);
 	m_animMissionObjective.Load("Libs/UI/HUD_MissionObjective_Icon.gfx", eFD_Center, eFAF_Visible);
-	m_animQuickMenu.Load("Libs/UI/HUD_QuickMenu.gfx");
+	//m_animQuickMenu.Load("Libs/UI/HUD_QuickMenu.gfx");
 	m_animRadarCompassStealth.Load("Libs/UI/HUD_RadarCompassStealth.gfx", eFD_Left, eFAF_Visible);
 
 	m_animNetworkConnection.Load("Libs/UI/HUD_Network_Icon.gfx", eFD_Center, eFAF_ThisHandler);
@@ -3141,9 +3143,30 @@ bool CHUD::WeaponHasAttachments()
 }
 
 //-----------------------------------------------------------------------------------------------------
+/*
+void CHUD::DisplayAchievement(string Achievement)
+{
+	AchievementString = Achievement.MakeUpper();
+	ShowAchievement = true;
+}*/
+
+//-----------------------------------------------------------------------------------------------------
 
 void CHUD::OnPostUpdate(float frameTime)
 {
+	/*if(ShowAchievement)
+	{
+		ShowAchievement = false;
+		SFlashVarValue args[1] = {AchievementString};
+		m_animAchievements.CheckedInvoke("display",args,1);
+		m_animAchievements.GetFlashPlayer()->SetVisible(true);
+		m_now = gEnv->pTimer->GetFrameStartTime().GetSeconds();
+	}
+
+	if(m_now - gEnv->pTimer->GetFrameStartTime().GetSeconds() > 3.0f)
+		m_animAchievements.GetFlashPlayer()->SetVisible(false);
+		*/
+
 	FUNCTION_PROFILER(GetISystem(),PROFILE_GAME);
 
 	if (m_bStopCutsceneNextUpdate)

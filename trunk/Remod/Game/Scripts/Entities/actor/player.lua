@@ -103,7 +103,7 @@ Player = {
 			{
 				stanceId = STANCE_CROUCH,
 				normalSpeed = 1.0,
-				maxSpeed = 1.55,
+				maxSpeed = 1.45,
 				heightCollider = 0.9,
 				heightPivot = 0,
 				size = {x=0.4,y=0.4,z=0.1},

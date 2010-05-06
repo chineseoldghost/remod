@@ -509,9 +509,35 @@ void CGame::EditorResetGame(bool bStart)
 
 void CGame::RegisterKill(EntityId shooterId)
 {
-	if(!gEnv->pSystem->IsDedicated())
+	if(!gEnv->pSystem->IsDedicated()) // Since PlayerID checks are involved, we must see to it that the server does not initiate this
 	{
+		CPlayer *pPlayer = static_cast<CPlayer*>(GetIGameFramework()->GetClientActor());
+		playerId = pPlayer->GetEntityId();
+		if(shooterId!=playerId)
+			return;
+
+		//Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
+		RegisteredKills++;
 		
+		if(pPlayer->GetLinkedVehicle())
+			KillsinVehicle++;
+
+		//CPlayer *pPlayer = g_pGame->GetIGameFramework()->GetClientActor();
+		if(pPlayer->GetHealth()==100)
+			NodamageKills++;
+
+		// Check which weapon was used, and register it
+		if(!pPlayer->GetLinkedVehicle())
+		{
+			weaponClass = pPlayer->GetCurrentItem()->GetEntity()->GetClass()->GetName();
+			if(!stricmp(weaponClass, "SCAR"))
+				SCARKills++;
+		}
+		if(pPlayer->IsParachuteEnabled())
+			ParachuteKills++;
+		CNanoSuit *pSuit = pPlayer->GetNanoSuit();
+		if(pSuit->IsNightVisionEnabled())
+			NightVisionKills++;
 	}
 }
 

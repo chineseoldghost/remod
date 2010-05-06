@@ -737,7 +737,7 @@ BasicActorParams =
 			max_vel_ground = 200,
 			
 			min_slide_angle = 35.0,
-			max_climb_angle = 45.0,
+			max_climb_angle = 35.0,
 			min_fall_angle = 50.0,
 			
 			timeImpulseRecover = 25.0,

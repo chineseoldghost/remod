@@ -11,7 +11,7 @@ When I feel the time is ripe, an installer will be available.
 
 ===Requirements for Remod===
  * Crysis Wars with patch 1.5 installed
- * Visual C++ 2008 Redistributable. This is included in the Remod\Bin32\ folder.
+ * *Visual C++ 2010 Redistributable.* (as of May 6)
 
 ==Instructions==
 These are instructions on how to get neutral builds of Remod. Tests are planned on the Crymod IRC until I start organizing "official" tests.

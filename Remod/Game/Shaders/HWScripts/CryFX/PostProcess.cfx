@@ -715,9 +715,9 @@ pixout HDRFinalScenePS(vert2frag IN)
   half BloomScale = g_fBloomScale;
 
 
-//  float2 inTex = IN.baseTC.xy - 0.5;
-//  float vignette  = 1 - dot(inTex, inTex);
-//  vSample.rgb    *= saturate(pow(vignette, 3.0)+0.5);
+  //float2 inTex = IN.baseTC.xy - 0.5;
+  //float vignette  = 1 - dot(inTex, inTex);
+  //vSample.rgb    *= saturate(pow(vignette, 4.0)+0.5);
 
 #ifndef USE_EXP_TONEMAPPING
 

@@ -201,7 +201,7 @@
 				<param name="hit_type" value="ht_SMGBullet" />
 				<param name="rate" value="950" />
 				<param name="damage" value="12.5" />
-				<param name="reload_time" value="1.75" />
+				<param name="reload_time" value="2.5" />
 				<param name="bullet_chamber" value="1" />
 				<param name="helper_tp" value="weapon_term" />
 				<param name="clip_size" value="50" />

@@ -211,7 +211,7 @@
 				<param name="hit_type" value="ht_FYBullet" />
 				<param name="rate" value="550" />
 				<param name="damage" value="25" />
-				<param name="reload_time" value="2.25" />
+				<param name="reload_time" value="3.25" />
 				<param name="bullet_chamber" value="1" />
 				<param name="clip_size" value="30" />
 				<param name="helper_tp" value="weapon_term" />

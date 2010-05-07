@@ -44,17 +44,17 @@ InstantAction.DamagePlayerToPlayer =
 	helmet		= 2.66,
 	kevlar		= 2.3,
 
-	head 	        = 3.5,
-	torso 		= 2,
-	arm_left	= 1.7,
-	arm_right	= 1.7,
-	leg_left	= 1.7,
-	leg_right	= 1.7,
+	head 	        = 4,
+	torso 		= 1,
+	arm_left	= 0.75,
+	arm_right	= 0.75,
+	leg_left	= 0.75,
+	leg_right	= 0.75,
 
-	foot_left	= 1.3,
-	foot_right	= 1.3,
-	hand_left	= 1.3,
-	hand_right	= 1.3,
+	foot_left	= 0.5,
+	foot_right	= 0.5,
+	hand_left	= 0.5,
+	hand_right	= 0.5,
 	assist_min  = 0.6,
 };
 

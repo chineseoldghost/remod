@@ -1,7 +1,6 @@
 System.LogAlways("iClassSystem | Loading Classes...");
  
 local scanRoot = "scripts/Classes/"
-local ioRoot = "scripts/Classes/"
 local classes = {};
  
 function loadClasses()
@@ -9,7 +8,7 @@ function loadClasses()
 	classes = System.ScanDirectory(scanRoot, 2);
     	for k,modPath in ipairs(classes) do
 		if not (modPath==".svn") then
-			local success = Script.LoadScript(modPath.."Main.lua", 1);
+			local success = Script.LoadScript("scripts/Classes/"..modPath.."/Main.lua", 1);
                 	if (success) then
                     		System.LogAlways("iClassSystem | Loaded class "..modPath);
 			else
@@ -19,6 +18,7 @@ function loadClasses()
 			System.LogAlways("iClassSystem | Skipping SVN folder "..modPath);
 		end
     	end
+	self.actor:RegisterClasses(classes);
 end
  
 loadClasses();

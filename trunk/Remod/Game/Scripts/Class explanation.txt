@@ -1,0 +1,9 @@
+This is not done, yet as it's a WIP. Basically each class will have their own .XML or .lua
+
+Why?
+
+Snipers should be slower and stealthier, and assault soldiers should be quicker + noisier. This is not the only reason, as a 
+unique .lua/xml for each class will make it easier to customize each class, and making it unique.
+
+CCS = Close Combat Soldier
+Sniper = Duh, Sniper :P

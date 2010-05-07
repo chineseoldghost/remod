@@ -189,7 +189,7 @@
 				<param name="ammo_type" value="lightbullet" />
 				<param name="hit_type" value="ht_LightBullet" />
 				<param name="rate" value="450" />
-				<param name="damage" value="20" />
+				<param name="damage" value="17" />
 				<param name="clip_size" value="12" />
 				<param name="helper_tp" value="weapon_term" />
 				<param name="bullet_chamber" value="1" />

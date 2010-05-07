@@ -379,7 +379,7 @@
       <Part name="shiten" class="AnimatedJoint" mass="0">
        <Helpers>
         <Helper name="gunnerEyePos" position="0.0029,-0.054200001,2.6229999" direction="0,1,0"/>
-        <Helper name="driverEyePos" position="-0.62599999,0.69090003,1.8658" direction="0,1,0"/>
+        <Helper name="driverEyePos" position="0,1.2,2.1" direction="0,1,0"/>
         <Helper name="searchLightPos" position="0.165,0.5,2.33" direction="0,1,0"/>
        </Helpers>
        <AnimatedJoint>
@@ -501,8 +501,8 @@
  <Seats>
   <Seat name="driver" part="" enterHelper="passenger01Enter_pos" sitHelper="passenger01Sit_pos" useBoundsForEntering="1" isDriver="1" AimPart="" seatGroupIndex="1" transitionAnim="1" remotelyUseActionsFromSeat="">
    <Views>
-    <View class="FirstPerson" canRotate="1" rotationMin="-20,0,-100" rotationMax="15,0,100">
-     <FirstPerson offset="0,0,0" relativeToHorizon="0.5"/>
+    <View class="FirstPerson" canRotate="0" rotationMin="-20,0,-100" rotationMax="15,0,100">
+     <FirstPerson helper="driverEyePos" offset="0,0,0"/>
     </View>
     <View class="ActionThirdPerson" canRotate="0" rotationMax="0,0,65">
      <ActionThirdPerson cameraPosOffset="0,0,-1" cameraAimOffset="0,0,0" lagSpeed="3" velocityMult="0,0,-0.5"/>
@@ -543,12 +543,12 @@
   </Seat>
   <Seat name="gunner" part="shitenTurret" enterHelper="passenger04Enter_pos" sitHelper="gunner_pos" useBoundsForEntering="1" isDriver="0" AimPart="shiten" isPassengerExposed="1" seatGroupIndex="2" transitionAnim="1" id="idSeat2">
    <Views>
-    <View class="FirstPerson" canRotate="0" hidePlayer="1">
+    <!--<View class="FirstPerson" canRotate="0" hidePlayer="1">
      <FirstPerson helper="gunnerEyePos"/>
-    </View>
-    <!--<View class="ActionThirdPerson" canRotate="0" isAvailableRemotely="1">
-     <ActionThirdPerson cameraPosOffset="0,-2.5,0.5" cameraAimOffset="0,3,0" lagSpeed="5" velocityMult="0,0,-1"/>
     </View>-->
+    <View class="ActionThirdPerson" canRotate="0" isAvailableRemotely="1">
+     <ActionThirdPerson cameraPosOffset="0,-2.5,0.5" cameraAimOffset="0,3,0" lagSpeed="5" velocityMult="0,0,-1"/>
+    </View>
    </Views>
    <SeatActions>
     <SeatAction class="RotateTurret" isAvailableRemotely="1">
@@ -568,9 +568,9 @@
   </Seat>
   <Seat name="passenger" part="" enterHelper="passenger02Enter_pos" sitHelper="passenger02Sit_pos" useBoundsForEntering="1" isDriver="0" AimPart="" seatGroupIndex="3" transitionAnim="1">
    <Views>
-    <View class="FirstPerson" canRotate="1" rotationMin="-12,0,-100" rotationMax="5,0,100">
+    <!--<View class="FirstPerson" canRotate="1" rotationMin="-12,0,-100" rotationMax="5,0,100">
      <FirstPerson helper="passenger_eye_pos" relativeToHorizon="0.5"/>
-    </View>
+    </View>-->
     <View class="ActionThirdPerson" canRotate="0">
      <ActionThirdPerson cameraPosOffset="0,0,-1" cameraAimOffset="0,0,0" lagSpeed="3" velocityMult="0,0,-0.5"/>
     </View>
@@ -580,9 +580,9 @@
   </Seat>
   <Seat name="passenger_left_rear" part="" enterHelper="passenger03Enter_pos" sitHelper="passenger03Sit_pos" useBoundsForEntering="1" isDriver="0" AimPart="" seatGroupIndex="4" transitionAnim="1">
    <Views>
-    <View class="FirstPerson" canRotate="1" rotationMin="-12,0,-90" rotationMax="5,0,90">
+    <!--<View class="FirstPerson" canRotate="1" rotationMin="-12,0,-90" rotationMax="5,0,90">
      <FirstPerson helper="left_rear_eye_pos" relativeToHorizon="0.5"/>
-    </View>
+    </View>-->
     <View class="ActionThirdPerson" canRotate="0">
      <ActionThirdPerson cameraPosOffset="0,0,-1" cameraAimOffset="0,0,0" lagSpeed="3" velocityMult="0,0,-0.5"/>
     </View>
@@ -592,9 +592,9 @@
   </Seat>
   <Seat name="passenger_right_rear" part="" enterHelper="passenger04Enter_pos" sitHelper="passenger04Sit_pos" useBoundsForEntering="1" isDriver="0" AimPart="" seatGroupIndex="5" transitionAnim="1">
    <Views>
-    <View class="FirstPerson" canRotate="1" rotationMin="-12,0,-90" rotationMax="5,0,90">
+    <!--<View class="FirstPerson" canRotate="1" rotationMin="-12,0,-90" rotationMax="5,0,90">
      <FirstPerson helper="right_rear_eye_pos" relativeToHorizon="0.5"/>
-    </View>
+    </View>-->
     <View class="ActionThirdPerson" canRotate="0">
      <ActionThirdPerson cameraPosOffset="0,0,-1" cameraAimOffset="0,0,0" lagSpeed="3" velocityMult="0,0,-0.5"/>
     </View>

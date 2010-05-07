@@ -379,9 +379,9 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("hud_onScreenFarDistance", &hud_onScreenFarDistance, 500, 0, "On screen icons won't scale anymore, when farther than this.");
 	pConsole->Register("hud_onScreenNearSize", &hud_onScreenNearSize, 1.4f, 0, "On screen icon size when nearest.");
 	pConsole->Register("hud_onScreenFarSize", &hud_onScreenFarSize, 0.7f, 0, "On screen icon size when farthest.");
-	pConsole->Register("hud_colorLine", &hud_colorLine, 4481854, 0, "HUD line color.");
-	pConsole->Register("hud_colorOver", &hud_colorOver, 14125840, 0, "HUD hovered color.");
-	pConsole->Register("hud_colorText", &hud_colorText, 12386209, 0, "HUD text color.");
+	pConsole->Register("hud_colorLine", &hud_colorLine, 16737996, 0, "HUD line color.");
+	pConsole->Register("hud_colorOver", &hud_colorOver, 65535, 0, "HUD hovered color.");
+	pConsole->Register("hud_colorText", &hud_colorText, 10040268, 0, "HUD text color.");
 	pConsole->Register("hud_voicemode", &hud_voicemode, 1, 0, "Usage of the voice when switching of Nanosuit mode.");
 	pConsole->Register("hud_enableAlienInterference", &hud_enableAlienInterference, 1, VF_SAVEGAME, "Switched the alien interference effect.");
 	pConsole->Register("hud_alienInterferenceStrength", &hud_alienInterferenceStrength, 0.8f, VF_SAVEGAME, "Scales alien interference effect strength.");

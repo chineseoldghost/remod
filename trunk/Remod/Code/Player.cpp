@@ -3341,6 +3341,8 @@ void CPlayer::Revive( bool fromInit )
 			pCharacter->GetISkeletonPose()->SetDefaultPose();
 	}
 
+	gEnv->pConsole->ExecuteString("GOCMode");
+
 	//Restore near fov to default value (60.0f) and FP weapon position, just in case
 	if (IsClient())
 		ResetFPView();

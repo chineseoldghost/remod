@@ -72,6 +72,7 @@ CScriptBind_Actor::CScriptBind_Actor(ISystem *pSystem)
 	SCRIPT_REG_FUNC(IsFlying);
 	SCRIPT_REG_TEMPLFUNC(AddImpulse,"x,y,z");
 	SCRIPT_REG_TEMPLFUNC(DropInventory,"impulse");
+	SCRIPT_REG_TEMPLFUNC(RegisterClasses, "classes");
 	SCRIPT_REG_TEMPLFUNC(SetAngles,"vAngles");
 	SCRIPT_REG_FUNC(GetAngles);
 	SCRIPT_REG_TEMPLFUNC(AddAngularImpulse,"vAngular,deceleration,duration");
@@ -1799,3 +1800,67 @@ int CScriptBind_Actor::DropInventory(IFunctionHandler *pH, float impulse)
 	pActor->DropInventory(impulse);
 	return pH->EndFunction();
 }
+//------------------------------------------------------------------------
+int CScriptBind_Actor::RegisterClasses(IFunctionHandler *pH, SmartScriptTable classes)
+{
+	CActor *pActor = GetActor(pH);
+	if (!pActor)
+		return pH->EndFunction();
+
+	static std::vector<string> Classes;
+	Classes.reserve(classes->Count());
+
+	IScriptTable::Iterator it=classes->BeginIteration();
+	while(classes->MoveNext(it))
+	{/*
+		const char *itemClass=0;
+		it.value.CopyTo(itemClass);
+
+		//pActor->nor
+			//SStanceInfo
+
+		if (itemClass && itemClass[0])
+			virtualInventory.push_back(itemClass);*/
+	}
+
+	classes->EndIteration(it);
+
+	//bool result=pActor->CheckVirtualInventoryRestrictions(virtualInventory, itemClassName);
+	//virtualInventory.resize(0);
+
+	//if (result)
+	//	return pH->EndFunction(1);
+
+	return pH->EndFunction();
+
+}
+/*
+int CScriptBind_Actor::CheckVirtualInventoryRestrictions(IFunctionHandler *pH, SmartScriptTable inventory, const char *itemClassName)
+{
+	CActor *pActor = GetActor(pH);
+	if (!pActor)
+		return pH->EndFunction();
+
+	static std::vector<string> virtualInventory;
+	virtualInventory.reserve(inventory->Count());
+
+	IScriptTable::Iterator it=inventory->BeginIteration();
+	while(inventory->MoveNext(it))
+	{
+		const char *itemClass=0;
+		it.value.CopyTo(itemClass);
+
+		if (itemClass && itemClass[0])
+			virtualInventory.push_back(itemClass);
+	}
+
+	inventory->EndIteration(it);
+
+	bool result=pActor->CheckVirtualInventoryRestrictions(virtualInventory, itemClassName);
+	virtualInventory.resize(0);
+
+	if (result)
+		return pH->EndFunction(1);
+
+	return pH->EndFunction();
+}*/

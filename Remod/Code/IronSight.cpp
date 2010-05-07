@@ -452,8 +452,8 @@ void CIronSight::EnterZoom(float time, const char *zoom_layer, bool smooth, int 
 	SetActorSpeedScale(0.45f); // Remod | Increased zoom scale (+0.10)
 
 	// marcok: please leave goc alone
-	if(!UseAlternativeIronSight() && !g_pGameCVars->goc_tpcrosshair)
-		m_pWeapon->FadeCrosshair(1.0f, 0.0f, WEAPON_FADECROSSHAIR_ZOOM);
+	/*if(!UseAlternativeIronSight() && !g_pGameCVars->goc_tpcrosshair)
+		m_pWeapon->FadeCrosshair(1.0f, 0.0f, WEAPON_FADECROSSHAIR_ZOOM);*/
 
 	float oFoV = GetZoomFoVScale(0);
 	float tFoV = GetZoomFoVScale(zoomStep);
@@ -478,10 +478,10 @@ void CIronSight::LeaveZoom(float time, bool smooth)
 	SetActorSpeedScale(1.0f);
 
 	// marcok: please leave goc alone
-	if(!UseAlternativeIronSight() && !g_pGameCVars->goc_tpcrosshair)
-		m_pWeapon->FadeCrosshair(0.0f, 1.0f, WEAPON_FADECROSSHAIR_ZOOM);
-	else if(UseAlternativeIronSight())
-		m_pWeapon->FadeCrosshair(1.0f, 1.0f, 0.1f);
+	/*if(!UseAlternativeIronSight() && !g_pGameCVars->goc_tpcrosshair)
+		m_pWeapon->FadeCrosshair(0.0f, 1.0f, WEAPON_FADECROSSHAIR_ZOOM);*/
+	/*else if(UseAlternativeIronSight())
+		m_pWeapon->FadeCrosshair(1.0f, 1.0f, 0.1f);*/
 
 	float oFoV = GetZoomFoVScale(0);
 	float tFoV = GetZoomFoVScale(1);

@@ -477,8 +477,7 @@ bool CHUD::Init()
 	}
 
 	m_animPlayerStats.Load("Libs/UI/HUD_AmmoHealthEnergySuit.gfx", eFD_Right, eFAF_Visible|eFAF_ThisHandler);
-	//m_animAchievements.Load("Libs/UI/HUD_Achievement.gfx", eFD_Center, eFAF_ManualRender|eFAF_ThisHandler);
-//	m_animAchievements.GetFlashPlayer()->SetVisible(false);
+	m_animAchievements.Load("Libs/UI/HUD_Achievement.gfx", eFD_Center, eFAF_ManualRender|eFAF_ThisHandler);
 	m_animAmmoPickup.Load("Libs/UI/HUD_AmmoPickup.gfx", eFD_Right, eFAF_Visible);
 	m_animFriendlyProjectileTracker.Load("Libs/UI/HUD_GrenadeDetect_Friendly.gfx", eFD_Center, eFAF_Visible);
 	if(!m_animFriendlyProjectileTracker.IsLoaded()) //asset missing so far ..
@@ -3146,7 +3145,7 @@ bool CHUD::WeaponHasAttachments()
 
 void CHUD::DisplayAchievement(string Achievement)
 {
-	AchievementString = Achievement.MakeUpper();
+	achievementName = Achievement;
 	ShowAchievement = true;
 }
 
@@ -3157,14 +3156,13 @@ void CHUD::OnPostUpdate(float frameTime)
 	if(ShowAchievement)
 	{
 		ShowAchievement = false;
-		SFlashVarValue args[1] = {AchievementString};
-		m_animAchievements.CheckedInvoke("display",args,1);
+		m_animAchievements.CheckedInvoke("display",SFlashVarValue(achievementName));
 		m_animAchievements.GetFlashPlayer()->SetVisible(true);
-		m_now = gEnv->pTimer->GetFrameStartTime().GetSeconds();
+		//m_now = gEnv->pTimer->GetFrameStartTime().GetSeconds();
 	}
 
-	if(m_now - gEnv->pTimer->GetFrameStartTime().GetSeconds() > 3.0f)
-		m_animAchievements.GetFlashPlayer()->SetVisible(false);
+	//if(m_now - gEnv->pTimer->GetFrameStartTime().GetSeconds() > 3.0f)
+		//m_animAchievements.GetFlashPlayer()->SetVisible(false);
 
 	FUNCTION_PROFILER(GetISystem(),PROFILE_GAME);
 
@@ -4499,11 +4497,11 @@ void CHUD::SetFireMode(IItem *pItem, IFireMode *pFM, bool forceUpdate)
 			SAFE_HUD_FUNC(ShowProgress(-1));
 	}
 
-	if(pItem->GetIWeapon() && pItem->GetIWeapon()->IsZoomed() && !g_pGameCVars->g_enableAlternateIronSight)
+	/*if(pItem->GetIWeapon() && pItem->GetIWeapon()->IsZoomed() && !g_pGameCVars->g_enableAlternateIronSight)
 	{
 		if(m_pHUDCrosshair->GetCrosshairType() != 0)
 			m_pHUDCrosshair->SetCrosshair(0);
-	}
+	}*/
 	else if(m_pHUDCrosshair->GetCrosshairType() == 0 && g_pGameCVars->g_difficultyLevel < 4)
 		m_pHUDCrosshair->SelectCrosshair(pItem);
 

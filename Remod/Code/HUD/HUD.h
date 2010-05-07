@@ -875,7 +875,7 @@ public:
 
 	bool m_bCutsceneAbortPressed;
 	bool m_bCutsceneCanBeAborted;
-	char AchievementName;
+	string achievementName;
 	bool ShowAchievement;
 	float m_now;
 	float m_fCutsceneSkipTimer;

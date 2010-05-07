@@ -1,3 +1,3 @@
-function unloadScript(path)
-	Script.UnloadScript("../Classes/"..path);
+function Sniper()
+	System.LogAlways("Sniperclass");
 end

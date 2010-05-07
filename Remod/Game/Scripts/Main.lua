@@ -6,7 +6,7 @@ function OnInit()
 	Script.ReloadScript("scripts/physics.lua");
 	Script.ReloadScript("scripts/Tweaks.lua");
 	Script.ReloadScript("scripts/Remod.lua");
-	Script.LoadScript("scripts/Classes/Main.lua", true);
+	Script.ReloadScript("scripts/Classes/Main.lua");
 end
 
 function OnShutdown()

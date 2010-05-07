@@ -204,7 +204,7 @@ void COptionsManager::InitProfileOptions(bool switchProfiles)
 				ICVar *pCVar = gEnv->pConsole->GetCVar(attribCVar);
 				if(pCVar && GetProfileValue(attrib.name, value))
 				{
-					if(stricmp(pCVar->GetString(), value.c_str()))
+					/*if(stricmp(pCVar->GetString(), value.c_str()))
 					{
 						//CryLogAlways("Inited, loaded and changed: %s = %s (was %s)", attrib.name, value, pCVar->GetString());
 						pCVar->Set(value.c_str());
@@ -216,7 +216,8 @@ void COptionsManager::InitProfileOptions(bool switchProfiles)
 					if(!stricmp(attrib.name,"Option.hud_colorLine"))
 					{
 						SetCrysisProfileColor(value.c_str());
-					}
+					}*/
+					SetCrysisProfileColor(value.c_str());
 				}
 			}
 		}

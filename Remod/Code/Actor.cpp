@@ -529,6 +529,8 @@ void CActor::Revive( bool fromInit )
 	if (ICharacterInstance* pCharacter = GetEntity()->GetCharacter(0))
 		pCharacter->EnableProceduralFacialAnimation(GetMaxHealth() > 0);
 
+	gEnv->pConsole->ExecuteString("GOCMode");
+
 	if (IEntityPhysicalProxy* pPProxy = (IEntityPhysicalProxy*)GetEntity()->GetProxy(ENTITY_PROXY_PHYSICS))
 		pPProxy->EnableRestrictedRagdoll(false);
 }

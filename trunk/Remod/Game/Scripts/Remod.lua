@@ -3,7 +3,7 @@
 --};
 
 -- System.SetCVar("r_drawNearFoV", 65)
-System.SetCVar("hud_crosshair", 8)
+System.SetCVar("hud_crosshair", 8);
 
 ----------------------------------------------------------------------------------------------------
 --[[

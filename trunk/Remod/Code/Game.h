@@ -268,6 +268,7 @@ protected:
   static void CmdVehicleKill(IConsoleCmdArgs *pArgs);
 	static void CmdRestart(IConsoleCmdArgs *pArgs);
 	static void CmdSay(IConsoleCmdArgs *pArgs);
+	static void CmdGive(IConsoleCmdArgs *pArgs);
 	static void CmdReloadItems(IConsoleCmdArgs *pArgs);
 	static void CmdLoadActionmap(IConsoleCmdArgs *pArgs);
   static void CmdReloadGameRules(IConsoleCmdArgs *pArgs);

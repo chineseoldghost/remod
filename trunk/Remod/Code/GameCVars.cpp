@@ -379,9 +379,9 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("hud_onScreenFarDistance", &hud_onScreenFarDistance, 500, 0, "On screen icons won't scale anymore, when farther than this.");
 	pConsole->Register("hud_onScreenNearSize", &hud_onScreenNearSize, 1.4f, 0, "On screen icon size when nearest.");
 	pConsole->Register("hud_onScreenFarSize", &hud_onScreenFarSize, 0.7f, 0, "On screen icon size when farthest.");
-	pConsole->Register("hud_colorLine", &hud_colorLine, 16737996, 0, "HUD line color.");
-	pConsole->Register("hud_colorOver", &hud_colorOver, 65535, 0, "HUD hovered color.");
-	pConsole->Register("hud_colorText", &hud_colorText, 10040268, 0, "HUD text color.");
+	pConsole->Register("hud_colorLine", &hud_colorLine, 2697513, 0, "HUD line color.");
+	pConsole->Register("hud_colorOver", &hud_colorOver, 14483456, 0, "HUD hovered color.");
+	pConsole->Register("hud_colorText", &hud_colorText, 16730698, 0, "HUD text color.");
 	pConsole->Register("hud_voicemode", &hud_voicemode, 1, 0, "Usage of the voice when switching of Nanosuit mode.");
 	pConsole->Register("hud_enableAlienInterference", &hud_enableAlienInterference, 1, VF_SAVEGAME, "Switched the alien interference effect.");
 	pConsole->Register("hud_alienInterferenceStrength", &hud_alienInterferenceStrength, 0.8f, VF_SAVEGAME, "Scales alien interference effect strength.");
@@ -560,7 +560,7 @@ void SCVars::InitCVars(IConsole *pConsole)
   pConsole->Register("g_quickGame_prefer_mycountry",&g_quickGame_prefer_my_country,0,VF_DUMPTODISK,"QuickGame option");
   pConsole->Register("g_quickGame_ping1_level",&g_quickGame_ping1_level,80,VF_DUMPTODISK,"QuickGame option");
   pConsole->Register("g_quickGame_ping2_level",&g_quickGame_ping2_level,170,VF_DUMPTODISK,"QuickGame option");
-
+	
 	pConsole->Register("g_quickGame_debug",&g_quickGame_debug,0,VF_CHEAT,"QuickGame option");
 	
 	pConsole->Register("g_displayIgnoreList",&g_displayIgnoreList,1,VF_DUMPTODISK,"Display ignore list in chat tab.");
@@ -637,6 +637,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 
 	iFlags = gEnv->pConsole->GetCVar("p_profile_entities")->GetFlags();
 	gEnv->pConsole->GetCVar("p_profile_entities")->SetFlags(iFlags|~VF_CHEAT);
+	
 
 	iFlags = gEnv->pConsole->GetCVar("r_glow")->GetFlags();
 	gEnv->pConsole->GetCVar("r_glow")->SetFlags(iFlags|~VF_CHEAT);
@@ -1020,6 +1021,7 @@ void CGame::RegisterConsoleCommands()
   m_pConsole->AddCommand("v_kill", CmdVehicleKill, VF_CHEAT, "Kills the players vehicle.");
 	m_pConsole->AddCommand("sv_restart", CmdRestart, 0, "Restarts the round.");
 	m_pConsole->AddCommand("sv_say", CmdSay, 0, "Broadcasts a message to all clients.");
+	m_pConsole->AddCommand("sv_giveitem", CmdGive, 0, "Gives item to player.");
 	m_pConsole->AddCommand("i_reload", CmdReloadItems, 0, "Reloads item scripts.");
 
 	m_pConsole->AddCommand("dumpss", CmdDumpSS, 0, "test synched storage.");
@@ -1226,6 +1228,17 @@ void CGame::CmdSay(IConsoleCmdArgs *pArgs)
 
 		if (!gEnv->bClient)
 			CryLogAlways("** Server: %s **", msg);
+	}
+}
+
+//------------------------------------------------------------------------
+void CGame::CmdGive(IConsoleCmdArgs *pArgs)
+{
+	if(!gEnv->bServer && pArgs->GetArgCount()==1)
+	{
+		CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+		IEntityClass* pWeapon = gEnv->pEntitySystem->GetClassRegistry()->FindClass(pArgs->GetCommandLine());
+		pPlayer->GetInventory()->AddItem(pPlayer->GetInventory()->GetItemByClass(pWeapon));
 	}
 }
 

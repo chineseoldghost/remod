@@ -1,0 +1,1 @@
+System.LogAlways("iClassSystem | Sniper");

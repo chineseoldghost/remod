@@ -957,6 +957,7 @@ void CPlayerMovement::ProcessOnGroundOrJumping(CPlayer& player)
 
 	CNanoSuit *pSuit = m_player.GetNanoSuit();
 
+
 /*
 	m_player.DebugGraph_AddValue("InputMoveX", m_movement.desiredVelocity.x);
 	m_player.DebugGraph_AddValue("InputMoveY", m_movement.desiredVelocity.y);

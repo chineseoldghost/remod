@@ -3062,6 +3062,31 @@ void CFlashMenuObject::InitIngameMenu()
 		m_soundIDs[iSound] = INVALID_SOUNDID;
 	}
 
+	XmlNodeRef MenuXML = GetISystem()->LoadXmlFile("Game/Scripts/UI/Menu.xml");
+	if(MenuXML)
+	{
+		XmlNodeRef coloursNode = MenuXML->findChild("colors");
+		if(coloursNode)
+		{
+			for (int i = 0; i < coloursNode->getChildCount(); ++i)
+			{
+				XmlNodeRef hudcolourNode  = coloursNode->getChild(i);
+				if(hudcolourNode)
+				{
+					XmlString name;
+					float var = 1.0f;
+					hudcolourNode->getAttr("name", name);
+					hudcolourNode->getAttr("var", var);
+
+					string variable = string(var);
+					string command = name + var;
+
+					gEnv->pConsole->ExecuteString(command);
+				}
+			}
+		}
+	}
+
 	if(!m_apFlashMenuScreens[MENUSCREEN_FRONTENDINGAME])
 		m_apFlashMenuScreens[MENUSCREEN_FRONTENDINGAME] = new CFlashMenuScreen;
 

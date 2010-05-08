@@ -101,7 +101,7 @@ CScriptBind_Actor::CScriptBind_Actor(ISystem *pSystem)
   SCRIPT_REG_FUNC(GetFrozenAmount);
   SCRIPT_REG_FUNC(GetEntityID);
   SCRIPT_REG_TEMPLFUNC(AddFrost, "frost");
-  SCRIPT_REG_TEMPLFUNC(GetClass);
+  SCRIPT_REG_TEMPLFUNC(GetClass, "");
 
 	SCRIPT_REG_TEMPLFUNC(SetPhysicalizationProfile, "profile");
 	SCRIPT_REG_TEMPLFUNC(GetPhysicalizationProfile, "");

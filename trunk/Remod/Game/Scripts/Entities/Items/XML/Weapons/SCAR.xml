@@ -421,7 +421,7 @@
 				<param name="max_clips" value="10" />
 				<param name="rate" value="40" />
 				<param name="damage" value="150" />
-				<param name="reload_time" value="2.0" />
+				<param name="reload_time" value="2.5" />
 				<param name="bullet_chamber" value="0" />
 				<param name="helper_tp" value="weapon_term" />
 				<param name="aim_helper" value="1" />

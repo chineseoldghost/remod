@@ -199,16 +199,6 @@ function Player:Expose()
 	};
 end
 
--- Remod, slowmo stuff
---[[function Player:Slowmo()
-	System.SetCVar("time_scale", 0.3)
-end
-
-function Player:DeSlowmo()
-	System.SetCVar("time_scale", 1.0)
-end--]]
-
-
 function Player.Server:OnInit()
 	--self.actor:SetPhysicalizationProfile("alive");
 	

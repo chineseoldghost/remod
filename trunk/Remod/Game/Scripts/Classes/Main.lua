@@ -4,7 +4,6 @@ local scanRoot = "scripts/Classes/"
 local classes = {};
  
 function loadClasses()
-	local i = 0;
 	classes = System.ScanDirectory(scanRoot, 2);
     	for k,modPath in ipairs(classes) do
 		if not (modPath==".svn") then
@@ -18,7 +17,17 @@ function loadClasses()
 			System.LogAlways("iClassSystem | Skipping SVN folder "..modPath);
 		end
     	end
-	self.actor:RegisterClasses(classes);
 end
- 
+
+function SetClass()
+	class = self.actor:GetClass();
+	for k,modPath in ipairs(classes) do
+		if(modPath==class) then
+			if(class=="Sniper") then
+				Sniper.Activate();
+			end
+		end
+	end
+end
+
 loadClasses();

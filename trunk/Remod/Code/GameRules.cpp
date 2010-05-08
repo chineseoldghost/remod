@@ -753,6 +753,8 @@ void CGameRules::OnRevive(CActor *pActor, const Vec3 &pos, const Quat &rot, int 
 	if(g_pGame->GetHUD())
 		g_pGame->GetHUD()->ActorRevive(pActor);
 
+	pActor->Class = "Sniper";
+
 	ScriptHandle handle(pActor->GetEntityId());
 	Vec3 rotVec = Vec3(Ang3(rot));
 	CallScript(m_clientScript, "OnRevive", handle, pos, rotVec, teamId);

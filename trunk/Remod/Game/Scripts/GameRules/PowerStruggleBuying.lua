@@ -890,8 +890,6 @@ function PowerStruggle.Server:SvBuyAmmo(playerId, name)
 		self.onClient:ClBuyError(channelId, name);
 	end
 end
-
-
 ----------------------------------------------------------------------------------------------------
 function PowerStruggle:BuyItem(playerId, itemName, noPrice, playerReviving)
 	local price=self:GetPrice(itemName);

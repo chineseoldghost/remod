@@ -1233,14 +1233,12 @@ void CGame::CmdSay(IConsoleCmdArgs *pArgs)
 
 //------------------------------------------------------------------------
 void CGame::CmdGive(IConsoleCmdArgs *pArgs)
-{
-	if(!gEnv->bServer && pArgs->GetArgCount()==1)
-	{
-		CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
-		IEntityClass* pWeapon = gEnv->pEntitySystem->GetClassRegistry()->FindClass(pArgs->GetCommandLine());
-		pPlayer->GetInventory()->AddItem(pPlayer->GetInventory()->GetItemByClass(pWeapon));
-	}
+{	
+	CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+	CActor *pActor = g_pGame->GetGameRules()->GetActorByEntityId(pPlayer->GetEntityId());
+	g_pGame->GetIGameFramework()->GetIItemSystem()->GiveItem(pActor, (const char *)pArgs, false, false, false);
 }
+	
 
 //------------------------------------------------------------------------
 void CGame::CmdLoadActionmap(IConsoleCmdArgs *pArgs)

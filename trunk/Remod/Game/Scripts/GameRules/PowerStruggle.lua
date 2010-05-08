@@ -1136,8 +1136,6 @@ function PowerStruggle.Server:OnSetTeam(entityId, teamId)
 		entity.last_scanned=nil;
 	end
 end
-
-
 ----------------------------------------------------------------------------------------------------
 function PowerStruggle.Client:OnSetTeam(entityId, teamId)
 	if (entityId == g_localActorId) then

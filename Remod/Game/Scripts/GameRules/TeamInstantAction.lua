@@ -571,6 +571,7 @@ function TeamInstantAction.Server:OnInit()
         end
         
         InstantAction.Server.OnInit(self);
+	self:loadClasses();
 end
 
 
@@ -587,7 +588,7 @@ function TeamInstantAction.Client:OnInit()
         end
         
         --Sound.SetMasterVolumeScale(1);
-        
+	self:loadClasses();
 end
 
 ----------------------------------------------------------------------------------------------------

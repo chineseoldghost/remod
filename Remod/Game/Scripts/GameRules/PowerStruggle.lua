@@ -210,9 +210,6 @@ Net.Expose {
 	},
 };
 ----------------------------------------------------------------------------------------------------
-
-
-----------------------------------------------------------------------------------------------------
 function PowerStruggle.Server:OnInit()
 	TeamInstantAction.Server.OnInit(self);
 end
@@ -778,7 +775,10 @@ end
 
 ----------------------------------------------------------------------------------------------------
 function PowerStruggle.Client:OnRevive(playerId, pos, rot, teamId)
-	TeamInstantAction.Client.OnRevive(self, playerId, pos, rot, teamId);
+	local success = TeamInstantAction.Client.OnRevive(self, playerId, pos, rot, teamId);
+	if(success) then
+		self:SetClassProperties();
+	end
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -841,7 +841,6 @@ function PowerStruggle:ClearReviveQueue()
 		revive.ammo_price=0;
 	end
 end
-
 
 ----------------------------------------------------------------------------------------------------
 function PowerStruggle:FlushReviveQueue()
@@ -1042,6 +1041,7 @@ function PowerStruggle:RevivePlayerInQueue(player, revive)
 --	end
 
 	self:CommitRevivePurchases(player.id);
+	InstantAction.SetClassProperties();
 
 	revive.tk=nil;
 	revive.announced=nil;

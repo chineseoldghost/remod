@@ -13,6 +13,7 @@
 --  - 07/10/2004   16:02 : Modified by Marcio Martins
 --
 ----------------------------------------------------------------------------------------------------
+Script.LoadScript("scripts/gamerules/classsystem.lua", 1, 1);
 Script.LoadScript("scripts/gamerules/singleplayer.lua", 1, 1);
 --------------------------------------------------------------------------
 InstantAction = new(SinglePlayer);
@@ -108,7 +109,6 @@ function InstantAction:PlayRadioAlert(alertName, teamId)
 			self:QueueVoice(alert, bor(SOUND_LOAD_SYNCHRONOUSLY, SOUND_VOICE), SOUND_SEMANTIC_MP_CHAT);
 		end
 end
-
 
 ----------------------------------------------------------------------------------------------------
 function InstantAction:QueueVoice(soundName, soundFlags, soundSemantics, soundGap, endProc, endProcParam)
@@ -336,7 +336,6 @@ function InstantAction.Server:OnInit()
 	
 	self:Reset(true);
 end
-
 
 ----------------------------------------------------------------------------------------------------
 function InstantAction.Server:OnStartGame()

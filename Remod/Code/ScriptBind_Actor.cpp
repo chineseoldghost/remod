@@ -72,7 +72,6 @@ CScriptBind_Actor::CScriptBind_Actor(ISystem *pSystem)
 	SCRIPT_REG_FUNC(IsFlying);
 	SCRIPT_REG_TEMPLFUNC(AddImpulse,"x,y,z");
 	SCRIPT_REG_TEMPLFUNC(DropInventory,"impulse");
-	SCRIPT_REG_TEMPLFUNC(RegisterClasses, "classes");
 	SCRIPT_REG_TEMPLFUNC(SetAngles,"vAngles");
 	SCRIPT_REG_FUNC(GetAngles);
 	SCRIPT_REG_TEMPLFUNC(AddAngularImpulse,"vAngular,deceleration,duration");
@@ -100,7 +99,9 @@ CScriptBind_Actor::CScriptBind_Actor(ISystem *pSystem)
 	SCRIPT_REG_FUNC(GetArmor);
 	SCRIPT_REG_FUNC(GetMaxArmor);
   SCRIPT_REG_FUNC(GetFrozenAmount);
+  SCRIPT_REG_FUNC(GetEntityID);
   SCRIPT_REG_TEMPLFUNC(AddFrost, "frost");
+  SCRIPT_REG_TEMPLFUNC(GetClass);
 
 	SCRIPT_REG_TEMPLFUNC(SetPhysicalizationProfile, "profile");
 	SCRIPT_REG_TEMPLFUNC(GetPhysicalizationProfile, "");
@@ -1800,67 +1801,21 @@ int CScriptBind_Actor::DropInventory(IFunctionHandler *pH, float impulse)
 	pActor->DropInventory(impulse);
 	return pH->EndFunction();
 }
-//------------------------------------------------------------------------
-int CScriptBind_Actor::RegisterClasses(IFunctionHandler *pH, SmartScriptTable classes)
+
+int CScriptBind_Actor::GetEntityID(IFunctionHandler *pH)
 {
 	CActor *pActor = GetActor(pH);
 	if (!pActor)
 		return pH->EndFunction();
 
-	static std::vector<string> Classes;
-	Classes.reserve(classes->Count());
-
-	IScriptTable::Iterator it=classes->BeginIteration();
-	while(classes->MoveNext(it))
-	{/*
-		const char *itemClass=0;
-		it.value.CopyTo(itemClass);
-
-		//pActor->nor
-			//SStanceInfo
-
-		if (itemClass && itemClass[0])
-			virtualInventory.push_back(itemClass);*/
-	}
-
-	classes->EndIteration(it);
-
-	//bool result=pActor->CheckVirtualInventoryRestrictions(virtualInventory, itemClassName);
-	//virtualInventory.resize(0);
-
-	//if (result)
-	//	return pH->EndFunction(1);
-
-	return pH->EndFunction();
-
+	return pH->EndFunction(pActor->GetEntityId());
 }
-/*
-int CScriptBind_Actor::CheckVirtualInventoryRestrictions(IFunctionHandler *pH, SmartScriptTable inventory, const char *itemClassName)
+
+int CScriptBind_Actor::GetClass(IFunctionHandler *pH)
 {
 	CActor *pActor = GetActor(pH);
 	if (!pActor)
 		return pH->EndFunction();
 
-	static std::vector<string> virtualInventory;
-	virtualInventory.reserve(inventory->Count());
-
-	IScriptTable::Iterator it=inventory->BeginIteration();
-	while(inventory->MoveNext(it))
-	{
-		const char *itemClass=0;
-		it.value.CopyTo(itemClass);
-
-		if (itemClass && itemClass[0])
-			virtualInventory.push_back(itemClass);
-	}
-
-	inventory->EndIteration(it);
-
-	bool result=pActor->CheckVirtualInventoryRestrictions(virtualInventory, itemClassName);
-	virtualInventory.resize(0);
-
-	if (result)
-		return pH->EndFunction(1);
-
-	return pH->EndFunction();
-}*/
+	return pH->EndFunction(pActor->Class);
+}

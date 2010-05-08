@@ -637,6 +637,34 @@ void CGame::Vehicles(ICVar *pCVar)
 	}
 }
 
+void CGame::SetClass(ICVar *pCVar)
+{
+	int var = pCVar->GetIVal();
+	if(pCVar)
+	{
+		CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+		CActor *pActor = g_pGame->GetGameRules()->GetActorByEntityId(pPlayer->GetEntityId());
+		switch(var)
+		{
+			case 1: //Sniper
+			{
+				pActor->Class = "Sniper";
+			}
+			break;
+			case 2: //Rifleman
+			{
+				pActor->Class = "Rifleman";
+			}
+			break;
+			case 3: //Engineer
+			{
+				pActor->Class = "Engineer";
+			}
+			break;
+		}
+	}
+}
+
 string CGame::InitMapReloading()
 {
 	string levelFileName = GetIGameFramework()->GetLevelName();

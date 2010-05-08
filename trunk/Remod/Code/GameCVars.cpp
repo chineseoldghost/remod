@@ -379,9 +379,9 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("hud_onScreenFarDistance", &hud_onScreenFarDistance, 500, 0, "On screen icons won't scale anymore, when farther than this.");
 	pConsole->Register("hud_onScreenNearSize", &hud_onScreenNearSize, 1.4f, 0, "On screen icon size when nearest.");
 	pConsole->Register("hud_onScreenFarSize", &hud_onScreenFarSize, 0.7f, 0, "On screen icon size when farthest.");
-	pConsole->Register("hud_colorLine", &hud_colorLine, 2697513, 0, "HUD line color.");
-	pConsole->Register("hud_colorOver", &hud_colorOver, 14483456, 0, "HUD hovered color.");
-	pConsole->Register("hud_colorText", &hud_colorText, 16730698, 0, "HUD text color.");
+	pConsole->Register("hud_colorLine", &hud_colorLine, 30906, 0, "HUD line color.");
+	pConsole->Register("hud_colorOver", &hud_colorOver, 12405780, 0, "HUD hovered color.");
+	pConsole->Register("hud_colorText", &hud_colorText, 16777215, 0, "HUD text color.");
 	pConsole->Register("hud_voicemode", &hud_voicemode, 1, 0, "Usage of the voice when switching of Nanosuit mode.");
 	pConsole->Register("hud_enableAlienInterference", &hud_enableAlienInterference, 1, VF_SAVEGAME, "Switched the alien interference effect.");
 	pConsole->Register("hud_alienInterferenceStrength", &hud_alienInterferenceStrength, 0.8f, VF_SAVEGAME, "Scales alien interference effect strength.");
@@ -628,6 +628,7 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("re_vehicles",&re_vehicles, 1, 0, "Disables/Enables vehicles", CGame::Vehicles);
 	pConsole->Register("re_intros",&re_intros, 1, 0, "Disables/Enables intros");
 	pConsole->Register("re_thirdpersondeaths",&re_thirdpersondeaths, 1, 0, "Enables/Disables thirdperson view when player dies");
+	pConsole->Register("actor_class",&actor_class, 0, 0, "1: Sniper 2: Rifleman 3: Engineer", CGame::SetClass);
 
 //	int iFlags = gEnv->pConsole->GetCVar("r_drawNearFoV")->GetFlags();
 //	gEnv->pConsole->GetCVar("r_drawNearFoV")->SetFlags(iFlags|~VF_CHEAT);

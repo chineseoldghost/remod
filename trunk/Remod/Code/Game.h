@@ -187,6 +187,7 @@ public:
 
   // Remod | Vehicle functions
   static void Vehicles(ICVar* pCVar);
+  static void SetClass(ICVar* pCVar);
 
   // Remod | Stats
   void SaveStats(string stat);

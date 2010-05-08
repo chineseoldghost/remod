@@ -226,6 +226,9 @@ public:
 	int IsItemAllowed(IFunctionHandler* pH, const char* itemName);
 
 	int GetEntityName(IFunctionHandler* pH);
+	int SetMaxHealth(IFunctionHandler* pH, int maxHealth);
+	int SetJumpHeight(IFunctionHandler* pH, int jumpHeight);
+	int SetSprintMultiplier(IFunctionHandler* pH, int multiplier);
 
 private:
 	void RegisterGlobals();

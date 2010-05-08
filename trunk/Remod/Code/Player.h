@@ -681,6 +681,8 @@ public:
 	void ResetScreenFX();
 	void ResetFPView();
 
+	SPlayerParams		m_params;
+
 	//Hit assistance
 	bool HasHitAssistance();
 
@@ -781,7 +783,6 @@ protected:
 	Vec3    m_lastKnownPosition;
 
 	SPlayerStats		m_stats;
-	SPlayerParams		m_params;
 	
 	std::auto_ptr<IPlayerInput> m_pPlayerInput;
 

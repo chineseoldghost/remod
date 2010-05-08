@@ -1141,6 +1141,8 @@ public:
 	void Suicide(float delay) {if(m_suicideDelay<0.f) m_suicideDelay=delay;}
 	void UpdateSuicide(float frameTime);
 
+	int32 m_maxHealth;
+
 protected:
 
 	virtual void SetMaterialRecursive(ICharacterInstance *charInst, bool undo, IMaterial *newMat = 0);
@@ -1181,7 +1183,6 @@ protected:
 
 	bool	m_isClient;
 	float m_health;
-	int32 m_maxHealth;
 
  
 	EStance m_stance;

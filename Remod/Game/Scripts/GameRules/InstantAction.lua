@@ -2054,7 +2054,7 @@ function InstantAction:EquipPlayer(actor, additionalEquip)
 
 	ItemSystem.GiveItem("AlienCloak", actor.id, false);
 	ItemSystem.GiveItem("OffHand", actor.id, false);
-	ItemSystem.GiveItem("Fists", actor.id, false);
+--	ItemSystem.GiveItem("Fists", actor.id, false);
 	ItemSystem.GiveItem("Binoculars", actor.id, false);
 	
 	if (additionalEquip and additionalEquip~="") then

@@ -173,7 +173,7 @@
 				<param name="slider_layer" value="dampers" />
 				<param name="slider_layer_time" value="750" />
 				<param name="damage" value="250" />
-				<param name="reload_time" value="2.05" />
+				<param name="reload_time" value="3" />
 				<param name="helper_tp" value="weapon_term" />
 				<param name="nearmiss_signal" value="OnNearMiss" />
 				<param name="hit_type" value="gaussbullet" />

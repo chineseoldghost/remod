@@ -1,0 +1,7 @@
+<Menu>
+	<colours>
+		<hud_colour name="hud_colorLine " var="12405780" />
+		<hud_colour name="hud_colorOver " var="14483456" />
+		<hud_colour name="hud_colorText " var="16730698" />
+	</colours>
+</menu>

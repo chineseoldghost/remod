@@ -863,7 +863,6 @@ function SinglePlayer.Client:OnInit()
 	  -- full volume when starting the Editor
 		Sound.SetMasterVolumeScale(1);
 	end
-	
 end
 
 

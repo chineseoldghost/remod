@@ -920,8 +920,11 @@ void CGameRules::RevivePlayer(CActor *pActor, const Vec3 &pos, const Ang3 &angle
 	if (IsFrozen(pActor->GetEntityId()))
 		FreezeEntity(pActor->GetEntityId(), false, false);
 
-	CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
-	pActor->SetMaxHealth(pPlayer->m_maxHealth);
+	if(!gEnv->bServer)
+	{
+		CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+		pActor->SetMaxHealth(pPlayer->m_maxHealth);
+	}
 
 	if (!m_pGameFramework->IsChannelOnHold(pActor->GetChannelId()))
 		pActor->GetGameObject()->SetAspectProfile(eEA_Physics, eAP_Alive);

@@ -2056,7 +2056,7 @@ function InstantAction:EquipPlayer(actor, additionalEquip)
 		ItemSystem.GiveItemPack(actor.id, additionalEquip, true);
 	end
 
-	if(not g_gameRules:IsServer() then
+	if(not g_gameRules:IsServer()) then
 		if(System.GetCVar("re_class")==1) then
 			--g_gameRules:SetMaxHealth(self.sniperProperties.health);
 			--g_gameRules:SetJumpHeight(self.sniperProperties.jumpHeight);

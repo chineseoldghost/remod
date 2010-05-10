@@ -632,10 +632,6 @@ function Player:UseEntity(entityId, slot, press)
 	end
 end
 
-function Player:Slowmo()
-	System.ExecuteCommand("time_scale 0.3");
-end
-
 function Player.Client:OnShutDown()
 	BasicActor.ShutDown(self);
 --	HUD:Destroy(self);

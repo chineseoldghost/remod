@@ -509,12 +509,10 @@ void CGame::EditorResetGame(bool bStart)
 
 void CGame::RegisterKill(EntityId shooterId)
 {
-	if(!gEnv->pSystem->IsDedicated()) // Since PlayerID checks are involved, we must see to it that the server does not initiate this
+	if(!gEnv->pSystem->IsDedicated() && gEnv->bMultiplayer && shooterId != GetIGameFramework()->GetClientActorId()) // Since PlayerID checks are involved, we must see to it that the server does not initiate this
 	{
 		CPlayer *pPlayer = static_cast<CPlayer*>(GetIGameFramework()->GetClientActor());
 		playerId = pPlayer->GetEntityId();
-		if(shooterId!=playerId)
-			return;
 
 		//Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
 		RegisteredKills++;
@@ -639,28 +637,18 @@ void CGame::Vehicles(ICVar *pCVar)
 
 void CGame::SetClass(ICVar *pCVar)
 {
-	int var = pCVar->GetIVal();
-	if(pCVar)
+	if(!gEnv->bServer)
 	{
-		CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
-		CActor *pActor = g_pGame->GetGameRules()->GetActorByEntityId(pPlayer->GetEntityId());
-		switch(var)
+		int var = pCVar->GetIVal();
+		if(pCVar)
 		{
-			case 1: //Sniper
-			{
-				pActor->Class = "Sniper";
-			}
-			break;
-			case 2: //Rifleman
-			{
+			CActor *pActor = static_cast<CActor *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+			if(var==1)
+					pActor->Class = "Sniper";
+			else if(var==2)
 				pActor->Class = "Rifleman";
-			}
-			break;
-			case 3: //Engineer
-			{
+			else if(var==3)
 				pActor->Class = "Engineer";
-			}
-			break;
 		}
 	}
 }

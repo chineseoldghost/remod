@@ -2542,7 +2542,9 @@ int CScriptBind_GameRules::GetEntityName(IFunctionHandler* pH)
 int CScriptBind_GameRules::SetMaxHealth(IFunctionHandler* pH, int maxHealth)
 {
 	CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+	CActor *pActor = static_cast<CActor *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
 	pPlayer->m_maxHealth = maxHealth;
+	pActor->SetMaxHealth(maxHealth);
 
 	return pH->EndFunction();
 }

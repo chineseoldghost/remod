@@ -628,7 +628,8 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("re_vehicles",&re_vehicles, 1, 0, "Disables/Enables vehicles", CGame::Vehicles);
 	pConsole->Register("re_intros",&re_intros, 1, 0, "Disables/Enables intros");
 	pConsole->Register("re_thirdpersondeaths",&re_thirdpersondeaths, 1, 0, "Enables/Disables thirdperson view when player dies");
-	pConsole->Register("actor_class",&actor_class, 0, 0, "1: Sniper 2: Rifleman 3: Engineer", CGame::SetClass);
+	pConsole->Register("re_class",&re_class, 2, 0, "1: Sniper 2: Rifleman 3: Engineer");
+	//pConsole->Register("actor_class",&actor_class, 2, 0, "1: Sniper 2: Rifleman 3: Engineer", CGame::SetClass);
 
 //	int iFlags = gEnv->pConsole->GetCVar("r_drawNearFoV")->GetFlags();
 //	gEnv->pConsole->GetCVar("r_drawNearFoV")->SetFlags(iFlags|~VF_CHEAT);

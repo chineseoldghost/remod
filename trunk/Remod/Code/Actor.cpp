@@ -3490,13 +3490,6 @@ void CActor::NetKill(EntityId shooterId, uint16 weaponClassId, int damage, int m
 			// Also display the name of the enemy who shot you...
 			if(g_pGame->GetGameRules()->GetTeam(shooterId) != g_pGame->GetGameRules()->GetTeam(GetEntityId()) || g_pGame->GetGameRules()->GetTeamCount()<=1)
 				SAFE_HUD_FUNC(GetTagNames()->AddEnemyTagName(shooterId));
-
-			// ensure full body is displayed (otherwise player is headless)
-			if(g_pGameCVars->re_thirdpersondeaths==1)
-			{
-				if(!IsThirdPerson())
-					ToggleThirdPerson();
-			}
 		}
 	}
 

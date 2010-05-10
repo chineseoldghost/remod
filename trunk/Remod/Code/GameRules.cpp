@@ -668,6 +668,8 @@ bool CGameRules::OnClientEnteredGame(int channelId, bool isReset)
 	if(!isReset || GetTeamCount() < 2)
 		ReconfigureVoiceGroups(pActor->GetEntityId(), -999, 0); /* -999 should never exist :) */
 
+	//pActor->Class = "Rifleman";
+
 	return true;
 }
 
@@ -920,10 +922,8 @@ void CGameRules::RevivePlayer(CActor *pActor, const Vec3 &pos, const Ang3 &angle
 	if (IsFrozen(pActor->GetEntityId()))
 		FreezeEntity(pActor->GetEntityId(), false, false);
 
-	int health = 100;
-	//if(!gEnv->bMultiplayer && pActor->IsClient())
-		health = g_pGameCVars->g_playerHealthValue;
-	pActor->SetMaxHealth(health);
+	CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+	pActor->SetMaxHealth(pPlayer->m_maxHealth);
 
 	if (!m_pGameFramework->IsChannelOnHold(pActor->GetChannelId()))
 		pActor->GetGameObject()->SetAspectProfile(eEA_Physics, eAP_Alive);

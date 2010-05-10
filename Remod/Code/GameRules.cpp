@@ -666,9 +666,7 @@ bool CGameRules::OnClientEnteredGame(int channelId, bool isReset)
 
 	// don't do this on reset - have already been added to correct team!
 	if(!isReset || GetTeamCount() < 2)
-		ReconfigureVoiceGroups(pActor->GetEntityId(), -999, 0); /* -999 should never exist :) */
-
-	//pActor->Class = "Rifleman";
+		ReconfigureVoiceGroups(pActor->GetEntityId(), -999, 0); /* -999 should never exist :) */;
 
 	return true;
 }

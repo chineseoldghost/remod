@@ -291,7 +291,7 @@ Remod
 18=Game\Scripts\GameRules\SinglePlayer.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
+Selected=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=13
 Caret=1,1
@@ -299,11 +299,11 @@ Caret=1,1
 TopLine=307
 Caret=14,329
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
-TopLine=345
-Caret=39,359
+TopLine=205
+Caret=39,222
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
-TopLine=216
-Caret=33,422
+TopLine=222
+Caret=5,233
 [Game\Scripts\Entities\Items\XML\Weapons\SOCOM.xml]
 TopLine=172
 Caret=35,192
@@ -332,7 +332,7 @@ Caret=19,864
 TopLine=243
 Caret=31,264
 [Game\Scripts\GameRules\InstantAction.lua]
-TopLine=29
+TopLine=2014
 Caret=1,2056
 [Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml]
 TopLine=194

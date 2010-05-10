@@ -77,20 +77,21 @@ function PowerStruggle:EquipPlayer(player, additionalEquip)
 	end
 
 	if(System.GetCVar("re_class")==1) then
-		--g_gameRules:SetMaxHealth(sniperProperties.health);
-		--g_gameRules:SetJumpHeight(sniperProperties.jumpHeight);
-		--g_gameRules:SetSprintMultiplier(sniperProperties.sprintMultiplier);
+		--g_gameRules:SetMaxHealth(self.sniperProperties.health);
+		--g_gameRules:SetJumpHeight(self.sniperProperties.jumpHeight);
+		--g_gameRules:SetSprintMultiplier(self.sniperProperties.sprintMultiplier);
 		ItemSystem.GiveItem(self.sniperProperties.PrimaryWeapon, player.id, true);
+		ItemSystem.GiveItem("SniperScope", player.id, true);
 	elseif(System.GetCVar("re_class")==2) then
-		--gameRules:SetMaxHealth(riflemanProperties.health);
-		--g_gameRules:SetJumpHeight(riflemanProperties.jumpHeight);
-		--g_gameRules:SetSprintMultiplier(riflemanProperties.sprintMultiplier);
-		ItemSystem.GiveItem(self.riflemanWeapon, player.id, true);
+		--g_gameRules:SetMaxHealth(self.riflemanProperties.health);
+		--g_gameRules:SetJumpHeight(self.riflemanProperties.jumpHeight);
+		--g_gameRules:SetSprintMultiplier(self.riflemanProperties.sprintMultiplier);
+		ItemSystem.GiveItem(self.riflemanProperties.PrimaryWeapon, player.id, true);
 	elseif(System.GetCVar("re_class")==3) then
-		--gameRules:SetMaxHealth(engineerProperties.health);
-		--g_gameRules:SetJumpHeight(engineerProperties.jumpHeight);
-		--g_gameRules:SetSprintMultiplier(engineerProperties.sprintMultiplier);
-		ItemSystem.GiveItem(self.engineerWeapon, player.id, true);
+		--g_gameRules:SetMaxHealth(self.engineerProperties.health);
+		--g_gameRules:SetJumpHeight(self.engineerProperties.jumpHeight);
+		--g_gameRules:SetSprintMultiplier(self.engineerProperties.sprintMultiplier);
+		ItemSystem.GiveItem(self.engineerProperties.PrimaryWeapon, player.id, true);
 	end
 end
 

@@ -75,24 +75,22 @@ function PowerStruggle:EquipPlayer(player, additionalEquip)
 			ItemSystem.GiveItem(e, player.id, false);
 		end
 	end
-	if(not g_gameRules:IsServer()) then
-		if(System.GetCVar("re_class")==1) then
-			--g_gameRules:SetMaxHealth(self.sniperProperties.health);
-			--g_gameRules:SetJumpHeight(self.sniperProperties.jumpHeight);
-			--g_gameRules:SetSprintMultiplier(self.sniperProperties.sprintMultiplier);
-			ItemSystem.GiveItem(self.sniperProperties.PrimaryWeapon, player.id, true);
-			ItemSystem.GiveItem("SniperScope", player.id, true);
-		elseif(System.GetCVar("re_class")==2) then
-			--g_gameRules:SetMaxHealth(self.riflemanProperties.health);
-			--g_gameRules:SetJumpHeight(self.riflemanProperties.jumpHeight);
-			--g_gameRules:SetSprintMultiplier(self.riflemanProperties.sprintMultiplier);
-			ItemSystem.GiveItem(self.riflemanProperties.PrimaryWeapon, player.id, true);
-		elseif(System.GetCVar("re_class")==3) then
-			--g_gameRules:SetMaxHealth(self.engineerProperties.health);
-			--g_gameRules:SetJumpHeight(self.engineerProperties.jumpHeight);
-			--g_gameRules:SetSprintMultiplier(self.engineerProperties.sprintMultiplier);
-			ItemSystem.GiveItem(self.engineerProperties.PrimaryWeapon, player.id, true);
-		end
+	if(System.GetCVar("re_class")==1) then
+		--g_gameRules:SetMaxHealth(self.sniperProperties.health);
+		--g_gameRules:SetJumpHeight(self.sniperProperties.jumpHeight);
+		--g_gameRules:SetSprintMultiplier(self.sniperProperties.sprintMultiplier);
+		ItemSystem.GiveItem(self.sniperProperties.PrimaryWeapon, player.id, true);
+		ItemSystem.GiveItem("SniperScope", player.id, true);
+	elseif(System.GetCVar("re_class")==2) then
+		--g_gameRules:SetMaxHealth(self.riflemanProperties.health);
+		--g_gameRules:SetJumpHeight(self.riflemanProperties.jumpHeight);
+		--g_gameRules:SetSprintMultiplier(self.riflemanProperties.sprintMultiplier);
+		ItemSystem.GiveItem(self.riflemanProperties.PrimaryWeapon, player.id, true);
+	elseif(System.GetCVar("re_class")==3) then
+		--g_gameRules:SetMaxHealth(self.engineerProperties.health);
+		--g_gameRules:SetJumpHeight(self.engineerProperties.jumpHeight);
+		--g_gameRules:SetSprintMultiplier(self.engineerProperties.sprintMultiplier);
+		ItemSystem.GiveItem(self.engineerProperties.PrimaryWeapon, player.id, true);
 	end
 end
 

@@ -75,7 +75,7 @@ function PowerStruggle:EquipPlayer(player, additionalEquip)
 			ItemSystem.GiveItem(e, player.id, false);
 		end
 	end
-	if(not g_gameRules:IsServer() then
+	if(not g_gameRules:IsServer()) then
 		if(System.GetCVar("re_class")==1) then
 			--g_gameRules:SetMaxHealth(self.sniperProperties.health);
 			--g_gameRules:SetJumpHeight(self.sniperProperties.jumpHeight);

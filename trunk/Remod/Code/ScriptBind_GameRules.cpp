@@ -2541,26 +2541,35 @@ int CScriptBind_GameRules::GetEntityName(IFunctionHandler* pH)
 //-----------------------------------------------------------------------------
 int CScriptBind_GameRules::SetMaxHealth(IFunctionHandler* pH, int maxHealth)
 {
-	CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
-	CActor *pActor = static_cast<CActor *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
-	pPlayer->m_maxHealth = maxHealth;
-	pActor->SetMaxHealth(maxHealth);
+	if(!gEnv->bServer)
+	{
+		CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+		CActor *pActor = static_cast<CActor *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+		pPlayer->m_maxHealth = maxHealth;
+		pActor->SetMaxHealth(maxHealth);
+	}
 
 	return pH->EndFunction();
 }
 //-----------------------------------------------------------------------------
 int CScriptBind_GameRules::SetJumpHeight(IFunctionHandler* pH, int jumpHeight)
 {
-	CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
-	pPlayer->m_params.jumpHeight = jumpHeight;
+	if(!gEnv->bServer)
+	{
+		CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+		pPlayer->m_params.jumpHeight = jumpHeight;
+	}
 	
 	return pH->EndFunction();
 }
 //-----------------------------------------------------------------------------
 int CScriptBind_GameRules::SetSprintMultiplier(IFunctionHandler* pH, int multiplier)
 {
-	CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
-	pPlayer->m_params.sprintMultiplier = multiplier;
+	if(!gEnv->bServer)
+	{
+		CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+		pPlayer->m_params.sprintMultiplier = multiplier;
+	}
 
 	return pH->EndFunction();
 }

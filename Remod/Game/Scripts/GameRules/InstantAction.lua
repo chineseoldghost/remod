@@ -13,12 +13,10 @@
 --  - 07/10/2004   16:02 : Modified by Marcio Martins
 --
 ----------------------------------------------------------------------------------------------------
-Script.LoadScript("scripts/gamerules/classsystem.lua", 1, 1);
 Script.LoadScript("scripts/gamerules/singleplayer.lua", 1, 1);
 --------------------------------------------------------------------------
 InstantAction = new(SinglePlayer);
 InstantAction.States = { "Reset", "PreGame", "InGame", "PostGame", };
-
 
 InstantAction.MIN_PLAYER_LIMIT_WARN_TIMER	= 15; -- player limit warning timer
 
@@ -36,9 +34,7 @@ InstantAction.SCORE_KILLS_KEY 		= 100;
 InstantAction.SCORE_DEATHS_KEY 		= 101;
 InstantAction.SCORE_HEADSHOTS_KEY = 102;
 InstantAction.SCORE_PING_KEY 			= 103;
-InstantAction.SCORE_LAST_KEY 			= 104;	-- make sure this is always the last one
-
-
+InstantAction.SCORE_LAST_KEY 			= 104;	-- make sure this is always the last ones
 
 InstantAction.DamagePlayerToPlayer =
 {
@@ -1584,12 +1580,12 @@ function InstantAction:ResetPlayers( )
 		end
 	end
 end
-
+--[[
 ----------------------------------------------------------------------------------------------------
 function InstantAction:AnnounceAchievement(achievement)
 	player = g_gameRules:GetEntityName();
-	--Chat.SendChatToAll(nil, "PLAYER %q EARNED THE '%s' ACHIEVEMENT!", player, achievement);
-end
+	Chat.SendChatToAll(nil, "PLAYER %q EARNED THE '%s' ACHIEVEMENT!", player, achievement);
+end]]--
 
 ----------------------------------------------------------------------------------------------------
 function InstantAction:ReviveAllPlayers(keepEquip)
@@ -2060,7 +2056,22 @@ function InstantAction:EquipPlayer(actor, additionalEquip)
 		ItemSystem.GiveItemPack(actor.id, additionalEquip, true);
 	end
 
-	ItemSystem.GiveItem("SOCOM", actor.id, true);
+	if(self.actor:GetClass()=="Sniper") then
+		g_gameRules:SetMaxHealth(sniperProperties.health);
+		g_gameRules:SetJumpHeight(sniperProperties.jumpHeight);
+		g_gameRules:SetSprintMultiplier(sniperProperties.sprintMultiplier);
+		ItemSystem.GiveItem(sniperProperties.PrimaryWeapon, actor.id, true);
+	elseif(self.actor:GetClass()=="Rifleman") then
+		_gameRules:SetMaxHealth(riflemanProperties.health);
+		g_gameRules:SetJumpHeight(riflemanProperties.jumpHeight);
+		g_gameRules:SetSprintMultiplier(riflemanProperties.sprintMultiplier);
+		ItemSystem.GiveItem(riflemanProperties.PrimaryWeapon, actor.id, true);
+	elseif(self.actor:GetClass()=="Engineer") then
+		_gameRules:SetMaxHealth(engineerProperties.health);
+		g_gameRules:SetJumpHeight(engineerProperties.jumpHeight);
+		g_gameRules:SetSprintMultiplier(engineerProperties.sprintMultiplier);
+		ItemSystem.GiveItem(engineerProperties.PrimaryWeapon, actor.id, true);
+	end
 end
 
 
@@ -2155,3 +2166,54 @@ function InstantAction.Client:ClTimerAlert(time)
 	end
 end
 ----------------------------------------------------------------------------------------------------
+InstantAction.defaultProperties = {
+	health = 100.0,
+	normalSpeed = 1.0,
+	maxSpeed = 1.0,
+	characterModel = "objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf",
+	handsModel = "objects/weapons/arms_global/arms_nanosuit_us.chr",
+	mass = 1,
+	sprintMultiplier = 1.0,
+	jumpHeight = 1.0,
+	PrimaryWeapon = "SOCOM",
+};
+
+InstantAction.sniperWeapon = "DSG1";
+InstantAction.riflemanWeapon = "SCAR";
+InstantAction.engineerWeapon = "LAW";
+
+InstantAction.sniperProperties = {
+	health = 50.0,
+	normalSpeed = 1.3,
+	maxSpeed = 3.0,
+	characterModel = "objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf",
+	handsModel = "objects/weapons/arms_global/arms_nanosuit_us.chr",
+	mass = 90,
+	sprintMultiplier = 3.0,
+	jumpHeight = 1.0,
+	PrimaryWeapon = "DSG1",
+};
+----------------------------------------------------------------------------------------------------
+InstantAction.riflemanProperties = {
+	health = 100.0,
+	normalSpeed = 1.3,
+	maxSpeed = 3.0,
+	characterModel = "objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf",
+	handsModel = "objects/weapons/arms_global/arms_nanosuit_us.chr",
+	mass = 90,
+	sprintMultiplier = 1.1,
+	jumpHeight = 2.0,
+	PrimaryWeapon = "SCAR",
+};
+----------------------------------------------------------------------------------------------------
+InstantAction.engineerProperties = {
+	health = 75.0,
+	normalSpeed = 1.3,
+	maxSpeed = 3.0,
+	characterModel = "objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf",
+	handsModel = "objects/weapons/arms_global/arms_nanosuit_us.chr",
+	mass = 90,
+	sprintMultiplier = 1.0,
+	jumpHeight = 0.2,
+	PrimaryWeapon = "LAW",
+};

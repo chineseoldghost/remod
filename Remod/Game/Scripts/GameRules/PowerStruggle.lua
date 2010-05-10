@@ -775,10 +775,7 @@ end
 
 ----------------------------------------------------------------------------------------------------
 function PowerStruggle.Client:OnRevive(playerId, pos, rot, teamId)
-	local success = TeamInstantAction.Client.OnRevive(self, playerId, pos, rot, teamId);
-	if(success) then
-		self:SetClassProperties();
-	end
+	TeamInstantAction.Client.OnRevive(self, playerId, pos, rot, teamId);
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -1041,7 +1038,6 @@ function PowerStruggle:RevivePlayerInQueue(player, revive)
 --	end
 
 	self:CommitRevivePurchases(player.id);
-	InstantAction.SetClassProperties();
 
 	revive.tk=nil;
 	revive.announced=nil;

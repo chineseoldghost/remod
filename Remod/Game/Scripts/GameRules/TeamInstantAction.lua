@@ -364,10 +364,6 @@ function TeamInstantAction.Client:OnKill(playerId, shooterId, weaponClassName, d
                         self.game:IncreaseStats(kills);
                 end
         end
-
-        if(playerId == g_localActorId) then
-                player.actor:DropInventory(10);
-        end
 end
 ----------------------------------------------------------------------------------------------------
 function TeamInstantAction:ProcessScores(hit, tk)
@@ -571,7 +567,6 @@ function TeamInstantAction.Server:OnInit()
         end
         
         InstantAction.Server.OnInit(self);
-	self:loadClasses();
 end
 
 
@@ -588,7 +583,7 @@ function TeamInstantAction.Client:OnInit()
         end
         
         --Sound.SetMasterVolumeScale(1);
-	self:loadClasses();
+	--self:loadClasses();
 end
 
 ----------------------------------------------------------------------------------------------------

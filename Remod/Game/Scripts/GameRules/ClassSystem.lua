@@ -1,16 +1,7 @@
 System.LogAlways("Loading Classes...");	
 local scanRoot = "scripts/Classes/"
 
-ClassSystem.classProperties = {	
-	health = 100.0,
-	normalSpeed = 0.5,
-	maxSpeed = 0.3,
-	characterModel = "objects/characters/human/us/nanosuit/nanosuit_us_multiplayer.cdf",
-	handsModel = "objects/weapons/arms_global/arms_nanosuit_us.chr",
-	mass = 50,
-	sprintMultiplier = 1,
-	jumpHeight = 0.3,
-}
+classProperties = {};
 System.LogAlways("1");	
 
 ClassSystem.sniperProperties= {
@@ -67,16 +58,15 @@ end
 System.LogAlways("4");	
 ----------------------------------------------------------------------------------------------------
 function ClassSystem:SetClass()
-	class = self.actor:GetClass();
-	if(class=="Sniper") then
+	--if(self.actor:GetClass()=="Sniper") then
 		self.currentClass = self.SniperProperties;
-	end
-	if(class=="Rifleman") then
+	--end
+	--[[if(class=="Rifleman") then
 		self.currentClass = self.riflemanProperties;
 	end
 	if(class=="Engineer") then
 		self.currentClass = self.engineerProperties;
-	end
+	end]]--
 	System.LogAlways("Successfully activated class");
 end
 System.LogAlways("5");	
@@ -87,11 +77,11 @@ function ClassSystem:SetClassProperties()
 	System.LogAlways("YAY2");
 	if(success) then	
 		System.LogAlways("YAY3");
-		g_gameRules:SetMaxHealth(currentClass.health);
+		--g_gameRules:SetMaxHealth(currentClass.health);
 		System.LogAlways("YAY4");
-		g_gameRules:SetJumpHeight(currentClass.jumpHeight);
+		--g_gameRules:SetJumpHeight(currentClass.jumpHeight);
 		System.LogAlways("YAY5");
-		g_gameRules:SetSprintMultiplier(currentClass.sprintMultiplier);
+		--g_gameRules:SetSprintMultiplier(currentClass.sprintMultiplier);
 		System.LogAlways("Class properties successfully set");
 	else
 		System.LogAlways("Failed to set class properties");

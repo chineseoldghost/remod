@@ -218,8 +218,8 @@
 				<param name="maxx" 				value="10" />
 				<param name="maxy" 				value="5" />
 				<param name="randomness" 	value="4.0" />
-				<param name="recoil_prone_m" value="0.25" />
-				<param name="recoil_crouch_m" value="0.5" />
+				<param name="recoil_prone_m" value="0.33" />
+				<param name="recoil_crouch_m" value="0.66" />
 				<param name="recoil_jump_m"		value="2" />
 				<param name="recoil_strMode_m" value="0.5" />
 				<hints>

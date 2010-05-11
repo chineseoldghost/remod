@@ -1,8 +1,8 @@
 <MetaData>
-          <MiniMap Filename="minimap.jpg" startX="248.379395" startY="249.322998" endX="3848.379395" endY="3849.322998"/>
+   <MiniMap Filename="minimap.jpg" startX="298.002197" startY="297.997681" endX="3798.002197" endY="3797.997559"/>
    <Gamerules MP1="PowerStruggle"/>
    <LoadingScreens screen1=""/>
    <HeaderText text="RealismTest"/>
-   <DescriptionText text="FIND THE AMAZING HOERSE"/>
+   <DescriptionText text="Really this should be KotH, with an attacking and a defending team, or something like it."/>
    <Display Name="RealismTest"/>
 </MetaData>

@@ -291,7 +291,7 @@ Remod
 18=Game\Scripts\GameRules\SinglePlayer.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
+Selected=Game\Scripts\GameRules\PowerStruggleRank.lua
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=13
 Caret=1,1

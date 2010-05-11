@@ -509,33 +509,33 @@ void CGame::EditorResetGame(bool bStart)
 
 void CGame::RegisterKill(EntityId shooterId)
 {
-	if(!gEnv->pSystem->IsDedicated() && gEnv->bMultiplayer && shooterId != GetIGameFramework()->GetClientActorId()) // Since PlayerID checks are involved, we must see to it that the server does not initiate this
+	if(!gEnv->pSystem->IsDedicated()) // Since PlayerID checks are involved, we must see to it that the server does not initiate this
 	{
 		CPlayer *pPlayer = static_cast<CPlayer*>(GetIGameFramework()->GetClientActor());
-		playerId = pPlayer->GetEntityId();
-
-		//Script::Call(gEnv->pScriptSystem, AnnounceAchievement, pScriptTable, achievement);
-		RegisteredKills++;
-		
-		if(pPlayer->GetLinkedVehicle())
-			KillsinVehicle++;
-
-		//CPlayer *pPlayer = g_pGame->GetIGameFramework()->GetClientActor();
-		if(pPlayer->GetHealth()==100)
-			NodamageKills++;
-
-		// Check which weapon was used, and register it
-		if(!pPlayer->GetLinkedVehicle())
+		if(shooterId==pPlayer->GetEntityId())
 		{
-			weaponClass = pPlayer->GetCurrentItem()->GetEntity()->GetClass()->GetName();
-			if(!stricmp(weaponClass, "SCAR"))
-				SCARKills++;
+			RegisteredKills++;
+		
+			if(pPlayer->GetLinkedVehicle())
+				KillsinVehicle++;
+
+			//CPlayer *pPlayer = g_pGame->GetIGameFramework()->GetClientActor();
+			if(pPlayer->GetHealth()==100)
+				NodamageKills++;
+
+			// Check which weapon was used, and register it
+			if(!pPlayer->GetLinkedVehicle())
+			{
+				weaponClass = pPlayer->GetCurrentItem()->GetEntity()->GetClass()->GetName();
+				if(!stricmp(weaponClass, "SCAR"))
+					SCARKills++;
+			}
+			if(pPlayer->IsParachuteEnabled())
+				ParachuteKills++;
+			CNanoSuit *pSuit = pPlayer->GetNanoSuit();
+			if(pSuit->IsNightVisionEnabled())
+				NightVisionKills++;
 		}
-		if(pPlayer->IsParachuteEnabled())
-			ParachuteKills++;
-		CNanoSuit *pSuit = pPlayer->GetNanoSuit();
-		if(pSuit->IsNightVisionEnabled())
-			NightVisionKills++;
 	}
 }
 
@@ -631,24 +631,6 @@ void CGame::Vehicles(ICVar *pCVar)
 		}
 		else
 		{
-		}
-	}
-}
-
-void CGame::SetClass(ICVar *pCVar)
-{
-	if(!gEnv->bServer)
-	{
-		int var = pCVar->GetIVal();
-		if(pCVar)
-		{
-			CActor *pActor = static_cast<CActor *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
-			if(var==1)
-					pActor->Class = "Sniper";
-			else if(var==2)
-				pActor->Class = "Rifleman";
-			else if(var==3)
-				pActor->Class = "Engineer";
 		}
 	}
 }

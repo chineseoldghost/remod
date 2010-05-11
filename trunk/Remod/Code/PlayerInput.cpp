@@ -72,11 +72,6 @@ CPlayerInput::CPlayerInput( CPlayer * pPlayer ) :
 		//ADD_HANDLER(holsteritem, OnActionHolsterItem);
 		ADD_HANDLER(use, OnActionUse);
 
-		ADD_HANDLER(speedmode, OnActionSpeedMode);
-		ADD_HANDLER(strengthmode, OnActionStrengthMode);
-		ADD_HANDLER(defensemode, OnActionDefenseMode);
-		ADD_HANDLER(suitcloak, OnActionSuitCloak);
-
 		ADD_HANDLER(thirdperson, OnActionThirdPerson);
 		ADD_HANDLER(flymode, OnActionFlyMode);
 		ADD_HANDLER(godmode, OnActionGodMode);

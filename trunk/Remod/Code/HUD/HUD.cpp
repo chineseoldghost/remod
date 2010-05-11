@@ -1664,27 +1664,22 @@ void CHUD::HandleFSCommand(const char *szCommand,const char *szArgs)
 	}
 	else if(!strcmp(szCommand, "SetClass"))
 	{
-		CryLogAlways("HUD1");
-		CActor *pActor = static_cast<CActor *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
-		CryLogAlways("HUD2");
+		CActor *pActor = static_cast<CActor *>(g_pGame->GetIGameFramework()->GetClientActor());
 		if(pActor)
 		{
-			CryLogAlways("HUD3");
-			if(szArgs=="Sniper")
+			if(!strcmp(szArgs, "Sniper"))
 			{
-				CryLogAlways("HUD4");
 				pActor->SetClass(1);
 			}
-			else if(szArgs=="Rifleman")
+			else if(!strcmp(szArgs, "Rifleman"))
 			{
 				pActor->SetClass(2);
 			}
-			else if(szArgs=="Engineer")
+			else if(!strcmp(szArgs, "Engineer"))
 			{
 				pActor->SetClass(3);
 			}
 		}
-		CryLogAlways("HUD5");
 	}
 	else if(!strcmp(szCommand,"StopInitialize"))
 	{

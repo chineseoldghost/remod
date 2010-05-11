@@ -2056,18 +2056,18 @@ function InstantAction:EquipPlayer(actor, additionalEquip)
 		ItemSystem.GiveItemPack(actor.id, additionalEquip, true);
 	end
 
-	if(System.GetCVar("re_class")==1) then
+	if(player.actor:GetClass()==1) then
 		--g_gameRules:SetMaxHealth(self.sniperProperties.health);
 		--g_gameRules:SetJumpHeight(self.sniperProperties.jumpHeight);
 		--g_gameRules:SetSprintMultiplier(self.sniperProperties.sprintMultiplier);
 		ItemSystem.GiveItem(self.sniperProperties.PrimaryWeapon, player.id, true);
 		ItemSystem.GiveItem("SniperScope", player.id, true);
-	elseif(System.GetCVar("re_class")==2) then
+	elseif(player.actor:GetClass()==2) then
 		--g_gameRules:SetMaxHealth(self.riflemanProperties.health);
 		--g_gameRules:SetJumpHeight(self.riflemanProperties.jumpHeight);
 		--g_gameRules:SetSprintMultiplier(self.riflemanProperties.sprintMultiplier);
 		ItemSystem.GiveItem(self.riflemanProperties.PrimaryWeapon, player.id, true);
-	elseif(System.GetCVar("re_class")==3) then
+	elseif(player.actor:GetClass()==3) then
 		--g_gameRules:SetMaxHealth(self.engineerProperties.health);
 		--g_gameRules:SetJumpHeight(self.engineerProperties.jumpHeight);
 		--g_gameRules:SetSprintMultiplier(self.engineerProperties.sprintMultiplier);

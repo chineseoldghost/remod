@@ -780,7 +780,7 @@ public:
 	virtual void  SerializeLevelToLevel( TSerialize &ser );
 	virtual IInventory *GetInventory() const;
 
-	const char *Class;
+	int Class;
 
 	virtual bool IsClient() const;
 	virtual IMaterial *GetReplacementMaterial() { return m_pReplacementMaterial; };

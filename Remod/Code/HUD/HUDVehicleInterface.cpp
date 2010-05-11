@@ -283,6 +283,9 @@ void CHUDVehicleInterface::OnExitVehicle(IActor *pActor)
 		m_eCurVehicleHUD = EHUD_NONE;
 	}
 
+	m_animMainWindow.SetVisible(false);
+	m_animStats.SetVisible(false);
+
 	m_animMainWindow.Unload();
 	m_animStats.Unload();
 

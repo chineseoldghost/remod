@@ -58,7 +58,7 @@ function PowerStruggle:EquipPlayer(player, additionalEquip)
 
 	ItemSystem.GiveItem("AlienCloak", player.id, false);
 	ItemSystem.GiveItem("OffHand", player.id, false);
-	ItemSystem.GiveItem("Fists", player.id, false);
+	--ItemSystem.GiveItem("Fists", player.id, false);
 	
 	if (additionalEquip and additionalEquip~="") then
 		ItemSystem.GiveItemPack(player.id, additionalEquip, true);
@@ -75,21 +75,21 @@ function PowerStruggle:EquipPlayer(player, additionalEquip)
 			ItemSystem.GiveItem(e, player.id, false);
 		end
 	end
-	if(System.GetCVar("re_class")==1) then
-		--g_gameRules:SetMaxHealth(self.sniperProperties.health);
-		--g_gameRules:SetJumpHeight(self.sniperProperties.jumpHeight);
-		--g_gameRules:SetSprintMultiplier(self.sniperProperties.sprintMultiplier);
+	if(player.actor:GetClass(player.id)==1) then
+		g_gameRules:SetMaxHealth(self.sniperProperties.health, player.id);
+		g_gameRules:SetJumpHeight(self.sniperProperties.jumpHeight, player.id);
+		g_gameRules:SetSprintMultiplier(self.sniperProperties.sprintMultiplier, player.id);
 		ItemSystem.GiveItem(self.sniperProperties.PrimaryWeapon, player.id, true);
 		ItemSystem.GiveItem("SniperScope", player.id, true);
-	elseif(System.GetCVar("re_class")==2) then
-		--g_gameRules:SetMaxHealth(self.riflemanProperties.health);
-		--g_gameRules:SetJumpHeight(self.riflemanProperties.jumpHeight);
-		--g_gameRules:SetSprintMultiplier(self.riflemanProperties.sprintMultiplier);
+	elseif(player.actor:GetClass(player.id)==2) then
+		g_gameRules:SetMaxHealth(self.riflemanProperties.health, player.id);
+		g_gameRules:SetJumpHeight(self.riflemanProperties.jumpHeight, player.id);
+		g_gameRules:SetSprintMultiplier(self.riflemanProperties.sprintMultiplier, player.id);
 		ItemSystem.GiveItem(self.riflemanProperties.PrimaryWeapon, player.id, true);
-	elseif(System.GetCVar("re_class")==3) then
-		--g_gameRules:SetMaxHealth(self.engineerProperties.health);
-		--g_gameRules:SetJumpHeight(self.engineerProperties.jumpHeight);
-		--g_gameRules:SetSprintMultiplier(self.engineerProperties.sprintMultiplier);
+	elseif(player.actor:GetClass(player.id)==3) then
+		g_gameRules:SetMaxHealth(self.engineerProperties.health, player.id);
+		g_gameRules:SetJumpHeight(self.engineerProperties.jumpHeight, player.id);
+		g_gameRules:SetSprintMultiplier(self.engineerProperties.sprintMultiplier, player.id);
 		ItemSystem.GiveItem(self.engineerProperties.PrimaryWeapon, player.id, true);
 	end
 end

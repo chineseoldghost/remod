@@ -640,7 +640,6 @@ void SCVars::InitCVars(IConsole *pConsole)
 	iFlags = gEnv->pConsole->GetCVar("p_profile_entities")->GetFlags();
 	gEnv->pConsole->GetCVar("p_profile_entities")->SetFlags(iFlags|~VF_CHEAT);
 	
-
 	iFlags = gEnv->pConsole->GetCVar("r_glow")->GetFlags();
 	gEnv->pConsole->GetCVar("r_glow")->SetFlags(iFlags|~VF_CHEAT);
 

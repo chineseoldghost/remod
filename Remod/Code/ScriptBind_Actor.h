@@ -62,7 +62,7 @@ public:
 	virtual int DropInventory(IFunctionHandler *pH, float impulse); // Remod | Used to drop inventory on death
 	virtual int AddImpulse(IFunctionHandler *pH,float x,float y,float z); // Remod | Used to add a impulse for explosions
 	virtual int GetEntityID(IFunctionHandler *pH);
-	virtual int GetClass(IFunctionHandler *pH);
+	virtual int GetClass(IFunctionHandler *pH, ScriptHandle playerId);
 
 	virtual int SetAngles(IFunctionHandler *pH,Ang3 vAngles );
 	virtual int GetAngles(IFunctionHandler *pH);

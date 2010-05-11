@@ -1662,6 +1662,25 @@ void CHUD::HandleFSCommand(const char *szCommand,const char *szArgs)
 			}
 		}
 	}
+	else if(!strcmp(szCommand, "SetClass"))
+	{
+		CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+		if(pPlayer)
+		{
+			if(szArgs=="Sniper")
+			{
+				pPlayer->Class = 1;
+			}
+			else if(szArgs=="Rifleman")
+			{
+				pPlayer->Class = 2;
+			}
+			else if(szArgs=="Engineer")
+			{
+				pPlayer->Class = 3;
+			}
+		}
+	}
 	else if(!strcmp(szCommand,"StopInitialize"))
 	{
 		m_bDestroyInitializePending = true;

@@ -78,20 +78,11 @@ function PowerStruggle:EquipPlayer(player, additionalEquip)
 	local playerId = player.id;
 	--local Getclass = self.game:GetClass(playerId);
 	if(self.game:GetClass(playerId)==1) then
-		--self.game:SetMaxHealth(self.sniperProperties.health, playerId);
-		--self.game:SetJumpHeight(self.sniperProperties.jumpHeight, playerId);
-		--self.game:SetSprintMultiplier(self.sniperProperties.sprintMultiplier, playerId);
 		ItemSystem.GiveItem(self.sniperProperties.PrimaryWeapon, player.id, true);
 		ItemSystem.GiveItem("SniperScope", player.id, true);
 	elseif(self.game:GetClass(playerId)==2) then
-		--g_gameRules:SetMaxHealth(self.riflemanProperties.health, playerId);
-		--g_gameRules:SetJumpHeight(self.riflemanProperties.jumpHeight, playerId);
-		--g_gameRules:SetSprintMultiplier(self.riflemanProperties.sprintMultiplier, playerId);
 		ItemSystem.GiveItem(self.riflemanProperties.PrimaryWeapon, player.id, true);
 	elseif(self.game:GetClass(playerId)==3) then
-		--g_gameRules:SetMaxHealth(self.engineerProperties.health, playerId);
-		--g_gameRules:SetJumpHeight(self.engineerProperties.jumpHeight, playerId);
-		--g_gameRules:SetSprintMultiplier(self.engineerProperties.sprintMultiplier, playerId);
 		ItemSystem.GiveItem(self.engineerProperties.PrimaryWeapon, player.id, true);
 	end
 end

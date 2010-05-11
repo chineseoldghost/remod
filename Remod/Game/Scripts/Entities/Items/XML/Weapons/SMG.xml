@@ -5,7 +5,7 @@
 		<param name="unique" 			value="1" />
 		<param name="pose" 				value="rifle" />
 		<param name="attachment"	value="item_attachment" />
-		<param name="mass"				value="15" />
+		<param name="mass"				value="2" />
 		<param name="melee_attack_firemode"		value="melee" />
 		<param name="raiseable"		value="true" />
 		<param name="raise_distance" value="0.80" />

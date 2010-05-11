@@ -3,7 +3,7 @@
 		<param name="giveable" 		value="1" />
 		<param name="selectable" 	value="1" />
 		<param name="pose" 				value="rifle" />
-		<param name="mass"				value="15" />
+		<param name="mass"				value="3.1" />
 		<param name="melee_attack_firemode"		value="melee" />
 		<param name="raiseable"		value="true" />
 		<param name="raise_distance" value="0.80" />

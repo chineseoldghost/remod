@@ -4,7 +4,7 @@
                 <param name="selectable" 	value="1" />
                 <param name="arms"			 	value="1" />
                 <param name="pose" 				value="pistol" />
-                <param name="mass"				value="10" />
+                <param name="mass"				value="2" />
                 <param name="attachment"	value="item_attachment" />
                 <param name="melee_attack_firemode"		value="melee" />
                 <param name="raiseable"		value="true" />

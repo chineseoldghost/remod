@@ -732,7 +732,7 @@ BasicActorParams =
 			mass = 90,
 			air_resistance = 0.5, --used in zeroG
 			
-			k_air_control = 0.3,
+			k_air_control = 0,
 			
 			max_vel_ground = 200,
 			

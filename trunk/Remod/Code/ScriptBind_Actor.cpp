@@ -101,7 +101,6 @@ CScriptBind_Actor::CScriptBind_Actor(ISystem *pSystem)
   SCRIPT_REG_FUNC(GetFrozenAmount);
   SCRIPT_REG_FUNC(GetEntityID);
   SCRIPT_REG_TEMPLFUNC(AddFrost, "frost");
-  SCRIPT_REG_TEMPLFUNC(GetClass, "playerId");
 
 	SCRIPT_REG_TEMPLFUNC(SetPhysicalizationProfile, "profile");
 	SCRIPT_REG_TEMPLFUNC(GetPhysicalizationProfile, "");
@@ -1810,13 +1809,3 @@ int CScriptBind_Actor::GetEntityID(IFunctionHandler *pH)
 
 	return pH->EndFunction(pActor->GetEntityId());
 }
-
-int CScriptBind_Actor::GetClass(IFunctionHandler *pH, ScriptHandle playerId)
-{
-	//g_pGame->GetGameRules()->GetActorByEntityId();
-	//CPlayer *pPlayer = static_cast<CPlayer *>(gEnv->pGame->GetIGameFramework()->GetClientActor());
-	EntityId player = playerId.n;
-	CPlayer* pPlayer = (CPlayer*)gEnv->pGame->GetIGameFramework()->GetIActorSystem()->GetActor(player);
-
-	return pH->EndFunction(pPlayer->Class);
-}	

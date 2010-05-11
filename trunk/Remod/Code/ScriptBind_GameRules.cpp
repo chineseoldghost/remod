@@ -268,6 +268,7 @@ void CScriptBind_GameRules::RegisterMethods()
 	SCRIPT_REG_TEMPLFUNC(SetMaxHealth, "maxHealth, playerId");
 	SCRIPT_REG_TEMPLFUNC(SetJumpHeight, "jumpHeight, playerId");
 	SCRIPT_REG_TEMPLFUNC(SetSprintMultiplier, "multiplier, playerId");
+	SCRIPT_REG_TEMPLFUNC(GetClass, "playerId");
 }
 
 //------------------------------------------------------------------------
@@ -2541,27 +2542,60 @@ int CScriptBind_GameRules::GetEntityName(IFunctionHandler* pH)
 //-----------------------------------------------------------------------------
 int CScriptBind_GameRules::SetMaxHealth(IFunctionHandler* pH, int maxHealth, ScriptHandle playerId)
 {
-	EntityId player = playerId.n;
-	CActor* pActor = (CActor*)gEnv->pGame->GetIGameFramework()->GetIActorSystem()->GetActor(player);
-	pActor->SetMaxHealth(maxHealth);
+	CGameRules *pGameRules=GetGameRules(pH);
+
+	if (!pGameRules)
+		return pH->EndFunction();
+
+	CActor *pActor = GetActor((EntityId)playerId.n);
+
+	if (pActor)
+		pActor->SetMaxHealth(maxHealth);
 
 	return pH->EndFunction();
 }
 //-----------------------------------------------------------------------------
 int CScriptBind_GameRules::SetJumpHeight(IFunctionHandler* pH, int jumpHeight, ScriptHandle playerId)
 {
-	EntityId player = playerId.n;
-	CPlayer* pPlayer = (CPlayer*)gEnv->pGame->GetIGameFramework()->GetIActorSystem()->GetActor(player);
-	pPlayer->m_params.jumpHeight = jumpHeight;
+	CGameRules *pGameRules=GetGameRules(pH);
+
+	if (!pGameRules)
+		return pH->EndFunction();
+
+	CPlayer* pPlayer = (CPlayer*)gEnv->pGame->GetIGameFramework()->GetIActorSystem()->GetActor((EntityId)playerId.n);
+
+	if (pPlayer)
+		pPlayer->m_params.jumpHeight = jumpHeight;
 	
 	return pH->EndFunction();
 }
 //-----------------------------------------------------------------------------
 int CScriptBind_GameRules::SetSprintMultiplier(IFunctionHandler* pH, int multiplier, ScriptHandle playerId)
 {
-	EntityId player = playerId.n;
-	CPlayer* pPlayer = (CPlayer*)gEnv->pGame->GetIGameFramework()->GetIActorSystem()->GetActor(player);
-	pPlayer->m_params.sprintMultiplier = multiplier;
+	CGameRules *pGameRules=GetGameRules(pH);
+
+	if (!pGameRules)
+		return pH->EndFunction();
+
+	CPlayer* pPlayer = (CPlayer*)gEnv->pGame->GetIGameFramework()->GetIActorSystem()->GetActor((EntityId)playerId.n);
+
+	if (pPlayer)
+		pPlayer->m_params.sprintMultiplier = multiplier;
 
 	return pH->EndFunction();
+}
+//-----------------------------------------------------------------------------
+int CScriptBind_GameRules::GetClass(IFunctionHandler* pH, ScriptHandle playerId)
+{
+	CGameRules *pGameRules=GetGameRules(pH);
+
+	if (!pGameRules)
+		return pH->EndFunction();
+
+	CActor *pActor = GetActor((EntityId)playerId.n);
+
+	if (pActor)
+		return pH->EndFunction(pActor->GetClass());
+	else
+		return pH->EndFunction();
 }

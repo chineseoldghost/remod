@@ -75,25 +75,31 @@ function PowerStruggle:EquipPlayer(player, additionalEquip)
 			ItemSystem.GiveItem(e, player.id, false);
 		end
 	end
-	if(player.actor:GetClass(player.id)==1) then
-		g_gameRules:SetMaxHealth(self.sniperProperties.health, player.id);
-		g_gameRules:SetJumpHeight(self.sniperProperties.jumpHeight, player.id);
-		g_gameRules:SetSprintMultiplier(self.sniperProperties.sprintMultiplier, player.id);
+	System.LogAlways("PSR1");
+	local playerId = player.id;
+	local Getclass = self.game:GetClass(playerId);
+	System.LogAlways("PSR2");
+	if(Getclass==1) then
+		System.LogAlways("PSR3");
+		--self.game:SetMaxHealth(self.sniperProperties.health, player.id);
+		--self.game:SetJumpHeight(self.sniperProperties.jumpHeight, player.id);
+		--self.game:SetSprintMultiplier(self.sniperProperties.sprintMultiplier, player.id);
 		ItemSystem.GiveItem(self.sniperProperties.PrimaryWeapon, player.id, true);
 		ItemSystem.GiveItem("SniperScope", player.id, true);
-	elseif(player.actor:GetClass(player.id)==2) then
-		g_gameRules:SetMaxHealth(self.riflemanProperties.health, player.id);
-		g_gameRules:SetJumpHeight(self.riflemanProperties.jumpHeight, player.id);
-		g_gameRules:SetSprintMultiplier(self.riflemanProperties.sprintMultiplier, player.id);
+		System.LogAlways("PSR4");
+	elseif(Getclass==2) then
+		--g_gameRules:SetMaxHealth(self.riflemanProperties.health, player.id);
+		--g_gameRules:SetJumpHeight(self.riflemanProperties.jumpHeight, player.id);
+		--g_gameRules:SetSprintMultiplier(self.riflemanProperties.sprintMultiplier, player.id);
 		ItemSystem.GiveItem(self.riflemanProperties.PrimaryWeapon, player.id, true);
-	elseif(player.actor:GetClass(player.id)==3) then
-		g_gameRules:SetMaxHealth(self.engineerProperties.health, player.id);
-		g_gameRules:SetJumpHeight(self.engineerProperties.jumpHeight, player.id);
-		g_gameRules:SetSprintMultiplier(self.engineerProperties.sprintMultiplier, player.id);
+	elseif(Getclass==3) then
+		--g_gameRules:SetMaxHealth(self.engineerProperties.health, player.id);
+		--g_gameRules:SetJumpHeight(self.engineerProperties.jumpHeight, player.id);
+		--g_gameRules:SetSprintMultiplier(self.engineerProperties.sprintMultiplier, player.id);
 		ItemSystem.GiveItem(self.engineerProperties.PrimaryWeapon, player.id, true);
 	end
+	System.LogAlways("PSR5");
 end
-
 
 ----------------------------------------------------------------------------------------------------
 function PowerStruggle:GetPlayerRank(playerId)

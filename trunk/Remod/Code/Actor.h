@@ -780,8 +780,6 @@ public:
 	virtual void  SerializeLevelToLevel( TSerialize &ser );
 	virtual IInventory *GetInventory() const;
 
-	int Class;
-
 	virtual bool IsClient() const;
 	virtual IMaterial *GetReplacementMaterial() { return m_pReplacementMaterial; };
 
@@ -854,6 +852,8 @@ public:
 	virtual void RagDollize( bool fallAndPlay );
 	//
   virtual int IsGod(){ return 0; }
+
+  virtual int GetClass() { return Class; };
 
 	virtual void SetSpectatorMode(uint8 mode, EntityId targetId) {};
 	virtual uint8 GetSpectatorMode() const { return 0; };
@@ -1258,6 +1258,7 @@ protected:
 	float			m_sleepTimer,m_sleepTimerOrg;
 
 	int				m_teamId;
+	int				Class;
 	EntityId	m_lastItemId;
 
 	float			m_suicideDelay;
@@ -1271,6 +1272,7 @@ public:
 
 	void	SetDropWeaponTimer( EntityId weaponId, float delay );
 	void	ForceAutoDrop();
+	void	SetClass(int ClassX);
 	void	DropInventory(float impulse);
 	void	AddImpulse(float x, float y, float z);
 

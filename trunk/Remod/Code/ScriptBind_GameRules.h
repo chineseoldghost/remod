@@ -229,6 +229,7 @@ public:
 	int SetMaxHealth(IFunctionHandler* pH, int maxHealth, ScriptHandle playerId);
 	int SetJumpHeight(IFunctionHandler* pH, int jumpHeight, ScriptHandle playerId);
 	int SetSprintMultiplier(IFunctionHandler* pH, int multiplier, ScriptHandle playerId);
+	int GetClass(IFunctionHandler* pH, ScriptHandle playerId);
 
 private:
 	void RegisterGlobals();

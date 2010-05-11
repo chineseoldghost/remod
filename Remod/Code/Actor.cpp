@@ -3468,9 +3468,8 @@ void CActor::NetKill(EntityId shooterId, uint16 weaponClassId, int damage, int m
 
 	Kill();
 
-	g_pGame->RegisterKill(shooterId);
-
-	g_pGame->GetGameRules()->OnKillMessage(GetEntityId(), shooterId, weaponClassName, damage, material, hit_type);
+	if(gEnv->pConsole->GetCVar("re_killmessages")->GetIVal() == 1)
+		g_pGame->GetGameRules()->OnKillMessage(GetEntityId(), shooterId, weaponClassName, damage, material, hit_type);
 
 	CHUD *pHUD=g_pGame->GetHUD();
 	if (!pHUD)
@@ -3483,7 +3482,6 @@ void CActor::NetKill(EntityId shooterId, uint16 weaponClassId, int damage, int m
 		// use the spectator target to store who killed us (used for the MP death cam - not quite spectator mode but similar...).
 		if(g_pGame->GetIGameFramework()->GetIActorSystem()->GetActor(shooterId))
 		{
-
 			SetSpectatorTarget(shooterId);
 			SetSpectatorHealth(killerHealthOnKill);
 			
@@ -3491,6 +3489,11 @@ void CActor::NetKill(EntityId shooterId, uint16 weaponClassId, int damage, int m
 			if(g_pGame->GetGameRules()->GetTeam(shooterId) != g_pGame->GetGameRules()->GetTeam(GetEntityId()) || g_pGame->GetGameRules()->GetTeamCount()<=1)
 				SAFE_HUD_FUNC(GetTagNames()->AddEnemyTagName(shooterId));
 		}
+	}
+
+	if(shooterId!=m_pGameFramework->GetClientActorId() && IsClient())
+	{
+		g_pGame->RegisterKill(shooterId);
 	}
 
 /*	if (IsClient())

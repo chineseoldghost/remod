@@ -865,8 +865,8 @@ BasicActorParams =
 		
 		slopeSlowdown = 0.5,
 		
-		leanShift = 0.3, -- How much the view shift on the side when leaning
-		leanAngle = 10, -- How much the view rotate when leaning
+		leanShift = 0, -- How much the view shift on the side when leaning
+		leanAngle = 15, -- How much the view rotate when leaning
 		
 		-- ZeroG stuff:
 		thrusterImpulse = 14.0, -- Thruster power, for the moment very related to air_resistance.

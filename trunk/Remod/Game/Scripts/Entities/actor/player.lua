@@ -89,7 +89,7 @@ Player = {
 				maxSpeed = 2.5,
 				heightCollider = 1.2,
 				heightPivot = 0.0,
-				size = {x=0.4,y=0.4,z=0.3},
+				size = {x=0.2,y=0.2,z=0.2},
 				viewOffset = {x=0,y=0.15,z=1.625},
 				modelOffset = {x=0,y=0,z=0.0},
 				name = "combat",

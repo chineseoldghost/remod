@@ -75,16 +75,26 @@ function PowerStruggle:EquipPlayer(player, additionalEquip)
 			ItemSystem.GiveItem(e, player.id, false);
 		end
 	end
-	local playerId = player.id;
-	--local Getclass = self.game:GetClass(playerId);
-	if(self.game:GetClass(playerId)==1) then
-		ItemSystem.GiveItem(self.sniperProperties.PrimaryWeapon, player.id, true);
-		ItemSystem.GiveItem("SniperScope", player.id, true);
-	elseif(self.game:GetClass(playerId)==2) then
-		ItemSystem.GiveItem(self.riflemanProperties.PrimaryWeapon, player.id, true);
-	elseif(self.game:GetClass(playerId)==3) then
-		ItemSystem.GiveItem(self.engineerProperties.PrimaryWeapon, player.id, true);
+	local teamId = self.game:GetTeam(player.id);
+	if(teamId=="US") then
+		ItemSystem.GiveItem("SCAR", true);
+	elseif(teamId=="NK") then
+		ItemSystem.GiveItem("FY71", true);
 	end
+
+	--[[local channelId = self.game:GetChannelId(player.id);
+	self.game:ForceSynchedStorageSynch(channelId);
+	--local Value=self.game:GetSynchedEntityValue(player.id, self.CLASS_KEY);
+	if(self.game:GetClass(player.id, "sniper")) then
+		ItemSystem.GiveItem(self.sniperProperties.PrimaryWeapon, player.id, true);
+		System.LogAlways("2");
+		ItemSystem.GiveItem("SniperScope", player.id, true);
+	elseif(self.game:GetClass(player.id, "rifleman")) then
+		System.LogAlways("4");
+		ItemSystem.GiveItem(self.riflemanProperties.PrimaryWeapon, player.id, true);
+	elseif(self.game:GetClass(player.id, "engineer")) then
+		ItemSystem.GiveItem(self.engineerProperties.PrimaryWeapon, player.id, true);
+	end]]--
 end
 
 ----------------------------------------------------------------------------------------------------

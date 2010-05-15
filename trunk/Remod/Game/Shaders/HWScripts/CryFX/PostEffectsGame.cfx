@@ -242,7 +242,7 @@ pixout AlienInterferencePS(vtxOutAlienInterference IN)
 
   test.xy *= float2(0.15,3);
   stripes*= 2;
-
+v
   stripes *= fAmount;
   test *= fAmount;
   

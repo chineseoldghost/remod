@@ -63,6 +63,7 @@
 #include "ILoadGame.h"
 
 #include "DownloadTask.h"
+#include "CustomShaders.h"
 
 #define WIN32_LEAN_AND_MEAN // Exclude rarely-used services from Windows headers
 #include <windows.h>
@@ -118,6 +119,7 @@ CGame::CGame()
 {
 	m_pCVars = new SCVars();
 	g_pGameCVars = m_pCVars;
+
 	m_pGameActions = new CGameActions();
 	g_pGameActions = m_pGameActions;
 	g_pGame = this;
@@ -176,6 +178,7 @@ bool CGame::Init(IGameFramework *pFramework)
 	// Initialize static item strings
 	m_pItemStrings = new SItemStrings();
 
+	
 	m_pItemSharedParamsList = new CItemSharedParamsList();
 
 	LoadActionMaps();
@@ -347,8 +350,9 @@ bool CGame::Init(IGameFramework *pFramework)
 
 	if (!gEnv->pSystem->IsDedicated())
 	{
-		m_pFlashMenuObject = new CFlashMenuObject;
-		m_pFlashMenuObject->Load();
+		//m_pFlashMenuObject = new CFlashMenuObject;
+		//m_pFlashMenuObject->Load();
+		gEnv->pConsole->ExecuteString("map Beach");
 	}
 
 	if (bIsFirstTime)
@@ -499,7 +503,7 @@ void CGame::EditorResetGame(bool bStart)
 		}
 		m_pHUD = new CHUD;
 		m_pHUD->Init();
-		m_pHUD->PlayerIdSet(m_uiPlayerID);	
+		m_pHUD->PlayerIdSet(m_uiPlayerID);
 	}
 	else
 	{
@@ -623,16 +627,8 @@ void CGame::Slowmo(ICVar *pCVar)
 
 void CGame::Vehicles(ICVar *pCVar)
 {
-	int var = pCVar->GetIVal();
-	if(pCVar)
-	{
-		if(var==1)
-		{
-		}
-		else
-		{
-		}
-	}
+	CCustomShaders *pCS = new CCustomShaders();
+	pCS->LoadCustomShaders();
 }
 
 string CGame::InitMapReloading()

@@ -313,6 +313,7 @@ public:
 	{
 		EEffect_ChromaShift = 1,
 		EEffect_AlienInterference,
+		EEffect_Stereo3D,
 		EEffect_WaterDroplets
 	};
 

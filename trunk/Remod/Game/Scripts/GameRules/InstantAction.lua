@@ -35,6 +35,7 @@ InstantAction.SCORE_DEATHS_KEY 		= 101;
 InstantAction.SCORE_HEADSHOTS_KEY = 102;
 InstantAction.SCORE_PING_KEY 			= 103;
 InstantAction.SCORE_LAST_KEY 			= 104;	-- make sure this is always the last ones
+InstantAction.CLASS_KEY				= 159;
 
 InstantAction.DamagePlayerToPlayer =
 {
@@ -634,7 +635,10 @@ function InstantAction.Client:OnUpdate(frameTime)
 	
 	self:UpdateVoiceQueue(frameTime);
 end
-
+----------------------------------------------------------------------------------------------------
+function InstantAction:UpdateClasses(class, player)
+	self.game:SetSynchedEntityValue(player, self.CLASS_KEY, class);
+end
 
 ----------------------------------------------------------------------------------------------------
 function InstantAction:UpdatePings(frameTime)

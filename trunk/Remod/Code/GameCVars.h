@@ -484,6 +484,7 @@ struct SCVars
 	int		re_intros;
 	int		re_thirdpersondeaths;
 	int		re_killmessages;
+	int		rawr_debug;
 
 	SCVars()
 	{

@@ -268,7 +268,7 @@ void CScriptBind_GameRules::RegisterMethods()
 	SCRIPT_REG_TEMPLFUNC(SetMaxHealth, "maxHealth, playerId");
 	SCRIPT_REG_TEMPLFUNC(SetJumpHeight, "jumpHeight, playerId");
 	SCRIPT_REG_TEMPLFUNC(SetSprintMultiplier, "multiplier, playerId");
-	SCRIPT_REG_TEMPLFUNC(GetClass, "playerId");
+	SCRIPT_REG_TEMPLFUNC(GetClass, "playerId, className");
 }
 
 //------------------------------------------------------------------------
@@ -2585,17 +2585,16 @@ int CScriptBind_GameRules::SetSprintMultiplier(IFunctionHandler* pH, int multipl
 	return pH->EndFunction();
 }
 //-----------------------------------------------------------------------------
-int CScriptBind_GameRules::GetClass(IFunctionHandler* pH, ScriptHandle playerId)
+int CScriptBind_GameRules::GetClass(IFunctionHandler* pH, ScriptHandle playerId, const char* className)
 {
 	CGameRules *pGameRules=GetGameRules(pH);
 
 	if (!pGameRules)
 		return pH->EndFunction();
 
-	CActor *pActor = GetActor((EntityId)playerId.n);
-
-	if (pActor)
-		return pH->EndFunction(pActor->GetClass());
-	else
-		return pH->EndFunction();
+	CActor* pActor = pGameRules->GetActorByEntityId((EntityId)playerId.n);
+	CPlayer *pPlayer = static_cast<CPlayer*>(pActor);
+	g_pGame->GetServerSynchedStorage()->FullSynch(pPlayer->GetChannelId(), false);
+	
+	return pH->EndFunction(g_pGame->GetServerSynchedStorage()->GetEntityValue((EntityId)playerId.n, 159, string(className)));
 }

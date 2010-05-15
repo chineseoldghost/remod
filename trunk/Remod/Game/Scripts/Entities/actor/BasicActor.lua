@@ -863,7 +863,7 @@ BasicActorParams =
 			
 		jumpHeight = 0.5, -- Meters
 		
-		slopeSlowdown = 0.5,
+		slopeSlowdown = 0.75,
 		
 		leanShift = 0, -- How much the view shift on the side when leaning
 		leanAngle = 15, -- How much the view rotate when leaning

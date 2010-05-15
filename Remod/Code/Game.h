@@ -31,7 +31,6 @@
 #define GAME_NAME				"SPEHS MAHREENS"
 #define GAME_LONGNAME		"SPEHS MAHREENS"
 
-
 struct ISystem;
 struct IConsole;
 struct ILCD;
@@ -187,7 +186,6 @@ public:
 
   // Remod | Vehicle functions
   static void Vehicles(ICVar* pCVar);
-  static void SetClass(ICVar* pCVar);
 
   // Remod | Stats
   void SaveStats(string stat);
@@ -286,6 +284,14 @@ protected:
 	static void CmdLoginProfile(IConsoleCmdArgs* pArgs);
 	static void CmdRegisterNick(IConsoleCmdArgs* pArgs);
   static void CmdCryNetConnect(IConsoleCmdArgs* pArgs);
+
+  enum EClientPostEffect //first person screen effects for the client player
+	{
+		EEffect_ChromaShift = 1,
+		EEffect_AlienInterference,
+		EEffect_Stereo3D,
+		EEffect_WaterDroplets
+	};
 
 	IGameFramework			*m_pFramework;
 	IConsole						*m_pConsole;

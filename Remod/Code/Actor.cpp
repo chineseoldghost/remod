@@ -4180,8 +4180,3 @@ void CActor::ForceAutoDrop()
 		}
 	}
 }
-
-void CActor::SetClass(int ClassX)
-{
-	Class = ClassX;
-}

@@ -853,7 +853,7 @@ public:
 	//
   virtual int IsGod(){ return 0; }
 
-  virtual int GetClass() { return Class; };
+  int				Class;
 
 	virtual void SetSpectatorMode(uint8 mode, EntityId targetId) {};
 	virtual uint8 GetSpectatorMode() const { return 0; };
@@ -1258,7 +1258,6 @@ protected:
 	float			m_sleepTimer,m_sleepTimerOrg;
 
 	int				m_teamId;
-	int				Class;
 	EntityId	m_lastItemId;
 
 	float			m_suicideDelay;

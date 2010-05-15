@@ -1664,21 +1664,23 @@ void CHUD::HandleFSCommand(const char *szCommand,const char *szArgs)
 	}
 	else if(!strcmp(szCommand, "SetClass"))
 	{
-		CActor *pActor = static_cast<CActor *>(g_pGame->GetIGameFramework()->GetClientActor());
-		if(pActor)
+		if(!strcmp(szArgs, "Sniper"))
 		{
-			if(!strcmp(szArgs, "Sniper"))
-			{
-				pActor->SetClass(1);
-			}
-			else if(!strcmp(szArgs, "Rifleman"))
-			{
-				pActor->SetClass(2);
-			}
-			else if(!strcmp(szArgs, "Engineer"))
-			{
-				pActor->SetClass(3);
-			}
+			CPlayer *pPlayer = static_cast<CPlayer*>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+			g_pGame->GetSynchedStorage()->SetEntityValue(pPlayer->GetEntityId(), 159, string("sniper"));
+			g_pGame->GetServerSynchedStorage()->SetEntityValue(pPlayer->GetEntityId(), 159, string("sniper"));
+			g_pGame->GetServerSynchedStorage()->AddToEntityQueue(pPlayer->GetEntityId(), 159);
+			g_pGame->GetGameRules()->ForceSynchedStorageSynch(pPlayer->GetChannelId());
+		}
+		else if(!strcmp(szArgs, "Rifleman"))
+		{
+			CPlayer *pPlayer = static_cast<CPlayer*>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+			g_pGame->GetGameRules()->SetSynchedEntityValue(pPlayer->GetEntityId(), 159, string("rifleman"));
+		}
+		else if(!strcmp(szArgs, "Engineer"))
+		{
+			CPlayer *pPlayer = static_cast<CPlayer*>(gEnv->pGame->GetIGameFramework()->GetClientActor());
+			g_pGame->GetGameRules()->SetSynchedEntityValue(pPlayer->GetEntityId(), 159, string("rifleman"));
 		}
 	}
 	else if(!strcmp(szCommand,"StopInitialize"))

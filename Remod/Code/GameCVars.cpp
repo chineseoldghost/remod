@@ -625,11 +625,10 @@ void SCVars::InitCVars(IConsole *pConsole)
 	pConsole->Register("re_suddendeath", &re_suddendeath, 1, 0, "Enables/disables Sudden Death mode in TeamInstantAction.");
 	pConsole->Register("re_suddendeathtime", &re_suddendeathtime, 30, 0, "Enables/disables Sudden Death mode in TeamInstantAction.");
 	pConsole->Register("re_slowmo", &re_slowmo, 0, 0, "Activates slowmotion!", CGame::Slowmo);
-	pConsole->Register("re_vehicles",&re_vehicles, 1, 0, "Disables/Enables vehicles", CGame::Vehicles);
+	pConsole->Register("re_vehicles",&re_vehicles, 0, 0, "Disables/Enables vehicles", CGame::Vehicles);
 	pConsole->Register("re_intros",&re_intros, 1, 0, "Disables/Enables intros");
 	pConsole->Register("re_thirdpersondeaths",&re_thirdpersondeaths, 1, 0, "Enables/Disables thirdperson view when player dies");
 	pConsole->Register("re_killmessages",&re_killmessages, 1, 0, "Enables/Disables killmessages");
-	//pConsole->Register("actor_class",&actor_class, 2, 0, "1: Sniper 2: Rifleman 3: Engineer", CGame::SetClass);
 
 //	int iFlags = gEnv->pConsole->GetCVar("r_drawNearFoV")->GetFlags();
 //	gEnv->pConsole->GetCVar("r_drawNearFoV")->SetFlags(iFlags|~VF_CHEAT);

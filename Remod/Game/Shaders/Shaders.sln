@@ -1,6 +1,6 @@
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual C++ Express 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HWScripts", "HWScripts\HWScripts.vcproj", "{8C9AE270-05BB-4F1B-BFE1-69347BF913A3}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HWScripts", "HWScripts\HWScripts.vcxproj", "{8C9AE270-05BB-4F1B-BFE1-69347BF913A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,15 +15,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 2
-		SccProjectName0 = Perforce\u0020Project
-		SccLocalPath0 = .
-		SccProvider0 = MSSCCI:Perforce\u0020SCM
-		CanCheckoutShared = true
-		SccProjectUniqueName1 = HWScripts\\HWScripts.vcproj
-		SccLocalPath1 = HWScripts
-		CanCheckoutShared = true
 	EndGlobalSection
 EndGlobal

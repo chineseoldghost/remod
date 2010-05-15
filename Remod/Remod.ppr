@@ -46,7 +46,7 @@ Remod
 				Game\Scripts\Entities\Multiplayer\BuyZone.lua
 				Game\Scripts\Entities\Multiplayer\AlienEnergyPoint.lua
 			+Vehicles
-				-Implementations
+				+Implementations
 					+XML
 						Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_aaa.xml
 						Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_tank.xml
@@ -79,7 +79,7 @@ Remod
 			+Actor
 				Game\Scripts\Entities\actor\BasicActor.lua
 				Game\Scripts\Entities\actor\player.lua
-			+Items
+			-Items
 				+XML
 					-Accessories
 						Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml
@@ -279,15 +279,17 @@ Remod
 6=Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
 7=Game\Scripts\Entities\actor\player.lua
 8=Game\Objects\Characters\Human\GlobalHuman.cal
+9=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
+10=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\actor\player.lua
+Selected=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
-TopLine=215
-Caret=5,233
+TopLine=252
+Caret=8,273
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
 TopLine=207
 Caret=40,222
@@ -298,8 +300,8 @@ Caret=42,218
 TopLine=180
 Caret=50,222
 [Game\Scripts\Entities\actor\BasicActor.lua]
-TopLine=757
-Caret=1,1
+TopLine=845
+Caret=23,866
 [Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml]
 TopLine=1
 Caret=34,6
@@ -309,3 +311,9 @@ Caret=18,92
 [Game\Objects\Characters\Human\GlobalHuman.cal]
 TopLine=1742
 Caret=3,1763
+[..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml]
+TopLine=29
+Caret=16,55
+[Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml]
+TopLine=595
+Caret=25,625

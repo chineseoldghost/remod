@@ -622,7 +622,7 @@
      <gearRatio value="0"/>
      <gearRatio value="8.5"/>
      <gearRatio value="6"/>
-     <gearRatio value="5.5"/>
+     <gearRatio value="5"/>
     </gearRatios>
    </Wheeled>
    <SoundParams engineSoundPosition="engineSmokeOut" runSoundDelay="1" roadBumpMinSusp="10" roadBumpMinSpeed="6" roadBumpIntensity="0.30000001" maxSlipSpeed="11"/>

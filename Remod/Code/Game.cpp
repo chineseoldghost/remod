@@ -350,9 +350,8 @@ bool CGame::Init(IGameFramework *pFramework)
 
 	if (!gEnv->pSystem->IsDedicated())
 	{
-		//m_pFlashMenuObject = new CFlashMenuObject;
-		//m_pFlashMenuObject->Load();
-		gEnv->pConsole->ExecuteString("map Beach");
+		m_pFlashMenuObject = new CFlashMenuObject;
+		m_pFlashMenuObject->Load();
 	}
 
 	if (bIsFirstTime)

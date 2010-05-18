@@ -281,9 +281,11 @@ Remod
 8=Game\Objects\Characters\Human\GlobalHuman.cal
 9=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
 10=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
+11=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_vtol.xml
+12=Game\Scripts\GameRules\PowerStruggleRank.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
+Selected=Game\Scripts\GameRules\PowerStruggleRank.lua
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
@@ -315,5 +317,11 @@ Caret=3,1763
 TopLine=29
 Caret=16,55
 [Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml]
-TopLine=595
+TopLine=625
 Caret=25,625
+[Game\Scripts\Entities\Vehicles\Implementations\Xml\US_vtol.xml]
+TopLine=250
+Caret=21,250
+[Game\Scripts\GameRules\PowerStruggleRank.lua]
+TopLine=47
+Caret=1,1

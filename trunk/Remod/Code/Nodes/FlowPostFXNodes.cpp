@@ -64,6 +64,24 @@ struct FXParamsWaterDroplets
   }
 };
 
+struct FXParamsStereo3D
+{
+  static void GetConfiguration(SFlowNodeConfig& config)
+  {
+    static const SInputPortConfig inputs[] = {
+      InputPortConfig<bool>("Stereo3D_Active", false),
+      InputPortConfig<float>("Stereo3D_Separation", 0.0f),
+      {0}
+    };
+    static const SOutputPortConfig outputs[] = {
+      {0}
+    };
+    config.pInputPorts = inputs;
+    config.pOutputPorts = outputs;
+    config.sDescription = _HELP("Stereo3D");
+  }
+};
+
 struct FXParamsGlow
 {
   static void GetConfiguration(SFlowNodeConfig& config)
@@ -181,6 +199,11 @@ public:
         if (ok)
         {
           // set postfx param
+			if(config.pInputPorts[i].name=="Stereo3D")
+			{
+				gEnv->pRenderer->EF_LoadShader("Stereo3D");
+				gEnv->pRenderer->EF_LoadShaderItem("Stereo3D", true);
+			}
           pEngine->SetPostEffectParam(config.pInputPorts[i].name, fVal);
         }
       }
@@ -196,6 +219,7 @@ public:
 REGISTER_FLOW_NODE_SINGLETON_EX("CrysisFX:PostFXGlobal", CFlowFXNode<FXParamsGlobal>, FXParamsGlobal);
 REGISTER_FLOW_NODE_SINGLETON_EX("CrysisFX:PostFXScreenFrost", CFlowFXNode<FXParamsScreenFrost>, FXParamsScreenFrost);
 REGISTER_FLOW_NODE_SINGLETON_EX("CrysisFX:PostFXWaterDroplets", CFlowFXNode<FXParamsWaterDroplets>, FXParamsWaterDroplets);
+REGISTER_FLOW_NODE_SINGLETON_EX("CrysisFX:PostFXStereo3D", CFlowFXNode<FXParamsStereo3D>, FXParamsStereo3D);
 REGISTER_FLOW_NODE_SINGLETON_EX("CrysisFX:PostFXBloodSplats", CFlowFXNode<FXParamsBloodSplats>, FXParamsBloodSplats);
 REGISTER_FLOW_NODE_SINGLETON_EX("CrysisFX:PostFXGlow", CFlowFXNode<FXParamsGlow>, FXParamsGlow);
 REGISTER_FLOW_NODE_SINGLETON_EX("CrysisFX:PostFXGlittering", CFlowFXNode<FXParamsGlittering>, FXParamsGlittering);

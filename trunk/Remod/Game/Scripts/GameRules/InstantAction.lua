@@ -620,8 +620,6 @@ function InstantAction.Client:OnTimer(timerId, msec)
 		end
 	elseif (timerId == self.ENDGAME_TIMERID) then
 		self:EndGame(true);
-	elseif (timerId == self.FORCERESPAWN_TIMERID) then
-		self.server:RequestRevive(g_localActorId);
 	end
 end
 

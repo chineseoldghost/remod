@@ -76,9 +76,9 @@ function PowerStruggle:EquipPlayer(player, additionalEquip)
 		end
 	end
 	local teamId = self.game:GetTeam(player.id);
-	if(teamId=="US") then
+	if(teamId==1) then
 		ItemSystem.GiveItem("SCAR", true);
-	elseif(teamId=="NK") then
+	elseif(teamId==2) then
 		ItemSystem.GiveItem("FY71", true);
 	end
 

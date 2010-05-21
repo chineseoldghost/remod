@@ -9,7 +9,7 @@
 	</flags>
 	<physics type="particle">
 		<param name="mass" value="11" />
-		<param name="speed" value="85" />
+		<param name="speed" value="290" />
 		<param name="radius" value="0.25" />
 		<param name="air_resistance" value="0" />
 		<param name="water_resistance" value="0.5" />

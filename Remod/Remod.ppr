@@ -46,7 +46,7 @@ Remod
 				Game\Scripts\Entities\Multiplayer\BuyZone.lua
 				Game\Scripts\Entities\Multiplayer\AlienEnergyPoint.lua
 			+Vehicles
-				+Implementations
+				-Implementations
 					+XML
 						Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_aaa.xml
 						Game\Scripts\Entities\Vehicles\Implementations\Xml\Asian_tank.xml
@@ -79,7 +79,7 @@ Remod
 			+Actor
 				Game\Scripts\Entities\actor\BasicActor.lua
 				Game\Scripts\Entities\actor\player.lua
-			-Items
+			+Items
 				+XML
 					-Accessories
 						Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml
@@ -270,27 +270,23 @@ Remod
 		Game\Scripts\main.lua
 		Game\Scripts\Remod.lua
 [Open project files]
-0=Game\Shaders\HWScripts\CryFX\PostProcess.cfx
-1=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
-2=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
-3=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
-4=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
-5=Game\Scripts\Entities\actor\BasicActor.lua
-6=Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
-7=Game\Scripts\Entities\actor\player.lua
-8=Game\Objects\Characters\Human\GlobalHuman.cal
-9=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
-10=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
-11=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_vtol.xml
-12=Game\Scripts\GameRules\PowerStruggleRank.lua
+0=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
+1=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
+2=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
+3=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
+4=Game\Scripts\Entities\actor\BasicActor.lua
+5=Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
+6=Game\Scripts\Entities\actor\player.lua
+7=Game\Objects\Characters\Human\GlobalHuman.cal
+8=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
+9=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
+10=Game\Scripts\Entities\Items\XML\Weapons\LAW.xml
+11=Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\GameRules\PowerStruggleRank.lua
-[Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
-TopLine=1
-Caret=1,1
+Selected=Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
-TopLine=252
+TopLine=231
 Caret=8,273
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
 TopLine=207
@@ -317,11 +313,11 @@ Caret=3,1763
 TopLine=29
 Caret=16,55
 [Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml]
-TopLine=625
-Caret=25,625
-[Game\Scripts\Entities\Vehicles\Implementations\Xml\US_vtol.xml]
-TopLine=250
-Caret=21,250
-[Game\Scripts\GameRules\PowerStruggleRank.lua]
-TopLine=47
+TopLine=1
 Caret=1,1
+[Game\Scripts\Entities\Items\XML\Weapons\LAW.xml]
+TopLine=19
+Caret=62,38
+[Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml]
+TopLine=3
+Caret=31,18

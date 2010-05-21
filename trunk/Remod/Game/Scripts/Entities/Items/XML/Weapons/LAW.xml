@@ -34,13 +34,13 @@
 	</geometry>
 	<actions>
 		<action name="select">
-			<animation target="firstperson" name="select_02" speed="0.65"/>
-			<animation target="owner" name="select" />
+			<animation target="firstperson" name="select_01" speed="1"/>
+			<animation target="owner" name="first_select" speed="1" />
 			<sound target="thirdperson" name="sounds/weapons:law:select" radius="10" />
 		</action>
 		<action name="first_select">
-			<animation target="firstperson" name="select_01"  speed="1.5" />
-			<animation target="owner" name="first_select" speed="1.5" />
+			<animation target="firstperson" name="select_01"  speed="1" />
+			<animation target="owner" name="first_select" speed="1" />
 			<sound target="thirdperson" name="sounds/weapons:law:select" radius="10" />
 		</action>
 		<action name="deselect">

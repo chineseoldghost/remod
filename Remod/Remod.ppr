@@ -270,21 +270,23 @@ Remod
 		Game\Scripts\main.lua
 		Game\Scripts\Remod.lua
 [Open project files]
-0=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
-1=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
-2=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
-3=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
-4=Game\Scripts\Entities\actor\BasicActor.lua
+0=Game\Shaders\HWScripts\CryFX\PostProcess.cfx
+1=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
+2=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
+3=Game\Scripts\Entities\Items\XML\Weapons\SMG.xml
+4=Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml
 5=Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
-6=Game\Scripts\Entities\actor\player.lua
-7=Game\Objects\Characters\Human\GlobalHuman.cal
-8=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml
-9=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
-10=Game\Scripts\Entities\Items\XML\Weapons\LAW.xml
-11=Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
+6=Game\Objects\Characters\Human\GlobalHuman.cal
+7=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
+8=Game\Scripts\Entities\Items\XML\Weapons\LAW.xml
+9=Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
+10=Game\Scripts\Entities\actor\BasicActor.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
+Selected=Game\Scripts\Entities\actor\BasicActor.lua
+[Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
+TopLine=1
+Caret=1,1
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
 TopLine=231
 Caret=8,273
@@ -297,21 +299,12 @@ Caret=42,218
 [Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml]
 TopLine=180
 Caret=50,222
-[Game\Scripts\Entities\actor\BasicActor.lua]
-TopLine=845
-Caret=23,866
 [Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml]
 TopLine=1
 Caret=34,6
-[Game\Scripts\Entities\actor\player.lua]
-TopLine=77
-Caret=18,92
 [Game\Objects\Characters\Human\GlobalHuman.cal]
 TopLine=1742
 Caret=3,1763
-[..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Blablah\actionmaps.xml]
-TopLine=29
-Caret=16,55
 [Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml]
 TopLine=1
 Caret=1,1
@@ -321,3 +314,6 @@ Caret=62,38
 [Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml]
 TopLine=3
 Caret=31,18
+[Game\Scripts\Entities\actor\BasicActor.lua]
+TopLine=709
+Caret=11,732

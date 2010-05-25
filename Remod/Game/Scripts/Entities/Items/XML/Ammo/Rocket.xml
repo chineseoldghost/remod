@@ -10,10 +10,10 @@
 	<physics type="particle">
 		<param name="mass" value="11" />
 		<param name="speed" value="290" />
-		<param name="radius" value="0.25" />
+		<param name="radius" value="0.125" />
 		<param name="air_resistance" value="0" />
 		<param name="water_resistance" value="0.5" />
-		<param name="gravity" value="0, 0, 0" />
+		<param name="gravity" value="0, 0, -9.8" />
 		<param name="water_gravity" value="0, 0, -1" />
 		<param name="thrust" value="25" />
 		<param name="lift" value="0" />

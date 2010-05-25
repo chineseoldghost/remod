@@ -81,7 +81,7 @@ Remod
 				Game\Scripts\Entities\actor\player.lua
 			+Items
 				+XML
-					-Accessories
+					+Accessories
 						Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml
 						Game\Scripts\Entities\Items\XML\Accessories\LAWScope.xml
 						Game\Scripts\Entities\Items\XML\Accessories\Silencer.xml
@@ -278,18 +278,20 @@ Remod
 5=Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml
 6=Game\Objects\Characters\Human\GlobalHuman.cal
 7=Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml
-8=Game\Scripts\Entities\Items\XML\Weapons\LAW.xml
-9=Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
-10=Game\Scripts\Entities\actor\BasicActor.lua
+8=Game\Scripts\Entities\actor\BasicActor.lua
+9=Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml
+10=Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
+11=Game\Scripts\Entities\Items\XML\Ammo\SCARGrenade.xml
+12=Game\Scripts\Entities\Items\XML\Weapons\LAW.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\actor\BasicActor.lua
+Selected=Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
-TopLine=231
-Caret=8,273
+TopLine=226
+Caret=8,268
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
 TopLine=207
 Caret=40,222
@@ -297,8 +299,8 @@ Caret=40,222
 TopLine=176
 Caret=42,218
 [Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml]
-TopLine=180
-Caret=50,222
+TopLine=234
+Caret=5,266
 [Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml]
 TopLine=1
 Caret=34,6
@@ -306,14 +308,20 @@ Caret=34,6
 TopLine=1742
 Caret=3,1763
 [Game\Scripts\Entities\Vehicles\Implementations\Xml\US_ltv.xml]
-TopLine=1
+TopLine=665
 Caret=1,1
-[Game\Scripts\Entities\Items\XML\Weapons\LAW.xml]
-TopLine=19
-Caret=62,38
-[Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml]
-TopLine=3
-Caret=31,18
 [Game\Scripts\Entities\actor\BasicActor.lua]
 TopLine=709
 Caret=11,732
+[Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml]
+TopLine=1
+Caret=1,1
+[Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml]
+TopLine=1
+Caret=36,13
+[Game\Scripts\Entities\Items\XML\Ammo\SCARGrenade.xml]
+TopLine=1
+Caret=1,1
+[Game\Scripts\Entities\Items\XML\Weapons\LAW.xml]
+TopLine=1
+Caret=40,12

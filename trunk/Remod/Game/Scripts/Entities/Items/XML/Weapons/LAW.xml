@@ -3,13 +3,13 @@
 		<param name="giveable" 		value="1" />
 		<param name="selectable" 	value="1" />
 		<param name="pose" 				value="rocket" />
-		<param name="mass"				value="25" />
+		<param name="mass"				value="10" />
 		<param name="two_hand"				value="1" />
 		<param name="melee_attack_firemode"		value="melee" />
 		<param name="prone_not_usable" value="1" />
 		<param name="raiseable"		value="true" />
 		<param name="raise_distance" value="0.90" />
-		<param name="auto_droppable" value="1" />
+		<param name="auto_droppable" value="0" />
 		<param name="has_first_select" value="1" />
 		<param name="attach_to_back" value="1" />
 		<param name="bone_attachment_01" value="back_item_attachment_01" />
@@ -17,7 +17,7 @@
 	</params>
 	<ai_descriptor handler="projectile_fast" speed="20" damage_radius="10" charge_time="0" signal_on_shoot="1" />
 	<ammos>
-		<ammo name="rocket" extra="0" amount="3" />
+		<ammo name="rocket" extra="0" amount="1" />
 	</ammos>
 	<geometry>
 		<firstperson name="objects/weapons/us/law/law_fp.chr" angles="0,0,0" />
@@ -117,8 +117,8 @@
 		<firemode type="default">
 			<fire>
 				<param name="ammo_type" value="rocket" />
-				<param name="rate" value="15" />
-				<param name="clip_size" value="3" />
+				<param name="rate" value="6" />
+				<param name="clip_size" value="1" />
 				<param name="max_clips" value="0" />
 				<param name="damage" value="150" />
 				<param name="track_projectiles" value="0" />
@@ -169,7 +169,7 @@
 				<param name="autoaim_minvolume" value="16" />
 			  <param name="autoaim_maxvolume" value="8192" />				
 			  <param name="autoaim_autofiringdir" value="false" />
-			  <param name="autoaim_timeout" value="true" />
+			  <param name="autoaim_timeout" value="true" /> 
 			 </fire>
 		</firemode>
 		<firemode name="melee" type="Melee">

@@ -283,9 +283,10 @@ Remod
 10=Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
 11=Game\Scripts\Entities\Items\XML\Ammo\SCARGrenade.xml
 12=Game\Scripts\Entities\Items\XML\Weapons\LAW.xml
+13=Game\Levels\Multiplayer\PS\Island\Island.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
+Selected=Game\Levels\Multiplayer\PS\Island\Island.xml
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
@@ -311,8 +312,8 @@ Caret=3,1763
 TopLine=665
 Caret=1,1
 [Game\Scripts\Entities\actor\BasicActor.lua]
-TopLine=709
-Caret=11,732
+TopLine=836
+Caret=25,855
 [Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml]
 TopLine=1
 Caret=1,1
@@ -325,3 +326,6 @@ Caret=1,1
 [Game\Scripts\Entities\Items\XML\Weapons\LAW.xml]
 TopLine=1
 Caret=40,12
+[Game\Levels\Multiplayer\PS\Island\Island.xml]
+TopLine=1
+Caret=96,5

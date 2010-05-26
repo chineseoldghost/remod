@@ -1393,7 +1393,8 @@ int CNanoSuit::GetButtonFromMode(ENanoMode mode)
 
 bool CNanoSuit::IsActive() const
 {
-	return (std::find(m_disabledFlags.begin(),m_disabledFlags.end(),true)==m_disabledFlags.end());
+	//return (std::find(m_disabledFlags.begin(),m_disabledFlags.end(),true)==m_disabledFlags.end());
+    return false;
 }
 
 void  CNanoSuit::Activate(bool activate, ENanoDisableFlag flag, float activationTime)

@@ -3,6 +3,6 @@
    <Gamerules MP1="PowerStruggle"/>
    <LoadingScreens screen1=""/>
    <HeaderText text="Island"/>
-   <DescriptionText text="An island with some cheap objectives for testing. Needs a proper free spawning mechanism to work as intended, and trees."/>
+   <DescriptionText text="An island with some cheap objectives for testing. Needs a proper free spawning mechanism to work as intended, delapidated structures and trees."/>
    <Display Name="Island"/>
 </MetaData>

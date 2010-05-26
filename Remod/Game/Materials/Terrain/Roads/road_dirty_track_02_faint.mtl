@@ -1,0 +1,14 @@
+<Material MtlFlags="0" Shader="Illum" GenMask="457310224" SurfaceType="" Diffuse="0.06666667,0.054901965,0.043137256" Specular="1,1,1" Emissive="0,0,0" Shininess="10" Opacity="0.208">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/roads/road_tank_tracks.dds" Filter="4">
+   <TexMod TexMod_RotateType="1"/>
+  </Texture>
+  <Texture Map="Specular" File="textures/terrain/roads/road_dirty_track_5_spec.dds">
+   <TexMod />
+  </Texture>
+  <Texture Map="Normalmap" File="textures/terrain/roads/road_tank_tracks_ddn.dds">
+   <TexMod />
+  </Texture>
+ </Textures>
+ <PublicParams ObmDisplacement="0.0070000002" PomDisplacement="0.0070000002" SelfShadowStrength="3" AmbientMultiplier="1"/>
+</Material>

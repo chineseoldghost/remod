@@ -283,15 +283,15 @@ Remod
 10=Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
 11=Game\Scripts\Entities\Items\XML\Ammo\SCARGrenade.xml
 12=Game\Scripts\Entities\Items\XML\Weapons\LAW.xml
-13=Game\Levels\Multiplayer\PS\Island\Island.xml
+13=Game\Scripts\Classes\Sniper\Main.lua
 [Selected Project Files]
 Main=
-Selected=Game\Levels\Multiplayer\PS\Island\Island.xml
+Selected=Game\Scripts\Classes\Sniper\Main.lua
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
-TopLine=134
+TopLine=226
 Caret=8,268
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
 TopLine=207
@@ -326,6 +326,6 @@ Caret=1,1
 [Game\Scripts\Entities\Items\XML\Weapons\LAW.xml]
 TopLine=1
 Caret=40,12
-[Game\Levels\Multiplayer\PS\Island\Island.xml]
+[Game\Scripts\Classes\Sniper\Main.lua]
 TopLine=1
-Caret=157,6
+Caret=1,1

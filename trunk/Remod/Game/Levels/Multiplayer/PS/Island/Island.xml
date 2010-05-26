@@ -1,0 +1,8 @@
+<MetaData>
+   <MiniMap Filename="Minimap.jpg" startX="484.558838" startY="557.226074" endX="3884.558838" endY="3957.226074"/>
+   <Gamerules MP1="PowerStruggle"/>
+   <LoadingScreens screen1=""/>
+   <HeaderText text="Island"/>
+   <DescriptionText text="An island with some cheap objectives for testing. Needs a proper free spawning mechanism to work as intended, and trees."/>
+   <Display Name="Island"/>
+</MetaData>

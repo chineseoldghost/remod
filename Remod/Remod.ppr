@@ -291,7 +291,7 @@ Selected=Game\Levels\Multiplayer\PS\Island\Island.xml
 TopLine=1
 Caret=1,1
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
-TopLine=226
+TopLine=134
 Caret=8,268
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
 TopLine=207
@@ -328,4 +328,4 @@ TopLine=1
 Caret=40,12
 [Game\Levels\Multiplayer\PS\Island\Island.xml]
 TopLine=1
-Caret=96,5
+Caret=157,6

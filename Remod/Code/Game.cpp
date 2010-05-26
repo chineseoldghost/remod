@@ -63,7 +63,7 @@
 #include "ILoadGame.h"
 
 #include "DownloadTask.h"
-#include "CustomShaders.h"
+//#include "CustomShaders.h"
 
 #define WIN32_LEAN_AND_MEAN // Exclude rarely-used services from Windows headers
 #include <windows.h>
@@ -626,8 +626,8 @@ void CGame::Slowmo(ICVar *pCVar)
 
 void CGame::Vehicles(ICVar *pCVar)
 {
-	CCustomShaders *pCS = new CCustomShaders();
-	pCS->LoadCustomShaders();
+	/*CCustomShaders *pCS = new CCustomShaders();
+	pCS->LoadCustomShaders();*/
 }
 
 string CGame::InitMapReloading()

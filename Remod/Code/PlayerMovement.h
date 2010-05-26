@@ -34,6 +34,7 @@ private:
 	void ProcessOnGroundOrJumping( CPlayer& player );
 	void ProcessTurning();
 	void ProcessParachute();
+    void ProcessFreefall();
 
 	void AdjustMovementForEnvironment( Vec3& movement, bool sprinting );
 	void AdjustPlayerPositionOnLadder(CPlayer &player);

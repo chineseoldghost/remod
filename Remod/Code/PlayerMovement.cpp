@@ -66,8 +66,7 @@ void CPlayerMovement::Process(CPlayer& player)
 		ProcessFlyingZeroG();
 	else if (m_stats.inFreefall.Value()==1)
 	{
-		m_request.type = eCMT_Normal;
-		m_request.velocity.zero();
+        ProcessFreefall();
 	}
 	else if (m_stats.inFreefall.Value()==2)
 		ProcessParachute();
@@ -945,7 +944,61 @@ void CPlayerMovement::ProcessParachute()
 	Vec3 forwardComp(m_baseQuat.GetColumn1() * 10.0f);
 	forwardComp.z = 0.0f;
 
-	m_request.velocity += forwardComp * m_stats.mass;// * m_frameTime;//desiredVelocity;
+    //Remod: adjust speed based on lookAt height
+    //ugly but working
+    float fHeightDiff = (m_worldPos - m_movement.lookTarget).z * 0.5f;
+    fHeightDiff = fHeightDiff * -1.f;
+
+    if ( fHeightDiff > 2.5f )
+        fHeightDiff = 2.5f;
+    else if ( fHeightDiff < -2.5f )
+        fHeightDiff = -2.5f;
+    
+    fHeightDiff = fHeightDiff + 3.5f;
+
+    if ( fHeightDiff < 3.5f )
+        fHeightDiff = (fHeightDiff / 3.5f);
+    else
+        fHeightDiff = fHeightDiff -2.5f;
+
+	m_request.velocity += forwardComp * m_stats.mass * fHeightDiff;// * m_frameTime;//desiredVelocity;
+    
+    //static float color[4] = {1,1,1,1};
+    //gEnv->pRenderer->Draw2dLabel(5.0f, 50.f, 1.3f, color, false, "Diff:  %.2f", fHeightDiff);
+}
+
+//-----------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------
+void CPlayerMovement::ProcessFreefall()
+{
+    m_request.type = eCMT_Impulse;
+    m_request.velocity.zero();
+    
+	Vec3 forwardComp(m_baseQuat.GetColumn1() * 5.0f);
+	forwardComp.z = 0.0f;
+
+    //Remod: adjust speed based on lookAt height
+    float fHeightDiff = (m_worldPos - m_movement.lookTarget).z * 0.75f;
+    fHeightDiff = fHeightDiff * -1.f;
+
+    if ( fHeightDiff > 2.5f )
+        fHeightDiff = 2.5f;
+    else if ( fHeightDiff < -2.5f )
+        fHeightDiff = -2.5f;
+    
+    fHeightDiff = fHeightDiff + 3.5f;
+
+    if ( fHeightDiff < 3.5f )
+        fHeightDiff = (fHeightDiff / 5.f);
+    else
+        fHeightDiff = fHeightDiff -3.f;
+
+    fHeightDiff = fHeightDiff*2;
+
+	m_request.velocity += forwardComp * m_stats.mass * fHeightDiff;// * m_frameTime;//desiredVelocity;
+    
+    //static float color[4] = {1,1,1,1};  
+    //gEnv->pRenderer->Draw2dLabel(5.0f, 50.f, 1.3f, color, false, "Diff:  %.2f", fHeightDiff);
 }
 
 //-----------------------------------------------------------------------------------------------

@@ -325,7 +325,7 @@ TopLine=111
 Caret=37,130
 [Game\Scripts\GameRules\PowerStruggleRank.lua]
 TopLine=245
-Caret=27,269
+Caret=12,266
 [Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml]
 TopLine=148
 Caret=36,179

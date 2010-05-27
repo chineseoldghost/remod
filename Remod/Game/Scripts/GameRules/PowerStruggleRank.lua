@@ -263,7 +263,7 @@ end
 ----------------------------------------------------------------------------------------------------
 
 PowerStruggle.classParams = {
-	["rifleman"] = {
+	["engineer"] = {
 		tan = {
 			primaryWeapon = "SOCOM",
 			secondaryWeapon = "FY71";

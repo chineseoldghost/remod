@@ -69,11 +69,20 @@ function PowerStruggle:EquipPlayer(player, additionalEquip)
 		rank=1;
 	end
 
+	local teamId = self.game:GetTeam(actor.id);
+	local teamName = self.game:GetTeamName(teamId);
 	local class = self.game:GetSynchedEntityValue(actor.id, self.CLASS_KEY) or 0;
 
 	self.currentParams = self.classParams[class];
 
-	ItemSystem.GiveItem(self.currentParams.primaryWeapon, actor.id, true);
+	if(teamName=="black") then
+		ItemSystem.GiveItem(self.currentParams.black.primaryWeapon, actor.id, true);
+		ItemSystem.GiveItem(self.currentParams.black.secondaryWeapon, actor.id, true);
+	end
+	elseif(teamName=="tan") then
+		ItemSystem.GiveItem(self.currentParams.tan.primaryWeapon, actor.id, true);
+		ItemSystem.GiveItem(self.currentParams.tan.secondaryWeapon, actor.id, true);
+	end
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -253,7 +262,14 @@ end
 
 PowerStruggle.classParams = {
 	["engineer"] = {
-		primaryWeapon = "SOCOM",
+		tan = {
+			primaryWeapon = "SOCOM",
+			secondaryWeapon = "";
+		};
+		black = {
+			primaryWeapon = "SOCOM",
+			secondaryWeapon = "";
+		};
 	};
 };
 

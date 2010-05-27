@@ -58,6 +58,7 @@ function PowerStruggle:EquipPlayer(player, additionalEquip)
 
 	ItemSystem.GiveItem("AlienCloak", player.id, false);
 	ItemSystem.GiveItem("OffHand", player.id, false);
+	ItemSystem.GiveItem("Parachute", player.id, false);
 	--ItemSystem.GiveItem("Fists", player.id, false);
 	
 	if (additionalEquip and additionalEquip~="") then
@@ -78,7 +79,6 @@ function PowerStruggle:EquipPlayer(player, additionalEquip)
 	if(teamName=="black") then
 		ItemSystem.GiveItem(self.currentParams.black.primaryWeapon, actor.id, true);
 		ItemSystem.GiveItem(self.currentParams.black.secondaryWeapon, actor.id, true);
-	end
 	elseif(teamName=="tan") then
 		ItemSystem.GiveItem(self.currentParams.tan.primaryWeapon, actor.id, true);
 		ItemSystem.GiveItem(self.currentParams.tan.secondaryWeapon, actor.id, true);

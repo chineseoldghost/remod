@@ -212,19 +212,19 @@
 				<!--<param name="damage_drop_min_distance" value="10" />-->
 			</fire>
 			<recoil>
-				<param name="max_recoil"	value="10" />
+				<param name="max_recoil"	value="5" />
 				<param name="attack" 			value="5" />
-				<param name="decay" 			value="0.33" />
-				<param name="maxx" 				value="10" />
-				<param name="maxy" 				value="5" />
-				<param name="randomness" 	value="4.0" />
+				<param name="decay" 			value="0.5" />
+				<param name="maxx" 				value="5" />
+				<param name="maxy" 				value="2" />
+				<param name="randomness" 	value="0.25" />
 				<param name="recoil_prone_m" value="0.33" />
 				<param name="recoil_crouch_m" value="0.66" />
 				<param name="recoil_jump_m"		value="2" />
 				<param name="recoil_strMode_m" value="0.5" />
-				<hints>
+				<!--<hints>
 					<hint x="1.0"	y="0.0" />		
-				</hints>
+				</hints>-->
 			</recoil>
 			<actions>
 				<param name="fire_cock" value="fire_cock" />

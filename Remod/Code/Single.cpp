@@ -2738,7 +2738,7 @@ void CSingle::UpdateRecoil(float frameTime)
 		m_recoil = CLAMP(m_recoil, 0.0f, m_recoilparams.max_recoil*m_recoilMultiplier);
 
 		//CryLogAlways("RECOIL update: time %f (+%f); recoil + %.2f - %.2f = %.3f", gEnv->pTimer->GetCurrTime(), frameTime, recoil_add, recoil_sub, m_recoil);
-		gEnv->pRenderer->Draw2dLabel(50,50,2.0f,white,false,"Current recoil: %.2f (+ %.2f, - %.2f) (frametime %.3f)", m_recoil, recoil_add, recoil_sub, frameTime);
+		//gEnv->pRenderer->Draw2dLabel(50,50,2.0f,white,false,"Current recoil: %.2f (+ %.2f, - %.2f) (frametime %.3f)", m_recoil, recoil_add, recoil_sub, frameTime);
 	}
 	else
 		m_recoil = 0.0f;

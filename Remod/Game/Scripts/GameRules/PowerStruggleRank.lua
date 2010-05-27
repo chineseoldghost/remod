@@ -75,6 +75,10 @@ function PowerStruggle:EquipPlayer(player, additionalEquip)
 	local class = self.game:GetSynchedEntityValue(player.id, self.CLASS_KEY) or 0;
 
 	self.currentParams = self.classParams[class];
+    
+    for k, itemName in ipairs ( self.currentParams.special ) do
+        ItemSystem.GiveItem( itemName , player.id, false);
+    end
 
 	if(teamName=="black") then
 		ItemSystem.GiveItem(self.currentParams.black.primaryWeapon, player.id, true);
@@ -272,6 +276,7 @@ PowerStruggle.classParams = {
 			primaryWeapon = "SOCOM",
 			secondaryWeapon = "SCAR";
 		};
+        special = { "AssaultScope", "Silencer", "RepairKit" }
 	};
 };
 

@@ -289,7 +289,7 @@ PowerStruggle.classParams = {
 			primaryWeapon = "SOCOM",
 			secondaryWeapon = "SCAR";
 		};
-        special = { "AssaultScope", "Silencer" }
+        special = { "AssaultScope", }
 	};
     
     ["Sniper"] = {

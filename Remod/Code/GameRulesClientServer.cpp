@@ -737,6 +737,13 @@ IMPLEMENT_RMI(CGameRules, SvRequestRename)
 }
 
 //------------------------------------------------------------------------
+IMPLEMENT_RMI(CGameRules, SvSetClass)
+{
+	SetSynchedEntityValue(params.entityId, 159, params.currentClass);
+	return true;
+}
+
+//------------------------------------------------------------------------
 IMPLEMENT_RMI(CGameRules, ClRenameEntity)
 {
 	IEntity *pEntity=gEnv->pEntitySystem->GetEntity(params.entityId);

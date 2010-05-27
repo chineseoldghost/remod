@@ -4696,5 +4696,14 @@ bool CGameRules::IsSpawnUsed( EntityId spawnId ) const
 	return false;
 }
 
-//
 //-------------------------------------------------------------------------------------------
+void CGameRules::SetClass( string className )
+{
+	currentClass = className;
+	CPlayer* pPlayer = static_cast<CPlayer*>(g_pGame->GetIGameFramework()->GetClientActor());
+	if(pPlayer)
+	{
+		SetClassParams params(pPlayer->GetEntityId(), className);
+		GetGameObject()->InvokeRMIWithDependentObject(SvSetClass(), params, eRMI_ToServer, pPlayer->GetEntityId());
+	}
+}

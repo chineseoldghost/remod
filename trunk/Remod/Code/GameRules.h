@@ -341,6 +341,9 @@ public:
 
 	int NKAliveCount;
 	int USAliveCount;
+	const char* currentClass;
+	ILINE const char* GetClass() const { return (currentClass); };
+	void SetClass(string className);
 
 	//------------------------------------------------------------------------
 	// objectives
@@ -759,6 +762,25 @@ public:
 		}
 	};
 
+	struct SetClassParams
+	{
+		string currentClass;
+		EntityId entityId;
+
+		SetClassParams() {};
+		SetClassParams(EntityId _entityId, string currentClass)
+			: entityId(_entityId),
+				currentClass(currentClass)
+		{
+		}
+
+		void SerializeWith(TSerialize ser)
+		{
+			ser.Value("currentClass", currentClass);
+			ser.Value("entityId", entityId, 'eid');
+		}
+	};
+
   struct StartVotingParams
   {
     string        param;
@@ -967,6 +989,7 @@ public:
 	DECLARE_CLIENT_RMI_NOATTACH(ClBoughtItem, BoolParam, eNRT_ReliableUnordered);
 
 	DECLARE_SERVER_RMI_NOATTACH(SvRequestRename, RenameEntityParams, eNRT_ReliableOrdered);
+	DECLARE_SERVER_RMI_NOATTACH(SvSetClass, SetClassParams, eNRT_ReliableUnordered);
 	DECLARE_CLIENT_RMI_NOATTACH(ClRenameEntity, RenameEntityParams, eNRT_ReliableOrdered);
 
 	DECLARE_SERVER_RMI_NOATTACH(SvRequestChangeTeam, ChangeTeamParams, eNRT_ReliableOrdered);

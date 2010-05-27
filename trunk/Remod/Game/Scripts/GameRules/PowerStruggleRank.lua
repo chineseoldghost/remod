@@ -69,32 +69,11 @@ function PowerStruggle:EquipPlayer(player, additionalEquip)
 		rank=1;
 	end
 
-	local equip=self.rankList[rank].equip;
-	if (equip) then
-		for k,e in ipairs(equip) do
-			ItemSystem.GiveItem(e, player.id, false);
-		end
-	end
-	local teamId = self.game:GetTeam(player.id);
-	if(teamId==1) then
-		ItemSystem.GiveItem("SCAR", true);
-	elseif(teamId==2) then
-		ItemSystem.GiveItem("FY71", true);
-	end
+	local class = self.game:GetSynchedEntityValue(actor.id, self.CLASS_KEY) or 0;
 
-	--[[local channelId = self.game:GetChannelId(player.id);
-	self.game:ForceSynchedStorageSynch(channelId);
-	--local Value=self.game:GetSynchedEntityValue(player.id, self.CLASS_KEY);
-	if(self.game:GetClass(player.id, "sniper")) then
-		ItemSystem.GiveItem(self.sniperProperties.PrimaryWeapon, player.id, true);
-		System.LogAlways("2");
-		ItemSystem.GiveItem("SniperScope", player.id, true);
-	elseif(self.game:GetClass(player.id, "rifleman")) then
-		System.LogAlways("4");
-		ItemSystem.GiveItem(self.riflemanProperties.PrimaryWeapon, player.id, true);
-	elseif(self.game:GetClass(player.id, "engineer")) then
-		ItemSystem.GiveItem(self.engineerProperties.PrimaryWeapon, player.id, true);
-	end]]--
+	self.currentParams = self.classParams[class];
+
+	ItemSystem.GiveItem(self.currentParams.primaryWeapon, actor.id, true);
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -271,3 +250,13 @@ end
 function PowerStruggle:AwardCPCount(playerId, c)
 	self:SetPlayerCP(playerId, self:GetPlayerCP(playerId)+c);
 end
+
+PowerStruggle.classParams = {
+	["engineer"] = {
+		primaryWeapon = "SOCOM",
+	};
+};
+
+PowerStruggle.currentParams = {
+
+};

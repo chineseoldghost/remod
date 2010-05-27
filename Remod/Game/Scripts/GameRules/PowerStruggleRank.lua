@@ -267,6 +267,7 @@ end
 ----------------------------------------------------------------------------------------------------
 
 PowerStruggle.classParams = {
+
 	["Engineer"] = {
 		tan = {
 			primaryWeapon = "SOCOM",
@@ -276,8 +277,33 @@ PowerStruggle.classParams = {
 			primaryWeapon = "SOCOM",
 			secondaryWeapon = "SCAR";
 		};
-        special = { "AssaultScope", "Silencer", "RepairKit" }
+        special = { "Reflex", "RepairKit" }
 	};
+    
+    ["Rifleman"] = {
+		tan = {
+			primaryWeapon = "SOCOM",
+			secondaryWeapon = "FY71";
+		};
+		black = {
+			primaryWeapon = "SOCOM",
+			secondaryWeapon = "SCAR";
+		};
+        special = { "AssaultScope", "Silencer" }
+	};
+    
+    ["Sniper"] = {
+		tan = {
+			primaryWeapon = "SOCOM",
+			secondaryWeapon = "DSG1";
+		};
+		black = {
+			primaryWeapon = "SOCOM",
+			secondaryWeapon = "DSG1";
+		};
+        special = { "SniperScope", "SOCOMSilencer" }
+	};
+    
 };
 
 PowerStruggle.currentParams = {

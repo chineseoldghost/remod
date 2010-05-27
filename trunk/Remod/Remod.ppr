@@ -286,7 +286,7 @@ Remod
 13=Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml
+Selected=Game\Scripts\GameRules\PowerStruggleRank.lua
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
 TopLine=207
 Caret=36,236
@@ -324,8 +324,8 @@ Caret=1,1
 TopLine=111
 Caret=37,130
 [Game\Scripts\GameRules\PowerStruggleRank.lua]
-TopLine=232
-Caret=3,260
+TopLine=245
+Caret=27,269
 [Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml]
 TopLine=148
 Caret=36,179

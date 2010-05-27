@@ -260,15 +260,17 @@ function PowerStruggle:AwardCPCount(playerId, c)
 	self:SetPlayerCP(playerId, self:GetPlayerCP(playerId)+c);
 end
 
+----------------------------------------------------------------------------------------------------
+
 PowerStruggle.classParams = {
-	["engineer"] = {
+	["rifleman"] = {
 		tan = {
 			primaryWeapon = "SOCOM",
-			secondaryWeapon = "";
+			secondaryWeapon = "FY71";
 		};
 		black = {
 			primaryWeapon = "SOCOM",
-			secondaryWeapon = "";
+			secondaryWeapon = "SCAR";
 		};
 	};
 };

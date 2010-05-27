@@ -81,7 +81,7 @@ Remod
 				Game\Scripts\Entities\actor\player.lua
 			+Items
 				+XML
-					+Accessories
+					-Accessories
 						Game\Scripts\Entities\Items\XML\Accessories\GrenadeLauncher.xml
 						Game\Scripts\Entities\Items\XML\Accessories\LAWScope.xml
 						Game\Scripts\Entities\Items\XML\Accessories\Silencer.xml
@@ -283,16 +283,15 @@ Remod
 10=Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
 11=Game\Scripts\Entities\Items\XML\Ammo\SCARGrenade.xml
 12=Game\Scripts\Entities\Items\XML\Weapons\LAW.xml
-13=Game\Scripts\Classes\Sniper\Main.lua
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Classes\Sniper\Main.lua
+Selected=Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
-TopLine=226
-Caret=8,268
+TopLine=216
+Caret=12,272
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
 TopLine=207
 Caret=40,222
@@ -318,14 +317,11 @@ Caret=25,855
 TopLine=1
 Caret=1,1
 [Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml]
-TopLine=1
-Caret=36,13
+TopLine=15
+Caret=30,53
 [Game\Scripts\Entities\Items\XML\Ammo\SCARGrenade.xml]
 TopLine=1
 Caret=1,1
 [Game\Scripts\Entities\Items\XML\Weapons\LAW.xml]
-TopLine=1
-Caret=40,12
-[Game\Scripts\Classes\Sniper\Main.lua]
-TopLine=1
-Caret=1,1
+TopLine=153
+Caret=49,171

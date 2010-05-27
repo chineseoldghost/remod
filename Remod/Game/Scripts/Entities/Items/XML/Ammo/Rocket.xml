@@ -36,21 +36,21 @@
 		<param name="type" value="ht_Rocket" />
 	</explosion>
 	<params>
-		<param name="lifetime" value="25" />
-		<param name="showtime" value="0.5" />
+		<param name="lifetime" value="60" />
+		<param name="showtime" value="60" />
 		<param name="turn_speed" value="400" />
-		<param name="max_target_distance" value="1000" />
+		<param name="max_target_distance" value="2048" />
 		<param name="aitype"	value="rpg" />
 		<param name="cruise" value="0" />
 		<!--<param name="cruise_altitude" value="500">-->
 		<!--<param name="align_altitude" value="450">-->
 		<!--<param name="descend_distance" value="50">-->
-		<param name="controlled" value="0" />
+		<param name="controlled" value="1" />
 		<param name="lazyness" value="0.25" />
 	</params>
 	<trail>
 		<param name="effect" value="smoke_and_fire.weapon_Rocket.Trail" />
-		<param name="scale" value="0.45" />
+		<param name="scale" value="1" />
 		<param name="sound" value="sounds/physics:bullet_whiz:missile_whiz_loop" />
 	</trail>
 </ammo>

@@ -36,6 +36,7 @@ PowerStruggle.NEUTRAL_SPAWN_LOCATIONS		= false;
 -- synched storage keys
 PowerStruggle.PP_AMOUNT_KEY 						= 200;
 PowerStruggle.CP_AMOUNT_KEY 						= 201;
+PowerStruggle.CLASS_KEY 						= 201;
 PowerStruggle.RANK_KEY									= 202;
 
 PowerStruggle.TEAMPOWER_TEAM0_KEY 			= 300;

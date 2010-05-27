@@ -2634,7 +2634,7 @@ void CSingle::UpdateHeat(float frameTime)
 //------------------------------------------------------------------------
 void CSingle::UpdateRecoil(float frameTime)
 {
-	//float white[4]={1,1,1,1};
+	float white[4]={1,1,1,1};
 	// spread
 	float spread_add = 0.0f;
 	float spread_sub = 0.0f;
@@ -2733,12 +2733,12 @@ void CSingle::UpdateRecoil(float frameTime)
 		recoil_sub *= scale;
 		if(m_fired)
 			recoil_sub *= strenghtScale;
-		m_recoil += recoil_add-recoil_sub;
+        m_recoil += recoil_add;//-recoil_sub;
 
 		m_recoil = CLAMP(m_recoil, 0.0f, m_recoilparams.max_recoil*m_recoilMultiplier);
 
 		//CryLogAlways("RECOIL update: time %f (+%f); recoil + %.2f - %.2f = %.3f", gEnv->pTimer->GetCurrTime(), frameTime, recoil_add, recoil_sub, m_recoil);
-		//gEnv->pRenderer->Draw2dLabel(50,50,2.0f,white,false,"Current recoil: %.2f (+ %.2f, - %.2f) (frametime %.3f)", m_recoil, recoil_add, recoil_sub, frameTime);
+		gEnv->pRenderer->Draw2dLabel(50,50,2.0f,white,false,"Current recoil: %.2f (+ %.2f, - %.2f) (frametime %.3f)", m_recoil, recoil_add, recoil_sub, frameTime);
 	}
 	else
 		m_recoil = 0.0f;

@@ -210,10 +210,10 @@
 				<param name="damage_drop_min_distance" value="10" />-->
 			</fire>
 			<recoil>
-				<param name="max_recoil"	value="3" />
-				<param name="attack" 			value="1.5" />
+				<param name="max_recoil"	value="2" />
+				<param name="attack" 			value="2" />
 				<param name="decay" 			value="0.5" />
-				<param name="maxx" 				value="3" />
+				<param name="maxx" 				value="2" />
 				<param name="maxy" 				value="1" />
 				<param name="randomness" 	value="0.25" />
 				<param name="recoil_prone_m" value="0.33" />

@@ -2803,7 +2803,7 @@ void CSingle::UpdateRecoil(float frameTime)
                         Ang3 angles = pOwner->GetAngles ();
 
                         angles.x = angles.x + m_recoil_offset.x;
-                        angles.y = angles.y + m_recoil_offset.y;
+                        angles.z = angles.z + m_recoil_offset.y;
                         CLAMP ( angles.x, -3.141592f, 3.141592f );
 
                         viewRotation.SetRotationXYZ ( angles );

@@ -277,7 +277,7 @@ PowerStruggle.classParams = {
 			primaryWeapon = "SOCOM",
 			secondaryWeapon = "SCAR";
 		};
-        special = { "Reflex", "RepairKit" }
+        special = { "Reflex", "RepairKit", "LAW" }
 	};
     
     ["Rifleman"] = {
@@ -289,7 +289,7 @@ PowerStruggle.classParams = {
 			primaryWeapon = "SOCOM",
 			secondaryWeapon = "SCAR";
 		};
-        special = { "AssaultScope", }
+        special = { "AssaultScope", "SmokeGrenade", "SmokeGrenade"}
 	};
     
     ["Sniper"] = {

@@ -2733,7 +2733,7 @@ void CSingle::UpdateRecoil(float frameTime)
 		recoil_sub *= scale;
 		if(m_fired)
 			recoil_sub *= strenghtScale;
-        m_recoil += recoil_add;//-recoil_sub;
+        m_recoil += recoil_add-recoil_sub;
 
 		m_recoil = CLAMP(m_recoil, 0.0f, m_recoilparams.max_recoil*m_recoilMultiplier);
 
@@ -2793,7 +2793,23 @@ void CSingle::UpdateRecoil(float frameTime)
 				m_recoil_offset = new_offset*0.66f+m_recoil_offset*0.33f;
 				// Modify angle only if other would set a smaller mod
 				if (!pOther || m_pWeapon->GetRecoilAmount() >= pOther->GetRecoilAmount())
-					pOwner->SetViewAngleOffset(Vec3(m_recoil_offset.x, 0.0f, m_recoil_offset.y));
+                {
+					//pOwner->SetViewAngleOffset(Vec3(m_recoil_offset.x, 0.0f, m_recoil_offset.y));
+
+                    //Remod: Custom recoil
+                    if (m_fired)
+                    {
+                        Quat viewRotation = pOwner->GetViewRotation ();
+                        Ang3 angles = pOwner->GetAngles ();
+
+                        angles.x = angles.x + m_recoil_offset.x;
+                        angles.y = angles.y + m_recoil_offset.y;
+                        CLAMP ( angles.x, -3.141592f, 3.141592f );
+
+                        viewRotation.SetRotationXYZ ( angles );
+                        pOwner->SetViewRotation ( viewRotation );
+                    }
+                }
 
 				m_pWeapon->RequireUpdate(eIUS_FireMode);
 			}

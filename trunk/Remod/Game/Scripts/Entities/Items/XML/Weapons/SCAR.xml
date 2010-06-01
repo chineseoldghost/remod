@@ -221,7 +221,7 @@
 			<fire>
 				<param name="ammo_type" value="bullet" />
 				<param name="hit_type" value="ht_Bullet" />
-				<param name="rate" value="700" />
+				<param name="rate" value="750" />
 				<param name="damage" value="20" />
 				<param name="reload_time" value="3" />
 				<param name="bullet_chamber" value="1" />
@@ -230,11 +230,11 @@
 				<param name="nearmiss_signal" value="OnNearMiss" />
 			</fire>
 			<recoil>
-				<param name="max_recoil"	value="2" />
-				<param name="attack" 			value="2" />
+				<param name="max_recoil"	value="2.5" />
+				<param name="attack" 			value="2.5" />
 				<param name="decay" 			value="0.5" />
-				<param name="maxx" 				value="2" />
-				<param name="maxy" 				value="1" />
+				<param name="maxx" 				value="2.5" />
+				<param name="maxy" 				value="1.5" />
 				<param name="randomness" 	value="0.25" />
 				<param name="recoil_prone_m" value="0.33" />
 				<param name="recoil_crouch_m" value="0.66" />
@@ -684,7 +684,7 @@
 				<firemodes>
 					<firemode type="default">
 						<fire>
-                  <param name="damage" value="18.5" />
+                  <param name="damage" value="18" />
 						</fire>
 						<muzzleflash>
 							<firstperson effect="muzzleflash.AssaultRifle.silenced_smoke" helper="muzzle_flash_effect" time="0.1" light_radius="0" />

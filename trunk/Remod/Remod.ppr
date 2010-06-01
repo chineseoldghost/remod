@@ -270,8 +270,8 @@ Remod
 		Game\Scripts\main.lua
 		Game\Scripts\Remod.lua
 [Open project files]
-0=Game\Animations\Graphs\PlayerFullBody.xml
-1=..\..\..\..\..\..\Users\CHARLI~1\AppData\Local\Temp\Rar$DR20.6084\Animations\graphs\PlayerUpperBody.xml
+0=..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Anencephalous\actionmaps.xml
+1=Game\Animations\Graphs\PlayerFullBody.xml
 2=Game\Shaders\HWScripts\CryFX\PostProcess.cfx
 3=Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml
 4=Game\Scripts\Entities\Items\XML\Weapons\FY71.xml
@@ -287,29 +287,30 @@ Remod
 14=Game\Scripts\Entities\Items\XML\Weapons\LAW.xml
 15=Game\Scripts\GameRules\PowerStruggleRank.lua
 16=Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml
+17=Game\Config\multiplayer.cfg
 [Selected Project Files]
 Main=
-Selected=Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml
+Selected=Game\Config\multiplayer.cfg
+[..\..\..\..\..\..\Users\Charlie the Unicorn\Documents\My Games\Crysis Wars\Profiles\Anencephalous\actionmaps.xml]
+TopLine=270
+Caret=62,292
 [Game\Animations\Graphs\PlayerFullBody.xml]
 TopLine=1
-Caret=1,1
-[..\..\..\..\..\..\Users\CHARLI~1\AppData\Local\Temp\Rar$DR20.6084\Animations\graphs\PlayerUpperBody.xml]
-TopLine=893
 Caret=1,1
 [Game\Shaders\HWScripts\CryFX\PostProcess.cfx]
 TopLine=1
 Caret=1,1
 [Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml]
-TopLine=207
-Caret=36,236
+TopLine=659
+Caret=49,687
 [Game\Scripts\Entities\Items\XML\Weapons\FY71.xml]
-TopLine=207
-Caret=36,224
+TopLine=630
+Caret=49,658
 [Game\Scripts\Entities\Items\XML\Weapons\SMG.xml]
 TopLine=182
 Caret=36,216
 [Game\Scripts\Entities\Items\XML\Weapons\Shotgun.xml]
-TopLine=190
+TopLine=192
 Caret=36,219
 [Game\Scripts\Entities\Items\XML\Weapons\GaussRifle.xml]
 TopLine=1
@@ -341,3 +342,6 @@ Caret=48,280
 [Game\Scripts\Entities\Items\XML\Weapons\DSG1.xml]
 TopLine=148
 Caret=36,178
+[Game\Config\multiplayer.cfg]
+TopLine=1
+Caret=43,35

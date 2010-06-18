@@ -498,6 +498,13 @@ void CPlayerView::ViewThirdPerson(SViewParams &viewParams)
 		//viewParams.position += m_io.viewQuatFinal.GetColumn1() * current.y;	// back
 		//viewParams.position += m_io.viewQuatFinal.GetColumn2() * current.z;	// up
 		viewParams.position += offsetX + offsetY + offsetZ;
+
+        if ( offsetY.z <= -1.2f )
+        {
+            float fMultip = offsetY.z * (-1.0f) - 0.2f;
+            g_pGameCVars->cl_fov = 60.0f * fMultip;
+        }
+        
 	}
 	else
 	{

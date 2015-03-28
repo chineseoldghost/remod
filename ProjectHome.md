@@ -1,0 +1,1 @@
+Remod used to be a user patch for Crysis Wars. That didn't turn out too well, so now it's more of a thing me and whoever wants to can mess around with to see if we can get anything done.
